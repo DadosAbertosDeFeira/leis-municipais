@@ -1,7 +1,7 @@
+use encoding_rs::WINDOWS_1252;
+use encoding_rs_io::DecodeReaderBytesBuilder;
 use std::fs::File;
 use std::io::Read;
-use encoding_rs_io::DecodeReaderBytesBuilder;
-use encoding_rs::WINDOWS_1252;
 
 fn main() {
     parse_html();
