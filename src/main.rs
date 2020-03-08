@@ -29,8 +29,7 @@ fn parse_html_to_lei() -> Lei {
     let mut dest = String::new();
     transcoded.read_to_string(&mut dest).unwrap(); // TODO: handle error here
 
-    Lei::from_html(&dest)
-            .unwrap()
+    Lei::from_html(&dest).unwrap()
 }
 
 // TODO: make path dynamic
@@ -41,7 +40,11 @@ mod test {
 
     #[test]
     fn should_read_html_and_print_it() {
-        assert_eq!(parse_html_to_lei(),
-                   Lei { titulo: "DECRETO Nº 1/84, de 05 de janeiro de 1984".to_string() });
+        assert_eq!(
+            parse_html_to_lei(),
+            Lei {
+                titulo: "DECRETO Nº 1/84, de 05 de janeiro de 1984".to_string()
+            }
+        );
     }
 }
