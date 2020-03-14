@@ -1,8 +1,8 @@
 use encoding_rs::WINDOWS_1252;
 use encoding_rs_io::DecodeReaderBytesBuilder;
+use regex::Regex;
 use std::fs::File;
 use std::io::Read;
-use regex::Regex;
 
 fn main() {
     println!("{:?}", parse_html_to_lei());
