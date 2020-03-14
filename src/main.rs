@@ -5,7 +5,7 @@ use std::fs::File;
 use std::io::Read;
 
 fn main() {
-    println!("{:?}", parse_html_to_lei());
+    println!("{:?}", parse_html_to_lei("resources/LeisMunicipais-com-br-Lei-Complementar-122-2019.html"));
 }
 
 #[derive(Debug, PartialEq)]
@@ -17,8 +17,7 @@ struct Lei {
     documento: String,
 }
 
-fn parse_html_to_lei() -> Lei {
-    let file_name = "resources/LeisMunicipais-com-br-Lei-Complementar-122-2019.html";
+fn parse_html_to_lei(file_name: &str) -> Lei {
     let file = File::open(file_name).unwrap(); // TODO: handle error here
     let mut transcoded = DecodeReaderBytesBuilder::new()
         .encoding(Some(WINDOWS_1252))
@@ -53,9 +52,9 @@ mod test {
     use crate::{parse_html_to_lei, Lei};
 
     #[test]
-    fn should_read_html_and_create_a_lei_from_it() {
+    fn should_read_html_and_create_a_lei_with_documento() {
         assert_eq!(
-            parse_html_to_lei(),
+            parse_html_to_lei("resources/LeisMunicipais-com-br-Lei-Complementar-122-2019.html"),
             Lei {
                 titulo: "LEI COMPLEMENTAR Nº 122, DE 22 DE FEVEREIRO DE 2019".to_string(),
                 resumo: "Altera as disposições da Lei Complementar Nº <a class=\"link_law\" data-id=\"1592745\" data-original-title=\" Data da Norma: 10.04.2002 - ALTERA O REGIME DE PREVIDÊNCIA SOCIAL PRÓPRIO DO MUNICÍPIO DE FEIRA DE SANTANA E DÁ OUTRAS PROVIDÊNCIAS.\" data-toggle=\"tooltip\" href=\"https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-complementar/2002/1/11/lei-complementar-n-11-2002-altera-o-regime-de-previdencia-social-proprio-do-municipio-de-feira-de-santana-e-da-outras-providencias\" rel=\"tooltip\">11</a>/2002 que trata do modo de concessão de pensão por morte, em concordância a Lei Federal de nº 13.135 de 17/06/2015 e Nota Técnica nº 11/2015/CGNAL/DRPSP/SPPS, de 14/08/2015, e dá outras providências.".to_string(),
