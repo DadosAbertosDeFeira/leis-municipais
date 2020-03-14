@@ -5,7 +5,10 @@ use std::fs::File;
 use std::io::Read;
 
 fn main() {
-    println!("{:?}", parse_html_to_lei("resources/LeisMunicipais-com-br-Lei-Complementar-122-2019.html"));
+    println!(
+        "{:?}",
+        parse_html_to_lei("resources/LeisMunicipais-com-br-Lei-Complementar-122-2019.html")
+    );
 }
 
 #[derive(Debug, PartialEq)]
