@@ -42,7 +42,7 @@ pub fn parse_html_to_lei(file_name: &str, categoria: String) -> Lei {
         resumo: clean_html_to_text(captures_resumo["resumo"].to_string()),
         texto: clean_html_to_text(captures_texto["texto"].to_string()),
         documento,
-        categoria
+        categoria,
     }
 }
 
