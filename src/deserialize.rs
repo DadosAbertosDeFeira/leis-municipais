@@ -1,9 +1,9 @@
+use dissolve::strip_html_tags;
 use encoding_rs::WINDOWS_1252;
 use encoding_rs_io::DecodeReaderBytesBuilder;
 use regex::Regex;
 use std::fs::File;
 use std::io::Read;
-use dissolve::strip_html_tags;
 
 #[derive(Debug, PartialEq)]
 pub struct Lei {
