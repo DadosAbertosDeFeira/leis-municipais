@@ -31,6 +31,6 @@ fn is_not_hidden(entry: &DirEntry) -> bool {
     entry
         .file_name()
         .to_str()
-        .map(|s| entry.depth() == 0 || !s.starts_with("."))
+        .map(|s| entry.depth() == 0 || !s.starts_with('.'))
         .unwrap_or(false)
 }
