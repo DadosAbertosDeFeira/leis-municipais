@@ -1,6 +1,6 @@
 use crate::deserialize::parse_html_to_lei;
-use walkdir::{DirEntry, WalkDir};
 use std::collections::HashMap;
+use walkdir::{DirEntry, WalkDir};
 
 mod deserialize;
 
@@ -18,11 +18,10 @@ fn main() {
         if entry.file_type().is_dir() {
             current_directory = entry.file_name().to_os_string().into_string().unwrap();
 
-            directories.insert(
-                current_directory.clone(),
-                0,
-            );
-        } else if entry.file_type().is_file() && entry.file_name().to_string_lossy().ends_with(".html") {
+            directories.insert(current_directory.clone(), 0);
+        } else if entry.file_type().is_file()
+            && entry.file_name().to_string_lossy().ends_with(".html")
+        {
             *directories.get_mut(&current_directory).unwrap() += 1;
         }
     }
