@@ -5,7 +5,7 @@ use walkdir::{DirEntry, WalkDir};
 mod deserialize;
 
 fn main() {
-    parse_html_to_lei("resources/LeisMunicipais-com-br-Lei-Complementar-122-2019.html");
+    parse_html_to_lei("resources/LeisMunicipais-com-br-Lei-Complementar-122-2019.html", "teste".to_string());
 
     // TODO: needs to be absolute path
     let walker = WalkDir::new("/Users/mac/Downloads/LeisMunicipais - Feira de Santana").into_iter();
