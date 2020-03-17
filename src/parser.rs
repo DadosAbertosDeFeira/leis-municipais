@@ -4,8 +4,9 @@ use encoding_rs_io::DecodeReaderBytesBuilder;
 use regex::Regex;
 use std::fs::File;
 use std::io::Read;
+use serde::Serialize;
 
-#[derive(Debug, PartialEq)]
+#[derive(Debug, PartialEq, Serialize)]
 pub struct Lei {
     titulo: String,
     categoria: String,
@@ -54,7 +55,7 @@ fn clean_html_to_text(capture: String) -> String {
 
 #[cfg(test)]
 mod test {
-    use crate::deserialize::{parse_html_to_lei, Lei};
+    use crate::parser::{parse_html_to_lei, Lei};
 
     #[test]
     fn should_read_html_and_create_a_lei_with_documento() {
@@ -73,7 +74,7 @@ mod test {
     #[test]
     fn should_read_html_and_create_a_lei_without_documento() {
         assert_eq!(
-            parse_html_to_lei("resources/LeisMunicipais-com-br-Decreto-1-1984.html", "test"),
+            parse_html_to_lei("resources/LeisMunicipais-com-br-Decreto-1-1984.html", "test".to_string()),
             Lei {
                 titulo: "DECRETO Nº 1/84, de 05 de janeiro de 1984".to_string(),
                 resumo: "DISPÕE SOBRE O ENQUADRAMENTO DO FUNCIONALISMO DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS.".to_string(),

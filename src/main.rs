@@ -1,14 +1,15 @@
-use crate::deserialize::parse_html_to_lei;
+use crate::parser::parse_html_to_lei;
 use std::collections::HashMap;
 use walkdir::{DirEntry, WalkDir};
 
-mod deserialize;
+mod parser;
 
 fn main() {
-    parse_html_to_lei(
+    let lei = parse_html_to_lei(
         "resources/LeisMunicipais-com-br-Lei-Complementar-122-2019.html",
         "teste".to_string(),
     );
+    println!("{}", serde_json::to_string(&lei).unwrap()); // TODO: error handler
 
     // TODO: needs to be absolute path
     let walker = WalkDir::new("/Users/mac/Downloads/LeisMunicipais - Feira de Santana").into_iter();
