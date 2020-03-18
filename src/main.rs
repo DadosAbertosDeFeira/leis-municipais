@@ -9,7 +9,7 @@ fn main() {
         "resources/LeisMunicipais-com-br-Lei-Complementar-122-2019.html",
         "teste".to_string(),
     );
-    println!("{}", serde_json::to_string(&lei).unwrap()); // TODO: error handler
+    // println!("{}", serde_json::to_string(&lei).unwrap()); // TODO: error handler
 
     // TODO: needs to be absolute path
     let walker = WalkDir::new("/Users/mac/Downloads/LeisMunicipais - Feira de Santana").into_iter();
@@ -29,6 +29,8 @@ fn main() {
             *directories.get_mut(&current_directory).unwrap() += 1;
         }
     }
+
+    println!("{}", "mateus");
 }
 
 fn is_not_hidden(entry: &DirEntry) -> bool {
