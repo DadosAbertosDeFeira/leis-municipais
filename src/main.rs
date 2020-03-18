@@ -1,7 +1,7 @@
 use crate::parser::parse_html_to_lei;
 use std::collections::HashMap;
-use walkdir::{DirEntry, WalkDir};
 use std::env;
+use walkdir::{DirEntry, WalkDir};
 
 mod parser;
 
