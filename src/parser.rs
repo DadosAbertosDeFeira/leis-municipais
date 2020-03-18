@@ -60,7 +60,7 @@ mod test {
     #[test]
     fn should_read_html_and_create_a_lei_with_documento() {
         assert_eq!(
-            parse_html_to_lei("resources/LeisMunicipais-com-br-Lei-Complementar-122-2019.html", "test".to_string()),
+            parse_html_to_lei("resources/unit_tests/LeisMunicipais-com-br-Lei-Complementar-122-2019.html", "test".to_string()),
             Lei {
                 titulo: "LEI COMPLEMENTAR Nº 122, DE 22 DE FEVEREIRO DE 2019".to_string(),
                 resumo: "Altera as disposições da Lei Complementar Nº 11/2002 que trata do modo de concessão de pensão por morte, em concordância a Lei Federal de nº 13.135 de 17/06/2015 e Nota Técnica nº 11/2015/CGNAL/DRPSP/SPPS, de 14/08/2015, e dá outras providências.".to_string(),
@@ -74,7 +74,7 @@ mod test {
     #[test]
     fn should_read_html_and_create_a_lei_without_documento() {
         assert_eq!(
-            parse_html_to_lei("resources/LeisMunicipais-com-br-Decreto-1-1984.html", "test".to_string()),
+            parse_html_to_lei("resources/unit_tests/LeisMunicipais-com-br-Decreto-1-1984.html", "test".to_string()),
             Lei {
                 titulo: "DECRETO Nº 1/84, de 05 de janeiro de 1984".to_string(),
                 resumo: "DISPÕE SOBRE O ENQUADRAMENTO DO FUNCIONALISMO DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS.".to_string(),

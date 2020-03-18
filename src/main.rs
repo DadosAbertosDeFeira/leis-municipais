@@ -1,18 +1,19 @@
 use crate::parser::parse_html_to_lei;
 use std::collections::HashMap;
 use walkdir::{DirEntry, WalkDir};
+use std::env;
 
 mod parser;
 
 fn main() {
-    let lei = parse_html_to_lei(
-        "resources/LeisMunicipais-com-br-Lei-Complementar-122-2019.html",
+    let args: Vec<String> = env::args().collect();
+    let folder_path = &args[1]; // TODO: error handler
+    let _lei = parse_html_to_lei(
+        "resources/unit_tests/LeisMunicipais-com-br-Lei-Complementar-122-2019.html",
         "teste".to_string(),
     );
-    // println!("{}", serde_json::to_string(&lei).unwrap()); // TODO: error handler
 
-    // TODO: needs to be absolute path
-    let walker = WalkDir::new("/Users/mac/Downloads/LeisMunicipais - Feira de Santana").into_iter();
+    let walker = WalkDir::new(folder_path).into_iter();
 
     let mut directories = HashMap::new();
     let mut current_directory = String::new();
@@ -30,7 +31,7 @@ fn main() {
         }
     }
 
-    println!("{}", "mateus");
+    println!("{}", serde_json::to_string_pretty(&directories).unwrap());
 }
 
 fn is_not_hidden(entry: &DirEntry) -> bool {
