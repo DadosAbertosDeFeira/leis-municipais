@@ -7,6 +7,8 @@ mod integration {
     fn calling_leis_without_args() {
         let mut cmd = Command::cargo_bin("leis-municipais").unwrap();
         cmd.arg("/Users/mac/workspace/leis-municipais/resources/integration_tests/leis");
-        cmd.assert().stdout(predicate::str::contains("orgânica"));
+
+        cmd.assert().stdout(predicate::str::contains("\"orgânica\": 1"));
+        cmd.assert().stdout(predicate::str::contains("\"complementar\": 2"));
     }
 }
