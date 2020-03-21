@@ -53,8 +53,6 @@ fn clean_html_to_text(capture: String) -> String {
     strip_html_tags(&capture).join("")
 }
 
-// TODO: serialize
-
 #[cfg(test)]
 mod test {
     use crate::parser::{parse_html_to_lei, Lei};
