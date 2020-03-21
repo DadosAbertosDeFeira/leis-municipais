@@ -15,6 +15,7 @@ pub struct Lei {
     documento: Option<String>,
 }
 
+// TODO: categoria without accent
 pub fn parse_html_to_lei(file_name: &str, categoria: String) -> Lei {
     let file = File::open(file_name).unwrap(); // TODO: handle error here
     let mut transcoded = DecodeReaderBytesBuilder::new()
@@ -47,6 +48,7 @@ pub fn parse_html_to_lei(file_name: &str, categoria: String) -> Lei {
     }
 }
 
+// TODO: dar replace nas tags e substituir por /n
 fn clean_html_to_text(capture: String) -> String {
     strip_html_tags(&capture).join("")
 }
