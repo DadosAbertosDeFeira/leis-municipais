@@ -33,7 +33,7 @@ fn main() {
     }
 
     for (directory, files_number) in &directories {
-        println!("{}: {}", directory, files_number);
+        println!("diretório {}: {} arquivos lidos", directory, files_number);
     }
 }
 
