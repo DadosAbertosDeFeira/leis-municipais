@@ -32,7 +32,9 @@ fn main() {
         }
     }
 
-    println!("{}", serde_json::to_string_pretty(&directories).unwrap());
+    for (directory, files_number) in &directories {
+        println!("{}: {}", directory, files_number);
+    }
 }
 
 fn is_not_hidden(entry: &DirEntry) -> bool {

@@ -9,8 +9,8 @@ mod integration {
         cmd.arg("resources/integration_tests/leis");
 
         cmd.assert()
-            .stdout(predicate::str::contains("\"orgânica\": 1"));
+            .stdout(predicate::str::contains("orgânica: 1"));
         cmd.assert()
-            .stdout(predicate::str::contains("\"complementar\": 2"));
+            .stdout(predicate::str::contains("complementar: 2"));
     }
 }
