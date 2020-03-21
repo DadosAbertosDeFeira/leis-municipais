@@ -8,10 +8,6 @@ mod parser;
 fn main() {
     let args: Vec<String> = env::args().collect();
     let folder_path = &args[1]; // TODO: error handler
-    let _lei = parse_html_to_lei(
-        "resources/unit_tests/LeisMunicipais-com-br-Lei-Complementar-122-2019.html",
-        "teste".to_string(),
-    );
 
     let walker = WalkDir::new(folder_path).into_iter();
 
@@ -27,6 +23,11 @@ fn main() {
         } else if entry.file_type().is_file()
             && entry.file_name().to_string_lossy().ends_with(".html")
         {
+            let lei = parse_html_to_lei(
+                entry.path().to_str().unwrap(), // TODO: handle error
+                current_directory.to_string(),
+            );
+            println!("{:?}", lei);
             *directories.get_mut(&current_directory).unwrap() += 1;
         }
     }
