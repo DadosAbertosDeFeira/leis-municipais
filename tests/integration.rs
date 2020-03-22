@@ -20,5 +20,12 @@ fn should_parser_folder_and_write_leis_to_file_as_json() {
         .expect("Something went wrong reading the file");
     let expected_leis: serde_json::Value = serde_json::from_str(&expected_content).unwrap();
 
-    assert_eq!(received_leis, expected_leis);
+    match (received_leis, expected_leis) {
+        (serde_json::Value::Array(received_leis), serde_json::Value::Array(expected_leis)) => {
+            received_leis.into_iter().for_each(|lei| {
+                assert!(expected_leis.contains(&lei));
+            })
+        }
+        _ => println!("unexpected type"),
+    }
 }
