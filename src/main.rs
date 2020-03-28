@@ -2,7 +2,6 @@ use crate::parser::parse_html_to_lei;
 use std::collections::HashMap;
 use std::env;
 use std::fs::File;
-use std::io::Write;
 use walkdir::{DirEntry, WalkDir};
 
 mod parser;
@@ -30,9 +29,8 @@ fn main() {
                 entry.path().to_str().unwrap(), // TODO: handle error
                 current_directory.to_string(),
             );
-            let lei_to_serialize = serde_json::to_string_pretty(&lei).unwrap();
             // TODO: não usar vector para armazenar as leis
-            leis.push(lei_to_serialize);
+            leis.push(lei);
 
             *directories.get_mut(&current_directory).unwrap() += 1;
         }
@@ -43,11 +41,8 @@ fn main() {
         println!("diretorio {}: {} arquivos lidos", directory, files_number);
     }
 
-    let data = leis.join(",");
-    let mut leis_file = File::create("leis.json").expect("Unable to create file");
-    leis_file
-        .write_all(format!("[{}]", data).as_bytes())
-        .expect("Unable to write data");
+    let leis_file = File::create("leis.json").expect("Unable to create file");
+    serde_json::to_writer(leis_file, &leis).expect("Unable to write data");
 }
 
 fn is_not_hidden(entry: &DirEntry) -> bool {
