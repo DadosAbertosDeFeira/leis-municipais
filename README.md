@@ -1,6 +1,6 @@
 # leis-municipais
 
-CLI para parsear arquivos HTML disponibilizados pelo leismunicipais.com.br e gerar um arquivo 
+CLI para parsear arquivos HTML disponibilizados pelo [Leis Municipais](leismunicipais.com.br) e gerar um único arquivo 
 em formato `json` com as mesmas.
 
 # Rodando a aplicação (se você já tem o Rust instalado)
