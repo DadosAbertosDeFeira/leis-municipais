@@ -65,7 +65,6 @@ mod test {
     use crate::parser::{parse_html_to_lei, Lei};
 
     #[test]
-    #[ignore]
     fn should_read_html_and_create_a_lei_with_documento() {
         assert_eq!(
             parse_html_to_lei("resources/unit_tests/LeisMunicipais-com-br-Lei-Complementar-122-2019.html", "test".to_string()),
