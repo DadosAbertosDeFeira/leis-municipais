@@ -40,17 +40,17 @@ pub fn parse_html_to_lei(file_name: &str, categoria: String) -> Lei {
     };
 
     Lei {
-        titulo: clean_html_to_text(captures_titulo["titulo"].to_string()),
-        resumo: clean_html_to_text(captures_resumo["resumo"].to_string()),
-        texto: clean_html_to_text(captures_texto["texto"].to_string()),
+        titulo: clean_html_to_text(&captures_titulo["titulo"]),
+        resumo: clean_html_to_text(&captures_resumo["resumo"]),
+        texto: clean_html_to_text(&captures_texto["texto"]),
         documento,
         categoria,
     }
 }
 
 // TODO: dar replace nas tags e substituir por /n
-fn clean_html_to_text(capture: String) -> String {
-    strip_html_tags(&capture).join("")
+fn clean_html_to_text(capture: &str) -> String {
+    strip_html_tags(capture).join("")
 }
 
 #[cfg(test)]

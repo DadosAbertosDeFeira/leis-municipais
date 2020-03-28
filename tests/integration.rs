@@ -8,7 +8,7 @@ fn should_parser_folder_and_write_leis_to_file_as_json() {
     cmd.arg("resources/integration_tests/leis");
 
     cmd.assert().stdout(predicate::str::contains(
-        "diretório orgânica: 1 arquivos lidos",
+        "diretorio orgânica: 1 arquivos lidos",
     ));
     cmd.assert()
         .stdout(predicate::str::contains("complementar: 2 arquivos lidos"));

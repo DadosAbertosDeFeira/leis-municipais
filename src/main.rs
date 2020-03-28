@@ -40,7 +40,7 @@ fn main() {
 
     // TODO: escrever em formato de tabela igual no futiba
     for (directory, files_number) in &directories {
-        println!("diretório {}: {} arquivos lidos", directory, files_number);
+        println!("diretorio {}: {} arquivos lidos", directory, files_number);
     }
 
     let data = leis.join(",");
@@ -54,6 +54,5 @@ fn is_not_hidden(entry: &DirEntry) -> bool {
     entry
         .file_name()
         .to_str()
-        .map(|s| entry.depth() == 0 || !s.starts_with('.'))
-        .unwrap_or(false)
+        .map_or(false, |s| entry.depth() == 0 || !s.starts_with('.'))
 }
