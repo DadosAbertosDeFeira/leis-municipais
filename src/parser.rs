@@ -1,10 +1,40 @@
 use encoding_rs::WINDOWS_1252;
 use encoding_rs_io::DecodeReaderBytesBuilder;
+use failure::Fail;
 use html_sanitizer::TagParser;
 use regex::Regex;
 use serde::Serialize;
 use std::fs::File;
 use std::io::Read;
+
+#[derive(Fail, Debug)]
+pub enum ParserError {
+    #[fail(display = "Pattern not found")]
+    PatternNotFound,
+    // #[fail(display = "Unexpected: {}", name)]
+    // PatternNotFound { name: String },
+    // #[fail(display = "Template not found")]
+    // TemplateNotFound(String, Backtrace),
+    // #[fail(display = "Handlebars template error")]
+    // HandlebarsTemplate(#[cause] handlebars::TemplateError, Backtrace),
+    // #[fail(display = "Handlebars render error")]
+    // HandlebarsRender(#[cause] handlebars::RenderError, Backtrace),
+    // #[fail(display = "Sendgrid error")]
+    // Sendgrid(#[cause] sendgrid::errors::SendgridError, Backtrace),
+    // #[fail(display = "Error sending mail: {}", _0)]
+    // SendgridResponse(http::status::StatusCode),
+}
+
+// pub trait UserOkOrUnexpected<T> {
+//     fn ok_or_unexpected(self, msg: &str) -> Result<T, UserError>;
+// }
+//
+// impl<T> UserOkOrUnexpected<T> for Option<T> {
+//     #[inline]
+//     fn ok_or_unexpected(self, msg: &str) -> Result<T, UserError> {
+//         self.ok_or_else(|| UserError::Unexpected(msg.to_string(), Backtrace::new()))
+//     }
+// }
 
 #[derive(Debug, PartialEq, Serialize)]
 pub struct Lei {
@@ -16,7 +46,7 @@ pub struct Lei {
 }
 
 // TODO: categoria without accent
-pub fn parse_html_to_lei(file_name: &str, categoria: String) -> Lei {
+pub fn parse_html_to_lei(file_name: &str, categoria: String) -> Result<Lei, ParserError> {
     let file = File::open(file_name).unwrap(); // TODO: handle error here
     let mut transcoded = DecodeReaderBytesBuilder::new()
         .encoding(Some(WINDOWS_1252))
@@ -31,7 +61,9 @@ pub fn parse_html_to_lei(file_name: &str, categoria: String) -> Lei {
     let texto_regex = Regex::new("><br><br><br>(?P<texto>(.*))<p><img").unwrap();
     let documento_regex = Regex::new("btn-default\" href=\"(?P<documento>(.*))\" title").unwrap();
 
-    let captures_titulo = titulo_regex.captures(&dest).unwrap();
+    let captures_titulo = titulo_regex
+        .captures(&dest)
+        .ok_or_else(|| ParserError::PatternNotFound)?;
     let captures_resumo = resumo_regex.captures(&dest).unwrap();
     let captures_texto = texto_regex.captures(&dest).unwrap();
     let documento = match documento_regex.captures(&dest) {
@@ -39,13 +71,13 @@ pub fn parse_html_to_lei(file_name: &str, categoria: String) -> Lei {
         None => None,
     };
 
-    Lei {
+    Ok(Lei {
         titulo: clean_html_to_text(&captures_titulo["titulo"]),
         resumo: clean_html_to_text(&captures_resumo["resumo"]),
         texto: clean_html_to_text(&captures_texto["texto"]),
         documento,
         categoria,
-    }
+    })
 }
 
 // TODO: dar replace nas tags e substituir por /n
@@ -67,7 +99,7 @@ mod test {
     #[test]
     fn should_read_html_and_create_a_lei_with_documento() {
         assert_eq!(
-            parse_html_to_lei("resources/unit_tests/LeisMunicipais-com-br-Lei-Complementar-122-2019.html", "test".to_string()),
+            parse_html_to_lei("resources/unit_tests/LeisMunicipais-com-br-Lei-Complementar-122-2019.html", "test".to_string()).unwrap(),
             Lei {
                 titulo: "LEI COMPLEMENTAR Nº 122, DE 22 DE FEVEREIRO DE 2019".to_string(),
                 resumo: "Altera as disposições da Lei Complementar Nº11/2002 que trata do modo de concessão de pensão por morte, em concordância a Lei Federal de nº 13.135 de 17/06/2015 e Nota Técnica nº 11/2015/CGNAL/DRPSP/SPPS, de 14/08/2015, e dá outras providências.".to_string(),
@@ -84,7 +116,7 @@ mod test {
             parse_html_to_lei(
                 "resources/unit_tests/LeisMunicipais-com-br-Decreto-1-1984.html",
                 "test".to_string()
-            ),
+            ).unwrap(),
             Lei {
                 titulo: "DECRETO Nº 1/84, de 05 de janeiro de 1984".to_string(),
                 resumo: "DISPÕE SOBRE O ENQUADRAMENTO DO FUNCIONALISMO DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS.".to_string(),
@@ -95,6 +127,15 @@ mod test {
         );
     }
 
+    #[test]
+    fn should_return_pattern_not_found_error_when_pattern_not_found() {
+        let result = parse_html_to_lei(
+            "resources/unit_tests/Leis_sem_titulo_comh2.html",
+            "test".to_string(),
+        );
+
+        assert_eq!(&format!("{}", &result.unwrap_err()), "Pattern not found");
+    }
+
     // fn should_read_html_and_create_a_lei_from_it_without_download_documento_in_texto_property() {
-    // turn brs into space?
 }

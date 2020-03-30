@@ -1,4 +1,4 @@
-use crate::parser::parse_html_to_lei;
+use crate::parser::{parse_html_to_lei, ParserError};
 use std::collections::HashMap;
 use std::env;
 use std::fs::File;
@@ -6,7 +6,7 @@ use walkdir::{DirEntry, WalkDir};
 
 mod parser;
 
-fn main() {
+fn main() -> Result<(), ParserError> {
     let args: Vec<String> = env::args().collect();
     let folder_path = &args[1]; // TODO: error handler
 
@@ -28,7 +28,7 @@ fn main() {
             let lei = parse_html_to_lei(
                 entry.path().to_str().unwrap(), // TODO: handle error
                 current_directory.to_string(),
-            );
+            )?;
             // TODO: não usar vector para armazenar as leis
             leis.push(lei);
 
@@ -43,6 +43,8 @@ fn main() {
 
     let leis_file = File::create("leis.json").expect("Unable to create file");
     serde_json::to_writer(leis_file, &leis).expect("Unable to write data");
+
+    Ok(())
 }
 
 fn is_not_hidden(entry: &DirEntry) -> bool {
