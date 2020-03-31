@@ -1,40 +1,11 @@
+use crate::error::Error;
 use encoding_rs::WINDOWS_1252;
 use encoding_rs_io::DecodeReaderBytesBuilder;
-use failure::Fail;
 use html_sanitizer::TagParser;
 use regex::Regex;
 use serde::Serialize;
 use std::fs::File;
 use std::io::Read;
-
-#[derive(Fail, Debug)]
-pub enum ParserError {
-    #[fail(display = "Pattern not found")]
-    PatternNotFound,
-    // #[fail(display = "Unexpected: {}", name)]
-    // PatternNotFound { name: String },
-    // #[fail(display = "Template not found")]
-    // TemplateNotFound(String, Backtrace),
-    // #[fail(display = "Handlebars template error")]
-    // HandlebarsTemplate(#[cause] handlebars::TemplateError, Backtrace),
-    // #[fail(display = "Handlebars render error")]
-    // HandlebarsRender(#[cause] handlebars::RenderError, Backtrace),
-    // #[fail(display = "Sendgrid error")]
-    // Sendgrid(#[cause] sendgrid::errors::SendgridError, Backtrace),
-    // #[fail(display = "Error sending mail: {}", _0)]
-    // SendgridResponse(http::status::StatusCode),
-}
-
-// pub trait UserOkOrUnexpected<T> {
-//     fn ok_or_unexpected(self, msg: &str) -> Result<T, UserError>;
-// }
-//
-// impl<T> UserOkOrUnexpected<T> for Option<T> {
-//     #[inline]
-//     fn ok_or_unexpected(self, msg: &str) -> Result<T, UserError> {
-//         self.ok_or_else(|| UserError::Unexpected(msg.to_string(), Backtrace::new()))
-//     }
-// }
 
 #[derive(Debug, PartialEq, Serialize)]
 pub struct Lei {
@@ -46,7 +17,7 @@ pub struct Lei {
 }
 
 // TODO: categoria without accent
-pub fn parse_html_to_lei(file_name: &str, categoria: String) -> Result<Lei, ParserError> {
+pub fn parse_html_to_lei(file_name: &str, categoria: String) -> Result<Lei, Error> {
     let file = File::open(file_name).unwrap(); // TODO: handle error here
     let mut transcoded = DecodeReaderBytesBuilder::new()
         .encoding(Some(WINDOWS_1252))
@@ -63,7 +34,7 @@ pub fn parse_html_to_lei(file_name: &str, categoria: String) -> Result<Lei, Pars
 
     let captures_titulo = titulo_regex
         .captures(&dest)
-        .ok_or_else(|| ParserError::PatternNotFound)?;
+        .ok_or_else(|| Error::PatternNotFound)?;
     let captures_resumo = resumo_regex.captures(&dest).unwrap();
     let captures_texto = texto_regex.captures(&dest).unwrap();
     let documento = match documento_regex.captures(&dest) {

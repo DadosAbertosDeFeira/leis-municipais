@@ -17,3 +17,13 @@ else
     printf "$FAILURE"
     exit $CODE
 fi
+
+printf "${PREFIX} Running rust clippy...\n"
+cargo clippy -- -D clippy::all -D clippy::pedantic -D warnings
+CODE=$?
+if [ $CODE -eq 0 ]; then
+    printf "$SUCCESS"
+else
+    printf "$FAILURE"
+    exit $CODE
+fi

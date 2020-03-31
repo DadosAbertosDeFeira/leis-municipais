@@ -16,6 +16,8 @@ em formato `json` com as mesmas.
 
 # Contribuindo
 
+Para rodar os hooks antes de algum commit: `git config core.hooksPath .githooks`
+
 * para rodar todos testes: `cargo test`
 * para rodar somente os testes unitários: `cargo test --bin ranbumfy`
 * para rodar somente os testes de integração: `cargo test --test integration`

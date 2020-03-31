@@ -1,12 +1,14 @@
-use crate::parser::{parse_html_to_lei, ParserError};
+use crate::error::Error;
+use crate::parser::parse_html_to_lei;
 use std::collections::HashMap;
 use std::env;
 use std::fs::File;
 use walkdir::{DirEntry, WalkDir};
 
+mod error;
 mod parser;
 
-fn main() -> Result<(), ParserError> {
+fn main() -> Result<(), Error> {
     let args: Vec<String> = env::args().collect();
     let folder_path = &args[1]; // TODO: error handler
 
