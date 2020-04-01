@@ -2,8 +2,8 @@ use failure::Fail;
 
 #[derive(Fail, Debug)]
 pub enum Error {
-    #[fail(display = "Pattern not found")]
-    PatternNotFound,
+    #[fail(display = "{} not found in file {}", _0, _1)]
+    PatternNotFound(String, String),
     // #[fail(display = "Unexpected: {}", name)]
     // PatternNotFound { name: String },
     // #[fail(display = "Template not found")]
@@ -19,11 +19,11 @@ pub enum Error {
 }
 
 pub trait CapturedOkOrUnexpected<T> {
-    fn ok_or_unexpected(self, msg: &str) -> Result<T, Error>;
+    fn ok_or_unexpected(self, pattern: &str, file: &str) -> Result<T, Error>;
 }
 
 impl<T> CapturedOkOrUnexpected<T> for Option<T> {
-    fn ok_or_unexpected(self, _msg: &str) -> Result<T, Error> {
-        self.ok_or_else(|| Error::PatternNotFound)
+    fn ok_or_unexpected(self, pattern: &str, file: &str) -> Result<T, Error> {
+        self.ok_or_else(|| Error::PatternNotFound(pattern.to_string(), file.to_string()))
     }
 }

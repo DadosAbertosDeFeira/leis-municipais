@@ -32,10 +32,9 @@ pub fn parse_html_to_lei(file_name: &str, categoria: String) -> Result<Lei, Erro
     let texto_regex = Regex::new("><br><br><br>(?P<texto>(.*))<p><img").unwrap();
     let documento_regex = Regex::new("btn-default\" href=\"(?P<documento>(.*))\" title").unwrap();
 
-    // let captures_titulo = titulo_regex
-    //     .captures(&dest)
-    //     .ok_or_else(|| Error::PatternNotFound)?;
-    let captures_titulo = titulo_regex.captures(&dest).ok_or_unexpected("test")?;
+    let captures_titulo = titulo_regex
+        .captures(&dest)
+        .ok_or_unexpected("titulo", file_name)?;
     let captures_resumo = resumo_regex.captures(&dest).unwrap();
     let captures_texto = texto_regex.captures(&dest).unwrap();
     let documento = match documento_regex.captures(&dest) {
@@ -106,7 +105,10 @@ mod test {
             "test".to_string(),
         );
 
-        assert_eq!(&format!("{}", &result.unwrap_err()), "Pattern not found");
+        assert_eq!(
+            &format!("{}", &result.unwrap_err()),
+            "titulo not found in file resources/unit_tests/Leis_sem_titulo_comh2.html"
+        );
     }
 
     // fn should_read_html_and_create_a_lei_from_it_without_download_documento_in_texto_property() {
