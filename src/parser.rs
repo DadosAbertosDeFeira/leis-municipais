@@ -37,10 +37,9 @@ pub fn parse_html_to_lei(file_name: &str, categoria: String) -> Result<Lei, Erro
         .ok_or_unexpected("titulo", file_name)?;
     let captures_resumo = resumo_regex.captures(&dest).unwrap();
     let captures_texto = texto_regex.captures(&dest).unwrap();
-    let documento = match documento_regex.captures(&dest) {
-        Some(captures_documento) => Some(captures_documento["documento"].to_string()),
-        None => None,
-    };
+    let documento = documento_regex
+        .captures(&dest)
+        .map(|captures_documento| captures_documento["documento"].to_string());
 
     Ok(Lei {
         titulo: clean_html_to_text(&captures_titulo["titulo"]),
@@ -99,7 +98,7 @@ mod test {
     }
 
     #[test]
-    fn should_return_pattern_not_found_error_when_pattern_not_found() {
+    fn should_return_pattern_not_found_error_when_titulo_pattern_not_found() {
         let result = parse_html_to_lei(
             "resources/unit_tests/Leis_sem_titulo_comh2.html",
             "test".to_string(),
