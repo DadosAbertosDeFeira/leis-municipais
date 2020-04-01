@@ -18,13 +18,12 @@ pub enum Error {
     // SendgridResponse(http::status::StatusCode),
 }
 
-// pub trait UserOkOrUnexpected<T> {
-//     fn ok_or_unexpected(self, msg: &str) -> Result<T, UserError>;
-// }
-//
-// impl<T> UserOkOrUnexpected<T> for Option<T> {
-//     #[inline]
-//     fn ok_or_unexpected(self, msg: &str) -> Result<T, UserError> {
-//         self.ok_or_else(|| UserError::Unexpected(msg.to_string(), Backtrace::new()))
-//     }
-// }
+pub trait CapturedOkOrUnexpected<T> {
+    fn ok_or_unexpected(self, msg: &str) -> Result<T, Error>;
+}
+
+impl<T> CapturedOkOrUnexpected<T> for Option<T> {
+    fn ok_or_unexpected(self, _msg: &str) -> Result<T, Error> {
+        self.ok_or_else(|| Error::PatternNotFound)
+    }
+}

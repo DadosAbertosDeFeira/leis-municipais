@@ -1,4 +1,4 @@
-use crate::error::Error;
+use crate::error::{CapturedOkOrUnexpected, Error};
 use encoding_rs::WINDOWS_1252;
 use encoding_rs_io::DecodeReaderBytesBuilder;
 use html_sanitizer::TagParser;
@@ -32,9 +32,10 @@ pub fn parse_html_to_lei(file_name: &str, categoria: String) -> Result<Lei, Erro
     let texto_regex = Regex::new("><br><br><br>(?P<texto>(.*))<p><img").unwrap();
     let documento_regex = Regex::new("btn-default\" href=\"(?P<documento>(.*))\" title").unwrap();
 
-    let captures_titulo = titulo_regex
-        .captures(&dest)
-        .ok_or_else(|| Error::PatternNotFound)?;
+    // let captures_titulo = titulo_regex
+    //     .captures(&dest)
+    //     .ok_or_else(|| Error::PatternNotFound)?;
+    let captures_titulo = titulo_regex.captures(&dest).ok_or_unexpected("test")?;
     let captures_resumo = resumo_regex.captures(&dest).unwrap();
     let captures_texto = texto_regex.captures(&dest).unwrap();
     let documento = match documento_regex.captures(&dest) {
