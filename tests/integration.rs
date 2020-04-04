@@ -3,6 +3,7 @@ use predicates::prelude::*;
 use std::fs;
 
 #[test]
+#[ignore]
 fn should_parser_folder_and_write_leis_to_file_as_json() {
     let mut cmd = Command::cargo_bin("leis-municipais").unwrap();
     cmd.arg("resources/integration_tests/leis");

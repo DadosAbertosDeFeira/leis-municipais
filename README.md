@@ -1,3 +1,5 @@
+![Continuous integration](https://github.com/DadosAbertosDeFeira/leis-municipais/workflows/Continuous%20integration/badge.svg)
+
 # leis-municipais
 
 CLI para parsear arquivos HTML disponibilizados pelo [Leis Municipais](leismunicipais.com.br) e gerar um único arquivo 
