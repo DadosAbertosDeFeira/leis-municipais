@@ -35,8 +35,12 @@ pub fn parse_html_to_lei(file_name: &str, categoria: String) -> Result<Lei, Erro
     let captures_titulo = titulo_regex
         .captures(&dest)
         .ok_or_unexpected("titulo", file_name)?;
-    let captures_resumo = resumo_regex.captures(&dest).unwrap();
-    let captures_texto = texto_regex.captures(&dest).unwrap();
+    let captures_resumo = resumo_regex
+        .captures(&dest)
+        .ok_or_unexpected("resumo", file_name)?;
+    let captures_texto = texto_regex
+        .captures(&dest)
+        .ok_or_unexpected("texto", file_name)?;
     let documento = documento_regex
         .captures(&dest)
         .map(|captures_documento| captures_documento["documento"].to_string());
@@ -107,6 +111,32 @@ mod test {
         assert_eq!(
             &format!("{}", &result.unwrap_err()),
             "titulo not found in file resources/unit_tests/Leis_sem_titulo_comh2.html"
+        );
+    }
+
+    #[test]
+    fn should_return_pattern_not_found_error_when_resumo_pattern_not_found() {
+        let result = parse_html_to_lei(
+            "resources/unit_tests/Leis_sem_resumo.html",
+            "test".to_string(),
+        );
+
+        assert_eq!(
+            &format!("{}", &result.unwrap_err()),
+            "resumo not found in file resources/unit_tests/Leis_sem_resumo.html"
+        );
+    }
+
+    #[test]
+    fn should_return_pattern_not_found_error_when_texto_pattern_not_found() {
+        let result = parse_html_to_lei(
+            "resources/unit_tests/Leis_sem_texto.html",
+            "test".to_string(),
+        );
+
+        assert_eq!(
+            &format!("{}", &result.unwrap_err()),
+            "texto not found in file resources/unit_tests/Leis_sem_texto.html"
         );
     }
 
