@@ -21,11 +21,15 @@ fn main() -> Result<(), Error> {
 
     let (directories, leis) = parse_on_directory(directory_path);
 
+    let total_files = directories
+        .iter()
+        .map(|(_, folder)| folder.total)
+        .sum::<i32>();
+    println!("\nTotal de arquivos: {}", total_files);
     print_report(&directories);
     write_json_file(&leis);
 
-    println!("\nTotal de arquivos: 1");
-    println!("Tempo de execução: {} segundos", now.elapsed().as_secs());
+    println!("\nTempo de execução: {} segundos", now.elapsed().as_secs());
     Ok(())
 }
 
