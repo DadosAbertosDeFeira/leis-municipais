@@ -2,6 +2,18 @@ use crate::parser::{parse_html_to_lei, Lei};
 use std::collections::HashMap;
 use walkdir::{DirEntry, WalkDir};
 
+macro_rules! unwrap_or_print_err {
+    ($res:expr) => {
+        match $res {
+            Ok(val) => val,
+            Err(e) => {
+                eprintln!("{}", e);
+                continue;
+            }
+        }
+    };
+}
+
 pub struct Folder {
     pub total: i32,
     pub parsed: i32,
@@ -29,14 +41,9 @@ pub fn parse_on_directory(directory_path: &str) -> (HashMap<String, Folder>, Vec
         } else if is_html_file(&entry) {
             let file_path = entry.path().to_str().expect("file path not found");
             directories.get_mut(&current_folder).unwrap().total += 1;
-            // let lei = skip_fail!(parse_html_to_lei(file_path, current_folder.to_string()));
-            let lei = match parse_html_to_lei(file_path, current_folder.to_string()) {
-                Ok(lei) => lei,
-                Err(error) => {
-                    eprintln!("{}", error);
-                    continue;
-                }
-            };
+
+            let lei =
+                unwrap_or_print_err!(parse_html_to_lei(file_path, current_folder.to_string()));
 
             // TODO: não usar vector para armazenar as leis
             leis.push(lei);
