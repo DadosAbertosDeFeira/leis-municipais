@@ -25,7 +25,7 @@ fn main() -> Result<(), Error> {
     write_json_file(&leis);
 
     println!("\nTotal de arquivos: 1");
-    println!("Tempo de execucão: {} segundos", now.elapsed().as_secs());
+    println!("Tempo de execução: {} segundos", now.elapsed().as_secs());
     Ok(())
 }
 
@@ -47,6 +47,6 @@ fn print_report(directories: &HashMap<String, Folder>) {
         ]);
     }
 
-    println!("Resumo da execução:");
+    println!("\nResumo da execução:");
     table.printstd();
 }

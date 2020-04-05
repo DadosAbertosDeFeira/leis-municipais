@@ -34,13 +34,13 @@ pub fn parse_html_to_lei(file_name: &str, categoria: String) -> Result<Lei, Erro
 
     let captures_titulo = titulo_regex
         .captures(&dest)
-        .ok_or_unexpected("titulo", file_name)?;
+        .ok_or_unexpected("Título", file_name)?;
     let captures_resumo = resumo_regex
         .captures(&dest)
-        .ok_or_unexpected("resumo", file_name)?;
+        .ok_or_unexpected("Resumo", file_name)?;
     let captures_texto = texto_regex
         .captures(&dest)
-        .ok_or_unexpected("texto", file_name)?;
+        .ok_or_unexpected("Texto", file_name)?;
     let documento = documento_regex
         .captures(&dest)
         .map(|captures_documento| captures_documento["documento"].to_string());
@@ -110,7 +110,7 @@ mod test {
 
         assert_eq!(
             &format!("{}", &result.unwrap_err()),
-            "titulo not found in file resources/unit_tests/Leis_sem_titulo_comh2.html"
+            "Título não encontrado no arquivo resources/unit_tests/Leis_sem_titulo_comh2.html"
         );
     }
 
@@ -123,7 +123,7 @@ mod test {
 
         assert_eq!(
             &format!("{}", &result.unwrap_err()),
-            "resumo not found in file resources/unit_tests/Leis_sem_resumo.html"
+            "Resumo não encontrado no arquivo resources/unit_tests/Leis_sem_resumo.html"
         );
     }
 
@@ -136,7 +136,7 @@ mod test {
 
         assert_eq!(
             &format!("{}", &result.unwrap_err()),
-            "texto not found in file resources/unit_tests/Leis_sem_texto.html"
+            "Texto não encontrado no arquivo resources/unit_tests/Leis_sem_texto.html"
         );
     }
 
