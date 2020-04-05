@@ -32,3 +32,13 @@ fn main() -> Result<(), Error> {
     println!("Tempo de execucao: {} segundos", now.elapsed().as_secs());
     Ok(())
 }
+
+// diretorio Lei Promulgada: total 346, 345 processados, 1 com erros
+// diretorio Emendas à Lei Orgânica: total 27, 27 processados, 0 com erros
+// diretorio Regimento interno: total 1, 1 processados, 0 com erros
+// diretorio Leis Ordinárias: total 3762, 3367 processados, 395 com erros
+// diretorio Lei Orgânica: total 1, 0 processados, 1 com erros
+// diretorio Resoluções: total 525, 523 processados, 2 com erros
+// diretorio Leis Complementares: total 128, 124 processados, 4 com erros
+// diretorio Decretos Legislativos: total 1431, 1428 processados, 3 com erros
+// diretorio Decretos: total 218, 218 processados, 0 com erros

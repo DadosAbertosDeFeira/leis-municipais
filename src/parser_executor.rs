@@ -28,6 +28,7 @@ pub fn parse_on_directory(directory_path: &str) -> (HashMap<String, Folder>, Vec
             );
         } else if is_html_file(&entry) {
             let file_path = entry.path().to_str().expect("file path not found");
+            directories.get_mut(&current_folder).unwrap().total += 1;
             // let lei = skip_fail!(parse_html_to_lei(file_path, current_folder.to_string()));
             let lei = match parse_html_to_lei(file_path, current_folder.to_string()) {
                 Ok(lei) => lei,
@@ -40,7 +41,6 @@ pub fn parse_on_directory(directory_path: &str) -> (HashMap<String, Folder>, Vec
             // TODO: não usar vector para armazenar as leis
             leis.push(lei);
             directories.get_mut(&current_folder).unwrap().parsed += 1;
-            directories.get_mut(&current_folder).unwrap().total += 1;
         }
     }
     (directories, leis)
