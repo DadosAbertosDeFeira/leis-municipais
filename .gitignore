@@ -1,5 +1,5 @@
 /target
 **/*.rs.bk
 .idea
-.iml
+leis-municipais.iml
 /leis.json
