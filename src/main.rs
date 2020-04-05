@@ -1,6 +1,10 @@
+#![allow(clippy::non_ascii_literal)]
+#[macro_use]
+extern crate prettytable;
 use crate::error::Error;
 use crate::parser::Lei;
 use crate::parser_executor::{parse_on_directory, Folder};
+use prettytable::Table;
 use std::collections::HashMap;
 use std::env;
 use std::fs::File;
@@ -20,7 +24,8 @@ fn main() -> Result<(), Error> {
     print_report(&directories);
     write_json_file(&leis);
 
-    println!("Tempo de execucao: {} segundos", now.elapsed().as_secs());
+    println!("\nTotal de arquivos: 1");
+    println!("Tempo de execucão: {} segundos", now.elapsed().as_secs());
     Ok(())
 }
 
@@ -30,23 +35,18 @@ fn write_json_file(leis: &[Lei]) {
 }
 
 fn print_report(directories: &HashMap<String, Folder>) {
+    let mut table = Table::new();
+    table.set_titles(row!["Diretório", "Total", "Parseados", "Com erros",]);
+
     for (directory, folder) in directories {
-        println!(
-            "diretorio {}: total {}, {} processados, {} com erros",
+        table.add_row(row![
             directory,
             folder.total,
             folder.parsed,
             (folder.total - folder.parsed)
-        );
+        ]);
     }
-}
 
-// diretorio Lei Promulgada: total 346, 345 processados, 1 com erros
-// diretorio Emendas à Lei Orgânica: total 27, 27 processados, 0 com erros
-// diretorio Regimento interno: total 1, 1 processados, 0 com erros
-// diretorio Leis Ordinárias: total 3762, 3367 processados, 395 com erros
-// diretorio Lei Orgânica: total 1, 0 processados, 1 com erros
-// diretorio Resoluções: total 525, 523 processados, 2 com erros
-// diretorio Leis Complementares: total 128, 124 processados, 4 com erros
-// diretorio Decretos Legislativos: total 1431, 1428 processados, 3 com erros
-// diretorio Decretos: total 218, 218 processados, 0 com erros
+    println!("Resumo da execução:");
+    table.printstd();
+}
