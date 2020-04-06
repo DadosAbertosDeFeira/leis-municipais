@@ -16,15 +16,16 @@ pub struct Lei {
     documento: Option<String>,
 }
 
-// TODO: categoria without accent
 pub fn parse_html_to_lei(file_name: &str, categoria: String) -> Result<Lei, Error> {
-    let file = File::open(file_name).unwrap(); // TODO: handle error here
+    let file = File::open(file_name).expect("Arquivo que estava na pasta não foi encontrado");
     let mut transcoded = DecodeReaderBytesBuilder::new()
         .encoding(Some(WINDOWS_1252))
         .build(file);
 
     let mut dest = String::new();
-    transcoded.read_to_string(&mut dest).unwrap(); // TODO: handle error here
+    transcoded
+        .read_to_string(&mut dest)
+        .expect("O conteúdo do arquivo não é UTF-8 válido");
 
     // TODO: try to put together all regex
     let titulo_regex = Regex::new("<h2>(?P<titulo>(.*))</h2>").unwrap();
@@ -54,7 +55,6 @@ pub fn parse_html_to_lei(file_name: &str, categoria: String) -> Result<Lei, Erro
     })
 }
 
-// TODO: dar replace nas tags e substituir por /n
 fn clean_html_to_text(capture: &str) -> String {
     let mut tag_parser = TagParser::new(&mut capture.as_bytes());
     tag_parser.walk(|tag| {
