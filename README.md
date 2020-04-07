@@ -1,3 +1,5 @@
+![Continuous integration](https://github.com/DadosAbertosDeFeira/leis-municipais/workflows/Continuous%20integration/badge.svg)
+
 # leis-municipais
 
 CLI para parsear arquivos HTML disponibilizados pelo [Leis Municipais](leismunicipais.com.br) e gerar um único arquivo 
@@ -15,6 +17,8 @@ em formato `json` com as mesmas.
 * `cargo run <absolute_path_to_the_folder>` (e cria um arquivo `leis.json` na pasta raíz do projeto)
 
 # Contribuindo
+
+Para rodar os hooks antes de algum commit: `git config core.hooksPath .githooks`
 
 * para rodar todos testes: `cargo test`
 * para rodar somente os testes unitários: `cargo test --bin ranbumfy`

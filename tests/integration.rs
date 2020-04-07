@@ -7,11 +7,8 @@ fn should_parser_folder_and_write_leis_to_file_as_json() {
     let mut cmd = Command::cargo_bin("leis-municipais").unwrap();
     cmd.arg("resources/integration_tests/leis");
 
-    cmd.assert().stdout(predicate::str::contains(
-        "diretorio orgânica: 1 arquivos lidos",
-    ));
     cmd.assert()
-        .stdout(predicate::str::contains("complementar: 2 arquivos lidos"));
+        .stdout(predicate::str::contains("complementar | 2"));
 
     let actual_content =
         fs::read_to_string("leis.json").expect("Something went wrong reading the file");

@@ -1,0 +1,29 @@
+#!/bin/sh
+
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+NC='\033[0m' # No Color
+
+PREFIX="${GREEN}[PRECOMMIT]${NC}"
+SUCCESS="${PREFIX} ${GREEN}Success!${NC}\n"
+FAILURE="${PREFIX} ${RED}Failure!${NC}\n"
+
+printf "${PREFIX} Checking Rust formatting...\n"
+cargo fmt -- --check
+CODE=$?
+if [ $CODE -eq 0 ]; then
+    printf "$SUCCESS"
+else
+    printf "$FAILURE"
+    exit $CODE
+fi
+
+printf "${PREFIX} Running rust clippy...\n"
+cargo clippy -- -D clippy::all -D clippy::pedantic -D warnings
+CODE=$?
+if [ $CODE -eq 0 ]; then
+    printf "$SUCCESS"
+else
+    printf "$FAILURE"
+    exit $CODE
+fi

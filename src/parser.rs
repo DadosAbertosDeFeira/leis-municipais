@@ -1,3 +1,4 @@
+use crate::error::{CapturedOkOrUnexpected, Error};
 use encoding_rs::WINDOWS_1252;
 use encoding_rs_io::DecodeReaderBytesBuilder;
 use html_sanitizer::TagParser;
@@ -15,15 +16,16 @@ pub struct Lei {
     documento: Option<String>,
 }
 
-// TODO: categoria without accent
-pub fn parse_html_to_lei(file_name: &str, categoria: String) -> Lei {
-    let file = File::open(file_name).unwrap(); // TODO: handle error here
+pub fn parse_html_to_lei(file_name: &str, categoria: String) -> Result<Lei, Error> {
+    let file = File::open(file_name).expect("Arquivo que estava na pasta não foi encontrado");
     let mut transcoded = DecodeReaderBytesBuilder::new()
         .encoding(Some(WINDOWS_1252))
         .build(file);
 
     let mut dest = String::new();
-    transcoded.read_to_string(&mut dest).unwrap(); // TODO: handle error here
+    transcoded
+        .read_to_string(&mut dest)
+        .expect("O conteúdo do arquivo não é UTF-8 válido");
 
     // TODO: try to put together all regex
     let titulo_regex = Regex::new("<h2>(?P<titulo>(.*))</h2>").unwrap();
@@ -31,24 +33,28 @@ pub fn parse_html_to_lei(file_name: &str, categoria: String) -> Lei {
     let texto_regex = Regex::new("><br><br><br>(?P<texto>(.*))<p><img").unwrap();
     let documento_regex = Regex::new("btn-default\" href=\"(?P<documento>(.*))\" title").unwrap();
 
-    let captures_titulo = titulo_regex.captures(&dest).unwrap();
-    let captures_resumo = resumo_regex.captures(&dest).unwrap();
-    let captures_texto = texto_regex.captures(&dest).unwrap();
-    let documento = match documento_regex.captures(&dest) {
-        Some(captures_documento) => Some(captures_documento["documento"].to_string()),
-        None => None,
-    };
+    let captures_titulo = titulo_regex
+        .captures(&dest)
+        .ok_or_unexpected("Título", file_name)?;
+    let captures_resumo = resumo_regex
+        .captures(&dest)
+        .ok_or_unexpected("Resumo", file_name)?;
+    let captures_texto = texto_regex
+        .captures(&dest)
+        .ok_or_unexpected("Texto", file_name)?;
+    let documento = documento_regex
+        .captures(&dest)
+        .map(|captures_documento| captures_documento["documento"].to_string());
 
-    Lei {
+    Ok(Lei {
         titulo: clean_html_to_text(&captures_titulo["titulo"]),
         resumo: clean_html_to_text(&captures_resumo["resumo"]),
         texto: clean_html_to_text(&captures_texto["texto"]),
         documento,
         categoria,
-    }
+    })
 }
 
-// TODO: dar replace nas tags e substituir por /n
 fn clean_html_to_text(capture: &str) -> String {
     let mut tag_parser = TagParser::new(&mut capture.as_bytes());
     tag_parser.walk(|tag| {
@@ -67,7 +73,7 @@ mod test {
     #[test]
     fn should_read_html_and_create_a_lei_with_documento() {
         assert_eq!(
-            parse_html_to_lei("resources/unit_tests/LeisMunicipais-com-br-Lei-Complementar-122-2019.html", "test".to_string()),
+            parse_html_to_lei("resources/unit_tests/LeisMunicipais-com-br-Lei-Complementar-122-2019.html", "test".to_string()).unwrap(),
             Lei {
                 titulo: "LEI COMPLEMENTAR Nº 122, DE 22 DE FEVEREIRO DE 2019".to_string(),
                 resumo: "Altera as disposições da Lei Complementar Nº11/2002 que trata do modo de concessão de pensão por morte, em concordância a Lei Federal de nº 13.135 de 17/06/2015 e Nota Técnica nº 11/2015/CGNAL/DRPSP/SPPS, de 14/08/2015, e dá outras providências.".to_string(),
@@ -84,7 +90,7 @@ mod test {
             parse_html_to_lei(
                 "resources/unit_tests/LeisMunicipais-com-br-Decreto-1-1984.html",
                 "test".to_string()
-            ),
+            ).unwrap(),
             Lei {
                 titulo: "DECRETO Nº 1/84, de 05 de janeiro de 1984".to_string(),
                 resumo: "DISPÕE SOBRE O ENQUADRAMENTO DO FUNCIONALISMO DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS.".to_string(),
@@ -95,6 +101,44 @@ mod test {
         );
     }
 
+    #[test]
+    fn should_return_pattern_not_found_error_when_titulo_pattern_not_found() {
+        let result = parse_html_to_lei(
+            "resources/unit_tests/Leis_sem_titulo_comh2.html",
+            "test".to_string(),
+        );
+
+        assert_eq!(
+            &format!("{}", &result.unwrap_err()),
+            "Título não encontrado no arquivo resources/unit_tests/Leis_sem_titulo_comh2.html"
+        );
+    }
+
+    #[test]
+    fn should_return_pattern_not_found_error_when_resumo_pattern_not_found() {
+        let result = parse_html_to_lei(
+            "resources/unit_tests/Leis_sem_resumo.html",
+            "test".to_string(),
+        );
+
+        assert_eq!(
+            &format!("{}", &result.unwrap_err()),
+            "Resumo não encontrado no arquivo resources/unit_tests/Leis_sem_resumo.html"
+        );
+    }
+
+    #[test]
+    fn should_return_pattern_not_found_error_when_texto_pattern_not_found() {
+        let result = parse_html_to_lei(
+            "resources/unit_tests/Leis_sem_texto.html",
+            "test".to_string(),
+        );
+
+        assert_eq!(
+            &format!("{}", &result.unwrap_err()),
+            "Texto não encontrado no arquivo resources/unit_tests/Leis_sem_texto.html"
+        );
+    }
+
     // fn should_read_html_and_create_a_lei_from_it_without_download_documento_in_texto_property() {
-    // turn brs into space?
 }

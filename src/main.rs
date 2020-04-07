@@ -1,53 +1,56 @@
-use crate::parser::parse_html_to_lei;
+#![allow(clippy::non_ascii_literal)]
+#[macro_use]
+extern crate prettytable;
+use crate::error::Error;
+use crate::parser::Lei;
+use crate::parser_executor::{parse_on_directory, Folder};
+use prettytable::Table;
 use std::collections::HashMap;
 use std::env;
 use std::fs::File;
-use walkdir::{DirEntry, WalkDir};
+use std::time::Instant;
 
+mod error;
 mod parser;
+mod parser_executor;
 
-fn main() {
+fn main() -> Result<(), Error> {
+    let now = Instant::now();
     let args: Vec<String> = env::args().collect();
-    let folder_path = &args[1]; // TODO: error handler
+    let directory_path = &args[1]; // TODO: error handler
 
-    let walker = WalkDir::new(folder_path).into_iter();
+    let (directories, leis) = parse_on_directory(directory_path);
 
-    let mut directories = HashMap::new();
-    let mut current_directory = String::new();
-    let mut leis = Vec::new();
-    for entry in walker.filter_entry(|entry| is_not_hidden(entry)).skip(1) {
-        let entry = entry.unwrap();
+    let total_files = directories
+        .iter()
+        .map(|(_, folder)| folder.total)
+        .sum::<i32>();
+    println!("\nTotal de arquivos: {}", total_files);
+    print_report(&directories);
+    write_json_file(&leis);
 
-        if entry.file_type().is_dir() {
-            current_directory = entry.file_name().to_os_string().into_string().unwrap();
+    println!("\nTempo de execução: {} segundos", now.elapsed().as_secs());
+    Ok(())
+}
 
-            directories.insert(current_directory.clone(), 0);
-        } else if entry.file_type().is_file()
-            && entry.file_name().to_string_lossy().ends_with(".html")
-        {
-            let lei = parse_html_to_lei(
-                entry.path().to_str().unwrap(), // TODO: handle error
-                current_directory.to_string(),
-            );
-            // TODO: não usar vector para armazenar as leis
-            leis.push(lei);
-
-            *directories.get_mut(&current_directory).unwrap() += 1;
-        }
-    }
-
-    // TODO: escrever em formato de tabela igual no futiba
-    for (directory, files_number) in &directories {
-        println!("diretorio {}: {} arquivos lidos", directory, files_number);
-    }
-
+fn write_json_file(leis: &[Lei]) {
     let leis_file = File::create("leis.json").expect("Unable to create file");
     serde_json::to_writer(leis_file, &leis).expect("Unable to write data");
 }
 
-fn is_not_hidden(entry: &DirEntry) -> bool {
-    entry
-        .file_name()
-        .to_str()
-        .map_or(false, |s| entry.depth() == 0 || !s.starts_with('.'))
+fn print_report(directories: &HashMap<String, Folder>) {
+    let mut table = Table::new();
+    table.set_titles(row!["Diretório", "Total", "Parseados", "Com erros",]);
+
+    for (directory, folder) in directories {
+        table.add_row(row![
+            directory,
+            folder.total,
+            folder.parsed,
+            (folder.total - folder.parsed)
+        ]);
+    }
+
+    println!("\nResumo da execução:");
+    table.printstd();
 }
