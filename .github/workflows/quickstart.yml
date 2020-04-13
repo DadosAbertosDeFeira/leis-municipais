@@ -62,3 +62,21 @@ jobs:
         with:
           command: clippy
           args: -- -D clippy::all -D clippy::pedantic -D warnings
+
+  release:
+    name: Build and Release
+    if: github.ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Build project
+        run: cargo build --release --target x86_64-unknown-linux-musl --locked
+      - name: Create release and upload binary
+          uses: svenstaro/upload-release-action@v1-release
+          with:
+            repo_token: ${{ secrets.GITHUB_TOKEN }}
+            file: target/release/leis-municipais
+            asset_name: leis-municipais
+            tag: ${{ github.ref }}
+            overwrite: true
