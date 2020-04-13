@@ -16,6 +16,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Bump version and push tag
+        id: bump_version
         uses: anothrNick/github-tag-action@1.17.2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -25,3 +26,4 @@ jobs:
         with:
           token: ${{ secrets.REPO_ACCESS_TOKEN }}
           event-type: tag-created
+          client-payload: '{"new_version": "${{ steps.bump_version.outputs.new_tag }}"}'
