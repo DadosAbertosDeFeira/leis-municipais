@@ -1,9 +1,8 @@
-on:
-  push:
-    tags:
-      - '*'
-
 name: Build, bump tag version and release
+
+on:
+  repository_dispatch:
+    types: [tag-created]
 
 jobs:
   release:
