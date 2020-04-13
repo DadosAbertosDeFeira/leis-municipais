@@ -40,10 +40,13 @@ jobs:
         run: cargo build --release --locked
       - name: Make release executable
         run: chmod +x target/release/${{ matrix.artifact_name }}
+      - name: Get tag version
+        id: get_version
+        run: echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
       - name: Create release and upload binary
         uses: svenstaro/upload-release-action@v1-release
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: target/release/${{ matrix.artifact_name }}
           asset_name: ${{ matrix.asset_name }}
-          tag: ${GITHUB_REF##*/}
+          tag: ${{ steps.get_version.outputs.VERSION }}
