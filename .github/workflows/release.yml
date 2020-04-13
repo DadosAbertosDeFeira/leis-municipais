@@ -20,7 +20,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           WITH_V: true
-        id: bump_version
 
   release:
     name: Build and Release
@@ -41,17 +40,10 @@ jobs:
         run: cargo build --release --locked
       - name: Make release executable
         run: chmod +x target/release/${{ matrix.artifact_name }}
-#      - name: Bump version and push tag
-#        if: runner.os == 'Linux'
-#        uses: anothrNick/github-tag-action@1.17.2
-#        env:
-#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#          WITH_V: true
-#        id: bump_version
       - name: Create release and upload binary
         uses: svenstaro/upload-release-action@v1-release
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: target/release/${{ matrix.artifact_name }}
           asset_name: ${{ matrix.asset_name }}
-          tag: ${{ steps.bump_version.outputs.new_tag }}
+          tag: ${GITHUB_REF##*/}
