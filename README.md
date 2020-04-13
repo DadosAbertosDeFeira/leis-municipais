@@ -2,15 +2,15 @@
 
 # leis-municipais 📖
 
-CLI para parsear arquivos HTML disponibilizados pelo [Leis Municipais](leismunicipais.com.br)
+CLI para parsear arquivos HTML disponibilizados pelo [Leis Municipais](https://www.leismunicipais.com.br)
 e gerar um único arquivo em formato `json` com as mesmas.
 
-**Importante**: o site [Leis Municipais](leismunicipais.com.br) nos forneceu os arquivos das
+**Importante**: o site [Leis Municipais](https://www.leismunicipais.com.br) nos forneceu os arquivos das
 leis da cidade de Feira de Santana após um pedido feito a Câmara de Vereadores da cidade.
 A casa solicitou ao site e eles enviaram um arquivo compactado com vários HTMLs. Essa CLI
 parseia essas informações e disponibiliza em um JSON.
 
-Para ter acesso ao arquivo do [Leis Municipais](leismunicipais.com.br), você deve solicitar
+Para ter acesso ao arquivo do [Leis Municipais](https://www.leismunicipais.com.br), você deve solicitar
 a Câmara da sua cidade via Lei de Acesso à Informação. O arquivo com os HTMLs da cidade de Feira
 de Santana pode ser encontrado [aqui](https://drive.google.com/open?id=1TRFx3bMMT7y5IDQ_DkgMVXHG_MLva133).
 
