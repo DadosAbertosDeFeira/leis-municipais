@@ -1,4 +1,7 @@
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - !master
 
 name: Continuous integration
 
@@ -62,31 +65,3 @@ jobs:
         with:
           command: clippy
           args: -- -D clippy::all -D clippy::pedantic -D warnings
-
-  release:
-    name: Build and Release
-    if: github.ref == 'refs/heads/master'
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        include:
-          - os: ubuntu-latest
-            artifact_name: leis-municipais
-            asset_name: leis-municipais-linux-amd64
-          - os: macos-latest
-            artifact_name: leis-municipais
-            asset_name: mything-macos-amd64
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      - name: Build project
-        run: cargo build --release --locked
-#      - name: Make release executable
-#        run: chmod +x target/release/${{ matrix.artifact_name }}
-      - name: Create release and upload binary
-        uses: svenstaro/upload-release-action@v1-release
-        with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: target/release/${{ matrix.artifact_name }}
-          asset_name: ${{ matrix.asset_name }}
-          tag: ${{ github.ref }}
