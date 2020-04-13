@@ -10,9 +10,11 @@ name: Build, bump tag version and release
 
 jobs:
   bump_version:
-    name: Rustfmt
+    name: Update version and create tag
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
       - name: Bump version and push tag
         uses: anothrNick/github-tag-action@1.17.2
         env:
