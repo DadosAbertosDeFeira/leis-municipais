@@ -12,11 +12,11 @@ parseia essas informações e disponibiliza em um JSON.
 
 Para ter acesso ao arquivo do [Leis Municipais](leismunicipais.com.br), você deve solicitar
 a Câmara da sua cidade via Lei de Acesso à Informação. O arquivo com os HTMLs da cidade de Feira
-de Santana pode ser encontrado [aqui]().
+de Santana pode ser encontrado [aqui](https://drive.google.com/open?id=1TRFx3bMMT7y5IDQ_DkgMVXHG_MLva133).
 
 ## Como executar
 
-Você encontrará a última versão da CLI na aba de _releases_ desse projeto.
+Você encontrará a última versão da CLI na aba de [_releases_](https://github.com/DadosAbertosDeFeira/leis-municipais/releases) desse projeto.
 Temos versões para Linux e MacOS. Faça o _download_ da última versão e
 **dê permissões para o executável**:
 
