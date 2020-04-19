@@ -1,5 +1,4 @@
-name: Build, bump tag version and release
-
+name: Create new tag
 on:
   push:
     branches:
