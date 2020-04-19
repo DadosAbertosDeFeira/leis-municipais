@@ -8,7 +8,7 @@ e gerar um único arquivo em formato `json` com as mesmas.
 **Importante**: o site [Leis Municipais](https://www.leismunicipais.com.br) nos forneceu os arquivos das
 leis da cidade de Feira de Santana após um pedido feito a Câmara de Vereadores da cidade.
 A casa solicitou ao site e eles enviaram um arquivo compactado com vários HTMLs. Essa CLI
-parseia essas informações e disponibiliza em um JSON.
+parseia essas informações e disponibiliza em um JSON. Leia mais sobre isso [aqui](https://medium.com/@dadosabertosdefeira/acessando-todas-as-leis-do-leismunicipais-com-br-235c6719fecf).
 
 Para ter acesso ao arquivo do [Leis Municipais](https://www.leismunicipais.com.br), você deve solicitar
 a Câmara da sua cidade via Lei de Acesso à Informação. O arquivo com os HTMLs da cidade de Feira
@@ -41,15 +41,18 @@ um bug, abra uma nova [_issue_](https://github.com/DadosAbertosDeFeira/leis-muni
 ### Instalando o Rust e rodando a aplicação
 
 * `curl https://sh.rustup.rs -sSf | sh` (deve demorar um pouco)
+* execute `rustc --version` para verificar se a instalação ocorreu bem. se não,
+configure o `PATH`: `export PATH="$HOME/.cargo/bin:$PATH"` no arquivo de configuração do seu
+terminal
 * vá para a pasta do projeto
-* `cargo run <absolute_path_to_the_folder>`
+* `cargo run <caminho_absoluto_para_a_pasta>`
 
 Pronto! O arquivo `leis.json` será criado na pasta raiz do projeto.
 
 ### Rodando a aplicação (se você já tem o Rust instalado)
 
 * vá para a pasta do projeto
-* `cargo run <absolute_path_to_the_folder>`
+* `cargo run <caminho_absoluto_para_a_pasta>`
 
 Pronto! O arquivo `leis.json` será criado na pasta raiz do projeto.
 
@@ -66,4 +69,4 @@ Antes de abrir um _pull request_, não esqueça de rodar os testes.
 * para rodar todos testes: `cargo test`
 * para rodar somente os testes unitários: `cargo test --bin ranbumfy`
 * para rodar somente os testes de integração: `cargo test --test integration`
-* para rodar somente um teste: `cargo test <TESTNAME>`
+* para rodar somente um teste: `cargo test <nome_do_teste>`
