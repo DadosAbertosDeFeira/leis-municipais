@@ -29,13 +29,17 @@ fn main() -> Result<(), Error> {
     print_report(&directories);
     write_json_file(&leis);
 
-    println!("\nTempo de execução: {} segundos", now.elapsed().as_secs());
+    println!("Tempo de execução: {} segundos", now.elapsed().as_secs());
     Ok(())
 }
 
 fn write_json_file(leis: &[Lei]) {
     let leis_file = File::create("leis.json").expect("Unable to create file");
-    serde_json::to_writer(leis_file, &leis).expect("Unable to write data");
+    serde_json::to_writer_pretty(leis_file, &leis).expect("Unable to write data");
+    println!(
+        "\nArquivo salvo em: {}",
+        format!("{}/leis.json", env::current_dir().unwrap().display())
+    );
 }
 
 fn print_report(directories: &HashMap<String, Folder>) {
