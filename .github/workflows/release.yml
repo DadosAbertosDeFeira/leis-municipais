@@ -22,9 +22,6 @@ jobs:
         uses: actions/checkout@v2
       - name: Build project
         run: cargo build --release --locked
-      - name: Get tag version
-        id: get_version
-        run: echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
       - name: Create release and upload binary
         uses: svenstaro/upload-release-action@v1-release
         with:
