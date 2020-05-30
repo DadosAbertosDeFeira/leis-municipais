@@ -7,6 +7,14 @@ use serde::Serialize;
 use std::fs::File;
 use std::io::Read;
 
+lazy_static! {
+    static ref TITULO_REGEX: Regex = Regex::new("<h2>(?P<titulo>(.*))</h2>").unwrap();
+    static ref RESUMO_REGEX: Regex = Regex::new("</h2><br>(?P<resumo>(.*))<br><br><img").unwrap();
+    static ref TEXTO_REGEX: Regex = Regex::new("><br><br><br>(?P<texto>(.*))<p><img").unwrap();
+    static ref DOCUMENTO_REGEX: Regex =
+        Regex::new("btn-default\" href=\"(?P<documento>(.*))\" title").unwrap();
+}
+
 #[derive(Debug, PartialEq, Serialize)]
 pub struct Lei {
     titulo: String,
@@ -27,22 +35,16 @@ pub fn parse_html_to_lei(file_name: &str, categoria: String) -> Result<Lei, Erro
         .read_to_string(&mut dest)
         .expect("O conteúdo do arquivo não é UTF-8 válido");
 
-    // TODO: try to put together all regex
-    let titulo_regex = Regex::new("<h2>(?P<titulo>(.*))</h2>").unwrap();
-    let resumo_regex = Regex::new("</h2><br>(?P<resumo>(.*))<br><br><img").unwrap();
-    let texto_regex = Regex::new("><br><br><br>(?P<texto>(.*))<p><img").unwrap();
-    let documento_regex = Regex::new("btn-default\" href=\"(?P<documento>(.*))\" title").unwrap();
-
-    let captures_titulo = titulo_regex
+    let captures_titulo = TITULO_REGEX
         .captures(&dest)
         .ok_or_unexpected("Título", file_name)?;
-    let captures_resumo = resumo_regex
+    let captures_resumo = RESUMO_REGEX
         .captures(&dest)
         .ok_or_unexpected("Resumo", file_name)?;
-    let captures_texto = texto_regex
+    let captures_texto = TEXTO_REGEX
         .captures(&dest)
         .ok_or_unexpected("Texto", file_name)?;
-    let documento = documento_regex
+    let documento = DOCUMENTO_REGEX
         .captures(&dest)
         .map(|captures_documento| captures_documento["documento"].to_string());
 

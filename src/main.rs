@@ -1,6 +1,9 @@
 #![allow(clippy::non_ascii_literal)]
 #[macro_use]
 extern crate prettytable;
+#[macro_use]
+extern crate lazy_static;
+
 use crate::error::Error;
 use crate::parser::Lei;
 use crate::parser_executor::{parse_on_directory, Folder};
