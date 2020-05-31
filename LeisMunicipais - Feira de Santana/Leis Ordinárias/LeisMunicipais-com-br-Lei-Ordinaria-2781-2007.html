@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 2781/2007</h2><br>DISPÕE SOBRE A CRIAÇÃO DE ESTACIONAMENTO ROTATIVO, EM VIAS E LOGRADOUROS PÚBLICOS DO MUNICIPIO DE FEIRA DE SANTANA.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Autor: Antonio Renildo Brito dos Santos.<br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 06/2006, de autoria do Edil Antonio Renildo Brito dos Santos, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Cria no Âmbito do Município de Feira de Santana o Sistema de Estacionamento Rotativo, denominado &quot; Zona Azul&quot;.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O Estabelecimento Rotativo tem por finalidade racionalizar e universalizar o acesso às vagas de estacionamento, bem como descongestionar o trânsito em áreas urbanas adensadas.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> O estacionamento rotativo controlado de veículos, de que trata o artigo anterior, se destina à parada de veículos automotores e ciclomotores, por períodos certos, nas vias e logradouros públicos, mediante remuneração.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> As áreas especiais para o estabelecimento rotativo de veículo denominado como &quot; Zona Azul &quot;, localizada em todas as vias e logradouros devidamente identificados, se destina ao estacionamento de veículos de passageiros de até uma hora com tolerância de mais uma hora mediante ao pagamento correspondente ao valor da primeira 1º (uma hora).<br><br>§ 1º O valor do preço será único e deverá ser apurado em planilha de custo de acordo com os gastos de manutenção do sistema, devendo ser apurado sempre que mostrar em desequilíbrio econômico-financeiro.<br><br>§ 2º A Secretaria Municipal correspondente, através do &quot; S.M.T.T. &quot; Opinará acerca do valor a que se refere o &quot; caput&quot; deste artigo, manifestando-se, nas épocas próprias, quanto aos cálculos indicados no parágrafo precedente, na forma da legislação própria.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> O Estabelecimento Rotativo vigorará em dias, horários e locais especificados, conforme indicado na placa de regulamentação local.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Os veículos estacionados na área de Estacionamento Rotativo deverão possuir folha do talão de Estacionamento Rotativa devidamente preenchida, conforme instruções contidas no verso da mesma.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> O controle estacionamento será efetuado pela equipe de operacionalização, com o auxilio do pessoal de fiscalização, por meio de impresso próprio, que o usuário deverá adquirir e colocar em lugar visível do mesmo.<br><br>Parágrafo Único - A não exposição do impresso no veículo, ou a sua colocação irregular, que prejudique a operacionalização e a fiscalização, acarretará ao proprietário a multa correspondente ao estacionamento irregular e a remoção do veículo, na forma da legislação própria.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> Em todas as áreas de Estacionamento Rotativo deverão ser estabelecidas áreas de Estacionamento Especial, rotativas ou não rotativas, destinadas às pessoas portadoras de deficiência com dificuldade de locomoção.<br><br>§ 1º Entende-se por deficiente físico, para os efeitos desta lei, toda a pessoa portadora de deficiência que está impossibilitada de locomover-se, usuária de cadeira de rodas ou muletas, com veículo especialmente adaptado ou transportado por terceiro.<br><br>§ 2º Inclui-se, neste caso, idoso que se utilize de aparelho que auxilie a locomoção, do tipo andador, e, também, pessoas acidentadas, temporariamente incapacitadas, com gesso nos membros inferiores, enquanto perdurar a incapacitação.<br><br>§ 3º Fica assegurada a reserva do Estacionamento Rotativo em 5% (cinco por cento) das vagas às pessoas com idade igual ou superior a 60 (sessenta) anos, as quais deverão ser posicionadas de forma a garantir a melhor comodidade ao idoso.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> Os proprietários ou condutores de veículos estacionados em desacordo com o presente regulamento serão atuados e notificados, mediante a emissão de Auto de infração, conforme preceitua o Código de Trânsito Brasileiro - CTB.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10.</span></a> O chefe do Poder Executivo determinará, ainda por ato próprio:<br><br>I - os locais de estacionamento;<br><br>II - os horários de funcionamento;<br><br>III - a categoria dos veículos dispensados do pagamento do preço público pelo estacionamento.<br><br>IV - os valores tarifários, para uso uma ou duas horas, por categoria: veículo de pequeno e grande porte, e ciclo motores;<br><br>V - as disposições regulamentadas necessárias à aplicação desta Lei e as demais regras de funcionamento do serviço.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11.</span></a> Nos talões, impressos, placas e fardamentos utilizados pelo pessoal de operação do serviço poderão conter mensagens publicitárias e campanhas educativas de interesse público.<br><br><a name="artigo_12"><span class="label label-pill label-danger">Art. 12.</span></a> Competirá a Secretaria Municipal correspondente, através do Serviço Municipal de Transporte e Trânsito.<br><br>I - a implantação, a operacionalização e a fiscalização de sistema, quando o serviço for executado diretamente pela Administração Municipal; ou.<br><br>II - a supervisão da implantação e da operacionalização do sistema, quando o serviço for executado através de empresa prestadora de serviços especializados nesta área.<br><br>III - a instalação de placas sinalizadoras dos locais destinados a atender os estacionamentos rotativos &quot; Zona Azul &quot;.<br><br><a name="artigo_13"><span class="label label-pill label-danger">Art. 13.</span></a> Será considerado como irregularmente estacionado o veiculo que:<br><br>I - exceder o período Maximo de estacionamento permitido em cada área:<br><br>II - estiver:<br><br>a) com o cartão de estacionamento rasurado, preenchido de forma irregular ou colocado incorretamente:<br>b) sem o cartão ou este não estiver preenchido:<br><br>III - estiver utilizando cartão diferente daquele adotado pelo Município ou portadora de serviço.<br><br>§ 1º O veículo que estiver estacionado em área especial deverá ser retirado do local tão logo termine o prazo previsto, não sendo permitido utilizar novo cartão para outra vaga na mesma quadra da rua em que estivera estacionado nas 02 (duas) horas subseqüentes.<br><br>§ 2º A permanência do condutor ou de outra pessoa no interior do veiculo não desobriga a exposição do cartão de estacionamento.<br><br><a name="artigo_14"><span class="label label-pill label-danger">Art. 14.</span></a> Constitui infração, passível de notificação de irregularidade, toda ação ou emissão contrária às disposições desta Lei e das demais normas incidentes.<br><br><a name="artigo_15"><span class="label label-pill label-danger">Art. 15.</span></a> Os usuários que estacionarem seus veículos em desacordo com esta lei serão notificados de irregularidades e terão prazo de 05 (cinco) dias úteis pra proceder à regularização, que corresponderá ao pagamento do preço público, em valor equivalente a 10 (dez) cartões de estacionamento daquela área, não sendo permitido esta faculdade na hipótese de reincidência do prazo de 30 (trinta) dias.<br><br>Parágrafo Único - Esgotado o prazo referido no &quot; caput &quot; deste artigo, sem a devida regularização, será a notificação de irregularidade convertida na multa prevista no artigo subsequente.<br><br><a name="artigo_16"><span class="label label-pill label-danger">Art. 16.</span></a> Fica estabelecido que a multa por infração a esta Lei será igual ao art. 181, inciso XVII, da Lei Federal nº 9.503, de 23 de setembro de 1997 (código de Trânsito Brasileiro), estando o infrator ainda sujeito ás outras penalidades e medidas administrativas nele previsto.<br><br><a name="artigo_17"><span class="label label-pill label-danger">Art. 17.</span></a> Os proprietários ou condutores de veículos que residirem na área onde funciona o Estacionamento Rotativo, deverá provar tal situação através da apresentação do comprovante de pagamento do IPTU, visando obter direito á vaga na frente da respectiva, caso a mesma não possua garagem interna.<br><br><a name="artigo_18"><span class="label label-pill label-danger">Art. 18.</span></a> Não caberá a Prefeitura ou prestadora de serviço qualquer responsabilidade por acidente, danos, furtos ou quaisquer outros prejuízos que venham a causar ou sofrer os veículos, seus proprietários, ou mercadorias, os usuários ou acompanhantes enquanto permanecerem nas áreas de estacionamento rotativo, ou quando os veículos forem delas guinchados.<br><br><a name="artigo_19"><span class="label label-pill label-danger">Art. 19.</span></a> As despesas decorrentes da execução orçamentárias da presente Lei correrão por conta das dotações orçamentárias próprias, suplementadas se necessário.<br><br><a name="artigo_20"><span class="label label-pill label-danger">Art. 20.</span></a> Esta Lei entrará em vigor a data de sua publicação.<br><br>PREFEITURA MUNICIPAL DE FEIRA DE SANTANA, em 15 de Maio de 2007.<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

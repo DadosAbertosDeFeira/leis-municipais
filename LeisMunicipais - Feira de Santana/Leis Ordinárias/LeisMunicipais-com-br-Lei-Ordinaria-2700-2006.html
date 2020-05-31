@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 2700/2006</h2><br>OBRIGA AS INSTITUIÇÕES FINANCEIRAS A INSTALAREM MOBILIÁRIOS ADEQUADOS PARA ATENDIMENTO DAS PESSOAS PORTADORAS DE DEFICIÊNCIA OU COM MOBILIDADE REDUZIDA, NO MUNICÍPIO DE FEIRA DE SANTANA. E DA OUTRAS PROVIDENCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Autor: Marialvo Barreto<br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, no uso de suas atribuições; FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 118/2005, de autoria do Edil Marialvo Barreto, Decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Ficam as instituições financeiras obrigadas a instalarem mobiliário de recepção e atendimento; inclusive caixa eletrônico, devidamente adaptado á altura e á condição física de pessoas em cadeiras de rodas, bem como de pessoas com estatura muito abaixo do modo (nanismo), conforme estabelecido nas normas técnicas de acessibilidade da ABNT.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> As instituições financeiras terão um prazo de 90 (noventa) dias, a partir da regulamentação desta lei, para se adequarem ao disposto no artigo anterior.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> O Executivo Municipal, através de sua Coordenadoria Municipal de Defesa do Consumidor - CONDECON - Órgão integrante da Secretaria Municipal de Governo; aplicará as sanções previstas nesta lei Municipal de Governo, aplicará as sanções previstas nesta lei Municipal, com o objetivo de cobrir possíveis abusos praticados por instituições financeiras com atuação no território do Município, no que tange á instalação de mobiliário adequada para atendimento de portadoras de deficiência ou com mobilidade reduzida:<br><br>I - Aos que infringirem o estabelecimento no art. 01º dessa legislação Municipal, serão imputadas as seguintes sanções:<br><br>a) Advertência, quando da constatação da infração;<br>b) Multa;<br>c) Suspensão do alvará de funcionamento por até 30 (trinta) dias;<br>d) Interdição, total ou parcial, do estabelecimento.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> O Poder Executivo regulamentará está lei em 60 (sessenta) dias.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 23 de Agosto de 2006.<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO MUNICIPAL<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

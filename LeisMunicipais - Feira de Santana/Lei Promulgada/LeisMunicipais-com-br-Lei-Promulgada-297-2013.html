@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI PROMULGADA Nº 297/2013</h2><br>REGULAMENTA O PROCEDIMENTO DA UTILIZAÇAO DA DOAÇÃO DE SANGUE E AFINS PELA UNIDADES RECEPTORAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PRESIDENTE DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 54/2013, de autoria do Edil Pablo Roberto Gonçalves da Silva, e na conformidade do artigo 78, § 7º, da Lei nº <a class="link_law" data-id="1739637" data-original-title=" Data da Norma: 05.04.1990 - DISPÕE SOBRE A LEI ORGÂNICA DO MUNICIPIO DE FEIRA DE SANTANA E DA OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-promulgada/1990/3/37/lei-promulgada-n-37-1990-dispoe-sobre-a-lei-organica-do-municipio-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">37</a> de 05 de Abril de 1990, artigo 25, inciso V, do Regimento Interno, PROMULGA a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> São estabelecimentos hemoterápicos, para efeitos desta Lei, os de serviços intra ou extra - hospitalares públicos ou privados, que realizem, em parte ou no seu todo, além de atividades de captação e seleção de doadores, coleta de sangue, processamento e fracionamento, armazenamento, testes sorológicos e imuno - hematológicos, transporte e aplicação de hemoderivados, de acordo com a normas técnicas e legislação sanitária vigenete.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Fica a vigilância sanitária, no âmbito do Município, de forma integrada com o sistema de vigilância epidemiológica, responsável pela fiscalização da coleta, do processamento e da transfusão do sangue e seus derivados.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Os exames sorológicos e imuno - hematológico para controle de sangue coletado poderão ser executados fora dos estabelecimentos hematerápicos, por unidades ou laboratórios devidamente autorizados pela autoridade sanitária municipal, mediante convênio e/ou contrato entre as partes, com cópia para órgão municipal de saúde.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> É expressamente proibida à remuneração direta ou indireta de doadores de sangue, órgãos, tecidos, glândulas, hormônios e outros fluídos orgânicos.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> É expressamente proibida a comercialização direta ou indireta de sangue, órgãos, tecidos, glândulas, hormônios e outros fluídos orgânicos oriundos de doações voluntários realizados nos estabelecimentos hemoterápicos.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Os estabelecimentos hemoterápicos terão livro próprio, com folhas numeradas e com termos de abertura e encerramento assinados pela Fiscalização e Vigilância Sanitária, e por este devidamente rubricado, para o registro diário de entrada, saída e destino de sangue e hemoderivados, constando todos os dados estipulados e padronizados em normas técnicas especiais.<br><br>I - ficam obrigadas as instituições que atuam na coleta de sangue a manter um cadastro dos doadores, com nome, endereço e quantidade de sangue doado, repassando os dados para as instituições hospitalares juntamente com o envio do sangue.<br><br>II - as instituições hospitalares ficam obrigadas a informar, aos doadores, por carta, o destino do sangue, com o nome beneficiário, idade, sexo e motivo da ocorrência.<br><br>III - o livro de que trata o caput permanecerá obrigatoriamente no estabelecimento hemoterápico, será assinado diariamente pelo seu responsável técnico ou substituto legalmente habilitado e exibido à autoridade sanitária sempre que solicitado.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Os serviços de homoterapia (bancos de sangue) deverão manter à disposição das autoridades sanitárias fiscalizadoras 3 (três) mil de soro de cada unidade coletada, em recipiente apropriado, fechado, identificado, em temperatura igual ou inferior a 18º C (dezoito graus centígrados) negativos pelo período mínimo de 45 (quarenta e cinco) dias, para efeito de análise fiscal.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> São infrações para efeitos desta Lei:<br><br>I - proceder a coleta, processamento, utilização de sangue e hemoderivados ou desenvolver outras atividades hemoterápicas, contrariando as normas legais e regulamentares vigentes.<br><br>II - comercializar sangue e derivados, placentas, órgãos, glândulas ou hormônios, bem como substâncias do corpo humano, contrariando as normas legais e regulamentares vigentes.<br><br>III - ocultar, omitir ou manipular informações referentes aos termos desta Lei.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> Ficam estabelecidas as seguintes penalidades para as infrações observadas:<br><br>I - advertência por escrito;<br><br>II - apreensão, inutilização ou interdição do produto;<br><br>III - multa de até 100 (cem) UFIR para atos de ocultação, omissão ou manipulação de informações;<br><br>IV - interdição do estabelecimento;<br><br>V - cancelamento do alvará de autorização sanitária;<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10</span></a> Fica autorizado o Poder Executivo instituir, no âmbito da Rede Municipal de Educação, palestras de conscientização da importância da doação de sangue visando alcançar os alunos do primeiro grau, partindo do pressuposto de que a educação é o processo de desenvolvimento da capacidade física, intelectual e moral da criança e do ser humano em geral.<br><br>§ 1º O &quot;caput&quot; deste artigo refere-se aos alunos matriculados, da primeira a oitava série da Rede Municipal de Ensino, em cada semestre, devendo ser praticado no início e término do ano letivo.<br><br>§ 2º Os estudantes assistirão a uma palestra por semestre do ano letivo, equivalendo a duas aulas do período de um dia apresentado por um professor cuja disciplina englobe a área biológica, com a finalidade de salientar a importância para o Município, contribuírem com seus conhecimentos para este programa de educação.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11</span></a> Os palestrantes serão profissionais ligados à Rede Municipal de Ensino e da Saúde, podendo ser convidados representantes de entidades filantrópicas, de claro conhecimento, que queiram, sem nenhuma obrigação financeira para o Município, contribuírem com seus conhecimentos para este programa de educação.<br><br><a name="artigo_12"><span class="label label-pill label-danger">Art. 12</span></a> As Secretarias Municipais da Educação e da Saúde se responsabilizarão em fornecer à direção da escola relação com os nomes dos palestrantes que se disponibilizarem a ministrar conferências.<br><br><a name="artigo_13"><span class="label label-pill label-danger">Art. 13</span></a> Fica o Poder Público Municipal através da Secretaria Municipal da Saúde autorizado a executar os serviços de coleta de sangue nas Unidades Básicas de Saúde, sendo necessária adequação de acordo com as normas exigidas pela vigilância sanitária.<br><br><a name="artigo_14"><span class="label label-pill label-danger">Art. 14</span></a> Demais normas necessárias ao cumprimento desta Lei, serão regulamentadas, no prazo de 30 (trinta) dias pelo Poder Executivo Municipal.<br><br><a name="artigo_15"><span class="label label-pill label-danger">Art. 15</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>CÂMARA MUNICIPAL DE FEIRA DE SANTANA, em 10 de Dezembro de 2013.<br><br>JUSTINIANO OLIVEIRA FRANÇA<br>Presidente<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

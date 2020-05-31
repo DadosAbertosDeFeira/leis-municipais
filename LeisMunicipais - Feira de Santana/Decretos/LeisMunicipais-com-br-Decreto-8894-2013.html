@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>DECRETO Nº 8894, de 12 de abril de 2013.</h2><br>APROVA A RETIFICAÇÃO DO LOTEAMENTO POPULAR BELA VISTA SUL - BAIRRO TOMBA, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, no uso de suas atribuições, CONSIDERANDO o que consta do Processo nº 15356/2013, com base na Lei Municipal nº <a class="link_law" data-id="2595596" data-original-title=" Data da Norma: 11.11.1992 - Dispõe sobre o ordenamento do uso e da ocupação do solo na área urbana do Município de Feira de Santana e dá outras providências." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1992/161/1615/lei-ordinaria-n-1615-1992-dispoe-sobre-o-ordenamento-do-uso-e-da-ocupacao-do-solo-na-area-urbana-do-municipio-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">1615</a>/92 e da Lei Federal nº 6.766/79 alterada pela Lei Federal 9.785, de 29 de janeiro de 1999 e pela Lei Federal nº 10.932, de 03 de agosto de 2004 e da Lei Federal nº 11.977 de 07 de julho de 2009, DECRETA:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica aprovada a RETIFICAÇÃO DO LOTEAMENTO POPULAR BELA VISTA SUL, situado no Bairro Tomba, de propriedade da R CARVALHO CONSTRUÇÕES E EMPREENDIMENTOS LTDA, limitando-se ao Norte com Florisvaldo R. Falcão, ao Sul com a Rua Capricórnio e a Rua do México, ao Leste com José T. dos Santos e Carlos T. dos Santos e ao Oeste com Jerônimo de Souza Freitas.<br><br>Parágrafo Único - A área total do Terreno mede 118.875,24m² (cento e dezoito mil, oitocentos e setenta e cinco metros e vinte e quatro centímetros quadrados), para a área dos Lotes residenciais foram destinadas 47.794,90m² (quarenta e sete mil, setecentos e noventa e quatro metros e noventa centímetros quadrados), para a Área Remanescente foram destinadas 40.034,80m² (quarenta mil, trinta e quatro metros e oitenta centímetros quadrados), para a Área Institucional 01 e 02 foram destinadas 8.313,23m² (oito mil, trezentos e treze metros e vinte e três centímetros quadrados), para a Área de Uso Público foram destinados 19.859,16m² (dezenove mil, oitocentos e cinquenta e nove metros e dezesseis centímetros quadrados), para a Área de Praça foram destinados 308,63m² (trezentos e oito metros e sessenta e três centímetros quadrados) e para a Área Verde foram destinados 2.564,52m² (dois mil, quinhentos e sessenta e quatro metros e cinquenta e dois centímetros quadrados).<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Ficam incorporadas ao domínio público as áreas destinadas ao uso e gozo da população, as edificações públicas e outros equipamentos urbanos, nos termos do art. 22 da Lei Federal nº 6.766, de 19 de dezembro de 1979, alterada pela Lei Federal nº 9.785, de 29 de janeiro de 1.999 e pela Lei Federal nº 10.932, de 03 de agosto de 2004.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Este Decreto entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito, de 12 de abril de 2013.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito Municipal<br><br>MÁRIO COSTA BORGES<br>Chefe de Gabinete do Prefeito<br><br>CARLOS ANTÔNIO DE MORAES LUCENA<br>Procurador Geral do Município<br><br>JOSÉ FERREIRA PINHEIRO<br>Secretário Municipal de Desenvolvimento Urbano<br><br>CARLOS ALBERTO OLIVEIRA BRITO<br>Secretário Municipal de Planejamento<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

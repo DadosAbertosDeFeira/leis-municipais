@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 1669/93</h2><br>AMPLIA O QUADRO DE PESSOAL DA PREFEITURA, DISPÕE SOBRE A NOMEAÇÃO DE CONCURSADOS, AUTORIZA ENQUADRAMENTO, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, FAÇO saber que a Câmara Municipal decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica ampliado o quadro de pessoal da Prefeitura Municipal, na forma do anexo único desta Lei, com a criação de carreiras e de cargos a serem providos por candidatos aprovados em concurso público já realizado, ou a ser promovido na forma da legislação pertinente.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Poderão ser convalidados atos defeituosos de admissão no serviço público, no prazo de validade dos concursos, obedecida a ordem rigorosa de classificação dos candidatos habilitados.<br><br>§ 1º Vetado<br><br>§ 2º Não poderão ser nomeados aqueles que, quando convocados, renunciaram, tácita ou expressamente, ao seu direito de ingressar no serviço público municipal.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Os atuais professores que tiverem habilitação de magistério e estudos adicionais de secretário, poderão ser enquadrados no cargo de Secretário Escolar.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> O vencimento de Secretário Escolar corresponderá ao de professor, nível II, da classe correspondente ao seu tempo de serviço.<br><br>Parágrafo Único - O cargo de Secretário Escolar é considerado atividade de magistério.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> O professor que tiver habilitação em pedagogia será enquadrado como supervisor educacional.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Ficam aprovadas todas as despesas feitas pela administração relativas ao pagamento de vencimento dos servidores que se encontrarem em situação irregular no serviço público municipal, até a data da convalidação dos seus atos de admissão.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> As despesas decorrentes da aplicação desta Lei correrão à conta da dotação orçamentária própria (3.1.1.1.01).<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Prefeitura Municipal de Feira de Santana, em 06 de julho de 1993.<br><br>DR. JOÃO DURVAL CARNEIRO<br>Prefeito<br><br>Dr. LUIS CARLOS O. DE ALMEIDA<br>Chefe de Gabinete<br><br>REGULARIZAÇÃO DO NÚMERO DE CARGOS E VAGAS<br><br>ANEXO ÚNICO<pre> __________________________________________<br>|Nº de|           Cargos            |Quadro|<br>|Ordem|                             |      |<br>|=====|=============================|======|<br>|  01 |Advogado                     | 30   |<br>|-----|-----------------------------|------|<br>|  02 |Arquiteto                    | 13   |<br>|-----|-----------------------------|------|<br>|  03 |Auxiliar Topógrafo           | 06   |<br>|-----|-----------------------------|------|<br>|  04 |Desenhista                   | 05   |<br>|-----|-----------------------------|------|<br>|  05 |Fiscal de Obras              | 21   |<br>|-----|-----------------------------|------|<br>|  06 |Fiscal de Rendas             | 32   |<br>|-----|-----------------------------|------|<br>|  07 |Fiscal de Transp. Coletivo   | 13   |<br>|-----|-----------------------------|------|<br>|  08 |Gari                         | 409  |<br>|-----|-----------------------------|------|<br>|  09 |Guarda                       | 145  |<br>|-----|-----------------------------|------|<br>|  10 |Merendeira                   | 215  |<br>|-----|-----------------------------|------|<br>|  11 |Repórter                     | 05   |<br>|-----|-----------------------------|------|<br>|  12 |Repórter Fotografico         | 03   |<br>|-----|-----------------------------|------|<br>|  13 |Servente                     | 509  |<br>|-----|-----------------------------|------|<br>|  14 |Técnico em Agropecuária      | 04   |<br>|-----|-----------------------------|------|<br>|  15 |Telefonista                  | 48   |<br>|-----|-----------------------------|------|<br>|  16 |Tratorista                   | 27   |<br>|-----|-----------------------------|------|<br>|  17 |Veterinário                  | 06   |<br>|-----|-----------------------------|------|<br>|  18 |Vigia                        | 137  |<br>|-----|-----------------------------|------|<br>|  19 |Auxiliar de Enfermagem       | 142  |<br>|-----|-----------------------------|------|<br>|  20 |Assistente Social            | 06   |<br>|-----|-----------------------------|------|<br>|  21 |Bioquímico                   | 04   |<br>|-----|-----------------------------|------|<br>|  22 |Enfermeiro                   | 58   |<br>|-----|-----------------------------|------|<br>|  23 |Médico                       | 101  |<br>|-----|-----------------------------|------|<br>|  24 |Nutricionista                | 06   |<br>|-----|-----------------------------|------|<br>|  25 |Odontólogo                   | 43   |<br>|-----|-----------------------------|------|<br>|  26 |Téc. Laboratório             | 22   |<br>|-----|-----------------------------|------|<br>|  27 |Engenheiro                   | 20   |<br>|-----|-----------------------------|------|<br>|  28 |Professor                    | 2.000|<br>|-----|-----------------------------|------|<br>|  29 |Secretário Escolar           | 100  |<br>|-----|-----------------------------|------|<br>|  30 |Supervisor Educacional       | 50   |<br>|-----|-----------------------------|------|<br>|  31 |Fiscal                       | 90   |<br>|-----|-----------------------------|------|<br>|  32 |Apontador                    | 15   |<br>|-----|-----------------------------|------|<br>|  33 |Secretária                   | 10   |<br>|-----|-----------------------------|------|<br>|  34 |Assessor                     | 05   |<br>|-----|-----------------------------|------|<br>|  35 |Supervisor                   | 05   |<br>|-----|-----------------------------|------|<br>|  36 |Prático Rural                | 62   |<br>|-----|-----------------------------|------|<br>|  37 |Operador                     | 09   |<br>|-----|-----------------------------|------|<br>|  38 |Protético                    | 03   |<br>|-----|-----------------------------|------|<br>|  39 |Auxiliar de Protético        | 12   |<br>|-----|-----------------------------|------|<br>|  40 |Auxiliar Laboratório Ótico   | 03   |<br>|-----|-----------------------------|------|<br>|  41 |Médico                       |      |<br>|-----|-----------------------------|------|<br>|  05 |Oftalmologista               |      |<br>|-----|-----------------------------|------|<br>|  42 |Psicólogo                    |      |<br>|-----|-----------------------------|------|<br>|  43 |Téc. Segurança Do Trabalho   |      |<br>|-----|-----------------------------|------|<br>|  44 |Engº. Segurança Do Trabalho  |      |<br>|-----|-----------------------------|------|<br>|  45 |Aux. Administração Hospitalar|      |<br>|_____|_____________________________|______| * tabela formatada pela equipe técnica do LeisMunicipais.com.br<br><p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

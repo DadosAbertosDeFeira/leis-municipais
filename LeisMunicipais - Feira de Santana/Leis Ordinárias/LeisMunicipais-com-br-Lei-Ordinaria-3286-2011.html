@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3286/2011</h2><br>DISPÕE SOBRE A RESERVA DE VAGAS PARA AFROBRASILEIROS E INDÍGENAS DE CARGOS EFETIVOS DA ADMINISTRAÇÃO DIRETA E INDIRETA DO MUNICÍPIO DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 133/2011, de autoria do Edil Justiniano Oliveira França, e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Ficam reservadas das vagas oferecidas nos concursos públicos, efetuados pelo Poder Público Municipal para provimento de cargos efetivos, para os afros-descendentes e indígenas 20(vinte por cento), e para os alunos oriundos da escola pública e bolsista da escola particular 30% (trinta por cento), totalizando 50% (cinquenta por cento) das vagas oferecidas nos referidos concursos públicos.<br><br>§ 1º Na fixação do número de vagas reservadas aos afros-descendentes e indígenas o respectivo percentual far-se-á pelo total de vagas no edital de abertura e demais editais do concurso público durante o seu período de vigência e se efetivará no processo de nomeação.<br><br>§ 2º Quando o número de vagas reservadas aos afros-descendentes e indígenas,, resulta em fração, arredondar-se-á para o número inteiro imediatamente superior, em caso de fração igual ou maior a 0,5 (zero vírgula cinco), ou para o número inteiro imediatamente inferior, em caso de fração menor que 0,5 (zero vírgula cinco).<br><br>§ 3º A observância do percentual de vagas reservadas aos afros-descendentes e indígenas dar-se-á durante todo o período de validade do concurso e aplicar-se-á a todos os cargos oferecidos.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Na hipótese de não preenchimento da quota prevista no art. 1º, as vagas remanescentes serão revertidas para os demais candidatos qualificados no certame, observada a respectiva ordem de classificação.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Para efeitos desta lei, considerar-se-á afros-descendente e indígenas aqueles que assim se declarem expressamente, identificando-se como de cor preta ou parda, a raça etnia indígena ou negra.<br><br>Parágrafo Único - Tal informação integrará os registros cadastrais de ingresso de servidores.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Detectada a falsidade na declaração a que se refere o artigo anterior, sujeitar-se-á o infrator às penas da Lei, sujeitando-se, ainda:<br><br>I - se já nomeado no cargo efetivo para o qual concorreu na reserva de vagas aludidas no art. 1º, utilizando-se da declaração inverídica, à pena disciplinar de demissão.<br><br>II - se candidato, à anulação da inscrição no concurso público e de todos os atos daí decorrentes.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> As disposições desta Lei não se aplicam àqueles concursos públicos cujos editais de abertura foram publicados anteriormente à sua vigência.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Esta Lei entrará em vigor na data de sua publicação.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> Revogam-se as disposições em contrário.<br><br>Gabinete do Prefeito, 10 de novembro de 2011.<br><br>TARCÍZIO SUZART PIMENTA JÚNIOR<br>PREFEITO MUNICIPAL<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

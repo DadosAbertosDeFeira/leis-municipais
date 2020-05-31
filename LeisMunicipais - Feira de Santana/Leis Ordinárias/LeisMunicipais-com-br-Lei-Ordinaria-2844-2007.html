@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 2844, DE 13 DE NOVEMBRO DE 2007.</h2><br>DISPÕE SOBRE A ALTERAÇÃO DA COMPOSIÇÃO DO CONSELHO MUNICIPAL DOS DIREITOS DA CRIANÇA E DO ADOLESCENTE DE FEIRA DE SANTANA.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, no uso das suas atribuições, Faço saber que a Câmara Municipal, através do Projeto de Lei nº 146/2007, de autoria deste Poder Executivo, decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> O Conselho Municipal de Direitos da Criança e do Adolescente, criado pela Lei Municipal nº <a class="link_law" data-id="1618356" data-original-title=" Data da Norma: 06.12.1995 - DISPÕE SOBRE O CONSELHO MUNICIPAL DOS DIREITOS DA CRIANÇA E DO ADOLESCENTE, E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1995/183/1831/lei-ordinaria-n-1831-1995-dispoe-sobre-o-conselho-municipal-dos-direitos-da-crianca-e-do-adolescente-e-da-outras-providencias" rel="tooltip">1.831</a>/95, passa a ter sua composição na forma seguinte:<br><br>I - Área Governamental, representantes dos seguintes Órgãos e Entidades:<br><br>a) Secretaria Municipal de Desenvolvimento Social;<br>b) Gabinete do Prefeito;<br>c) Procuradoria Geral do Município;<br>d) Secretaria Municipal da Fazenda;<br>e) Secretaria Municipal de Planejamento;<br>f) Secretaria Municipal de Saúde;<br>g) Secretaria Municipal de Cultura, Esporte e Lazer;<br>h) Secretaria Municipal de Educação;<br>i) Fundação Hospitalar de Feira de Santana;<br>j) Programas Governamentais que atuem na prevenção e combate ao abuso e exploração sexual de crianças e adolescentes;<br>k) Programas Governamentais que atuem no atendimento de crianças e adolescentes portadores de necessidades especiais;<br>l) Programas Governamentais que atuem no atendimento de crianças e adolescentes em situação de rua.<br><br>II - Área Não-Governamental, representantes dos seguintes Órgãos, Entidades e Segmentos:<br><br>a) Creches;<br>b) Orfanatos;<br>c) Subsecção da Ordem do Advogados do Brasil;<br>d) Conselho Regional de Assistencial Social;<br>e) Pastoral da Criança da Arquidiocese de Feira de Santana;<br>f) PAIR - Protagonismo Juvenil;<br>g) Federação das Associações de Moradores e Clubes de Mães;<br>h) Sindicato de Hotéis, Motéis, Bares, Restaurantes e Similares;<br>i) Ensino Superior;<br>j) Programas Não-Governamentais que atuem no atendimento de crianças e adolescentes em prevenção ao uso de drogas;<br>k) Programas Não-Governamentais que atuem no atendimento de crianças e adolescentes portadores de necessidades especiais;<br>l) Programas Não-Governamentais que atuem no atendimento de crianças e adolescentes no combate à erradicação do trabalho infantil.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Esta Lei entrará em vigor na data da sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 13 de novembro de 2007.<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO MUNICIPAL<br><br>GERALDO DE OLIVEIRA SAMPAIO FILHO<br>CHEFE DE GABINETE DO PREFEITO<br><br>CARLOS ANTONIO DE MORAES LUCENA<br>PROCURADOR GERAL DO MUNICÍPIO<br><br>ANA LÚCIA FREITAS BASTOS MIRANDA<br>SECRETÁRIA MUNICIPAL DE DESENVOLVIMENTO SOCIAL<br><br>JOAQUIM JOSÉ BAHIA MENEZES<br>SECRETÁRIO MUNICIPAL DA FAZENDA<br><br>CARLOS ALBERTO OLIVEIRA BRITO<br>SECRETÁRIO MUNICIPAL DE PLANEJAMENTO<br><br>DENISE LIMA MASCARENHAS<br>SECRETÁRIA MUNICIPAL DE SAÚDE<br><br>ANTONIO MAÚRICIO SANTANA DE CARVALHO<br>SECRETÁRIO MUNICIPAL DE CULTURA, ESPORTE E LAZER<br><br>ANA RITA DE ALMEIDA NEVES<br>SECRETÁRIA MUNICIPAL DE EDUCAÇÃO<br><br>GUTEMBERG SANTOS DE ALMEIDA<br>DIRETOR PRESIDENTE DA FUNDAÇÃO HOSPITALAR DE FEIRA DE SANTANA<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

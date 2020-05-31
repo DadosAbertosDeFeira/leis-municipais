@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>RESOLUÇÃO Nº 48/1964</h2><br>ABRE CRÉDITO ESPECIAL DE CR$ 3.251.500,00 PARA O FIM QUE ESPECIFICA.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>A CÂMARA MUNICIPAL DE FEIRA DE SANTANA, DECRETA E PROMULGA A SEGUINTE RESOLUÇÃO:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica aberto na Contadoria da Prefeitura Municipal de Feira de Santana, um crédito especial de CR$ 3.251.500,00 (TRÊS MIL DUZENTOS E CINQUENTA E UM MIL E QUINHENTOS CRUZEIROS) para pagamento de subsídios e representação dos Srs. Vereadores, no corrente exercício.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> As despesas decorrentes da Presente Resolução, correrão por conta dos recursos previstos na Lei nº 140, de 22/12/948, com fundamento no art. 186, parágrafo único, alíneas A e B.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Esta Resolução entrará em vigor na data da sua publicação, revogadas as disposições em contrário.<br><br>PUBLIQUE-SE.<br><br>SALA DAS DESSÕES DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, 12 DE JUNHO DE 1964.<br><br>ALTAMIR ALVES LOPES<br>Presidente<br><br>HUGO NAVARRO SILVA<br>1º Secretário<br><br>NEWTON TAVARES CARNEIRO<br>2º Secretário<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

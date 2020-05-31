@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 2307/2001</h2><br>AFETA BENS DO MUNICÍPIO PARA O USO ESPECIAL QUE ESPECIFICA E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Autor: Poder Executivo<br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia; Faço saber que a Câmara Municipal, através do Projeto de Lei nº 176/2001, de autoria do Poder Executivo, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> A Administração Municipal poderá autorizar, na conformidade do que estabelecido nesta Lei, a utilização especial, para fixação de peças publicitárias, equipamentos urbanos e similares, por parte de terceiros interessados, dos bens municipais ora afetados para tal fim, caracterizados da seguinte forma:<br><br>I - os canteiros centrais e as margens laterais das vias públicas municipais;<br><br>II - os bens dominiais do Município, enquanto não estejam sendo utilizados para suas finalidades específicas;<br><br>III - as praças e logradouros de uso comum da população;<br><br>IV - as praças esportivas do Município.<br><br>Parágrafo Único - O Executivo poderá, em ato específico devidamente fundamentado, atendidos sempre os princípios do interesse coletivo, afetar outros bens municipais para a finalidade ora estabelecida.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> A utilização prevista no artigo antecedente dar-se-á sempre através de autorização precária, válida exclusivamente para o exercício de sua expedição, recolhidas as taxas correspondentes, e revogável a qualquer tempo, por fundamentado interesse público.<br><br>Parágrafo Único - Os autorizados a utilizar os equipamentos urbanos e similares supracitados deverão ceder ao Município 10% (dez por cento) do espaço publicitário, afim de divulgar campanhas institucionais de interesse da administração pública municipal.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Fica o Poder Executivo Municipal autorizado a regulamentar a presente Lei, em um prazo máximo de cento e vinte dias, observando os seguintes princípios:<br><br>I - caracterização prévia dos bens afetados;<br><br>II - vedação de autorização exclusiva para um único interessado, ou para um só tipo de veículo ou equipamento;<br><br>III - análise prévia do impacto urbano de cada autorização requerida;<br><br>IV - harmonização entre os diversos tipos de equipamentos e veículos e sítios urbanos em que serão implantadas, resguardadas sempre as necessidades coletivas de segurança, salubridade, conservação paisagística e estética urbana.<br><br>Parágrafo Único - Ao editar a regulamentação prevista neste artigo, o Executivo Municipal fixará, concomitantemente, normas para a concessão das licenças para instalação de veículos publicitários e equipamentos de uso público em locais particulares, sempre satisfeitas as taxas correspondentes e atendidos os princípios aqui estabelecidos.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Esta Lei entrará em vigor na data da sua publicação, revogadas as disposições em contrário.<br><br>PREFEITURA MUNICIPAL DE FEIRA DE SANTANA, EM 27 DE DEZEMBRO DE 2001.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

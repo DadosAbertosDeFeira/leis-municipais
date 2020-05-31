@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3520/2015</h2><br>INSTITUI O DIÁRIO OFICIAL ELETRÔNICO DE FEIRA DE SANTANA - DOFS, CONFORME ESPECIFICA.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O Prefeito Municipal de Feira de Santana, Estado da Bahia, no uso de suas atribuições, Faço Saber que a Câmara Municipal, através do Projeto de LEI Nº 005/2015, de autoria do Poder Executivo, decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica instituído o Diário Oficial Eletrônico de Feira de Santana - DOFS, que passa a representar a Imprensa Oficial de publicação e divulgação dos atos oficiais do Poder Executivo Municipal e do Poder Legislativo Municipal.<br><br>Parágrafo Único - O Diário Oficial Eletrônico de Feira de Santana - DOFS, de que trata esta Lei, será veiculado na rede mundial de computadores - Internet, sob endereço exclusivo http://www.diariooficialfeiradesantana.ba.gov.br, sem quaisquer custos para o cidadão, e poderá ser acessado gratuitamente por qualquer interessado, independentemente de cadastramento.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> A publicação no Diário Oficial Eletrônico do Município de Feira de Santana - DOFS atenderá aos seguintes requisitos:<br><br>I - eficácia;<br><br>II - autenticidade, III) integridade;<br><br>IV - moralidade;<br><br>V - validade jurídica;<br><br>VI - obrigação com a transparência.<br><br>Parágrafo Único - As publicações serão assinadas eletronicamente.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> A publicação no Diário Oficial Eletrônico do Município Feira de Santana - DOFS, substitui qualquer outro meio e publicação oficial para quaisquer efeitos legais, à exceção dos casos que, por lei especial, exija outro meio de publicação.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Serão, entre outros, obrigatoriamente publicados no DOFS, os seguintes atos:<br><br>I - emendas à <a class="link_law" data-original-title="Lei Orgânica Feira de Santana BA" data-toggle="tooltip" href="/lei-organica-feira-de-santana-ba" rel="tooltip">Lei Orgânica</a> do Município, códigos, leis complementares, leis ordinárias, decretos, portarias, resoluções e outros atos normativos municipais;<br><br>II - as publicações obrigatórias em atendimento à Lei Complementar Federal nº 101, de 04 de maio de 2000, a Lei Federal nº 8.666, de 21 de junho de 1993, e a Lei Federal nº 10.520, de 17 de julho de 2002.<br><br>§ 1º Poderão, na forma do § 1º, e caput do art. 37, da Constituição Federal, ser publicados no DOFS, outros atos e informações.<br><br>§ 2º Os atos oficiais que não requeiram publicação integral obrigatória poderão ser publicados em resumo, restringindo-se aos elementos necessários a sua identificação.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Os Atos do Poder Executivo e Legislativo Municipal só produzirão efeitos após a publicação no Diário Oficial Eletrônico do Município de Feira de Santana - DOFS, criado por esta Lei.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> O funcionamento do Diário Oficial Eletrônico do Município de Feira de Santana - DOFS acontecerá da seguinte forma:<br><br>I - as edições serão diagramadas e editoradas com recursos de informática, controladas por numeração sequenciada a partir do número 01 (zero um), sendo que cada edição terá, no mínimo, uma página; as edições com mais de uma página serão devidamente numeradas;<br><br>II - o calendário das edições obedecerá:<br><br>a) o mesmo do funcionamento do Diário Oficial do Estado da Bahia;<br>b) o mesmo do funcionamento do Diário Oficial da União;<br>c) os Poderes Executivo e Legislativo Municipal;<br>d) a urgência;<br>e) de acordo com interesse público, poderão ser feitas edições extras;<br><br>III - as pessoas físicas e jurídicas poderão acessar as publicações disponíveis no Diário Oficial Eletrônico, sem ônus;<br><br>Parágrafo Único - Na primeira página de cada edição, o Diário Oficial do Município conterá obrigatoriamente:<br><br>I - o brasão do Município de Feira de Santana;<br><br>II - o título &quot;Diário Oficial Eletrônico do Município de Feira de Santana&quot;;<br><br>III - o número da edição e a citação numérica desta lei;<br><br>IV - a data, o nome e identificação do responsável.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Os atos, após serem publicados no DOFS, não poderão sofrer modificações ou supressões.<br><br>Parágrafo Único - Eventuais retificações de atos deverão constar de nova publicação.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> As publicações no Diário Oficial Eletrônico do Município de Feira de Santana - DOFS, não serão onerosas para órgãos e entidades públicas, bem como para entidades de classe, sindicatos, organizações não governamentais de cunho social, e outros com finalidade social, cabendo a responsabilidade pelo conteúdo do material remetido ao Diário Oficial Eletrônico para publicação a quem o produziu.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> Ao Município de Feira de Santana fica reservado os direitos autorais e de publicação do Diário Oficial Eletrônico do Município de Feira de Santana - DOFS, ficando autorizada sua impressão e proibida sua comercialização.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10</span></a> Compete às Secretarias Municipais de Administração, Fazenda, Planejamento e Comunicação a responsabilidade pela publicação, periodicidade, regularidade e veiculação eletrônica do Diário Oficial Eletrônico do Município de Feira de Santana - DOFS.<br><br>Parágrafo Único - As atribuições de que trata o caput deste artigo poderão ser delegadas por ato do Chefe do Poder Executivo.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11</span></a> O Município de Feira de Santana não se responsabilizará por erros ou incorporações decorrentes da impressão inadequada, de atos processuais ou administrativos, publicados no seu Diário Oficial Eletrônico.<br><br><a name="artigo_12"><span class="label label-pill label-danger">Art. 12</span></a> A implementação do Diário Oficial Eletrônico do Município de Feira de Santana - DOFS, será regulamentada por ato do Chefe do Executivo Municipal, no prazo de 90 (noventa) dias.<br><br>Parágrafo Único - O prazo estabelecido no caput deste artigo poderá ser prorrogado, por motivo justificado.<br><br><a name="artigo_13"><span class="label label-pill label-danger">Art. 13</span></a> Em caso de colapso no sistema, por qualquer eventualidade, deverá ser utilizado o meio impresso para divulgação dos atos oficiais.<br><br><a name="artigo_14"><span class="label label-pill label-danger">Art. 14</span></a> As despesas necessárias para o comprimento da presente Lei correrão à conta de dotações orçamentárias próprias, suplementadas se necessário.<br><br><a name="artigo_15"><span class="label label-pill label-danger">Art. 15</span></a> Esta Lei entra em vigor na data de sua publicação.<br><br>Gabinete do Prefeito, 18 de fevereiro de 2015.<br><br>José Ronaldo de Carvalho<br>Prefeito Municipal<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

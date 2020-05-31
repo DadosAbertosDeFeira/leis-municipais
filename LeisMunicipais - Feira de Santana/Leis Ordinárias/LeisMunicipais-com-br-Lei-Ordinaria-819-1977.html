@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 819, de 31 de maio de 1977</h2><br>INSTITUI SOB FORMA DE AUTARQUIA O CENTRO DE ABASTECIMENTO DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, FAÇO saber que a Câmara Municipal decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica instituído o centro de abastecimento de Feira de Santana, entidade autárquica, com personalidade jurídica e patrimônio próprio, sede e foro na cidade de Feira de Santana, que integrará a estrutura da Prefeitura Municipal, diretamente vinculada ao Chefe do Poder Executivo do Município.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> A jurisdição do centro de abastecimento de Feira de Santana, abrange todas as áreas onde se desenvolvam atividades de feiras-livres, mercados, matadouros e correlatos no âmbito do Município.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> O centro de abastecimento tem por finalidade participar da execução da política de desenvolvimento do Município, devendo para esse fim prover:<br><br>a) a infra-estrutura básica da entidade, estabelecimentos e serviços de comercialização, na área do Município, com vista à localização, instalação e obras complementares;<br>b) a política normativa e executiva para a racionalização do sistema municipal de abastecimento;<br>c) a atração e integração mais direta de produtores a uma economia de mercado;<br>d) a regularização da oferta de alimentos;<br>e) a integração do sistema municipal de abastecimento.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Compete ao centro de abastecimento:<br><br>I - executar, reavaliar e atualizar a política municipal de abastecimento;<br><br>II - remanejar e relocar, na área do Município, instalações e serviços pertinentes à comercialização de gêneros alimentícios e correlatos, visando à consolidação do sistema integrado;<br><br>III - administração e operar o projeto cabana, inclusive diligenciando as medidas e providências para as futuras expansões;<br><br>IV - promover o arrendamento de imóveis do seu patrimônio, em conformidade e proveito do sistema de comercialização;<br><br>V - promover medidas juntamente com outros órgãos da municipalidade, para adequação de projetos e posturas municipais, com vista ao disciplinamento do uso dos solos urbanos em harmonia com o desenvolvimento racional integrado do Município;<br><br>VI - fiscalizar, juntamente com as autoridades municipais competentes, o cumprimento de normas e posturas municipais relacionadas com o sistema de abastecimento;<br><br>VII - executar obras e serviços diretamente ou por adjudicação;<br><br>VIII - participar de entidades públicas e privadas, inclusive através de subscrição de capital, desde que seus objetivos sejam condizentes com a política de racionalização do sistema de abastecimento;<br><br>IX - promover obtenção de financiamentos, inclusive mediante convênios, contratos ou acordos, desde que aprovados pelo Prefeito Municipal, &quot;<i>ad referendum</i>&quot; do Legislativo e em conformidade com os interesses da política de abastecimento;<br><br>X - exercer outras competências necessárias ao cumprimento de seus objetivos e fins.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> O centro de abastecimento tem a seguinte estrutura básica:<br><br>I - Conselho Deliberativo<br><br>II - Superintendência<br><br>III - Diretoria Administrativa Financeira<br><br>IV - Diretoria Técnica<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> O Conselho Deliberativo é o órgão que tem por fim exercer a administração superior do centro, competindo-lhe:<br><br>I - formular política e diretrizes da autarquia;<br><br>II - aprovar os programas anuais e plurianuais de trabalho;<br><br>III - aprovar a proposta de orçamento-programa da entidade;<br><br>IV - aprovar normas gerais relativas à administração da Entidade;<br><br>V - opinar sobre a celebração de convênios, contratos ou acordos relativos à obtenção de financiamento;<br><br>VI - apreciar propostas de modificações do regimento interno da entidade, a serem aprovadas pelo Prefeito Municipal;<br><br>VII - apreciar, previamente, as contas da autarquia a serem submetidas aos órgãos competentes;<br><br>VIII - exercer outras competências necessárias ao cumprimento dos seus fins e objetivos.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> O Conselho Deliberativo é constituído de seis membros natos, e cinco membros indicados pelas entidades:<br><br>I - Associação Comercial de Feira de Santana;<br><br>II - representante eleito do órgão de classe dos feirantes;<br><br>III - representante eleito dos locatários dos mercados;<br><br>IV - representante dos produtores rurais;<br><br>V - representante da EMATERBA (Ex-ANCARBA).<br><br>§ 1º Os membros natos são:<br><br>I - Prefeito Municipal;<br><br>II - Coordenador do Escritório de Planejamento Integrado;<br><br>III - Secretário de Expansão Econômica;<br><br>IV - Secretário de Finanças;<br><br>V - Secretário de Serviços Urbanos;<br><br>VI - Secretário de Desenvolvimento Comunitário.<br><br>§ 2º Os representantes das entidades referidas neste artigo serão indicados pelas mesmas, podendo, a qualquer tempo, o dirigente da entidade representada assumir a sua representação.<br><br>§ 3º O Presidente do Conselho Deliberativo será o Prefeito Municipal de Feira de Santana.<br><br>§ 4º O Conselho Deliberativo reunir-se-à:<br><br>I - ordinariamente 2 (duas) vezes ao ano, nos meses de fevereiro e novembro;<br><br>II - extraordinariamente, quando convocado pelo seu Presidente ou pela maioria de seus membros.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> A superintendência é o órgão executivo da autarquia, sendo seu titutar nomeado pelo Prefeito Municipal, competindo-lhe:<br><br>I - representar o centro em juízo ou fora dele;<br><br>II - promover a execução e modificação do programa de trabalho da autarquia, consentaneamente, com a política municipal de abastecimento e em proveito da entidade;<br><br>III - propor ao Prefeito Municipal, a desapropriação ou aquisição de imóveis e equipamentos necessários ao bom andamento dos serviços, na área de sua Jurisdição;<br><br>IV - promover a elaboração do orçamento-programa da entidade a ser submetida ao Conselho Deliberativo;<br><br>V - encaminhar ao Prefeito Municipal os demonstrativos mensais e anuais de natureza contábil e orçamentária;<br><br>VI - promover o recrutamento, contratação e rescisão de contratos do pessoal necessário ao vinculado à autarquia;<br><br>VII - promover o arrendamento de imóveis pertencentes ao patrimônio da autarquia, desde que autorizado pelo Conselho Deliberativo;<br><br>VIII - movimentar as contas da autarquia, juntamente com o diretor administrativo financeiro;<br><br>IX - contratar serviços e obras necessários à administração da autarquia, inclusive os de natureza técnica especializados;<br><br>X - exercer outras competências necessárias ao cumprimento dos seus fins e objetivos.<br><br>Parágrafo Único - Os vencimentos do superintendente, não poderão exceder, em nenhuma hipótese, aos previstos para os diversos titulares das secretarias do Município.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> O diretor administrativo financeiro, será proposto pelo superintendente e aprovado pelo Prefeito Municipal.<br><br>§ 1º São atribuições do diretor administrativo financeiro:<br><br>I - elaborar, juntamente com o superintendente, o orçamento-programa da entidade;<br><br>II - preparar os demonstrativos mensais e anuais de natureza contábil e orçamentária;<br><br>III - elaborar plano de contas e sugerir normas referentes à política financeira da entidade;<br><br>IV - movimentar, juntamente com o superintendente, as contas da autarquia.<br><br>§ 2º O diretor administrativo financeiro, não terá vencimentos superiores aos diversos diretores existentes no Poder Executivo Municipal, observando o que preceitua a Lei Municipal nº <a class="link_law" data-id="1713622" data-original-title=" Data da Norma: 01.01.1973 - (ATO INEXISTENTE, NUMERAÇÃO NÃO UTILIZADA)" data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1973/74/746/lei-ordinaria-n-746-1973-ato-inexistente-numeracao-nao-utilizada" rel="tooltip">746</a>/73.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10 -</span></a> O diretor técnico será proposto pelo superintendente e aprovado pelo Prefeito Municipal.<br><br>§ 1º São atribuições do diretor técnico:<br><br>I - elaborar, juntamente com o superintendente, as normas técnicas operativas dos serviços de comercialização no âmbito da autarquia;<br><br>II - elaborar ou sugerir programa de trabalho e de ação da autarquia, com vistas à integração harmônica de produtores e vendedores, em proveito da racionalização de abastecimento;<br><br>III - exercer atividades e funções técnicas compatíveis com o programa da autarquia no campo do abastecimento;<br><br>IV - desenvolver atividades técnicas e executivas em conformidade com a política de ação da autarquia, inclusive quando se tratar de intercâmbio com outras agências do poder público ou privado.<br><br>§ 2º O diretor técnico terá vencimentos iguais aos demais diretores, mesmo de níveis universitário, existentes no Poder Executivo Municipal.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11 -</span></a> O patrimônio do centro de abastecimento constituir-se-á:<br><br>I - terrenos, prédios, equipamentos e instalações edificados ou adquiridos para o projeto cabana;<br><br>II - terrenos, prédios, instalações e equipamentos vinculados às atividades dos mercados públicos, matadouro e feira do gado;<br><br>III - bens que venha adquirir ou que lhe sejam transferidos a qualquer título;<br><br>IV - dotações orçamentárias e créditos outros, provenientes de qualquer entidade de direito público ou privado;<br><br>V - rendas próprias de qualquer natureza. Art. 12 - O regimento interno determinará a estrutura geral e operacional da autarquia, e será aprovado mediante decreto do Chefe do Executivo Municipal, ouvido o conselho deliberativo.<br><br><a name="artigo_13"><span class="label label-pill label-danger">Art. 13 -</span></a> O conselho deliberativo deverá ser instalado até 90 (noventa) dias após a publicação desta Lei.<br><br>Parágrafo Único - Enquanto não for instalado o conselho deliberativo, suas atribuições ficarão a cargo da superintendência que as exercerá &quot;<i>ad referendum</i>&quot; do Prefeito Municipal, sem prejuizo de apreciação posterior do referido conselho.<br><br><a name="artigo_14"><span class="label label-pill label-danger">Art. 14 -</span></a> O quadro de pessoal do centro será constituído de pessoal técnico e administrativo, devendo os valores das remunerações serem fixados pelo Prefeito Municipal, mediante proposta da superintendência.<br><br><a name="artigo_15"><span class="label label-pill label-danger">Art. 15 -</span></a> Os servidores do centro de abastecimento terão suas relações de emprego pela consolidação das leis do trabalho.<br><br>Parágrafo Único - Os servidores municipais postos à disposição do centro, ficarão sujeitos a regime especial de remuneração e a normas que serão traçadas pela superintendência e aprovadas pelo Prefeito Municipal.<br><br><a name="artigo_16"><span class="label label-pill label-danger">Art. 16 -</span></a> No fim de cada mês o superintendente procederá ao balancente financeiro do centro, transferido para a Prefeitura Municipal o saldo verificado, mediante crédito na conta bancária que for indicada.<br><br><a name="artigo_17"><span class="label label-pill label-danger">Art. 17 -</span></a> Fica o Prefeito Municipal autorizado a abrir crédito especial de até Cr$ 100.000,00 (cem mil cruzeiros) para implantação jurídico-administrativa da autarquia.<br><br><a name="artigo_18"><span class="label label-pill label-danger">Art. 18 -</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Prefeitura Municipal de Feira de Santana, 31 de maio de 1977.<br><br>DR. COLBERT MARTINS DA SILVA<br>Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

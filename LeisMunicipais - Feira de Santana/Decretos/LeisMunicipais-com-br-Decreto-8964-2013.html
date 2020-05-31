@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>DECRETO Nº 8964, de 12 de julho de 2013</h2><br>DISPÕE SOBRE A INSTALAÇÃO TEMPORÁRIA DE EQUIPAMENTOS NO PARQUE DE EXPOSIÇÃO JOÃO MARTINS DA SILVA, DURANTE A XXXVIIIª EXPOFEIRA 2013 - EXPOSIÇÃO AGROPECUÁRIA DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, no uso de suas atribuições, CONSIDERANDO o que dispõe o art. 94, incisos II e XIII, da <a class="link_law" data-original-title="Lei Orgânica Feira de Santana BA" data-toggle="tooltip" href="/lei-organica-feira-de-santana-ba" rel="tooltip">Lei Orgânica</a> do Município, com redação dada pela Emenda nº 29/2006, DECRETA:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> A exploração de atividades econômicas no Parque de Exposição João Martins da Silva, através de equipamentos tipo barraca de festa popular, balcão e trailers, bem como o comércio ambulante durante a EXPOSIÇÃO AGROPECUÁRIA DE FEIRA DE SANTANA (XXXVIIIª EXPOFEIRA 2013), dependerá de autorização pela Secretaria Municipal da Agricultura, Recursos Hídricos e Desenvolvimento Rural.<br><br>§ 1º As inscrições para áreas comerciais, currais, barracas de bebidas e espaços publicitários serão de 05 de agosto a 30 de agosto de 2013.<br><br>§ 2º A autorização temporária a que se refere o presente Artigo será cedida, a título precário, podendo ser cassada a qualquer momento, a juízo exclusivo da Administração Municipal e somente para o período de 01 a 08 de setembro de 2013.<br><br>§ 3º A autorização somente será concedida para a instalação de equipamentos em locais a serem determinados pela Secretaria Municipal da Agricultura, Recursos Hídricos e Desenvolvimento Rural.<br><br>§ 4º A autorização será concedida, prioritariamente, àquelas pessoas que comprovem a participação na EXPOFEIRA 2012, no período 05 a 09 de agosto de 2013, através da apresentação do Documento de Arrecadação Municipal (DAM) correspondente, devidamente quitado, até completar o número de espaços para comercialização existente, sendo excluídos aqueles que por qualquer motivo desrespeitaram as normas da coordenação ou feriram a integridade do evento, ficando assegurado à Secretaria Municipal da Agricultura, Recursos Hídricos e Desenvolvimento Rural o direito, sempre que se afigurar necessário, de remanejar a localização. As demais autorizações serão concedidas no período de 12 a 30 de agosto de 2013, sempre em observância aos lotes que ainda não foram comercializados.<br><br>§ 5º O pagamento do DAM - Documento de Arrecadação Municipal deverá ser feito em moeda corrente e apresentado sua quitação com prazo máximo de 24 horas após a emissão do referido documento.<br><br>§ 6º A autorização temporária de que trata este Decreto é pessoal, intransferível e a sua cessão a terceiros, ainda que gratuitamente, importará no seu cancelamento.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> A instalação de qualquer tipo de equipamento só será permitida após a comprovação da autorização temporária e na área especificada no instrumento.<br><br>§ 1º As datas para instalação e desmonte dos equipamentos serão definidas através da Secretaria Municipal da Agricultura, Recursos Hídricos e Desenvolvimento Rural.<br><br>§ 2º Na montagem dos equipamentos fica proibido terminantemente causar danos nas instalações do Parque de Exposição, tais como calçamento, asfalto, passeios, meios-fios, jardins, iluminação e correlatos.<br><br>§ 3º A Secretaria Municipal da Agricultura, Recursos Hídricos e Desenvolvimento Rural fica encarregada de remover e apreender os equipamentos que não estejam com a autorização temporária ou que não observem os prazos e formas previstos no § 1º desse Artigo.<br><br>§ 4º Os encarregados de montagem e desmontagem, além daqueles de remoção e apreensão, serão de responsabilidade do titular da autorização.<br><br>§ 5º A montagem dos equipamentos será precedida de demarcação, dos locais a ser realizada pela Secretaria Municipal da Agricultura, Recursos Hídricos e Desenvolvimento Rural.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Sob pena de cassação imediata da autorização, o titular se obriga a manter a limpeza e higiene da área onde esteja instalado o equipamento, acondicionando os resíduos para coleta por partes do Departamento de Limpeza Urbana.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> O titular da autorização temporária deverá manter no local de instalação do equipamento autorizado, para fins da localização, o respectivo Alvará/2013.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> A comercialização dos gêneros alimentícios, ainda que de pequena monta, será realizada mediante a autorização da Secretaria Municipal da Agricultura, Recursos Hídricos e Desenvolvimento Rural, em local previamente estabelecido.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> É obrigatório o uso de copos e vasilhames descartáveis em barracas que comercializem bebidas e/ou alimentos, onde as pessoas que manipulam esses alimentos serão obrigadas a utilizarem luvas de silicone.<br><br>Parágrafo Único - A não-observância deste artigo acarretará o cancelamento da autorização temporária, em caso de reincidência.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Ficam fixados os seguintes preços para a utilização de espaços na Exposição Agropecuária de Feira de Santana (XXXVIIIª EXPOFEIRA 2013), a ser realizada de 01 a 08 de setembro de 2013, no Parque de Exposição João Martins da Silva, conforme abaixo especificados:<pre> _________________________<br>|Área para      | R$ 23,00|<br>|selaria m²     |         |<br>|---------------|---------|<br>|Área para      | R$ 26,50|<br>|stand/ m²      |         |<br>|---------------|---------|<br>|Área parque de |       R$|<br>|diversões      |14.950,00|<br>|---------------|---------|<br>|Barraca de     |R$ 206,00|<br>|lanches        |         |<br>|---------------|---------|<br>|Barracas 6 x 6 |R$ 690,00|<br>|---------------|---------|<br>|Churrascaria/m²| R$ 26,50|<br>|---------------|---------|<br>|Coquetel       |R$ 287,50|<br>|---------------|---------|<br>|Currais        |R$ 170,00|<br>|pequenos - 36m²|         |<br>|---------------|---------|<br>|Pequenos pontos| R$ 40,00|<br>|avulsos m²     |         |<br>|---------------|---------|<br>|Stand coberto  |       R$|<br>|grande         | 2.530,00|<br>|---------------|---------|<br>|Stand coberto  |       R$|<br>|médio          | 1.150,00|<br>|---------------|---------|<br>|Trailer grande |R$ 575,00|<br>|---------------|---------|<br>|Trailer pequeno|R$ 460,00|<br>|_______________|_________| * tabela formatada pela equipe técnica do LeisMunicipais.com.br<br>§ 1º As barracas 6x6 especial não poderá ser concedido mais de um lote ao DAM por permissionário.<br><br>§ 2º Fica estabelecida a capacidade máxima para os seguintes itens:<br><br>I - Lanhes - 30 pontos;<br><br>II - Coquetel - 30 pontos;<br><br>III - Jogos - 16 pontos;<br><br>IV - Comida / Bebida - 24 pontos 6 x 6.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> Ficará a cargo das Associações e Núcleos de Criadores disponibilizar aos tratadores dos animais o uso de luvas de raspa de couro e botas próprias, como também o gerenciamento das argolas, baias e boxes, sendo que as mesmas deverão encaminhar para a SEAGRI o quantitativo de animais inscritos para a exposição até o dia 05 de agosto 2013.<br><br>Parágrafo Único - Persistindo ainda disponibilidade de vagas destinadas aos animais a serem expostos nos pavilhões, a Secretaria Municipal da Agricultura, Recursos Hídricos e Desenvolvimento Rural fixará os seguintes valores para a emissão dos DAM`s:<br><br>I - Baias - R$ 150,00<br><br>II - Argolas - R$ 120,00<br><br>III - Boxes - R$ 150,00<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> As despesas com consumo de energia elétrica serão cobradas antecipadamente, mediante requerimento, no ato da inscrição, relacionando os equipamentos elétricos a serem instalados, dimensionando-se os valores de acordo com a tabela prévia.<br><br>§ 1º A Secretaria Municipal da Agricultura, Recursos Hídricos e Desenvolvimento Rural manterá fiscalização permanente para que os equipamentos sejam iguais aos relacionados no ato da inscrição, evitando-se sobrecarga.<br><br>§ 2º Os equipamentos não relacionados ou adicionais sem autorização ficam sujeitos ao pagamento do consumo de energia elétrica, acrescido de multa de 20% (vinte por cento), dobrando sucessivamente a cada reincidência.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10 -</span></a> A veiculação de publicidade fora do espaço adquirido, ou que não tenha relação com o objeto do comércio, deverá ser previamente autorizada pela Secretaria Municipal da Agricultura, Recursos Hídricos e Desenvolvimento Rural, mediante pagamento das taxas especificadas a seguir:<pre> ______________________<br>|Balões   |R$ 400,00 p/|<br>|         |unidade     |<br>|         |durante o   |<br>|         |evento      |<br>|---------|------------|<br>|Faixas,  |R$ 20,00 p/ |<br>|Cartazes |m²          |<br>|ou       |            |<br>|similares|            |<br>|---------|------------|<br>|Luminosos|R$ 400,00 p/|<br>|         |m² + consumo|<br>|         |energia     |<br>|         |elétrica    |<br>|---------|------------|<br>|Impressos|R$ 50,00 por|<br>|         |peça        |<br>|         |publicitária|<br>|_________|____________| * tabela formatada pela equipe técnica do LeisMunicipais.com.br<br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11 -</span></a> Os comerciantes devem apresentar no estabelecimento em local visível e de fácil acesso extintores compatíveis com a área e dentro das normas que determina o projeto de Incêndio e Pânico.<br><br><a name="artigo_12"><span class="label label-pill label-danger">Art. 12 -</span></a> A Prefeitura compromete-se a fornecer aos comerciantes das barracas que fiquem localizadas nas proximidades do palco principal de Shows artísticos, protetor auricular, alertando da obrigatoriedade do uso desse EPI pelos comerciantes.<br><br><a name="artigo_13"><span class="label label-pill label-danger">Art. 13 -</span></a> É vedada a veiculação de publicidade político-eleitoral no recinto do Parque de Exposição João Martins da Silva no período da XXXVIIIª EXPOFEIRA 2013, feita por qualquer processo, modo ou forma de exposição.<br><br><a name="artigo_14"><span class="label label-pill label-danger">Art. 14 -</span></a> Para o recolhimento dos valores definidos nos artigos anteriores, os interessados se dirigirão à Secretaria Municipal da Agricultura, Recursos Hídricos e Desenvolvimento Rural que, após definição da localização do espaço, dimensionando o consumo de energia elétrica e espaço publicitário, emitirá os Documentos de Arrecadação Municipal (DAMs), condicionando-se a expedição de autorização precária de uso e a ocupação do local estabelecido à vista da quitação do DAM.<br><br><a name="artigo_15"><span class="label label-pill label-danger">Art. 15 -</span></a> Este Decreto entrará em vigor na data da sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 12 de julho de 2013.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito Municipal<br><br>MÁRIO COSTA BORGES<br>Chefe de Gabinete do Prefeito<br><br>CARLOS ANTÔNIO DE MORAES LUCENA<br>Procurador Geral do Município<br><br>EXPEDITO CAMPODÔNIO ELOY<br>Secretário Municipal da Fazenda<br><br>OZENY JOSÉ DE MORAES CERQUEIRA<br>Secretário Municipal de Agricultura, Recursos Hídricos e Desenvolvimento Rural<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

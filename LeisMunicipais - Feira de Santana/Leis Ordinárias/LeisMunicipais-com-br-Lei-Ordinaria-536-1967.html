@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 536, de 17 de julho de 1967</h2><br>AUTORIZA O PREFEITO MUNICIPAL A MEDIANTE CONVÊNIO, SUBVENCIONAR O CENTRO DOS ESTUDANTES UNIVERSITÁRIOS DA FEIRA DE SANTANA, (CEUFS) PARA INSTALAÇÃO E MANUTENÇÃO DA RESIDÊNCIA DO UNIVERSITÁRIO FEIRENSE, ABRINDO PARA TAL FIM, CRÉDITO ESPECIAL DE NCR$ 8.500,00 (OITO MIL E QUINHENTOS CRUZEIROS NOVOS) E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA. Faço saber que a Câmara de Vereadores decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica o Prefeito Municipal autorizado a subvencionar mediante convênio, o Centro dos Estudantes Universitérios de Feira de Santana (CEUFS), para a instalação da residência do universitário feirense da cidade de Salvador, capital deste Estado.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Do convênio a ser firmado entre a Prefeitura Municipal e o Centro dos Estudantes Universitários de Feira de Santana (CEUFS), deverá constar:<br><br>I - a obrigação de ser o regimento interno da Residência do Universitário Feirense aprovado pela Secretaria de Educação e cultura deste Município;<br><br>II - que a seleção dos estudantes residentes será feita por uma comissão composta do Secretário de Educação e Cultura do Município, do Presidente do Centro dos estudantes Universitários de Feira de Santana (CEUFS), do Presidente do Lions Clube e do Presidente do Rotary Clube, ou por pessoa devidamente credenciada pela autoridade ou representante legal das entidades mencionadas devendo levar em consideração a prova feita pelo candidato de obtenção de maior média da necessidade do benefício da residência e o que tiver comportamento que o torne incompatível com o nível de decência e respeitabilidade da instituição;<br><br>III - que perderá o direito de residente, o estudante que for reprovado ou abandonar os estudos, ou, que sofrer alteração em sua situação econômica ou de sua família, de modo a permiti-lhe estudar sem o benefício da residência, e o que tiver comportamento que o torne incompatível com o nível de decência e respeitabilidade da instituição;<br><br>IV - a proibição da residência para o estudante matriculado em curso que tenha similar em Feira de Santana;<br><br>V - a ressalva de que a subvenção deixará de ser devida quando se instalar 3 (três) escolas de nível superior neste Município;<br><br>VI - a suspensão de subvenção em caso de falta de prestação anual de contas da diretoria do Centro dos Estudantes Universitários de Feira de Santana (CEUFS), irregular funcionamento dessa entidade, descumprimento de qualquer das obrigações estabelecidas em Lei, ou no regimento interno da residência.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> A subvenção a que se refere o art. 1º desta Lei, será representada por suas cotas destintas, sendo uma no valor de NCr$ 5.530,00 (cinco mil quinhentos e trinta cruzeiros novos), sendo uma destinada a instalação da residência do universitário feirense, e a outra no valor global de NCr$ 2.970,00 (dois mil novecentos e setenta cruzeiros novos), destinada a integrar o orçamento de manutenção da aludida residência, devendo ser paga em duodécimos, até o dia 15 (quinze) de cada mês, no valor de NCr$ 247,50 (duzentos e quarenta e sete cruzeiros novos e cinquenta centavos).<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Para o recebimento da quota de instalação a que se refere o art. 3º, deverá o Centro dos Estudantes Universitários de Feira de Santana (CEUFS), com o requerimento firmado por seu representante legal, fazer prova:<br><br>a) de sua existência legal;<br>b) da regular constituição de sua diretoria;<br>c) da locação do prédio destinado a residência;<br>d) da aprovação do regimento interno da residência pela Secretaria de Educação e Cultura deste Município.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Para recebimento da primeira parcela da quota destinada a manutenção da residência, deverá o Centro dos Estudantes Universitários de Feira de Santana (CEUFS), com o requerimento firmado por seu representante legal, fazer prova:<br><br>a) de que a residência foi devidamente instalada com o parecer favorável da Secretaria de Educação e Cultura deste Município, e com a aprovação pelo prefeito Municipal, das contas referentes a quota de instalação a que alude o art. 3º;<br>b) de que forem regularmente selecionados os 30 (trinta) residentes;<br>c) de que a residência funciona normalmente.<br><br>Parágrafo Único - Para recebimento das demais parcelas da quota destinada a manutenção da residência, o requerimento firmado pelo representante legal do Centro dos Estudantes Universitários de Feira de Santana (CEUFS), far-se-á acompanhar tão somente da prova do regular funcionamento da residência, com o número completo de residentes.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Fica o Prefeito Municipal, autorizado a incluir no orçamento da despesa a partir do exercício de 1968, a notação referente a quota de manutenção da residência, calculada a base de 3 (três) vezes o salário mínimo vigente nesta região, ao tempo da elaboração da proposta orçamentária.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Para os fins previstos no art. 3º, fica o Prefeito autorizado a abrir crédito especial de NCr$ 8.500,00 (oito mil e quinhentos cruzeiros novos), correndo a despesa por conta da verba prevista no art. 186, letra A e B, da Lei nº 140, de 22 de dezembro de 1948.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Prefeitura Municipal de Feira de Santana, 17 de julho de 1967.<br><br>DR. JOÃO DURVAL CARNEIRO<br>Prefeito<br><br>FAUSTINO DIAS LIMA<br>Secretário de Finanças<br><br>RAYMUNDO ANTÔNIO CARNEIRO PINTO<br>Secretário de Educação e Cultura<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

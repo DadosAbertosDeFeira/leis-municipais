@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 1477, de 12 de setembro de 1991</h2><br>DISPÕE SOBRE O CONSELHO MUNICIPAL DE EDUCAÇÃO.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, FAÇO saber que a Câmara Municipal decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> O Conselho Municipal de Educação, criado pela Lei Municipal nº <a class="link_law" data-id="1739637" data-original-title=" Data da Norma: 05.04.1990 - DISPÕE SOBRE A LEI ORGÂNICA DO MUNICIPIO DE FEIRA DE SANTANA E DA OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-promulgada/1990/3/37/lei-promulgada-n-37-1990-dispoe-sobre-a-lei-organica-do-municipio-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">037</a>/90 (<a class="link_law" data-original-title="Lei Orgânica Feira de Santana BA" data-toggle="tooltip" href="/lei-organica-feira-de-santana-ba" rel="tooltip">Lei Orgânica</a> do Município), é um órgão consultivo, normativo, fiscalizador e deliberativo sobre as ações relativas à educação.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O Conselho Municipal de Educação terá a seguinte composição:<br><br>I - um representante da Secretaria Municipal de Educação;<br><br>II - um representante da Federação das Associações de Moradores;<br><br>III - um representante do Sindicato dos Trabalhadores em Educação do Estado da Bahia (APLB);<br><br>IV - um representante da Superintendência Regional de Educação;<br><br>V - um representante do Sindicato dos Trabalhadores em Educação do 3º grau (SINTEST);<br><br>VI - um representante da Casa do Estudante;<br><br>VII - um representante de entidade cultural;<br><br>VIII - um representante do Diretório Central dos Estudantes (DCE) da Universidade Estadual de Feira de Santana;<br><br>IX - um representante da Academia de Letras de Feira de Santana.<br><br>§ 1º O Conselho será presidido pelo Secretário Municipal de Educação, sendo por ele convocado, para as reuniões ordinárias, que serão realizadas bimensalmente, e as extraordinárias quando preciso.<br><br>§ 2º O quorum mínimo para instalação dos trabalhos é de maioria absoluta, sendo permitida a substituição de qualquer representante das entidades através de comunicação, por escrito, ao Presidente do Conselho.<br><br>§ 3º Entidade e órgão que compõem o Conselho Municipal de Educação serão representados por seu dirigente, presidente ou quem este expressamente indique.<br><br>§ 4º O cargo de membro do Conselho Municipal de Educação é considerado de relevância pública e sem remuneração, a qualquer título.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> É da competência do Conselho Municipal de Educação:<br><br>I - emitir parecer sobre matéria de sua competência e atribuição;<br><br>II - fixar normas e diretrizes sobre matéria da sua competência;<br><br>III - deliberar sobre a implantação e localização de novas unidades escolares;<br><br>IV - acompanhar e fiscalizar o cumprimento das Leis que regem a educação no município;<br><br>V - coordenar as eleições para diretoria das escolas municipais;<br><br>VI - formular o plano municipal de educação, definindo prioridades na aplicação de recursos;<br><br>VII - emitir parecer sobre os programas de saúde e alimentação escolar;<br><br>VIII - incentivar, apoiar e promover todas as ações que visem melhorias na educação municipal;<br><br>IX - elaborar e aprovar o regimento interno, definindo local e calendário das suas reuniões ordinárias;<br><br>X - fiscalizar a aplicação dos recursos destinados à educação.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Prefeitura Municipal de Feira de Santana, em 12 de setembro de 1991.<br><br>DR. COLBERT MARTINS DA SILVA<br>Prefeito<br><br>Autor: João Batista Cerqueira<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

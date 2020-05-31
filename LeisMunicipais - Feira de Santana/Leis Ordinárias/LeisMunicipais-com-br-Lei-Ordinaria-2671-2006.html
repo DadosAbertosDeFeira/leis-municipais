@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 2671, DE 22 DE MAIO DE 2006.</h2><br>ALTERA DISPOSITIVO DA LEI Nº <a class="link_law" data-id="1545032" data-original-title=" Data da Norma: 22.09.2004 - FIXA OS SUBSÍDIOS DO PREFEITO, VICE- PREFEITO, SECRETÁRIOS MUNICIPAIS E DOS VEREADORES, DO MUNICÍPIO DE FEIRA DE SANTANA, PARA O EXERCÍCIO 2005/2008, E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2004/252/2523/lei-ordinaria-n-2523-2004-fixa-os-subsidios-do-prefeito-vice-prefeito-secretarios-municipais-e-dos-vereadores-do-municipio-de-feira-de-santana-para-o-exercicio-20052008-e-da-outras-providencias" rel="tooltip">2523</a>/2004, QUE FIXA SUBSÍDIOS DOS AGENTES POLÍTICOS PARA O PERÍODO DE 2005 A 2008, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O Prefeito Municipal de Feira de Santana, Estado da Bahia, no uso das suas atribuições, faço saber que a Câmara Municipal, através do Projeto de Lei nº 34/2006, de autoria do Edil Getúlio da Silva Barbosa, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Revogue-se o parágrafo primeiro, do artigo 5º, da Lei nº <a class="link_law" data-id="1545032" data-original-title=" Data da Norma: 22.09.2004 - FIXA OS SUBSÍDIOS DO PREFEITO, VICE- PREFEITO, SECRETÁRIOS MUNICIPAIS E DOS VEREADORES, DO MUNICÍPIO DE FEIRA DE SANTANA, PARA O EXERCÍCIO 2005/2008, E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2004/252/2523/lei-ordinaria-n-2523-2004-fixa-os-subsidios-do-prefeito-vice-prefeito-secretarios-municipais-e-dos-vereadores-do-municipio-de-feira-de-santana-para-o-exercicio-20052008-e-da-outras-providencias" rel="tooltip">2523</a>/2004, que trata da remuneração dos Vereadores nas sessões legislativas extraordinárias.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 22 de maio de 2006.<br><br>ANTÔNIO CARLOS BORGES JÚNIOR<br>Prefeito Municipal em Exercício<br><br>GERALDO DE OLIVEIRA SAMPAIO FILHO<br>Chefe de Gabinete do Prefeito<br><br>CARLOS ANTÔNIO DE MORAES LUCENA<br>Procurador Geral do Municipal<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3492/2014</h2><br>ESTABELECE A OBRIGATORIEDADE DE AFIXAR PLACAS PARA FAIXAS ETÁRIAS NOS BRINQUEDOS E EQUIPAMENTOS DE PARQUES, JARDINS E PRAÇAS PÚBLICAS, DESTINADAS PARA O LAZER E AS PRÁTICAS ESPORTIVAS NO MUNICÍPIO DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Autor: Isaias dos Santos<br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, do Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 65/2014, de autoria do Edil Isaias dos Santos, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Entende-se como brinquedos e equipamentos de parques, jardins e praças públicas todo tipo de equipamento instalado para a promoção de atividades de lazer e práticas esportivas, destinados para as crianças, adolescentes, adultos e idosos.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> todo equipamento ou brinquedo, instalados para a promoção de lazer e práticas esportivas, devem conter placa afixada com as informações: data de fabricação; faixa etária adequada para uso; capacidade de peso; período necessário de manutenção do mesmo, e o ano de sua obsolescência.<br><br>§ 1º As empresas, instituições e empreendedores individuais quando da solicitação do Alvará de Licença para funcionamento deverá comprovar que os brinquedos que serão instalados para as práticas de lazer e esportivas, destinados para as crianças, adolescentes adultos e idosos, afixaram as respectivas placas informativas contendo as informações de: data de fabricação; faixa etária adequada para uso; capacidade de peso; período necessário de manutenção do mesmo, e ano de sua obsolescência.<br><br>§ 2º O Município de Feira de Santana, de forma antecedente a contratação de quaisquer empresas para instalar os brinquedos e equipamentos nas áreas públicas, praças públicas, parques e jardins, deve inserir as exigências contidas nesta presente lei no processo licitatório pertinente.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito, em 04 de dezembro de 2014.<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO MUNICIPAL<br><br>MÁRIO COSTA BORGES<br>CHEFE DE GABINETE DO PREFEITO<br><br>CLEUDSON SANTOS ALMEIDA<br>PROCURADOR GERAL DO MUNICÍPIO<br><br>MANOEL CORDEIRO NETO<br>SECRETÁRIO MUNICIPAL DE SERVIÇOS PÚBLICOS<br><br>JAILTON BATISTA DOS SANTOS<br>SECRETÁRIO MUNICIPAL DE CULTURA, ESPORTE E LAZER<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

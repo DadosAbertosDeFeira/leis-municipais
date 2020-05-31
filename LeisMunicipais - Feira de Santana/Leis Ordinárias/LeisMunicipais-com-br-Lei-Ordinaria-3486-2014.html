@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3486/2014</h2><br>REVOGA A LEI Nº <a class="link_law" data-id="1543831" data-original-title=" Data da Norma: 27.07.2006 - DISPÕE SOBRE A CRIAÇÃO DO PRÓ - UNISER E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2006/270/2704/lei-ordinaria-n-2704-2006-dispoe-sobre-a-criacao-do-pro-uniser-e-da-outras-providencias" rel="tooltip">2704</a>/2006, QUE CRIOU O PROGRAMA DE INCENTIVO À FORMAÇÃO UNIVERSITÁRIA DO SERVIDOR MUNICIPAL PRÓ-UNISER.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Autor: Poder Executivo<br><br>O Prefeito Municipal de Feira de Santana, Estado da Bahia, no uso de suas atribuições, Faço saber que a Câmara Municipal, através do Projeto de LEI Nº 87/2014, de autoria do Poder Executivo, decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica revogada a Lei nº <a class="link_law" data-id="1543833" data-original-title=" Data da Norma: 12.09.2006 - CONSIDERA DE UTILIDADE PÚBLICA A ASSOCIAÇÃO DOS CRIADORES DE CAPRINOS E OVINOS DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2006/270/2706/lei-ordinaria-n-2706-2006-considera-de-utilidade-publica-a-associacao-dos-criadores-de-caprinos-e-ovinos-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">2.706</a>/2006, que dispõe sobre o Programa de Incentivo à Formação Universitária do Servidor Municipal - PRÓ-UNISER.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Esta Lei entrará em vigor na data de sua publicação, produzindo seus efeitos a partir de 1º de janeiro de 2015.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Revogam-se as disposições em contrário.<br><br>Gabinete do Prefeito 20 de novembro de 2014.<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO MUNICIPAL<br><br>MÁRIO COSTA BORGES<br>CHEFE DE GABINETE DO PREFEITO<br><br>CLEUDSON SANTOS ALMEIDA<br>PROCURADOR GERAL DO MUNICÍPIO<br><br>JOÃO MARINHO GOMES JÚNIOR<br>SECRETÁRIO MUNICIPAL DE ADMINISTRAÇÃO<br><br>EXPEDITO CAMPODÔNIO ELOY<br>SECRETÁRIO MUNICIPAL DA FAZENDA<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>DECRETO Nº 9098, DE 27 DE NOVEMBRO DE 2013.</h2><br>MODIFICA O TRATAMENTO TRIBUTÁRIO A SER DISPENSADO NAS OPERAÇÕES REALIZADAS POR MOTÉIS E ESTABELECIMENTOS SIMILARES.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O Prefeito Municipal de Feira de Santana, Estado da Bahia, no exercício de suas atribuições legais, que lhe confere a <a class="link_law" data-original-title="Lei Orgânica Feira de Santana BA" data-toggle="tooltip" href="/lei-organica-feira-de-santana-ba" rel="tooltip">Lei Orgânica</a> Municipal,<br><br>Considerando o disposto no Decreto Nº  <a class="link_law" data-id="" data-original-title=" Data da Norma: .. - " data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/decreto/2001/640/6409/decreto-n-6409-2001-este-ato-ainda-nao-esta-disponivel-no-sistema" rel="tooltip">6.409</a>, de 17 de abril de 2001, que prevê o recolhimento do ISSQN, por estimativa;<br><br>Considerando a necessidade de impulsionar a arrecadação do ISSQN no segmento, haja vista que os valores ora arrecadados são insignificantes, DECRETA:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica revogado o Decreto Nº  <a class="link_law" data-id="" data-original-title=" Data da Norma: .. - " data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/decreto/2001/640/6409/decreto-n-6409-2001-este-ato-ainda-nao-esta-disponivel-no-sistema" rel="tooltip">6.409</a>, de 17 de abril de 2001, que estabelece critérios de estimativa da base de cálculo para pagamento do Imposto Sobre Serviços de Qualquer Natureza (ISSQN) pelos motéis e estabelecimentos similares.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O critério a ser adotado para cobrança do ISSQN volta a ser aquele definido pelo art. 116, da Lei Complementar Municipal Nº <a class="link_law" data-id="1592758" data-original-title=" Data da Norma: 29.11.2000 - INSTITUI O NOVO CÓDIGO TRIBUTÁRIO E DE RENDAS DO MUNICÍPIO DE FEIRA DE SANTANA, ESTADO DA BAHIA." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-complementar/2000/0/3/lei-complementar-n-3-2000-institui-o-novo-codigo-tributario-e-de-rendas-do-municipio-de-feira-de-santana-estado-da-bahia" rel="tooltip">003</a>/2000, e art. 7º, da Lei Complementar Federal Nº 116, de 31 de julho de 2003.<br><br>§ 1º Os diplomas legais indicados no caput deste artigo estabelecem que a base de cálculo do imposto seja o preço do serviço.<br><br>§ 2º O novo critério passa a viger a partir de janeiro de 2014.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> A Secretaria Municipal da Fazenda poderá emitir normas complementares a este Decreto.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Este decreto entra em vigor na data da sua publicação.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Revogam-se as disposições em contrário.<br><br>Gabinete do Prefeito, 27 de novembro de 2013.<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO MUNICIPAL<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

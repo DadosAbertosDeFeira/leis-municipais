@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI COMPLEMENTAR Nº 58/2011</h2><br>&quot;ALTERA DISPOSITIVOS DA LEI COMPLEMENTAR Nº <a class="link_law" data-id="222126" data-original-title=" Data da Norma: 11.11.1994 - DISPÕE SOBRE O ESTATUTO, PREVIDÊNCIA E SISTEMA DE CARREIRA DOS SERVIDORES DO MUNICÍPIO DE FEIRA DE SANTANA E DE SUAS AUTARQUIAS E FUNDAÇÕES." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-complementar/1994/0/1/lei-complementar-n-1-1994-dispoe-sobre-o-estatuto-previdencia-e-sistema-de-carreira-dos-servidores-do-municipio-de-feira-de-santana-e-de-suas-autarquias-e-fundacoes" rel="tooltip">001</a>/94&quot;.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, no uso de suas atribuições, Faço saber que a Câmara Municipal de Feira de Santana, através do Projeto de LEI COMPLEMENTAR Nº 10/2011, oriundo do Poder Executivo, decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica alterado o &quot;ANEXO VII&quot;, da LEI COMPLEMENTAR Nº <a class="link_law" data-id="222126" data-original-title=" Data da Norma: 11.11.1994 - DISPÕE SOBRE O ESTATUTO, PREVIDÊNCIA E SISTEMA DE CARREIRA DOS SERVIDORES DO MUNICÍPIO DE FEIRA DE SANTANA E DE SUAS AUTARQUIAS E FUNDAÇÕES." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-complementar/1994/0/1/lei-complementar-n-1-1994-dispoe-sobre-o-estatuto-previdencia-e-sistema-de-carreira-dos-servidores-do-municipio-de-feira-de-santana-e-de-suas-autarquias-e-fundacoes" rel="tooltip">01</a>/94, que &quot;Dispõe sobre o Estatuto, Previdência e Sistema de Carreira do Município de Feira de Santana, e de suas autarquias e Fundações&quot;, com a seguinte redação:<br><br>&quot;ANEXO VII<br>FUNÇÕES GRATIFICADAS EM EDUCAÇÃO&quot;<br><br>&quot;Art. 1º As funções Gratificadas em Educação são as seguintes:<br><br>I - FGE - 01 - Para o diretor que exerça o cargo em escola que tenha mais de 1000 alunos matriculados no início do período letivo, correspondente a 24% do vencimento atribuído ao professor nível 1, referência E, em regime de tempo integral;<br><br>II - FGE - 02 - Para Diretor que exerça o cargo em escola que tenha mais de 500 e menos de 1000 alunos matriculados no início do período letivo, correspondente a 20% do vencimento atribuído ao professor nível 1, referência E, em regime de tempo integral;<br><br>III - FGE - 03 - Para o Diretor que exerça o cargo em escola que tenha mais de 250 e menos 500 alunos matriculados no início do período letivo, correspondente a 18% do vencimento atribuído ao professor nível 1, referência E, em regime de tempo integral;<br><br>IV - FGE - 04 - Para o Vice-Diretor que exerça o cargo em escola que tenha mais de 1000 alunos matriculados no início do período letivo, correspondente a 12% do vencimento atribuído ao professor nível 1, referência E, em regime de tempo integral;<br><br>V - FGE - 05 - Para o Vice-Diretor que exerça o cargo em escola que tenha mais de 500 e menos de 1000 alunos matriculados no início do período letivo, correspondente a 10% do vencimento atribuído ao professor nível 1, referência E, em regime de tempo integral;<br><br>VI - FGE - 06 - Para o Vice-Diretor que exerça o cargo em escola que tenha mais de 250 e menos de 500 alunos matriculados no início do período letivo, correspondente a 9% do vencimento atribuído ao professor nível 1, referência E, em regime de tempo integral;<br><br>VII - FGE - 07 - Para o Vice-Diretor que exerça o cargo em escola que tenha menos de 250 alunos matriculados no início do período letivo, correspondente a 8% do vencimento atribuído ao professor nível 1, referência E, em regime de tempo integral;<br><br>VIII - FGE - CP - Para o Professor Especialista em Educação que exerça funções de Coordenação Pedagógica em escola que funcione nos três turnos, correspondente a 10% do vencimento atribuído ao professor de nível 1, referência E, em regime de tempo integral;<br><br>IX - FGE - PE - Para o Professor ou Especialista em Educação que exerça o cargo participando de Projetos Especiais de Educação, assim classificados por correspondente a 10% do vencimento atribuído ao professor nível 1, referência E, em regime de tempo integral,&quot;<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Esta Lei entra em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 06 de setembro de 2011.<br><br>TARCÍZIO SUZART PIMENTA JÚNIOR<br>Prefeito Municipal<br><br>MILTON PEREIRA DE BRITTO<br>Chefe de Gabinete do Prefeito<br><br>JOÃO MARINHO GOMES JÚNIOR<br>Sec. Municipal de Administração<br><br>JOSÉ RAIMUNDO PEREIRA DE AZEVEDO<br>Sec. Municipal de Educação<br><br>DATA DE PUBLICAÇÃO: 7/9/2011<br>PREFEITO: Tarcízio Suzart Pimenta Júnior.<br>Presidente: Antônio Francisco Neto<br>Autor: Poder Executivo<br>Assunto: Estatuto do Funcionalismo Público<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

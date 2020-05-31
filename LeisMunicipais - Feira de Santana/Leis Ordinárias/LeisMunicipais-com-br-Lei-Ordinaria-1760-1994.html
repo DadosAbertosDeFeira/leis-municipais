@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 1760/94</h2><br>DISPÕE SOBRE A REALIZAÇÃO DE CONCURSO PÚBLICO MUNICIPAL, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, FAÇO saber que a Câmara Municipal decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Os concursos públicos para provimento de cargos, empregos ou funções na Administração Pública Municipal direta, indireta ou fundacional, serão obrigatoriamente realizados por instituto, Fundação ou Departamento de Universidades Públicas, selecionado através de licitação realizada pelo órgão que convocar.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> A nomeação obedecerá rigorosamente a ordem de classificação no concurso.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> É facultado o acompanhamento da realização dos concursos por representante do Ministério Público e da Ordem dos Advogados do Brasil, quando promovido pelo Poder Público Municipal.<br><br>Parágrafo Único - A realização de concurso público destinado a preenchimento de cargos, empregos ou funções técnicas poderá ser acompanhada de um representante de entidade que congregue a respectiva categoria profissional.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Prefeitura Municipal de Feira de Santana, 13 de Junho de 1994.<br><br>JOSÉ RAIMUNDO PEREIRA DE AZEVEDO<br>Prefeito<br><br>PROFº. NELSON REIS NAVARRO JUNIOR<br>Secretário de Administração<br><br>Autor: Roberto Luis da Silva Tourinho<br><br>Data da Publicação: 18/6/1994<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

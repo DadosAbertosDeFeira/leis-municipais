@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 2867/2008</h2><br>DISPÕE SOBRE A REESTRUTURAÇÃO DO QUADRO DE FUNCIONÁRIOS EFETIVOS DA CÂMARA MUNICIPAL E INSTITUI OS NOVOS PLANOS DE CARGOS, CARREIRA E SALARIOS, E DA OUTRAS PROVIDENCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Autor: Eremita Mota de Araújo<br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 11/2008, de autoria da Mesa Diretiva da Câmara, decretou e eu sanciono a seguinte Lei.<br><br><span class="titulo" style="width: auto;display: block;text-align:center;text-transform:uppercase"><br>TITULO I<br>DISPOSICOES PREMINARES<br></span><br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> A reestruturação do quadro de funcionários efetivos da Câmara Municipalde Feira de Santana, instituindo novos planos de cargos, carreira e salários, passa a obedecer ao disposto nesta Lei e nos anexos que a integram.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O presente plano compreende os cargos de provimento efetivo, a gratificação de chefia, a carreira e a estrutura de salários dos funcionários da Câmara Municipal.<br><br><span class="titulo" style="width: auto;display: block;text-align:center;text-transform:uppercase"><br>TITULO II<br>DOS CARGOS DE PROVIMENTO EFETIVO<br></span><br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Os cargos de provimento da Câmara Municipal de Feira de Santana são os constantes do Anexo I desta Lei.<br><br>Parágrafo Único - Os cargos de provimento comissionados, a serem nomeados e exonerados pelo Presidente, escolhidos entre os ocupantes do quadro efetivo desta Casa, com símbolos e salário básico são os expostos no Anexo II da Lei nº <a class="link_law" data-id="1544815" data-original-title=" Data da Norma: 10.05.2001 - ESTABELECE A ESTRUTURA ORGANIZACIONAL DA CÂMARA MUNICIPAL E DOS GABINETES DOS VEREADORES E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2001/223/2236/lei-ordinaria-n-2236-2001-estabelece-a-estrutura-organizacional-da-camara-municipal-e-dos-gabinetes-dos-vereadores-e-da-outras-providencias" rel="tooltip">2.236</a>/2001 e no Anexo II desta Lei.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Os cargos que compõem o quadro efetivo, de acesso exclusivamente por concurso publico estão organizados de acordo com a escolaridade exigida no Anexo IV.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> A admissão de pessoal se fará mediante concurso publico de provas, ou de provas e títulos de acordo com a natureza e a complexidade do cargo e em conformidade com a Lei Complementar nº <a class="link_law" data-id="222126" data-original-title=" Data da Norma: 11.11.1994 - DISPÕE SOBRE O ESTATUTO, PREVIDÊNCIA E SISTEMA DE CARREIRA DOS SERVIDORES DO MUNICÍPIO DE FEIRA DE SANTANA E DE SUAS AUTARQUIAS E FUNDAÇÕES." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-complementar/1994/0/1/lei-complementar-n-1-1994-dispoe-sobre-o-estatuto-previdencia-e-sistema-de-carreira-dos-servidores-do-municipio-de-feira-de-santana-e-de-suas-autarquias-e-fundacoes" rel="tooltip">01</a>/94.<br><br><span class="titulo" style="width: auto;display: block;text-align:center;text-transform:uppercase"><br>TITULO III<br>DO VENCIMENTO E DA REMUNERACAO<br></span><br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Os salários iniciais da carreira dos funcionários efetivos da Câmara Municipal de Feira de Santana passam a ser os constantes do Anexo III desta Lei.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> O funcionário com salário superior ao ultimo nível do cargo correspondente a que esta exercendo o seu enquadramento dar-se-a no ultimo nível e continua a perceber o atual salário.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> A remuneração dos cargos, empregos ou funções de confiança da administração da Câmara não poderá ultrapassar ao subsidio do Prefeito Municipal de Feira de Santana, conforme a Constituição Federal, Art. 37, Inciso XI.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> O salário base dos cargos, empregos ou funções de confiança da Câmara Municipal não poderá ser inferior ao salário mínimo vigente no pais, conforme a Constituição Federal Art. 7º, Inciso VII.<br><br><span class="titulo" style="width: auto;display: block;text-align:center;text-transform:uppercase"><br>TITULO IV<br>DA PROGRESSAO POR MERECIMENTO<br></span><br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10 -</span></a> O desenvolvimento do servidor na carreira, que se dará por progressão por merecimento, que e o avanço de um nível para outro na tabela de vencimentos dentro do mesmo cargo, dar-se-a automaticamente no período a cada seis anos ou a critério do presidente a qualquer tempo.<br><br>Parágrafo Único - Perdera o direito a progressão por merecimento o servidor que, no período aquisitivo tenha sofrido as penas disciplinares de advertência e suspensão, e licença para tratar de interesse particular.<br><br><span class="titulo" style="width: auto;display: block;text-align:center;text-transform:uppercase"><br>TITULO V<br>DAS GRATIFICACOES<br></span><br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11 -</span></a> Os servidores efetivos farão jus as seguintes gratificações.<br><br>I - Gratificação de Chefia - Serão contemplados por esta gratificação os servidores que ocupam os cargtos de encarregados constantes no Anexo II das constantes no Anexo II desta Lei,<br><br>II - Gratificação de Desempenho - Farão jus a esta gratificação, a critério da Presidência da Câmara, os servidores que não exercam cargo de chefia e que no interesse publico exercer atribuições que envolvam complexidade, responsabilidade, além da jornada de duracao normal de trabalho, não podendo o percentual ultrapassar a 60% (sessenta por cento) do salário base,<br><br>III - Gratificação de Titularidade - Aos ocupantes de cargo publico da Câmara Municipal que possuir os seguintes títulos farão jus aos seguintes percentuais, tendo como base de cálculo os vencimentos compreendidos do salário base, adicionais por tempo de serviço, estabilidade econômica e gratificação de chefia. A Titulação que se refere as alíneas b, c e d deste Inciso devera ser compatível com a função publica.<br><br>a) 20% (vinte por cento) aos Graduados em Nível Universitário,<br>b) 25% (vinte e cinco por cento) aos Pos-Graduados,<br>c) 30% (trinta por cento) aos Mestrados,<br>d) 35% (trinta e cinco por cento) aos Doutorados.<br><br>Parágrafo Único - A gratificação de que trata o Inciso III deste artigo o servidor só poderá requerer após o estagio porbatorio.<br><br><span class="titulo" style="width: auto;display: block;text-align:center;text-transform:uppercase"><br>TITULO VI<br>DAS DISPOSIÇOES GERAIS<br></span><br><br><a name="artigo_12"><span class="label label-pill label-danger">Art. 12 -</span></a> Os cargos de provimento efetivo criados pela Resolução nº <a class="link_law" data-id="1948349" data-original-title=" Data da Norma: 18.12.1991 - DISPÕE SOBRE A ESTRUTURA ADMINISTRATIVA DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, DEFINE AS ATRIBUIÇÕES DAS UNIDADES E SUBUNIDADES ORGANIZACIONAIS E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/resolucao/1991/28/280/resolucao-n-280-1991-dispoe-sobre-a-estrutura-administrativa-da-camara-municipal-de-feira-de-santana-define-as-atribuicoes-das-unidades-e-subunidades-organizacionais-e-da-outras-providencias" rel="tooltip">280</a>/91 e suas alterações ficam transformados conforme a correlação estabelecida no Anexo I.<br><br>Parágrafo Único - Os servidores ocupantes de cargos de provimento efetivo desta Lei serão enquadrados, através de Portaria da Presidência, em cargos efetivos constantes do Anexo I e II, respeitados a escolaridade, experiência, tempo de serviço publico e os requisitos mínimos para provimento.<br><br><a name="artigo_13"><span class="label label-pill label-danger">Art. 13 -</span></a> O Anexo II da Lei nº <a class="link_law" data-id="1544815" data-original-title=" Data da Norma: 10.05.2001 - ESTABELECE A ESTRUTURA ORGANIZACIONAL DA CÂMARA MUNICIPAL E DOS GABINETES DOS VEREADORES E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2001/223/2236/lei-ordinaria-n-2236-2001-estabelece-a-estrutura-organizacional-da-camara-municipal-e-dos-gabinetes-dos-vereadores-e-da-outras-providencias" rel="tooltip">2.236</a>/2001 passa a ter redação constante do Anexo II desta Lei.<br><br><a name="artigo_14"><span class="label label-pill label-danger">Art. 14 -</span></a> O Presidente da Câmara Municipal publicara Portaria com a lista nominal de enquadramento, contados de vigência desta Lei.<br><br><a name="artigo_15"><span class="label label-pill label-danger">Art. 15 -</span></a> Aos servidores ocupantes dos cargos de Agente Legislativo I e II, Auxiliar Legislativo I e II poderá ser atribuído, por Ato da Presidência, horário diferente, sem prejuízo da jornada de trabalho semanal.<br><br><a name="artigo_16"><span class="label label-pill label-danger">Art. 16 -</span></a> As despesas decorrentes do cumprimento da presente Lei correrão por conta das dotaçoes próprias da Câmara, cosignadas no orçamento vigente, e suplementadas se necessário.<br><br><a name="artigo_17"><span class="label label-pill label-danger">Art. 17 -</span></a> Alem das disposições contidas nesta Lei, aplicam-se, no que couberem, aquelas previstas na <a class="link_law" data-original-title="Lei Orgânica Feira de Santana BA" data-toggle="tooltip" href="/lei-organica-feira-de-santana-ba" rel="tooltip">Lei Orgânica</a> no Município e na Lei Complementar nº <a class="link_law" data-id="222126" data-original-title=" Data da Norma: 11.11.1994 - DISPÕE SOBRE O ESTATUTO, PREVIDÊNCIA E SISTEMA DE CARREIRA DOS SERVIDORES DO MUNICÍPIO DE FEIRA DE SANTANA E DE SUAS AUTARQUIAS E FUNDAÇÕES." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-complementar/1994/0/1/lei-complementar-n-1-1994-dispoe-sobre-o-estatuto-previdencia-e-sistema-de-carreira-dos-servidores-do-municipio-de-feira-de-santana-e-de-suas-autarquias-e-fundacoes" rel="tooltip">01</a>/94 que dispõe sobre o Estatuto, Previdência e Sistema de Carreira dos Servidores do Município de Feira de Santana.<br><br><a name="artigo_18"><span class="label label-pill label-danger">Art. 18 -</span></a> Esta Lei entrara em vigor na data de sua publicação, revogadas as disposições em contrario, especialmente a Resolução nº  <a class="link_law" data-id="1948349" data-original-title=" Data da Norma: 18.12.1991 - DISPÕE SOBRE A ESTRUTURA ADMINISTRATIVA DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, DEFINE AS ATRIBUIÇÕES DAS UNIDADES E SUBUNIDADES ORGANIZACIONAIS E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/resolucao/1991/28/280/resolucao-n-280-1991-dispoe-sobre-a-estrutura-administrativa-da-camara-municipal-de-feira-de-santana-define-as-atribuicoes-das-unidades-e-subunidades-organizacionais-e-da-outras-providencias" rel="tooltip">280</a>, de 21 de dezembro de 1991 e suas alterações.<br><br>Anexo I - Nomenclatura<br>Anexo II - Cargos Comissionados da Câmara Municipal de Feira de Santana.<br>Anexo III - Tabela Salarial<br><br>Gabinete do Prefeito Municipal, 12 de março de 2008.<br><br>JOSE RONALDO DE CARVALHO<br>Prefeito Municipal<br><br>GERALDO DE OLIVEIRA SAMPAIO FILHO<br>Chefe de Gabinete do Prefeito<br><br>CARLOS ANTONIO DE MORAES LUCENA<br>Procurador Geral do Municipio<br><br>JOAO MARINHO GOMES JUNIOR<br>Secretario Municipal de Administração<br><br>JOAQUIM JOSE BAHIA MENEZES<br>Secretaria Municipal da Fazenda<br><br><i class="icon-warning-sign"></i> Os anexos encontram-se disponíveis, ainda, no Paço Municipal<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

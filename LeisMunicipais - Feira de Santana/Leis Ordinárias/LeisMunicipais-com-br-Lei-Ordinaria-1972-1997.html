@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 1972/97</h2><br>DISPÕE SOBRE A CONCESSÃO DE INCENTIVO FISCAL PARA APOIO A REALIZAÇÃO DE PROJETOS CULTURAIS E ESPORTIVOS, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 014/97, de autoria do Poder Executivo, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica criado, no Município de Feira de Santana, o programa de incentivo cultural e esportivo constituído de incentivo fiscal concedido à contribuintes municipais, na forma desta Lei.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Com o objetivo de estimular atividades culturais e esportivas, o Município facultará à seus contribuintes que apliquem parcelas do imposto sobre serviços de qualquer natureza ou do imposto predial e territorial urbano, através de doação, no apoio direto a projeto de interesse cultural, reconhecido na forma desta Lei.<br><br>§ 1º As parcelas de que trata este artigo estão limitadas em vinte por cento (20%) do valor do ISSQN ou IPTU à recolher pelo contribuinte, em cada período.<br><br>§ 2º O Poder Executivo fixará, anualmente, mediante decreto, o total de recursos que poderão ser utilizados para o programa de incentivo cultural e esportivo.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Os projetos a serem beneficiados por esta Lei poderão abranger as seguintes áreas:<br><br>I - Artes cênicas - Teatro, Dança, Ópera;<br><br>II - Música;<br><br>III - Cinema, Fotografia e Vídeo;<br><br>IV - Artes Plásticas, Artes Gráficas e Filatelia;<br><br>V - Literatura;<br><br>VI - Folclore e Artesanato;<br><br>VII - Museus, Biblioteca e Centros Culturais;<br><br>VIII - Preservação e Restauração do Acervo Patrimonial, Histórico e Artístico;<br><br>IX - Esporte Amador de Qualquer Modalidade.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Os autores dos projetos de que trata o artigo anterior deverão encaminhar suas propostas à Secretaria Municipal de Cultura, Esporte e Lazer para a obtenção do certificado de captação de recursos para projetos culturais e esportivos.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> A Secretaria Municipal de Cultura, Esporte e Lazer, aprovará as propostas apresentadas exclusivamente por recomendação do Conselho Municipal de Cultura, que será encarregado de analisar e emitir pareceres sobre os projetos apresentados, fixando o valor deferido a cada um deles.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> De posse do certificado de que trata o art. 4º desta Lei, os interessados poderão captar os recursos aprovados diretamente junto à contribuintes municipais, emitindo para tanto os necessários recibos para acompanhamento da Secretaria Municipal da Fazenda.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> A Secretaria Municipal de Cultura, Esporte e Lazer poderá acompanhar a execução de qualquer fase do projeto e recomendará o cancelamento do certificado ao Conselho Municipal de Cultura, sempre que constatar desvio de finalidade.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> A empresa ou beneficiário que utilizarem indevidamente os benefícios previstos nesta lei mediante dolo ou fraude, estarão sujeitos à multa correspondente ao dobro do valor do abatimento que tenha efetuado, independente de outras sanções penais cabíveis.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> Os eventos decorrentes dos projetos culturais e/ou esportivos beneficiados na forma desta Lei deverão ser apresentados, prioritariamente, no território deste Município.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10 -</span></a> Na divulgação dos projetos beneficiados nos termos desta Lei, deverá constar o registro institucional do Governo Municipal de Feira de Santana.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11 -</span></a> O Poder Executivo Municipal regulamentará esta Lei no prazo de 90 (noventa) dias, contados da data de sua publicação.<br><br><a name="artigo_12"><span class="label label-pill label-danger">Art. 12 -</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 29 de dezembro de 1997.<br><br>CLAILTON COSTA MASCARENHAS<br>Prefeito<br><br>ANTONIO CARLOS MACHADO<br>Secretário Municipal de Cultura, Esporte e Lazer<br><br>Data da Publicação: 31/12/1997<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>RESOLUÇÃO Nº 487/2013</h2><br>ALTERA DISPOSITIVO DA RESOLUÇÃO Nº <a class="link_law" data-id="1948271" data-original-title=" Data da Norma: 22.10.2003 - CRIA A MEDALHA DE MÉRITO ROTÁRIO E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/resolucao/2003/41/412/resolucao-n-412-2003-cria-a-medalha-de-merito-rotario-e-da-outras-providencias" rel="tooltip">412</a>/2003, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>A CÂMARA MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, na conformidade do artigo 71, inciso V, da Lei Municipal nº  <a class="link_law" data-id="1739637" data-original-title=" Data da Norma: 05.04.1990 - DISPÕE SOBRE A LEI ORGÂNICA DO MUNICIPIO DE FEIRA DE SANTANA E DA OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-promulgada/1990/3/37/lei-promulgada-n-37-1990-dispoe-sobre-a-lei-organica-do-municipio-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">37</a>, de 05 de Abril de 1990, e artigos 274, § 2º e 400, do Regimento Interno, e do Projeto de Resolução nº 670/2013, de autoria da Mesa Diretiva, promulga a seguinte Resolução:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Dê-se ao Art. 2º da Resolução nº <a class="link_law" data-id="1948271" data-original-title=" Data da Norma: 22.10.2003 - CRIA A MEDALHA DE MÉRITO ROTÁRIO E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/resolucao/2003/41/412/resolucao-n-412-2003-cria-a-medalha-de-merito-rotario-e-da-outras-providencias" rel="tooltip">412</a>/2003 a seguinte redação:<br><br>&quot;Art. 2º A honraria supracitada será outorgada pela Câmara Municipal, uma vez por ano, a um membro de cada Rotary Club existente na cidade.<br><br>§ 1º A indicação será feita através de ofício ao Presidente da Câmara Municipal, por cada Rotary Club.<br><br>§ 2º A medalha poderá ser conferida in memorian, e será entregue a familiar que representará o homenageado no ato da concessão.<br><br>§ 3º A medalha será entregue em Sessão Solene, convocada especialmente para esse fim, preferencialmente no Dia Municipal da Consciência Rotária.<br><br>§ 4º A medalha deverá ter de um lado o símbolo da Câmara de Vereadores de Feira de Santana e do outro o símbolo do Rotary Club Internacional, e acompanhada de um broche de lapela.&quot;<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> As despesas decorrentes desta Resolução correrão por conta de verba existente na Secretaria da Casa.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Esta Resolução entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>MESA DIRETIVA DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, em 21 de Outubro de 2013.<br><br>Ver. JUSTINIANO OLIVEIRA FRANÇA<br>Presidente<br><br>Ver. REINALDO MIRANDA VIEIRA FILHO<br>1º Vice-Presidente<br><br>Ver. EDVALDO LIMA DOS SANTOS<br>2º Vice-Presidente<br><br>Ver. ROQUE PEREIRA DO CARMO<br>1º Secretário<br><br>Ver. JOSÉ CARNEIRO ROCHA<br>2º Secretário<br><br>Ver. WELLIGTON ANDRADE DE JESUS<br>3º Secretário<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

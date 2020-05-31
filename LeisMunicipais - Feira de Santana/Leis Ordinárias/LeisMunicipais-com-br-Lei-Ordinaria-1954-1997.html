@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 1954/97</h2><br>OBRIGA INSTALAÇÃO DE CADEIRAS ESPECIAIS PARA OBESOS E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 125/97, de autoria do Edil Ildes Ferreira de Oliveira, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> É obrigatório a disponibilidade de cadeiras especiais para obesos em todos os locais de acesso público que possuam assentos. Parágrafo 1º Ficam obrigados a adotar a medida prevista neste artigo os estabelecimentos com mais de 20 (vinte) lugares.<br><br>§ 2º Os estabelecimentos sujeitos à medida estabelecida no caput deste artigo ficam obrigados a reservar, pelo menos, 5% (cinco por cento) dos espaços existentes para obesos.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O não cumprimento do estabelecido no artigo anterior implica nas seguintes penalidades:<br><br>a) primeira infração, advertência por escrito;<br>b) segunda infração, multa de até 500 (quinhentas) UFIR ( Unidade Fiscal de Referência);<br>c) terceira infração, multa de até 1.500 (uma mil e quinhentas) UFIR;<br>d) quarta infração, cassação da licença de funcionamento.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> A fiscalização do cumprimento desta Lei fica a cargo do órgão competente da administração municipal.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Os estabelecimentos sujeitos à presente Lei têm o prazo de 180 (cento e oitenta) dias, a partir da sua publicação, para a adoção das providências necessárias.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 17 de novembro de 1997.<br><br>CLAILTON COSTA MASCARENHAS<br>Prefeito<br><br>Dr. ROBERTO LUIS DA SILVA TOURINHO<br>Secretário Municipal de Desenvolvimento Urbano e Meio Ambiente<br><br>Data da Publicação: 22/11/1997<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

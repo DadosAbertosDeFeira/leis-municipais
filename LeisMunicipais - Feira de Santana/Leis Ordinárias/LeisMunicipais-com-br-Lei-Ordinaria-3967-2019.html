@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3.967, DE 02 DE OUTUBRO DE 2019.</h2><br>INSTITUI O MÊS SETEMBRO VERDE, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 106/2019, de autoria do Edil Luiz Augusto de Jesus, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica instituído o mês de Setembro como o Mês Setembro Verde, com o o objetivo de dar visibilidade à inclusão social da pessoa com deficiência.<br><br>§ 1º No decorrer do mês de Setembro, serão realizadas ações, com a finalidade de:<br><br>I - estimular a participação social das pessoas com deficiência;<br><br>II - conscientizar a família, a sociedade e o Município sobre a importância da inclusão social da pessoa com deficiência;<br><br>III - promover a informação e difusão dos direitos das pessoas com deficiência;<br><br>IV - divulgar avanços, conquistas e boas práticas de políticas públicas relacionadas às pessoas com deficiência;<br><br>V - identificar desafios para a inclusão social da pessoa com deficiência.<br><br>§ 2º Para o desenvolvimento das ações de que trata o<br><br>§ 1º deste artigo, podem ser adotadas as seguintes medidas:<br><br>I - realização de palestras e eventos sobre o tema;<br><br>II - divulgação de boas práticas de inclusão social da pessoa com deficiência em diversas mídias;<br><br>III - realização de encontros comunitários para disseminação de práticas inclusivas e identificação de desafios à plena inclusão social da pessoa com deficiência;<br><br>IV - iluminação ou decoração de espaços com a cor verde;<br><br>V - outras medidas que visem dar suporte e visibilidade à participação e inclusão social das pessoas com deficiência na vida comunitária.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Fica autorizada a Secretaria de Desenvolvimento Social do Município de Feira de Santana a realizar a cada ano, a critério dos seus gestores, cooperação com a iniciativa privada, com entidades civis e organizações profissionais para realizar ações de conscientização e disseminação da importância da inclusão social da pessoa com deficiência.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> O Poder Público deve adotar medidas e disponibilizar recursos para o cumprimento do disposto nesta Lei.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> O aumento de despesas previsto nesta Lei será compensado pela margem de expansão das despesas de caráter continuado, explicitada na Lei de Diretrizes Orçamentárias, que servir de base à elaboração do projeto de lei orçamentária para o exercício seguinte ao da sua promulgação.<br><br>Parágrafo único. O disposto nesta Lei produzirá efeitos a partir de 1º de Janeiro do exercício subsequente àquele em que for implementado o disposto no caput deste artigo.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Esta Lei entrará em vigor na data da sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito, 02 de outubro de 2019.<br><br>COLBERT MARTINS DA SILVA FILHO<br>PREFEITO MUNICIPAL<br><br>MARIO COSTA BORGES<br>CHEFE DE GABINETE DO PREFEITO<br><br>CLEUDSON SANTOS ALMEIDA<br>PROCURADOR GERAL DO MUNICÍPIO<br><br>PABLO ROBERTO GONÇALVES DA SILVA<br>SECRETÁRIO MUNICIPAL DE DESENVOLVIMENTO SOCIAL<br><br>PUBLICADO NO DIÁRIO OFICIAL DIA 03 DE OUTUBRO DE 2019 <p> <a class="btn btn-default" href="https://leis.s3.amazonaws.com/originais/feira-de-santana-ba/2019/ord-3967-2019-feira_de_santana-ba.doc" title="Lei Ordinária nº 3967/2019 - Feira de Santana-BA">Download do documento</a> </p> <p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

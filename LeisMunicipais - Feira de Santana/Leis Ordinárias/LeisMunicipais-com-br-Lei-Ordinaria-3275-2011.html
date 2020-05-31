@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3275/2011</h2><br>DISPÕE SOBRE A CONCESSÃO DE ALVARÁ DE LICENÇA E FUNCIONAMENTO PARA PARQUES DE DIVERSÕES NO MUNICÍPIO DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 127/2011, de autoria do Edil Justiniano Oliveira França, e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Nenhum parque de diversões ou assemelhados poderá exercer atividades no Município de Feira de Santana sem que haja prévia concessão de alvará de licença e funcionamento expedido pela autoridade competente.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Sem prejuízo das documentações já previstas em legislação específica, são documentos indispensáveis para a concessão do alvará de licença e funcionamento de parques de diversões e assemelhados:<br><br>I - aprovação da Vigilância Sanitária do Município;<br><br>II - aprovação da Defesa Civil do Município;<br><br>III - prova da natureza da atividade comercial;<br><br>IV - contrato social da empresa;<br><br>V - documentos pessoais e comprovante de domicílio do(s) sócio(s) administrador(es) da empresa;<br><br>VI - se estrangeiro, prova de permanência legal no Brasil;<br><br>VII - certidão negativa de antecedentes criminais;<br><br>VIII - certidão negativa de débitos tributários municipais e estaduais;<br><br>IX - laudo técnico atestando que os equipamentos e brinquedos disponibilizados pelo parque encontram-se em com estado de manutenção e segurança.<br><br>§ 1º O laudo a que se refere este inciso deverá ter sido lavrado em período não superior a 15 (quinze) dias da solicitação de alvará de licença e funcionamento junto ao Órgão competente.<br><br>§ 2º O laudo deverá conter também a qualificação do técnico responsável pela vistoria dos brinquedos e equipamentos, bem como de sua lavratura.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Se o parque exercer atividades no Município de Feira de Santana em período superior a 60 (sessenta) dias, deverá apresentar novo laudo técnico com as especificações do art. 2º, inciso IX, desta Lei.<br><br>Parágrafo Único - A infração a este artigo acarretará, simultaneamente:<br><br>I - a cassação do alvará de licença e funcionamento;<br><br>II - multa de R$ 5.000,00 (cinco mil reais);<br><br>III - impossibilidade de a empresa infratora exercer atividades no Município de Feira de Santana por 3 (três) anos.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Caberá recurso dentro de 3 (três) dias contados da data da notificação, bem como de suas consequências, entretanto, o recurso poderá, apenas, apresentar justo motivo para a não apresentação do laudo a que se refere o art. 3º.<br><br>Parágrafo Único - Se deferido o recurso, será dado prazo, máximo, de 10 (dez) dias para a apresentação do laudo.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> A Secretária Municipal de Desenvolvimento Urbano será responsável sobre a liberação de alvará e fiscalização.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> As despesas para a execução desta Lei correrão por conta das dotações orçamentárias próprias, suplementadas, se necessário.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogam-se as disposições em contrário.<br><br>Gabinete do Prefeito, 07 de novembro de 2011.<br><br>TARCÍZIO SUZART PIMENTA JÚNIOR<br>Prefeito Municipal<br><br>MILTON PEREIRA DE BRITTO<br>Chefe de Gabinete do Prefeito<br><br>CARLOS ANTÔNIO DE MORAES LUCENA<br>Procurador Geral do Município<br><br>WAGNER WALTER GONÇALVES DOS SANTOS<br>Sec. Municipal da Fazenda<br><br>MIZAEL FREITAS DE SANTANA<br>Sec. Municipal de Prevenção à Violência e Promoção dos Direitos Humanos<br><br>JOSÉ FERREIRA PIHEIRO<br>Sec. Municipal de Desenvolvimento Urbano<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

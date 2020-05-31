@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 2910/2008</h2><br>AUTORIZA ALIENAÇÃO DO DOMÍNIO EMINENTE DE ÁREA DE TERRA DO MUNICÍPIO NA FORMA QUE ESTABELECE.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Autor: Poder Executivo<br><br>O Prefeito Municipal de Feira de Santana, Estado da Bahia, no uso de suas atribuições, Faço saber que a Câmara Municipal aprovou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica o Município autorizado a alienar o domínio eminente do terreno foreiro caracterizado como sendo a gleba nº 10, medindo 21.298,63 m2 (vinte e um mil, duzentos e noventa e oito metros e sessenta e três centímetros quadrados), limitando-se ao Norte com a Gleba nº 09 (futuro Residencial Olímpia Life), ao Leste com a Rua Itamar Carvalho, ao Sul com área remanescente 01 e ao Oeste com área remanescente 03, registrando no Cartório de Registro de Imóveis e Hipotecas do 2º Ofício desta Comarca de Feira de Santana, no livro 2-DZ, às folhas 88, sob o nº de AV-3-31.837.<br><br>§ 1º A alienação dar-se-á através da remissão do foro resgatando-se a enfiteuse na forma da Lei Civil.<br><br>§ 2º O titular do domínio útil, após o resgate da enfiteuse, destinará o imóvel à construção de um empreendimento imobiliário, de natureza social, tendo por agente financeiro a Caixa Econômica Federal, sob pena de retrovenda.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 17 de junho de 2008.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito Municipal<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

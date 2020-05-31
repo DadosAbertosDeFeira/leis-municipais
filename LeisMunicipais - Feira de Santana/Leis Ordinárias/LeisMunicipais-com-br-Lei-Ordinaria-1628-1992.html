@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 1628/92</h2><br>ALTERA DISPOSITIVOS DA LEI Nº <a class="link_law" data-id="1612583" data-original-title=" Data da Norma: 26.03.1992 - INSTITUI A DIVISÃO DE PREVIDÊNCIA DOS SERVIDORES MUNICIPAIS, DISPÕE SOBRE A CONCESSÃO DE APOSENTADORIA E PENSÃO, E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1992/153/1539/lei-ordinaria-n-1539-1992-institui-a-divisao-de-previdencia-dos-servidores-municipais-dispoe-sobre-a-concessao-de-aposentadoria-e-pensao-e-da-outras-providencias" rel="tooltip">1539</a>/92 QUE INSTITUI A DIVISÃO DE PREVIDÊNCIA DOS SERVIDORES MUNICIPAIS DIPÕE SOBRE A CONCESSÃO DE APOSENTADORIA E PENSÃO, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, FAÇO saber que a Câmara Municipal decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Dê-se ao artigo 29 da Lei nº <a class="link_law" data-id="1612583" data-original-title=" Data da Norma: 26.03.1992 - INSTITUI A DIVISÃO DE PREVIDÊNCIA DOS SERVIDORES MUNICIPAIS, DISPÕE SOBRE A CONCESSÃO DE APOSENTADORIA E PENSÃO, E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1992/153/1539/lei-ordinaria-n-1539-1992-institui-a-divisao-de-previdencia-dos-servidores-municipais-dispoe-sobre-a-concessao-de-aposentadoria-e-pensao-e-da-outras-providencias" rel="tooltip">1.539</a>/92, a seguinte redação:<br><br>&quot;§ 1º As contribuições dos segurados serão devidas em mensalidades correspondentes ao salário base e adicionais por tempo de serviço:<br><br>I - Para os segurados que percebem até 05 (cinco) salários mínimos mensais as contribuições serão de 8,5% (oito e meio por cento);<br><br>II - Para os segurados que percebem entre 05 (cinco) e 10 (dez) salários mínimos mensais as contribuições serão de 9% (nove por cento);<br><br>III - Para os segurados que percebem acima de 10 (dez) salários mínimos mensais as contribuições serão de 10% (dez por cento);<br><br>IV - Para os segurados sob afastamento não remunerados, sobre o vencimento base, como se em exercício estivesse.&quot;<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Prefeitura Municipal de Feira de Santana, em 28 de dezembro de 1992.<br><br>DR. COLBERT MARTINS DA SILVA<br>Prefeito<br><br>Autor: Manoel Messias Gonzaga<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

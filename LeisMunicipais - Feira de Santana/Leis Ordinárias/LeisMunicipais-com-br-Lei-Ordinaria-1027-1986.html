@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 1027, de 08 de setembro de 1986</h2><br>INSTITUI O CONSELHO MUNICIPAL DOS DIREITOS DA MULHER, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica instituído o CONSELHO MUNICIPAL DOS DIREITOS DA MULHER, com a finalidade de formular e promover políticas, medidas e ações para a garantia dos direitos da mulher.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Compete precipuamente ao CONSELHO MUNICIPAL DOS DIREITOS DA MULHER:<br><br>I - Desenvolver estudos, projetos, debates, pesquisas relativos à condição da mulher, visando a eliminação das discriminações que atingem e a ampliação dos seus direitos;<br><br>II - Colaborar com os demais órgãos e entidades de administração municipal no que se refere ao planejamento e execução de ações referentes à mulher;<br><br>III - Incorporar preocupações e sugestões manifestadas pela sociedade e opinar sobre denuncias que lhes sejam encaminhadas;<br><br>IV - Criar instrumentos concretos que asseguram a participação feminina em todos os setores da atividade municipal, ampliando a possibilidade de emprego para a mulher;<br><br>V - Promover articulações, intercâmbios e convênios com instituições públicas e privadas, com a finalidade de implementar as políticas, medidas e ações objeto do Conselho.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> O CONSELHO DOS DIREITOS DA MULHER será constituído de 15 (quinze) Conselheiras com 15 (quinze) Suplentes, nomeadas pelo Chefe do Executivo Municipal, como abaixo discriminadas:<br><br>I - Uma representante do Departamento Feminino, indicada pelos Sindicatos com Sede no Município;<br><br>II - Uma representante das Associações de Bairros de Feira de Santana;<br><br>III - Uma representante do Departamento Feminino da OAB - Secção de Feira de Santana;<br><br>IV - Uma representante da Classe Estudantil Universitária, e uma representante do Corpo Docente da Universidade Estadual de Feira de Santana U.E.F.S;<br><br>V - Uma representante do Poder Legislativo;<br><br>VI - Uma representante do Movimento Negro Unificado;<br><br>VII - Uma representante das Igrejas Católicas;<br><br>VIII - Uma representante das Igrejas Evangélicas;<br><br>IX - Um representante da Classe Empresarial;<br><br>X - Uma representante das seguintes áreas de atuação do Poder Executivo Municipal:<br><br>a) Cultural;<br>b) Desenvolvimento Comunitário;<br>c) Educação;<br>d) Procuradoria Jurídica;<br>e) Saúde.<br><br>Parágrafo Único - As nomeações das Conselheiras de que tratam os incisos I, II, III, IV, V, VI, VII, VIII, IX e X serão feiras mediante indicação prévia dos respectivos organismos a que são vinculadas.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> O Chefe do Executivo indicará os membros do Conselho Municipal dos Direitos da Mulher, ouvindo anteriormente o movimento de mulheres em caráter consultivo.<br><br>Parágrafo Único - As Conselheiras Suplentes serão indicadas, também, de acordo com o disposto no caput deste artigo.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> O mandato das Conselheiras será de 02 (dois) anos, permitida a recondução apenas uma vez.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Caberá ao Conselho Municipal dos Direitos da Mulher, eleger um Comissão Executiva composta de 05 (cinco) membros, assim discriminados:<br><br>- Presidente<br>- Vice-Presidente<br>- Secretária Geral<br>- 1ª Tesoureira<br>- 2ª Tesoureira<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Compete à Executiva do Conselho Municipal dos Direitos da Mulher:<br><br>I - Convocar e presidir as sessões mensais ordinárias e extraordinárias do Conselho Municipal dos Direitos da Mulher;<br><br>II - Cumprir e encaminhar as resoluções deliberadas pelo Conselho Municipal dos Direitos da Mulher;<br><br>III - Deliberar nos casos de urgência ad-referendum do Conselho e decidir sobre medidas administrativas;<br><br>IV - Delegar tarefas a membros do Conselho quando julgar conveniente.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> Ao Conselho Municipal dos Direitos da Mulher é facultado formar Comissões provisórias ou permanentes, objetivando apresentar projetos e propor medidas que contribuem para a concentração de sua política.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> O Conselho Municipal dos Direitos da Mulher reunir-se-á, mensalmente, na primeira semana de cada mês e extraordináriamente, quando assim convocada pela Executiva.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10 -</span></a> Será constituido em caráter provisório, um grupo de trabalho para, no prazo previsto no artigo 11, exercer as funções da Comissão Executiva do Conselho e elaborar um programa de organização, que será posteriormente submetido às Conselheiras já devidamente empossadas.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11 -</span></a> Visando agilizar a constituição do Conselho Municipal dos Direitos da Mulher, o Chefe do Executivo diligenciará a designação dos seus membros até 60 (sessenta) dias após a publicação da presente Lei.<br><br><a name="artigo_12"><span class="label label-pill label-danger">Art. 12 -</span></a> Não receberão qualquer remuneração no desempenho das suas funções os membros do Conselho Municipal dos Direitos da Mulher.<br><br><a name="artigo_13"><span class="label label-pill label-danger">Art. 13 -</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Prefeitura Municipal de Feira de Santana, 08 de setembro de 1986.<br><br>DR. JOSÉ FALCÃO DA SILVA<br>Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

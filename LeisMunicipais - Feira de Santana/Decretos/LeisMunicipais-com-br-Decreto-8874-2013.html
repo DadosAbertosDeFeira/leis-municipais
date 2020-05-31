@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>DECRETO Nº 8874, de 25 de março de 2013.</h2><br>CRIA E DENOMINA UMA ESCOLA NO MUNICÍPIO DE FEIRA DE SANTANA.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O Prefeito Municipal de Feira de Santana, Estado da Bahia, no uso de suas atribuições,<br><br>CONSIDERANDO que o Senhor ANTÔNIO CARLOS PINTO DE ALMEIDA, natural desta cidade, tendo exercido diversas atividades no Município, notadamente como bancário no Banco da Bahia e no Banco do Brasil, tendo exercido vários cargos na vida pública feirense, em especial o de Vereador e Secretário Municipal de Obras e de Abastecimento, além de ter desempenhado várias funções tais como membro do Lyons Club, da Santa Casa de Misericórdia e do Fluminense de Feira de Santana,<br><br>CONSIDERANDO enfim que a Administração Municipal deve homenagear aqueles que por seu esforço pessoal contribuíram para a construção da história de nossa cidade, e pela melhoria da qualidade de vida de nossos munícipes, DECRETA:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica criada uma Escola Municipal, para oferta do Ensino Fundamental, localizada na Rua 31, s/nº, Alto do Papagaio, nesta cidade, sob a denominação de &quot;ESCOLA MUNICIPAL ANTÔNIO CARLOS PINTO DE ALMEIDA&quot;.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> A Secretaria Municipal de Educação adotará todas as providências necessárias ao funcionamento da Escola de que trata este Decreto.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Este Decreto entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 25 de março de 2013.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito<br><br>MÁRIO COSTA BORGES<br>Chefe de Gabinete do Prefeito<br><br>JAYANA BASTOS MIRANDA RIBEIRO<br>Secretária Municipal de Educação<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

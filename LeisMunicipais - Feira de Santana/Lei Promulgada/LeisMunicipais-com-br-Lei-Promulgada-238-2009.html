@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI PROMULGADA Nº 238/2009</h2><br>CRIA O PORTAL DA TRANSPARÊNCIA DO MUNICÍPIO.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PRESIDENTE DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA. FAÇO SABER QUE A CÂMARA MUNICIPAL, ATRAVÉS DO PROJETO DE LEI Nº 38/2009, DE AUTORIA DO EDIL ROBERTO LUIS DA SILVA TOURINHO, E NA CONFORMIDADE DO ARTIGO 78, § 7º, DA LEI Nº  <a class="link_law" data-id="1739637" data-original-title=" Data da Norma: 05.04.1990 - DISPÕE SOBRE A LEI ORGÂNICA DO MUNICIPIO DE FEIRA DE SANTANA E DA OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-promulgada/1990/3/37/lei-promulgada-n-37-1990-dispoe-sobre-a-lei-organica-do-municipio-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">37</a>, DE 05 DE ABRIL DE 1990, E ARTIGO 25 E INCISO V, DO REGIMENTO INTERNO, PROMULGA A SEGUINTE LEI:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica o Poder Executivo autorizado a disponibilizar de forma integrada, em site oficial pela rede mundial de computadores, as informações referentes à execução financeiro-orçamentária, e a estrutura da Administração Pública Direta e Indireta do Município de Feira de Santana.<br><br>§ 1º O Portal denominado Portal da Transparência do Município de Feira de Santana, será disponibilizado em página ou site oficial do Executivo Municipal, onde deverá constar, dentre outras, as seguintes informações de forma simplificada e de fácil leitura e consulta:<br><br>I - orçamento anual de cada secretaria, órgãos da Administração Direta e Administração Indireta;<br><br>II - execução do orçamento;<br><br>III - contratos;<br><br>IV - convênios;<br><br>V - acompanhamento de convênios e lista de inadimplentes;<br><br>VI - passagens e diárias;<br><br>VII - licitações;<br><br>VIII - dispensas e inexigibilidade de licitação;<br><br>IX - estrutura da administração;<br><br>X - número de servidores concursados e comissionados por órgão;<br><br>XI - consultas públicas;<br><br>XII - decisão dos conselhos;<br><br>XIII - cadastro de pessoas jurídicas que contratam com a Administração e respectivos contratos;<br><br>XIV - empresas penalizadas e motivo;<br><br>XV - banco de preços;<br><br>XVI - transferências de recursos para qualquer tipo de organização não governamental, bem como a prestação de contas;<br><br>XVII - lista cronológica de precatórios judiciais;<br><br>XVIII - relação de obras de engenharia e infra-estrutura iniciadas e terminadas.<br><br>§ 2º Os dados deverão ser armazenados e disponibilizados para consulta a toda população, de forma que se possa avaliar a evolução de gastos da Administração Pública e a eficiência dos programas geridos pelo Poder Executivo e pela Administração Indireta, dentre elas as sociedades de economia mista e empresas públicas.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Os dados serão atualizados diariamente.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> As despesas decorrentes da implementação desta Lei correrão as custas das dotações orçamentárias vigentes, autorizada a suplementação.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogada as disposições em contrário.<br><br>CÂMARA MUNICIPAL DE FEIRA DE SANTANA, em 26 de Agosto de 2009.<br><br>Ver. ANTONIO CARLOS PASSOS ATAÍDE<br>PRESIDENTE<br><br>Autor: Roberto Luis da Silva Tourinho<br>DATA DE PUBLICAÇÃO: 28/08/2009<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 364, DE 18 DE JANEIRO DE 1963.</h2><br>ALTERA DISPOSIÇÕES DO DECRETO-LEI Nº 1, DE 29 DE DEZEMBRO DE 1937.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O Presidente da Câmara de Vereadores, no exercício do cargo de Prefeito Municipal de Feira de Santana, Estado da Bahia, Faz saber que a Câmara de Vereadores decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> As multas previstas no Decreto Lei nº 1, de 29 de dezembro de 1937, (Código de Posturas), ficam elevadas:<br><br>a) para Cr$ 300,00 (trezentos cruzeiros) as previstas nos artigos: 7º § 1º, 17, 18, 20, 21 § único, 26, 33, 35, 36, 42, 48, 78, 115, 116, 117, 118, 120, 123, 124, 125, 126, 127, 128, 133, 136, 137, 138, 139, 142, § 2º, 144, 145, 146, 147, 148, 149, 151 § único, 177 § 1º, 178, 181, 182, 186, 194, 209, 214, 216, 230 § 2º, 232 e 234.<br>b) para Cr$ 500,00 (quinhentos cruzeiros) as previstas nos artigos: - 11, 12, 13, 14, 15, 16, 92, 99, 121 § 3º, 122, 157 § único, 195, 200, 205 e 225.<br>c) para Cr$ 1.000,00 (um mil cruzeiros) as previstas nos artigos: 48, 59, 66, 71, 90 § único, 91, 107, 110, 112, 163, 167, 168, 208, 211 e 220.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O artigo 235 passa, a ter a seguinte redação:<br><br>&quot;Art. 235 Nenhuma inobservância deste Código deixará de ser punida e a multa, sempre que não estiver expressa, variará de Cr$ 500,00 (quinhentos cruzeiros), no mínimo, a Cr$ 1.000,00 (um mil cruzeiros), no máximo, cobrada sempre no dobro do máximo estipulado, no caso de reincidência.&quot;<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> A presente lei entrará em vigor na data da sua publicação, revogadas as disposições em contrário.<br><br>PUBLIQUE-SE;<br><br>Prefeitura Municipal de Feira de Santana, 18 de janeiro de 1963.<br><br>DR. JOSÉ SISNANDO LIMA<br>Pres. da Câmara de Vereadores, no cargo de Prefeito Municipal<br><br>EUNICE RIBEIRO DE ALMEIDA<br>Escrit. Pad. L, resp. pela Secretaria<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 1933/97</h2><br>DISPÕE SOBRE A TAXA DE LIMPEZA PÚBLICA E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA Bahia, FAÇO saber que a Câmara Municipal decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica instituída a taxa de limpeza pública, que tem como fato gerador da respectiva obrigação tributária a utilização, efetiva ou potencial, dos seguintes serviços públicos, específicos e divisíveis, prestados ou postos à disposição dos contribuintes.<br><br>I - Coleta e remoção de lixo;<br><br>II - Tratamento e destinação final de resíduos;<br><br>III - Serviços especiais de limpeza pública.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O contribuinte da taxa de limpeza pública é o proprietário, o titular do domínio útil ou possuidor, a qualquer título, dos seguintes bens abrangidos pelos serviços descritos no artigo anterior:<br><br>I - Unidades imobiliárias edificadas;<br><br>II - Barracas ou bancas que explorem o comércio informal;<br><br>III - Boxes de mercado ou feira.<br><br>§ 1º Consideram-se imóveis não residenciais do tipo especial para efeito de aplicação desta Lei, os hotéis, motéis, hospitais e clínicas particulares, escolas particulares, restaurantes e shoppings centers.<br><br>§ 2º Os serviços especiais de limpeza pública, especialmente os descritos no art. 6º, I, terão seus valores fixados, periodicamente, por ato do Prefeito Municipal, nos moldes da <a class="link_law" data-original-title="Lei Orgânica Feira de Santana BA" data-toggle="tooltip" href="/lei-organica-feira-de-santana-ba" rel="tooltip">Lei Orgânica</a> do Município.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> A base de cálculo da taxa é custo dos serviços de coleta, remoção, tratamento e destinação final de resíduos, a ser rateado entre os contribuintes em função:<br><br>I - Da área construída, da localização da utilização e da capacidade de geração de resíduos, tratando-se de prédio.<br><br>II - Da localização, da utilização e da capacidade de geração de resíduos, tratando-se de barracas, bancas e boxe de mercadorias e feiras;<br><br>III - Da capacidade de geração de resíduos, tratando-se de unidades não residenciais do tipo especial.<br><br>Parágrafo Único - A taxa, incidente a partir do exercício de 1998, terá o valor decorrente da aplicação da tabela constante do anexo à presente Lei, em conformidade com as disposições dos artigos antecedentes.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> O lançamento da taxa será procedido anualmente, em nome do contribuinte, na forma e nos prazos regulamentares, podendo ser feito isoladamente ou em conjunto com imposto sobre a propriedade predial e territorial urbana.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> A taxa será paga, total ou parcialmente, na forma e prazos regulamentares.<br><br>Parágrafo Único - O contribuinte que pagar a taxa de uma só vez, até a data do vencimento da primeira parcela, gozará de descontos de 20% (vinte por cento).<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> O pagamento da taxa de limpeza pública e das penalidades ou acréscimos legais não exclui o pagamento de:<br><br>I - Preços ou tarifas pela prestação de serviços especiais, tais como, remoção de containeres, entulhos de obras, aparas de jardins, bens móveis imprestáveis, lixos extraordinários resultantes de atividades especiais, animais abandonados ou mortos, veículos abandonados, capina de terrenos, limpeza de prédio, terrenos e disposição de lixos em aterros ou assemelhados, que serão fixados periodicamente através de ato do Poder Executivo.<br><br>II - Penalidades decorrentes da infração à legislação municipal referente à limpeza pública.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Ficam isentos da taxa de limpeza pública os imóveis residenciais, cuja área construída não ultrapasse a 70 metros quadrados e sejam a única propriedade imobiliária do contribuinte.<br><br>Parágrafo Único - Caso haja multiplicidade de prioridades de um único contribuinte, este poderá requerer a isenção para apenas uma delas.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> Fica o Poder Executivo autorizado a celebrar convênio com empresa, com vista a cobrança e arrecadação da taxa criada por essa Lei.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> Aplicam-se à taxa, no que couber, as normas do Código Tributário Nacional e do Código Tributário do Município de Feira de Santana, inclusive aquelas relativas às infrações e penalidades.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10 -</span></a> Fica o Poder Executivo Municipal autorizado a editar, mediante decreto, as normas regulamentares à presente Lei, inclusive o regulamento de limpeza pública, definido infrações e penalidades correspondentes.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11 -</span></a> O Executivo, ao recadastrar o contribuinte para efeito de cobrança desta taxa, editará regulamento do qual conste critérios de aferição de capacidade de geração de resíduos.<br><br><a name="artigo_12"><span class="label label-pill label-danger">Art. 12 -</span></a> O Executivo enviará à Câmara de Vereadores, bimestralmente, um relatório financeiro de onde conste o montante da receita arrecadada com a taxa de limpeza pública e o valor despendido com o custeio dos serviços, durante o período.<br><br><a name="artigo_13"><span class="label label-pill label-danger">Art. 13 -</span></a> Esta Lei entrará em vigor na data de sua publicação, produzindo efeito a partir de 1º de janeiro de 1998, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito do Municipal, 16 de setembro de 1997.<br><br>CLAILTON COSTA MASCARENHAS<br>Prefeito<br><br>JOSÉ LUIZ DA SILVA<br>Secretário de Serviços Públicos<br><br>CARLOS ALBERTO OLIVEIRA BRITO<br>Secretário Municipal da Fazenda<br><br>ANEXO ÚNICO<pre> _________________________________________________________________________<br>| I |    TIPO DE UNIDADE    |     CAPACIDADE DE     |    VALOR ANUAL      |<br>|   |                       |  GERAÇÃO DE RESÍDUOS  |                     |<br>|===|=======================|=======================|=====================|<br>|   |Residencial            |Pequena                |0,30p/m² construído  |<br>|   |                       |Média                  |0,60p/m² construído  |<br>|   |                       |Grande                 |0,80p/m² construído  |<br>|---|-----------------------|-----------------------|---------------------|<br>| II|    TIPO DE UNIDADE    |      CAPACIDADE DE    |     VALOR ANUAL     |<br>|   |                       |   GERAÇÃO DE RESÍDUOS |                     |<br>|---|-----------------------|-----------------------|---------------------|<br>|   |Comercial,industrial,  |Pequena                |0,80 p/m² construído |<br>|   |hotel, restaurante,    |Média                  |1,50 p/m² construído |<br>|   |motel, shopping Center,|Grande                 |2,00 p/m² construído |<br>|   |escolas particulares.  |                       |                     |<br>|---|-----------------------|-----------------------|---------------------|<br>|III|     TIPO DE UNIDADE   |    CAPACIDADE DE      |    VALOR ANUAL      |<br>|   |                       |  GERAÇÃO DE RESÍDUOS  |                     |<br>|---|-----------------------|-----------------------|---------------------|<br>|   |Hospitais e Clínicas   |Pequena                |1,00 p/m² construído |<br>|   |Particulares.          |Média                  |1,80 p/m² construído |<br>|   |                       |Grande                 |2,20 p/m² construído |<br>|---|-----------------------|-----------------------|---------------------|<br>| IV|    TIPO DE UNIDADE    |     CAPACIDADE DE     |     VALOR ANUAL     |<br>|   |                       |  GERAÇÃO DE RESÍDUOS  |                     |<br>|---|-----------------------|-----------------------|---------------------|<br>|   |Barracas               |Pequena                |20,00 p/m² construído|<br>|   |                       |Média                  |20,00 p/m² construído|<br>|   |                       |Grande                 |50,00 p/m² construído|<br>|---|-----------------------|-----------------------|---------------------|<br>| V |    TIPO DE UNIDADE    |    CAPACIDADE DE      |    VALOR ANUAL      |<br>|   |                       |  GERAÇÃO DE RESÍDUOS  |                     |<br>|---|-----------------------|-----------------------|---------------------|<br>|   |Bancas para            |Pequena                |10,00 p/m² construído|<br>|   |comércio informal, de  |Média                  |20,00 p/m² construído|<br>|   |jornais e revistas     |Grande                 |30,00 p/m² construído|<br>|   |de bancas de feira.    |                       |                     |<br>|---|-----------------------|-----------------------|---------------------|<br>| VI|    TIPO DE UNIDADE    |     CAPACIDADE DE     |     VALOR ANUAL     |<br>|   |                       |  GERAÇÃO DE RESÍDUOS  |                     |<br>|---|-----------------------|-----------------------|---------------------|<br>|   |Boxes de Mercado       |Pequena                |10,00 p/m² construído|<br>|   |                       |Média                  |20,00 p/m² construído|<br>|   |                       |Grande                 |40,00 p/m² construído|<br>|___|_______________________|_______________________|_____________________| * tabela formatada pela equipe técnica do LeisMunicipais.com.br<br>Data da Publicação: 20/9/1997<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

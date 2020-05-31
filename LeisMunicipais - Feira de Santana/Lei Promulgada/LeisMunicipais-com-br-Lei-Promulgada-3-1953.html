@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI PROMULGADA Nº 3/1953</h2><br>AUTORIZA A PREFEITURA MUNICIPAL DE CIDADE DE FEIRA DE SANTANA A REALIZAR UMA OPERAÇÃO DE CREDITO NA IMPORTANCIA DE CR$ 6.000.000,00 (SEIS MILHÕES DE CRUZEIROS) E DA OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>A CÂMARA MUNICIPAL DA CIDADE DE FEIRA DE SANTANA DECRETA E PROMULGA A SEGUNTE LEI:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica a Prefeitura Municipal da Cidade de Feira de Santana, autorizar a realizar com o Banco da Bahia S.A.; uma operação de credito até o limite de Cr$ 6.000.000,00 (Seis milhões de cruzeiros), em conta corrente, cuja importância será destinada exclusivamente á conclusão dos serviços de abastecimento de água esgotos da cidade de FEIRA DE SANTANA, que estão sendo executados mediante convênio, pelo S.E.S.P.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Em garantia da operação de créditos de que cogita esta Lei fica a Prefeitura Municipal de Feira Santana autorizada a dar em caução pelo Banco Bahia S.A.; Cr$ 75.000,00 (setenta e cinco mil) apólices estaduais do Fomento Econômico, serie 2ª, no valor nominal de Cr$200,00 (duzentos cruzeiros) cada, da emissão autorizada pela Lei Estadual, nº  <a class="link_law" data-id="2214" data-original-title=" Data da Norma: 23.07.1949 - AUTORIZA O PODER EXECUTIVO A UTILIZAR APÓLICES DO FOMENTO ECONÔMICO OU O SEU PRODUTO EM AUXÍLIOS AOS MUNICÍPIOS, AUMENTANDO SUA EMISSÃO, DISPÕE SÔBRE OUTRAS OPERAÇÕES DE CRÉDITO PARA ATENDER A NECESSIDADES GERAIS DO ESTADO E DÁ PROVIDÊNCIAS COMPLEMENTARES PARA OS MENCIONADOS OBJETIVOS." data-toggle="tooltip" href="http://leisestaduais.com.br/ba/lei-ordinaria-n-179-1949-bahia-autoriza-o-poder-executivo-a-utilizar-apolices-do-fomento-economico-ou-o-seu-produto-em-auxilios-aos-municipios-aumentando-sua-emissao-dispoe-sobre-outras-operacoes-de-credito-para-atender-a-necessidades-gerais-do-estado-e-da-providencias-complementares-para-os-mencionados-objetivos" rel="tooltip">179</a>, de 23 de Julho de 1949, depositada no Tesouro do Estado a favor da Prefeitura Municipal de Feira Santana, de acordo com o Decreto Estadual nº  <a class="link_law" data-id="202768" data-original-title=" Data da Norma: 01.01.1951 - (A íntegra deste documento encontra-se disponível, ainda, no órgão público)" data-toggle="tooltip" href="http://leisestaduais.com.br/ba/decreto-n-14847-1951-bahia-a-integra-deste-documento-encontra-se-disponivel-ainda-no-orgao-publico" rel="tooltip">14.847</a>, de 24 de Janeiro de 1951 e á outorgarem poderes ao citado Banco Bahia S.A. para vender, ao preço da cotação do mercado, as referidas 75.000,00 (setenta e cinco mil) apólices, escriturando a favor da Prefeitura Municipal em conta corrente, as importâncias apuradas com a venda dessas apólices.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> A importância da operação de credito a que se refere o art. 1º, (primeiro), desta Lei, será movimentada exclusivamente pelo S.E.S.P., de acordo com as necessidades dos serviços, mediante requisição, sob a obrigação de prestação mensal de contas á Prefeitura Municipal de Feira Santana.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Revogam-se as disposições em contrário.<br><br>PUBLIQUE-SE.<br><br>Sala das Sessões, 14 de outubro de 1953.<br><br>HAMILTON SABACK COHIM<br>PRESIDENTE<br><br>Autor: Poder Executivo<br>DATA DE PUBLICAÇÃO: 14/10/1953<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

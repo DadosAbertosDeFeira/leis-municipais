@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 880, de 02 de dezembro de 1980</h2><br>AUTORIZA O PODER EXECUTIVO A DOAR UMA ÁREA DE TERRA AO PX CLUBE DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA Bahia, FAÇO saber que a Câmara Municipal decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica o Poder Executivo Municipal autorizado a doar ao PX Clube de Feira de Santana, com sede e fôro nesta cidade, uma área de terra situada no loteamento &quot;PARQUE CINCO DE MAIO&quot;, medindo 6.969,60m² (seis mil, novecentos e sessenta e nove metros quadrados e sessenta centímetros), limitando-se ao norte com terrenos pertencentes a Mário César Ferreira de Souza e Ana Campelo de Souza, ao sul com a Rua GARARÚ, ao Leste com a Rua Garanhuns, e ao oeste com a Rua Gameleira.<br><br>Parágrafo Único - No citado terreno será construída a sede social da entidade.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O Poder Executivo Municipal fará consignar, em escritura pública de doação, as obrigações do PX Clube de Feira de Santana, de acordo com os objetivos constantes do parágrafo único, do artigo 1º.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> A área doada não poderá ser transferida nem usada para outros fins que não os previstos nesta Lei, sob pena de revogação da doação e reversão ao patrimônio municipal, com todas as benfeitorias existentes, sem qualquer ônus para o doador, o que também ocorrerá se não forem iniciadas as obras no prazo de 02 (dois) anos, decorridos da assinatura do contrato de doação.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Prefeitura Municipal de Feira de Santana, 02 de dezembro de 1980.<br><br>DR. COLBERT MARTINS DA SILVA<br>Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

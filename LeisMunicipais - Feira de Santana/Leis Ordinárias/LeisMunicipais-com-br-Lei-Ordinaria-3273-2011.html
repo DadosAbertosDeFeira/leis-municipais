@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3273/2011</h2><br>AUTORIZA O PODER EXECUTIVO MUNICIPAL A CONCEDER DESCANSO NO DIA DO ANIVERSÁRIO NATALÍCIO DO SERVIDOR PÚBLICO MUNICIPAL, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 123/2011, de autoria do Edil Luis Augusto de Jesus, e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica autorizado o Poder Executivo Municipal a considerar de efeito exercício o descanso para o servidor público municipal efetivo, ou não, no dia de seu aniversário natalício.<br><br>Parágrafo Único - O dia do aniversário natalício do servidor é aquele indicado no seu RG (carteira de identidade), na certidão de nascimento, ou na certidão de casamento.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Em se tratando de serviços essenciais, no qual o servidor trabalhe em sistema de plantão, coincidindo este com a data de seu aniversário natalício, deverá a falta abonada realizar-se dentro dos 10 (dez) dias subsequentes, de acordo com escala prévia elaborada pelo Órgão em que o servidor esteja lotado.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogam-se as disposições em contrário.<br><br>Gabinete do Prefeito, 07 de novembro de 2011.<br><br>TARCÍZIO SUZART PIMENTA JÚNIOR<br>Prefeito Municipal<br><br>MILTON PEREIRA DE BRITTO<br>Chefe de Gabinete do Prefeito<br><br>CARLOS ANTÔNIO DE MORAES LUCENA<br>Procurador Geral do Município<br><br>JOÃO MARINHO GOMES JÚNIOR<br>Sec. Municipal de Administração<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

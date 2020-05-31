@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 991, 23 de maio de 1985</h2><br>DISPÕE SOBRE O REGIME TRIBUTÁRIO DA &quot;MICRO-EMPRESA&quot;, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal decreta e eu sanciono a seguinte Lei:<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> I<br>CONCEITO DE MICRO-EMPRESA<br></span></span><br><br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica assegurado à Micro-Empresa um tratamento diferenciado, simplificado e favorecido, nos campos administrativo e tributário, de acordo com o disposto nesta Lei.<br><br>Parágrafo Único - O tratamento estabelecido nesta Lei não exclui outros benefícios que tenham sigo ou vierem a ser concedidos às Micro-Empresas.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Consideram-se Micro-Empresas, para os fins desta Lei, as pessoas jurídicas e as firmas individuais que tiverem receita bruta anual igual ou inferior ao valor nominal de 2.000 (duas mil) Obrigações Reajustáveis do Tesouro Nacional (ORTN´s), tomando-se por referência o valor desses títulos no mês de janeiro de cada ano.<br><br>§ 1º Para efeito da apuração da receita bruta anual, será sempre considerado o período de 1º de janeiro a 31 de dezembro de cada ano.<br><br>§ 2º No primeiro ano de atividade, o limite da receita bruta será calculado proporcionalmente ao número de meses decorridos entre o mês da constituição da empresa a 31 de dezembro do mesmo ano.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Fica excluída do regime desta Lei a empresa:<br><br>I - constituída sob a forma de sociedade por ações;<br><br>II - em que o titular ou sócio seja pessoa jurídica ou ainda, pessoa física domiciliada no exterior;<br><br>III - que participe do capital de outra pessoa jurídica, ressalvados os investimentos provenientes de incentivos fiscais;<br><br>IV - cujo titular, sócios e respectivos cônjuges, participem com mais de 5% (cinco por cento) do capital de outra empresa, desde que a receita bruta anual, global, das empresas interligadas, ultrapasse o limite fixado no Artigo anterior;<br><br>V - que realize operações relativas a:<br><br>a) Importação de produtos estrangeiros;<br>b) compra e venda, loteamento, incorporação, locação, administração e construção de imóveis;<br>c) armazenamento e depósito de produtos de terceiros;<br>d) câmbio, seguro e distribuição de títulos e valores mobiliários;<br>e) publicidade e propaganda, excluídos os veículos de comunicação;<br><br>VI - que preste serviços profissionais de médico, engenheiro, advogado, dentista, veterinário, economista, despachante, contador, auditor, técnico em contabilidade, processamento de dados, consórcios ou fundos mútuos para aquisição de bens e outros que se lhes possam assemelhar;<br><br>Parágrafo Único - O disposto nos itens III e IV deste artigo não se aplica à participação de Micro-Empresas em Centrais de Compras, Bolsas de Subcontratação, Consórcio de Exportação e outras associações assemelhadas.<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> II<br>DO REGISTRO ESPECIAL<br></span></span><br><br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> O registro da Micro-Empresa será feito no Departamento de Rendas da Secretaria de Finanças, observando procedimentos especiais definidos neste Capítulo:<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Tratando-se de empresa já constituída, o registro será realizado mediante simples comunicação, da qual constarão:<br><br>I - o nome e a identificação da empresa individual ou da pessoa jurídica e de seus sócios;<br><br>II - indicação do registro anterior da empresa individual ou do arquivamento dos atos constitutivos da sociedade;<br><br>III - a declaração do titular ou de todos os sócios que o faturamento do ano anterior não excedeu os limites previstos no Art. 2º e de que a empresa não se enquadra em qualquer das exclusões do Artigo 3º desta Lei.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Tratando-se de empresa em constituição, deverá o titular ou sócio, conforme o caso, declarar que a receita bruta anual não excederá o limite fixado no Artigo 2º e que esta não se enquadra em qualquer das hipóteses de exclusão previstas no Artigo 3º desta Lei.<br><br>Parágrafo Único - O registro de firma individual ou sociedade mercantil será feito na forma regulada pela Lei nº <a class="link_law" data-id="1608831" data-original-title=" Data da Norma: 29.12.1979 - INSTITUI O CÓDIGO TRIBUTÁRIO DO MUNICÍPIO DE FEIRA DE SANTANA." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1979/87/870/lei-ordinaria-n-870-1979-institui-o-codigo-tributario-do-municipio-de-feira-de-santana" rel="tooltip">870</a>/79 (capítulo I - Seção IV), de 29/12/79.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Efetivando o registro, independentemente de alteração dos atos constitutivos, a Micro-Empresa adotará, em seguida à sua denominação ou firma, a expressão &quot;Microempresa&quot; ou simplesmente &quot;ME&quot;.<br><br>Parágrafo Único - O uso das expressões de que trata este artigo é privativo das Microempresas.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> A empresa que, a qualquer tempo, deixar de preencher os requisitos expressos nesta Lei para o seu enquadramento como Microempresa, deverá comunicar o fato ao Departamento de Rendas, num prazo máximo de 30 (trinta) dias de sua ocorrência. Parágrafo Único - A perda da condição de Micro-Empresa, em decorrência do excesso de receita bruta, só ocorrerá se o fato se verificar durante 02 (dois) anos consecutivos ou 03 (três) anos alternados, ficando, entretanto, suspensa de imediato, a isenção prevista no Artigo 10 desta Lei.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> Os requerimentos e comunicações previstos neste Capítulo, poderão ser feitos pela via postal.<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> III<br>REGIME TRIBUTÁRIO<br></span></span><br><br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10 -</span></a> O regime tributário aplicável à Micro-Empresa obedecerá às seguintes normas:<br><br>I - Isenção:<br><br>a) de impostos sobre o serviço;<br>b) das taxas relativas ao Alvará e Localização e Funcionamento, decorrentes do Poder de Polícia;<br><br>II - Dispensa:<br><br>a) da escrituração contábil perante o Departamento de Rendas do Município e do livro de prestação de serviços;<br>b) de fiscalização no estabelecimento, salvo em sistema especial, por determinação do Secretário de Finanças;<br><br>§ 1º A Micro-Empresa, dispensada da escrituração fiscal de que trata este Artigo, fica, entretanto, obrigada a manter arquivada a documentação relativa aos atos negociais que praticar ou em que intervier.<br><br>§ 2º A isenção a que se refere este Artigo não dispensa a Micro-Empresa do recolhimento da parcela relativa aos tributos, a que se obriga por Lei, devidos por terceiros.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11 -</span></a> as Micro-Empresas que deixarem de preencher as condições para seu enquadramento no regime desta Lei, ficarão sujeitas ao pagamento dos tributos incidentes sobre o valor da receita que exceder o limite fixado no Art. 2º desta Lei, bem como sobre os fatos geradores que vierem a ocorrer após o fato ou situação que tiver motivado o desenquadramento.<br><br><a name="artigo_12"><span class="label label-pill label-danger">Art. 12 -</span></a> Os documentos fiscais emitidos pelas Micro-Empresas obedecerão a modelo simplificado, definido em regulamento pelo Poder Executivo.<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> IV<br>DAS PENALIDADES<br></span></span><br><br><br><a name="artigo_13"><span class="label label-pill label-danger">Art. 13 -</span></a> A pessoa jurídica e a firma individual que, sem observância dos requisitos desta Lei, pleitear seu enquadramento ou se mantiver enquadrada como Micro-Empresa, estará sujeita às seguinte conseqüências e penalidades:<br><br>I - cancelamento de ofício do seu registro como Micro-Empresa;<br><br>II - pagamento do imposto sobre serviços e taxas isentos, acrescidos de juros, multa e correção monetária, contados desde a data em que tais obrigações tributárias deveriam ter sido pagas até a data do seu efetivo pagamento;<br><br>III - multa punitiva equivalente a:<br><br>a) 200% (duzentos por cento) do valor atualizado do tributo devido, no caso de dolo, fraude ou simulação e, especialmente, nos casos de falsidade das declarações ou informações prestadas, por si ou seus sócios, às autoridades competentes.<br>b) 50% (cinqüenta por cento) do valor atualizado do tributo devido, nos demais casos.<br><br><a name="artigo_14"><span class="label label-pill label-danger">Art. 14 -</span></a> O titular ou sócio da Micro-Empresa responderá solidária e ilimitadamente pelas conseqüências da aplicação do artigo anterior, ficando, assim, impedido de constituir nova micro-empresa ou participar de outra já existente, com os favores desta Lei.<br><br><a name="artigo_15"><span class="label label-pill label-danger">Art. 15 -</span></a> A falsidade das declarações prestadas para obtenção dos benefícios desta lei, caracteriza o crime do Art. 299 do Código Penal, sem prejuízo do seu enquadramento em outras figuras penais cabíveis.<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> V<br>DISPOSIÇÕES GERAIS<br></span></span><br><br><br><a name="artigo_16"><span class="label label-pill label-danger">Art. 16 -</span></a> As firmas individuais e sociedades comerciais e civis, identificáveis como Micro-Empresa, segundo estabelece esta Lei, que a partir de 1º de janeiro de 1981 não tenham exercido atividade econômica de qualquer espécie, poderão requerer a sua baixa no Registro competente dentro de 180 (cento e oitenta) dias a contar da data de vigência desta Lei.<br><br><a name="artigo_17"><span class="label label-pill label-danger">Art. 17 -</span></a> O Poder Executivo regulamentará a presente Lei no prazo de 60 (sessenta) dias.<br><br><a name="artigo_18"><span class="label label-pill label-danger">Art. 18 -</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Prefeitura Municipal de Feira de Santana, 23 de maio de 1985.<br><br>DR. JOSÉ FALCÃO DA SILVA<br>Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

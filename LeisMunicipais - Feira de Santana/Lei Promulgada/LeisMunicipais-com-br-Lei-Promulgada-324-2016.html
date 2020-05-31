@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 324/2016</h2><br>DISPÕE SOBRE A SUBSTITUIÇÃO E INSTALAÇÃO DE TODO CABEAMENTO ELÉTRICO, DE TELECOMUNICAÇÃO OU ASSEMELHADO NA CIDADE DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PRESIDENTE DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia. FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 109/2015, de autoria do Edil Marcos Antonio dos Santos Lima, e na conformidade do artigo 78, § 7º, da <a class="link_law" data-original-title="Lei Orgânica Feira de Santana BA" data-toggle="tooltip" href="/lei-organica-feira-de-santana-ba" rel="tooltip">Lei Orgânica</a> do Município, e artigo 25 e inciso V, do Regimento Interno, PROMULGA a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> As concessionárias de serviços públicos de energia elétrica e telefonia, no centro e grandes avenidas da Cidade de Feira de Santana, deverão modificar, no prazo máximo de 5 (cinco) anos, a instalação aérea existente nas vias públicas para instalação subterrânea.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Para fins de implementação do disposto no artigo 1º, o cabeamento de que trata esta Lei deverá ser adaptado ou substituído no aprazo de 5 (cinco) anos, contados a partir da publicação desta Lei.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Os novos projetos de instalação que vierem a ser executados já deverão ser por via subterrânea.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> As despesas com a modificação da instalação de energia elétrica e telefonia correrão por conta exclusiva das concessionárias de serviço público, ficando vedadas qualquer cobrança aos usuários.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> O descumprimento desta Lei resultará em multa de R$ 500.000,00 (quinhentos mil reais), corrigidas pelo IGPM - Fundação Getúlio Vargas.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Fica instituída a Secretaria Municipal de Serviços Públicos como competente para fiscalização da presente Lei.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>CÂMARA MUNICIPAL DE FEIRA DE SANTANA, em 23 de Fevereiro de 2016.<br><br>PUBLICADA NO DIÁRIO OFICIAL ELETRÔNICO DIA 24 FEVEREIRO DE 2016.<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

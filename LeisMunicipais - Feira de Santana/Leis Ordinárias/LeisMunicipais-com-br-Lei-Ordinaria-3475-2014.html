@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3475.</h2><br>DISPÕE SOBRE A UTILIZAÇÃO DE CAIXAS ESTACIONÁRIAS DE ENTULHO EM FEIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 50/2014, de auditoria do Edil Justiniano Oliveira França, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> As empresas proprietárias de caixas estacionárias que efetuam coleta de entulho nas obras de construção, reforma e demolições no Município de Feira de Santana, deverão atender as seguintes exigências:<br><br>I - identificar as caixas coletoras, contendo nas suas laterais: nome da empresa proprietária, número de telefone e número de inscrição municipal fornecido pela Secretaria da Fazenda;<br><br>II - identificar com código da empresa e número sequencial fornecido pela Secretaria Municipal de Serviços Públicos que facilite a localização desta empresa;<br><br>III - a empresa ao se identificar na Secretaria Municipal de Serviços Públicos deverá apresentar o plano de descarte do material coletado.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> As caixas coletoras devem ser sinalizadas com faixas refletivas, em cor que permita sua rápida visualização, notadamente no período noturno, da seguinte forma:<br><br>I - nas laterais deverão ser colocados 05 (cinco) faixas refletivas de 05 cm (cinco centímetros) de largura por 15 cm (quinze centímetros) de comprimento, sendo uma no centro e as demais em cada uma das extremidades;<br><br>II - nas partes da frente e traseira deverão ser colocadas 04 (quatro) faixas refletivas de 05 cm (cinco centímetros) de largura por 15 cm (quinze centímetros) de comprimento, cada, nas laterais das mesmas;<br><br>Parágrafo Único - As faixas refletivas deverão ser fixadas numa faixa de 30 (trinta) centímetros, de fundo branco, com o objetivo de evitar que sejam confundidas as faixas refletivas com as cores das caixas refletoras.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> De forma que a utilização das caixas coletoras não venha a impedir o tráfego de veículos e a passagem de pedestres, as mesmas deverão ser colocas no leito carroçável e/ou no passeio da seguinte forma:<br><br>I - na via, próxima ao meio fio, sempre que for permitido estacionamento de veículos ou similares no local;<br><br>II - na calçada, sempre que permitir a passagem de pedestres, obedecendo a um corredor de 70 cm ( setenta centímetros) entre a caixa e o muro;<br><br>III - no recuo das calçadas, nas garagens ou dentro dos terrenos das obras, sempre que for possível.<br><br>Parágrafo Único - Nos casos não previstos nos itens mencionados neste artigo, a empresa deverá requerer da Secretaria Municipal de Serviços Públicos, autorização específica para a colocação da caixa coletora.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> É obrigatório o uso de lonas ou similares, afixadas sobre as caixas coletoras quando estas estiverem transportando entulhos, de modo a não permitir que seja arremessada para fora a carga nelas transportada.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> O não atendimento aos dispositivos desta Lei implicará nas seguintes penalidades:<br><br>I - notificação por parte da Secretaria Municipal de Serviços Públicos, com prazo de 24 (vinte e quatro) horas para o cumprimento do estabelecido nesta Lei;<br><br>II - vencido o prazo e verificado o não cumprimento na notificação, a empresa proprietária da caixa coletora será multada em R$ 2.000,00 (dois mil reais) por cada caixa em situação irregular;<br><br>III - permanecendo a irregularidade, a multa será aplicada em dobro e a caixa coletora será apreendida pela Secretaria Municipal de Serviços Públicos, que só poderá proceder a liberação após o pagamento da multa bem como da taxa diária de pátio no valor de R$ 15,00 (quinze reais).<br><br>Gabinete do prefeito, em 27 de agosto de 2014.<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO<br><br>MÁRIO COSTA BORGES<br>Chefe de Gabinete do Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

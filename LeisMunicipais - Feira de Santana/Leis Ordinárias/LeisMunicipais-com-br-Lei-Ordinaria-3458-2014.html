@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3458/2014.</h2><br>DISPÕE SOBRE A REGULARIZAÇÃO MEDIANTE TRANSMISSÃO DE ÁREA A ENTIDADES FILANTRÓPICAS E RELIGIOSAS QUE TENHAM MAIS DE 15 ANOS DE USO, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, Faço Saber que a Câmara Municipal, através do Projeto de Lei nº 23/2014, de autoria do Edil Pablo Roberto Gonçalves da Silva, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> O Prefeito Municipal fica autorizado a regularizar, mediante transmissão de propriedade, áreas públicas que estejam sobre o uso de entidades filantrópicas e religiosas há pelo menos 15 (quinze) anos, respeitando o atendimento aos seguintes requisitos:<br><br>I - As entidades filantrópicas e religiosas deverão comprovar atividade de bem público, ligada a ações sociais, culturais e que valorizam a identidades e tradição do povo.<br><br>II - Compreende-se como atividade de bem público, as ações que visam fortalecer os laços comunitários como as férias culturais, as quermesses, as palestras de desenvolvimento humano, as gincanas, os cursos profissionalizantes, as ações de promoção social e a promoção de atividades que valorizam a família.<br><br>III - A comprovação da atividade de bem público pode ser feita através de matéria de jornal, declaração de Fé Pública assinado pelo Presidente da Câmara de Vereadores, Delegado Civil e Juiz de Direito.<br><br>IV - O requerente será apto a regulamentação após comprovação de construção de edificações que tenha o prazo mínimo de 15 (quinze) anos.<br><br>V - O requerente ficará responsável pela ação probatória do tempo de construção.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> As entidades filantrópicas deverão apresentar, atendidos os requisitos previstos no art. 1º, os seguintes documentos:<br><br>I - título de utilidade pública municipal;<br><br>II - comprovação de regularidade fiscal e trabalhista;<br><br>III - comprovação de idoneidade moral, e antecedentes criminais da Justiça Federal e Estadual, bem como, quitação eleitoral de todos os membros da diretoria da entidade.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> As entidades beneficiadas com a transmissão da área ficam vedadas de transferir o título através de qualquer tipo de negociação ou transação comercial.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> As despesas com a transmissões da área ficam sob a responsabilidade das entidades filantrópicas e religiosas que requeiram, sendo comprovadas as condições existentes no ar. 1º, sem qualquer ônus para o município.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito, 10 de junho de 2014.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito<br><br>MÁRIO BORGES DA COSTA<br>Chefe de Gabinete do Prefeito<br><br>CARLOS ALBERTO OLIVEIRA BRITO<br>Secretário Municipal de Planejamento<br><br>JOSÉ FERREIRA PINHEIRO<br>Secretário Municipal de Desenvolvimento Urbano<br><br>ROBERTO LUIZ DA SILVA TOURINHO<br>Secretário Municipal de Desenvolvimento e Recursos Naturais<br><br>SANDRO RICARDO ESPÍRITO SANTO LIMA<br>Secretário Municipal de Habitação e Regularização Fundiária<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

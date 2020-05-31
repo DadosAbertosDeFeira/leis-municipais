@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3027/2009</h2><br>DISPÕE SOBRE A RESERVA DE VAGAS EM APARTAMENTOS TÉRREOS NOS CONJUNTOS HABITACIONAIS DE INTERESSE SOCIAL PARA IDOSOS E PORTADORES DE NECESSIDADES FÍSICAS ESPECIAIS BENEFICIADOS NOS PROGRAMAS HABITACIONAIS, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Autor: Gerusa Maria Bastos Silva Sampaio<br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do projeto de Lei nº 143/2009, de autoria da Edil Gerusa Maria Bastos Silva Sampaio, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Os apartamentos térreos conjuntos habitacionais populares ficam reservados aos idosos e aos portadores de necessidades especiais contemplados como beneficiários nos programas habitacionais de interesse social do Município de Feira de Santana.<br><br>Parágrafo Único - A reserva de que trata o caput estende-se aos beneficiários dos aludidos programas cujos dependentes incluam pessoas nessas condições.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> A garantia da reserva dos andares térreos para os casos cujo beneficiário ou seu dependente legal seja portador de necessidade especial dar se observadas as seguintes condições:<br><br>I - deficiência irreversível, em qualquer grau, que impossibilite, dificulte ou diminua a capacidade de locomoção do indivíduo ou crie nele dependência de seus familiares exigindo cuidados especiais;<br><br>II - atestado médico reconhecendo as condições indicadas no inciso anterior.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> na inexistência de beneficiários contemplados apresentando as características referidas nesta Lei, os imóveis poderão ser ocupados pelos os demais pretendentes, respeitadas as condições gerais estabelecidas, tendo que confirmar um prazo de 180 dias do início da divulgação dos referidos imóveis.<br><br>Parágrafo Único - Para o cumprimento deste artigo as empresas responsáveis pela comercialização dos imóveis, deverão fazer ampla divulgação com meios de comunicação da cidade, informando as reservas das vagas que trata esta Lei.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>PREFEITURA MUNICIPAL DE FEIRA DE SANTANA, em 28 de outubro 2009.<br><br>DR.TARCÍZIO SUZART PIMENTA JÚNIOR<br>Prefeito.<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3262/2011</h2><br>AUTORIZA O PODER EXECUTIVO MUNICIPAL A COBRAR PREÇO PÚBLICO PELA OCUPAÇÃO DE ESPAÇO DE SOLO EM ÁREAS PÚBLICAS MUNICIPAIS, ATRAVÉS DE POSTES DE ENERGIA ELÉTRICA E SIMILARES, TELEFONES PÚBLICO TIPO &quot;ORELHÕES&quot; E CAIXAS DE CENTRAIS TELEFÔNICAS, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 173/2010, de autoria do Poder Executivo, e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> O Poder Executivo Municipal fica autorizado a cobrar, mensalmente, preço público por empresa de energia elétrica ou similares, como também pelos telefones públicos tipo &quot;orelhões&quot; e caixas de centrais telefônicas, e outros equipamentos similares.<br><br>§ 1º A abrangência do disposto nesta Lei envolve a sede do município e as áreas urbanizadas dos distritos considerados sede distrital, vilarejos ou povoados.<br><br>§ 2º Entende-se como postes as estruturas de concreto, metal, madeira ou outros materiais que suportam fios, cabos e equipamentos de redes de energia, telefonia, iluminação pública, difusão de imagens e sons, ou de usos similares.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O preço público aludido no caput do art. 1º será devido pela empresa proprietária dos equipamentos instalados em solo público.<br><br>Parágrafo Único - Respondem subsidiariamente os outros usuários dos equipamentos, independente de serem, ou não, proprietários do bem, tais como empresas telefônicas, aparelhagens de sonorização, e outros similares.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> A cobrança pelo uso do solo prevista nesta Lei será efetuada, mensalmente, por unidade de poste e metragem quadrada no caso de telefonia, e serão definidas da seguinte forma:<br><br>I - postes de transmissão de energia com alta tensão será cobrado o correspondente a 20% (vinte por cento) do valor da UFM - Unidade Fiscal do Município, por unidade;<br><br>II - postes de distribuição e/ou iluminação com energia de baixa tensão, cobrar-se-ão 10% (dez por cento) do valor da UFM - Unidade Fiscal do Município, por unidade;<br><br>III - telefones públicos tipo &quot;orelhões&quot; e caixas de centrais telefônicas serão cobrados 20% (vinte por cento) do valor da UFM - Unidade Fiscal do Município, por metro quadrado ou frações, de ocupação;<br><br>IV - a utilização dos postes de transmissão e distribuição de energia, por não proprietários, com outras finalidades secundarias, implicará o pagamento excepcional suplementar de 50% (cinquenta por cento) dos valores estabelecidos nos incisos I, II, III deste artigo;<br><br>V - a outros equipamentos similares serão aplicados o contido nos incisos I, II e III acima, observando-se a similitude e equivalência dos bens a serem cobrados.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> O recolhimento mensal deverá ser efetuado até o dia 10 (dez) do mês subsequente do débito, estabelecendo-se que o não pagamento na data aprazada, ensejará acréscimos legais aplicados pelo Poder Executivo Municipal, em consonância com o art. 180 do Código Tributário do Município.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> No prazo de 90 (noventa) dias após a publicação desta Lei, o Poder Público Municipal, conjuntamente ou não com as empresas proprietárias dos equipamentos, procederá ao levantamento do número do equipamento instalados em solo público, para efeito da cobrança da ocupação do solo, de acordo com o disposto nesta Lei.<br><br>Parágrafo Único - O Poder Executivo Municipal, através da Secretaria de Desenvolvimento Urbano, manterá equipe de fiscalização para o devido supervisionamento de eventual dano ao solo e que mais estiver contido nesta Lei.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> O Poder Público Municipal, conjuntamente com as empresas proprietárias dos equipamentos, acompanharão as ampliações ou reduções de número de equipamentos instalados em solo público, para efeito de atualização cadastral e fixação dos valores a serem cobrados.<br><br>Parágrafo Único - As empresas proprietárias dos equipamentos deverão informar ao Poder Público sempre que forem proceder ampliações ou redações dos seus equipamentos em todo o Município.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Os recursos oriundos da aplicação da presente Lei serão destinados, exclusivamente para a aplicação ao combate à pobreza, sendo direcionado, obrigatoriamente, para a construção de moradias para o abrigo de famílias carentes desprovidas de residências.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> O Poder Público deverá, obrigatoriamente, selecionar e manter cadastradas as famílias necessitadas, fornecendo moradia pela ordem de carência levantadas, após fiscalização e apuração dessas necessidades, utilizando-se, também, de dados existentes em cadastros públicos de outros programas de outras instancias federativas.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> O Poder Executivo Municipal, deverá enviar ao Poder Legislativo Municipal, demonstrativo mensal dos valores arrecadados e os desembolsos efetivados, constando, em anexo, a relação dos beneficiados por este Programa e as suas respectivas qualificações, abrangendo dados da família e da habitação recebida.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10.</span></a> Não será permitido o repasse de custos para os consumidores relacionados com os equipamentos onerados com a aplicabilidade desta Lei.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11.</span></a> As despesas decorrentes desta Lei correrão por conta de dotações orçamentárias próprias, podendo ser suplementadas, se necessárias.<br><br><a name="artigo_12"><span class="label label-pill label-danger">Art. 12.</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito, 17 de outubro de 2011.<br><br>TARCÍZIO SUZART PIMENTA JÚNIOR<br>Prefeito Municipal<br><br>MILTON PEREIRA DE BRITTO<br>Chefe de Gabinete do Prefeito<br><br>CARLOS ANTÔNIO DE MORAES LUCENA<br>Procurador Geral do Município<br><br>GILBERTO RUY SOUZA ROCHA<br>Sec. Municipal de Habitação e Regularização Fundiária<br><br>GERUSA MARIA SILVA BASTOS SAMPAIO<br>Sec. Municipal de Desenvolvimento Social<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

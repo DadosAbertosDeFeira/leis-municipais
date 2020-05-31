@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 2396/02</h2><br>INSTITUI A CONTRIBUIÇÃO PARA O CUSTEIO DO SERVIÇO DE ILUMINAÇÃO PÚBLICA E DÁ OUTRA PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 161/2002, de autoria deste PODER EXECUTIVO, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica instituída, no âmbito do Município de Feira de Santana, a contribuição para o custeio do serviço de iluminação pública, de acordo com o art. 149-A, da Constituição Federal, introduzido pela Emenda Constitucional nº 39, de 19 de dezembro de 2002, que tem como fato gerador da respectiva contribuição tributária, a utilização efetiva ou potencial dos serviços de iluminação nas vias e logradouros públicos prestados aos contribuintes, ou postos a sua disposição.<br><br>Parágrafo Único - Entende-se como iluminação pública aquela que esteja direta e regularmente ligada a rede de distribuição de energia elétrica da empresa concessionária, e sirva às vias ou logradouros públicos.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O sujeito passivo da contribuição para o custeio do serviço de iluminação pública é o proprietário, o titular do domínio útil ou possuidor a qualquer título de unidade imobiliária lindeira às vias ou logradouros públicos, servidos por iluminação pública.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> A base de cálculo da contribuição para custeio do serviço de iluminação das vias e logradouros públicos a ser rateado entre os contribuintes em função do número de unidades imobiliárias lindeiras as vias dotadas dos mencionados serviços.<br><br>§ 1º A composição do custo dos serviços de iluminação compreende:<br><br>a) as despesas mensais com a energia elétrica consumida pelos serviços de iluminação pública;<br>b) as despesas mensais com a administração, operação e manutenção dos serviços de iluminação pública;<br>c) as quotas mensais de depreciação de bens e instalações do sistema de iluminação pública;<br>d) as quotas mensais de investimentos destinados a suprir encargos financeiros para a expansão, melhoria ou modernização do sistema de iluminação pública<br><br>§ 2º A contribuição para o custeio do serviço de iluminação pública incidirá a partir do exercício de 2003.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Os valores devidos a título de contribuição para o custeio do serviço de iluminação pública para o exercício de 2003 serão os seguintes:<br><br>I - R$ 16,64 (dezesseis reais e sessenta e quatro centavos) mensais, para contribuintes possuidores de imóveis classificados pela concessionária de distribuição de energia elétrica como residenciais;<br><br>II - R$ 22,19 (vinte e dois reais e dezenove centavos) mensais, para contribuintes classificados pela concessionária de energia elétrica, como comerciais ou industriais.<br><br>§ 1º São isentos do pagamento da contribuição para custeio do serviço de iluminação pública, os contribuintes classificados como de baixa renda pela administração federal.<br><br>§ 2º Os valores mensais ora estabelecidos poderão estar sujeitos a um desconto, de forma a assegurar que o valor da contribuição para o custeio do serviço de iluminação pública não exceda em hipótese alguma a 10% (dez por cento) do valor do consumo de energia elétrica do contribuinte, no respectivo mês.<br><br>§ 3º Os valores da contribuição para o custeio do serviço de iluminação pública nos exercícios subsequentes serão revistos de acordo com a variação anual do IPC-A, ou outro que lhe suceda em caso de extinção.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Fica o Poder Executivo autorizado a celebrar convênio com empresa concessionária de distribuição de energia elétrica para promover cobrança da contribuição para o custeio do serviço de iluminação pública.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Aplicam-se à contribuição para o custeio do serviço de iluminação pública, no que couber, as normas do Código Tributário Nacional e do Código Tributário do Município de Feira de Santana, inclusive aquelas relativas a infrações e penalidades.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Fica o Poder Executivo autorizado a:<br><br>I - proceder as alterações orçamentárias necessárias ao atendimento desta Lei;<br><br>II - regulamentar a presente Lei, editando os atos complementares precisos à sua aplicação.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> Esta Lei entrará em vigor na data de sua publicação, produzindo seus efeitos fiscais a partir de 1º de janeiro de 2003.<br><br>Gabinete do Prefeito Municipal, 27 de dezembro de 2002.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito<br><br>GERALDO DE OLIVEIRA SAMPAIO FILHO<br>Chefe de Gabinete do Prefeito<br><br>JOAQUIM JOSÉ BAHIA MENEZES<br>Sec. Municipal da Fazenda<br><br>GEOVÁ DA SILVA BORGES<br>Sec. Municipal de Serviços Públicos<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

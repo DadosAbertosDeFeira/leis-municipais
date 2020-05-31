@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3883, DE 12 DE SETEMBRO DE 2018.</h2><br>Declara como Patrimônio Cultural Imaterial do município de Feira de Santana as &quot;FEIRAS LIVRES&quot;, e dá outras providências.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 128/2018, de autoria do Edil João dos Santos, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Ficam as &quot;FEIRAS LIVRES&quot; de Feira de Santana, declaradas como Patrimônio Cultural Imaterial do Município, devendo fazer parte do acervo cultural, para todos os fins.<br><br>§ 1º As &quot;FEIRAS LIVRES&quot; da cidade representam e corroboraram no desenvolvimento da Princesa do Sertão.<br><br>§ 2º Para os fins pretendidos por esta Lei, serão consideradas &quot;FEIRAS LIVRES&quot; aquelas que possuam reconhecimento e estejam devidamente regulamentadas pela Prefeitura Municipal.<br><br>§ 3º As &quot;FEIRAS LIVRES&quot; desenvolvidas no decurso do tempo também alcançaram os fins colimados por esta Lei, desde que recebam reconhecimento e regulamentação da Prefeitura Municipal de Feira de Santana.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito, 12 de setembro de 2018.<br><br>COLBERT MARTINS DA SILVA FILHO<br>PREFEITO MUNICIPAL<br><br>MARIO COSTA BORGES<br>CHEFE DE GABINETE DO PREFEITO<br><br>CLEUDSON SANTOS ALMEIDA<br>PROCURADOR GERAL DO MUNICÍPIO<br><br>EDSON FELLONI BORGES<br>SECRETÁRIO MUNICIPAL DE CULTURA, ESPORTE E LAZER<br><br>PUBLICADO NO DIÁRIO OFICIAL DIA 14 DE SETEMBRO DE 2018<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

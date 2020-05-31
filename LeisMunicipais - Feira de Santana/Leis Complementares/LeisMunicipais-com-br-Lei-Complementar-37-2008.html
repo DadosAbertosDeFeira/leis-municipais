@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI COMPLEMENTAR Nº 37/2008</h2><br>ALTERA QUADRO DE PESSOAL DA ADMINISTRAÇÃO MUNICIPAL E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O Prefeito Municipal de Feira de Santana, Estado da Bahia, no uso de suas atribuições, Faço saber que a Câmara Municipal, através do Projeto de LEI COMPLEMENTAR Nº 3/2007, de autoria deste Poder Executivo, decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> No Quadro de Pessoal, com cargos de provimento permanente, da Administração Municipal Direta, Fundacional, Autárquica, do Município de Feira de Santana, constante no Anexo I, da Lei Complementar Municipal Nº <a class="link_law" data-id="222126" data-original-title=" Data da Norma: 11.11.1994 - DISPÕE SOBRE O ESTATUTO, PREVIDÊNCIA E SISTEMA DE CARREIRA DOS SERVIDORES DO MUNICÍPIO DE FEIRA DE SANTANA E DE SUAS AUTARQUIAS E FUNDAÇÕES." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-complementar/1994/0/1/lei-complementar-n-1-1994-dispoe-sobre-o-estatuto-previdencia-e-sistema-de-carreira-dos-servidores-do-municipio-de-feira-de-santana-e-de-suas-autarquias-e-fundacoes" rel="tooltip">001</a>/94, alterado posteriormente pela Lei Municipal Complementar nº <a class="link_law" data-id="1592761" data-original-title=" Data da Norma: 14.12.2006 - ALTERA A LEI COMPLEMENTAR Nº 1/94, E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-complementar/2006/3/33/lei-complementar-n-33-2006-altera-a-lei-complementar-n-1-94-e-da-outras-providencias" rel="tooltip">033</a>/06 ficam acrescidas as seguintes modificações:<br><br>ADMINISTRAÇÃO<pre> _________________________________________________________________________________________<br>|                 CARGO                 |CARGA HORÁRIA|DIRETA|FUNDACIONAL|AUTÁRQUICA|TOTAL|<br>|                                       |   SEMANAL   |      |           |          |     |<br>|=======================================|=============|======|===========|==========|=====|<br>|Técnico em Produção/Operação Científica|           40|    00|         15|        00|   15|<br>|---------------------------------------|-------------|------|-----------|----------|-----|<br>|Técnico em Produção/Operação Cultural  |           40|    00|         25|        00|   25|<br>|---------------------------------------|-------------|------|-----------|----------|-----|<br>|Produtor/Operador Científico           |           40|    00|         05|        00|   05|<br>|---------------------------------------|-------------|------|-----------|----------|-----|<br>|Produtor/Operador Cultural             |           40|    10|         10|        00|   10|<br>|_______________________________________|_____________|______|___________|__________|_____| * tabela formatada pela equipe técnica do LeisMunicipais.com.br<br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Os cargos constantes no artigo antecedente integrarão os Grupos Ocupacionais Administrativo - Nível Médio 03, Classe II, e Administrativo - Nível Superior 03, Classe I com as descrições de atribuições na forma do Anexo Único desta Lei.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Os vencimentos dos cargos ora criados, no nível I, referência &quot;a&quot;, serão os seguintes: CARGOS Vencimento inicial (Nível I/Referência A)<pre> ____________________________________________________<br>|Técnico em Produção/Operação Científica |  R$ 800,00|<br>|----------------------------------------|-----------|<br>|Técnico em Produção/Operação Cultural   |  R$ 800,00|<br>|----------------------------------------|-----------|<br>|Produtor/Operador Científico            |R$ 1.200,00|<br>|----------------------------------------|-----------|<br>|Produtor/Operador Cultural              |R$ 1.200,00|<br>|________________________________________|___________| * tabela formatada pela equipe técnica do LeisMunicipais.com.br<br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 28 de março de 2008.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito Municipal<br><br>GERALDO DE OLIVEIRA SAMPAIO FILHO<br>Chefe de Gabinete do Prefeito<br><br>CARLOS ANTÔNIO DE MORAES LUCENA<br>Procurador Geral do Município<br><br>JOÃO MARINHO GOMES JÚNIOR<br>Sec. Municipal de Administração<br><br>JOAQUIM JOSÉ BAHIA MENEZES<br>Sec. Municipal da Fazenda<br><br>ANTONIO MAURÍCIO SANTANA DE CARVALHO<br>Sec. Municipal de Cultura, Esporte e Lazer<br><br>AUGUSTO CEZAR PEREIRA ORRICO<br>Diretor Presidente da Diretoria Executiva da Fundação Cultural Municipal Egberto Tavares Costa<br><br>ANEXO ÚNICO<br><br>DESCRIÇÃO DE CARGO<br><br>CARGO: Técnico em Produção/Operação Científica<br>CÓDIGO: 0317<br>GRUPO OPERACIONAL: Administrativo Nível Médio - 03<br>CLASSE: II<br><br>REQUISITOS BÁSICOS<br><br>ESCOLARIDADE: Ensino Médio Completo mais conhecimento específico<br>EXPERIÊNCIA: 6 meses<br><br>DESCRIÇÕES SUMÁRIAS<br>- Servidor incumbido de criar e executar programas; operar, manter e conservar equipamentos;<br>acompanhar funcionamento de teatros virtuais<br><br>DESCRIÇÕES DETALHADAS<br>- Criar programas informatizados para uso no projetor principal, de acordo com a demanda das escolas, universidades e outras entidades, dentro dos parâmetros técnicos e científicos de cada assunto;<br>- Viabilizar, desenvolver e acompanhar o projeto gráfico e a editoração de publicações, e de todo o material gráfico teatros virtuais, em todos as suas fases;<br>- Operar os equipamentos do estúdio nas gravações e na mixagem dos programas de sessões de cúpula de teatros virtuais;<br>- manter e conservar os equipamentos do estúdio em condições de uso; selecionar, sob supervisão, efeitos musicais e trilhas sonoras para uso em programas especiais, e acompanhar as etapas de definição operacional dos programas;<br>- acompanhar as etapas de definição operacional dos programas de sessões de cúpula.<br>- Fornecer dados estatísticos quando requisitado;<br>- Cuidar da manutenção dos equipamentos e observar, ao término do expediente, se os aparelhos estão desligados;<br>- Requisitar o material necessário para o trabalho;<br>- Manter em ordem e em condições de uso os equipamentos e materiais de trabalho;<br>- Executar outras atividades correlatas.<br><br>CARGO: Técnico em Produção/Operação Cultural<br>CÓDIGO: 0318<br>GRUPO OPERACIONAL: Administrativo Nível Médio - 03<br>CLASSE: II<br><br>REQUISITOS BÁSICOS<br><br>ESCOLARIDADE: Ensino Médio Completo mais conhecimento específico, conforme a aplicação em  Teatros Virtuais e Oficinas Culturais e Artísticas<br>EXPERIÊNCIA: 6 meses<br><br>DESCRIÇÕES SUMÁRIAS<br>- Servidor incumbido de executar tarefas culturais em Teatro Virtual e Oficinas Culturais e Artísticas<br><br>DESCRIÇÕES DETALHADAS<br>- Executar tarefas relacionadas com a programação visual e gráfica; elaborar, criar definir e executar layouts e artes-finais, a serem utilizados em serviços gráficos, tais como: formulários, cartazes, convites, folhetos, programas, crachás, revistas, livros, jornais e quaisquer outros tipos de impressos;<br>- diagramar e calcular reduções e ampliações; desenvolver normas de identificações para a elaboração de artes-finais; programar, calcular e executar layout e artes-finais de painéis com fotografias, textos, gráficos e ilustrações;<br><br>- desenvolver normas de identificação visual de projetos científicos e culturais, respeitando as normas municipais;<br>- sugerir e providenciar a adequação e a inovação dos equipamentos necessários a sua área de atuação;<br>- Garantir o perfeito funcionamento do sistema de projeções, identificando e corrigindo possíveis falhas;<br>- acompanhar e auxiliar as manutenções e revisões de todos os equipamentos técnicos e computadores;<br>- realizar a manutenção semanal, executando limpeza das lentes, trca das lâmpadas e lubrificação das engrenagens dos equipamentos de projeção;<br>- Planejar, Programar e Executar aulas, cursos, simpósios e seminários sobre sua especialidade;<br>- Planejar, Programar e Executar aulas, Oficinas e seminários sobre sua especialidade cultural ou artística;<br>- Fornecer dados estatísticos quando requisitado;<br>- Cuidar da manutenção dos equipamentos e observar, ao término do expediente, se os aparelhos estão desligados;<br>- Requisitar o material necessário para o trabalho;<br>- Manter em ordem e em condições de uso os equipamentos e matérias de trabalho;<br>- Executar outras atividades correlatas.<br><br>CARGO: Produtor/Operador Científico<br>CÓDIGO: 0424<br>GRUPO OPERACIONAL: Administrativo Nível Superior - 04<br>CLASSE: I<br><br>REQUISITOS BÁSICOS<br><br>ESCOLARIDADE: Nível Superior completo<br>EXPERIÊNCIA: 6 meses<br><br>DESCRIÇÕES SUMÁRIAS<br>Analisar e elaborar textos, planejar e produzir peças de divulgação, documentários, vídeos, etc.<br><br>DESCRIÇÕES DETALHADAS<br>Analisar e elaborar textos, dando-lhes forma correta, clara e harmoniosa, de acordo com as normas gramaticais;<br>- planejar, produzir e revisar apostilas dos cursos de iniciação científica e de aperfeiçoamento de professores, exposições e publicações científicas;<br>- planejar, produzir e revisar textos de recursos audiovisuais, inclusive de computação e animação gráfica, programas de videdocumentários, videoconferências, softwares e outros textos redigidos pelos astrônomos;<br>- planejar e produzir peças gráficas de divulgação, incluindo agendas mensais de divulgação da programação das sessões;<br>- executar quaisquer outras tarefas pertinentes à Teatros Virtuais, compreendidas a digitação do próprio trabalho e a operação em computador na área de sua competência.<br>- Executar outras atividades correlatas.<br><br>CARGO: Produtor/Operador Cultural<br>CÓDIGO: 0425<br>GRUPO OPERACIONAL: Administrativo Nível Superior - 04<br>CLASSE: I<br><br>REQUISITOS BÁSICOS<br><br>ESCOLARIDADE: Nível Superior Completo mais conhecimento específico, conforme a aplicação em Teatros Virtuais e Oficinas Culturais e Artísticas<br>EXPERIÊNCIA: 6 meses<br><br>DESCRIÇÕES SUMÁRIAS<br>- Analisar e elaborar textos, planejar e produzir peças de divulgação, documentários, vídeos, etc., planejar, produzir e executar cursos e oficinas culturais e artísticas<br><br>DESCRIÇÕES DETALHADAS<br>- Coordenar e operar os sistemas que fazem parte dos equipamentos de projeções;<br>- Realizar as atividades de observações astronômicas, prestando atendimento aos visitantes;<br>- Realizar as oficinas de iniciação científica e de aperfeiçoamento de professores;<br>- Coordenar e realizar as atividades de difusão científica itinerantes;<br>- Garantir o bom funcionamento dos equipamentos técnicos-científicos;<br>- Atender ao público nas atividades de difusão científica;<br>- Desenvolver e dar o suporte necessário para a realização de congressos, simpósios, seminários, conferências e palestras de caráter científico;<br>- Elaborar boletins informativos e revistas sobre as atividades de Museus e Teatros Virtuais;<br>- Planejar, Programar e Executar aulas, cursos, simpósios e seminários sobre sua especialidade;<br>- Planejar, Programar e Executar aulas, oficinas e seminários sobre sua especialidade cultural ou artística;<br>- Requisitar o material necessário para o trabalho;<br>- Manter em ordem e em condições de uso os equipamentos e materiais de trabalho;<br>- Executar outras atividades correlatas.<br><br>DATA DE PUBLICAÇÃO: 29/3/2008<br>PREFEITO: José Ronaldo de Carvalho<br>Presidente: Antonio Carlos Passos Ataíde<br>Assunto: Servidor Público<br>Autor: Poder Executivo<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

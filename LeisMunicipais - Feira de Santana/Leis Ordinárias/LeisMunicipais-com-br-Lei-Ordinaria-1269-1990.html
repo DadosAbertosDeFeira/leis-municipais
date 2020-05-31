@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 1269, de 30 de junho de 1990</h2><br>ESTABELECE AS DIRETRIZES ORÇAMENTÁRIAS PARA ELABORAÇÃO DAS PROPOSTAS DO EXERCÍCIO DE 1991.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, FAÇO saber que a Câmara Municipal decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Esta Lei estabelece as diretrizes orçamentárias gerais, e as instruções que deverão ser observadas na elaboração do orçamento anual do exercício de 1991, e do plano plurianual 1991/1993.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> São gastos municipais destinados à aquisição de bens e serviços para cumprimento dos objetivos do Município e solução de seus compromissos de natureza social e financeira.<br><br>Parágrafo Único - Os gastos municipais serão estimados por serviços e obras mantidos ou realizados pelo Município, considerando:<br><br>I - a carga de trabalho estimada para o exercício de 1991;<br><br>II - os fatores conjunturais que possam afetar a produtividade dos gastos;<br><br>III - a receita do serviço, quando este for remunerado;<br><br>IV - a projeção, nos gastos de pessoal localizado no serviço, com base na política salarial do governo federal, e na estabelecida pelo governo municipal para seus servidores estatutários;<br><br>V - a importância das obras para a administração e para os administrados;<br><br>VI - o retorno do valor aplicado na execução das obras;<br><br>VII - o patrimônio do Município, sua dívida e encargos.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> O orçamento anual do Município e de suas autarquias abrigarão obrigatoriamente:<br><br>I - recursos destinados ao pagamento da dívida municipal e seus serviços;<br><br>II - recursos destinados ao Poder Judiciário, para o que dispõe o art. 100 e parágrafos, da Constituição Federal;<br><br>III - recursos para o pagamento do pessoal e seus encargos.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Constituem receitas do Município as provenientes de:<br><br>I - tributos de sua competência;<br><br>II - atividades econômicas que, por conveniências, vier a executar;<br><br>III - transferências, por força de mandamento constitucional ou de convênios firmados;<br><br>IV - empréstimos e financiamentos, com vencimento fora do exercício e vinculados a obras e serviços públicos;<br><br>V - empréstimos tomados por antecipação da receita.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> A estimativa da receita considerará:<br><br>I - os fatores conjunturais que possam vir a influenciar a produtividade de cada fonte;<br><br>II - a carga de trabalho estimada para o serviço, quando este for remunerado;<br><br>III - os fatores que influenciam as arrecadações dos impostos, das taxas, e das contribuições de melhoria;<br><br>IV - as alterações da legislação tributária.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> O Poder Executivo fica obrigado a arrecadar todos os tributos de sua competência.<br><br>Parágrafo Único - O Poder Executivo fica obrigado a diminuir o volume da dívida ativa inscrita de natureza e não tributária.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> A legislação tributária será revista e atualizada para o exercício de 1991.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> O Poder Executivo fica obrigado à modernização da máquina fazendária no sentido de aumentar a produtividade.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> As receitas oriundas de atividades econômicas exercidas pelo Município, terão suas fontes revisadas e atualizadas, considerando-se os fatores conjunturais e sociais que possam influenciar as suas respectivas produtividades.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10 -</span></a> O Município executará com prioridade, as seguintes ações delineadas para cada setor, assim elencadas:<br><br>I - ADMINISTRAÇÃO, PLANEJAMENTO E FINANÇAS:<br><br>a) reforma na estrutura administrativa;<br>b) criação do cargo de auditor-interno do município e instalação da procuradoria geral do município;<br>c) revisão e atualização das alíquotas fixadas para cada espécie tributária;<br>d) treinamento de recursos humanos;<br>e) edificação do centro administrativo municipal, com instalações para o Poder Legislativo e Poder Executivo;<br>f) atualização da remuneração dos agentes políticos municipais;<br>g) plano de cargos e salários dos servidores municipais;<br>h) criação da previdência municipal.<br><br>II - SOCIAL:<br><br>a) construção, ampliação, reforma e restauração de unidades escolares para atender ao crescimento da demanda na área da competência municipal, da pré-escola, e do ensino fundamental;<br>b) distribuição de merenda escolar e manutenção dos serviços conveniados;<br>c) ampliação e reforma de prédios e instalações para atividades culturais;<br>d) aquisição e reforma de móveis e utensílios das escolas municipais;<br>e) seqüência de obras e aquisição de equipamentos do Hospital da Mulher e do laboratório central;<br>f) convênios com o SUS e programas de vacinações;<br>g) construção, reforma e aquisição de equipamentos de postos médico-odontológicos;<br>h) aquisição e manutenção de ambulâncias e unidades móveis;<br>i) saneamento de lagoas, rios e riachos;<br>j) urbanização de logradouros públicos do município;<br>k) construção de mercados de feiras-livres em bairros, vilas e povoados;<br>l) reforma e ampliação do parque de exposição agropecuária;<br>m) projeto de construção do parque da cidade;<br>n) drenagem e pavimentação de vias públicas na sede, vilas e povoados;<br>o) edificação e instalação de centros comunitários;<br>p) construção, manutenção de praças esportivas e parques infantis;<br>q) construção de casas populares, incluídas desapropriações, material de construção, distribuição de lotes e urbanização;<br>r) apoio a mutirão para construção e recuperação de casas populares;<br>s) implantação do sistema viário de transporte coletivo;<br>t) abertura e prolongamento de vias públicas;<br>u) desapropriações de imóveis para fins de utilidade e necessidade pública;<br>v) aquisição de veículos, máquinas e implementos, peças acessórios;<br>x) reequipamento do complexo matadouro municipal;<br>w) extensão e melhorias de rede de iluminação pública, água e esgoto;<br>y) implantação e preservação de programas culturais e do patrimônio histórico do município;<br>z) convênios com entidades de direito público ou privado, com finalidades culturais, assistenciais e outras de interesse público.<br><br>III - ECONÔMICO:<br><br>a) abertura e manutenção de estradas municipais;<br>b) duplicação das artérias que ligam a BR-324 à BR-116;<br>c) aragem e gradeamento do solo de propriedades agropastoris de pequenos produtores;<br>d) abertura de cacimbas, construção e recuperação de açudes e propriedades de pequenos produtores;<br>e) aquisição e distribuição de sementes selecionadas, mudas e adubos e pequenos produtores;<br>f) promoção das festas populares, especialmente a micareta, as juninas, as da padroeira e as de bairros e distritos;<br>g) promoção de exposições e feiras agropecuárias;<br>h) relocação de áreas para indústrias localizadas em regiões desconformes ao PLDI, em convênio com o CIS;<br>i) publicidades e promoções de natureza informativa e econômicas do município.<br><br>IV - URBANO:<br><br>a) reurbanização de ruas e praças da área central da cidade;<br>b) pavimentação de vias públicas;<br>c) drenagem de águas pluviais na área central da cidade;<br>d) construção de praças e jardins.<br><br>§ 1º As obras e serviços que ultrapassarem na sua execução, o exercício de 1991, constarão obrigatoriamente do plano plurianual.<br><br>§ 2º Na programação de investimentos serão observadas as prioridades para as obras em fase de execução.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11 -</span></a> O orçamento municipal compreenderá as receitas e as despesas da administração direta e indireta, de modo a evidenciar as políticas e programas de governo, obedecidos, na sua elaboração, os princípios da anualidade, unidade, equilíbrio e exclusividade.<br><br>§ 1º Os servidores municipais remunerados, inclusive as atividades de execução de obras públicas, das quais possam beneficiar imóveis, os seus custos poderão ser cobertos ou ajudados por contribuição de melhoria desde que seja adredemente concordada com os proprietários dos imóveis envolvidos, buscando o equilíbrio na gestão financeira em função das disponibilidades do erário público.<br><br>§ 2º Compreenderão o orçamento do município os órgãos da administração indireta, cujos orçamentos respeitarão o disposto nesta Lei.<br><br>§ 3º As estimativas dos gastos e receitas municipais dos servidores municipais, remunerados ou não, se compatibilizarão com as respectivas políticas estabelecidas pelo Governo Municipal.<br><br>§ 4º VETADO.<br><br><a name="artigo_12"><span class="label label-pill label-danger">Art. 12 -</span></a> O orçamento municipal poderá consignar recursos para financiar serviços incluídos nas suas funções a serem executados por entidades de direito privado, sem fins lucrativos e reconhecidas de utilidade pública, mediante convênio previamente aprovado pelo Legislativo Municipal, desde que seja do interesse público e tenham demonstrado eficiência no cumprimento dos objetivos determinados.<br><br><a name="artigo_13"><span class="label label-pill label-danger">Art. 13 -</span></a> Não poderão ter aumento real em relação aos créditos correspondentes no orçamento de 1990, ressalvados os casos autorizados em lei própria, os seguintes casos:<br><br>I - de pessoal e respectivos encargos, que não poderão ultrapassar o limite de 25% (vinte cinco por cento);<br><br>II - pagamento e serviço da dívida, que não poderão ultrapassar 5% (cinco por cento) do montante dos impostos municipais e transferências, quando destinados aos serviços não remunerados e 10% (dez por cento), quando remunerados e, no caso da contribuição de melhoria, até 100% (cem por cento) quando o empréstimo se destinar a obras cujo custo será recuperado por essa receita;<br><br>III - transferências, inclusive as relacionadas com o serviço da dívida e encargos sociais;<br><br>IV - imobilização administrativa, que não poderão ultrapassar:<br><br>a) até 8% (oito por cento) do montante de impostos municipais e transferências, quando destinados aos serviços não remunerados;<br>b) 20% (vinte por cento) da receita do serviço remunerado;<br>c) 100% (cem por cento) da receita de contribuição de melhoria.<br><br><a name="artigo_14"><span class="label label-pill label-danger">Art. 14 -</span></a> Na fixação dos gastos de capital para criação, expansão ou aperfeiçoamento de serviços já criados e ampliados a serem atribuídos aos órgãos municipais, com exclusão das amortizações de empréstimos, serão respeitadas as prioridades e metas constantes desta Lei, bem como a manutenção e funcionamento dos serviços já implantados.<br><br><a name="artigo_15"><span class="label label-pill label-danger">Art. 15 -</span></a> Caberá ao Escritório de Planejamento Integrado do Município a coordenação da elaboração dos orçamentos de que trata a presente Lei.<br><br>Parágrafo Único - O Chefe do Poder Executivo baixará o calendário das atividades de elaboração dos orçamentos, devendo incluir reuniões com o secretariado para ser discutido o orçamento fiscal.<br><br><a name="artigo_16"><span class="label label-pill label-danger">Art. 16 -</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Prefeitura Municipal de Feira de Santana, em 30 de junho de 1990.<br><br>DR. COLBERT MARTINS DA SILVA<br>Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

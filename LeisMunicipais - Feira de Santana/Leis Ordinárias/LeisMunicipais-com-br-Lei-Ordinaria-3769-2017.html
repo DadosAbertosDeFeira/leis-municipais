@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3769, DE 07 DE NOVEMBRO DE 2017</h2><br>&quot;Dispõe sobre a instituição do Programa de Coleta Seletiva contínua de resíduos eletrônicos e tecnológicos no Município de Feira de Santana, e dá outras providências.&quot;<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 134/2017, de autoria dos Edis Roberto Luis da Silva Tourinho e Edvaldo Lima dos Santos, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Dispõe sobre a instituição do Programa de Coleta Seletiva Contínua de Resíduos Eletrônicos e Tecnológicos, seus princípios, objetivos e instrumentos.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Para os efeitos desta Lei, entende-se por:<br><br>I - resíduo eletrônico: pilhas e baterias portáteis, baterias chumbo-ácido, automotivas e industriais, pilhas e baterias dos sistemas eletroquímicos níquel-cádmio e óxido de mercúrio e aparelhos de telefones celulares, nos seguintes termos:<br><br>a) bateria: acumuladores recarregáveis ou conjuntos de pilhas, interligados em série ou em paralelo;<br>b) pilha ou acumulador: gerador eletroquímico de energia elétrica, mediante conversão de energia química, podendo ser do tipo primária (não recarregável) ou secundária (recarregável);<br>c) pilha ou acumulador portátil: pilha, bateria ou acumulador que seja selado, que não seja pilha ou acumulador industrial ou automotivo;<br>d) bateria ou acumulador chumbo-ácido: dispositivo no qual o material ativo das placas positivas é constituído por compostos de chumbo e o das placas negativas essencialmente por chumbo, sendo o eletrólito uma solução de ácido sulfúrico;<br>e) pilha-botão: pilha que possui diâmetro maior que a altura;<br>f) bateria de pilha botão: bateria em que cada elemento possui diâmetro maior que a altura;<br>g) pilha miniatura: pilha com diâmetro ou altura menor que a do tipo AAA - LR03/R03, definida pelas normas técnicas vigentes.<br><br>II - resíduo tecnológico: os resíduos gerados pelo descarte de equipamentos tecnológicos de uso profissional, doméstico ou pessoal e lúdico, inclusive suas partes e componentes, especialmente:<br><br>a) computadores e seus equipamentos periféricos, tais como monitores de vídeo, telas, displays, impressoras, teclados, mouses, auto-falantes, drivers, modens, câmeras e outros;<br>b) televisores e outros equipamentos, que contenham tubos de raios catódicos;<br>c) eletrodomésticos e eletroeletrônicos que contenham metais pesados ou outras substâncias tóxicas.<br><br>III - gestão integrada de resíduos eletrônicos e tecnológicos: conjunto de ações voltadas à busca de soluções, de forma a considerar as dimensões políticas, econômicas, ambientais, culturais e sociais, com controle social e sob a premissa do desenvolvimento sustentável;<br><br>IV - gerenciamento ambientalmente adequado: gestão que garanta o correto manejo dos resíduos eletrônicos e tecnológicos em todos os seus procedimentos, desde o descarte até a sua disposição final de forma adequada e segura;<br><br>V - disposição final adequada dos resíduos eletrônicos e tecnológicos: disposição de rejeitos que, após análise técnica, foram considerados inservíveis para o reaproveitamento, obedecida a legislação vigente, de forma que os resíduos não representem ameaça ao meio ambiente; garantido a proteção do solo, do ar, dos recursos hídricos superficiais e subterrâneos de contaminação;<br><br>VI - adequado descarte dos resíduos eletrônicos e tecnológicos: descarte em estabelecimentos apropriados, designados no plano de Gestão Integrada de resíduo eletrônico e tecnológico.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> A Administração Pública Municipal, as pessoas jurídicas de direito público e de direito privado e os munícipes deverão realizar o adequado descarte dos resíduos eletrônicos e tecnológicos por eles produzidos.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Os fabricantes, importadores, distribuidores e comerciantes que produzem, vendem e/ou importam, distribuem equipamentos que geram resíduos eletrônicos e tecnológicos, deverão:<br><br>I - organizar pontos de coleta, que deverá garantir a possibilidade de descarte adequado dos resíduos eletrônicos e tecnológicos pelos consumidores;<br><br>II - gerenciar de forma ambientalmente adequada a reutilização, reciclagem, tratamento e/ou disposição final dos resíduos eletrônicos e tecnológicos.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> São os objetivos do programa instituído no caput do art. 1º:<br><br>I - conscientização do consumidor de produtos eletrônicos e tecnológicos sobre os riscos à saúde e ao meio ambiente, em virtude do inadequado descarte desses produtos;<br><br>II - geração de benefícios sociais e econômicos;<br><br>III - segurança e capacitação técnica de profissionais;<br><br>IV - regularidade, continuidade, acondicionamento, armazenamento, transporte, tratamento e/ou disposição final dos resíduos eletrônicos e tecnológicos produzidos em Feira de Santana;<br><br>V - participação social.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Fica obrigatória a apresentação de plano de Gestão Integrada de resíduo eletrônico e tecnológico para os fabricantes, importadores, distribuidores e comerciantes que os produzem, vendem ou armazenem, a ser avaliado e aprovado pela Secretaria Municipal do Meio Ambiente de Feira de Santana, respeitando os seguintes prazos:<br><br>I - cento e oitenta dias para apresentar o plano de gestão de que trata o caput deste artigo;<br><br>II - um mês, a partir da validação do plano de gestão, para gerenciar, coletar, reciclar e depositar adequadamente 100%, em volume dos produtos eletrônicos comercializados por pessoa jurídica de direito privado;<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Os fabricantes, importadores, distribuidores e comerciantes que comercializam resíduo eletrônico e tecnológico no município, deverão afixar, com destaque, placa em seu estabelecimento especificadas no art. 4º desta Lei, indicando as seguintes informações ao consumidor:<br><br>I - advertência e instrução para descarte;<br><br>II - locais de coleta do resíduo tecnológico;<br><br>III - endereço e telefone dos responsáveis;<br><br>IV - riscos à saúde e ao meio ambiente do descarte inadequado.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> Aos infratores desta Lei serão aplicadas as seguintes penalidades:<br><br>I - multa de R$ 1.000,00 (hum mil reais) na primeira vez;<br><br>II - multa de R$ 2.000,00 (dois mil reais) na segunda reincidência;<br><br>III - multa de R$ 4.000,00 (quatro mil reais) na terceira reincidência;<br><br>IV - cancelamento do alvará de funcionamento pelo órgão municipal competente;<br><br>V - as multas serão atualizadas e corrigidas anualmente pelo INPC.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> A quitação da multa, pelo infrator, não o exime do cumprimento de outras obrigações legais na forma da Lei Federal nº 9.605/98.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10</span></a> Os valores arrecadados com as multas oriundas desta Lei serão destinados a programas de coleta seletiva de resíduos eletrônicos e tecnológicos e às ações de destinação final ambientalmente adequada.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11</span></a> Toda Campanha de Educação Ambiental instituída para implementação deste Programa, realizada pelo executivo, deverá incluir informações sobre os riscos à saúde e ao meio ambiente, decorrentes do descarte inadequado e a responsabilidade de destino do resíduo eletrônico e tecnológico pós-consumo.<br><br><a name="artigo_12"><span class="label label-pill label-danger">Art. 12</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário especialmente a Lei nº <a class="link_law" data-id="1543781" data-original-title=" Data da Norma: 06.09.2005 - DISPÕE SOBRE A COLETA E DESTINO FINAL DO LIXO ELETRÔNICO E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2005/261/2611/lei-ordinaria-n-2611-2005-dispoe-sobre-a-coleta-e-destino-final-do-lixo-eletronico-e-da-outras-providencias" rel="tooltip">2.611</a>/2005.<br><br>Gabinete do Prefeito Municipal, 07 de novembro de 2017.<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO MUNICIPAL<br><br>MARIO COSTA BORGES<br>CHEFE DE GABINETE DO PREFEITO<br><br>CLEUDSON SANTOS ALMEIDA<br>PROCURADOR GERAL DO MUNICÍPIO<br><br>SÉRGIO BARRADAS CARNEIRO<br>SECRETÁRIO MUNICIPAL DE MEIO AMBIENTE E RECURSOS NATURAIS<br><br>PUBLICADO NO DIÁRIO OFICIAL ELETRÔNICO DIA 08 DE NOVEMBRO DE 2017.<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

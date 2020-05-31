@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 2899/2008</h2><br>AUTORIZA A ABERTURA DE CRÉDITO ESPECIAL, NA FORMA QUE INDICA, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Autor: Poder Executivo<br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, no uso de suas atribuições, Faço saber que a Câmara Municipal aprovou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica o Poder Executivo autorizado abrir aos Orçamentos do Município, no corrente exercício, crédito especial destinado a alocar recursos para a recém criada Secretaria Municipal de Meio Ambiente e Recursos Naturais, conforme Anexo I.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O crédito de que trata esta Lei será custeado com os recursos demonstrados no seu Anexo II, na forma do disposto no art. 6º, inciso I, da Lei  <a class="link_law" data-id="696771" data-original-title=" Data da Norma: 17.12.2007 - ESTIMA A RECEITA E FIXA A DESPESA DO MUNICÍPIO DE FEIRA DE SANTANA PARA O EXERCÍCIO FINANCEIRO DE 2008. (R$ 424.102.426,00)" data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2007/285/2856/lei-ordinaria-n-2856-2007-estima-a-receita-e-fixa-a-despesa-do-municipio-de-feira-de-santana-para-o-exercicio-financeiro-de-2008-r-424102-426-00" rel="tooltip">2.856</a>, de 17 de dezembro de 2007.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Institui o Programa Gestão Ambiental da Feira com o objetivo de promover a melhoria da qualidade do meio ambiente do Município, com as seguintes ações: licenciamento ambiental, controle e fiscalização de ações nocivas ao meio ambiente, educação ambiental, e manutenção do Fundo do Meio Ambiente.<br><br>§ 1º Inclui no Programa Apoio Administrativo a ação Manutenção da Secretaria Municipal de Meio Ambiente e Recursos Naturais.<br><br>§ 2º Os códigos para classificação funcional programática serão os seguintes:<br><br>I - Programa Gestão Ambiental da Feira com o objetivo de promover a melhoria da qualidade do meio ambiente o Município: 063;<br><br>II - Ações: licenciamento ambiental, código 2179;<br><br>III - Controle e fiscalização de ações nocivas ao meio ambiente, código 2181;<br><br>IV - Educação ambiental, código 2182;<br><br>V - Manutenção do Fundo do Meio Ambiente, com o código 2183.<br><br>§ 3º A ação Manutenção da Secretaria Municipal de Meio Ambiente e Recursos Naturais, inserida no Programa de Apoio Administrativo, terá o código 2180.<br><br>§ 4º O código do Órgão é 20, e a unidade 24.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Esta Lei entrará em vigor na data de sua publicação.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Revogam-se as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 06 de maio de 2008.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito Municipal<br><br><i class="icon-warning-sign"></i> Os anexos encontram-se disponíveis, ainda, no Paço Municipal<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

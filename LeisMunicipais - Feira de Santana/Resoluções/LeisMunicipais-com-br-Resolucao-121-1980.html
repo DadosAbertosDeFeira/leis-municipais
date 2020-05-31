@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>RESOLUÇÃO Nº 121/1980</h2><br>ALTERA DISPOSITIVOS DO <a class="link_law" data-original-title="Regimento Interno da Câmara" data-toggle="tooltip" href="/regimento-interno-feira-de-santana-ba" rel="tooltip">REGIMENTO INTERNO DA CÂMARA</a> DE VEREADORES DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Faço saber que a Câmara Municipal aprovou e eu na qualidade de seu Presidente, promulgo a seguinte Resolução na conformidade do Artigo 78, § 2º, ítem IX da Lei nº 3531, de 10 de novembro de 1976.<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Dê-se aos Artigos 113 e 118 do Regimento Interno desta Casa, a seguinte redação:<br><br>&quot;I - Ao Artigo 113 - Excetuadas as solenes, as sessões terão a duração máxima de três horas e meia, com a interrupção, se necessária, de 10 (dez) minutos entre o final do Expediente e o início da Ordem do Dia, podendo ser prorrogados por iniciativa do Presidente ou a pedido verbal de qualquer Vereador, aprovado pelo Plenário.<br><br>II - Ao Artigo 118 - O Expediente terá a duração improrrogável de 02 (duas) horas, a partir da hora fixada para o início da Sessão e os primeiros 90 (noventa) minutos se destinam à leitura de matéria resumida oriunda do Executivo ou de outras origens e à apresentação de proposições pelos Vereadores inscritos, ficando os 30 (trinta) minutos restantes destinados ao uso da palavra pelos líderes de bancadas, de acordo com a ordem de inscrições solicitadas pelos mesmos e anotadas em livro próprio.&quot;<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Acrescente-se ao Art. 118 o parágrafo Único com a seguinte redação:<br><br>&quot;Parágrafo Único - O tempo a ser usado por cada líder de bancada, ficará sujeito ao número de inscrições, caso em que, havendo mais de uma inscrição, será o mesmo dividido proporcionalmente pelo número de líderes inscritos.&quot;<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Esta Resolução entrará em vigor na data de sua publicação, passando a ser parte integrante do <a class="link_law" data-original-title="Regimento Interno da Câmara" data-toggle="tooltip" href="/regimento-interno-feira-de-santana-ba" rel="tooltip">Regimento Interno da Câmara</a> de Vereadores de Feira de Santana, revogadas as disposições em contrário.<br><br>SALA DAS SESSÕES, 15 DE MAIO DE 1980.<br><br>ANTONIO CARLOS DALTRO COELHO<br>Presidente<br><br>JOSÉ CARLOS MENDES DE CARVALHO<br>Vice-Presidente<br><br>JOSÉ FERREIRA PINTO<br>1º Secretário<br><br>ROBERTO PEREIRA PITOMBO<br>2º Secretário<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

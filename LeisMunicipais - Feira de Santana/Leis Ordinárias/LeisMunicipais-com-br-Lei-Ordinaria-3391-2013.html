@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3391, DE 20 DE JUNHO DE 2013.</h2><br>ALTERA DISPOSITIVOS DA LEI Nº <a class="link_law" data-id="1543873" data-original-title=" Data da Norma: 28.02.2007 - DISPÕE SOBRE A CRIAÇÃO DO CONSELHO MUNICIPAL DE ACOMPANHAMENTO E CONTROLE SOCIAL DO FUNDO DE MANUTENÇÃO E DESENVOLVIMENTO DA EDUCAÇÃO BÁSICA E DE VALORIZAÇÃO DOS PROFISSIONAIS DE EDUCAÇÃO - CONSELHO FUNDEB E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2007/274/2749/lei-ordinaria-n-2749-2007-dispoe-sobre-a-criacao-do-conselho-municipal-de-acompanhamento-e-controle-social-do-fundo-de-manutencao-e-desenvolvimento-da-educacao-basica-e-de-valorizacao-dos-profissionais-de-educacao-conselho-fundeb-e-da-outras-providencias" rel="tooltip">2749</a>/2007, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O Prefeito Municipal de Feira de Santana, Estado da Bahia, no uso de suas atribuições, FAÇO saber que a Câmara Municipal, através do Projeto de Lei Nº 075/2013, do Executivo, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> O Art. 2º, da Lei Municipal Nº <a class="link_law" data-id="1543873" data-original-title=" Data da Norma: 28.02.2007 - DISPÕE SOBRE A CRIAÇÃO DO CONSELHO MUNICIPAL DE ACOMPANHAMENTO E CONTROLE SOCIAL DO FUNDO DE MANUTENÇÃO E DESENVOLVIMENTO DA EDUCAÇÃO BÁSICA E DE VALORIZAÇÃO DOS PROFISSIONAIS DE EDUCAÇÃO - CONSELHO FUNDEB E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2007/274/2749/lei-ordinaria-n-2749-2007-dispoe-sobre-a-criacao-do-conselho-municipal-de-acompanhamento-e-controle-social-do-fundo-de-manutencao-e-desenvolvimento-da-educacao-basica-e-de-valorizacao-dos-profissionais-de-educacao-conselho-fundeb-e-da-outras-providencias" rel="tooltip">2.749</a>/2007, passa a viger com a seguinte redação:<br><br>&quot;Art. 2º O Conselho mencionado no art. 1º desta Lei será composto por 11 (onze) membros titulares, acompanhados dos respectivos suplentes, conforme representação ou indicação, como a seguir discriminado:<br><br>I - 1(um) representante da Secretaria Municipal de Educação;<br><br>II - 1(um) representante da Secretaria Municipal da Fazenda;<br><br>III - 1(um) representante dos professores da educação básica pública;<br><br>IV - 1(um) representante dos diretores das escolas básicas públicas municipais;<br><br>V - 1 (um) representante dos servidores técnico-administrativos das escolas básicas públicas municipais;<br><br>VI - 2 (dois) representantes dos pais de alunos das escolas básicas públicas municipais;<br><br>VII - 2 (dois) representantes dos estudantes das escolas básicas públicas municipais, um dos quais indicado pelas entidades estudantis.<br><br>VIII - 1 (um) representante dos Conselhos Tutelares do Município;<br><br>IX - 1 (um) representante do Conselho Municipal de Educação;&quot;<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O Inciso II do § 1º, do Art. 2º, da Lei Municipal nº <a class="link_law" data-id="1543873" data-original-title=" Data da Norma: 28.02.2007 - DISPÕE SOBRE A CRIAÇÃO DO CONSELHO MUNICIPAL DE ACOMPANHAMENTO E CONTROLE SOCIAL DO FUNDO DE MANUTENÇÃO E DESENVOLVIMENTO DA EDUCAÇÃO BÁSICA E DE VALORIZAÇÃO DOS PROFISSIONAIS DE EDUCAÇÃO - CONSELHO FUNDEB E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2007/274/2749/lei-ordinaria-n-2749-2007-dispoe-sobre-a-criacao-do-conselho-municipal-de-acompanhamento-e-controle-social-do-fundo-de-manutencao-e-desenvolvimento-da-educacao-basica-e-de-valorizacao-dos-profissionais-de-educacao-conselho-fundeb-e-da-outras-providencias" rel="tooltip">2.749</a>/2007, passa a viger com a seguinte redação:<br><br>&quot;II - nos casos do representante dos diretores, pais de alunos e um estudante, pelos respectivos pares, em processo eletivo organizado para esse fim;&quot;<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Acresça-se ao § 1º, do Art. 2º, da Lei Municipal nº <a class="link_law" data-id="1543873" data-original-title=" Data da Norma: 28.02.2007 - DISPÕE SOBRE A CRIAÇÃO DO CONSELHO MUNICIPAL DE ACOMPANHAMENTO E CONTROLE SOCIAL DO FUNDO DE MANUTENÇÃO E DESENVOLVIMENTO DA EDUCAÇÃO BÁSICA E DE VALORIZAÇÃO DOS PROFISSIONAIS DE EDUCAÇÃO - CONSELHO FUNDEB E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2007/274/2749/lei-ordinaria-n-2749-2007-dispoe-sobre-a-criacao-do-conselho-municipal-de-acompanhamento-e-controle-social-do-fundo-de-manutencao-e-desenvolvimento-da-educacao-basica-e-de-valorizacao-dos-profissionais-de-educacao-conselho-fundeb-e-da-outras-providencias" rel="tooltip">2.749</a>/2007, os incisos III e IV e o Parágrafo único, com a seguinte redação:<br><br>&quot;III - Um estudante será indicado pelas entidades estudantis representativas dos alunos da rede municipal, em assembléia organizada para tal fim;<br><br>IV - nos casos de representantes de professores e servidores, pelas entidades sindicais da respectiva categoria.<br><br>Parágrafo Único - Caso o Conselheiro indicado seja desligado do órgão que represente, será substituído pelo novo titular da entidade representada e substituído o conselheiro que perder a qualidade que legitimou sua indicação&quot;.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito, em 20 de junho de 2013.<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO MUNICIPAL<br><br>MARIO COSTA BORGES<br>CHEFE DE GABINETE DO PREFEITO<br><br>CARLOS ANTONIO DE MORAES LUCENA<br>PROCURADOR GERAL DO MUNICÍPIO<br><br>JAYANA BASTOS MIRANDA RIBEIRO<br>SECRETÁRIA MUNICIPAL DE EDUCAÇÃO<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

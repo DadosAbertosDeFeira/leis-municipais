@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3941, DE 31 DE MAIO DE 2019.</h2><br>Dispõe sobre a criação do Fundo do Trabalho do Município de Feira de Santana e dá outras providências.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O Prefeito Municipal de Feira de Santana, Estado da Bahia, no uso de suas atribuições, Faço Saber que a Câmara Municipal, através do Projeto de LEI Nº 43/2019, de autoria do Poder Executivo, decreta e eu sanciono a seguinte Lei:<br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> I<br>DO FUNDO DO TRABALHO<br></span></span><br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica criado, no âmbito da Administração Pública Municipal, o Fundo do Trabalho de Feira de Santana - FT/FS - para atendimento ao disposto na Lei nº  <a class="link_law" data-id="" data-original-title=" Data da Norma: .. - " data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2018/1366/13667/lei-ordinaria-n-13667-2018-este-ato-ainda-nao-esta-disponivel-no-sistema" rel="tooltip">13.667</a>, de 17 de maio de 2018, instrumento de natureza contábil, com a finalidade de prover recursos para execução das ações e serviços e para o apoio técnico relacionados à Política Municipal de Trabalho, Emprego e Renda, em regime de financiamento compartilhado no âmbito do Sistema Nacional de Emprego (SINE).<br><br>§ 1º Sem prejuízo de sua natureza contábil, o FT/FS constitui-se em instrumento de gestão orçamentária e financeira no qual devem ser alocadas as receitas e executadas as despesas afetas à Política Municipal de Trabalho, Emprego e Renda e para o qual serão destinadas as transferências automáticas de recursos no âmbito do SINE.<br><br>§ 2º O FT/FS será vinculado ao órgão responsável pela execução da Política Municipal de Trabalho, Emprego e Renda, o qual deverá prestar o apoio técnico e administrativo necessário à gestão do Fundo.<br><br>§ 3º O FT/FS será orientado e controlado pelo Conselho do Trabalho, Emprego e Renda do Município de Feira de Santana - CTER/Feira de Santana. CAPÍTULO II DOS RECURSOS DO FT/Feira de Santana<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Constituem recursos do FT/FS:<br><br>I - Dotação específica consignada anualmente no orçamento municipal destinada ao Fundo do Trabalho;<br><br>II - Os recursos provenientes do Fundo de Amparo ao Trabalhador (FAT), conforme artigo 11, da Lei <a class="link_law" data-id="" data-original-title=" Data da Norma: .. - " data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2018/1366/13667/lei-ordinaria-n-13667-2018-este-ato-ainda-nao-esta-disponivel-no-sistema" rel="tooltip">13.667</a>/2018;<br><br>III - Os créditos suplementares, especiais e extraordinários que lhe forem destinados;<br><br>IV - Os saldos de aplicações financeiras dos recursos alocados no Fundo;<br><br>V - O saldo financeiro apurado ao final de cada exercício;<br><br>VI - Repasses provenientes de convênios firmados com órgãos estaduais, federais e entidades financiadoras nacionais e estrangeiras;<br><br>VII - Repasses financeiros provenientes de convênios e afins, firmados com órgãos e entidades públicas ou privados, nacionais ou estrangeiros, bem como as transferências automáticas fundo-a-fundo do Fundo de Amparo ao Trabalhador, nos termos da Lei nº <a class="link_law" data-id="" data-original-title=" Data da Norma: .. - " data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2018/1366/13667/lei-ordinaria-n-13667-2018-este-ato-ainda-nao-esta-disponivel-no-sistema" rel="tooltip">13.667</a>/2018;<br><br>VIII - Receitas provenientes da alienação de bens móveis e imóveis do Município de Feira de Santana, patrimonial ao órgão municipal responsável pela Política Municipal do Trabalho, Emprego e Renda;<br><br>IX - Doações, auxílios contribuições e legados que lhe venham a ser destinados;<br><br>X - Produto de arrecadação de multas provenientes de sentenças judiciais, juros de mora e amortizações conforme destinação própria;<br><br>XI - Recursos retidos em instituições financeiras sem destinação própria ou repasse;<br><br>XII - Outros recursos que lhe forem destinados.<br><br>§ 1º Os recursos financeiros destinados ao FT/FS serão depositados, obrigatoriamente, em conta especial de titularidade do Fundo, mantida em agência de estabelecimento bancário oficial, e movimentados pelo órgão responsável pela Política Municipal do Trabalho, Emprego e Renda, com a devida fiscalização do CTER/Feira de Santana.<br><br>§ 2º Os recursos de responsabilidade do Município, destinados ao FT/FS serão a ele repassados automaticamente, à medida que forem sendo constituídas as receitas, e serão depositados obrigatoriamente em conta especial, a ser mantida em agência de estabelecimento bancário oficial federal;<br><br>§ 3º O saldo financeiro do FT/Feira de Santana, apurado através do balanço anual geral, será transferido automaticamente à conta deste Fundo para utilização no exercício seguinte;<br><br>§ 4º O orçamento do FT/FS integrará o Orçamento Geral do Município, na esfera da Seguridade Social, em unidade orçamentária própria do Fundo, nos termos da legislação vigente.<br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> III<br>DA APLICAÇÃO DOS RECURSOS DO FT<br></span></span><br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> A aplicação dos recursos do FT/FS obedecerá à finalidade a que se destina, contemplando:<br><br>I - Financiamento do Sistema Nacional de Emprego - SINE, organização, implementação, manutenção, modernização e gestão da rede de atendimento do SINE no Município de Feira de Santana;<br><br>II - Financiamento total ou parcial de programas, projetos, ações e atividades previstos no Plano Municipal de Ações e Serviços, pactuado no âmbito do SINE.<br><br>III - Fomento ao trabalho, emprego e renda, por meio das ações previstas no artigo 9º da Lei <a class="link_law" data-id="" data-original-title=" Data da Norma: .. - " data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2018/1366/13667/lei-ordinaria-n-13667-2018-este-ato-ainda-nao-esta-disponivel-no-sistema" rel="tooltip">13.667</a>/2018 sem prejuízo de outras que lhes sejam atribuídas pelo CODEFAT.<br><br>IV - Pagamento das despesas com o funcionamento do CTER/Feira de Santana, envolvendo custeio, manutenção e pagamento das despesas conexas aos objetivos do Fundo, exceto as de pessoal;<br><br>V - Pagamento pela prestação de serviços às entidades conveniadas, públicas ou privadas, para a execução de programas e projetos específicos na área do trabalho;<br><br>VI - Pagamento de subsídio à pessoa física beneficiará de programa ou projeto da política pública de trabalho, emprego e renda;<br><br>VII - Aquisição de material permanente e de consumo e de outros insumos e serviços necessários ao desenvolvimento dos programas e projetos;<br><br>VIII - Construção, reforma, ampliação, aquisição ou locação de imóveis para prestação de serviços de atendimento ao trabalhador;<br><br>IX - Desenvolvimento e aperfeiçoamento dos instrumentos de gestão, planejamento, administração e controle das ações e serviços no âmbito da Política Municipal de Trabalho, Emprego e Renda;<br><br>X - Custeio, manutenção e pagamento das despesas conexas aos objetivos do Fundo, no desenvolvimento de ações, serviços, programas afetos ao SINE.<br><br>Parágrafo único. A aplicação dos recursos do FT/FS depende de prévia aprovação do respectivo Conselho do Trabalho, Emprego e Renda, respeitada a sua destinação para as finalidades estabelecidas nos incisos deste artigo.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Por meio do FT/Feira de Santana, o Município poderá receber repasses financeiros do Fundo de Trabalho do Estado, mediante transferências automáticas Fundo a fundo, bem de outras instituições por meio de convênios ou instrumentos similares, atendendo a critérios e condições aprovados pelo CTER/Feira de Santana.<br><br>§ 1º Para receber transferência de recursos do FAT, o Município deverá comprovar a destinação orçamentária de recursos próprios para a área do trabalho, por meio de dotações consignadas no FT/Feira de Santana.<br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> IV<br>DA ADMINISTRAÇÃO DO FT/Feira de Santana<br></span></span><br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> O FT/FS será administrado pelo órgão responsável pela execução da Política Municipal de Trabalho, Emprego e Renda, sob a fiscalização do CTER/Feira de Santana.<br><br>§ 1º O ordenador de despesa do FT/FS será dirigente do órgão de que se trata o caput deste artigo, com competência para:<br><br>I - Efetuar pagamentos e transferências dos recursos, através da emissão de empenhos, guias de recolhimentos, ordens de pagamento;<br><br>II - Submeter à apreciação do CTER/Feira de Santana suas contas e relatórios de gestão que comprovem a execução das ações;<br><br>III - Estimular a efetivação das receitas a que se refere o art. 2º desta Lei;<br><br>§ 2º As atribuições previstas nos incisos integrantes deste artigo poderão ser delegadas por motivo de ausência ou impedimento.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> O Órgão Municipal responsável pela execução das ações e serviços da política de trabalho, emprego e renda, prestará contas trimestral e anualmente ao CTER/Feira de Santana, sem prejuízo da demonstração da execução das ações ao Conselho Deliberativo do Fundo de Amparo ao Trabalhador - CODEFAT.<br><br>§ 1º Sem prejuízo do acompanhamento, controle e fiscalização exercidos pelo CTER/Feira de Santana, caberá ao órgão responsável pela administração do FT/FS acompanhar a conformidade da aplicação dos recursos transferidos automaticamente à esfera municipal, podendo requisitar informações referentes à aplicação dos recursos transferidos, para fins de análise e acompanhamento de sua utilização.<br><br>§ 2º A contabilidade do Fundo deve ser realizada utilizando a identificação individualizada dos recursos na escrituração das contas públicas.<br><br>§ 3º A forma de comprovação da devida execução dos recursos transferidos pela sistemática fundo a fundo poderá utilizar sistemas informatizados, sendo que seu formato e metodologia deverão ser estabelecidos em regulamento.<br><br>§ 4º Caberá ao Município zelar pela correta utilização dos recursos de seu Fundo do Trabalho, bem como pelo controle e acompanhamento dos programas, projetos, benefícios, ações e serviços vinculados ao SINE, independentemente das ações do órgão repassador dos recursos e pela declaração anual ao ente responsável pela transferência automática, conforme estabelecido no parágrafo anterior.<br><br>DISPOSIÇÕES FINAIS<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Fica autorizada a abertura de um primeiro crédito adicional especial no ano da criação do Fundo, até que haja seu regular planejamento, com créditos orçamentários prévios, podendo-se efetuar a abertura de créditos adicionais suplementares e/ou especiais, na forma da legislação, para a realização de suas despesas.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> O Poder Executivo regulamentará esta Lei no prazo de até 90 (noventa) dias a contar de sua publicação.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> Esta Lei entra em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito, 31 de maio de 2019.<br><br>COLBERT MARTINS DA SILVA FILHO<br>PREFEITO MUNICIPAL<br><br>MARIO COSTA BORGES<br>CHEFE DE GABINETE DO PREFEITO<br><br>CLEUDSON SANTOS ALMEIDA<br>PROCURADOR GERAL DO MUNICÍPIO<br><br>ANTONIO CARLOS BORGES DOS SANTOS JÚNIOR<br>SECRETÁRIO MUNICIPAL DO TRABALHO, TURISMO E DESENVOLVIMENTO ECONÔMICO<br><br>PUBLICADO NO DIÁRIO OFICIAL DIA 1 DE JUNHO DE 2019<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

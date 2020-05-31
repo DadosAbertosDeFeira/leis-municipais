@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI COMPLEMENTAR Nº 82, DE 29 DE OUTUBRO DE 2013.</h2><br>AUTORIZA O PODER EXECUTIVO A CONCEDER COMPLEMENTAÇÃO PECUNIÁRIA AOS MÉDICOS PARTICIPANTES DO PROJETO MAIS MÉDICOS PARA O BRASIL E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O Prefeito Municipal de Feira de Santana, Estado da Bahia, no uso de suas atribuições, Faço saber que a Câmara Municipal de Feira de Santana, através do Projeto de Lei Complementar nº 115/2013, deste Poder Executivo, decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica o Poder Executivo autorizado a conceder complementação pecuniária, sob a forma de Auxílio Moradia e Auxílio Alimentação, aos médicos participantes do Projeto Mais Médicos para o Brasil, instituído pela Medida Provisória nº 621, de 08 de julho de 2013, e implementado pela Portaria Interministerial Nº 1.369/MS/MEC, de 08 de julho de 2013, alocados ao Município.<br><br>Parágrafo Único - Para os efeitos desta Lei, consideram-se participante do Projeto Mais Médicos para o Brasil o médico intercambista ou o médico formado em instituição de educação superior brasileira ou com diploma revalidado no Brasil, que tenha sido selecionado para a ocupação das vagas ofertadas no âmbito do Projeto suprareferido.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O Auxílio Moradia corresponderá ao valor mensal de R$ 1.200,00 (Um mil e duzentos reais) por profissional, devendo ser empregado na locação ou outro meio de obtenção de moradia pelo beneficiário, mediante comprovação dessa despesa junto à Secretaria Municipal de Saúde.<br><br>Parágrafo Único - O Auxílio Moradia será devido enquanto o profissional vinculado ao Programa Mais Médicos para o Brasil atuar no Município de Feira de Santana.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> O Auxílio Alimentação corresponderá ao valor mensal de R$ 371,00 (trezentos e setenta e um reais) por profissional, e será devido enquanto o mesmo atuar no Município de Feira de Santana.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Cabe ao Titular da Secretaria Municipal da Saúde decidir sobre a concessão ou revogação do Auxílio Moradia e do Auxílio Alimentação de que trata a presente Lei, assim como baixar instruções complementares para a sua execução.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> A concessão da complementação pecuniária instituída por esta Lei não gera, para o médico participante, vínculo empregatício de qualquer natureza, com o Município de Feira de Santana.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> A complementação pecuniária assegurada por esta Lei tem natureza de verba meramente indenizatória, não configurando, em hipótese alguma, retribuição ou contraprestação por serviços prestados.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> O médico participante perderá o direito à percepção da complementação pecuniária de que trata esta Lei nas seguintes hipóteses:<br><br>a) Abandono ou desistência do Projeto;<br>b) Desligamento do Projeto, na forma do art. 26, III, da Portaria Interministerial nº 1369/2013 MS/MEC.<br><br>Parágrafo Único - A ausência injustificada do médico participante de suas atividades, por prazo superior a 30(trinta) dias, ensejará a suspensão dos benefícios assegurados por esta Lei, e a notificação da Coordenação do Projeto.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> As despesas decorrentes da aplicação desta Lei correrão por conta do Fundo Municipal de Saúde.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> Esta Lei entrará em vigor na data de sua publicação.<br><br>Gabinete do Prefeito, 29 de outubro de 2013.<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO MUNICIPAL<br><br>MARIO COSTA BORGES<br>CHEFE DE GABINETE DO PREFEITO<br><br>CARLOS ANTÔNIO DE MORAES LUCENA<br>PROCURADOR GERAL DO MUNICÍPIO<br><br>JOÃO MARINHO GOMES JÚNIOR<br>SECRETÁRIO MUNICIPAL DE ADMINISTRAÇÃO<br><br>EXPEDITO CAMPODÔNIO ELOY<br>SECRETÁRIO MUNICIPAL DA FAZENDA<br><br>DENISE LIMA MASCARENHAS<br>SECRETÁRIA MUNICIPAL DE SAÚDE<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

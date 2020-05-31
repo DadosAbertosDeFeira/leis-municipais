@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>DECRETO Nº 8828, de 01 de janeiro de 2013.</h2><br>CRIA SECRETARIA MUNICIPAL EXTRAORDINÁRIA DE CONVÊNIOS E GESTÃO, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O Prefeito Municipal de Feira de Santana, Estado da Bahia, no uso de suas atribuições,<br><br>CONSIDERANDO a iminente necessidade da Administração Municipal em desenvolver ações específicas que busquem efetivar e melhorar a captação de recursos com os diversos níveis governamentais, quer federal, quer estadual, tanto da administração direta quanto indireta,<br><br>CONSIDERANDO que se carece viabilizar de forma planejada a estruturação da Administração, a fim de que novos investimentos e modernizações possam ser adquiridos e/ou transferidos à Municipalidade,<br><br>CONSIDERANDO também que deve haver a instrumentalização de aprimoramento de gestão, assim como a criação de métodos de estímulo ao desenvolvimento das práticas de administração adotadas pelo Poder Público,<br><br>CONSIDERANDO, igualmente, que a qualificação da Administração Pública é o modo mais eficaz para o crescimento socioeconômico municipal face à estruturação adequada para as realizações dos ajustes bilaterais, Considerando enfim o disposto no art. 21, da Lei Municipal nº  <a class="link_law" data-id="1618357" data-original-title=" Data da Norma: 08.05.1995 - MODIFICA A ESTRUTURA ORGANIZACIONAL DA PREFEITURA MUNICIPAL DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1995/180/1802/lei-ordinaria-n-1802-1995-modifica-a-estrutura-organizacional-da-prefeitura-municipal-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">1.802</a>, de 30 de junho de 1995, DECRETA:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica criada, na estrutura organizacional do Poder Executivo de Feira de Santana, a Secretaria Municipal Extraordinária de Convênios e Gestão, com a seguinte competência:<br><br>I - Assessorar o Chefe do Executivo no planejamento e desenvolvimento de ações para captar recursos pelo Município perante entes federais e estaduais, da administração direta ou indireta;<br><br>II - Assessorar o Prefeito Municipal no melhoramento e criação de instrumentos de gestão para otimizar a receita pública municipal;<br><br>III - Colaborar para que as políticas, planos, programas, projetos e atividades do Governo atinjam seus objetivos primazes;<br><br>IV - Promover a análise de custo e operação das ações de gestão que lhe forem submetidas pelo Prefeito Municipal;<br><br>V - Promover estudos, projetos e pesquisas que estimulem a adoção de novos métodos, diretrizes, parâmetros, técnicas e ferramentas voltados para a melhoria da gestão pública, com atividades de apoio à inovação;<br><br>VI - Desempenhar outras atividades correlatas.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> A Secretaria Municipal criada no artigo antecedente subordina-se diretamente ao Chefe do Poder Executivo e deve utilizar a estrutura administrativa já disponível na Administração Municipal, requisitando os servidores municipais necessários ao seu funcionamento.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Fica criado, no âmbito da Administração direta, um cargo de SECRETÁRIO MUNICIPAL EXTRAORDINÁRIO, símbolo NE, com o mesmo nível hierárquico de Secretário Municipal, com idênticas prerrogativas e vantagens, observando os mesmos impedimentos e deveres.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> As necessidades orçamentárias originadas no funcionamento da Secretaria ora criada serão satisfeitas com a dotação orçamentária consignada para o Gabinete do Prefeito.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Este Decreto entrará em vigor na data da sua publicação, revogadas as disposições em contrário, especialmente o Decreto nº <a class="link_law" data-id="" data-original-title=" Data da Norma: .. - " data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/decreto/2011/835/8359/decreto-n-8359-2011-este-ato-ainda-nao-esta-disponivel-no-sistema" rel="tooltip">8359</a>/2011, que cria a Secretaria Municipal Extraordinária de Relações Interinstitucionais.<br><br>Gabinete do Prefeito Municipal, 01 de janeiro de 2013.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito Municipal<br><br>CARLOS ANTÔNIO DE MORAES LUCENA<br>Procurador Geral do Município<br><br>PAULO SÉRGIO AQUINO DE AZEVEDO SOUZA<br>Secretário Municipal de Governo<br>Respondendo pelo Cargo de Chefe de Gabinete do Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

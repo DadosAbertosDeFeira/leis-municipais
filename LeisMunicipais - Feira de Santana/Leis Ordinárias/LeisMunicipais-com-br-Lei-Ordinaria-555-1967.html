@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 555, de 12 de dezembro de 1967</h2><br>CONCEDE REDUÇÃO DO IMPOSTO PREDIAL AOS NOVOS HOTÉIS, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA. Faço saber que a Câmara Municipal decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Os hotéis em construção, ou que venham a ser construídos nesta cidade, desde que sejam inaugurados até 1972, gozarão de uma redução de 30% (trinta por cento) do imposto predial.<br><br>Parágrafo Único - A redução será concedida pelo prazo de 05 (cinco) anos, contados a partir do início de funcionamento.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Para gozar dos favores da presente Lei, deverão os hotéis atender às seguintes condições:<br><br>I - possuir no mínimo, além das peças destinadas à habitação, as seguintes dependências:<br><br>a) vestíbulo;<br>b) serviço de portaria, recepção e comunicação;<br>c) sala de estar;<br>d) dependência de administração;<br>e) dependência para guarda de utensílios de limpeza e serviço;<br>f) rouparia;<br>g) depósito para guarda de bagagem dos hóspedes;<br>h) pequena copa em cada pavimento;<br>i) parque de estacionamento para, pelo menos, 20 (vinte) veículos.<br><br>II - quando o hotel servir refeições, será obrigatória a existência das seguintes dependências e instalações:<br><br>a) sala de refeições;<br>b) cozinha;<br>c) copa;<br>d) dispensa;<br>e) câmara frigorífica para guardar os alimentos.<br><br>§ 1º As cozinhas deverão satisfazer as seguintes condições:<br><br>I - ter uma área mínima de 20m² (vinte metros quadrados);<br><br>II - ter as paredes revestidas de azulejo, até o teto;<br><br>III - ter o piso de material hidráulico;<br><br>IV - ter os fogões providos de coifas;<br><br>V - possuir espaço suficiente para instalação de câmara frigorífica ou geladeira;<br><br>VI - ser providos de pias com água quente e fria.<br><br>§ 2º As copas e as dependências terão as paredes revestidas de azulejo, até o teto, o piso de material hidráulico.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Mesmo quando o hotel não servir refeições, deverá possuir uma pequena cozinha para atender às primeiras refeições.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> As dependências para o uso de pessoal do serviço deverão ser independentes daquelas destinadas aos hóspedes.<br><br>Parágrafo Único - As instalações sanitárias do pessoal de serviço serão igualmente separadas daquelas que forem destinadas aos hóspedes.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Os corredores e galerias de circulação terão largura mínima de 1,50m . Art. 6º Os apartamentos deverão possuir instalações sanitárias e banheiros privativos.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> As rouparias deverão possuir depósitos destinados à guarda das roupas limpas e das servidas.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> Os edifícios destinados aos hotéis deverão ser dotados no mínimo de dois (2) elevadores, sendo um de serviço, desde que o prédio possua mais de 03 (três) pavimentos.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> Os hotéis deverão possuir no mínimo, 50 (cinqüenta) dormitórios, sendo que destes, pelo menos 60% (sessenta por cento) serão apartamentos.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10 -</span></a> Além das exigências previstas na presente Lei, deverá ainda ser respeitadas as exigências previstas na regulamentação municipal sobre obras.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11 -</span></a> Os hotéis e pensões, atualmente em funcionamento no Município, somente poderão obter a renovação anual da licença de funcionamento no exercício de 1969, se satisfazerem as exigências desta Lei, exceto quando as letras &quot;d&quot;, &quot;g&quot;, &quot;h&quot; e &quot;i&quot;, do inciso I, do art. 2º, e aos artigos 5º, 6º, 8º e 9º.<br><br><a name="artigo_12"><span class="label label-pill label-danger">Art. 12 -</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Prefeitura Municipal de Feira de Santana, 12 de dezembro de 1967.<br><br>DR. JOÃO DURVAL CARNEIRO<br>Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

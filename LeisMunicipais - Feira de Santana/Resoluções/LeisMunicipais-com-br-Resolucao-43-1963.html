@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>RESOLUÇÃO Nº 43/1963</h2><br>REORGANIZA O QUADRO DO PESSOAL DA CÂMARA E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>A CÂMARA MUNICIPAL DE FEIRA DE SANTANA, DECRETA E PROMULGA A SEGUINTE RESOLUÃO:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> O quadro de funcionários da Secretaria da Câmara Municipal de Feira de Santana, organizado e reorganizado pelas Resoluções nº <a class="link_law" data-id="1950708" data-original-title=" Data da Norma: 14.07.1948 - ORGANIZA O QUADRO DO PESSOAL DA SECRETARIA DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/resolucao/1948/0/3/resolucao-n-3-1948-organiza-o-quadro-do-pessoal-da-secretaria-da-camara-municipal-de-feira-de-santana" rel="tooltip">3</a> de 14/7/948 e nº <a class="link_law" data-id="1950708" data-original-title=" Data da Norma: 14.07.1948 - ORGANIZA O QUADRO DO PESSOAL DA SECRETARIA DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/resolucao/1948/0/3/resolucao-n-3-1948-organiza-o-quadro-do-pessoal-da-secretaria-da-camara-municipal-de-feira-de-santana" rel="tooltip">3</a> de 6/6/951, passará a ter a constituição seguinte:<pre> _______________________________________<br>|1 - Diretor de Secretaria |Nível|VII   |<br>|--------------------------|-----|------|<br>|1 - Consultor Jurídico    |     |VII   |<br>|--------------------------|-----|------|<br>|2 - Redatores de Debates  |     |V     |<br>|--------------------------|-----|------|<br>|1 - Escriturário          |     |V     |<br>|--------------------------|-----|------|<br>|2 - Escriturários         |     |IV    |<br>|--------------------------|-----|------|<br>|1 - Datilógrafo           |     |IV    |<br>|--------------------------|-----|------|<br>|1 - Porteiro              |     |III   |<br>|--------------------------|-----|------|<br>|1 - Servente              |     |II    |<br>|--------------------------|-----|------|<br>|1 - Mensageiro            |     |I     |<br>|__________________________|_____|______| * tabela formatada pela equipe técnica do LeisMunicipais.com.br<br>Parágrafo Único - A função de mensageiro quando exercido por menor de 18 anos será remunerada na base de 50% (cinquenta por cento) do respectivo valor.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Para fazer face ao artigo anterior ficam criados os seguintes cargos:<br><br>1 - Consultor Jurídico<br>1 - Redator de Debates<br>2 - Escriturários<br>1 - Datilógrafo<br>1 - Servente<br>1 - Mensageiro<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Fica aprovada a Tabela anexa, sob nº 1, constante de símbolos e valores, a qual fica fazendo parte da presente Lei.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> O cargo de Diretor da Secretaria será gratificado e correspondera´ ao símbolo F.G.-1, constante da Tabela anexa.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> O salário-família será pago à razão de CR$ 500,00 (quinhentos cruzeiros) por filho ou dependente e o salário-esposa CR$ 1.000,00 (mil cruzeiros), de acordo com os requisitos da Lei Municipal em vigor.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Os atuais funcionários da Câmara Municipal, terão assegurados os seus lugares, devendo, se possível, serem aproveitados em cargos mais elevados.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Dentro de trinta (30) dias a Presidência regulamentará, através de Portaria, as atribuições de cada um dos servidores da Câmara.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> Fica aberto na Contadoria da Prefeitura Municipal o crédito especial de CR$ 2.600.000,00 (dois milhões e seiscentos mil cruzeiros), para fazer face aos cargos ora criados e a reestruturação a que fazem jus os atuais funcionários, correndo as despesas por conta dos recursos previstos no art. 186, alíneas A e B da Lei nº 140, de 22/12/948 ( <a class="link_law" data-original-title="Lei Orgânica Feira de Santana BA" data-toggle="tooltip" href="/lei-organica-feira-de-santana-ba" rel="tooltip">Lei Orgânica</a> dos Municípios).<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> Esta Lei entrará em vigor, a partir de 1º de agosto do corrente ano, ficando revogadas as disposições em contrário.<br><br>PUBLIQUE-SE.<br><br>SALA DAS SESSÕES DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, 17 DE JULHO DE 1963.<br><br>JOSELITO FALCÃO AMORIM<br>Presidente<br><br>ALTAMIR ALVES LOPES<br>1º Secretário<br><br>ANTÔNIO MANOEL DE ARAÚJO<br>2º Secretário<br><br>TABELA Nº 1<br><br>INTEGRANTE DA RESOLUÇÃO Nº 43/63<pre> ___________________________<br>|NÍVEL - I    |CR$ 20.000,00|<br>|-------------|-------------|<br>|- II         |  $ 24.000,00|<br>|-------------|-------------|<br>|- III        |  $ 30.000,00|<br>|-------------|-------------|<br>|- IV         |  $ 36.000,00|<br>|-------------|-------------|<br>|- V          |  $ 42.000,00|<br>|-------------|-------------|<br>|- VI         |  $ 50.000,00|<br>|-------------|-------------|<br>|- VII        |  $ 60.000,00|<br>|-------------|-------------|<br>|F.G.-1       |  $ 10.000,00|<br>|_____________|_____________| * tabela formatada pela equipe técnica do LeisMunicipais.com.br<br>SALA DAS SESSÕES DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, 17 DE JULHO DE 1963.<br><br>JOSELITO FALCÃO DE AMORIM<br>Presidente<br><br>ALTAMIR ALVES LOPES<br>1º Secretário<br><br>ANTÔNIO MANOEL DE ARAÚJO<br>2º Secretário<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

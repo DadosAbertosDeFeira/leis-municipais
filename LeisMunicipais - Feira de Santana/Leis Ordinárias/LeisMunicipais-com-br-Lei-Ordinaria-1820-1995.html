@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 1820/95</h2><br>AUTORIZA O PODER EXECUTIVO A CONTRATAR OPERAÇÕES DE CRÉDITO COM INSTITUIÇÕES FINANCEIRAS, NA FORMA QUE INDICA E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica o Poder Executivo, em nome do Município de Feira de Santana, autorizado a contratar, junto a instituições financeiras oficiais e privadas, nacionais e estrangeiras, empréstimos até o valor de R$ 8.000.000,00 (oito milhões de reais), de acordo com as normas operacionais e condições de financiamento de cada instituição financeira, observando as disposições da Resolução nº 11 do Senado Federal, de 31 de janeiro de 1994.<br><br>Parágrafo Único - Os contratos de empréstimos celebrados com base nesta Lei deverão, obrigatoriamente, conter cláusula específica vinculada a utilização dos recursos a serviços de limpeza pública até o limite de R$ 5.000.000,00 (cinco milhões de reais).<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Para garantia do principal e acessórios dos empréstimos contraídos com base nesta Lei, fica o Poder Executivo autorizado a caucionar e/ou ceder, inclusive em caráter pro - solvendo, às instituições financeiras parcelas de suas cotas parte do Imposto de Circulação de Mercadoria - ICMS e/ou do Fundo de Participação dos Municípios - FPM, as quais serão vinculadas ao pagamento dos encargos e da amortização contratada e, na extinção dos citados tributos, outros que venham a substituí-los, dispensada, exclusivamente nessa hipótese, nova autorização legislativa.<br><br>Parágrafo Único - A execução da garantia neste Artigo somente poderá ser exercida pelas instituições financeiras na hipótese do município não ter efetuado, no vencimento, o pagamento das obrigações assumidas nos contratos de empréstimos com as mesmas.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> O Poder Executivo obriga-se a consignar nos orçamentos anuais dotações suficientes para pagamento dos encargos e da amortização da dívida contratada de acordo com a legislação em vigor, até a liquidação total do passivo.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> No corrente exercício financeiro, fica o Poder Executivo autorizado a proceder a abertura dos créditos adicionais necessários ao atendimento das despesas decorrentes do cumprimento desta Lei, até o montante financeiro fixado no Art. 1º, acima.<br><br>Parágrafo Único - Para abertura dos créditos adicionais especificados no &quot;caput&quot; deste Artigo, serão utilizados os recursos provenientes das operações de crédito mencionadas no Artigo 1º desta Lei.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> O Poder Executivo editará, se necessário, os atos próprios para regulamentação da presente Lei e fica autorizado a firmar todos os instrumentos jurídicos, inclusive contratos e procurações, necessárias à eficácia do negócio e à prestação das garantias na forma e nos limites estabelecidos nos Artigos 1º e 2º, desta Lei.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> As autorizações contidas nesta Lei, poderão ser exercidas em um prazo de 2 (dois) anos.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Esta Lei entra em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 10 de outubro de 1995.<br><br>Profº. JOSÉ RAIMUNDO P. DE AZEVEDO<br>Prefeito<br><br>Profº. MANOEL ANCHIÊTA NERY DE SOUZA<br>Secretário Municipal de Comunicação Social Resp. p/ Chefia do Gabinete do Prefeito<br><br>BEL. JÚLIO MARTINS DE OLIVEIRA NETO<br>Secretário Municipal de Finanças<br><br>Autor: Poder Executivo<br>Data da Publicação: 14/10/1995<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

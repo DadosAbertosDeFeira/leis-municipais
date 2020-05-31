@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3001/2009</h2><br>CRIA O PROGRAMA &quot;FISCAL DA CIDADANIA&quot; NO MUNICÍPIO DE FERIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Autor: José Sebastião Alves de Souza<br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do projeto de Lei nº 69/2009, de autoria do Edil José Sebastião Alves de Souza, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica criado no Município de Feira de Santana o programa &quot;Fiscal da Cidadania&quot;, com o objetivo de estimular o objetivo de estimular o exercício da cidadania e de ampliar a participação da sociedade organizada em atividades de fiscalização que interessem diretamente à comunidade.<br><br>Parágrafo Único - O cidadão investido no título de &quot;Fiscal da Cidadania&quot; não terá qualquer tipo de vínculo empregatício ou remuneração pela Prefeitura Municipal de Feira de Santana.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> São atribuições do &quot;Fiscal da Cidadania&quot;:<br><br>I - identificar e informar, por escrito às autoridades municipais pertinentes;<br><br>II - informar violação a códigos, posturas, leis e regulamentos municipais;<br><br>III - notificar irregularidades, abusos, omissões ou desídias cometidas por servidores municipais no exercício de suas funções;<br><br>IV - dirigir sugestões e reclamações referentes à observância e cumprimento das leis municipais, e a melhoria dos serviços públicos prestados à população.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> São requisitos necessários para ser &quot;Fiscal da Cidadania&quot;:<br><br>I - não ser funcionário público municipal em exercício;<br><br>II - ser maior de 21 anos de idade;<br><br>III - estar associado a uma organização comunitária devidamente registrada nos termos do art. 4º;<br><br>IV - não possuir antecedentes criminais, e estar quite com suas obrigações junto ao Município de Feira de Santana.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Fica a Secretaria Municipal de Governo, incumbida de cadastrar acompanhar as atividades desenvolvidas pelos &quot;Fiscais da Cidadania&quot;, bem como, o recebimento dos expedientes produzidos pelos fiscais, e sua devida destinação, acompanhando e fiscalizando o correto cumprimento e adoção das medidas necessárias.<br><br>§ 1º Ao final de cada ano calendário, os &quot;Fiscais da Cidadania&quot;, ficam obrigados a apresentar ao titular da Secretaria Municipal de Governo, relatório detalhado de todas as atividades desenvolvidas pelo fiscal na sua área de atuação.<br><br>§ 2º O não cumprimento das atividades inerentes a função de &quot;Fiscal da cidadania&quot;, acarretará o desligamento fiscal, e será indicado no prazo máximo de 30 (trinta) dias um novo fiscal pela entidade que indicou o fiscal desligado.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> O &quot;Fiscal da Cidadania&quot; deverá ser indicado por associação de moradores com pelo menos cinco anos de funcionamento ininterruptos e devidamente registrada nos termos da legislação em vigor, sendo também reconhecida de unidade pública, para um período de 02 (dois) anos, permitida uma única recondução.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> A prefeitura poderá realizar semestralmente um curso básico de informações pêra &quot;Fiscal da Cidadania&quot;, com expedição de certificado de participação e conclusão, e fica responsável pela divulgação junto à comunidade da função de &quot;Fiscal da Cidadania&quot;, pelos meios próprios ou outros que se fizerem necessários.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> A Prefeitura expedirá documento de identificação do &quot;Fiscal da Cidadania&quot;.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> O Poder Executivo regulamentará a presente Lei no prazo de 90 (noventa) dias contados a partir de sua publicação.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>PREFEITURA MUNICIPAL DE FEIRA DE SANTANA, em 13 de Maio de 2009.<br><br>DR. TARCÍZIO SUZART PIMENTA JÚNIOR<br>Prefeito.<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

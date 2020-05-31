@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI PROMULGADA Nº 331/2018</h2><br>Dispõe sobre a afixação obrigatória, nos locais e nas condições que estabelece, da lista de medicamentos disponíveis para entrega na Rede Pública Municipal de Saúde para a população em geral, e dá outras providências.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PRESIDENTE DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 6/2017, de autoria do Edil Roberto Luís da Silva Tourinho, e na conformidade do artigo 78, § 7º, da <a class="link_law" data-original-title="Lei Orgânica Feira de Santana BA" data-toggle="tooltip" href="/lei-organica-feira-de-santana-ba" rel="tooltip">Lei Orgânica</a> do Município, e artigo 25, e inciso V, do Regimento Interno, PROMULGA s seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Ficam todas as unidades integrantes da Rede Pública Municipal de Saúde que distribuem gratuitamente medicamentos à população em geral, obrigadas a colocar em suas dependências um painel informativo expondo todos os medicamentos disponíveis para entrega imediata.<br><br>§ 1º O painel informativo de que trata o caput deste artigo deverá ser atualizado toda vez que ocorrer alteração na lista dos medicamentos disponíveis.<br><br>§ 2º Os nomes dos medicamentos disponíveis deverão ser legíveis por pessoa com acuidade visual normal, ou seja, que dispense uso de lentes corretivas, a 1 (um) metro do referido painel, a ser colocado em local de fácil acesso, preferencialmente na entrada da respectiva unidade de saúde.<br><br>§ 3º A colocação do referido painel, assim como a veracidade das informações nele veiculadas, serão de responsabilidade do chefe da unidade de saúde em que ele for instalado.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Esta Lei entrará em vigor 90 (noventa) dias após a sua publicação, revogadas as disposições em contrário.<br><br>PRESIDÊNCIA DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, em 28 de Março de 2018.<br><br>Ver. JOSÉ CARNEIRO ROCHA<br>Presidente<br><br>PUBLICADO NO DIÁRIO OFICIAL ELETRÔNICO DIA 29 DE MARÇO DE 2018.<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

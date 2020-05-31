@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 1996/98</h2><br>ESTABELECE PENALIDADES PARA OS ESTABELICIMENTOS QUE ABRIGAREM CRIANÇAS E ADOLECENTES DESACOMPANHADOS DE RESPONSÁVEIS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 10/98, de autoria dos Edis Ildes Ferreira de Oliveira, Manoel Messias Gonzaga, Everton Pereira Cerqueira e Carlito Moreira de Menezes, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Os hotéis, motéis, pensões, casa noturnas e estabelecimentos congêneres, ficam proibidos, no âmbito do Município de Feira de Santana, de hospedar ou de admitir a freqüência de crianças e adolescentes desacompanhados dos pais ou responsáveis, salvo se autorizados pelos mesmos.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> As penalidades para os estabelecimentos que infringirem o estabelecido no Art. 1º são as seguintes, a serem aplicadas progressivamente:<br><br>a) multa de até 1.000 (uma mil) UFIR`s para a primeira incidência;<br>b) multa de até 5.000 (cinco mil) UFIR`s para os casos de reincidência;<br>c) suspensão do alvará de funcionamento;<br>d) cassação do alvará de funcionamento.<br><br>Parágrafo Único - As penas de suspensão ou cassação do alvará de funcionamento poderão ser aplicadas, em qualquer momento, caso sejam constatadas práticas de violência ou exploração contra a criança e o adolescente.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> A aplicação das penalidades previstas neste artigo não prejudicarão outras sanções penais cabíveis.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> A autuação do estabelecimento infrator poderá ser feita pelo agente fiscalizador do Município, através de ação rotineira, ou ainda por denúncia.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> A denúncia poderá ser formulada e apresentada por qualquer cidadão mediante apresentação de registro de ocorrência policial ou do Conselho Tutelar.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Os estabelecimentos citados no caput do art. 1º deverão ser comunicados do teor desta Lei, pela administração municipal, devendo afixar cópia da mesma nos seus compartimentos freqüentados pelo público: recepção, portaria, quartos, apartamentos, salões de jogos etc.<br><br>Parágrafo Único - O não cumprimento deste artigo, pelos estabelecimentos citados no Art. 1º, implica em multa de até 500 (quinhentas) UFIR`s.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> O Poder Executivo Municipal regulamentará a presente Lei no prazo de 90 (noventa) dias.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> Esta Lei entrará em vigor após sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 08 de maio de 1998.<br><br>CLAILTON COSTA MASCARENHAS<br>Prefeito<br><br>Dr. EVANGIVALDO DE FIGUEIREDO OLIVEIRA<br>Chefe de Gabinete do Prefeito<br><br>Data da Publicação: 9/5/1998<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 2217, DE 6/1/2001</h2><br>DISPÕE SOBRE A PROIBIÇÃO DO TRANSPORTE CLANDESTINO URBANO E RURAL INDIVIDUAL E/OU COLETIVO DE PASSAGEIROS NO TERRITÓRIO DO MUNICÍPIO DE FEIRA DE SANTANA - BA E DÁ OUTRAS PROVIDÊNNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Autor: Antônio Maurício Santana de Carvalho<br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 125/2000, de autoria do Edil Antonio Maurício Santana de Carvalho, decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> É vedada a execução do transporte urbano e rural de passageiros no território do Município de Feira de Santana por qualquer modal, seja individual, escolar, fretado ou coletivo, sem autorização e/ou permissão do poder público competente.<br><br>Parágrafo Único - Transporte clandestino para efeito desta Lei, inclui todo o transporte de passageiro feito sem o cumprimento da Lei Federal 8.987/95.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Incorrerá em infração às disposições desta Lei todo transportador, seja pessoa física; pessoa jurídica, cooperativa ou similares e/ou consórcio de empresas que irregularmente vier a explorar o serviço de transporte público de passageiros em itinerários urbanos ou rurais mediante cobrança de tarifa, aceitação de passes, bilhetes e assemelhados utilizados no sistema de transporte público regularmente autorizado, sem deter delegação válida para tanto.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> O descumprimento às disposições desta Lei sujeita o infrator a:<br><br>I - no caso de transporte individual:<br><br>a) multa de 600 UFIR`S (seiscentas unidades fiscais de referência), por infração e apreensão do veículo por15 (quinze) dias;<br>b) em caso de reincidência, multa de 1.200 UFIR`S (hum mil e duzentas unidades fiscais de referência) por infração e apreensão do veículo pelo prazo de 30 (trinta) dias.<br><br>II - no caso de transporte coletivo:<br><br>a) multa de 1.000 UFIR`S (hum mil unidades fiscais de referência ), por infração e apreensão do veículo pelo prazo de 30 (trinta) dias;<br>b) em caso de reincidência, multa de 2.000 UFIR`S (duas mil unidades fiscais de referência), por infração e apreensão do veículo pelo prazo de 30 (trinta) dias.<br><br>Parágrafo Único - Os veículos apreendidos por infração a esta Lei só poderão ser liberados após:<br><br>I - pagamento da multa estabelecida neste artigo;<br><br>II - quitação de todas as multas de competência do Município;<br><br>III - o pagamento das diárias fixadas pela administração do pátio onde o veículo esteja recolhido.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Sempre que necessário, será requisitada força policial para cumprimento desta Lei.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> No ato da ocorrência, o fiscal do órgão competente ou a autoridade policial lavrará o auto de infração contendo todos os elementos necessários à identificação do infrator e do veículo, bem como os dispositivos legais infringidos.<br><br>§ 1º Cópia do auto; será entregue ao infrator mediante recibo.<br><br>§ 2º Recusando-se o infrator a assinar o auto, este será instruído com a assinatura de duas testemunhas.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Ao transportador autuado por infração a esta Lei será asseguradas ampla defesa, nos prazos e formas estabelecidos no art. 37 da Lei nº  <a class="link_law" data-id="1618431" data-original-title=" Data da Norma: 27.01.1997 - INSTITUI O TRANSPORTE PÚBLICO ALTERNATIVO E COMPLEMENTAR DO MUNICÍPIO DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1997/188/1889/lei-ordinaria-n-1889-1997-institui-o-transporte-publico-alternativo-e-complementar-do-municipio-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">1.889</a>, de 1º de abril de 1997.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> O chefe do Poder Executivo fica autorizado a celebrar os convênios necessários para o cumprimento integral desta Lei.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> Esta Lei entra em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 05 de janeiro de 2001<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

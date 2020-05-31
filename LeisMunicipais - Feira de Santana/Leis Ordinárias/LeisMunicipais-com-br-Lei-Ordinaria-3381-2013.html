@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3381, de 06 de junho de 2013</h2><br>DISPÕE SOBRE A CONTRIBUIÇÃO PARA O CUSTEIO DO SERVIÇO DA ILUMINAÇÃO PÚBLICA - CIP, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 56/2013, de autoria do Poder Executivo, aprovou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Os critérios previstos no art. 4º, da Lei nº  <a class="link_law" data-id="1569031" data-original-title=" Data da Norma: 27.12.2002 - INSTITUI A CONTRIBUIÇÃO PARA O CUSTEIO DO SERVIÇO DE ILUMINAÇÃO PÚBLICA E DÁ OUTRA PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2002/239/2396/lei-ordinaria-n-2396-2002-institui-a-contribuicao-para-o-custeio-do-servico-de-iluminacao-publica-e-da-outra-providencias" rel="tooltip">2396</a>, de 27 de dezembro de 2002, e alterações, que estabelecem os valores a serem cobrados a título de Contribuição para o Custeio do Serviço da Iluminação Pública - CIP, passam a viger conforme composição da tabela disposta a seguir:<pre> ____________________<br>|    1 - COMERCIAL   |<br>|====================|<br>|INTERVALO|PERCENTUAL|<br>|DE       |          |<br>|CONSUMO  |          |<br>|KWh      |          |<br>|---------|----------|<br>|0 a 30   |ISENTO    |<br>|---------|----------|<br>|31 a 50  |    15,00%|<br>|---------|----------|<br>|51 a 60  |    15,00%|<br>|---------|----------|<br>|61 a 80  |    15,00%|<br>|---------|----------|<br>|81 a 100 |    15,00%|<br>|---------|----------|<br>|101 a 200|    15,00%|<br>|---------|----------|<br>|201 a 300|    15,00%|<br>|---------|----------|<br>|301 a 450|    15,00%|<br>|---------|----------|<br>|451 a 650|    15,00%|<br>|---------|----------|<br>|651     a|    15,00%|<br>|1000     |          |<br>|---------|----------|<br>|1001    a|    20,00%|<br>|2000     |          |<br>|---------|----------|<br>|Acima  de|    20,00%|<br>|2000     |          |<br>|_________|__________| * tabela formatada pela equipe técnica do LeisMunicipais.com.br<br><pre> ____________________<br>|   2 - INDUSTRIAL   |<br>|====================|<br>|INTERVALO|PERCENTUAL|<br>|DE       |          |<br>|CONSUMO  |          |<br>|KWh      |          |<br>|---------|----------|<br>|0 a 30   |ISENTO    |<br>|---------|----------|<br>|31 a 50  |ISENTO    |<br>|---------|----------|<br>|51 a 60  |    15,00%|<br>|---------|----------|<br>|61 a 80  |    15,00%|<br>|---------|----------|<br>|81 a 100 |    15,00%|<br>|---------|----------|<br>|101 a 200|    15,00%|<br>|---------|----------|<br>|201 a 300|    15,00%|<br>|---------|----------|<br>|301 a 450|    15,00%|<br>|---------|----------|<br>|451 a 650|    15,00%|<br>|---------|----------|<br>|651     a|    15,00%|<br>|1000     |          |<br>|---------|----------|<br>|1001    a|    20,00%|<br>|2000     |          |<br>|---------|----------|<br>|Acima  de|    20,00%|<br>|2000     |          |<br>|_________|__________| * tabela formatada pela equipe técnica do LeisMunicipais.com.br<br><pre> ____________________<br>|      3 - RURAL     |<br>|====================|<br>|INTERVALO|PERCENTUAL|<br>|DE       |          |<br>|CONSUMO  |          |<br>|KWh      |          |<br>|---------|----------|<br>|0 a 30   |ISENTO    |<br>|---------|----------|<br>|31 a 50  |    15,00%|<br>|---------|----------|<br>|51 a 60  |    15,00%|<br>|---------|----------|<br>|61 a 80  |    15,00%|<br>|---------|----------|<br>|81 a 100 |    15,00%|<br>|---------|----------|<br>|101 a 200|    15,00%|<br>|---------|----------|<br>|201 a 300|    15,00%|<br>|---------|----------|<br>|301 a 450|    15,00%|<br>|---------|----------|<br>|451 a 650|    15,00%|<br>|---------|----------|<br>|651     a|    15,00%|<br>|1000     |          |<br>|---------|----------|<br>|1001    a|    20,00%|<br>|2000     |          |<br>|---------|----------|<br>|Acima  de|    20,00%|<br>|2000     |          |<br>|_________|__________| * tabela formatada pela equipe técnica do LeisMunicipais.com.br<br><pre> ____________________<br>|   4 - RESIDENCIAL  |<br>|====================|<br>|INTERVALO|PERCENTUAL|<br>|DE       |          |<br>|CONSUMO  |          |<br>|KWh      |          |<br>|---------|----------|<br>|0 a 30   |    12,00%|<br>|---------|----------|<br>|31 a 50  |    15,00%|<br>|---------|----------|<br>|51 a 60  |    15,00%|<br>|---------|----------|<br>|61 a 80  |    15,00%|<br>|---------|----------|<br>|81 a 100 |    15,00%|<br>|---------|----------|<br>|101 a 200|    15,00%|<br>|---------|----------|<br>|201 a 300|    15,00%|<br>|---------|----------|<br>|301 a 450|    15,00%|<br>|---------|----------|<br>|451 a 650|    15,00%|<br>|---------|----------|<br>|651     a|    15,00%|<br>|1000     |          |<br>|---------|----------|<br>|1001    a|    20,00%|<br>|2000     |          |<br>|---------|----------|<br>|Acima  de|    20,00%|<br>|2000     |          |<br>|_________|__________| * tabela formatada pela equipe técnica do LeisMunicipais.com.br<br><pre> ____________________<br>|  5 - PODER PÚBLICO |<br>|(Estadual e Federal)|<br>|====================|<br>|INTERVALO|PERCENTUAL|<br>|DE       |          |<br>|CONSUMO  |          |<br>|KWh      |          |<br>|---------|----------|<br>|0 a 30   |    12,00%|<br>|---------|----------|<br>|31 a 50  |    20,00%|<br>|---------|----------|<br>|51 a 60  |    20,00%|<br>|---------|----------|<br>|61 a 80  |    20,00%|<br>|---------|----------|<br>|81 a 100 |    20,00%|<br>|---------|----------|<br>|101 a 200|    20,00%|<br>|---------|----------|<br>|201 a 300|    20,00%|<br>|---------|----------|<br>|301 a 450|    20,00%|<br>|---------|----------|<br>|451 a 650|    20,00%|<br>|---------|----------|<br>|651     a|    20,00%|<br>|1000     |          |<br>|---------|----------|<br>|1001    a|    20,00%|<br>|2000     |          |<br>|---------|----------|<br>|Acima  de|    20,00%|<br>|2000     |          |<br>|_________|__________| * tabela formatada pela equipe técnica do LeisMunicipais.com.br<br><pre> ____________________<br>| 6 - SERVIÇO PÚBLICO|<br>|  (Concessionárias) |<br>|====================|<br>|INTERVALO|PERCENTUAL|<br>|DE       |          |<br>|CONSUMO  |          |<br>|KWh      |          |<br>|---------|----------|<br>|0 a 30   |    00,00%|<br>|---------|----------|<br>|31 a 50  |    20,00%|<br>|---------|----------|<br>|51 a 60  |    20,00%|<br>|---------|----------|<br>|61 a 80  |    20,00%|<br>|---------|----------|<br>|81 a 100 |    20,00%|<br>|---------|----------|<br>|101 a 200|    20,00%|<br>|---------|----------|<br>|201 a 300|    20,00%|<br>|---------|----------|<br>|301 a 450|    20,00%|<br>|---------|----------|<br>|451 a 650|    20,00%|<br>|---------|----------|<br>|651     a|    20,00%|<br>|1000     |          |<br>|---------|----------|<br>|1001    a|    20,00%|<br>|2000     |          |<br>|---------|----------|<br>|Acima  de|    20,00%|<br>|2000     |          |<br>|_________|__________| * tabela formatada pela equipe técnica do LeisMunicipais.com.br<br>§ 1º Ficam isentos do pagamento da Contribuição para o Custeio do Serviço de Iluminação Pública - CIP, as unidades consumidoras classificadas como:<br><br>I - Residencial Baixa Renda;<br><br>II - Iluminação Pública;<br><br>III - Poder Público Municipal;<br><br>IV - Consumo Próprio;<br><br>V - Revenda;<br><br>VI - Comercial, para consumo até 30 KWh;<br><br>VII - Industrial, para consumo até 50 KWh;<br><br>VIII - Rural, para consumo até 30KWh.<br><br>§ 2º A Contribuição para o Custeio do Serviço de Iluminação Pública - CIP, será calculada, obedecendo as alíquotas previstas nas tabelas indicadas no caput deste artigo, e incidirá sobre o valor líquido da fatura - consumo ativo, consumo reativo excedente, demanda ativa e demanda reativa excedente, obedecendo o limite máximo para cobrança conforme disposição a seguir:<br><br>I - Unidades Consumidoras classificadas como Comecial:<br><br>a) até 450 KWh - R$ 40,20;<br>b) de 451 KWh até 650 KWh - R$ 56,63;<br>c) de 651 KWh até 1000 KWh - R$ 75,00;<br>d) de 1001 KWh até 2000 KWh - R$ 80,00;<br>e) acima de 2000 KWh - R$ 100,00.<br><br>II - Unidades Consumidoras classificadas como Industrial:<br><br>a) até 450 KWh - 40,20;<br>b) de 451 KWh até 1000 KWh - R$ 57,00;<br>c) de 1001 KWh até 2000 KWh - R$ 80,00;<br>d) acima de 2000 KWh - R$ 100,00.<br><br>III - Unidades Consumidoras classificadas como Rural:<br><br>a) até 450 KWh - R$ 30,15;<br>b) de 451 KWh até 1000 KWh - R$ 35,00;<br>c) de 1001 KWh até 2000 KWh - R$ 80,00;<br>d) acima de 2000 KWh - R$ 100,00.<br><br>IV - Unidades Consumidoras classificadas como Residencial:<br><br>a) até 450 KWh - R$ 30,15;<br>b) de 451 KWh até 650 KWh - R$ 35,00;<br>c) de 651 KWh até 1000 KWh - R$ 40,00;<br>d) de 1001 KWh até 2000 KWh - R$ 80,00;<br>e) acima de 2000 KWh - R$ 100,00.<br><br>V - Unidades Consumidoras classificadas como Poder Público (Estadual e Federal):<br><br>a) até 300 KWh - R$ 54,36;<br>b) de 301 KWh até 650 KWh - R$ 108,74;<br>c) de 651 KWh até 2000 KWh - R$ 217,46;<br>d) acima de 2000 KWh - R$ 300,00.<br><br>VI - Unidades Consumidoras classificadas como Serviço Público (Concessionárias):<br><br>a) até 1000 KWh - R$ 56,63;<br>b) de 1001 KWh até 2000 KWh - R$ 100,00;<br>c) acima de 2000 KWh - R$ 300,00.<br><br>§ 3º Os valores da Contribuição para o Custeio do Serviço de Iluminação Pública nos exercícios subsequentes serão revistos de acordo com a variação anual do IPC-A, ou outro que lhe suceda em caso de extinção.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Caso o contribuinte discorde do valor atribuído à Contribuição para o Custeio do Serviço de Iluminação Pública - CIP, poderá este requerer à Administração Municipal, através da Secretaria Municipal da Fazenda, que seja procedida a devida revisão, que dar-se-á administrativamente em caso de desconformidade com os parâmetros ora estabelecidos.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> O Poder Executivo Municipal expedirá os atos que se fizerem necessários à regulamentação e ajustes desta Lei.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Esta Lei entrará em vigor na data de sua publicação, produzindo seus efeitos a partir de 1º de janeiro de 2013, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito, 06 de junho de 2013.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito Municipal<br><br>MÁRIO COSTA BORGES<br>Chefe de Gabinete do Prefeito<br><br>CARLOS ANTÔNIO DE MORAES LUCENA<br>Procurador Geral do Município<br><br>EXPEDITO CAMPODÔNIO ELOY<br>Secretário Municipal da Fazenda<br><br>MANOEL CORDEIRO NETO<br>Secretário Municipal de Serviços Públicos<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

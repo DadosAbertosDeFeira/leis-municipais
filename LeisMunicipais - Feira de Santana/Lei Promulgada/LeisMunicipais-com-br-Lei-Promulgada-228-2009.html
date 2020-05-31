@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI PROMULGADA Nº 228/2009</h2><br>OBRIGA O PODER PÚBLICO MUNICIPAL A COMPRAR, DIRETA OU INDIRETAMENTE, POR MEIO DE PROCEDIMENTOS LICITATÓRIOS, SOMENTE MADEIRA OU SUBPRODUTOS DE MADEIRA CERTIFICADA OU LEGAL PRA USO EM OBRAS PÚBLICAS REALIZADAS NO MUNICÍPIO E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PRESIDENTE DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA,FAÇO SABER QUE A CÂMARA MUNICIPAL, ATRAVÉS DO PROJETO DE LEI Nº 16/2009, DE AUTORIA DO EDIL MARIALVO BARRETO, E NA CONFORMIDADE DO ARTIGO 78, § 7º, DA LEI Nº  <a class="link_law" data-id="1739637" data-original-title=" Data da Norma: 05.04.1990 - DISPÕE SOBRE A LEI ORGÂNICA DO MUNICIPIO DE FEIRA DE SANTANA E DA OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-promulgada/1990/3/37/lei-promulgada-n-37-1990-dispoe-sobre-a-lei-organica-do-municipio-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">37</a>, DE 05 DE ABRIL DE 1990, E ARTIGO 25 E INCISO V, DO REGIMENTO INTERNO, PROMULGA A SEGUINTE LEI:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica o Poder Público Municipal obrigado a comprar, direta ou indiretamente, por meio de qualquer modalidade de licitação, somente madeira ou subprodutos de madeira certificada ou legal para uso em obras públicas realizadas no município.<br><br>§ 1º Só poderão participar de licitações públicas que visem à compra de produtos florestais, tais como madeira, seus sub-produtos, ou imobiliário, ou ainda a execução de obras ou serviços que utilizam madeira, empresas que apresentarem os seguintes documentos:<br><br>I - autorização de desmatamento emitido pelo IBAMA;<br><br>II - autorização de transporte de produtos florestais (ATPF) do IBAMA, com a informação da origem e número do Plano de Manejo;<br><br>III - atestado de certificação de madeira, emitido por entidade/instituição oficialmente autorizada a dar a certificação;<br><br>IV - demais documentos que são ou venham a ser exigidos pelo órgão ambiental federal de meio ambiente.<br><br>§ 2º Ficam proibidas de participar dos processos de licitação citados no caput deste artigo as empresas que não apresentarem o Atestado de Certificação de Madeira, determinado no inciso III, e apresentarem somente os documentos listados nos incisos I, II e IV.<br><br>§ 3º O Poder Público Municipal, toda vez que divulgar o resultado da licitação da compra dos produtos florestais em imprensa oficial, deverá publicar, também, o número da ATPF - Autorização de Transporte de Produtos Florestais, a instituição certificadora e o número da autorização de desmatamento emitido pelo IBAMA, da(s) empresa(s) vencedora(s).<br><br>§ 4º Os projetos públicos que utilizarem madeira deverão especificar produtos de madeira com as menores dimensões possíveis, visando a redução do desperdício, além de buscar substituir o uso de fôrmas e andaimes, e/ou outros utensílios descartáveis feitos de madeira, por produtos não madeireiros.<br><br>§ 5º O Poder Público, através de imprensa oficial, dará publicidade aos processos de contratação que envolve compra de madeiras certificadas.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Para efeito desta Lei, entende-se por:<br><br>I - madeira certificada: madeira atestada por entidades/instituições certificadoras oficiais, provenientes de plano de manejo florestal autorizado pelo IBAMA, oriunda de área manejada de forma ambientalmente adequada, socialmente justa e economicamente viável;<br><br>II - madeira legal: madeira oriunda de florestas nativas com planos de manejo florestal, ou com autorização de desmatamento - devidamente licenciadas pelo órgão ambiental competente, integrante do Sistema Nacional de Meio Ambiente - SISNAMA, com autorização de transporte expedida pelo Instituto Brasileiro de Meio Ambiente e dos Recursos Naturais Renováveis - IBAMA, ou de florestas plantadas, com planos de manejo florestal licenciados;<br><br>III - certificação florestal: certificado dado a empresas, proprietário ou comunidade aos produtos que foram extraídos da floresta usando meios corretos para o ambiente e para a sociedade. A certificação envolve avaliação das questões sociais econômicas e ambientais do manejo das florestas, sejam nativas ou plantadas;<br><br>IV - cadastro técnico federal de atividades potencialmente poluidoras ou utilizadores de recursos ambientais: cadastro técnico obrigatório pelo IBAMA, para todas as pessoas físicas e jurídicas que se dedicam a atividades potencialmente poluidoras e/ou a extração, produção, transporte e comercialização de recursos ambientais.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> O Poder Público dará publicidade nas placas informativas das obras, onde estiver informado o nome da empresa e o engenheiro responsável pela obra, se a obra usa madeira certificada, divulgando o conceito de certificação ambiental.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> As entidades e órgãos da administração pública direta e indireta deverão consultar a listagem de empresas, proprietários ou comunidades certificadas no Conselho Brasileiro de Manejo Florestal, para informarem-se a cerca das entidades certificadoras brasileiras.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Fica a Secretaria Municipal de Meio Ambiente competente para fiscalizar o disposto nesta Lei.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> O Poder Público terá 03 (três) meses para se adequar a este dispositivo legal.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>CÂMARA MUNICIPAL DE FEIRA DE SANTANA, em 22 de Junho de 2009.<br><br>Ver. ANTONIO CARLOS PASSOS ATAÍDE<br>PRESIDENTE<br><br>Autor: Marialvo Barreto<br>DATA DE PUBLICAÇÃO: 26/6/2009<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

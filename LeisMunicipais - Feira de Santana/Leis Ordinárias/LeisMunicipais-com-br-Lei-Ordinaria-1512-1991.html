@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 1512, de 06 de dezembro de 1991</h2><br>INTRODUZ ALTERAÇÕES NA ESTRUTURA DA ADMINISTRAÇÃO PÚBLICA DO MUNICÍPIO DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, FAÇO saber que a Câmara Municipal decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica criada a Secretaria de Comunicação Social, de nível especial, dirigida por um Secretário do Município, com o objetivo de traçar, orientar, executar e fiscalizar as políticas municipais de comunicação social.<br><br>§ 1º Ficam criados os seguintes cargos de direção e assessoramento (DA):<br><br>I - Diretor de Comunicação Social - DA-1;<br><br>II - Diretor de Promoções e Eventos - DA-1;<br><br>III - Coordenador de Publicidade e Propaganda - DA-2;<br><br>IV - Assistente do Secretário - DA-4;<br><br>VII - Chefe de Expediente - DA-4.<br><br>§ 2º São delegadas as seguintes atribuições:<br><br>a) ao Diretor de Confirmação Social: orientar e acompanhar o funcionamento da máquina administrativa; coordenar a seleção das informações de interesse coletivo para veiculação em boletins; providenciar, quando conveniente, relatórios para o gabinete do prefeito e secretários, sobre assuntos que podem subsidiar decisões administrativas; acompanhar a documentação dos eventos relevantes do Governo Municipal;<br>b) ao Diretor de Promoções e Eventos: propor, planejar e organizar a realização de atos públicos e eventos de interesse do Governo Municipal;<br>c) ao Coordenador de Publicidade e Propaganda: promover, planejar e distribuir as campanhas publicitárias e informativas visando a divulgar as ações administrativas de interesse relevante para a população; acompanhar os planos de mídia; aplicar pesquisas para avaliar desempenho e impacto da administração junto à opinião pública;<br>d) ao Coordenador de Jornalismo: coordenar a elaboração de boletins diários para circulação no Governo Municipal; designar repórteres para serviços jornalísticos; orientar as coberturas fotográficas das atividades da administração municipal;<br>e) ao Coordenador de Rádio e TV: acompanhar a gravação de noticiários de rádio e TV; produzir sinopses dos noticiários; encaminhar as sugestões, reclamações, denúncias aos órgãos competentes; manter contatos com os departamentos de jornalismo das emissoras de rádio e TV, combinando entrevistas e sugerindo pautas;<br>f) ao Assistente do Secretário: auxiliar o secretário nas atividades de relações públicas; recepcionar e encaminhar pessoas; realizar serviços de apoio geral que lhe forem atribuídas por superior imediato;<br>g) ao chefe de expediente: organizar e arquivar os boletins produzidos pela Secretaria de Comunicação; controlar e executar as atividades de protocolo, expediente, recursos materiais, bens móveis e serviços gerais.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Fica o Poder Executivo Municipal, autorizado a abrir Crédito Adicional Especial no valor de Cr$ 900.000,00 (novecentos mil cruzeiros).<br><br>Parágrafo Único - As despesas decorrentes desta Lei correrão por conta do inciso II, do artigo 43, da Lei nº 4.320, de 17 de março de 1964.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Fica o Poder Executivo Municipal autorizado a regulamentar a presente Lei no prazo de 90 (noventa) dias.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Prefeitura Municipal de Feira de Santana, em 06 de dezembro de 1991.<br><br>DR. COLBERT MARTINS DA SILVA<br>Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

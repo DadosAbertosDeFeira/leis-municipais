@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 1653/93</h2><br>DISPÕE SOBRE A CRIAÇÃO DO CORAM-CENTRO DE ORIENTAÇÃO AO ADOLESCENTE DO MUNICÍPIO, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, FAÇO saber que a Câmara Municipal decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica criado o CENTRO DE ORIENTAÇÃO AO ADOLECENTE DO MUNICÍPIO - CORAM, órgão consultivo, coordenador das ações da Secretaria de Saúde do Município, no que se refere ao adolescente ( faixa etária de 11 a 21 anos), vinculado ao Departamento de Medicina Preventiva.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> É da competência do Centro de Orientação ao Adolescente do Município.<br><br>I - Orientação e incentivo ao aleitamento materno;<br><br>II - Planejamento familiar para adolescentes;<br><br>III - Prevenção das doenças sexualmente transmissíveis;<br><br>IV - Prevenção das doenças neoplásicas benignas e malignas;<br><br>V - Gestação na adolescência;<br><br>VI - Combate ao consumo de drogas;<br><br>VII - Atendimento odontológico à gestante adolescente;<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> O Centro de Orientação ao Adolescente do Município terá o seu atendimento assim distribuído:<br><br>I - No Hospital Inácia dos Santos:<br><br>a) Orientação e incentivo ao aleitamento materno;<br>b) Planejamento familiar para adolescentes;<br>c) Prevenção das doenças sexualmente transmissíveis;<br>d) Prevenção das doenças neoplásicas benignas e malignas;<br>e) Gestação na adolescência.<br><br>II - Nos postos de saúde do Município:<br><br>a) Atendimento odontológico a gestantes na adolescente;<br><br>III - Nos órgãos competentes:<br><br>a) Combate ao consumo de drogas.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Prefeitura Municipal de Feira de Santana, em 19 de maio de 1993.<br><br>DR. JOÃO DURVAL CARNEIRO<br>Prefeito<br><br>Dr. LUIS CARLOS OLIVEIRA DE ALMEIDA<br>Chefe de Gabinete do Prefeito<br><br>Dr. GETÚLIO DA S. BARBOSA<br>Secretário de Saúde<br><br>Autor: Genésio Serafim de Lima<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

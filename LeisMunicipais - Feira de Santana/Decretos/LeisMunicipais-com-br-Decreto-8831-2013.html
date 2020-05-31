@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>DECRETO Nº 8831, de 07 de janeiro de 2013.</h2><br>NOMEIA MEMBROS DA COMISSÃO DE LICITAÇÃO, E NOMEIA PREGOEIRO, DA SECRETARIA MUNICIPAL DE SAÚDE, PARA O FUNDO MUNICIPAL DE SAÚDE (FMS).<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, no uso de suas atribuições, DECRETA:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> A Comissão de Licitação da Secretaria Municipal de Saúde, para o Fundo Municipal de Saúde, será constituída dos seguintes integrantes:<br><br>I - Titulares:<br><br>a) Antônio Rosa de Assis;<br>b) Ana Leda Rocha da Silva;<br>c) Alaíde Lima Freitas;<br>d) Maria José Ferreira Lima.<br><br>II - Suplentes:<br><br>a) Rogeane da Silva Freitas;<br>b) Telma Araújo da Silva Chalegre.<br><br>§ 1º Junto à Comissão poderá funcionar uma representação da Procuradoria Geral do Município, cujo titular será designado na forma da Lei Complementar <a class="link_law" data-id="1717328" data-original-title=" Data da Norma: 08.06.1995 - REGULAMENTA O ART. 90 DA LEI ORGÂNICA, QUE CRIOU A PROCURADORIA GERAL DO MUNICÍPIO DE FEIRA DE SANTANA E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-complementar/1995/0/2/lei-complementar-n-2-1995-regulamenta-o-art-90-da-lei-organica-que-criou-a-procuradoria-geral-do-municipio-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">02</a>/95.<br><br>§ 2º A Presidência da Comissão será exercida pelo servidor Antônio Rosa de Assis, e nas suas ausências ou impedimentos pelo membro titular de maior hierarquia entre os presentes.<br><br>§ 3º Para realização de certames licitatórios nas modalidades tomada de preços, concorrência, concurso e leilão, a Comissão ora constituída poderá utilizar-se dos trabalhos da Comissão Única e Permanente de Licitação, existente na Prefeitura Municipal de Feira de Santana.<br><br>§ 4º A investidura dos servidores designados neste artigo será pelo prazo de 01 (um) ano.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Fica designado para atuar como pregoeiro, nos processos de licitação na modalidade pregão, o servidor Antônio Rosa de Assis.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Este Decreto entrará em vigor na data da sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito, 07 de janeiro de 2013.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito Municipal<br><br>CARLOS ANTÔNIO DE MORAES LUCENA<br>Procurador Geral do Município<br><br>PAULO SÉRGIO AQUINO DE AZEVEDO SOUZA<br>Secretário Municipal de Governo<br>Respondendo pelo Cargo de Chefe de Gabinete do Prefeito<br><br>JOÃO MARINHO GOMES JÚNIOR<br>Secretário Municipal de Governo<br><br>DENISE LIMA MASCARENHAS<br>Secretária Municipal de Saúde<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

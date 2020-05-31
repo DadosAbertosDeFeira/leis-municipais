@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3190/2011</h2><br>INSTITUI A CAMPANHA PERMANENTE DE INCENTIVO ÀS COOPERATIVAS DE CATADORES DE MATERIAL RECICLÁVEL, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 61/2011, de autoria do Edil Otávio Joel de Araújo, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica instituída a &quot;CAMPANHA PERMANETE DE INCENTIVO ÀS COOPERATIVAS DE CATADORES DE MATERIAL RECICLÁVEL&quot;, a ser desenvolvida em parceria com a sociedade civil e iniciativa privada, no âmbito do Município de Feira de Santana.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Os incentivos de que trata o art. 1º desta Lei terão os seguintes objetivos:<br><br>I - estimular a geração de emprego e renda;<br><br>II - fomentar a formação de cooperativas de trabalho;<br><br>III - resgatar a cidadania através do direito básico ao trabalho;<br><br>IV - promover a educação ambiental;<br><br>V - propiciar a defesa do meio ambiente através da coleta seletiva e reciclagem de lixo.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> As ações da Campanha Permanente de Incentivo às Cooperativas de Catadores de Material Reciclável incluirão:<br><br>I - apoio à formação de cooperativas de trabalho, visando à implementação progressiva de coleta seletiva de lixo por meio dos participantes dessas cooperativas;<br><br>II - estimular a triagem e reciclagem do material coletado através de unidades a serem operadas pelas próprias cooperativas de trabalho;<br><br>III - fomentar o desenvolvimento de atividades de educação ambiental.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> O Poder Executivo regulamentará a presente Lei, de forma a garantir sua plena execução e fiscalização.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> As despesas decorrentes da presente Lei correrão pro conta das dotações orçamentárias próprias, suplementadas se necessárias.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 17 de maio de 2011.<br><br>TARCIZIO SUZART PIMENTA JUNIOR<br>Prefeito Municipal<br><br>MILTON PEREIRA DE BRITTO<br>Chefe de Gabinete do Prefeito<br><br>LUIZ CARLOS FERREIRA DE ARAÚJO<br>Sec. Municipal de Serviços Públicos<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

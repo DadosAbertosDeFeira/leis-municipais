@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 1965/97</h2><br>AUTORIZA A ABERTURA DE CRÉDITO ADICIONAL ESPECIAL, NO VALOR DE R$ 500.000,00 (QUINHENTOS MIL REAIS), PARA OS FINS QUE SE ESPECÍFICA, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA Bahia, FAÇO saber que Câmara Municipal, através do projeto de Lei nº 016/97, de autoria do PODER EXECUTIVO, decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica o Poder Executivo Municipal autorizado a abrir um crédito adicional especial, no valor de R$ 500.000,00 (quinhentos mil reais), com a seguinte programação orçamentária:<br><br>03 - Poder Executivo;<br>16 - Crédito adicional especial;<br>13 - Saúde e saneamento;<br>76 - Saneamento ;<br>449 - Sistemas de esgotos;<br>1001 - Infra-estrutura urbana;<br>4551 - Obras e instalações.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Os recursos necessários para a abertura do crédito previsto no artigo anterior, são definidos no art. 43, da Lei 4.320/64.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Fica o Poder Executivo Municipal autorizado a abrir créditos suplementares, no valor de R$ 1.500.000,00 (hum mil e quinhentos reais).<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Os recursos necessários para a abertura dos créditos estabelecidos no artigo anterior, serão originados da anulação total ou parcial de dotacões orçamentárias do orçamento em vigor.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 12 de dezembro de 1997.<br><br>CLAILTON COSTA MASCARENHAS<br>Prefeito<br><br>CARLOS ALBERTO OLIVEIRA BRITO<br>Secretário Municipal da Fazenda<br><br>Data da Publicação: 13/12/1997<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

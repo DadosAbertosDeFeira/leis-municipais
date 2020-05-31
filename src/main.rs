@@ -7,6 +7,7 @@ extern crate lazy_static;
 use crate::error::Error;
 use crate::parser::Lei;
 use crate::parser_executor::{parse_on_directory, Folder};
+use crate::parser_executor_jwalk::parse_on_directory_jwalk;
 use prettytable::Table;
 use std::collections::HashMap;
 use std::env;
@@ -16,13 +17,14 @@ use std::time::Instant;
 mod error;
 mod parser;
 mod parser_executor;
+mod parser_executor_jwalk;
 
 fn main() -> Result<(), Error> {
     let now = Instant::now();
     let args: Vec<String> = env::args().collect();
     let directory_path = &args[1]; // TODO: error handler
 
-    let (directories, leis) = parse_on_directory(directory_path);
+    let (directories, leis) = parse_on_directory_jwalk(directory_path);
 
     let total_files = directories
         .iter()

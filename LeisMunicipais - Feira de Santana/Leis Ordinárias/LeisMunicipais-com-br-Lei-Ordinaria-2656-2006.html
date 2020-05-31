@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 2656, DE 30 DE MARÇO DE 2006.</h2><br>AUTORIZA O PODER EXECUTIVO A DESENVOLVER AÇÕES E APORTE DE CONTRAPARTIDA MUNICIPAL PARA IMPLEMENTAR O PROGRAMA CARTA DE CRÉDITO RECURSOS FGTS NA MODALIDADE PRODUÇÃO DE UNIDADES HABITACIONAIS, OPERAÇÕES COLETIVAS, REGULAMENTADO PELA RESOLUÇÃO DO CONSELHO CURADOR DO FCTS, Nº 291/98, COM ALTERAÇÕES DA RESOLUÇÃO Nº 460/2004, DE 14/12/04, PUBLICADA NO D.O.U. EM 20/12/04 E INSTRUÇÕES NORMATIVAS DO MINISTÉRIO DA CIDADE, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O Prefeito Municipal de Feira de SAntana, Estado da Bahia, no uso de suas atribuições, faço saber que a Câmara Municipal, através do Projeto de Lei nº 035/2006, de autoria deste Poder Executivo, decretou eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica o Poder Executivo autorizado a desenvolver todas as ações necessárias para aquisição, construção ou reforma de unidades habitacionais para atendimento aos munícipes necessitados, implementadas por intermédio do Programa Carta de Crédito - Recursos FGTS - Operações Coletivas, regulamentado peia Resolução nº 291/98, com as alterações promovidas pela Resolução nº 40/2004, do Conselho Curador do FGTS o instruções normativas do Ministério das Cidades.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Para implementação do Programa, fica o Poder Executivo autorizado a celebrar Termos de Parceria e Cooperação com a Caixa Econômica Federal.<br><br>Parágrafo Único - O Poder Executivo poderá celebrar aditamento aos Termos de Cooperação de que trata este artigo, os quais deverão ter por objeto ajuste e adequações direcionadas para a consecução das finalidades do programa.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> O Poder Público Municipal fica autorizado a disponibilizar áreas pertencentes ao patrimônio público municipal, para neles construir moradias para a população a ser beneficiada no programa e a aliená-las, previamente a qualquer titulo, quando da concessão dos financiamentos habitacionais de que tratam os dispositivos legais mencionados no artigo 1º, ou após a construção das unidades residenciais aos beneficiários do programa.<br><br>§ 1º As áreas a serem utilizadas no programa deverão fazer frente para a via pública existente, contar com infraestrutura básica necessária, de acordo com as posturas municipais.<br><br>§ 2º O Poder Público Municipal também poderá desenvolver todas as ações para estimular o programa nas áreas rurais.<br><br>§ 3º Os projetos de habitação popular serão desenvolvidos mediante planejamento global, podendo envolver as Secretarias Estadual ou Municipal de Habitação, Desenvolvimento Social, Desenvolvimento Urbano e Meio Ambiente, Planejamento, Fazenda e Desenvolvimento Rural.<br><br>§ 4º Poderão ser integradas ao projeto outras entidades, mediante convênio desde que tragam ganhos para produção, condução e gestão deste processo, o qual tem por finalidade a produção imediata de unidades habitacionais, regularizando-se sempre que possível as áreas Inválidas e ocupacionais irregulares, proporcionando atendimento às famílias mais carentes do Município.<br><br>§ 5º Os custos relativos a cada unidade, Integralizados pelo Poder Público Municipal a título de contrapartida, necessários para a viabilização e produção das unidades habitacionais, poderão ou não ser ressarcidos pelos beneficiários, mediante pagamentos de encargos mensais, de forma análoga às parcelas e prazos já definidos pela Resolução FGTS 460/2004, permitida a viabilização para a produção de novas unidades habitacionais.<br><br>§ 6º Os beneficiários do Programa eleitos por critérios sociais e sob inteira responsabilidade municipal ficarão isentos do pagamento do IPTU - Imposto Predial e Territorial Urbano, durante o período de construção das unidades a também durante o período dos encargos por estes pagos, se o município exigir o ressarcimento dos beneficiários.<br><br>§ 7º Os beneficiários, atendendo às normas do programa, não poderão ser proprietários de imóveis residenciais no Município e nem detentores de financiamento ativo no SFH em qualquer parte do país, bem como não terem sido beneficiados com descontos pelo FGTS a partir de 1º de maio de 2005.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> A participação do Município dar-se-á mediante a concessão de contrapartida consistente em destinação de recursos financeiros, sendo que o valor do desconto, a que tem direito os beneficiários, somente será liberado após o aporte pelo Município, na obra de valor equivalente à caução de sua responsabilidade.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Fica o Poder Público autorizado a conceder garantia das prestações relativas aos financiamentos contratados pelos beneficiários do programa consistente em caução dos recursos recebidos daqueles beneficiários, em pagamento de terrenos, obras ou serviços fornecidos pelo Município.<br><br>§ 1º O valor relativo a garantia dos financiamentos ficará depositados em conta gráfica caução em nome da CAIXA, remunerada mensalmente com base na taxa SELIC ou na taxa que vier a ser pautada em aditamento ao Termo de Parcela e Cooperação e será utilizado para pagamento das prestações não pagas pelos mutuários.<br><br>§ 2º Ao final do prazo de vigência do contrato de financiamento do valor relativo a garantia dos financiamentos, depois de deduzidas as parcelas não pagas pelos mutuários, os impostos devidos e os custos devidos ao Banco credor pela administração dos recursos, se houver, será devolvido ao Município.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> As despesas com a execução da presente lei, de responsabilidade do Município correrão por conta da dotação orçamentária nº 164830031045, elemento de despesa. Secretaria Municipal de Habitação.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 30 de março do 2006.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito Municipal<br><br>GERALDO DE OLIVEIRA SAMPAIO FILHO<br>Chefe de Gabinete do Prefeito<br><br>CARLOS ANTÔNIO DE MORAES LUCENA<br>Procurador Geral do Município<br><br>CARLOS ALBERTO DE OLIVEIRA BRITO<br>Secretário Municipal de Planejamento<br><br>GENÉSIO SERAFIM DE LIMA<br>Secretário Municipal de Habitação e Regularização Fundiária<br><br>ANA LÚCIA FREITAS BASTOS MIRANDA<br>Secretária Municipal de Desenvolvimento Social<br><br>JOSÉ FERREIRA PINHEIRO<br>Secretário Municipal de Desenvolvimento Urbano e Meio Ambiente<br><br>MÁRIO COSTA BORGES<br>Secretário Municipal de Agricultura, Recursos Hídricos e Desenvolvimento Rural<br><br>JOAQUIM JOSÉ BAHIA MENEZES<br>Secretário Municipal da Fazenda<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

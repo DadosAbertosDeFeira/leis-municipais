@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3207/2011</h2><br>ESTABELECE A OBRIGATORIEDADE DA IMPLANTAÇÃO DE EQUIPAMENTOS, RAMPAS, SENALIZAÇÃO, E TODA A INFRAESTRUTURA NECESSÁRIA PARA PERMITIR ACESSIBILIDADE DOS PORTADORES DE NECESSIDADE ESPECIAIS DURANTE OS FESTEJOS MICARETESCOS NO MUNICÍPIO DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 48/2011, de autoria do Edil José Sebastião Alves de Souza, e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica obrigada a empresa e/ou empresas vencedoras da licitação e responsável pela montagem dos camarotes, arquibancadas, palcos, sanitários químicos, barracas e toda a infraestrutura da Micareta de Feira de Santana, bem como o Governo Municipal a implantar todos os equipamentos necessários à acessibilidade dos foliões portadores de necessidades especiais, a exemplo de rampas, sinalização vertical e horizontal, espaços reservados em arquibancadas, camarotes de uso coletivo, sanitários químicos adaptados, acesso ao circuito da festa com sinalização especial para pessoas com necessidades especiais dentre outras medidas que se fizerem necessárias para o cumprimento da presente Lei Municipal.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Os custos operacionais para o cumprimento da presente Lei Municipal serão previstos no valor global estipulado na licitação para a exploração dos espaços da Micareta de Feira de Santana, e deverão ser suficientes para atender às necessidades crescentes da comunidade, acompanhando a demanda e o crescimento da procura.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Caberá à Prefeitura Municipal de Feira de Santana, por intermédio da Secretaria Municipal de Comunicação - SECOM, a divulgação dos espaços e equipamentos disponíveis para as pessoas com necessidades especiais, bem como incentivar os foliões que se enquadram nesse perfil a utilizarem a infraestrutura oferecida aos mesmos, a atenção especial às sinalizações específicas.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Caberá a prepostos devidamente credenciados da F.P.I - Fiscalização Preventiva Integrada, bem como à Secretaria Municipal de Cultura, Esporte e Lazer, à Secretaria Municipal de Meio Ambiente, à Universidade Estadual de Feira de Santana - UEFS, ao Corpo de Bombeiros Militares ao CREA/BA, dentre outras entidades e órgãos públicos que estejam diretamente ou indiretamente envolvidos nos festejos micaretescos, a fiscalização e acompanhamento do cumprimento da presente Lei Municipal, assim como a certificação da estrutura e a observância das exigências técnicas para implantação dos equipamentos necessários para garantir a acessibilidade dos foliões com necessidades especiais no circuito da Micareta.<br><br>Parágrafo Único - A Secretaria Municipal de Cultura, Esporte e Lazer, por meio de seu titular, convocará reunião com todos os órgãos e entidades enumeradas no &quot;caput&quot; deste artigo, com o objetivo de estabelecer os critérios, normas e procedimentos de fiscalização e certificação dos espaços, acessos e sinalização para os portadores de necessidades especiais no Circuito da Micareta.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> O não-cumprimento da presente Lei Municipal acarretará as seguintes penalidades, sem prejuízo de outras que se fizerem necessárias:<br><br>I - multa de 10.000,00 (dez mil reais), e em caso de reincidência;<br><br>II - multa de 100.000,00 (cem mil reais) e perda do direito de licitar com o Município por um período de 08 (oito) anos.<br><br>Parágrafo Único - Caso a Secretaria Municipal de Cultura, Esporte e Lazer não certifique e nem autorize o uso de quaisquer equipamentos, sinalizações e/ou espaços reservados para os foliões com dificuldades de locomoção, por não oferecerem segurança e não atenderem às normas e especificações técnicas necessárias para a acessibilidade dos foliões, a empresa vencedora da licitação para exploração dos espaços do Circuito da Micareta de Feira de Santana terá o Contrato reincidido, e a segunda colocada, respeitando o critério de classificação, ser convocada a assinar Contato com o Poder Público Municipal, para exploração dos referidos espaços, objetivo da licitação em vigor para a Micareta do ano subsequente.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 24 de maio de 2011.<br><br>TARCÍZIO SUZART PIMENTA JÚNIOR<br>Prefeito Municipal<br><br>MILTON PEREIRA DE BRITTO<br>Chefe de Gabinete do Prefeito<br><br>CARLOS ANTÔNIO DE MORAES LUCENA<br>Procurador Geral do Município<br><br>EUCLIDES ARTUR COSTA ANDRADE<br>Sec. Municipal de Cultura, Esporte e Lazer<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

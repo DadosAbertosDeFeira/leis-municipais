@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 2749/2007</h2><br>DISPÕE SOBRE A CRIAÇÃO DO CONSELHO MUNICIPAL DE ACOMPANHAMENTO E CONTROLE SOCIAL DO FUNDO DE MANUTENÇÃO E DESENVOLVIMENTO DA EDUCAÇÃO BÁSICA E DE VALORIZAÇÃO DOS PROFISSIONAIS DE EDUCAÇÃO - CONSELHO FUNDEB E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Autor: Poder Executivo<br><br>O Prefeito Municipal de Feira de Santana, Estado da Bahia, no uso de suas atribuições, FAÇO saber que a Câmara Municipal decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica criado o Conselho Municipal de Acompanhamento e Controle Social de Desenvolvimento da Educação Básica e de Valorização dos Profissionais da Educação - Conselho do FUNDEB, no âmbito do Município de Feira de Santana, de acordo com o disposto no art. 24, § 1º, da Medida Provisória nº 339, de 28 de dezembro de 2006.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O Conselho mencionado no art. 1º será composto por 15 (quinze) membros titulares, acompanhados de seus respectivos suplentes, conforme representação e indicação a seguir discriminadas:<br><br>I - um representante da Secretaria Municipal de Educação;<br><br>II - um representante da Secretaria Municipal da Fazenda;<br><br>III - um representante da Secretaria Municipal de Administração;<br><br>IV - um representante da Secretaria Municipal de Cultura, Esporte e Lazer;<br><br>V - um representante da Fundação Cultural Municipal Egberto Tavares Costa;<br><br>VI - um representante da Secretaria Municipal de Governo;<br><br>VII - um representante do Conselho Municipal de Educação;<br><br>VIII - um representante dos Conselhos Tutelares do Município;<br><br>IX - um representante dos professores da educação básica pública municipal;<br><br>X - um representante dos diretores das escolas públicas municipais de educação básica;<br><br>XI - um representante dos servidores municipais ocupantes de cargos técnicos - administrativos das escolas públicas municipais de educação básica;<br><br>XII - dois representantes dos pais de alunos da educação básica pública municipal;<br><br>XIII - dois representantes dos estudantes da educação básica pública municipal.<br><br>§ 1º os membros do Conselho, titulares e suplentes, serão indicados:<br><br>I - pelos dirigentes dos órgãos e entidades municipais nos casos de representação dessas instâncias;<br><br>II - através de processo eletivo organizado para esse fim, com o sufrágio dos respectivos pares nos casos dos representantes dos professores, diretores, servidores, pais de alunos, e estudantes.<br><br>§ 2º Indicados os conselhos na forma do artigo antecedente, o Chefe do Executivo Municipal nomeará os escolhidos.<br><br>§ 3º São impedidos de integrar o Conselho do FUNDEB:<br><br>I - o cônjuge e parentes consangüíneos e afins, até terceiro grau do prefeito, do vice-prefeito, secretários municipais e dirigentes de entidades da administração descentralizada do Município;<br><br>II - servidores municipais ou funcionários de empresas de assessoria ou consultoria que prestem serviços de tesouraria, contabilidade, ou relacionados à administração e controle interno de recursos do FUNDEB, bem como seus cônjuges e parentes consangüíneos e afins até terceiro grau;<br><br>III - estudantes que não sejam civilmente emancipados;<br><br>IV - pais de alunos que:<br><br>a) exerçam cargos ou funções públicas de livre nomeação e exoneração no âmbito do Município;<br>b) prestem serviços terceirizados no âmbito do Poder Executivo Municipal.<br><br>§ 4º O presidente do Conselho será eleito por seus pares em reunião do colegiado, sendo impedidos de ocupar a função os representantes do Poder Executivo.<br><br>§ 5º O Conselho atuará com autonomia, sem vinculação ou subordinação ao Poder Executivo.<br><br>§ 6º O mandato do conselheiro é de 2 (anos), permitida a recondução.<br><br>§ 7º A atuação dos membros do Conselho do FUNDEB:<br><br>I - não será remunerada;<br><br>II - é considerada atividade de relevante interesse social;<br><br>III - assegura isenção da obrigatoriedade de testemunhar sobre informações recebidas ou prestadas em razão do exercício de suas atividades como Conselheiro, e sobre as pessoas que lhes confiarem ou deles receberem informações;<br><br>IV - veda, quando os conselheiros forem servidores municipais, no curso do mandato:<br><br>a) exoneração ou demissão do cargo sem justa causa, ou transferência involuntária do Estabelecimento de Ensino onde atuem;<br>b) atribuição de falta injustificada ao serviço, em função das atividades do Conselho;<br>c) afastamento involuntário e injustificado da condição de Conselheiro antes do término do mandato.<br><br>§ 8º Ao Conselho incumbe, ainda, supervisionar o censo escolar anual, com objetivo de concorrer para o regular e tempestivo tratamento e encaminhamento e encaminhamento dos dados estatísticos e financeiros que alicerçam a operacionalização do FUNDEB.<br><br>§ 9º o Conselho não contará com estrutura administrativa própria, cabendo à Administração garantir enfara - estrutura e condições materiais adequadas à execução plena de suas competências.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Compete ao Conselho do FUNDEB:<br><br>I - acompanhar e controlar a repartição, transferência e aplicação de recursos do Fundo;<br><br>II - supervisionar a elaboração da proposta orçamentária anual do Poder Executivo em relação aos recursos do Fundo;<br><br>III - examinar os registros contábeis e demonstrativos gerenciais mensais relativos aos recursos repassados ou retidos à conta do Fundo;<br><br>IV - emitir parecer sobre as prestações de contas dos recursos do Fundo, que deverão ser disponibilizadas mensalmente pelo Poder Executivo.<br><br>V - elaborar a proposta do seu regimento interno que deverá ser aprovada pelo Executivo Municipal mediante edição de Decreto.<br><br>VI - outras atribuições que a legislação específica estabeleça.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> O Executivo Municipal diligenciará as providências necessárias para a escolha e nomeação dos conselheiros e instalação do Conselho do FUNDEB, no prazo de até 30 (trinta) dias a partir da publicação desta Lei.<br><br>Parágrafo Único - Os atuais membros do Conselho do FUNDEB permanecerão no exercício de suas atribuições até a posse dos conselheiros na forma deste artigo, devendo a estes transmitir todas as informações e documentos necessários.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Esta Lei entra em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 28 de Fevereiro de 2007.<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO MUNICIPAL<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

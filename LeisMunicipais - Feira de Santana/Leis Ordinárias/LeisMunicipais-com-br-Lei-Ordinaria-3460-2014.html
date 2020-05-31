@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3460</h2><br>AUTORIZA ABERTURA DE CRÉDITO ADICIONAL ESPECIAL, NA FORMA QUE INDICA, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O Prefeito Municipal de Feira de Santana, Estado da Bahia, no uso de suas atribuições, Faço Saber que a Câmara Municipal, através do Projeto de LEI Nº 49/2014, de autoria do Poder Executivo, decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica o Poder Executivo autorizado a abrir no Orçamento do Município, no corrente exercício, crédito adicional especial no valor de R$ 100.000,00 (cem mil reais), destinado a alocar recursos para o Elemento 93 - Indenizações e Restituições, modalidade de aplicação 90 - Aplicações Diretas, Grupo de Despesa 1 - Pessoal e Encargos Sociais, Categoria Econômica 3 - Despesas Correntes, na Atividade 2019 - &quot;Concessão de benefícios previdenciários&quot; (Código 09.272.058.2019), no Instituto de Previdência de Feira de Santana (Órgão 05 - Secretaria de Administração, Unidade 0521), conforme Anexo I.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Os recursos disponíveis para atender às despesas decorrentes do presente crédito especial ocorrerão por anulação de despesas no valor de R$ 100.000,00 (cem mil reais), conforme Anexo II.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Fica o Poder Executivo, havendo necessidade, respeitadas as demais prescrições constitucionais e nos termos da Lei nº 4.320/64, autorizado a fazer suplementação nas ações descritas no Anexo I desta Lei, obedecendo a limites estabelecidos no art. 6º da Lei Orçamentária Anual nº  <a class="link_law" data-id="1765947" data-original-title=" Data da Norma: 18.12.2013 - ESTIMA A RECEITA E FIXA A DESPESA DO MUNICÍPIO DE FEIRA DE SANTANA PARA O EXERCÍCIO FINANCEIRO DE 2014. (R$ 941.715.315,00) (LOA)" data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2013/343/3435/lei-ordinaria-n-3435-2013-estima-a-receita-e-fixa-a-despesa-do-municipio-de-feira-de-santana-para-o-exercicio-financeiro-de-2014-r-941715-315-00-loa" rel="tooltip">3.435</a>, de 18 de dezembro de 2013.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogando-se as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 14 de agosto de 2014.<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO MUNICIPAL<br><br>MÁRIO COSTA BORGES<br>CHEFE DE GABINETE DO PREFEITO<br><br>EXPEDITO CAMPODÔNIO ELOY<br>SECRETÁRIO MUNICIPAL DA FAZENDA<br><br>ANTÔNIO ALCIONE DA SILVA CEDRAZ<br>DIRETOR PRESIDENTE DO INSTITUTO DE PREVIDÊNCIA DE FEIRA DE SANTANA<br><br>ANEXO I<br>Órgão/Unidade 05.0521<br>Programática Econômica 09.272.058.2019<br>Fonte 3.1.90.93<br>Discriminação 0003 Indenizações e Restituições<br>Valor em..................................................................................R$ 100.000,00<br><br>TOTAL.....................................................................................R$ 100.000,00<br><br>ANEXO II<br><br>Órgão/Unidade 05.0521<br>Programática Econômica 09.272.058.2019<br>Fonte 3.1.90.01<br>Discriminação 0003 Aposentadorias e Reformas<br>Valor em..................................................................................R$ 100.000,00<br><br>TOTAL.....................................................................................R$ 100.000,00<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

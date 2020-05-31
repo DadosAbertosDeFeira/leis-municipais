@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3648 DE 08 DE DEZEMNRO DE 2016</h2><br>&quot;Autoriza o Executivo Municipal firmar Contrato de Comodato com o Movimento Integrado de Saúde Comunitária, e dá outras providências.&quot;<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, no uso de suas atribuições, faço saber que a Câmara Municipal, através do Projeto de Lei nº 94/2016, de autoria deste Poder Executivo, decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica o Município de Feira de Santana, por seu Poder Executivo, autorizado a firmar contrato de comodato com o Movimento Integrado de Saúde Comunitária, entidade sem fins lucrativos, inscrito no CNPJ nº 18.327.300/0001-45, com sede no Edifício Mandacaru, 4º Andar, sala 415, Rua Conselheiro Franco, nº 200, Centro, neste Município, tendo por objeto um imóvel situado em Chácara Localizada na Rua Lúcio Cerqueira, no Distrito de Tiquaruçu, neste Município, medindo 13.000 m² (treze mil metros quadrados).<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O comodato firmado entre as partes tem por objeto a utilização por parte do Comodatário do imóvel para implantação da Sede do Movimento Integrado de Saúde Comunitária, para atendimento de jovens e adultos em situação de vulnerabilidade social, ficando vedada a utilização do imóvel para outros fins, bem como realização de eventos com fins lucrativos e que colaborem para o enriquecimento de particulares.<br><br>Parágrafo único. O prazo do contrato de comodato é 10 (dez) anos, podendo ser renovado por igual período.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> As obrigações e responsabilidades atribuídas ao Comodante e ao Comodatário constam no contrato firmado entre ambos, conforme minuta que integra o Anexo I desta Lei.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Esta Lei entra em vigor na data de sua publicação.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Revogam-se as disposições em contrário<br><br>Gabinete do Prefeito Municipal, 08 de dezembro de 2016.<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO MUNICIPAL<br><br>MARIO COSTA BORGES<br>CHEFE DE GABINETE DO PREFEITO<br><br>CLEUDSON SANTOS ALMEIDA<br>PROCURADOR GERAL DO MUNICÍPIO<br><br>EXPEDITO CAMPODÔNIO ELOY<br>SECRETÁRIO MUNICIPAL DA FAZENDA<br><br>CARLOS ALBERTO OLIVEIRA BRITO<br>SECRETÁRIO MUNICIPAL DE PLANEJAMENTO<br><br>PUBLICADO NO DIÁRIO OFICIAL ELETRÔNICO DIA 09 DE DEZEMBRO DE 2016.<br><br>ANEXO I<br>CONTRATO DE COMODATO<br><br>Contrato de Comodato que entre si celebram o Município de Feira de Santana e o Movimento Integrado de Saúde Comunitária.<br><br>Pelo presente INSTRUMENTO PARTICULAR DE CONTRATO DE COMODATO que entre si fazem, de um lado, na qualidade de COMODANTE, o MUNICÍPIO DE FEIRA DE SANTANA, com sede na Avenida Senhor dos Passos, 980, Centro, Feira de Santana-BA, inscrito no CNPJ nº 14.043.574/0001-51, representado neste ato por seu Prefeito Municipal, o Sr. JOSÉ RONALDO DE CARVALHO, e de outro lado na qualidade de COMODATÁRIO, MOVIMENTO INTEGRADO DE SAÚDE COMUNITÁRIA, entidade sem fins lucrativos, com sede no Edifício Mandacaru, 4º Andar, sala 415, Rua Conselheiro Franco, nº 200, Centro, neste Município, inscrito no CNPJ sob o nº 18.327.300/0001-45, representado neste ato por Francineide Santos de Andrade Amorim, tem entre si justo e contratado o presente CONTRATO DE COMODATO, mediante as Cláusulas e condições abaixo, pelas quais se obrigam mutuamente:<br><br>CLÁUSULA PRIMEIRA: O COMODANTE, proprietário de um imóvel situado na Rua Lúcio Cerqueira, no Distrito de Tiquaruçu, neste Município, com área de 13.000 m² (treze mil metros quadrados), cede o referido imóvel em comodato, ao COMODATÁRIO, visando a implantação da Sede do Movimento Integrado de Saúde Comunitária, para atendimento de jovens e adultos em situação de vulnerabilidade social no Município de Feira de Santana.<br><br>§ 1º O bem identificado no caput desta cláusula encontra-se em perfeitas condições de uso.<br><br>§ 2º O presente contrato é a titulo gratuito, não gerando qualquer ônus ao COMODATÁRIO. CLAUSULA SEGUNDA - O prazo de duração do presente contrato é de 10 (dez) anos, podendo ser prorrogado por iguais e sucessivos períodos, a interesse das partes, passando a ter vigência a contar da data de publicação.<br><br>§ 1º O presente contrato poderá ser rescindido caso qualquer uma das partes descumpra o acordado neste instrumento, cabendo ao prejudicado perdas e danos.<br><br>§ 2º O imóvel cedido ao COMODATÁRIO será utilizado para:<br><br>a) Fins de serem desenvolvidas atividades na área educacional, cultural, social, profissionalizante, esportiva para atender a jovens e adultos em situação de vulnerabilidade social.<br>b) Fins assistenciais para atender jovens e adultos em situação de vulnerabilidade social.<br>c) Conservá-la, mantê-la limpa e apropriada para a realização de eventos fixados neste contrato.<br><br>CLÁUSULA TERCEIRA - O COMODATÁRIO não poderá dar ao imóvel destinações diversas das constantes na clausula anterior, tendo o COMODANTE, o direito na utilização do imóvel, para eventos municipais e outras atividades de interesse da comunidade, em data e horários estabelecidos pelo COMODATÁRIO.<br><br>CLAUSULA QUARTA - O COMODATÁRIO realizará todas as reformas que forem úteis e necessárias no imóvel, desde que previamente autorizadas pelo COMODANTE, sem alterar a estrutura física, não lhe cabendo, em nenhuma hipótese, qualquer direito de retenção ou indenização pelas benfeitorias nele realizadas, que ficarão incorporadas ao imóvel, para todos os efeitos, ficando ainda, responsável pela conservação do imóvel, obrigandose a devolvê-lo, findo o contrato, em perfeitas condições de uso e funcionamento.<br><br>CLAUSULA QUINTA - Caberá ao COMODATÁRIO a responsabilidade pelos pagamentos de quaisquer taxas, impostos, consumo de água, energia, telefones, despesas de manutenção e conservação incidentes sobre o imóvel.<br><br>CLÁUSULA SEXTA - O COMODATÁRIO responsabiliza-se por todos e quaisquer danos, avarias, prejuízos que possam ocorrer com o imóvel no todo ou em parte decorrentes de ações ou omissões de seus agentes, empregados ou terceiros, obrigando-se, nesses casos, a ressarcir o COMODANTE dos prejuízos causados ou recompor o imóvel ao estado físico em que se encontravam.<br><br>CLÁUSULA SÉTIMA - Caberá a ao Município vistoriar, a qualquer tempo, o imóvel cedido, em comodato, e no caso de descumprimento de qualquer das clausulas deste contrato, devendo adotar as medidas legais cabíveis.<br><br>CLÁUSULA OITAVA - Findo o comodato, qualquer que seja o motivo o COMODATARIO devolverá o imóvel cedido em perfeito estado de conservação e condições de uso.<br><br>CLÁUSULA NONA - As partes contratantes elegem o foro da Comarca de Feira de Santana, Estado da Bahia, com renúncia expressa de qualquer outro, por mais privilegiado que seja, para dirimir as questões oriundas de presente termo, que não puderem ser resolvidas em comum acordo.<br><br>E por estarem assim ajustadas, as partes assinam o presente contrato em 3 (três) vias de igual teor, juntamente com as testemunhas abaixo.<br><br>Feira de Santana-BA, ____ de _________de 2016.<br><br>MUNICÍPIO DE FEIRA DE SANTANA - Comodante<br>José Ronaldo de Carvalho (Prefeito)<br><br>MOVIMENTO INTEGRADO DE SAÚDE COMUNITÁRIA - Comodatário<br>Francineide Santos de Andrade Amorim<br><br>Testemunha:_______________________<br><br>Testemunha:_______________________<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

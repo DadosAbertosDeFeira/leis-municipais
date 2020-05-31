@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3412/2013.</h2><br>DISPÕE SOBRE A CRIAÇÃO DO PROGRAMA E ATENÇÃO INTEGRAL ÁS DOENÇAS FALCIFORMES NO ÂMBITO DO MUNICÍPIO DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 92/2013, de autoria do Edil Justiniano Oliveira França, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica criado o &quot;Programa de Promoção e Atenção Integral as Pessoas com Doenças Falciformes&quot;, sob coordenação da Secretaria Municipal de Saúde com participação da Diretoria de Atenção à Saúde e Diretoria de Vigilância de Saúde com o objetivo de:<br><br>I - reduzir a morbimortalidade e melhorar a qualidade de vida das pessoas com Doenças Falciformes;<br><br>II - disseminar informações relativas a Doenças Falciformicas;<br><br>III - apoiar e promover assistência ao portador de Doenças Falciformes.<br><br>Parágrafo Único - Entende-se por Doenças Falciformes as patologias decorrentes de uma mutação genética de caráter hereditário, que ocasiona a transformação da hemoglobina A em hemoglobina S, provocando problemas de oxigenação (anemias), crises dolorosas e hemorragias. A manifestação mais grave da Doença Falcifome é a Anemia Falciforme.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O &quot;Programa de Promoção e Atenção integral às Pessoas com Doenças Falciformes&quot;, deverá observar as seguintes diretrizes:<br><br>I - identificar a realidade epidemiológica da doença no Município através dos levantamentos dos usuários cadastrados na Atenção Básica;<br><br>II - articular-se com a Secretaria Estadual de Saúde para definir serviços de referência para diagnóstico das Doenças Falciformicas, e garantir acesso, com oferta do teste do pezinho, teste do afoiçamento, teste da mancha e eletroforese de hemoglobina, bem como o fornecimento dos medicamentos e suporte nutricional através de imunomodeladores de combate a Doença Falciforme;<br><br>III - definir na rede de saúde municipal serviços de referência para atenção às Doenças Falciformes;<br><br>IV - identificar, catalogar e integrar, no programa, instituições e organizações não governamentais (ONGs) atuantes na área;<br><br>V - promover ações educativas, visando informar a população e os profissionais da rede básica de saúde e da educação sobre as Doenças Falciformers;<br><br>VI - promover intercâmbio com especialistas atuantes nas universidades, em instituições de pesquisa e nos serviços de saúde diversos;<br><br>VII - promover a busca ativa de pessoas afetadas, através da rede básica de saúde;<br><br>VIII - articular-se com a Secretaria de Estado da Saúde para ofertar diagnóstico neonatal para identificação de Doenças Falciformes a todos os recém nascidos, após consentimento livre e esclarecido do responsável legal;<br><br>IX - cadastrar os pacientes com Doenças Faciformes nas Unidades de Saúde da Família, visando à coordenação de cuidados, garantindo o aconselhamento genético com privacidade, com sigilo e sem discriminação;<br><br>X - estimular e apoiar as associações de pessoas com Doenças Falciformes;<br><br>XI - elaborar material para educação comunitária (folhetos, cartilhas e vídeos e outros) de acordo com projetos específicos;<br><br>XII - realizar parcerias junto a entidades representativas do mesmo segmento;<br><br>XIII - incentivar a participação dos profissionais da área de saúde em cursos de atualização em diagnóstico e tratamento de Doenças Falciformes;<br><br>XIV - articula-se com a Secretaria de Saúde do Estado quando necessário para garantir a disponibilidade de vacinas e medicações como: anti-pneumococus, anti-hemophilus e anti-hepatite B e da penicilina benzatina, eritromicina, ácido fólico, hidrociuréia e deferocimina entre outras aos pacientes com Doenças Falciformes;<br><br>XV - articula-se com a Secretaria de Saúde do Estado quando necessário para garantir a disponibilidade de todos os insumos necessários para tratamentos de úlceras aos pacientes com Doenças Falciformes;<br><br>XVI - promover acesso de transporte para consultas e atendimentos personalizados aos portadores de Doenças Falciformes cadastrados no programa.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> O Poder Executivo através do órgão competente Secretaria Municipal de Saúde, definirá as ações para a execução do Programa de Promoção e Atenção Integral às Doenças Falciformes.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do prefeito, 05 de setembro de 2013.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito Municipal<br><br>MARIO COSTA BORGES<br>Chefe de gabinete do Prefeito<br><br>DENISE LIMA MASCARENAS<br>Secretária Municipal de Saúde<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

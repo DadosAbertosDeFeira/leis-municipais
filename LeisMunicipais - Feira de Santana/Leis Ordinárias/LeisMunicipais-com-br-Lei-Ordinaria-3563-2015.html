@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3563, DE 04 DE SETEMBRO DE 2015</h2><br>AUTORIZA O CHEFE DO PODER EXECUTIVO MUNICIPAL A PROCEDER À PERMUTA DE ÁREA DE PROPRIEDADE DO MUNICÍPIO, NA FORMA QUE ESPECIFICA, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O Prefeito Municipal de Feira de Santana, Estado da Bahia, no uso de suas atribuições, Faço saber que a Câmara Municipal, através do Projeto de LEI Nº 19/2015, do Executivo, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica o Chefe do Poder Executivo Municipal autorizado a permutar imóvel de propriedade do Município de Feira de Santana por imóvel que pertence ao Espólio do Sr. Antônio Alves Caribe, representado pela Inventariante, a Sra. Maria Denise Caribe Teixeira de Freitas, para fins de promover a instalação de um equipamento de lazer no Bairro da Queimadinha, nesta Cidade, compreendo um campo de futebol.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O imóvel de propriedade do Município de Feira de Santana a ser permutado compreende uma área de terra de uso institucional, situada no Loteamento denominado Loteamento Jardim França Caribe, Quadra X, no Bairro da Conceição, nesta Cidade de Feira de Santana, Estado da Bahia, aprovado pelo Decreto nº 3899, de 02 de julho de 1976, que pertence ao Sr. Lourimar Carvalhal Teixeira de Freitas, com superfície de 3.497,20m² (três mil quatrocentos e noventa e sete metros e vinte decímetros quadrados), conforme Matrícula nº 1999, do 1º Ofício do Cartório de Registro de Imóveis desta Comarca, avaliado em R$ 349.720,00(trezentos e quarenta e nove mil, setecentos e vinte reais), de acordo com o Laudo de Avaliação emitido pelo Departamento de Administração de Dados Fiscais, de 12 de junho de 2015, que fica autorizada a desafetação.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> O imóvel de propriedade do Espólio do Sr. Antônio Alves Caribe, representado pela Inventariante, a Sra. Maria Denise Caribe Teixeira de Freitas, a ser havido na permuta compreende os Lotes 1, 2, 3, 8, 9, 10, 11, 12 e 13 da Quadra II A, situada no Loteamento Parque Boa Vista, no Bairro Queimadinha, nesta Cidade, Município e Comarca de Feira de Santana, Estado da Bahia, com superfície de 3.185,15m² (três mil cento e oitenta e cinco metros e quinze decímetros quadrados), conforme Matrícula nº 57.456, do 1º Ofício do Cartório de Registro de Imóveis desta Comarca, avaliado em R$ 301.410,74(trezentos e um mil, quatrocentos e dez reais e setenta e quatro centavos), de acordo com o Laudo de Avaliação emitido pelo Departamento de Administração de Dados Fiscais, de 12 de junho de 2015.<br><br>Parágrafo único. Os imóveis passíveis de permuta, indicadas nos artigos 2º e 3º, têm seus limites fixados nas plantas que integram os Anexos I e II, desta Lei.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> A permuta de que trata esta Lei, se processará de igual para igual, com base na avaliação dos imóveis, em virtude do interesse de ambas as partes na referida permuta.<br><br>Parágrafo único. As avaliações dos imóveis estão fixadas nos Anexos III e IV, desta Lei.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Compete à Procuradoria Geral do Município, os trâmites necessários à escrituração das áreas.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Esta Lei entra em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 04 de setembro de 2015.<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO MUNICIPAL<br><br>MARIO COSTA BORGES<br>CHEFE DE GABINETE DO PREFEITO<br><br>CLEUDSON SANTOS ALMEIDA<br>PROCURADOR GERAL DO MUNICÍPIO<br><br>EXPEDITO CAMPODÔNIO ELOY<br>SECRETÁRIO MUNICIPAL DA FAZENDA<br><br>CARLOS ALBERTO OLIVEIRA BRITO<br>SECRETÁRIO MUNICIPAL DE PLANEJAMENTO<br><br>PUBLICADO NO DIÁRIO OFICIAL ELETRÔNICO DIA 05 DE SETEMBRO DE 2015<br><br><a class="btn btn-danger" href="https://leismunicipais.com.br/BA/FEIRA.DE.SANTANA/ANEXO-LEI-3563-2015-FEIRA-DE-SANTANA-BA.zip" title="Anexo - Lei nº 3563/2015 de Feira de Santana"><span style="font-weight:bold">Download:</span> Anexo - Lei nº 3563/2015 - Feira de Santana-BA</a><p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

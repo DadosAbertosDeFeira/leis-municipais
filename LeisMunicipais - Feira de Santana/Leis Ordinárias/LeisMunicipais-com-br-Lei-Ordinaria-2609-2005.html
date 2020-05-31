@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 2609/2005</h2><br>DISPÕE SOBRE A CONCESSÃO E O CANCELAMENTO DE INSCRIÇÃO MUNICIPAL DO MUNICIPIO DE FEIRA DE SANTANA PARA CONTRIBUINTES QUE REALIZEM OPERAÇÕES COM DERIVADOS DE PETRÓLEO, GÁS NATURAL E COMBUSTÍVEIS LÍQUIDOS CABURANTES E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Autor: Poder Executivo<br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, no uso de suas atribuições, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº , de autoria do Poder Executivo, decretoue eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> A concessão de inscrição no Cadastro de Contribuintes de publicidade, para contribuintes que realizem operações com derivados de petróleo, gás natural e suas frações recuperáveis, álcool e demais combustíveis líquidos carburante, ficará condicionada ao atendimento dos requisitos determinados para inscrição na Agência Nacional de Petróleo- ANP, além das demais disposições regulamentares.<br><br>Parágrafo Único - A apresentação de inscrição válida junto à Agência Nacional de Petróleo - ANP induz o atendimento dos requisitos mencionados no caput deste artigo.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Será cancelada ex oficio a inscrição no Cadastro de Contribuintes Municipais do estabelecimento do contribuinte que adquirir distribuir, transportar, estocar ou revender derivados de petróleo, gás natural e suas frações recuperáveis, álcool e demais combustíveis líquidos carburantes em desconformidade com as especificações estabelecidas pela Agência Natural de Petróleo - ANP.<br><br>Parágrafo Único - A desconformidade deverá ser comprovada por meio de laudo elaborado pela ANP ou por entidade por ela credenciada.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> O cancelamento da inscrição na forma do artigo antecedente implica:<br><br>I - No cancelamento imediato de todas as licenças expedidas em nome do contribuinte, atingindo todos os estabelecimentos situados no território do Município.<br><br>II - Na proibição aos administradores e sócios da empresa:<br><br>a) de participarem de outra empresa no âmbito do Município que tenha objeto social no mesmo ramo de atividade;<br>b) de obterem nova inscrição para nova empresa no âmbito do Município que tenha objetivo social no mesmo ramo de atividade.<br><br>Parágrafo Único - As restrições previstas no Art. 2º, desta Lei, subsistirão pelo prazo de cinco anos, contados da data do efetivo cancelamento.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Na aplicação desta Lei será sempre assegurado o contraditório e a ampla defesa.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 29 de agosto de 2005.<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO MUNICIPAL<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

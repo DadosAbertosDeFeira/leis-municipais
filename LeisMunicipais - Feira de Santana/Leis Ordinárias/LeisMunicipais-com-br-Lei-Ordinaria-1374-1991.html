@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 1374, de 03 de abri de 1991</h2><br>ESTABELECE OBRIGATORIEDADE DE PRESTAÇÃO DE CONTAS DE RECURSOS RECEBIDOS POR ENTIDADES, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, FAÇO saber que a Câmara Municipal decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> As entidades BENEFICIADAS com recursos públicos municipais, ficam obrigadas a apresentar sempre que obtiverem dotações orçamentárias, convênios ou doações, prestação de contas junto ao Poder Executivo Municipal.<br><br>Parágrafo Único - O prazo para a prestação de contas será até o último dia útil de janeiro subseqüente ao ano do recebimento do recurso.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> A Prefeitura Municipal, através do seu titular maior, apresentará à Câmara Municipal, até o último dia útil do mês de fevereiro subseqüente ao ano do recebimento do recurso, relação das entidades que obtiveram benefícios públicos e que não apresentaram a prestação de contas na forma da Lei.<br><br>Parágrafo Único - No exercício subseqüente, quando à época da nova lista, em existindo entidades que não regularizaram a situação de anos anteriores, serão novamente listadas para conhecimento do Poder Legislativo e para as medidas legais que possam ser desencadeadas dentro do seu limite e competência.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Toda entidade para receber benefícios do Poder Público Municipal deve estar devidamente reconhecida de Utilidade Pública pela Câmara Municipal conforme a Legislação em vigor.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> A entidade que não prestar contas dos recursos recebidos do Município, além de não poder estabelecer qualquer relação com o Poder Público Municipal, até a devida regularização, pode ter sua condição de Utilidade Pública revogadas se não normalizar a situação até último dia útil do ano subseqüente ao do recurso.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Os recursos públicos transferidos à entidades, de acordo com o art. 1º desta Lei, que ultrapassarem 1.000 (mil) BTN`S, ou parâmetro que venha a substituir, deverão apresentar PLANO DE APLICAÇÃO para o recebimento do benefício.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Prefeitura Municipal de Feira de Santana, em 03 de abril de 1991.<br><br>DR. COLBERT MARTINS DA SILVA<br>Prefeito<br><br>Autor: Hosannah Leite<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

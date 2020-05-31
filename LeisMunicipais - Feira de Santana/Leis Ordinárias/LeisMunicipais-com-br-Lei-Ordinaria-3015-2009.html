@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3015/2009</h2><br>ALTERA DISPOSITIVO DAS LEIS Nº <a class="link_law" data-id="1544108" data-original-title=" Data da Norma: 29.06.2009 - DISPÕE SOBRE O ENQUADRAMENTO E DELIMITAÇÃO DAS ÁREAS DESTINADAS A IMPLEMENTAÇÃO DO PROGRAMA MINHA CASA MINHA VIDA COMO ZONAS ESPECIAIS DE INTERESSE SOCIAL - ZEIS E DEFINE OS PARÂMETROS URBANOS PARA O PROGRAMA PARA A RENDA DE 0 A 3 SALÁRIOS MÍNIMOS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2009/298/2987/lei-ordinaria-n-2987-2009-dispoe-sobre-o-enquadramento-e-delimitacao-das-areas-destinadas-a-implementacao-do-programa-minha-casa-minha-vida-como-zonas-especiais-de-interesse-social-zeis-e-define-os-parametros-urbanos-para-o-programa-para-a-renda-de-0-a-3-salarios-minimos" rel="tooltip">2.987</a>/09, <a class="link_law" data-id="1544109" data-original-title=" Data da Norma: 29.06.2009 - ATUALIZA DADOS DO CADASTRO IMOBILIÁRIO DO MUNICÍPIO DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2009/298/2988/lei-ordinaria-n-2988-2009-atualiza-dados-do-cadastro-imobiliario-do-municipio-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">2.988</a>/09 E <a class="link_law" data-id="1555755" data-original-title=" Data da Norma: 27.12.2002 - ATUALIZA OS VALORES PARA TERRENOS E EDIFICAÇÕES CONSTANTES DAS TABELAS ANEXAS À LEI Nº 2303, DE 27/12/2001, PARA EFEITO DE AVALIAÇÃO DAS UNIDADES IMOBILIÁRIAS E LANÇAMENTO DO IMPOSTO PREDIAL E TERRITORIAL URBANO DO EXERCÍCIO DE 2003, E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2002/239/2395/lei-ordinaria-n-2395-2002-atualiza-os-valores-para-terrenos-e-edificacoes-constantes-das-tabelas-anexas-a-lei-n-2303-de-27-122001-para-efeito-de-avaliacao-das-unidades-imobiliarias-e-lancamento-do-imposto-predial-e-territorial-urbano-do-exercicio-de-2003-e-da-outras-providencias" rel="tooltip">2.395</a>/02, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Autor: Poder Executivo<br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia; FAÇO saber que a Câmara Municipal, através do projeto de Lei nº 219/2009, deste Poder Executivo, decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> O Artigo 8º da lei nº  <a class="link_law" data-id="1544108" data-original-title=" Data da Norma: 29.06.2009 - DISPÕE SOBRE O ENQUADRAMENTO E DELIMITAÇÃO DAS ÁREAS DESTINADAS A IMPLEMENTAÇÃO DO PROGRAMA MINHA CASA MINHA VIDA COMO ZONAS ESPECIAIS DE INTERESSE SOCIAL - ZEIS E DEFINE OS PARÂMETROS URBANOS PARA O PROGRAMA PARA A RENDA DE 0 A 3 SALÁRIOS MÍNIMOS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2009/298/2987/lei-ordinaria-n-2987-2009-dispoe-sobre-o-enquadramento-e-delimitacao-das-areas-destinadas-a-implementacao-do-programa-minha-casa-minha-vida-como-zonas-especiais-de-interesse-social-zeis-e-define-os-parametros-urbanos-para-o-programa-para-a-renda-de-0-a-3-salarios-minimos" rel="tooltip">2.987</a>, de 29 de junho de 2009, passa a vigorar com a seguinte redação:<br><br>&quot;Art. 8º Ficam isentos do Imposto Sobre Serviços de Qualquer Natureza (ISSQN) os serviços classificados no subitem &quot;7.02&quot; da lista de Serviços a que se refere o Artigo 112, da lei Complementar Municipal nº 003/2000, prestados ou contratados pelas construtoras responsáveis pelos empreendimentos aprovados e contratados pela Caixa Econômica Federal, no âmbito do Programa Minha casa Minha vida, destinados ás famílias com renda de 0 a 3 salários mínimos.&quot;<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O artigo 11 da Le nº  <a class="link_law" data-id="1544108" data-original-title=" Data da Norma: 29.06.2009 - DISPÕE SOBRE O ENQUADRAMENTO E DELIMITAÇÃO DAS ÁREAS DESTINADAS A IMPLEMENTAÇÃO DO PROGRAMA MINHA CASA MINHA VIDA COMO ZONAS ESPECIAIS DE INTERESSE SOCIAL - ZEIS E DEFINE OS PARÂMETROS URBANOS PARA O PROGRAMA PARA A RENDA DE 0 A 3 SALÁRIOS MÍNIMOS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2009/298/2987/lei-ordinaria-n-2987-2009-dispoe-sobre-o-enquadramento-e-delimitacao-das-areas-destinadas-a-implementacao-do-programa-minha-casa-minha-vida-como-zonas-especiais-de-interesse-social-zeis-e-define-os-parametros-urbanos-para-o-programa-para-a-renda-de-0-a-3-salarios-minimos" rel="tooltip">2.987</a>, de 29 de junho de 2009, e seu parágrafo primeiro, passam a vigorar com a seguinte redação:<br><br>&quot;Art. 11. Fica autorizado o poder Executivo Municipal, após o prazo de cinco anos, a prorrogar o beneficio de que trata o artigo 9º, se assim entender, por mais cinco anos, completando o prazo de vigência dos contratos de alienação do imóvel, no âmbito do Programa Minha Casa Minha Vida.<br><br>§ 1º A prorrogação de que trata este artigo dependerá de avaliação das Secretarias Municipais da Fazenda e de Habitação e Regularização Fundiária.&quot;<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> O Artigo 6º da lei nº  <a class="link_law" data-id="1544109" data-original-title=" Data da Norma: 29.06.2009 - ATUALIZA DADOS DO CADASTRO IMOBILIÁRIO DO MUNICÍPIO DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2009/298/2988/lei-ordinaria-n-2988-2009-atualiza-dados-do-cadastro-imobiliario-do-municipio-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">2988</a>, de 29 de junho de 2009, passa á vigorar com a seguinte redação:<br><br>&quot;Art. 6º Ao proprietário de terrenos sem edificação ou em que houver edificação interditada, paralisada, condenada, em reinas ou em denominação, comunicar alteração de seu domicilio tributário ou indicar endereço para entrega do carne anual do IPTU será concedido o beneficio previsto nos incisos I, III e IV do artigo 2º desta lei&quot;<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Ficam acrescidos ao artigo 19 da lei  <a class="link_law" data-id="1555755" data-original-title=" Data da Norma: 27.12.2002 - ATUALIZA OS VALORES PARA TERRENOS E EDIFICAÇÕES CONSTANTES DAS TABELAS ANEXAS À LEI Nº 2303, DE 27/12/2001, PARA EFEITO DE AVALIAÇÃO DAS UNIDADES IMOBILIÁRIAS E LANÇAMENTO DO IMPOSTO PREDIAL E TERRITORIAL URBANO DO EXERCÍCIO DE 2003, E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2002/239/2395/lei-ordinaria-n-2395-2002-atualiza-os-valores-para-terrenos-e-edificacoes-constantes-das-tabelas-anexas-a-lei-n-2303-de-27-122001-para-efeito-de-avaliacao-das-unidades-imobiliarias-e-lancamento-do-imposto-predial-e-territorial-urbano-do-exercicio-de-2003-e-da-outras-providencias" rel="tooltip">2.395</a>, de 27 de dezembro de 2002, os seguintes parágrafos:<br><br>&quot;§ 1º O beneficio fiscal previsto neste artigo abrange, apenas, a parcela correspondente ao valor da construção. Sua concessão será feita mediante apresentação do &quot;Habite - se&quot; e obedecerá aos seguintes critérios:<br><br>I - 100% (cem por cento), desde que, durante a construção, sejam gerados, pelo menos, 50 (cinquenta) empregos diretos, considerando a media mensal;<br><br>II - 80% (oitenta por cento), desde que, durante a construção, sejam gerados, pelo menos, 40 (quarenta) empregos diretos, considerando a média mensal;<br><br>III - 60% (sessenta por cento), desde que, durante a construção, sejam gerados, pelo menos, 30 (trinta) empregos diretos, considerando a média mensal;<br><br>IV - 40% (quarenta por cento), desde que, durante a construção, sejam gerados, pelo menos, 20 (vinte) empregos diretos, considerando a media mensal;<br><br>V - 20% (vinte por cento), desde que, durante a construção, sejam gerados, pelo menos, 10 (dez) empregos diretos, considerando a média mensal.<br><br>§ 2º Para efeitos do número de empregos indicados no parágrafo precedente, será considerada a soma envolvendo:<br><br>I - Os empregos gerados pela empresa beneficiada com o incentivo;<br><br>II - Os empregos gerados no município pelas subempreiteiras eventualmente contratadas pela empresa beneficiadas com o incentivo.<br><br>§ 3º Se comprometer, na hipótese de empresas novas, a manter, no mínimo 20 (cinquenta) empregos diretos após a sua implantação.<br><br>§ 4º O não cumprimento do disposto no parágrafo anterior implica na suspensão do beneficio proporcionalmente ao mínimo de empregos exigidos.<br><br>§ 5º Nas situações de ampliação, deverá aumentar o quadro de pessoal em pelo menos, 20% (vinte por cento) no 1º ano, mantendo esse percentual mínimo durante a concessão do beneficio.<br><br>§ 6º A apuração de inveracidade nas informações prestadas pelo contribuinte implicará em cancelamento do beneficio, além da reconstituição do credito tributário no exercício atual e anteriores.&quot;<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Esta Lei entrará em vigor na data de sua publicação, retroagindo os efeitos dos artigos 1º, 2º e 3º a 30 de junho de 2009, revogadas as disposições em contrário.<br><br>PREFEITURA MUNICIPAL DE FEIRA DE SANTANA, em 16 de Outubro de 2009.<br><br>DR.TARCÍZIO SUZART PIMENTA JÚNIOR<br>Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

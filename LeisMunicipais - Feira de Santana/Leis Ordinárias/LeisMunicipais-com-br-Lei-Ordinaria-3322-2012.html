@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3322, DE 22 DE MAIO DE 2012.</h2><br>AUTORIZA A ABERTURA DE CRÉDITO ESPECIAL, NA FORMA QUE INDICA, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O Prefeito Municipal de Feira de Santana, Estado da Bahia, no uso de suas atribuições, faço saber que a Câmara Municipal, através do Projeto de Lei nº 50/2012, deste Poder Executivo, decreta e eu sanciono a seguinte Lei.<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica o Poder Executivo autorizado a abrir aos Orçamentos do Município, no corrente exercício, crédito especial no valor de R$ 130.844,90 (cento e trinta mil, oitocentos e quarenta e quatro reais e noventa centavos), referente aos convênios 038/2012 e 039/2012 firmados com o Governo do Estado da Bahia, através da Secretaria de Desenvolvimento Social e Combate à Pobreza - Coordenação de Defesa Civil (CORDEC), destinado a proceder ações de combate à estiagem prolongada que assola a Zona Rural do Município, conforme Anexo I.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O crédito de que trata esta Lei será custeado com os recursos demonstrados no seu Anexo II, na forma do disposto no art. 6º, inciso I, da Lei nº  <a class="link_law" data-id="1569145" data-original-title=" Data da Norma: 28.12.2011 - ESTIMA A RECEITA A FIXA A DESPESA DO MUNICÍPIO DE FEIRA DE SANTANA PARA O EXERCÍCIO FINANCEIRO DE 2012. (R$ 659.795.267,00)" data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2011/329/3299/lei-ordinaria-n-3299-2011-estima-a-receita-a-fixa-a-despesa-do-municipio-de-feira-de-santana-para-o-exercicio-financeiro-de-2012-r-659795-267-00" rel="tooltip">3299</a>, de 28 de dezembro de 2011.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Esta Lei entrará em vigor na data de sua publicação.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Revogam-se as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 21 de maio 2012.<br><br>TARCÍZIO SUZART PIMENTA JÚNIOR<br>Prefeito Municipal<br><br>MILTON PEREIRA DE BRITTO<br>Chefe de Gabinete do Prefeito<br><br>WAGNER WALTER GONÇALVES DOS SANTOS<br>Secretário Municipal da Fazenda<br><br>OZENY JOSÉ MORAES CERQUEIRA<br>Secretário Municipal de Agricultura, Recursos Hídricos e Desenvolvimento Rural<br><br><a class="btn btn-danger" href="https://leismunicipais.com.br/BA/FEIRA.DE.SANTANA/A3322-2012.zip"><span style="font-weight:bold">Download:</span> Anexos</a><p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

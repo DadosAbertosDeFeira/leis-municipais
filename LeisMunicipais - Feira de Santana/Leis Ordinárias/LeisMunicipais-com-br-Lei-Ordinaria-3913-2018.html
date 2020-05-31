@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3913, DE 13 DE DEZEMBRO DE 2018.</h2><br>Dispõe sobre o repasse de recursos públicos municipais para as Organizações da Sociedade Civil, mediante de Termo de Colaboração e Termo de Fomento, para execução orçamentária no exercício de 2019 e dá outras providências.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, no uso de suas atribuições. Faço saber que a Câmara Municipal, através do Projeto de LEI Nº 180/2018, deste Poder Executivo, decretou e eu sanciono a seguinte Lei Municipal.<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica o Poder Executivo Municipal autorizado a conceder recursos, mediante Termo de Colaboração e Termo de Fomento às Organizações da Sociedade Civil, conforme disposto no art. 16 da Lei Federal nº 4.320/64, art. 26 da Lei Complementar nº 101/2000 e Lei Federal nº 13.019/2014 e suas modificações.<br><br>Parágrafo único. As entidades relacionadas no Anexo I desta Lei deverão obrigatoriamente desenvolver atividades no Município de Feira de Santana, ou em benefício deste.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> As entidades beneficiadas com os recursos públicos deverão observar a legislação pertinente, especialmente a Lei Federal nº 13.019/14, o Decreto Municipal nº <a class="link_law" data-id="" data-original-title=" Data da Norma: .. - " data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/decreto/2017/1016/10166/decreto-n-10166-2017-este-ato-ainda-nao-esta-disponivel-no-sistema" rel="tooltip">10.166</a>/17 e outras normas regulamentadoras, tanto para recebimento dos recursos pleiteados, quanto para a respectiva prestação de contas.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> A relação das entidades listadas no Anexo I é válida apenas para recebimento de recursos procedentes do Orçamento de 2019.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Esta Lei não fixa direitos de recebimento de recursos pelas entidades relacionadas no Anexo I, cabendo ao Poder Executivo o uso do direito discricionário de proceder ou não aos repasses, conforme suas disponibilidades orçamentárias e financeiras.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Esta Lei entra vigor na data de sua publicação, revogas as disposições em contrário.<br><br>Gabinete do Prefeito, 13 de dezembro de 2018.<br><br>COLBERT MARTINS DA SILVA FILHO<br>PREFEITO MUNICIPAL<br><br>MARIO COSTA BORGES<br>CHEFE DE GABINETE DO PREFEITO<br><br>CLEUDSON SANTOS ALMEIDA<br>PROCURADOR GERAL DO MUNICÍPIO<br><br>PUBLICADO NO DIÁRIO OFICIAL DIA 14 DE DEZEMBRO DE 2018<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

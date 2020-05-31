@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 2398/2003</h2><br>CRIA O CONSELHO MUNICIPAL DE SEGURANÇA DO MUNICÍPIO DE FEIRA DE SANTANA E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Autor: Poder Executivo<br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, no uso de suas atribuições, Faço saber que a Câmara Municipal decretou e eu sanciono a seguinte Lei:<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> I<br>DAS DISPOSIÇÕES PRELIMINARES<br></span></span><br><br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> A Segurança Pública, dever do estado, direito e responsabilidade de todos, realizar-se-á por meio de um conjunto integrado de ações, de iniciativa pública e da sociedade, cabendo ao Poder Público local a cooperação através da Política Municipal de Apoio aos Órgãos de Segurança Pública, visando à preservação da ordem pública e a incolumidade das pessoas e do patrimônio público e particular no território do Município.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Fica assegurado na forma da Lei, o caráter democrático na formulação da política e no controle de ações de Segurança pública no Município, com a participação da sociedade civil, através dos seus representantes no Conselho.<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> II<br>DO CONSELHO MUNICIPAL DE SEGURANÇA<br></span></span><br><br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Fica criado o Conselho Municipal de Segurança Pública de Feira de Santana - CMSPFS, órgão colegiado de caráter consultivo, com finalidade de promover a interação entre os segmentos da sociedade civil e os órgãos incumbidos da formulação, execução e controle das políticas e ações de segurança pública no âmbito do Município.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Ao CMSPFS compete:<br><br>I - deliberar acerca da política de apoio aos Órgãos de Segurança Pública através de plano anual de atividade de cooperação;<br><br>II - sugerir aplicações para o Fundo Municipal de Segurança - FMS;<br><br>III - zelar pela atuação harmônica dos Órgãos de Segurança do Município;<br><br>IV - promover estudos e pesquisas relativos a questão da segurança pública de sorte a subsidiar as suas atividades;<br><br>V - receber e encaminhar às autoridades competentes sugestões e as petições, representações e denúncias formadas por pessoas físicas ou entidades, quando da constatação de abuso de poder ou desrespeito à pessoa humana ou à comunidade como um todo, causado pela atuação de órgãos ou agentes da Segurança Pública no Município;<br><br>VI - manter intercâmbio e cooperação com órgãos públicos ou privados, nacionais ou internacionais, voltados para a promoção da Segurança Pública;<br><br>VII - organizar e congregar os Conselhos Comunitários de Segurança;<br><br>VIII - redigir e publicar trabalhos, emitir pareceres, promover seminários, palestras e outros eventos, de forma a incentivar e divulgar a participação e a colaboração da sociedade civil;<br><br>IX - elaborar o seu regime interno;<br><br>X - exercer outras atividades correlatas.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> O CMSPFS é autônomo nas suas ações, ficando vinculado à Secretaria Municipal de Governo, dentro da estrutura organizacional do Executivo Municipal.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> O CMSPFS será formado por 20 (vinte) membros no mínimo, e sua composição se efetivará com a indicação dos seguintes conselheiros:<br><br>I - o Secretário Municipal de Governo, que o presidirá;<br><br>II - o Secretário Executivo do CMSPFS;<br><br>III - um representante da Procuradoria Geral do Município;<br><br>IV - um representante da Polícia Militar do Estado da Bahia;<br><br>V - um representante da Polícia Civil do Estado da Bahia;<br><br>VI - um representante do Poder Judiciário;<br><br>VII - um representante do Ministério Público Estadual;<br><br>VIII - um representante do Corpo de Bombeiros do Estado da Bahia;<br><br>IX - um representante da Circunscrição Regional de Trânsito do Município de Feira de Santana;<br><br>X - um representante da Superintendência Municipal de Trânsito do Município de Feira de Santana;<br><br>XI - um representante da Secretaria Municipal de Educação;<br><br>XII - um representante da Secretaria Municipal de Desenvolvimento Social;<br><br>XIII - um representante da Polícia Rodoviária Federal;<br><br>XIV - um representante da Associação Comercial de Feira de Santana;<br><br>XV - um representante de Associações de Moradores com sede em Feira de Santana;<br><br>XVI - um representante da Arquidiocese de Feira de Santana;<br><br>XVII - um representante das Igrejas Evangélicas com sede em Feira de Santana;<br><br>XVIII - um representante da OAB, subseccional de Feira de Santana;<br><br>XIX - um representante dos Clubes de Serviço de Feira de Santana;<br><br>XX - um representante do Conselho Regional de Engenharia de Feira de Santana;<br><br>XXI - um representante das Lojas Maçônicas de Feira de Santana;<br><br>XXII - um representante do Centro das Indústrias de Feira de Santana;<br><br>XXIII - um representante do Conselho Municipal dos Direitos da Criança e Adolescente<br><br>XXIV - um representante da CDL - Câmara dos Diretores Lojistas;<br><br>XXV - um representante dos Conselhos Comunitários de Segurança;<br><br>XXVI - um representante das entidades de condutores profissionais de veículos de transporte público;<br><br>XXVII - um representante da Delegacia do sindicato da Polícia Civil do estado da Bahia em Feira de Santana;<br><br>§ 1º Instituições ou entidades, ao indicarem os conselheiros efetivos, designarão também os respectivos suplentes, permitindo, assim, a substituição dos primeiros nas suas faltas e impedimentos com duração superior a 30 (trinta) dias.<br><br>§ 2º A participação dos servidores municipais no Conselho ocorrerá sem prejuízo do exercício das atividades que desempenham no Município.<br><br>§ 3º A escolha dos conselheiros que representem um conjunto de entidades não-governamentais, dar-se-á por assembléia convocada por edital para tal finalidade e, em sendo deserta a reunião, a nomeação será de livre escolha do Prefeito Municipal.<br><br>§ 4º O mandato dos conselheiros será de 2 (dois) anos, permitida a recondução.<br><br>§ 5º O exercício da função de conselheiro será considerado serviço público relevante e não será remunerado.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> O CMSPFS será dirigido pelo Presidente e, nas suas ausências e impedimentos pelo Secretário Executivo.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> A estrutura do CMSPFS é a seguinte:<br><br>I - Plenário;<br><br>II - Presidência;<br><br>III - Secretaria Executiva;<br><br>IV - Câmaras Temáticas.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> As Câmaras Temáticas serão constituídas para relatarem matérias específicas e serão permanentes ou temporárias, sendo sua composição e atribuições definidas no Regimento interno do conselho.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10 -</span></a> Fica criado o Conselho Municipal de Segurança Pública de Feira de Santana - CMSPFS, para captação e aplicação dos recursos a serem empregados, de acordo com a Política de Apoio aos Órgãos de Segurança Pública no Município.<br><br>Parágrafo Único - O FMSP será vinculado à Secretaria Municipal de Governo, cabendo ao seu respectivo titular, juntamente com o Prefeito Municipal, a sua movimentação, de acordo com o plano de aplicação elaborado pelo CMSPFS.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11 -</span></a> Constituem receita do FMSP:<br><br>I - dotação específica a ser consignada na Lei Orçamentária Municipal e verbas adicionais estabelecidas em Lei;<br><br>II - doações, auxílios, contribuições, subvenções e transferências de entidades ou organizações governamentais ou não-governamentais, pessoas físicas ou jurídicas, nacionais ou internacionais;<br><br>III - produto das aplicações dos recursos do Fundo no Mercado financeiro;<br><br>IV - produto da venda de materiais, publicações, eventos ou da prestação de serviço;<br><br>V - recursos provenientes de concursos, prognósticos e sorteios de loterias, no âmbito do Município;<br><br>VI - outros recursos que lhe forem destinados.<br><br><a name="artigo_12"><span class="label label-pill label-danger">Art. 12 -</span></a> O FMSP, com objetivo de apoiar as ações dos Órgãos de Segurança Pública no Município, dará a seus recursos a destinação planejada pelo CMSPFS, priorizando:<br><br>I - aquisição de bens móveis ou imóveis, que poderão ser repassados aos Órgãos de Segurança em regime de comodato;<br><br>II - reforma ou manutenção de bens móveis ou imóveis, utilizados nas ações de segurança pública;<br><br>III - aquisição de materiais e equipamentos a serem utilizados nas ações de segurança pública.<br><br>Parágrafo Único - A reforma ou manutenção de bens, não pertencentes ao Município de Feira de Santana, bem como o repasse de materiais e equipamentos, dependerão de convênio firmado entre os Órgãos de Segurança do Município, ouvido o CMSPFS.<br><br><a name="artigo_13"><span class="label label-pill label-danger">Art. 13 -</span></a> Em relação ao Fundo, o CMSPFS terá as seguintes atribuições:<br><br>I - elaborar o Plano de Aplicações dos seus recursos, fiscalizando a sua execução;<br><br>II - estabelecer parâmetros técnicos e diretrizes para aplicação desses recursos;<br><br>III - acompanhar e avaliar o emprego e resultados obtidos com a sua aplicação, solicitando a qualquer tempo e a seu critério, as informações que julgar necessárias a este acompanhamento;<br><br>IV - avaliar o balanço anual, preparando um relatório das ações desenvolvidas às expensas do Fundo;<br><br>V - mobilizar os diversos segmentos da sociedade no planejamento, execução e controle das ações e do FMS.<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> IV<br>DAS DISPOSIÇÕES GERAIS E TRANSITÓRIAS<br></span></span><br><br><br><a name="artigo_14"><span class="label label-pill label-danger">Art. 14 -</span></a> A organização e funcionamento do CMSPFS serão estabelecidos em regimento interno, proposto pelos integrantes do colegiado e aprovado por Decreto do Chefe do Executivo.<br><br><a name="artigo_15"><span class="label label-pill label-danger">Art. 15 -</span></a> Fica criado na estrutura organizacional da Prefeitura Municipal, na Secretaria Municipal de Governo, o cargo de Secretário Executivo do CMSPFS, de provimento temporário e símbolo DA-1.<br><br><a name="artigo_16"><span class="label label-pill label-danger">Art. 16 -</span></a> O Poder Executivo Municipal promoverá gestões com vistas a instalar o CMSPFS em 60 (sessenta) dias, contados da aprovação desta Lei.<br><br><a name="artigo_17"><span class="label label-pill label-danger">Art. 17 -</span></a> O Fundo Municipal de Segurança Pública - FMSP, será regulamentado por Decreto pelo Chefe do Poder Executivo.<br><br><a name="artigo_18"><span class="label label-pill label-danger">Art. 18 -</span></a> Para atender as despesas de instalação e funcionamento do Conselho, além da criação do Fundo, fica o Poder Executivo autorizado a utilizar os créditos constantes da rubrica no orçamento do Município.<br><br><a name="artigo_19"><span class="label label-pill label-danger">Art. 19 -</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 23 de janeiro de 2003.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

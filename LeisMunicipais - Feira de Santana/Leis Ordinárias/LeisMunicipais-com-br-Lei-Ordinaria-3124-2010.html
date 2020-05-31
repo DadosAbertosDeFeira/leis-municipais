@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3124/2010</h2><br>CRIA O SERVIÇO DE INSPEÇÃO MUNICIPAL DE FEIRA DE SANTANA - SIM, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Autor: Poder Executivo<br><br>O Prefeito Municipal de Feira de Santana, Estado da Bahia, no uso de suas atribuições, FAÇO saber que a Câmara Municipal de Feira de Santana, através do Projeto de Lei Nº 135/2010, de autoria deste Poder Executivo, decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> O SIM - Serviço de Inspeção Municipal de Feira de Santana fica criado de acordo com a Lei Federal nº 8.171, de 17 de janeiro de 1991 e suas alterações e o Decreto Federal nº 5.741, de 30 de março de 2006, que constituíram o Sistema Unificado de Atenção à Sanidade Agropecuária - SUASA.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O Serviço de Inspeção Municipal de Feira de Santana - SIM será realizado pela Secretaria Municipal de Agricultura, Recursos Hídricos e Desenvolvimento Rural com o auxílio da Secretaria Municipal de Saúde, e tem como finalidade inspecionar e fiscalizar sanitariamente a industrialização, o beneficiamento e a comercialização de bebidas e alimentos de consumo humano de origem animal e vegetal no Município, na forma desta Lei.<br><br>§ 1º Considera-se inspeção sanitária o processo sistemático de acompanhamento, avaliação e controle sanitário, compreendido da matéria-prima até à elaboração do produto final.<br><br>§ 2º Quando se tratar de abatedouro será obrigatória a presença permanente do SIM no momento de abate de animais, para a inspeção ante e pós morten dos mesmos e a posterior verificação de suas carcaças.<br><br>§ 3º Considera-se fiscalização sanitária o controle sanitário das bebidas e produtos alimentícios de origem animal e vegetal após a etapa de elaboração, compreendido na armazenagem, no transporte, na distribuição e na comercialização até o consumo final.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> O SIM desenvolverá as atividades de inspeção sanitária:<br><br>I - nos estabelecimentos que recebem animais, matérias-primas, produtos, subprodutos e seus derivados, de origem animal e vegetal para beneficiamento ou industrialização, com o objetivo de produção de bebidas e alimentos de consumo humano, excluídos os restaurantes, padarias, pizzarias, bares e similares, cuja fiscalização ficará a cargo do serviço de Vigilância Sanitária da Secretaria Municipal de Saúde;<br><br>II - nas propriedades rurais fornecedoras de matérias-primas de origem animal e vegetal, em caráter complementar e com a parceria da defesa sanitária animal e vegetal, para identificar as causas de problemas sanitários apurados na matéria-prima e/ou nos produtos no estabelecimento industrial.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> A fiscalização sanitária será de responsabilidade da Secretaria Municipal de Saúde, através da Vigilância Sanitária, a ocorrer em restaurantes, padarias, pizzarias, bares e similares.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> A Secretaria Municipal de Agricultura e Recursos Hídricos e Desenvolvimento Rural poderá estabelecer parceria e cooperação técnica com Municípios, o Estado da Bahia e a União, além de participar de consórcio de Municípios para facilitar o desenvolvimento de atividades relativas à inspeção sanitária, bem como, para possibilitar a comercialização em nível estadual e interestadual dos produtos oriundos dos estabelecimentos fiscalizados pelo Sistema de Inspeção Municipal, em consonância ao Sistema Único de Atenção à Sanidade Agropecuária - SUASA ou à legislação que trate da matéria.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Os estabelecimentos que tenham exclusivamente inspeção municipal, só poderão comercializar os seus produtos no Município de Feira de Santana.<br><br>Parágrafo Único - Caso o Município faça a opção por aderir ao SUASA, os estabelecimentos que atenderem aos requisitos estabelecidos pelo Ministério da Agricultura, Pecuária e Abastecimento, poderão comercializar seus produtos em todo o território nacional.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Será constituído um Conselho Municipal de Inspeção Sanitária formado por representantes das Secretarias Municipais de Agricultura e Recursos Hídricos, e da Saúde, dos agricultores e dos consumidores, para aconselhar, sugerir, debater e definir assuntos ligados à execução dos serviços de inspeção e de fiscalização sanitária e sobre criação de regulamentos, normas, portarias e outros, no intuito de atender aos preceitos estabelecidos na presente Lei.<br><br>Parágrafo Único - O Conselho Municipal de Inspeção Sanitária será regulamentado por Decreto do Poder Executivo.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> O SIM terá um sistema único de informações sobre todo o trabalho e procedimentos de inspeção e de fiscalização sanitária.<br><br>Parágrafo Único - As Secretarias Municipais de Agricultura e Recursos Hídricos e da Saúde têm o dever de alimentar e promover a manutenção do sistema único de informações sobre a inspeção e a fiscalização sanitária do Município.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> Para obter o registro no serviço de inspeção o estabelecimento interessado deverá apresentar requerimento simples dirigido ao responsável pelo Serviço de Inspeção, instruído pelos seguintes documentos:<br><br>I - Indicação da adoção de Boas Práticas de Fabricação;<br><br>II - CNPJ ou a inscrição do produtor rural na Secretaria Estadual da Fazenda;<br><br>III - Planta baixa ou croquis das instalações, com lay-out dos equipamentos e memorial descritivo simples e sucinto da obra, com destaque para a fonte e a forma de abastecimento de água, sistema de escoamento e de tratamento do esgoto e resíduos industriais e proteção empregada contra insetos;<br><br>IV - Memorial descritivo simplificado dos procedimentos e padrão de higiene a serem adotados;<br><br>V - Descrição dos dizeres de rotulagem para cada produto;<br><br>VI - Boletim oficial de exame da água de abastecimento, caso não disponha de água tratada, cujas características devem se enquadrar nos padrões microbiológicos e químicos oficiais;<br><br>Parágrafo Único - É vedada a limitação de acesso ao registro sanitário e à comercialização das bebidas e alimentos de consumo humano de origem animal e vegetal em função do caráter estrutural, incluindo escalas das construções, instalações, máquinas e equipamentos, desde que asseguradas a higiene, sanidade e inocuidade das bebidas e alimentos de consumo humano;<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10.</span></a> O estabelecimento pode trabalhar com mais de um tipo de atividade, devendo, para isso, prever os equipamentos de acordo com a necessidade para tal e, no caso de empregar a mesma linha de processamento, deverá ser concluída uma atividade para depois iniciar a outra.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11.</span></a> A embalagem das bebidas e alimentos de consumo humano de origem animal e vegetal deverá obedecer às condições de higiene necessárias à boa conservação do produto, sem colocar em risco a saúde do consumidor, obedecendo às normas estipuladas em legislação pertinente.<br><br>Parágrafo Único - Quando a granel, os produtos serão expostos ao consumo acompanhados de folhetos ou cartazes de forma bem visível, contendo informações previstas no caput deste artigo.<br><br><a name="artigo_12"><span class="label label-pill label-danger">Art. 12.</span></a> Os produtos deverão ser transportados e armazenados em condições adequadas para a preservação de sua sanidade e inocuidade.<br><br><a name="artigo_13"><span class="label label-pill label-danger">Art. 13.</span></a> A matéria-prima, os animais, os produtos, os subprodutos e os insumos deverão seguir padrões de sanidade definidos em regulamento e portarias específicas.<br><br>§ 1º Constatadas irregularidades que tornem os produtos impróprios para o consumo, independentemente das sanções a serem estabelecidas na regulamentação, o estabelecimento ficará sujeito às sanções da suspensão temporária da licença de fabricação, apreensão e destruição dos produtos condenados e/ou a cassação definitiva do registro de fabricação do produto e do estabelecimento.<br><br>§ 2º As medidas cautelares de que tratam o parágrafo anterior só serão revogadas pelas autoridades sanitárias quando atendidas às exigências que determinaram a suspensão do processo de fabricação de tais produtos.<br><br>§ 3º Todos os produtos impróprios para o consumo deverão ser desnaturados pelo Serviço de Inspeção Municipal e destinados como subproduto à alimentação animal ou incinerados conforme o grau de comprometimento determinado pelos exames realizados.<br><br>§ 4º Se houver comprometimento de natureza grave nos produtos destinados à alimentação humana, o estabelecimento poderá ser interditado temporariamente ou definitivamente, devendo a ocorrência ser notificada ao Ministério Público Estadual.<br><br><a name="artigo_14"><span class="label label-pill label-danger">Art. 14.</span></a> Serão cobrados preços públicos relativamente à classificação de produtos de origem animal e vegetal.<br><br>Parágrafo Único - O Poder Executivo Municipal estabelecerá o preço público através de Decreto Regulamentar, observados os seguintes requisitos:<br><br>I - complexidade técnica das atividades desenvolvidas pelos estabelecimentos;<br><br>II - a dimensão do estabelecimento vistoriado;<br><br>III - o tempo dispendido na realização da vistoria.<br><br><a name="artigo_15"><span class="label label-pill label-danger">Art. 15.</span></a> Os preços de que trata o artigo anterior serão determinados de acordo com a natureza dos serviços, expressos em reais e atualizados, anualmente, de acordo com os insumos usados.<br><br><a name="artigo_16"><span class="label label-pill label-danger">Art. 16.</span></a> Os preços públicos serão cobrados sobre os seguintes serviços públicos:<br><br>I - Inspeção sanitária, no qual o preço será aquele correspondente ao custo do serviço;<br><br>II - Registro de estabelecimento, no qual o preço corresponderá ao valor da Taxa de Licença para Localização, estabelecida no Código Tributário Municipal;<br><br>III - Análise prévia de produtos, no qual o preço corresponderá ao custo do serviço;<br><br>IV - Análise parcial de produtos, quando o preço corresponderá ao custo do serviço;<br><br>V - Diligências, em que o preço corresponderá ao custo do serviço, incluindo as despesas de transporte.<br><br><a name="artigo_17"><span class="label label-pill label-danger">Art. 17.</span></a> Os preços públicos de que trata esta Lei são devidos pelos estabelecimentos.<br><br><a name="artigo_18"><span class="label label-pill label-danger">Art. 18.</span></a> Sem prejuízo do disposto nos artigos antecedentes, a Prefeitura Municipal poderá inscrever como dívida ativa do Município os débitos decorrentes desta Lei não quitados pelos usuários do Serviço de Inspeção Municipal.<br><br><a name="artigo_19"><span class="label label-pill label-danger">Art. 19.</span></a> O Poder Executivo fica autorizado a:<br><br>I - Praticar todos os atos necessários à regulamentação desta Lei;<br><br>II - Os recursos financeiros necessários à implementação da presente Lei e do Serviço de Inspeção Municipal serão fornecidos pelas verbas alocadas na Secretaria Municipal de Agricultura, Recursos Hídricos e Desenvolvimento Rural, constantes no Orçamento do Município, suplementadas, através de Decreto, se necessário;<br><br>III - Celebrar ajustes e convênios com entidades públicas e privadas, sempre que necessário, for para o cumprimento desta lei;<br><br><a name="artigo_20"><span class="label label-pill label-danger">Art. 20.</span></a> Esta Lei entra em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>DR. TARCÍZIO SUZART PIMENTA JÚNIOR<br>Prefeito Municipal<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

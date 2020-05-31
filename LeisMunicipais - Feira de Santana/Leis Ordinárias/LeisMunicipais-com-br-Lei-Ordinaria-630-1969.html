@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 630, de 16 de julho de 1969</h2><br>CRIA A SUPERINTENDÊNCIA DE URBANIZAÇÃO DE FEIRA DE SANTANA (SURFEIRA), E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA. FAÇO saber que a Câmara Municipal decretou e eu sanciono a seguinte Lei:<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> I<br>DA SURFEIRA E SUA FINALIDADE<br></span></span><br><br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica criada a Superintendência de Urbanização de Feira de Santana - SURFEIRA, sob a forma de autarquia municipal, personalidade jurídica própria, sede e foro em Feira de Santana, dispondo de autonomia administrativa, financeira e patrimonial.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> A SUFEIRA têm como finalidade a execução das obras públicas municipais, inclusive as de construção, pavimentação, conservação e melhoramento das estradas de rodagem municipais.<br><br>§ 1º As obras pertinentes aos sistemas de abastecimento D`água e de esgoto sanitário são de competência do Serviço Autônomo de Água e Esgoto, conforme dispõe a Lei nº  <a class="link_law" data-id="1739038" data-original-title=" Data da Norma: 01.01.1964 - (ATO INEXISTENTE, NUMERAÇÃO NÃO UTILIZADA)" data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1964/42/426/lei-ordinaria-n-426-1964-ato-inexistente-numeracao-nao-utilizada" rel="tooltip">426</a>, de 26 de abril de 1966.<br><br>§ 2º Na execução de obras de sua competência, especialmente as de maior porte, a SURFEIRA adotará como diretriz o sistema de sua contratação, no regime de empreitada.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Aplicam-se a SURFEIRA, naquilo que diz respeito à seus bens, rendas, serviços e ações, todas as prerrogativas, regalias, imunidades, isenções, favores fiscais e de mais vantagens de que gozam os serviços municipais e que a eles caibam por Lei.<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> II<br>DA DIREÇÃO DA SURFEIRA<br></span></span><br><br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> A direção da SURFEIRA será exercida por um DIRETOR-EXECUTIVO, nomeado em comissão pelo Prefeito Municipal.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Ao Diretor-Executivo compete, no exercício da direção geral da SURFEIRA, sempre que necessário ouvido o Chefe do Poder Executivo, praticar os atos e expedir as normas necessárias ao seu bom desempenho, especialmente:<br><br>I - admitir, promover, movimentar, elogiar e dispensar empregados.<br><br>II - expedir as instruções e dar as ordens necessárias à execução dos trabalhos afetos à autarquias.<br><br>III - movimentar as contas bancarias, na forma estabelecida no regimento interno.<br><br>IV - promover as licitações para aquisição de materiais, contratação de obras e serviços, e alienação de materiais e equipamentos desnecessários ou inservíveis.<br><br>V - assinar contratos, acordos e ajustes relativos à execução de obras e serviços e ao fornecimento de matérias e equipamentos à SURFEIRA.<br><br>VI - autorizar despesas e ordenar pagamentos, de acordo com as dotações orçamentárias.<br><br>VII - determinar a abertura de inquérito para a apuração de falta ou irregularidade.<br><br>VIII - representar a SURFEIRA em juízo e fora dele, inclusive constituir procurador.<br><br>IX - apresentar ao Escritório de Planejamento Integrado, nos prazos determinados:<br><br>a) o programa anual dos trabalhos da autarquia.<br>b) a proposta orçamentária.<br>c) os balancetes trimestrais, bem como o relatório anual e o balanço geral da SURFEIRA.<br><br>X - promover o recebimento da quota do Fundo Rodoviário Nacional, que couber ao Município, e a respectiva prestação de contas.<br><br>XI - promover o recebimento das contas da autarquia.<br><br>Parágrafo Único - O regimento interno da SURFEIRA poderá estabelecer limites, dentro dos quais as competências do VI poderão ser delegadas.<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> III<br>DA SUPERVISÃO E DO CONTROLE<br></span></span><br><br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> A SURFEIRA vinculada-se ao Escritório de Planejamento Integrado, para efeito de supervisão e controle.<br><br>Parágrafo Único - A supervisão e o controle faz-se-ão através de:<br><br>I - aprovação do programa anual de trabalho da autarquia, ajustando-o ao plano plurianual de investimento do Município.<br><br>II - análise da proposta de orçamento, ajustando-a ao programa anual de trabalho da autarquia.<br><br>III - exame dos balancetes trimestrais.<br><br>IV - análise dos relatórios trimestrais, comparando o programado e o efetivamente realizado.<br><br>V - liberação dos recursos para obras previstas no orçamento da Prefeitura.<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> IV<br>DA RECEITA<br></span></span><br><br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> A receita da SURFEIRA será constituída:<br><br>I - dotações que lhe forem consignadas no orçamento da Prefeitura, e dos créditos especiais a ela destinados.<br><br>II - dotações consignadas ao Município, nos orçamentos da União e do Estado, para obras de sua competência.<br><br>III - quota do Fundo Rodoviário Nacional, que couber ao Município.<br><br>IV - produto das contribuições de melhoria, exigidas em razão de obras públicas executada pela autarquia.<br><br>V - produto de juros sobre depósitos bancários e de outras rendas patrimoniais.<br><br>VI - produto da alienação de materiais inservíveis e de bens que se tornarem desnecessários aos seus serviços.<br><br>VII - cauções e depósitos que se reverterem a seus cofres, em razão de inadimplemento contratual.<br><br>VIII - doações, legados e outras rendas que, por sua natureza ou finalidade, devem caber-lhe.<br><br>§ 1º Compete à SURFEIRA receber, diretamente, a receita de que trata o item III e aplicá-la com estrita observância à legislação pertinente ao Fundo Rodoviário.<br><br>§ 2º O Prefeito, após ouvir o Coordenador do Escritório de Planejamento Integrado, poderá autorizar, por escrito, o Diretor Executivo a realizar operações de crédito por antecipação de receita.<br><br>§ 3º É de competência da SURFEIRA o lançamento e a cobrança das contribuições de melhoria de que trata o item IV.<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> V<br>DO PATRIMÔNIO<br></span></span><br><br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> O patrimônio inicial da SURFEIRA será constituído dos bens móveis, materiais, títulos e outros valores próprios do Município, empregados, utilizados ou destinados à execução de obras, bem como do imóvel da Estrada Mangabeira onde está instalado o Parque Rodoviário Municipal.<br><br>Parágrafo Único - Os bens de que trata o presente artigo serão entregues à SURFEIRA sem quaisquer ônus ou compensações.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> O Prefeito Municipal, no prazo de 10 (dez) dias, a contar da vigência desta Lei, constituirá uma comissão de três (3) membros para inventariar os bens constitutivos do patrimônio da autarquia.<br><br>§ 1º A comissão, ao inventariar o patrimônio a ser entregue à SURFEIRA, estipulará os valores dos bens que o constituem, incluindo os títulos pelo seu valor nominal.<br><br>§ 2º A entrega do Patrimônio formalizar-se-á através de declaração de recebimento do Diretor-Executivo da SURFEIRA, aposta ao rol de inventário.<br><br>§ 3º A comissão de inventário deverá concluir os seus trabalhos no prazo de 15 (quinze) dias e extinguirse-á, automaticamente, com a prática do ato previsto no parágrafo anterior.<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> VI<br>DO PESSOAL DA SURFEIRA<br></span></span><br><br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10 -</span></a> A SURFEIRA terá quadro próprio de empregados pela Consolidação das Leis do Trabalho e Legislação posterior, aprovado por Decreto do Prefeito Municipal.<br><br>§ 1º A critério do Diretor-Executivo da autarquia, servidores da Prefeitura que, atualmente, estejam trabalhando em atividades que, nos termos da presente Lei, passa para competência da SURFEIRA, poderão ser aproveitadas nos provimento de seu quadro de pessoal, desde que não sejam regidos pelo Estatuto dos Funcionários Públicos Municipais, Decreto Lei Estadual nº  <a class="link_law" data-id="" data-original-title=" Data da Norma: .. - " data-toggle="tooltip" href="http://leisestaduais.com.br/ba/decreto-lei-n-12538-1942-bahia-este-ato-ainda-nao-esta-disponivel-no-sistema" rel="tooltip">12.538</a>, de 28 de outubro de 1942, ou legislação posterior.<br><br>§ 2º Além do pessoal referido neste artigo, a autarquia poderá requisitar funcionários à Prefeitura, os quais continuarão a ser regidos pela legislação a que estiverem sujeitos na administração centralizada, e designá-los para o exercício de funções compatíveis com suas qualificações pessoais, independente de correlação com o cargo efetivo ocupado na Prefeitura, não criando, outro sim, qualquer obrigação para a mesma, quando do retorno do funcionário à repartição de origem.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11 -</span></a> As admissões na SURFEIRA serão feitas mediante provas públicas de habilitação.<br><br>§ 1º A exigência deste artigo não se aplica:<br><br>I - as funções de confiança.<br><br>II - as funções cujo exercício exige formação de nível universitário.<br><br>III - ao pessoal admitido para funções cujas atribuições são de caráter braçal.<br><br>§ 2º O quadro do pessoal estabelecerá critérios para a admissão dos servidores de que tratam os itens II e III deste artigo.<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> VII<br>DAS DISPOSIÇÕES FINAIS<br></span></span><br><br><br><a name="artigo_12"><span class="label label-pill label-danger">Art. 12 -</span></a> Esta Lei entrará em vigor a partir de 1º de janeiro de 1970, revogadas as disposições em contrário.<br><br>Prefeitura Municipal de Feira de Santana, 16 de julho de 1969.<br><br>JOÃO DURVAL CARNEIRO<br>Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

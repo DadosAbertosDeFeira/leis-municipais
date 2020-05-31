@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 2030, de 22 de outubro de 1998</h2><br>DENOMINA ÁREAS DO PARQUE DE EXPOSIÇÃO JOÃO MARTINS DA SILVA, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei, de autoria do Edil Ildes Ferreira de Oliveira, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Dêem-se às vias públicas localizadas no interior do Parque de Exposição João Martins da Silva, relacionadas a seguir, as respectivas denominações indicadas:<br><br>- Trecho do Portão Principal de acesso até a pista de julgamento de animais: Avenida Dr. José Falcão da Silva;<br>- Trecho do portão de acesso dos fundos até o muro final do Parque, passando paralelo à Rua da ABCN:<br><br>Avenida Dr. Colbert Martins da Silva;<br><br>- Trecho do portão de acesso da BR-324 até a Av. Dr. Colbert Martins da Silva: Avenida EMBRAPA;<br>- Trecho que separa os galpões de exposição dos animais até a Avenida Dr. Colbert Martins da Silva:<br><br>Avenida da Associação Baiana de Criadores ABAC:<br><br>- Trecho que separa os galpões de exposição de animais paralelos à Avenida Dr. Colbert Martins da Silva;<br><br>Rua da Associação Baiana de Criadores de Nelore - ABCN;<br><br>- Trecho que separa os galpões de exposição de animais, paralelo à ABCN, até a<br><br>Avenida da ABAC: Rua da Associação Brasileira de criadores de Zebu - ABCZ;<br><br>- Trecho situado entre os galpões de exposição de animais, dando continuidade à Rua da Associação de Promoção de Eventos Agrícolas Rurais - APEAR;<br>- Trecho situado entre os galpões de exposição de animais, paralelo à Rua da Associação dos Criadores de Zebu: Rua do Núcleo dos Criadores de Guzerá de Bahia e Sergipe - BASE;<br>- Trecho situado entre os galpões de exposição de animais, paralelo à Rua da APEAR: Rua do Núcleo Baiano dos Criadores de Cavalo Marchador;<br>- Trecho situado entre os galpões de exposição de animais, paralelo à Rua do Núcleo Baiano dos Criadores de Cavalo Marchador: Rua do Clube do Cavalo Campolina;<br>- Trecho situado entre os galpões de exposição de animais, paralelo à Rua do Núcleo dos Criadores de Guzerá da Bahia e Sergipe: Rua da Associação Baiana dos Criadores do Gado Pardo Suíço;<br>- Trecho situado entre os galpões de exposição de animais, situado paralelo à Rua da Associação Baiana dos Criadores de Gado Pardo Suíço: Rua da Associação Baiana dos Criadores de Gado Simental;<br>- Trecho situado entre os galpões de exposição de animais, paralelo à Rua do Clube do Cavalo Campolina.<br><br>Rua da Associação Brasileira dos Criadores de Poney / Piquira;<br><br>- Trecho situado entre os galpões de exposição de animais, paralelo à Rua da Associação Brasileira de Criadores de Cavalo Manga-larga;<br>- Trecho situado entre os galpões de exposição de animais, paralelo à Rua da Associação Baiana dos Criadores de Gado Simental: Rua da Associação Baiana dos Criadores de Gado Holandês;<br>- Trecho situado em frente aos galpões de exposição de animais, situado entre a Avenida Dr. Colbert Martins da Silva até a Rua da ACCOBA; Avenida da Associação dos Engenheiros Agrônomos de Feira de Santana - AEAFS;<br>- Trecho paralelo à Rua da AEAFS, até a Rua da ACCOBA: Rua da Associação dos Veterinários de Feira de Santana;<br>- Pista de desfile dos animais: Espaço Federação da Agricultura do Estado da Bahia - FAEB;<br>- Pista de rodeios: Espaço Sindicato Rural de Feira de Santana;<br>- Trecho situado entre as pistas de desfile de animais (Espaço FAEB) e a pista de rodeios (Espaço Sindicato Rural).<br><br>Rua da Cooperfeira;<br><br>- Trecho situado na direção da continuidade da Rua da Associação dos Criadores de Cavalo Manga-larga, a partir da Avenida da AEAFS: Rua da Associação dos Criadores de Caprinos da Bahia - ACCOBA;<br>- Trecho situado entre a pista de rodeios (Espaço Sindicato Rural) e a área de barracas: Rua da Associação Brasileira de Criadores de Cavalo Pampa;<br>- Dê-se à primeira Rua Paralela à Rua da Associação Brasileira de Criadores de Pampa, saindo da Avenida Dr. Colbert Martins da Silva, o nome de Rua Francisco Moreira Teixeira;<br>- Dê-se à rua paralela à Rua Francisco Moreira Teixeira, saindo da Avenida Dr. Colbert Martins da Silva, o nome de Rua José Maria Couto Sampaio.<br><br>Parágrafo Único - Integra a presente Lei o mapa do Parque de Exposição João Martins da Silva, discriminando todas as Ruas, Avenidas e Espaços aqui nomeados.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Fica o Poder Executivo Municipal autorizado a afixar placas alusivas às denominações estabelecidas no Art. 1º, para todas as Ruas, Avenidas e Espaços.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> As despesas decorrentes desta Lei correrão por conta de verba orçamentária existente na Secretária Municipal de Desenvolvimento Econômico.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Esta Lei entrará em vigor na data da sua publicação, ficando revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 22 de outubro de 1998.<br><br>CLAILTON COSTA MASCARENHAS<br>Prefeito<br><br>EVANGIVALDO DE FIGUEIREDO OLIVEIRA<br>Chefe de Gabinete do Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

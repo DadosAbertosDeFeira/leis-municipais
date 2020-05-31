@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>EMENDA Nº 49/2016</h2><br>ALTERA A REDAÇÃO DO ARTIGO 19 E SUPRIME O SEU PARÁGRAFO ÚNICO, DA <a class="link_law" data-original-title="Lei Orgânica Feira de Santana BA" data-toggle="tooltip" href="/lei-organica-feira-de-santana-ba" rel="tooltip">LEI ORGÂNICA</a> DO MUNICÍPIO DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>A CÂMARA MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, na conformidade do artigo 72, § 4º da <a class="link_law" data-original-title="Lei Orgânica Feira de Santana BA" data-toggle="tooltip" href="/lei-organica-feira-de-santana-ba" rel="tooltip">Lei Orgânica</a> do Município de 05 de Abril de 1990, e Proposta de Emenda nº 102/2016, de autoria de diversos Edis, promulga a seguinte Emenda:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> O caput do art. 19 da <a class="link_law" data-original-title="Lei Orgânica Feira de Santana BA" data-toggle="tooltip" href="/lei-organica-feira-de-santana-ba" rel="tooltip">Lei Orgânica</a> do Município, passa a ter a seguinte redação:<br><br>&quot;Art. 19 É obrigatória a publicação dos seguintes atos municipais no Diário Oficial Eletrônico de Feira de Santana (DOFS) e em jornal diário de grande circulação, em observância ao princípio constitucional da publicidade, disposto no caput do art. 37 da Constituição Federal:<br><br>I - Licitação:<br><br>a) dispensa de licitação (exceto ao disposto nos incisos I e II do art. 24 da Lei Federal nº 8.666/93);<br>b) inexigibilidade de licitação;<br>c) avisos de licitação;<br>d) aditivos de valor.<br><br>II - Orçamento:<br><br>a) matéria fiscal e tributária;<br>b) relatórios e balancetes;<br>c) abertura de crédito;<br>d) Plano Plurianual (PPA);<br>e) Lei de Diretrizes Orçamentárias (LDO), e<br>f) Lei Orçamentária Anual (LOA).<br><br>III - Meio Ambiente:<br><br>a) licenças ambientais.<br><br>IV - Legislação:<br><br>a) alterações na <a class="link_law" data-original-title="Lei Orgânica Feira de Santana BA" data-toggle="tooltip" href="/lei-organica-feira-de-santana-ba" rel="tooltip">Lei Orgânica</a> do Município;<br>b) planos municipais, estatutos, códigos e/ou suas alterações;<br>c) leis que tratem sobre políticas públicas.&quot;<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Suprima-se o parágrafo único do art. 19 da <a class="link_law" data-original-title="Lei Orgânica Feira de Santana BA" data-toggle="tooltip" href="/lei-organica-feira-de-santana-ba" rel="tooltip">Lei Orgânica</a> do Município.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Esta Emenda à Lei Orgânica do Município entra em vigor na data de sua publicação.<br><br>MESA DIRETIVA DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, em 29 de Março de 2016.<br><br>Ver REINALDO MIRANDA VIEIRA FILHO<br>Presidente<br><br>Ver. ROQUE PEREIRA DO CARMO<br>1º Vice-Presidente Ver.<br><br>ALBERTO MATOS NERY<br>2º Vice-Presidente<br><br>Ver. ISAÍAS DOS SANTOS<br>3º Vice-Presidente<br><br>Verª. GERUSA MARIA BASTOS SILVA SAMPAIO<br>1ª Secretária<br><br>Ver. DAVID EVANGELISTA LEITE NETO<br>2º Secretário<br><br>Ver. ROBECI DA SILVA LIMA<br>3º Secretário<br><br>DATA DA PUBLICAÇÃO NO DIÁRIO OFICIAL ELETRÔNICO: 30 DE MARÇO DE 2016.<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3618 DE 04 DE MAIO DE 2016.</h2><br>&quot;AUTORIZA O MUNICÍPIO DE FEIRA DE SANTANA A SUBSCREVER O PROTOCOLO DE INTENÇÕES A SER FIRMADO COM O ESTADO DA BAHIA, ATRAVÉS DA SECRETARIA DE SAÚDE DO ESTADO DA BAHIA, E OUTROS MUNICÍPIOS BAIANOS.&quot;<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, no uso de suas atribuições, faço saber que a Câmara Municipal, através do Projeto de Lei nº 21/2016, de autoria deste Poder Executivo, decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica autorizado o Município de Feira de Santana, a subscrever o Protocolo de Intenções a ser firmado com o Estado da Bahia, através da Secretaria de Saúde do Estado, e outros municípios baianos, nos termos da Lei nº 11.107, de 06 de abril de 2005, e para os fins previstos no seu art. 5º, § 4º, bem como das normas federais que regem o Sistema Único de Saúde e da Lei Estadual nº  <a class="link_law" data-id="189670" data-original-title=" Data da Norma: 22.09.2015 - DISCIPLINA A PARTICIPAÇÃO DO ESTADO DA BAHIA NOS CONSÓRCIOS INTERFEDERATIVOS DE SAÚDE, NOS TERMOS DA LEI FEDERAL Nº 11.107, DE 6 DE ABRIL DE 2005." data-toggle="tooltip" href="http://leisestaduais.com.br/ba/lei-ordinaria-n-13374-2015-bahia-disciplina-a-participacao-do-estado-da-bahia-nos-consorcios-interfederativos-de-saude-nos-termos-da-lei-federal-n-11107-de-6-de-abril-de-2005" rel="tooltip">13.374</a>, de 22 de setembro de 2015, que disciplina as regras gerais de participação do Estado da Bahia nos Consórcios Regionais de Saúde.<br><br>Parágrafo único. O Protocolo de Intenções, mencionado no caput deste artigo, constitui Consórcio Público de Saúde, sob a forma de associação pública, entidade autárquica e interfederativa, visando implementar iniciativas de promoção e ações de saúde pública assistenciais, prestação de serviços especializados de média e alta complexidade, em especial: Serviços de Urgência e de Emergência hospitalar e extra-hospitalar; Ambulatórios especializados, Policínicas; Centro de Especialidades Odontológicas - CEOs; Assistência Farmacêutica, entre outros serviços relacionados à saúde, em conformidade com os princípios e diretrizes do Sistema Único de Saúde, na forma do Anexo Único desta Lei.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O patrimônio, a estrutura administrativa e as fontes de receita da entidade autárquica e interfederativa prevista nesta Lei serão definidos em seus respectivos Contratos de Consórcio, Programa e/ou Rateio, observando o disposto nos arts. 4º e 8º e 13 da Lei Federal nº 11.107, de 06 de abril de 2005, regulamentados pelo Decreto Federal nº 6.017 de 17 de janeiro de 2007.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> É facultada a cessão de servidores dos entes consorciados, observada a legislação de cada um, com ou sem ônus para a origem e com a manutenção do regime ordinário, ainda que em estágio probatório e mediante Decreto do Chefe do Poder Executivo, para o Consórcio Público indicado no art. 1º desta Lei, observando o estabelecimento nos Contratos de Consórcio, Programas e/ou Rateio a eles referentes.<br><br>§ 1º Não será incorporada aos vencimentos ou à remuneração de origem do servidor cedido qualquer vantagem, pecuniária que vier a ser paga pela associação pública.<br><br>§ 2º Se o ente consorciado assumir o ônus da cessão do servidor, os pagamentos devidos ao mesmo deverão ser contabilizados como créditos hábeis para operar compensação com obrigações previstas no Contrato de Rateio.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Fica autorizada a destinação de bens móveis e imóveis ao Consórcio Público objeto do art. 1º desta Lei, sob a forma de cessão de uso desde que vinculados aos interesses e atribuições do Consórcio.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Fica autorizada, conforme o art. 167, inciso IV, da Constituição Federal, a vinculação da receita própria ou transferida de impostos para atender às necessidades do Consórcio, na forma estabelecida nos Contratos de Programa e/ou Rateio, admitida a retenção das referidas receitas para satisfazer a vinculação ora prevista.<br><br>§ 1º Fica autorizada a retenção dos valores dos recursos do ICMS, a que faz jus o Município, pelo Estado da Bahia, conforme disciplinado no Contrato de Rateio a ser celebrado entre os consorciados, para o pagamento das obrigações Municipais pactuadas com o Consórcio.<br><br>§ 2º Os entes consorciados poderão remanejar, entre si, parcelas dos recursos dos Fundos de Saúde derivadas tanto de receitas próprias como de transferências obrigatórias, que serão administradas segundo modalidade gerencial pactuada pelos entes envolvidos.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> O Poder Executivo deverá incluir, nas propostas orçamentarias anuais, dotações suficientes à cobertura das responsabilidades financeiras decorrentes da execução desta Lei.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> As despesas decorrentes da execução desta Lei serão atendidas à conta de dotações orçamentárias próprias da Secretaria de Saúde do Município de Feira de Santana, estando, desde já, autorizadas a abertura de crédito especial e a suplementação orçamentária.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> Esta Lei entra em vigor na data de sua publicação.<br><br>Gabinete do Prefeito, 04 de maio de 2016.<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO MUNICIPAL<br><br>MARIO COSTA BORGES<br>CHEFE DE GABINETE DO PREFEITO<br><br>CLEUDSON SANTOS ALMEIDA<br>PROCURADOR GERAL DO MUNICIPIO<br><br>DENISE LIMA MASCARENHAS<br>SECRETÁRIA MUNICIPAL DE SAÚDE<br><br>PUBLICADO NO DIÁRIO OFICIAL ELETRÔNICO DIA 12 DE MAIO DE 2016.<br><br><a class="btn btn-danger" href="https://leismunicipais.com.br/BA/FEIRA.DE.SANTANA/ANEXO-LEI-3618-2016-FEIRA-DE-SANTANA-BA.zip" title="Anexo - Lei nº 3618/2016 de Feira de Santana"><span style="font-weight:bold">Download:</span> Anexo - Lei nº 3618/2016 - Feira de Santana-BA</a><p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

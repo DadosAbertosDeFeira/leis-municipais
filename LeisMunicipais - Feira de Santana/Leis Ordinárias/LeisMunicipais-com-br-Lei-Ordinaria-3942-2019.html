@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3942, DE 31 DE MAIO DE 2019.</h2><br>Cria o Conselho Municipal do Trabalho, Emprego e Renda, do Município de Feira de Santana e dá outras providências.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O Prefeito Municipal de Feira de Santana, Estado da Bahia, no uso de suas atribuições, Faço Saber que a Câmara Municipal, através do Projeto de LEI Nº 11/2019, de autoria do Poder Executivo, decreta e eu sanciono a seguinte Lei:<br><br>DO CONSELHO<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica criado, no âmbito da Administração Pública Municipal, o Conselho Municipal do Trabalho, Emprego e Renda em atendimento ao disposto na Lei  <a class="link_law" data-id="" data-original-title=" Data da Norma: .. - " data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2018/1366/13667/lei-ordinaria-n-13667-2018-este-ato-ainda-nao-esta-disponivel-no-sistema" rel="tooltip">13.667</a>, de 17 de maio de 2018, constituído de forma tripartite e paritária por representantes dos Trabalhadores, dos Empregadores e do Governo, como instância deliberativa e de assessoramento do Sistema Nacional de Emprego - SINE.<br><br>DA COMPETÊNCIA<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Ao Conselho Municipal do Trabalho, Emprego e Tenda, compete:<br><br>I - Elaborar e aprovar o Regimento Interno observado às disposições do Conselho Deliberativo do Fundo de Amparo ao Trabalhador - CODEFAT;<br><br>II - Deliberar e definir acerca da Política Municipal do Trabalho, Emprego e Renda em consonância com a Política Nacional do Trabalho, Emprego e Renda, com Sistema Público do Trabalho, Emprego e Renda e com as deliberações do CODEFAT;<br><br>III - Propor as diretrizes a serem observadas na elaboração do Plano Municipal do Trabalho, Emprego e Renda;<br><br>IV - Aprovar o Plano Anual e Plurianual do Trabalho, Emprego e Renda, onde devem constar as metas e ações e o orçamento para a realização das mesmas;<br><br>V - Aprovar o relatório de gestão que comprove a execução das ações propostas no Plano Anual do Trabalho, Emprego e Renda, com os recursos depositados no fundo do trabalho;<br><br>VI - Acompanhar a utilização dos recursos destinados à execução das ações do Programa do Seguro Desemprego e dos Programas de Geração de Emprego e Renda, em relação ao cumprimento dos critérios de natureza técnica, definidos pelo CODEFAT.<br><br>VII - Fiscalizar a movimentação de recursos destinados à execução das ações do Sistema Nacional de Emprego-SINE, depositados em conta especial de titularidade do Fundo do Trabalho;<br><br>VIII - Aprovar critérios de qualidade para o funcionamento dos serviços do SINE Municipal;<br><br>IX - Propor a formulação de estudos e pesquisas com vistas a identificar situações relevantes e a qualidade dos serviços prestados pelo SINE Municipal;<br><br>X - Convocar ordinariamente, a cada 2 (dois) anos, ou extraordinariamente, por maioria absoluta de seus membros, a Conferência Municipal do Trabalho, Emprego e Renda, que terá atribuição de avaliar a situação do Trabalho, Emprego e Renda no Município propondo diretrizes para o aperfeiçoamento do Sistema;<br><br>XI - Articular-se com a rede de educação profissional para propor a realização das ações de qualificação e certificação profissional no âmbito do Programa Brasileiro de Qualificação Social e Profissional - QUALIFICA BRASIL, de acordo com as Resoluções nº 820/2018, 783/20, 17 e a Norma Operacional nº 1/2017 do CODEFAT;<br><br>XII - Sugerir, apoiar e participar das iniciativas e das atividades desenvolvidas e coordenadas pela Secretaria do Trabalho, Emprego, Renda e Esporte do Trabalho, quando focalizadas na geração de emprego, trabalho, renda, empreendedorismo e ações de resgate a cidadania, como: seminários, oficinas, feiras, laboratórios e demais iniciativas promovidas em âmbito estadual;<br><br>XII - Zelar pela efetivação do sistema descentralizada e participativa do Sistema Público de Trabalho, Emprego e Renda.<br><br>DA COMPOSIÇÃO<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> O Conselho Municipal do Trabalho, Emprego e Renda, será constituído obrigatoriamente de forma tripartite e paritária por representantes dos trabalhadores, dos empregadores e do governo, observada em sua composição igual número de representatividade por bancada, com 1 (um) representante titular e 1 (um) representante suplente, conforme abaixo:<br><br>I - do Poder Público;<br><br>a) Secretaria Municipal do Trabalho, Turismo e Desenvolvimento Econômico;<br>b) Delegacia Regional do Trabalho;<br>c) Secretaria Municipal da Fazenda.<br><br>II - dos Trabalhadores:<br><br>a) Sindicato dos Trabalhadores Rurais de Feira de Santana;<br>b) Sindicatos dos Servidores Públicos Municipais de Feira de Santana;<br>c) Sindicato dos Comerciários de Feira de Santana.<br><br>III - dos Empregadores:<br><br>a) Sindicato dos Produtores Rurais de Feira de Santana;<br>b) Associação Comercial de Feira de Santana;<br>c) Centro das Indústrias de Feira de Santana.<br><br>§ 1º Os representantes das secretarias municipais serão indicados pelo dirigente titular das mesmas.<br><br>§ 2º O representante do órgão público federal será indicado pelo dirigente do respectivo órgão.<br><br>§ 3º Os representantes dos trabalhadores e dos empregadores serão indicados pela entidade representativa correspondente.<br><br>§ 4º Os Conselheiros serão nomeados e empossados por ato do Prefeito, no prazo máximo de 30 (trinta) dias, a contar da última indicação feita pelas entidades participantes do Conselho.<br><br>§ 5º Os Conselheiros serão nomeados e empossados para Mandato de 2 (dois) anos, admitida recondução por igual período.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> A Presidência do Conselho será exercida em sistema de rodízio, entre os representantes do segmento do Governo Municipal, dos Trabalhadores e dos Empregadores, tendo o mandato do presidente a duração de 12 (doze) meses, vedada a recondução para o período consecutivo.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> A eleição do Presidente e dos demais cargos ocorrerá por maioria simples de votos dos integrantes do Conselho.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> A diretoria executiva do Conselho será composta de:<br><br>I - Presidente;<br><br>II - Vice-Presidente.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> O Conselho Municipal de Trabalho terá regimento próprio, que será redigido e aprovado pela maioria absoluta dos integrantes desse Conselho e deverá ser homologado por Decreto do Executivo no prazo de 60 (sessenta) dias, a contar da data de publicação desta Lei.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> A atividade dos Conselheiros do Conselho Municipal do Trabalho, Emprego e Renda é considerada serviço público e não será remunerada, sendo as respectivas funções consideradas de relevante interesse público. DAS DISPOSIÇÕES FINAIS<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> O apoio e suporte administrativos necessários para a organização, estrutura e funcionamento do Conselho ficarão a cargo da Secretaria Municipal do Trabalho, Turismo e Desenvolvimento Econômico.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10</span></a> Caberá ao Conselho Municipal do Trabalho, Emprego e Renda participar da gestão do Sistema Público de Emprego, Trabalho e Renda, cabendo-lhe atuar em todos os níveis de governo - União, Estados e Municípios, na implementação e acompanhamento dos programas e projetos voltados para a geração e manutenção de trabalho e renda, principalmente os financiados com recursos do FAT (Fundo de Amparo ao Trabalhador).<br><br>Parágrafo único. O Conselho Municipal do Trabalho, Emprego e Renda poderá ainda identificar e definir prioridades locais e acompanhar a aplicação dos recursos, observando os impactos positivos e permanentes das ações desencadeadas através de programas e projetos.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11</span></a> As despesas para funcionamento do Conselho Municipal do Trabalho, Emprego e Renda e, decorrentes da execução desta Lei, exceto as de pessoal, poderão ser custeadas por recursos alocados ao Fundo do Trabalho, observadas as deliberações do CODEFAT.<br><br><a name="artigo_12"><span class="label label-pill label-danger">Art. 12</span></a> Esta Lei entra em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito, 31 de maio de 2019.<br><br>COLBERT MARTINS DA SILVA FILHO<br>PREFEITO MUNICIPAL<br><br>MARIO COSTA BORGES<br>CHEFE DE GABINETE DO PREFEITO<br><br>CLEUDSON SANTOS ALMEIDA<br>PROCURADOR GERAL DO MUNICÍPIO<br><br>ANTONIO CARLOS BORGES DOS SANTOS JÚNIOR<br>SECRETÁRIO MUNICIPAL DO TRABALHO, TURISMO E DESENVOLVIMENTO ECONÔMICO<br><br>PUBLICADO NO DIÁRIO OFICIAL DIA 1 DE JUNHO DE 2019<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3368, DE 24 DE ABRIL DE 2013.</h2><br>AUTORIZA A ABERTURA DE CRÉDITO ADICIONAL ESPECIAL, NA FORMA QUE INDICA, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, no uso de suas atribuições, Faço Saber que a Câmara Municipal, através do Projeto de Lei nº 32/2013, de autoria deste Poder Executivo, decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica o Poder Executivo autorizado a abrir Crédito Especial aos Orçamentos do Município, no corrente exercício, no valor de R$ 2.808.000,00 (dois milhões, oitocentos e oito mil reais), incluindo contrapartida no valor de R$ 97.000,00 (noventa e sete mil reais), referente a Portaria Nº 7/2012, do Ministério de Desenvolvimento Social e Combate a Fome, convênio com a Caixa Econômica Federal e abertura de elemento 92 - Despesas de Exercícios anteriores na ação 08.244.018.2194 - Serviço de Proteção e Atendimento Especializado a Família e Indivíduos, PAEF/CREAS/LA/PSC.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O crédito previsto no art. 1º destina-se a Secretaria Municipal de Desenvolvimento Social - SEDESO - Órgão: 12 Unidade: 1212 - Secretaria de Desenvolvimento Social conforme e Unidade 12.1224 - Unidade Gestora do FMAS Anexo I.<br><br>§ 1º Institui no Programa 018 - Apoio e Proteção a Família a seguinte ação: Organização, mobilização e formação comunitária, tendo como produto: famílias assistidas, unidade: um e meta: 3.000. com a seguinte classificação:<br><br>I - O código do Órgão é 12, e a Unidade 1212, denominada como: Secretaria de Desenvolvimento Social. Função 08 - Assistência Social, Subfunção - 244 - Assistência Comunitária;<br><br>§ 2º Institui no Programa 030 - Programa de Inclusão Produtiva a seguinte ação: Inclusão Sócio Produtiva, tendo como produto: Pessoas capacitadas, unidade: um e meta: 1.421. com a seguinte classificação:<br><br>I - O código do Órgão é 12, e a Unidade 1212, denominada como: Secretaria de Desenvolvimento Social. Função 08 - Assistência Social, Subfunção - 244 - Assistência Comunitária;<br><br>§ 3º A codificação funcional programática da ação Organização, mobilização e formação comunitária é: 08.244.018.2245, e a da ação Inclusão Sócio Produtiva é: 08.244.030.2246.<br><br>§ 4º Cria o elemento 92 - Despesas de Exercícios Anteriores, na ação 08.244.018.2194 - Serviço de Proteção e Atendimento Especializado a Família e Indivíduos, PAEF/CREAS/LA/PSC<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Os recursos disponíveis para atender as despesas decorrente do presente crédito especial, ocorrerá por excesso de arrecadação oriundo de novos convênios (Caixa Econômica Federal (Programa Minha Casa Minha Vida) e Secretaria Nacional de Economia Solidária (SENAES) do Ministério do Trabalho e Emprego (MTE) 771198/2012), no valor de R$ 2.702.000 (dois milhões, setecentos e dois mil reais, bem como anulação de despesas no valor de R$ 106.000,00 (cento e seis mil), conforme Anexo II.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogando-se as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 24 de abril 2013.<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO MUNICIPAL<br><br>MARIO COSTA BORGES<br>CHEFE DE GABINETE DO PREFEITO<br><br>CARLOS ANTÔNIO DE MORAES LUCENA<br>PROCURADOR GERAL DO MUNICÍPIO<br><br>EXPEDITO CAMPODÔNIO ELOY SECRETÁRIO MUNICIPAL DA FAZENDA<br><br>ILDES FERREIRA DE OLIVEIRA<br>SECRETÁRIO MUNICIPAL DE DESENVOLVIMENTO SOCIAL<br><br>ANEXO A LEI Nº 3368, DE 24 DE ABRIL DE 2013.<br>Republicada por incorreção<br><br>Autoriza a abertura de crédito adicional especial, na forma que indica, e dá outras providências.<br><br>ANEXO I<br><br>Ação: Organização, mobilização e formação comunitária<pre> _____________________________________________________________________________________<br>|  Órgão/ |  Programática | Econômica|Fonte|        Discriminação       |   Valor R$  |<br>| Unidade |               |          |     |                            |             |<br>|=========|===============|==========|=====|============================|=============|<br>|  12.1212|08.244.018.2245| 3.1.90.04| 0024|Pessoal civil               |   420.000,00|<br>|---------|---------------|----------|-----|----------------------------|-------------|<br>|         |               | 3.1.90.13| 0024|Obrigações Patronais        |    64.000,00|<br>|---------|---------------|----------|-----|----------------------------|-------------|<br>|         |               | 3.3.90.30| 0024|Material de Consumo         |   446.000,00|<br>|---------|---------------|----------|-----|----------------------------|-------------|<br>|         |               | 3.3.90.36| 0024|Outros      Serv.Terc.Pessoa|    80.000,00|<br>|         |               |          |     |Física                      |             |<br>|---------|---------------|----------|-----|----------------------------|-------------|<br>|         |               | 3.3.90.39| 0024|Outros   Serv.Terc.   Pessoa|   170.000,00|<br>|         |               |          |     |Juridica.                   |             |<br>|---------|---------------|----------|-----|----------------------------|-------------|<br>|         |               | 4.4.90.52| 0024|Equip.      e      Materiais|   320.000,00|<br>|         |               |          |     |Permanente                  |             |<br>|---------+---------------+----------+-----+----------------------------|-------------|<br>|TOTAL                                                                  | 1.500.000,00|<br>|_______________________________________________________________________|_____________| * tabela formatada pela equipe técnica do LeisMunicipais.com.br<br>Ação: Inclusão Sócio Produtiva<pre> _____________________________________________________________________________________<br>|  Órgão/ |  Programática | Econômica|Fonte|        Discriminação       |   Valor R$  |<br>| Unidade |               |          |     |                            |             |<br>|=========|===============|==========|=====|============================|=============|<br>|  12.1212|08.244.018.2246| 3.1.90.04| 0024|Pessoal civil               |   205.000,00|<br>|---------|---------------|----------|-----|----------------------------|-------------|<br>|         |               | 3.1.90.13| 0024|Obrigações Patronais        |    41.000,00|<br>|---------|---------------|----------|-----|----------------------------|-------------|<br>|         |               | 3.3.90.30| 0000|Material de Consumo         |    47.000,00|<br>|---------|---------------|----------|-----|----------------------------|-------------|<br>|         |               | 3.3.90.30| 0024|Material de Consumo         |   204.000,00|<br>|---------|---------------|----------|-----|----------------------------|-------------|<br>|         |               | 3.3.90.36| 0024|Outros      Serv.Terc.Pessoa|    10.000,00|<br>|         |               |          |     |Física                      |             |<br>|---------|---------------|----------|-----|----------------------------|-------------|<br>|         |               | 3.3.90.39| 0000|Outros   Serv.Terc.   Pessoa|    50.000,00|<br>|         |               |          |     |Juridica.                   |             |<br>|---------|---------------|----------|-----|----------------------------|-------------|<br>|         |               | 3.3.90.39| 0024|Outros   Serv.Terc.   Pessoa|   384.000,00|<br>|         |               |          |     |Juridica.                   |             |<br>|---------|---------------|----------|-----|----------------------------|-------------|<br>|         |               | 4.4.90.52| 0024|Equip.      e      Materiais|   358.000,00|<br>|         |               |          |     |Permanente                  |             |<br>|---------+---------------+----------+-----+----------------------------|-------------|<br>|TOTAL                                                                  | 1.299.000,00|<br>|_______________________________________________________________________|_____________| * tabela formatada pela equipe técnica do LeisMunicipais.com.br<br><pre> _____________________________________________________________________________________<br>|  Órgão/ |  Programática | Econômica|Fonte|        Discriminação       |   Valor R$  |<br>| Unidade |               |          |     |                            |             |<br>|=========|===============|==========|=====|============================|=============|<br>|  12.1224|08.244.018.2194| 4.4.90.92| 0000|Desp.      de     Exercícios|     9.000,00|<br>|         |               |          |     |Anteriores                  |             |<br>|---------+---------------+----------+-----+----------------------------|-------------|<br>|TOTAL                                                                  |     9.000,00|<br>|-----------------------------------------------------------------------|-------------|<br>|TOTAL GERAL                                                            | 2.808.000,00|<br>|_______________________________________________________________________|_____________| * tabela formatada pela equipe técnica do LeisMunicipais.com.br<br>ANEXO II<pre> _________________________________________________________<br>|   CLASS.  |  PROGRAMÁTICA | ECONÕMICA | FONTE| VALOR R$ |<br>|   INST.   |               |           |      |          |<br>|===========|===============|===========|======|==========|<br>|    12.1224|08.244.030.1082|  3.3.90.39|  0000| 35.000,00|<br>|-----------|---------------|-----------|------|----------|<br>|    12.1224|08.244.005.2083|  3.3.90.39|  0000| 40.000,00|<br>|-----------|---------------|-----------|------|----------|<br>|    12.1224|08.244.018.2194|  3.3.90.39|  0000| 22.000,00|<br>|-----------|---------------|-----------|------|----------|<br>|    12.1224|08.244.018.2192|  3.3.90.39|  0000|  9.000,00|<br>|-----------+---------------+-----------+------|----------|<br>|TOTAL                                         |106.000,00|<br>|______________________________________________|__________| * tabela formatada pela equipe técnica do LeisMunicipais.com.br<br><p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

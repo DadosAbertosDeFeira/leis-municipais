@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 1499, de 29 de outubro de 1991</h2><br>AUTORIZA O PODER EXECUTIVO A CONTRATAR OPERAÇÃO DE CRÉDITO COM A C.E.F., OFERECER GARANTIAS, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica o Poder Executivo, autorizado em nome do Município de Feira de Santana, contratar e garantir financiamento com a Caixa Econômica Federal, através de Programa de Ação em infraestrutura Urbana Básica - Probase, e no montante de Cr$ 6.621.572.070,06 (seis bilhões, seiscentos e vinte e um milhões, quinhentos e setenta e dois mil, setenta cruzeiros e seis centavos) preço base mês maio/91, destinado exclusivamente a obras de drenagem (24.221m) e pavimentação (218.253m²) de ruas neste Município, assim discriminados:<br><br>I - Gabriela: 3.960 m de drenagem e 34.892 m² de pavimentação;,<br><br>II - Novo Horizonte: 2.304m de drenagem e 13.578m² de pavimentação;<br><br>III - Mangabeira: 3.818m de drenagem e 33.499m² de pavimentação;<br><br>IV - Conceição: 3.470m de drenagem e 32.065m² de pavimentação; inclusive o prolongamento da Avenida João Durval Carneiro até o Cemitério João Batista;<br><br>V - Parque Getúlio Vargas: 4.244m de drenagem e 51.628m² de pavimentação, com prioridade das ruas: Santiago, Los Angeles, Montevidéu, Realeza, Barcelona, Bela Vista, Chavantina, Teresópolis, Buenos Aires, Virginópolis, Filadélfia, Xanxaré, Varzinha, Caueira e todas as suas transversais, bem como a construção de uma praça com área de lazer;<br><br>VI - Cidade Nova: 4.000m de drenagem e 23.000m² de pavimentação;<br><br>VII - Subaé: 3.500m² de pavimentação, para o fundo da Incobal;<br><br>VIII - Sobradinho: 3.500m² de pavimentação para as ruas: Ipamerim, São Geraldo, Salinas (Trav.), Fraternidade e transversal com frente para Av. Eduardo Fróes da Motta;<br><br>IX - Tomba: 2.425m de drenagem e 22.591m² de pavimentação, para drenagem da Rua Pedro Américo de Brito e, drenagem e pavimentação das ruas: Delmiro Gouveia, Valtemiro Gomes, Niquelândia, Guilherme de Azevêdo, Itiuba, Itauna, Tabatinga, Touro, Gemeos, Leão, Libra, Escorpião, Jacinto, Corijá, Romana, Cruzeiro do Sul, Orlândia, Izaias Gonçalves, Tocantinópolis e 1ª Travessa Guilherme de Azevêdo;<br><br>X - Feira X: pavimentação de todas as ruas e praças;<br><br>XI - Caraibas: pavimentação das Ruas Servilhas e Alto de Santana;<br><br>XII - Chácara São Cosme: drenagem da Rua Ouro Preto e reforma da Praça João Marinho Falcão;<br><br>XIII - Conjuntos Francisco Pinto, Fraternidade, Oyama de Figueiredo, Homero de Figueiredo e George Américo: pavimentação de todas as ruas e praças;<br><br>XIV - Sítio Matias: pavimentação para as ruas: Telégrafo, Minas Nova, Minas Vermelha, Pirangi, Minas Preta, Minas Rosas, Grandaus, Minas Rubens, Aren, Minas Velha, Cândido Mendes, Minas Azul, São José, 8ª Travessa Vespasiano, Medeiros Neto e Florianópolis;<br><br>XV - Feira IX: drenagem e pavimentação de todas as ruas e praças.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Para concretização do empréstimo de que trata o artigo 1º; a Prefeitura Municipal de Feira de Santana fica condicionado ao pagamento de juros, reajuste monetário, de acordo com o índice adotado pelas autoridades monetárias do país, acrescido das taxas e outros expedientes estipulados pelo agente financeiro para operações desta natureza, bem como os prazos de carência e amortização definidos segundo a especificidade de instrumento e as normas internas do agente financeiro.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Fica o Poder Executivo Municipal, autorizado a vincular, como garantia aos financiamentos contratados, conforme o caso, parcelas do Imposto sobre Circulação de Mercadorias e Serviços (ICMS) ou do Fundo de Participação dos Municípios (FPM), à níveis suficientes para responder pelo débito e demais encargos contratuais decorrentes do financiamento, e até pagamento final da operação, bem como autorizar ao Agente Financeiro a reter, receber ou compensar aqueles recursos até o limite das obrigações vencidas, conferindo para tanto, poderes especiais nos respectivos contratos que forem assinados.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Será consignado no orçamento do Município, a partir de 1992 e para cada exercício seguinte, dotações suficientes ao pagamento do principal, juros e demais acessórios resultantes do cumprimento desta Lei, durante o prazo de contrato de financiamento, bem como para atender os compromissos de contrapartidas de recursos na fase de execução dos projetos.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Fica o Poder Executivo Municipal autorizado a abrir créditos suplementares até o limite estabelecido no artigo 1º desta Lei, destinados à aplicação dos financiamentos contratados, bem como para a cobertura dos pagamentos das obrigações dele decorrentes.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Fica, ainda, o Poder Executivo Municipal autorizado a firmar contratos aditivos, termos e outros instrumentos públicos necessários a obtenção do financiamento e à outorgada garantia e poderes de que trata esta Lei, mediante autorização Legislativa.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Prefeitura Municipal de Feira de Santana, 29 de outubro de 1991.<br><br>COLBERT MARTINS DA SILVA<br>Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

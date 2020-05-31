@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 1969/97</h2><br>INSTITUI O PLANO PLURIANUAL DO MUNICÍPIO DE FEIRA DE SANTANA, PARA O QUATRIÊNIO ORÇAMENTÁRIO 1998 A 2001.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 009/97, de autoria do Poder Executivo, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Esta Lei institui o PLANO PLURIANUAL DO MUNICÍPIO DE FEIRA DE SANTANA, para o quadriênio orçamento 1998/2001.<br><br>§ 1º Para os fins da Lei são considerados exclusivamente:<br><br>I - As despesas de capital e outras delas decorrentes;<br><br>II - As despesas de programas de duração continuada;<br><br>III - O serviço da dívida municipal.<br><br>§ 2º Após o primeiro ano de vigência, poderá o Poder Executivo propor à Câmara Municipal a revisão do presente plano plurianual.<br><br>§ 3º No ano de 1999 o Poder Executivo executará revisão ao presente plano plurianual relativa aos dois últimos exercícios.<br><br>§ 4º Os objetivos e metas são apresentadas nos ANEXOS I a IX desta Lei.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> A Administração manterá os seguintes programas de duração continuada:<br><br>I - para a Sede do Município:<br><br>a) serviços do Poder Executivo:<br><br>01 - Ttombamento de Bens Móveis e Imóveis;<br>02 - Programa de Distribuição da Merenda Escolar;<br>03 - Manutenção do Ensino, Instalações Físicas, Móveis e Equipamentos da Rede Escolar;<br>04 - Programa de Serviços Sociais;<br>05 - Programa de Assistência Jurídica à População Carente;<br>06 - Instituir a Revista Jurídica Municipal;<br>07 - Programa de Otimização do Sistema Urbano de Transporte de Massa;<br>08 - Desapropriar Imóveis para Atender a Casos de Utilidades e Necessidade Pública de Interesse Social;<br>09 - Programa de Recuperação de Vias;<br>10 - Programa de Manutenção de Iluminação Pública;<br>11 - Programa de Limpeza Pública.<br><br>II - Para a Zona Rural:<br><br>01 - Recuperar as Vias de Acesso às Diversas Localidades;<br>02 - Programa de Distribuição da Merenda Escolar;<br>03 - Programa de Fomento Agrícola;<br>04 - Programa de Extensão de Energia Elétrica;<br>05 - Programa de Transporte Escolar.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Para a execução desta Lei serão assegurados os seguintes recursos, calculados em unidade fiscal de referência - UFIR em valor 31 de junho de 1997.<br><br>a) Para o ano 1998 - 21.185.714,33<br>b) Para o ano 1999 - 22.668.714,35<br>c) Para o ano 2000 - 24.255.524,36<br>d) Para o ano 2001 - 25.953.411,07<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Esta Lei entrará em vigor na data da sua publicação, e seus efeitos orçamentários a partir do dia 31 de dezembro de 1997, ficando revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 18 de dezembro de 1997.<br><br>CLAILTON COSTA MASCARENHAS<br>Prefeito<br><br>EVANGIVALDO DE FIGUEIREDO OLIVEIRA<br>Chefe de Gabinete do Prefeito<br><br>CARLOS ANTONIO DE MORAES LUCENA<br>Procurador Geral do Município<br><br>CARLOS ALBERTO OLIVEIRA BRITO<br>Sec. Municipal da Fazenda<br><br>EMANOEL ALVES DE SOUSA<br>Sec. Municipal de Administração<br><br>ARISTILDES COSTA OLIVEIRA<br>Res. P/Sec. Municipal de Comunicação Social<br><br>WILMA SIMÕES VIEIRA<br>Sec. Municipal de Educação<br><br>HUMBERTO LOPES CEDRAZ<br>Sec. Municipal de Governo<br><br>ANTONIO CARLOS MACHADO<br>Sec. Municipal de Cultura, Esporte e Lazer<br><br>MILMA CARVALHO RÉGIS SAMPAIO<br>P/Sec. Municipal de Planejamento<br><br>EDSON LOPES CEDRAZ<br>Sec. Municipal de Desenvolvimento Econômico<br><br>ROBERTO LUIZ DA SILVA TOURINHO<br>Sec. Municipal de Desenvolvimento Urbano e Meio Ambiente<br><br>EDUARDO NOGUEIRA FILHO<br>Sec. Municipal de Saúde<br><br>RAIMUNDO COSTA MASCARENHAS<br>Sec. Municipal Extraordinário &quot;CAIC&quot;<br><br>JUAREZ RIBEIRO FERNANDES DE OLIVEIRA<br>Sec. Municipal de Desenvolvimento Social<br><br>ANTONIO EDUARDO BENEVIDES DE MIRANDA<br>Sec. Municipal de Serviços Públicos<br><br>Data da Publicação: 24/12/1997<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI PROMULGADA Nº 87/1999</h2><br>INSTITUI O &quot;PROGRAMA DE APOIO À FORMAÇÃO DE HORTAS COMUNITÁRIAS&quot; E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PRESIDENTE DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA NA CONFORMIDADE DO § 7º DO ART. 77, DA LEI Nº  <a class="link_law" data-id="1739637" data-original-title=" Data da Norma: 05.04.1990 - DISPÕE SOBRE A LEI ORGÂNICA DO MUNICIPIO DE FEIRA DE SANTANA E DA OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-promulgada/1990/3/37/lei-promulgada-n-37-1990-dispoe-sobre-a-lei-organica-do-municipio-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">37</a>, DE 05 DE ABRIL DE 1990, DECRETA E PROMULGA A SEGUINTE LEI:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica instituído o &quot; Programa de apoio à Formação de hortas comunitárias&quot;.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> A formação de hortas comunitárias poderá ser implantada:<br><br>I - Em áreas públicas, inclusive naquelas que margeiam as rodovias cedidas exclusivamente para este fim, atendida as exigências legais;<br><br>II - Em áreas privadas cedidas, amigavelmente.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> As áreas cedidas para implantação de hortas comunitárias, dentro do programa de que trata esta lei:<br><br>I - Deverão ser contínuas e com condições de fertilidade suficiente à sua exploração econômica;<br><br>II - Serão exploradas, exclusivamente, por famílias organizadas em associações comunitárias.<br><br>Parágrafo Único - Serão retomadas as áreas cedidas para implantação de hortas comunitárias, quando a exploração do imóvel se der sem adoção de praticas que visem a conservação, melhoramento e recuperação do solo.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Os proprietários, titulares do domínio útil ou possuidores a qualquer titulo de imóvel rural próximo a aglomerações urbanas que cederem, amigavelmente, áreas de suas terras, para implantação de hortas comunitárias, poderão gozar de isenção do pagamento do IPTUImposto Perdial e Territorial Urbano.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> A operacionalização do Programa, de que trata esta lei, dar-se-á através da integração do Governo Municipal, nos termos do Artigo 23, Incisos VIII e X da Constituição Federal, e de associações comunitárias, cabendo:<br><br>I - Ao Governo Municipal: a alocação de recursos, a intermediação para cessão de à áreas implantadas das hortas comunitárias e a prestação de assistência técnica e gerencial às associações comunitárias;<br><br>II - Às associações comunitárias:<br><br>a) a realização do desenho da horta comunitária, compreendendo a localização, o tamanho e o sistema de produção a ser adotado;<br>b) a integração de outras ações locais com as hortas comunitárias.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> A Secretaria Municipal afeta a assistência ao homem do campo, colocará Agrônomos ou Técnicos Agrícolas para auxiliar e orientar as Associações Comunitárias.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Anualmente, o Poder Executivo fará constar do Projeto de Lei Orçamentária as dotações necessárias para os subsídios e benefícios de natureza financeira decorrentes da aplicações do disposto nesta lei.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> O Poder Executivo regulamentará esta lei no prazo de 90(noventa) dias contados de sua publicação.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> Esta lei entrará em vigor na data de sua publicação revogadas as disposições em contrario.<br><br>CÂMARA MUNICIPAL DE FEIRA DE SANTANA, EM 13 DE OUTUBRO DE 1999.<br><br>Ver. EVERTON PEREIRA CERQUEIRA<br>PRESIDENTE<br><br>Autor: Roberto Luis da Silva Tourinho<br>DATA DE PUBLICAÇÃO: 13/10/1999<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

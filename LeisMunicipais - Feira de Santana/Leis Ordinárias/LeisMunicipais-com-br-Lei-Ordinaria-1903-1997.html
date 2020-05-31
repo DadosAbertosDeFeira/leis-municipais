@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 1903/97</h2><br>CRIA O CONSELHO MUNICIPAL DE ALIMENTAÇÃO ESCOLAR, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA,NO USO DAS SUAS ATRIBUIÇÕES, FAÇO saber que a Câmara Municipal aprova e eu sanciono a seguinte Lei:<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> I<br>DA FINALIDADE<br></span></span><br><br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica criado o Conselho Municipal de Alimentação Escolar, com a finalidade de assessorar a administração municipal na execução do programa de assistência e educação alimentar, junto às unidades de educação pré-escolar e de ensino fundamental mantidas pelo município, motivando a participação de órgãos públicos e da comunidade, na consecução de seus objetivos, competindo-lhe especificamente:<br><br>I - Fiscalizar e controlar a aplicação dos recursos destinados à merenda escolar;<br><br>II - Promover a elaboração dos cardápios dos programas de alimentação escolar, respeitando os hábitos alimentares da população do município, sua vocação agrícola, dando preferência aos produtos in natura;<br><br>III - Orientar a aquisição de insumos para os programas de alimentação escolar, dando prioridade aqueles produzidos na região;<br><br>IV - Sugerir medidas aos órgãos dos Poderes Executivo e Legislativo do Município, nas fases de elaboração e tramitação do plano plurianual, da Lei de diretrizes orçamentárias e do orçamento municipal, visando:<br><br>a) As metas a serem alcançadas;<br>b) A aplicação dos recursos previstos na legislação nacional;<br>c) O enquadramento das dotações orçamentárias especificadas para alimentação escolar;<br><br>V - Articular-se com os órgãos ou serviços governamentais nos âmbitos estadual e federal e com outros órgãos públicos ou privados, a fim de obter colaboração ou assistência técnica para a melhoria da alimentação escolar distribuída nas escolas municipais;<br><br>VI - Fixar critérios para a distribuição da merenda escolar nos estabelecimentos de ensino municipais;<br><br>VII - Articular-se com as escolas municipais, conjuntamente com os órgãos de educação do município, motivando-as na criação de hortas, granjas e de pequenos animais de corte, para fins de enriquecimento da alimentação escolar;<br><br>VIII - Realizar campanhas educativas de esclarecimentos sobre alimentação;<br><br>IX - Realizar estudos a respeito dos hábitos alimentares locais, levando-o em conta quando da elaboração dos cardápios para a merenda escolar;<br><br>X - Exercer fiscalização sobre o armazenamento e a conservação dos alimentos destinados à distribuição nas escola, assim como sobre a limpeza dos locais de armazenamento;<br><br>XI - Realizar campanhas sobre higiene e saneamento básico, no que respeita aos seus efeitos sobre a alimentação;<br><br>XII - Incentivar a realização de cursos de culinária, noções de nutrição, conservação de utensílios e material, junto às escolas municipais;<br><br>XIII - Levantar dados estatísticos nas escolas e na comunidade com a finalidade de orçar e avaliar o programa no município.<br><br>Parágrafo Único - A execução das proposições estabelecidas pelo Conselho de Alimentação Escolar ficará a cargo da Secretaria Municipal de Educação.<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> II<br>DA COMPOSIÇÃO DO CONSELHO<br></span></span><br><br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O Conselho Municipal de Alimentação Escolar terá a seguinte composição:<br><br>I - O Secretário Municipal de Educação, que o presidirá;<br><br>II - O Diretor do Departamento de Apoio ao Desenvolvimento Educacional da Secretaria Municipal de Educação;<br><br>III - O Secretário Municipal de Saúde;<br><br>IV - O Secretário Municipal de Desenvolvimento Social;<br><br>V - 1 (um) representante da Associação Comercial;<br><br>VI - 1 (um) representante dos Professores das Escolas Municipais;<br><br>VII - 1 (um) representante de Pais de Alunos;<br><br>VIII - 1 (um) representante dos Trabalhadores Rurais do município.<br><br>§ 1º A cada membro efetivo corresponderá um suplente.<br><br>§ 2º A nomeação dos membros efetivos e dos suplentes será feita pelo executivo para um mandato de 2 (dois) anos, permitida a recondução.<br><br>§ 3º O presidente do Conselho permanecerá como tal durante o tempo que durar sua investidura no cargo de Secretário de Educação.<br><br>§ 4º No caso de ocorrência de vaga, o novo membro designado deverá completar o mandato do substituído.<br><br>§ 5º O Conselho Municipal de Alimentação Escolar reunir-se-á, ordinariamente, com a presença de pelo menos metade dos conselheiros, uma vez por mês e extraordinariamente quando convocado pelo seu presidente, mediante solicitação de pelo menos um terço de seus membros efetivos.<br><br>§ 6º Ficará extinto o mandato do conselheiro que deixar de comparecer, sem justificação, a 2 (duas) reuniões consecutivas do conselho ou a 4 (quatro) alternadas.<br><br>§ 7º Declarado extinto o mandato, o presidente do Conselho oficiará ao Prefeito Municipal para que proceda ao preenchimento da vaga.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> O vice-presidente do Conselho será escolhido por seus pares para um mandato de 2 (dois) anos, podendo ser renovado.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> O exercício do mandato do conselheiro será gratuito e constituirá serviço público relevante.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> As decisões do Conselho serão tomadas por maioria simples, cabendo ao presidente o voto de desempate.<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> III<br>DISPOSIÇÕES FINAIS<br></span></span><br><br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> O programa de alimentação escolar será executado com:<br><br>I - Recursos próprios do município consignados no orçamento anual;<br><br>II - Recursos transferidos pela união e pelo estado;<br><br>III - Recursos financeiros ou de produtos doados por entidades particulares, instituições estrangeiras ou internacionais.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> O Regimento Interno do Conselho será editado pelo Prefeito Municipal, no prazo de 60 (sessenta) dias após a entrada em vigência da presente Lei.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> Fica o Prefeito Municipal autorizado a abrir créditos especiais para atender às despesas decorrentes da aplicação desta Lei.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> Esta Lei entrará em vigor na data da sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 09 de maio de 1997.<br><br>DR. JOSÉ FALCÃO DA SILVA<br>Prefeito<br><br>Profº. TEREZA MARIA DE MELO BEHRENS<br>Secretária Municipal de Educação<br><br>Autor: Poder Executivo<br><br>Data da Publicação: 10/5/1997<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

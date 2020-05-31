@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>RESOLUÇÃO Nº 61/1966</h2><br>DISPÕE SOBRE CONCESSÃO DE ABONO DE NATAL AO PESSOAL DA CÂMARA MUNICIPAL.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>A CÂMARA MUNICIPAL DE FEIRA DE SANTANA, DECRETA E PROMULGA A SEGUINTE RESOLUÇÃO:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica a Mesa da Câmara autorizada a conceder ABONO DE NATAL ao pessoal da Câmara Municipal, de acordo com o art. 43, da Lei Municipal nº  <a class="link_law" data-id="1715174" data-original-title=" Data da Norma: 01.01.1963 - ESTABELECE A ESTRUTURA E DEFINE AS ATRIBUIÇÕES DOS ÓRGÃOS ADMINISTRATIVOS DA PREFEITURA MUNICIPAL DE FEIRA DE SANTANA E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1963/37/377/lei-ordinaria-n-377-1963-estabelece-a-estrutura-e-define-as-atribuicoes-dos-orgaos-administrativos-da-prefeitura-municipal-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">377</a>, de 25 de julho de 1963.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Para ocorrer às despesas com a presente Resolução, fica aberto na Contadoria da Prefeitura, o crédito especial de CR$ 703.000 (SETECENTOS E TRÊS MIL CRUZEIROS) de conformidade com os recursos previstos no art. 186, parágrafo único, alíneas A e B, da Lei 140, de 22/12/948.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Esta Resolução entrará em vigor na data da sua publicação, revogadas as disposições em contrário.<br><br>SALA DAS SESSÕES DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, EM 30 DE DEZEMBRO DE 1966.<br><br>PAULO ALMEIDA CORDEIRO<br>Presidente<br><br>JOSÉ FERREIRA PINTO<br>1º Secretário<br><br>NEWTON TAVARES CARNEIRO<br>2º Secretário<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

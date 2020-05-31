@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>DECRETO Nº 8835, de 11 de janeiro de 2013.</h2><br>ALTERA A COMPOSIÇÃO DO CONSELHO MUNICIPAL DE PROTEÇÃO E DEFESA CIVIL - COMPDC, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, no uso das suas atribuições legais, que lhes são conferidas pelo inciso I e II, do art. 30, da Constituição da República Federativa do Brasil/1988, e pelo art. 94, da <a class="link_law" data-original-title="Lei Orgânica Feira de Santana BA" data-toggle="tooltip" href="/lei-organica-feira-de-santana-ba" rel="tooltip">Lei Orgânica</a> do Município com redação,<br><br>CONSIDERANDO a implantação de um novo período administrativo, Gestão 2013/2016, alterou a titularidade de órgãos e entidades da Administração Municipal,<br><br>CONSIDERANDO o que dispõe o art. 3º, Inciso III, Letra C; da Lei Municipal nº  <a class="link_law" data-id="1544126" data-original-title=" Data da Norma: 05.10.2009 - CRIA A SECRETARIA MUNICIPAL DE PREVENÇÃO À VIOLAÇÃO E PROMOÇÃO DOS DIREITOS HUMANOS, E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2009/300/3005/lei-ordinaria-n-3005-2009-cria-a-secretaria-municipal-de-prevencao-a-violacao-e-promocao-dos-direitos-humanos-e-da-outras-providencias" rel="tooltip">3005</a>, de 05 de outubro de 2009, DECRETA:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> O art. 3º, do Decreto nº  <a class="link_law" data-id="" data-original-title=" Data da Norma: .. - " data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/decreto/2012/859/8597/decreto-n-8597-2012-este-ato-ainda-nao-esta-disponivel-no-sistema" rel="tooltip">8.597</a>, de 16 de maio de 2012, passa a viger com a seguinte redação:<br><br>&quot;Parágrafo Único - Considerando o Estado de Emergência vigente neste Município em razão dos efeitos da estiagem a SEPREV - Secretaria de Prevenção a Violência e Promoção dos Direitos Humanos adotará as providências necessárias para instalação da comissão ora constituída.&quot;<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> A Secretaria Municipal de Agricultura, Recursos Hídricos e Desenvolvimento Rural atuará junto a comissão enquanto vigente o Estado de Emergência referido no artigo antecedente.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> O Conselho Municipal de Proteção e Defesa Civil terá a seguinte composição:<br><br>I - Representando a Secretaria Municipal de Prevenção á Violência e Promoção aos Direitos Humanos:<br><br>a) Jader Cirqueira Amaral - Titular;<br>b) Cassia Dias de Jesus - Suplente.<br><br>II - Representando a Secretaria Municipal de Meio ambiente e Recursos Naturais:<br><br>a) Roberto Luiz da Silva Tourinho - Titular;<br>b) Carlos Alberto Costa da Rocha- Suplente.<br><br>III - Representando a Secretaria Municipal de Desenvolvimento Econômico:<br><br>a) Antônio Carlos Borges dos Santos Júnior- Titular;<br>b) Alaíde Santana do Vale - Suplente.<br><br>IV - Representando a Secretaria Municipal de Desenvolvimento Urbano:<br><br>a) José Rogério Ferreira Campos - Titular;<br>b) Augusto Luís Venas de Jesus- Suplente.<br><br>V - Representando a Secretaria Municipal de Saúde:<br><br>a) Denise Lima Mascarenhas - Titular;<br>b) Patrícia Carneiro Falcão de Almeida - Suplente.<br><br>VI - Representando a Secretaria Municipal de Educação:<br><br>a) Jayana Bastos Miranda Ribeiro - Titular;<br>b) Lenio Lins Ribeiro - Suplente.<br><br>VII - Representando a Secretaria Municipal de Planejamento<br><br>a) Everaldo Marques de Cerqueira - Titular;<br>b) Francisco Fraga Maia Filho - Suplente.<br><br>VIII - Procuradoria Geral do Município;<br><br>a) Carlos Antônio de Moraes Lucena - Titular;<br>b) Cleudson Santos Almeida- Suplente.<br><br>IX - Representando a Secretaria Municipal de Desenvolvimento Social:<br><br>a) Ildes Ferreira de Oliveira - Titular;<br>b) Pedro Torres Filho - Suplente.<br><br>X - Representando a Secretaria Municipal de Transporte e Trânsito:<br><br>a) José Roque Santana Pinho - Titular;<br>b) José Carlos de Cerqueira Bacelar - Suplente.<br><br>XI - Representando o Grupamento de Bombeiros Militares do Estado da Bahia;<br>a) Ten. Cel. Marcelo José Soares Alves - Titular;<br>b) Maj. Jorge Eduardo Piauy Araújo - Suplente.<br><br>XII - Representando o 35º Batalhão de Infantaria:<br><br>a) Ten. Cel. Rogério Matos dos Santos - Titular;<br>b) Major Carlos Henrique Fernandes dos Santos - Suplente.<br><br>XIII - Representando a Polícia Rodoviária Federal:<br><br>a) Israel Ivo Menezes de Melo - Titular;<br>b) Paulo Fabian Silva Santiago - Suplente.<br><br>XIV - Representando a Associação Comercial de Feira de Santana:<br><br>a) Armando Luiz Sampaio - Titular;<br>b) Marcos Silva - Suplente.<br><br>XV - Representando o Centro das Indústrias de Feira de Santana:<br><br>a) André Regis Andrade - Titular;<br>b) Luís da Costa Neto - Suplente.<br><br>XVI - Representando os Clubes de Serviços e Lojas Maçônicas de Feira de Santana:<br><br>a) Abner Cosme Deiró Filho - Titular; Maçonaria<br>b) Douglas Dantas Ramos - Suplente; Rotary<br><br>XVII - Representando Coordenação de Polícia Civil em Feira de Santana:<br><br>a) Ricardo Esteves Brito Costa - Titular;<br>b) Mateus Souza Lima - Suplente.<br><br>XVIII - Representando a Arquidiocese de Feira de Santana:<br><br>a) Dermeval dos S. Nunes - Titular;<br>b) Fernando Silva - Suplente.<br><br>XIX - Representando as Entidades Religiosas com Sede no Município:<br><br>a) Roque Hudson Calumby Mamona-Titular;<br>b) Clovis Souza Nunes - Suplente.<br><br>XX - Representando a Câmara de Dirigentes Lojistas:<br><br>a) Alfredo Muller Marinho Falcão - Titular;<br>b) Rui Ferreira Santana - Suplente.<br><br>XXI - Representando a 2ª Diretoria Regional de Saúde:<br><br>a) Edy Gomes dos Santos - Titular;<br>b) Alexandro dos Santos - Suplente.<br><br>XXII - Representando a 2ª Diretoria Regional de Educação:<br><br>a) Nívia Maria Oliveira da Silva - Titular;<br>b) Lady Daiane S. Fernandes Batista - Suplente.<br><br>XXIII - Representando o Centro Industrial do Subaé:<br><br>a) José Mercês de Oliveira Neto- Titular;<br>b) Kátia Maria Petillo Mota Ferreira.<br><br>XXIV - Representando a Companhia de Eletricidade da Bahia:<br><br>a) Conceição Maria de Jesus Aranha_ Titular;<br>b) Rita de Cássia Sodré Mota - Suplente.<br><br>XXV - Representando a Empresa Baiana de Saneamento (EMBASA):<br><br>a) Onias Pereira de Oliveira Neto - Titular:<br>b) José Neydson Silveira Eloy - Suplente.<br><br>XXVI - Representando a Defesa Civil:<br><br>a) Jorge Antônio Prudente da Silva Fraga - Titular;<br>b) Emilia Cerqueira Lima - Suplente.<br><br>XXVII - Representando o Comando de Policiamento Regional Leste da Polícia Militar (CPRL/PMBA):<br><br>a) Cel. Adelmário Evangelista Xavier - Titular;<br>b) Maj. Vanderval Meneses Ramos - Suplente.<br><br>XXVIII - Representantes dos Radioamadores de Feira de Santana:<br><br>a) Antônio Ferreira Magalhães - Titular;<br>b) Valdir da Costa Vieira - PY6FT.<br><br>XXIX - Representando a Universidade Estadual de Feira de Santana:<br><br>a) Profª Edna Maria Araújo - Titular;<br>b) Profª Judith Sena da Silva - Suplente.<br><br>XXX - Representando a Secretaria de Agricultura, Recursos Hídricos e Desenvolvimento:<br><br>a) Antônio Joel Barbosa - Titular;<br>b) Joedilson Machado de Freitas - Suplente.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Este Decreto entra em vigor na data da sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 11 de janeiro de 2013.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito<br><br>CARLOS ANTÔNIO DE MORAES LUCENA<br>Procurador Geral do Município<br><br>PAULO SÉRGIO AQUINO DE AZEVEDO SOUZA<br>Secretário Municipal de Governo<br>Respondendo pelo Cargo de Chefe de Gabinete do Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

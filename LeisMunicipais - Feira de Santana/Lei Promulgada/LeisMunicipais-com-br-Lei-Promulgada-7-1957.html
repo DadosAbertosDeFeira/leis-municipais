@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI PROMULGADA Nº 7/1957</h2><br>CONCEDE ISENÇÃO DE IMPOSTOS, TOTAL E PARCIALMENTE, À CASA PRÓPRIA DE RESIDÊNCIA DO SERVIDOR MUNICIPAL, ESTADUAL, FEDERAL E AUTÁRQUICO E DA OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>A CÂMARA MUNICIPAL DE FEIRA DE SANTANA DECRETA E PROMULGA A SEGUINTE LEI:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica o Prefeito Municipal autorizado, a isentar de impostos a casa própria de residência do servidor Municipal, que tenha mais de dois anos de serviços Municipais Ininterruptos.<br><br>Parágrafo Único - O benefício abrangerá o bem do casal, desde que seja única residência dos conjugues e que um deles seja servidor Municipal nas condições do art.1º.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> À mulher e herdeiros aquela enquanto não contrair segundas núpcias, e esses enquanto viverem na dependência econômica daquela e às filhas, quanto viúvas, ficam assegurados os mesmos direitos expressos no art.1º.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Gozará, parcialmente, dos benefícios desta Lei, o funcionário público estadual, federal ou autárquico, a isenção de 50% (cinqüenta por cento) no pagamento do imposto predial, desde que este se destine à sua própria e única residência.<br><br>§ 1º Serão estendidos os mesmo benefícios, nas mesmas condições, aos servidores reformados ou aposentados.<br><br>§ 2º Os interessados encaminharão os seus pedidos ao Prefeito Municipal, juntando prova oferecida pela repartição em que estiver lotado e certidão da Prefeitura, de que não possui outro imóvel.<br><br>§ 3º Verificando-se, em qualquer tempo, que estiver o beneficiado possua outra casa que não a da sua residência, será o mesmo intimado a recolher o imposto, desde a época da isenção ou de quando adquirir o segundo imóvel.<br><br>§ 4º O imóvel isento de imposto, de conformidade com os favores desta Lei, que for alienado no prazo de 5 (cinco) anos, a partir da isenção, ficará sujeito ao recolhimento do imposto não pago em virtude da isenção concedida.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Fica, ainda, o Prefeito Municipal autorizado a elaborar um Regulamento para execução da presente Lei.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Esta Lei entrará em vigor a começar de 1º de Janeiro de 1957, revogadas as disposições em contrário.<br><br>PUBLIQUE-SE.<br><br>Gabinete da Presidência da Câmara Municipal de Feira de Santana, em 23 de abril de 1957.<br><br>JORGE WATT DA SILVA<br>PRESIDENTE.<br><br>Autor: Poder Executivo<br>DATA DE PUBLICAÇÃO: 23/04/1957<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

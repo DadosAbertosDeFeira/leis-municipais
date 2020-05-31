@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3884, DE 14 DE SETEMBRO DE 2018.</h2><br>Revoga a Lei nº <a class="link_law" data-id="1739240" data-original-title=" Data da Norma: 06.09.2005 - INSTITUI NO CALENDÁRIO DE COMEMORAÇÕES OFICIAIS DO MUNICÍPIO, A SEMANA DA PAZ.(NA PRIMAVERA)" data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-promulgada/2005/15/155/lei-promulgada-n-155-2005-institui-no-calendario-de-comemoracoes-oficiais-do-municipio-a-semana-da-paz-na-primavera" rel="tooltip">155</a>/2005, e institui o SETEMBRO COLORIDO no município de Feira de Santana, e dá outras providências.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 130/2018, de autoria do Edil Roberto Luis da Silva Tourinho, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica instituído o SETEMBRO COLORIDO DA PAZ que ocorrerá em todo Município de Feira de Santana, durante todo o mês de Setembro de cada ano, objetivando a promoção da cultura de paz e não violência em todas as Organizações Públicas e Privadas, fortalecendo a Lei Municipal que institui o uso da Bandeira Internacional da Paz e Cultura, assim como o estímulo a adesão de todos os Munícipes.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Passa a fazer parte do calendário de comemorações oficiais do Município de Feira de Santana, o SETEMBRO COLORIDO DA PAZ, no período de 01 a 30 de setembro de cada ano.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> As instituições públicas e privadas deverão promover as seguintes atividades:<br><br>a) eventos em todo Município com atividades artísticas, científicas, esportivas e religiosas, museus, bibliotecas de caráter educativo, envolvendo as instituições de ensino, em todos os graus, sobre a importância da cultura de paz e não violência, alicerçados nos seis princípios internacionais do Manifesto 2000 das Nações Unidas, que são:<br><br>a) 1) ouvir para compreender;<br><br>a) 2) respeitar a vida;<br><br>a) 3) redescobrir a solidariedade;<br><br>a) 4) rejeitar a violência;<br><br>a) 5) ser generoso;<br><br>a) 6) preservar o planeta.<br>b) avaliar e fortalecer no âmbito municipal as políticas públicas nos oito eixos do Programa de Ação para uma Cultura de Paz das Nações Unidas:<br>b) 1) cultura de paz através da educação;<br>b) 2) economia sustentável e desenvolvimento social;<br>b) 3) compromisso com todos os Direitos Humanos;<br>b) 4) equidade entre gêneros;<br>b) 5) participação democrática;<br>b) 6) compreensão - tolerância - solidariedade;<br>b) 7) comunicação participativa e livre fluxo de informação e<br>b) 8) paz e segurança local e regional.<br>c) desenvolver pesquisas sobre a causa da violência, avaliar e fortalecer no âmbito municipal o cumprimento da meta 16 dos Objetivos de Desenvolvimento Sustentável - Agenda 2030 - Nações Unidas, ratificada pelo Brasil. Promovendo paz, justiça em sociedades pacíficas e inclusivas para o desenvolvimento sustentável proporcionando o acesso à justiça para todos e apoiando instituições eficazes, responsáveis e inclusivas em todos os níveis.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> O SETEMBRO COLORIDO DA PAZ, terá as seguintes metas de acordo com os Objetivos de Desenvolvimento Sustentável das Nações Unidas:<br><br>I - reduzir significativamente todas as formas de violência e as taxas de mortalidade relacionada em todos os lugares;<br><br>II - acabar com abuso, exploração, tráfico e todas as formas de violência e tortura contra crianças;<br><br>III - promover o Estado de Direito, em nível nacional e internacional, e garantir a igualdade de acesso à justiça para todos;<br><br>IV - reduzir substancialmente a corrupção e o suborno em todas suas formas:<br><br>V - desenvolver instituições eficazes, responsáveis e transparentes em todos os níveis;<br><br>VI - garantir a tomada de decisão responsiva, inclusiva, participativa e representativa em todos os níveis;<br><br>VII - até 2030, fornecer identidade legal para todos, incluindo o registro de nascimento;<br><br>VIII - assegurar o acesso público à informação e proteger as liberdades fundamentais, em conformidade com a legislação nacional;<br><br>IX - promover e fazer cumprir leis e políticas não discriminatórias para o desenvolvimento sustentável;<br><br>X - tornar público o mapa da violência anual do Município de Feira de Santana, para que a sociedade e as instituições competentes, num espírito de cooperação, possam criar planos de erradicação da violência com monitoramento mensal dos dados;<br><br>XI - fazer cumprir os tratados e pactos internacionais que promovam a cultura de paz na dimensão municipal;<br><br>XII - mobilizar a participação dos munícipes para o engajamento na promoção da cultura de paz;<br><br>XIII - fazer campanhas de comunicação que mobilizem a população para que todos compreendam que a cultura de paz é responsabilidade de todos.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> A gestão do SETEMBRO COLORIDO DA PAZ deverá ser realizada através das Secretarias Municipais ligadas ao tema, em conjunto com a Câmara Municipal e com a participação da sociedade civil organizada, indicadas pelo parlamento e o executivo municipal, respeitando as diversas competências de atuação institucional.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> A escolha das entidades da sociedade civil organizada, que comporá o grupo de organização do SETEMBRO COLORIDO DA PAZ, será feita mediante inscrição, no início de cada ano, desde que estas estejam, envolvidas na promoção de cultura de paz e não-violência e sua quantidade ficará a cargo do Poder Executivo e Legislativo Municipal.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Os recursos necessários para viabilização do SETEMBRO COLORIDO DA PAZ, serão providos de forma solidária pelas organizações que aderirem a esta iniciativa.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> Esta Lei entrará em vigor na data de sua publicação e revogada as disposições em contrário, em especialmente a Lei Promulgada nº <a class="link_law" data-id="1739240" data-original-title=" Data da Norma: 06.09.2005 - INSTITUI NO CALENDÁRIO DE COMEMORAÇÕES OFICIAIS DO MUNICÍPIO, A SEMANA DA PAZ.(NA PRIMAVERA)" data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-promulgada/2005/15/155/lei-promulgada-n-155-2005-institui-no-calendario-de-comemoracoes-oficiais-do-municipio-a-semana-da-paz-na-primavera" rel="tooltip">155</a>/2005.<br><br>Gabinete do Prefeito Municipal, 14 de setembro de 2018.<br><br>COLBERT MARTINS DA SILVA FILHO<br>PREFEITO MUNICIPAL<br><br>MARIO COSTA BORGES<br>CHEFE DE GABINETE DO PREFEITO<br><br>CLEUDSON SANTOS ALMEIDA<br>PROCURADOR GERAL DO MUNICÍPIO<br><br>PABLO ROBERTO GONÇALVES DA SILVA<br>SECRETÁRIO MUNICIPAL DE PREVENÇÃO À VIOLÊNCIA E PROMOÇÃO DOS DIREITOS HUMANOS<br><br>EDSON FELLONI BORGES<br>SECRETÁRIO MUNICIPAL DE CULTURA, ESPORTE E LAZER<br><br>ILDES FERREIRA DE OLIVEIRA<br>SECRETÁRIO MUNICIPAL DE DESENVOLVIMENTO SOCIAL<br><br>JAYANA BASTOS MIRANDA RIBEIRO<br>SECRETÁRIA MUNICIPAL DE EDUCAÇÃO<br><br>VALDOMIRO DOS SANTOS SILVA<br>SECRETÁRIO MUNICIPAL DE COMUNICAÇÃO SOCIAL<br><br>PUBLICADO NO DIÁRIO OFICIAL DIA 15 DE SETEMBRO DE 2018<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

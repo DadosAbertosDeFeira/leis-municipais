@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 1077, de 30 de dezembro de 1987</h2><br>DISPÕE SOBRE A CRIAÇÃO DO &quot;ARQUIVO PÚBLICO MUNICIPAL&quot;, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, FAÇO saber que a Câmara Municipal decreta e eu sanciono a seguinte Lei:<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> I<br>FINALIDADE DA COMPETÊNCIA<br></span></span><br><br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica criado na forma da presente lei, o &quot;ARQUIVO PÚBLICO MUNICIPAL&quot;.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O ARQUIVO PÚBLICO MUNICIPAL tem por finalidade desempenhar atividades referentes ao recolhimento, guarda, preservação e conservação de documentos que evidenciem a memória histórica, geográfica, administrativa, técnica, legislativa e jurídica do Município de Feira de Santana, competindo-lhe:<br><br>I - Planejar, orientar, coordenar, supervisionar, executar e avaliar as ações inerentes à sua finalidade;<br><br>II - promover intercâmbios com instituições congêneres, públicas e privadas, serviços e profissionais especializados, objetivando o desenvolvimento e aperfeiçoamento das ações em matéria de sua competência;<br><br>III - executar convênios, acordos de cooperação técnica ou financeira, firmados pelo Município em matéria de sua competência;<br><br>IV - identificar arquivos privados, para declaração de interesse público;<br><br>V - prestar assistência técnica aos diversos órgãos municipais, em matéria de sua competência;<br><br>VI - exercer outras atividades.<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> II<br>ESTRUTURA<br></span></span><br><br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> O ARQUIVO PÚBLICO MUNICIPAL DE FEIRA DE SANTANA, que será supervisionado e dirigido por um diretor, símbolo DA-1, nomeado pelo Prefeito, tem a seguinte estrutura:<br><br>I - Gabinete do Diretor;<br><br>II - Seção Administrativa;<br><br>III - Seção Técnico-Cultural;<br><br>IV - Seção de Arquivos.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> O ARQUIVO PÚBLICO MUNICIPAL substitui estrutura da Secretaria Municipal de Administração, à qual ficará subordinado, o Arquivo Geral, assumindo igualmente as suas atribuições.<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> III<br>COMPETÊNCIA DAS UNIDADES<br></span></span><br><br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Ao gabinete do Diretor, compete:<br><br>I - coordenar a representação social do Diretor;<br><br>II - coordenar o fluxo de informações e as relações públicas de interesse do Arquivo;<br><br>III - exercer outras atividades correlatas.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Á seção administrativa, compete:<br><br>I - expedir, receber e distribuir correspondência e controlar a tramitação de documentos;<br><br>II - preparar e encaminhar o expediente;<br><br>III - executar os serviços de mecanografia;<br><br>IV - controlar as ocorrências de pessoal;<br><br>V - estabelecer as necessidades de material, definindo as requisições e o controle;<br><br>VI - executar e controlar os serviços de portaria, zeladoria e vigilância;<br><br>VII - exercer outras atividades correlatas.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> À seção técnico-cultural, compete:<br><br>I - viabilizar a indexação e a reprodução em microfilmes do acervo do arquivo;<br><br>II - microfilmar ou adquirir microfilmes que guardem relação com o Município de Feira de Santana, mediante expressa autorização do diretor;<br><br>III - promover a pesquisa do material microfilmado através de máquinas de leitura;<br><br>IV - conservar catálogos dos microfilmes sob sua guarda;<br><br>V - guardar em local fora do arquivo os microfilmes relativos ao acervo documental;<br><br>VI - restaurar, quando necessário, não só a documentação constante do arquivo permanente, como aquela do arquivo intermediário;<br><br>VIII - restaurar mapas;<br><br>IX - elaborar instrumentos de pesquisas dos arquivos permanentes;<br><br>X - manter um banco de dados com fluxo de atualização permanente;<br><br>XI - organizar e manter o acervo bibliográfico de apoio à pesquisa de órgão e aperfeiçoamento dos conhecimentos do arquivo público;<br><br>XII - levantar a documentação necessária ao órgão, solicitando sua aquisição;<br><br>XIII - promover o intercâmbio com outras instituições congêneres;<br><br>XIV - manter, classificar e organizar uma biblioteca especializada em assuntos pertinentes ao Município;<br><br>XV - conservar e classificar os períodos existentes no acervo do arquivo, providenciando a sua microfilmagem;<br><br>XVI - atender os usuários, enviando material sob sua guarda à sala de pesquisas;<br><br>XVII - atender às consultas provenientes das demais unidades do órgão;<br><br>XVIII - exercer outras atividades correlatas.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> À seção de arquivos, compete:<br><br>I - cadastrar os arquivos públicos municipais;<br><br>II - catalogar e classificar os documentos constantes do arquivo;<br><br>III - preparar a documentação e coordenar a sua transferência dos arquivos corrente para intermediário e deste para o permanente;<br><br>IV - atender às consultas do órgão de origem do documento sob sua guarda;<br><br>V - fornecer certidões requeridas que estejam contidas nos documentos sob sua guarda;<br><br>VI - atender às consultas dos usuários, referentes ao acervo do arquivo, enviando o material sob sua guarda à sala de pesquisa, de acordo com as normas estabelecidas pelo órgão;<br><br>VII - atender aos pesquisadores estranhos ao quadro de pessoal do arquivo, de acordo com as normas estabelecidas pelo órgão;<br><br>VIII - recolher, registrar, inventariar, classificar e catalogar documentos cartográficos, iconográficos, fotográficos, sonoros, áudio-visuais e outros que não estejam sob forma escrita em papel;<br><br>IX - registrar os arquivos privados;<br><br>X - exercer outras atividades correlatas.<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> IV<br>DISPOSIÇÕES GERAIS<br></span></span><br><br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> As seções definidas na estrutura do arquivo público municipal, serão chefiadas por servidores municipais designados pelo Secretário Municipal de Administração, aos quais será concedida função gratificada (FG).<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10 -</span></a> O assessoramento jurídico ao arquivo público municipal cabe ao serviço jurídico do Município nos termos da legislação em vigor.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11 -</span></a> Fica o Poder Executivo autorizado a regulamentar esta Lei, no prazo de 60 (sessenta) dias da sua vigência.<br><br><a name="artigo_12"><span class="label label-pill label-danger">Art. 12 -</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Prefeitura Municipal de Feira de Santana, em 30 de dezembro de 1987.<br><br>DR. JOSÉ FALCÃO DA SILVA<br>Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>DECRETO LEGISLATIVO Nº 1, DE 14 DE JANEIRO DE 2004.</h2><br>Aprova para o exercício de 2004, o Quadro De Detalhamento de Despesas (QDD), do Poder Legislativo Municipal e dá outras Providencias.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PRESIDENTE DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, no uso de suas atribuições, de acordo com o que dispõe o art. 33 da lei  <a class="link_law" data-id="1555855" data-original-title=" Data da Norma: 20.06.2003 - DISPÕE SOBRE AS DIRETRIZES ORÇAMENTÁRIAS PARA O EXERCÍCIO DE 2004 E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2003/240/2408/lei-ordinaria-n-2408-2003-dispoe-sobre-as-diretrizes-orcamentarias-para-o-exercicio-de-2004-e-da-outras-providencias" rel="tooltip">2408</a>, de 20 de junho de 2003. DECRETA:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica aprovado para o exercício de 2004, na forma do anexo único a este ato, o Quadro de Detalhamento de Despesas (QDD), com valores expressos em reais, correspondente a programação orçamentária da Câmara Municipal.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> A execução orçamentária e financeira no âmbito do Poder Legislativo ficará a cargo da própria Câmara Municipal, obedecendo a estrutura de custos dos projetos e atividades, segundo a natureza da despesa em consonância com os respectivos programas de trabalho fixados na Lei Orçamentária Anual.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> A utilização dos recursos que compõem a estrutura de custos das atividades e projetos, obedecerá a programação financeira e o cronograma de execução mensal de desembolso, a serem aprovados pelo chefe do Legislativo Municipal.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> A Controladoria da Câmara Municipal exercerá, em conjunto com a Divisão Financeira e o Setor de Contabilidade, o acompanhamento da execução orçamentária e financeira, visando assegurar a sua realização de acordo com o fluxo financeiro, fixado em cotas mensais.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Este decreto vigorará até o dia 31 de Dezembro de 2004, retroagindo seus efeitos a 1º de janeiro do corrente exercício.<br><br>Gabinete da Presidência, aos 14 dias do mês de Janeiro de 2004.<br><br>Ver. ANTONIO CARLOS DALTRO COELHO<br>Presidente<br><br>Visualizar Ato na Íntegra: <a href="/BA/FEIRA.DE.SANTANA/DECRETO-LEGISLATIVO-1-2004-FEIRA-DE-SANTANA-BA.pdf" title="Decreto legislativo nº 1/2004 de Feira de Santana">Decreto legislativo nº 1/2004 - Feira de Santana-BA</a><p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

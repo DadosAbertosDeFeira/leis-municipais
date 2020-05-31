@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 2591/2005</h2><br>DISPÕE SOBRE O CONSELHO MUNICIPAL DE COMBATE Á CORRUPÇÃO E Á IMPUNIDADE.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Autor: Roberto Luis da Silva Tourinho<br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 05/2005, de autoria do Edil Roberto Luis da Silva Tourinho, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> fica criado no Município, o Conselho Municipal de Combate à Impunidade, órgão colegiado e consultivo, vinculado á Procuradoria Geral do Município, que tem como finalidade sugerir e debater medidas e estratégias de corrupção e á impunidade.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Compete ao Conselho Municipal de Combate à corrupção e à Impunidade:<br><br>I - contribuir para a formulação da política de combate á corrupção e à impunidade, a ser implementada pelo Município, órgãos e entidades da administração pública municipal;<br><br>II - sugerir projetos e ações prioritárias da política de combate à corrupção à impunidade;<br><br>III - sugerir procedimentos que promovam o aperfeiçoamento e a integração das ações de incremento da transparência e de combate á impunidade, no âmbito da adminstração pública municipal;<br><br>IV - atuar como instância de articulação e mobilização da sociedade civil organizada para o combate à corrupção e á impunidade;<br><br>V - realizar estudos e estabelecer estratégias que fundamentem propostas legislativas e administrativas tendentes a maximizar a transparência da gestão pública e ao combate à corrupção e à impunidade.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> O Conselho Municipal de Combate á Corrupção e á Impunidade será composto por conselheiros, designados pelo Prefeito Municipal, a saber:<br><br>I - entre as autoridades do Poder Executivo Municipal:<br><br>a) um representante da Procuradoria Geral do Município;<br>b) um representante da Secretaria Municipal da Fazenda;<br>c) um representante da Secretaria Municipal da Administração;<br>d) um representante da Secretaria Municipal de Governo.<br><br>II - entre as autoridades públicas convidadas:<br><br>a) um representante do Ministério Público Estadual;<br>b) um representante do Tribunal de Contas do Município;<br><br>III - entre os representante da Ordem dos Advogados do Brasil- Secção Feira de Santana;<br><br>a) um representante da Ordem dos Advogados do Brasil- Secção Feira de Santana;<br>b) um representante do Sindicato dos Jornalistas;<br>c) um representante das Associações de Bairros;<br>d) um representante da Arquidiocese;<br>e) um representante das Igrejas Evangélicas do Município;<br>f) um representante dos trabalhadores, indicado em regime de alternância entre as centrais sindicais;<br>g) um cidadão que exerça atividade acadêmica, científica, cultural ou artística, escolhido pelo Prefeito Municipal.<br><br>§ 1º O Conselho Municipal de Combate à Corrupção e à Impunidade será presidido pelo Procurador Geral do Município.<br><br>§ 2º O Conselho Municipal de Combate à corrupção e à Impunidade contará com uma Secretaria Executiva, que será escolhida pelos demais membros do Conselho.<br><br>§ 3º Os representantes dos órgão e governamentais serão indicados pelos respectivos Secretários.<br><br>§ 4º Os representantes dos órgãos não-governamentais terão mandato de dois anos, permitida uma recondução por igual período.<br><br>§ 5º A critério do Presidente do o Conselho Municipal de Combate à Corrupção e à Impunidade, poderão ser especialmente convidados a participar das reuniões do colegiado, sem direito a voto, titulares de outros órgãos ou entidades públicas, bem como organizações e pessoas que representem a sociedade civil, sempre que a pauta constarem assuntos de sua área de atuação.<br><br>§ 6º O Conselho Municipal de Combate à corrupção e à impunidade elaborará o seu regimento interno, em até 90 ( noventa ) dias, a contar da data de sua instalação.<br><br>§ 7º Esta Lei será regulamentada pelo Executivo, no que couber, no prazo de 60 ( sessenta ) dias, a contar da data de sua publicação.<br><br>§ 8º Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 30 de junho de 2005.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

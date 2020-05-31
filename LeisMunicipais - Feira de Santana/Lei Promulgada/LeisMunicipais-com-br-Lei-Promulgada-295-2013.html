@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI PROMULGADA Nº 295/2013</h2><br>ESTABELECE OBRIGATORIEDADE DE AFERIÇÃO DE MEDIDORES DE FORNECIMENTO DE ENERGIA ELÉTRICA E DE FORNECIMENTO DE ÁGUA, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PRESIDENTE DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 31/2011, de autoria do Edil Antônio Carlos Passos Ataíde, e na conformidade do artigo 78, § 7º, da Lei nº  <a class="link_law" data-id="1739637" data-original-title=" Data da Norma: 05.04.1990 - DISPÕE SOBRE A LEI ORGÂNICA DO MUNICIPIO DE FEIRA DE SANTANA E DA OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-promulgada/1990/3/37/lei-promulgada-n-37-1990-dispoe-sobre-a-lei-organica-do-municipio-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">37</a>, de 05 de Abril de 1990, e artigo 25 e inciso V, do Regimento Interno, PROMULGA a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica obrigado a aferição de todos os medidores de fornecimento de Energia Elétrica e de fornecimento de Água no território do Município de Feira de Santana.<br><br>Parágrafo Único - As empresas concessionárias exploradoras dos serviços aludidos no caput deste Artigo serão as responsáveis pela adoção das medidas necessárias para a efetivação do procedimento.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Os custos decorrentes destas medidas serão da exclusiva competência da empresa que detenha a concessão dos serviços.<br><br>Parágrafo Único - Constatado que seja a adulteração do medidor, o usuário será punido com o pagamento dos custos decorrentes da aferição e de acordo com as Resoluções da ANEEL.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> A aferição do medidor deverá sempre ser acompanhada, preferencialmente, por pessoa residente no imóvel, com maioridade civil, documentalmente identificado, sendo obrigatória esta presença, quando constatadas irregularidades de responsabilidade do consumidor.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Obrigatoriedade a empresa que proceda a aferição, seja a concessionária ou firma terceirizada, deverá entregar ao residente do imóvel objeto da medida, laudo contendo os dados técnicos do procedimento, com seus resultados e com as observações que sejam necessárias para a correção de irregularidades se houverem, quando de responsabilidade do morador, devidamente assinada pelo técnico aferidor.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Os parâmetros técnicos de aceitabilidade resultantes da aferição são aqueles estabelecidos em legislações próprias da ANEEL e não poderão exceder o limite de 4% (quatro por cento) de variação de erro, para mais ou menos.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Após a publicação desta Lei, as concessionárias terão um prazo de 6 (seis) meses paras as visitas aos imóveis dos consumidores para os procedimentos da primeira aferição, sendo que as subsequentes ocorrerão a cada 12 (doze) meses, não podendo, não podendo ultrapassar o último dia do calendário civil anual.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> O consumidor poderá solicitar a concessionária, a visita de um dos seus técnicos para averiguação dos eu medidor, quando houver alguma dúvida, no intervalo entre uma e outra aferição de rotina.<br><br>Parágrafo Único - Em caso de dúvida continuada por parte de consumidor, este poderá recorrer a órgão oficial, no prazo de 10 (dez) dias após a aferição por parte da empresa concessionária.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> Nas faturas/notas fiscais, obrigatoriamente constarão as datas das últimas duas aferições.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> A inexistência de aferição pelas empresas concessionárias ensejará aplicação de multas e outras penalidades pelo Poder Executivo Municipal.<br><br>Parágrafo Único - Por cada medidor não aferido, após o prazo estabelecido nesta Lei, o Poder Executivo aplicará multas, a saber:<br><br>I - 30 % (trinta por cento) do valor da UFM - Unidade Fiscal do Município, na primeira ocorrência;<br><br>II - em caso de reincidência, com o mesmo medidor, 10 (dez) UFM - Unidade Fiscal do Município, por ocorrência;<br><br>III - em se repetindo, continuadamente, a situação, a multa contida no inciso II será sempre dobrada a cada ocorrência com o mesmo medidor.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10</span></a> Após a aferição dos medidores, as empresas responsáveis pelas operações realizadas, colocarão lacre no relógio de medição de consumo do imóvel objeto da visita.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11</span></a> Cabe ao Poder Executivo Municipal proceder e acompanhar a fiscalização do cumprimento desta Lei, através da Secretaria competente designada pelo Prefeito Municipal.<br><br><a name="artigo_12"><span class="label label-pill label-danger">Art. 12</span></a> Esta Lei será regulamentada pelo Prefeito do Município, no prazo de até 60 (sessenta) dias após a sua aprovação, período que sendo ultrapassado, ensejará a sua imediata aplicabilidade.<br><br><a name="artigo_13"><span class="label label-pill label-danger">Art. 13</span></a> Esta Lei entrará em vigor na data de sua publicação, revogas as disposições em contrário.<br><br>CÂMARA MUNICIPAL DE FEIRA DE SANTANA, em 10 de Dezembro de 2013.<br><br>JUSTINIANO OLIVEIRA FRANÇA<br>Presidente<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

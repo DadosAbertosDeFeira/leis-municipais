@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>RESOLUÇÃO Nº 355/1998</h2><br>DISPÕE SOBRE PROVIDÊNCIAS RELATIVAS À CONCLUSÃO DOS TRABALHOS DA COMISSÃO PARLAMENTAR DE INQUÉRITO, INSTALADA PELO REQUERIMENTO Nº 372/98, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>A CÂMARA MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, na conformidade do Art. 70, inciso VII, da Lei Municipal nº <a class="link_law" data-id="1739637" data-original-title=" Data da Norma: 05.04.1990 - DISPÕE SOBRE A LEI ORGÂNICA DO MUNICIPIO DE FEIRA DE SANTANA E DA OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-promulgada/1990/3/37/lei-promulgada-n-37-1990-dispoe-sobre-a-lei-organica-do-municipio-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">37</a> de 05 de abril de 1990, e Artigos 72, inciso III e 138 § 2º, do Regimento Interno, promulga a seguinte Resolução:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> A Mesa Diretiva da Câmara Municipal, face ao relatório conclusivo e documentos anexos, elaborado pela Comissão Parlamentar de Inquérito, instalada pelo Requerimento nº 372/98, adotará as seguintes providências:<br><br>I - encaminhar relatório conclusivo da Comissão Parlamentar de Inquérito para a Procuradoria Geral da República, solicitando abertura de investigação para posterior denúncia;<br><br>II - encaminhar a mesma documentação à Superintendência da Polícia Federal da Bahia, solicitando abertura de inquérito para posterior denúncia;<br><br>III - encaminhar também o relatório ao Ministério da Saúde;<br><br>IV - dar conhecimento à Fundação Nacional de Saúde, em Brasília;<br><br>V - encaminhar toda a documentação para o Tribunal de Contas dos Municípios, para adoção das medidas cabíveis;<br><br>VI - solicitar ao Ministério da Saúde que realize uma auditoria na Fundação Nacional de Saúde, em Feira de Santana.<br><br>Parágrafo Único - Ao adotar as providências determinadas neste artigo, a Mesa Diretiva observará a diligência necessária para que os atos apurados não sejam atingidos pela prescrição.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Esta Resolução entrará em vigor na data da sua publicação, revogadas as disposições em contrário.<br><br>MESA DIRETIVA DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, EM 22 DE JUNHO DE 1998.<br><br>DR. EVERTON PEREIRA CERQUEIRA<br>Presidente<br><br>MANOEL MESSIAS GONZAGA<br>1º Secretário<br><br>JOÃO ZITO BORGES DA SILVA<br>2º Secretário<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

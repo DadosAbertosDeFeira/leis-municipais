@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 1911/97</h2><br>NORMATIZA A DENOMINAÇÃO DE LOGRADOUROS PÚBLICOS, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 24/97, de autoria do Edil Ildes Ferreira de Oliveira, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> São considerados logradouros públicos as praças, largos, avenidas, ruas, vilas, caminhos, travessas e becos.<br><br>Parágrafo Único - Fica proibido o uso de uma mesma denominação para identificar mais de um logradouro público.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> É vedado o uso de nomes de pessoas físicas vivas para se denominar logradouro público.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> A denominação a qualquer logradouro público habitado ainda não identificado far-se-à mediante pedido de pelo menos 1/3 (um terço) dos seus moradores, ou consulta aos mesmos na mesma proporção.<br><br>Parágrafo Único - A comprovação da exigência deste artigo far-se-à mediante apresentação da solicitação escrita ou lista de assinaturas dos moradores consultados, fazendo-se prova da respectiva residência.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> A alteração de nomes de qualquer logradouro público habitado só poderá ser feita mediante pedido por escrito de 51% (cinqüenta e hum por cento) dos seus moradores.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Quando da utilização de nomes de personalidades para a identificação de logradouros públicos deve-se utilizar apenas o nome e um sobrenome ou dois sobrenomes do homenageado.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Todas as edificações existentes na Cidade de Feira de Santana, deverão ser identificadas pelo órgão competente com um número, nos termos da Lei nº <a class="link_law" data-id="1607976" data-original-title=" Data da Norma: 04.07.1969 - INSTITUI O CÓDIGO DE EDIFICAÇÃO DO MUNICÍPIO." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1969/63/632/lei-ordinaria-n-632-1969-institui-o-codigo-de-edificacao-do-municipio" rel="tooltip">632</a>/69 (Código Municipal de Edificações), cabendo ao proprietário ou morador a colocação do mesmo.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> O Poder Executivo fica autorizado a permitir, à título precário, que terceiro explore o serviço de fixação de placas, mediante compensação publicitária.<br><br>§ 1º O Permissionário será escolhido nos moldes das Leis Federais de nºs 8987/95 e 8666/93.<br><br>§ 2º Às permissões acaso atualmente existentes, aplicar-se-á o disposto no art. 42º a Lei Federal 8987/95.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> Esta Lei entrará em vigor na data da sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 02 de junho de 1997.<br><br>DR. JOSÉ FALCÃO DA SILVA<br>Prefeito<br><br>Dr. ROBERTO LUIZ DA SILVA TOURINHO<br>Secretário Municipal de Desenvolvimento Urbano e Meio Ambiente<br><br>Data da Publicação: 7/6/1997<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

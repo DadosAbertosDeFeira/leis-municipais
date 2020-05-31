@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 2618/2005</h2><br>DETERMINA A PRESENÇA DE UM SERVIDOR MUNICIPAL HABILITADO EM PRIMEIROS SOCORROS NAS ESCOLAS DA REDE MUNICIPAL DE ENSINO NO MUNICIPIO DE FEIRA DE SANTANA E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Autor: Cintia Daltro Machado<br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 171/2005, de autoria da Edil Cíntia Daltro Machado, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica determinado à obrigatoriedade de presença de um servidor municipal com formação comprovada em primeiros socorros, nas escolas da rede municipal de ensino com mais de 200 (duzentos) alunos, no Município de Feira de Santana.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> A obrigatoriedade da presença do servidor municipal, nos turnos vespertinos e matutino, conforme o artigo 1º, obedecerá ao calendário escolar, determinado pela Secretaria Municipal de Educação.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> A Prefeitura Municipal de Feira de Santana através da Secretaria Municipal de Saúde ficará com a responsabilidade de fazer o treinamento do servidor municipal.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> A Prefeitura Municipal de Feira de Santana através da Secretaria Municipal de Educação viabilizará todas as condições para o cumprimento desta Lei.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> A presente Lei, após sua publicação, entrará em vigor no dia 1º de janeiro de 2006, revogadas as disposições em contrário.<br><br>PREFEITURA MUNICIPAL DE FEIRA DE SANTANA, EM 17 DE OUTRUBRO DE 2005.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

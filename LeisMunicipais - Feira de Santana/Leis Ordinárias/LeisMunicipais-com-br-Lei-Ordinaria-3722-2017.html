@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3722, DE 31 DE AGOSTO DE 2017</h2><br>&quot;Proíbe o funcionamento dos equipamentos de som automotivos, popularmente conhecidos como paredões do som nas vias, praças e demais logradouros públicos no âmbito do Município de Feira de Santana, e dá outras providências.&quot;<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA; FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 59/2017, de autoria do Edil Roberto Luis da Silva Tourinho, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica expressamente vedado o funcionamento dos equipamentos de som automotivo, popularmente conhecidos como paredões de som, e equipamentos sonoros assemelhados, nas vias, praças, e demais logradouros públicos no âmbito do Município de Feira de Santana.<br><br>Parágrafo único. A proibição de que trata este artigo se estende aos espaços privados de livre acesso ao público, tais como postos de combustíveis, postos de lavagem, espaço de eventos e estacionamentos e chácara, que realizam eventos com paredão, com cobranças de ingresso ou não.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O descumprimento do estabelecido nesta Lei acarretará a apreensão imediata do equipamento.<br><br>Parágrafo único. Para a retirada do equipamento deverá ser observado o procedimento administrativo ao qual se refere o § 1º do Art. 5º desta Lei.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Para os efeitos da presente Lei, consideram-se os paredões de som todo e qualquer equipamento de som automotivo rebocado, instalado ou acoplado nos porta-malas ou sobre a carroceria dos veículos.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> A condução dos equipamentos aos quais se refere esta Lei, por meio de reboque, acomodação no porta-malas ou sobre a carroceria dos veículos, deverá ser feita, obrigatoriamente, com proteção de capa acústica, cobrindo integralmente os cones dos altos falantes, sob pena de aplicação das sanções previstas no Art. 5º desta Lei.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Sem prejuízo das sanções de natureza Civil, Penal e das definidas em Legislação Especifica, fica o Infrator, proprietário do veiculo ou ambos, solidariamente, conforme o caso, sujeito ao pagamento de multa de trânsito, lavrada pela autoridade competente, agente de trânsito, guincho e estadia do pátio, em caso de descumprimento do estabelecido nesta Lei.<br><br>§ 1º A pena de multa será aplicada mediante procedimento administrativo da Secretaria de Meio Ambiente e Recursos Naturais, observado o contraditório e a ampla defesa.<br><br>§ 2º O valor da multa será de R$ 500,00 (quinhentos) reais, dobrada a cada reincidência, respeitando o limite de R$ 5.000,00 (cinco mil) reais.<br><br>§ 3º O valor da multa cobrada em locais como casa de show, espaço de eventos ou chácaras, em que exista cobrança de ingresso terão os seguintes valores:<br><br>a) primeira multa: valor de R$ 2.500,00 (dois mil e quinhentos reais);<br>b) segunda multa: valor de R$ 5.000,00 (cinco mil reais);<br>c) terceira multa: valor de R$ 10.000,00 (dez mil reais).<br><br>§ 4º Aqueles que tenham sido multados, tendo vencido os prazos de defesa, ou julgada improcedente a mesma, e não tenham realizado os pagamentos devidos, serão encaminhados à Secretaria da Fazenda para imediata inclusão na Dívida Ativa do Município.<br><br>§ 5º Os valores arrecadados através da aplicação das penalidades previstas nesta Lei serão revertidos para a conta do Fundo Municipal de Ambiente - FUNDEMA.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Desde que atendam aos limites já estabelecidos pela Legislação Ambiental, não se incluem nas exigências desta Lei a utilização de aparelhagem sonora:<br><br>I - instalada no habitáculo do veiculo, com a finalidade de emissão sonora exclusivamente para o seu interior;<br><br>II - em eventos do Calendário Oficial do Município, ou expressamente autorizados pela Secretaria de Meio Ambiente e Recursos Naturais, desde que façam parte de sua programação;<br><br>III - em manifestações religiosas, sindicais ou políticas, observada a legislação pertinente;<br><br>IV - utilizada na publicidade sonora, atendida a legislação especifica.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Fica o Município de Feira de Santana, através do Departamento de Licenciamento e Fiscalização, da Secretaria Municipal de Meio Ambiente e Recursos Naturais, órgão competente e com a observância à legislação pertinente, autorizados a licenciar espaços para a realização dos campeonatos de som automotivo, bem como autorizar eventos assemelhados.<br><br>§ 1º O licenciamento e a autorização aos quais se refere o caput deste artigo só poderão ser concedidos a locais que esteja assegurado o devido isolamento acústico ou condições ambientais que a assegurem a inexistência de qualquer perturbação ao sossego público.<br><br>§ 2º Qualquer cidadão que venha a sofrer incômodo decorrente de evento entre os tipificados no caput deste artigo poderá formalizar reclamação ao órgão competente que, verificada a procedência da queixa, promoverá a suspensão imediata do mesmo.<br><br>§ 3º A reclamação prevista no § 2º deste artigo ensejará abertura de processo administrativo, na Secretaria de Meio Ambiente e Recursos Naturais, para apuração da queixa, sujeitando o infrator às penalidades previstas no art. 5º desta Lei.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> Fica a Secretaria de Meio Ambiente e Recursos Naturais - SEMMAM, autorizada a proceder a fiscalização e a realizar todos os atos necessários à implementação do objetivo desta Lei.<br><br>§ 1º Fica a Secretaria de Meio Ambiente e Recursos Naturais - SEMMAM autorizada a realizar parcerias ou convênios com a Guarda Municipal, com os órgãos de Trânsito e Meio Ambiente nas esferas municipal, estadual e federal, com a Polícia Militar e Civil e com o Ministério Publico, tendo em vista o cumprimento desta Lei.<br><br>§ 2º Todas as ações elaboradas em parceria com a Superintendência Municipal de Trânsito será exercida de acordo com a Resolução Nº 624, de 19 de outubro de 2016, a que se refere o art. 228, do Código de Trânsito Brasileiro - CTB.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> Esta Lei entrará em vigor no prazo de 90(noventa) dias, após a sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 31 de agosto de 2017.<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO MUNICIPAL<br><br>MARIO COSTA BORGES<br>CHEFE DE GABINETE DO PREFEITO<br><br>CLEUDSON SANTOS ALMEIDA<br>PROCURADOR GERAL DO MUNICÍPIO<br><br>SÉRGIO BARRADAS CARNEIRO<br>SECRETÁRIO MUNICIPAL DE MEIO AMBIENTE E RECURSOS NATURAIS<br><br>PUBLICADO NO DIÁRIO OFICIAL ELETRÔNICO DIA 05 DE SETEMBRO DE 2017.<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

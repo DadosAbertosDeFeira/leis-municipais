@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 1667/93</h2><br>AUTORIZA A DOAÇÃO DE TERRENO À UNIÃO FEDERAL PARA IMPLANTAÇÃO DO CENTRO DE ATENÇÃO INTEGRAL À CRIANÇA - CAIC, EM FEIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, FAÇO saber que a Câmara Municipal decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica o Poder Executivo autoriza doar à União Federal, um terreno com a área de 24.832m² (vinte quatro mil oitocentos e trinta e dois metros quadrados), localizado no Condomínio Elza de Azevedo, no bairro do Tomba, descrita como desmembrada do setor &quot;A&quot; com as seguintes confrontações, ao Norte 100 (cem metros) com o setor &quot;B&quot;, ao Leste 231,00 (duzentos e trinta e um) metros com o setor &quot;A&quot;, ao Sul 115 (cento e quinze) metros com o setor &quot;A&quot;, e ao Oeste 233 ( duzentos e trinta e três) metros com uma rua sem denominação, transversal ao acesso; área com a descrição topográfica poligonal A-A- inicia-se no ponto A-1 que coincide com o ponto B-17 do setor B com Az 104º00, 100m, chega-se ao ponto B, daí Az 345º30 e 231 chega-se ao ponto A-3, confrontando-se com o setor A, daí com Az 104º00 e 115 chega-se ao ponto A-3, confrontando-se com o setor A daí com Az 18º e 233m chega-se ao ponto A-1 fechando o poligonal, nesta cidade, e que se destinará à construção do CAIC.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O não início da obra no prazo de 01 (um) ano implicará na reversão do bem ao patrimônio público municipal.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Revogadas as disposições em contrário, esta Lei entrará em vigor na data de sua publicação.<br><br>Prefeitura Municipal de Feira de Santana, em 21 de junho de 1993.<br><br>DR. JOÃO DURVAL CARNEIRO<br>Prefeito<br><br>Profº JOSÉ RAIMUNDO P. DE AZEVEDO<br>Sec. de Educação e Cultura<br><br>Dr. RAIMUNDO ALVES PIRES<br>Sec. de Planejamento e Meio Ambiente<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

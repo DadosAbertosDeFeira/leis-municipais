@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 1970/97</h2><br>AUTORIZA A CRIAÇÃO DO &quot;SISTEMA DE CAIXA ÚNICO DA ADMINISTRAÇÃO MUNICIPAL DE FEIRA DE SANTANA&quot;.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 015/97, de autoria do PODER EXECUTIVO, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica o Poder Executivo autorizado a criar o &quot;Sistema de Caixa Único da Administração Municipal de Feira de Santana - SICUM&quot;, o qual funcionará em agências do Banco do Brasil S/A, instaladas na sede do Município.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O Sistema de Caixa Único, constituído de conta única do Tesouro Municipal e das sub-contas dos órgãos do Poder Executivo, seus fundos, autarquias, fundações e empresas públicas, acolherá todas as receitas orçamentárias e extra-orçamentárias, tais como:<br><br>I - tributárias, patrimoniais e oriundas da produção industrial, agropecuária e da prestação de serviços;<br><br>II - transferências correntes e de capital, inclusive as constitucionais e legais provenientes da administração federal ou estadual;<br><br>III - operações de crédito internas e externas;<br><br>IV - provenientes da alienação de bens móveis e imóveis;<br><br>V - oriundas de convênios, acordos, contratos e outros instrumentos assemelhados;<br><br>VI - outras receitas correntes ou de capital;<br><br>VII - próprias de fundos, autarquias, fundações e empresas públicas;<br><br>VIII - outras receitas municipais.<br><br>§ 1º A abertura de sub-contas específicas somente poderão ocorrer, mediante autorização da Secretaria Municipal da Fazenda, nos casos que houver necessidade de demonstrar fontes e aplicações, principalmente, para atendimento de disposição de Lei ou de convênios e outros instrumentos assemelhados.<br><br>§ 2º As receitas de autarquias, fundações e empresas públicas, inclusive dos fundos municipais serão efetivadas diretamente nas respectivas sub-contas específicas.<br><br>§ 3º Não se inclui no &quot;Sistema de Caixa Único do Município&quot; as contas originárias de depósitos em agências bancárias para posterior recolhimento à Secretaria Municipal da Fazenda, nem aquelas abertas exclusivamente para arrecadação de tributos municipais pela rede bancária oficial ou particular.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Fica criada a conta &quot;SUPRIMENTOS&quot;, com a finalidade de concentrar os recursos das sub-contas do Sistema de Caixa Único do Município, até o valor correspondente ao somatório dos seus saldos.<br><br>§ 1º Os lançamentos referidos neste artigo, serão registrados, em contrapartida, na conta &quot;Conta Única do Tesouro Municipal&quot;. § 2º Os saldos da conta única e das sub-contas, é disponibilidade do &quot;Sistema de Caixa Único do Município&quot;, a ser administrado pela Secretaria da Fazenda Municipal, na forma da Lei.<br><br>§ 3º Poderão ser utilizados pela Secretaria Municipal da Fazenda os recursos objeto do parágrafo anterior por insuficiência da tesouraria.<br><br>§ 4º Quando se tratar de recursos oriundos das sub-contas pertencentes às autarquias, fundações e empresas públicas serão registrados na contabilidade no passivo financeiro, no grupo de contas depósitos, com o subtítulo suprimento de administração indireta.<br><br>§ 5º Com o ingresso de recursos decorrentes das receitas correntes ou de capital, a Secretaria Municipal da Fazenda deve repor os recursos de &quot;suprimento&quot;, objeto deste artigo, tendo em vista manter a melhor execução do programa do Governo Municipal, objetivando equilíbrio entre a receita arrecadada e a despesa realizada, de modo a reduzir ao mínimo as eventuais insuficiências de tesouraria.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Fica vedado ao Banco do Brasil S/A, por iniciativa própria, proceder qualquer lançamento a débito das contas integrantes do Sistema de Caixa Único.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Fica o Secretário Municipal da Fazenda, autorizado:<br><br>I - a celebrar convênio com o Banco do Brasil S/A, objetivando, especialmente, estabelecer as atribuições daquele banco na racionalização do Sistema de Caixa Único Municipal;<br><br>II - a celebrar contratos, convênios acordos ou ajustes com outros órgãos ou entidades, públicas ou privadas, incumbindo-se do serviço de arrecadação das receitas referidas no art. 2º, devendo constar dos respectivos instrumentos a forma de contabilização;<br><br>III - a expedir e firmar documentos complementares e necessários à execução do presente decreto.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 18 de dezembro de 1997.<br><br>CLAILTON COSTA MASCARENHAS<br>Prefeito<br><br>CARLOS ALBERTO OLIVEIRA BRITO<br>Sec. Municipal da Fazenda<br><br>Data da Publicação: 20/12/1997<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

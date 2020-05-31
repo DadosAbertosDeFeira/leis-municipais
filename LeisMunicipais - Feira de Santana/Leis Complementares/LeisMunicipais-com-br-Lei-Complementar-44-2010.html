@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI COMPLEMENTAR Nº 44/2010</h2><br>ALTERA DISPOSITIVO DA LEI COMPLEMTENTAR Nº <a class="link_law" data-id="1717328" data-original-title=" Data da Norma: 08.06.1995 - REGULAMENTA O ART. 90 DA LEI ORGÂNICA, QUE CRIOU A PROCURADORIA GERAL DO MUNICÍPIO DE FEIRA DE SANTANA E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-complementar/1995/0/2/lei-complementar-n-2-1995-regulamenta-o-art-90-da-lei-organica-que-criou-a-procuradoria-geral-do-municipio-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">02</a>/1995, QUE REGULAMENTA O ARTIGO DA <a class="link_law" data-original-title="Lei Orgânica Feira de Santana BA" data-toggle="tooltip" href="/lei-organica-feira-de-santana-ba" rel="tooltip">LEI ORGÂNICA</a> QUE CRIA A PROCURAORIA GERAL DO MUNICÍPIO, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, no uso de suas atribuições, Faço saber que a Câmara Municipal, através do Projeto de Lei Nº 02/2010, de autoria dos Edis Getúlio da Silva Barbosa e Carlos Alberto Costa da Rocha, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Dê-se ao caput do art. 9º da LEI COMPLEMENTAR Nº <a class="link_law" data-id="1717328" data-original-title=" Data da Norma: 08.06.1995 - REGULAMENTA O ART. 90 DA LEI ORGÂNICA, QUE CRIOU A PROCURADORIA GERAL DO MUNICÍPIO DE FEIRA DE SANTANA E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-complementar/1995/0/2/lei-complementar-n-2-1995-regulamenta-o-art-90-da-lei-organica-que-criou-a-procuradoria-geral-do-municipio-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">2</a>/1995, que regulamenta o art. 100 da <a class="link_law" data-original-title="Lei Orgânica Feira de Santana BA" data-toggle="tooltip" href="/lei-organica-feira-de-santana-ba" rel="tooltip">Lei Orgânica</a> do Município, a seguinte redação:<br><br>&quot;Art. 9º O Procurador Geral do Município será de livre designação do Prefeito Municipal, dentre os advogados de notável saber jurídico e reputação ilibada, através de aprovação pela Câmara Municipal de acordo com os seguintes procedimentos:<br><br>I - O Prefeito Municipal apresentará lista tríplice de nomes de advogados para a escolha de um deles pela Câmara Municipal;<br><br>II - Se na primeira votação não for atingida a maioria absoluta dos votos da Câmara Municipal, far- se-á uma segunda votação com os dois mais votados;<br><br>III - Se porventura houver empate na indicação de um dos nomes para a segunda votação, o critério de desempate será o do tempo de exercício da profissão, contados do dia da obtenção do diploma de graduação em Direito;<br><br>IV - Na segunda votação o Procurador Geral do Município será escolhido através da maioria absoluta dos votos da Câmara de Vereadores;<br><br>V - Mesmo no processo de reeleição do Procurador Geral do Município, será obedecido o critério da apresentação de lista tríplice à Câmara Municipal pelo Prefeito do Município&quot;.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Dê-se ao § 1º, do art. 9º, da LEI COMPLEMENTAR Nº <a class="link_law" data-id="1717328" data-original-title=" Data da Norma: 08.06.1995 - REGULAMENTA O ART. 90 DA LEI ORGÂNICA, QUE CRIOU A PROCURADORIA GERAL DO MUNICÍPIO DE FEIRA DE SANTANA E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-complementar/1995/0/2/lei-complementar-n-2-1995-regulamenta-o-art-90-da-lei-organica-que-criou-a-procuradoria-geral-do-municipio-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">2</a>/1995, que regulamenta o art. 100 da <a class="link_law" data-original-title="Lei Orgânica Feira de Santana BA" data-toggle="tooltip" href="/lei-organica-feira-de-santana-ba" rel="tooltip">Lei Orgânica</a> do Município, a seguinte nova redação:<br><br>&quot;§ 1º O mandato do Procurador Geral do Município será de 02 (dois) anos a partir da sua nomeação, permitida a recondução numa única vez, através da aprovação do seu nome pela maioria absoluta dos membros da Câmara Municipal.&quot;<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 19 de março de 2010.<br><br>TARCÍZIO SUZART PIMENTA JÚNIOR<br>PREFEITO MUNICIPAL<br><br>MILTON PEREIRA DE BRITTO<br>CHEFE DE GABINETE DO PREFEITO<br><br>DATA DE PUBLICAÇÃO: 20/3/2010<br>PREFEITO: Tarcízio Suzart Pimenta Júnior.<br>Presidente: Antonio Carlos Passos Ataíde<br>Autor: Diversos Autores<br>Assunto: <a class="link_law" data-original-title="Lei Orgânica Feira de Santana BA" data-toggle="tooltip" href="/lei-organica-feira-de-santana-ba" rel="tooltip">Lei Orgânica</a><p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

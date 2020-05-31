@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3516/2015</h2><br>AUTORIZA A ABERTURA DE CRÉDITO ADICIONAL ESPECIAL, NA FORMA QUE INDICA, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, no uso de suas atribuições, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 8/2015, de autoria do Poder Executivo, decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica o Poder Executivo autorizado a abrir o Orçamento do Município, no corrente exercício, crédito adicional especial no valor de R$ 13.000.000,00 (treze milhões de reais), destinado à alocar recursos para o elemento 82 - Aporte de Recursos pelo Parceiro Público em Favor do Parceiro Privado Decorrente de Contrato de Parceria Público-Privada - PPP, modalidade de aplicação 67 - Execução de Contrato de Parceria Público- Privada - PPP, Grupo de Despesa 4 - Investimento, Categoria Econômica 4 - Despesas de Capital, ma Secretaria Municipal de Trabalho, Turismo e Desenvolvimento Econômico - SETTDEC (Órgão: 14 Unidade: 1414), no projeto Construção de Shopping Popular, classificação funcional programática: 15.451.029.1038 conforme anexo I.<br><br>Parágrafo Único - Altorizalção para concessão do subsidio público previsto através da Lei nº <a class="link_law" data-id="2028627" data-original-title=" Data da Norma: 13.11.2014 - AUTORIZA A CONCESSÃO E O SUBSÍDIO PÚBLICO PARA CONSTRUÇÃO, OPERAÇÃO E MANUTENÇÃO DO CENTRO DE COMÉRCIO POPULAR DE FEIRA DE SANTANA." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2014/348/3484/lei-ordinaria-n-3484-2014-autoriza-a-concessao-e-o-subsidio-publico-para-construcao-operacao-e-manutencao-do-centro-de-comercio-popular-de-feira-de-santana" rel="tooltip">3.484</a> de 13 de novembro de 2014.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Os recursos disponíveis para atender as despesas decorrentes do presente crédito especial, ocorrerão por anulação de despesas no valor de R$ 13.000.000,00 (treze milhões de reais), conforme anexo II.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Fica o Poder Executivo, havendo necessidadem respeitadas as demais prescrições constitucionais e nos termos da Lei nº 4.320/64, autorizado a fazer suplementação das ações descritas no anexo I deste projeto de lei, obedecendo a limites estabelecidos no art. 6º da Lei Orçamentária Anual nº  <a class="link_law" data-id="2197704" data-original-title=" Data da Norma: 19.12.2014 - ESTIMA A RECEITA E FIXA A DESPESA DO MUNICÍPIO DE FEIRA DE SANTANA PARA O EXERCÍCIO FINANCEIRO DE 2015. (R$ 1.113.631.517,00) - LOA" data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2014/351/3511/lei-ordinaria-n-3511-2014-estima-a-receita-e-fixa-a-despesa-do-municipio-de-feira-de-santana-para-o-exercicio-financeiro-de-2015-r-1113-631-517-00-loa" rel="tooltip">3.511</a>, de 15 de dezembro de 2014.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Esta Lei entrará em vigor na data da publicação, revogando-se as disposições em contrário<br><br>Gabinete do Prefeito Municipal, 03 de março de 2015<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito<br><br>ANEXO I<pre> _______________________________________________________________________________<br>|Órgão/Unidade|  Programática | Econômica | Fonte|  Discriminação | Valor em R$ |<br>|=============|===============|===========|======|================|=============|<br>|      14.1414|15.451.029.1038|  4.4.67.82|  0000|Aporte        de|13.000.000,00|<br>|             |               |           |      |recursos    pelo|             |<br>|             |               |           |      |parceito público|             |<br>|             |               |           |      |em    favor   do|             |<br>|             |               |           |      |parceiro privado|             |<br>|             |               |           |      |decorrente    de|             |<br>|             |               |           |      |contrato      de|             |<br>|             |               |           |      |Parceria Público|             |<br>|             |               |           |      |Privada - PPP   |             |<br>|-------------|---------------|-----------|------|----------------|-------------|<br>|TOTAL        |               |           |      |                |13.000.000,00|<br>|_____________|_______________|___________|______|________________|_____________| * tabela formatada pela equipe técnica do LeisMunicipais.com.br<br>ANEXO II<pre> _______________________________________________________________________________<br>|Órgão/Unidade|  Programática | Econômica | Fonte|  Discriminação | Valor em R$ |<br>|=============|===============|===========|======|================|=============|<br>|      13.1313|15.451.036.1037|  4.4.90.51|  0000|Obras          e|11.060.000,00|<br>|             |               |           |      |Instalações     |             |<br>|-------------|---------------|-----------|------|----------------|-------------|<br>|      13.1313|15.451.036.2097|  3.3.90.92|  0000|Despesas      de|   100.000,00|<br>|             |               |           |      |exercícios      |             |<br>|             |               |           |      |anteriores      |             |<br>|-------------|---------------|-----------|------|----------------|-------------|<br>|      13.1313|15.451.036.2097|  4.4.90.52|  0000|Equipamentos   e|   240.000,00|<br>|             |               |           |      |Materiais       |             |<br>|             |               |           |      |Permanentes     |             |<br>|-------------|---------------|-----------|------|----------------|-------------|<br>|      13.1313|15.451.036.2097|  4.5.90.61|  0000|Aquisição     de|   300.000,00|<br>|             |               |           |      |imóveis         |             |<br>|-------------|---------------|-----------|------|----------------|-------------|<br>|      13.1313|15.451.036.2146|  4.4.90.51|  0000|Obras          e|   100.000,00|<br>|             |               |           |      |instalações     |             |<br>|-------------|---------------|-----------|------|----------------|-------------|<br>|      13.1313|15.451.036.2174|  4.4.90.51|  0000|Obras          e| 1.200.000,00|<br>|             |               |           |      |instalações     |             |<br>|-------------|---------------|-----------|------|----------------|-------------|<br>|TOTAL        |               |           |      |                |13.000.000,00|<br>|_____________|_______________|___________|______|________________|_____________| * tabela formatada pela equipe técnica do LeisMunicipais.com.br<br><p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

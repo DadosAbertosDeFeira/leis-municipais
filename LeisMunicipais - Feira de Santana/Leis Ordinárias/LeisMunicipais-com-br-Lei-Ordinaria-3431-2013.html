@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3431, DE 06 DE DEZEMBRO DE 2013.</h2><br>DISPÕE SOBRE AS ALTERAÇÕES NO ANEXO IV, DO ART. 4º, DA LEI Nº <a class="link_law" data-id="1543991" data-original-title=" Data da Norma: 12.03.2008 - DISPÕE SOBRE A REESTRUTURAÇÃO DO QUADRO DE FUNCIONÁRIOS EFETIVOS DA CÂMARA MUNICIPAL E INSTITUI OS NOVOS PLANOS DE CARGOS, CARREIRA E SALARIOS, E DA OUTRAS PROVIDENCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2008/286/2867/lei-ordinaria-n-2867-2008-dispoe-sobre-a-reestruturacao-do-quadro-de-funcionarios-efetivos-da-camara-municipal-e-institui-os-novos-planos-de-cargos-carreira-e-salarios-e-da-outras-providencias" rel="tooltip">2.867</a>/2008.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O Prefeito Municipal de Feira de Santana, Estado da Bahia, no uso de suas atribuições, Faço saber que a Câmara Municipal de Feira de Santana, através do Projeto de Lei nº 116/2013, de autoria do Edil Justiniano Oliveira França, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Insere-se ao Anexo IV, do art. 4º, da Lei nº <a class="link_law" data-id="1543991" data-original-title=" Data da Norma: 12.03.2008 - DISPÕE SOBRE A REESTRUTURAÇÃO DO QUADRO DE FUNCIONÁRIOS EFETIVOS DA CÂMARA MUNICIPAL E INSTITUI OS NOVOS PLANOS DE CARGOS, CARREIRA E SALARIOS, E DA OUTRAS PROVIDENCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2008/286/2867/lei-ordinaria-n-2867-2008-dispoe-sobre-a-reestruturacao-do-quadro-de-funcionarios-efetivos-da-camara-municipal-e-institui-os-novos-planos-de-cargos-carreira-e-salarios-e-da-outras-providencias" rel="tooltip">2.867</a>/08, ao Cargo de Técnico de Suporte em Informática as seguintes atribuições e funções:<br><br>- Executar atividades referentes a operação de sistemas, a instalação e manutenção dos equipamentos, bem como, a infraestrutura de rede;<br><br>- Garantir a manutenção dos padrões de configuração dos equipamentos e softwares segundo normas estabelecidas pela Divisão de Informática;<br><br>- Executar atividades de planejamento da Divisão de Informática;<br><br>- Selecionar e colocar em funcionamento programas básicos e aplicativos, e orientar usuários quanto à sua utilização;<br><br>- Aplicar medidas de segurança aos sistemas e aos documentos da rede, de acordo com orientação do superior imediato;<br><br>- Prestar suporte operacional aos usuários, relativo à utilização dos serviços de Tecnologia da Informação;<br><br>- Elaborar trabalho de nível técnico compatíveis com a sua formação;<br><br>- Apoiar a execução de atividades de maior complexidade sob orientação;<br><br>- Prestar suporte técnico quanto à implantação e ao uso adequado dos recursos de rede;<br><br>- Executar outras atividades necessárias à consecução dos serviços, bem como, solicitações a critério do seu superior imediato.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Inserem-se ao anexo IV, do art. 4º, da Lei nº <a class="link_law" data-id="1543991" data-original-title=" Data da Norma: 12.03.2008 - DISPÕE SOBRE A REESTRUTURAÇÃO DO QUADRO DE FUNCIONÁRIOS EFETIVOS DA CÂMARA MUNICIPAL E INSTITUI OS NOVOS PLANOS DE CARGOS, CARREIRA E SALARIOS, E DA OUTRAS PROVIDENCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2008/286/2867/lei-ordinaria-n-2867-2008-dispoe-sobre-a-reestruturacao-do-quadro-de-funcionarios-efetivos-da-camara-municipal-e-institui-os-novos-planos-de-cargos-carreira-e-salarios-e-da-outras-providencias" rel="tooltip">2.867</a>/08, os seguintes requisitos e atribuições:<br><br>CARGO: Procurador Jurídico Adjunto<br><br>Requisitos: Superior completo: Bacharel em Direito, registro na OAB e mínimo de 02 (dois) anos de experiência em prática advocatícias.<br><br>...<br><br>- Elaboração de defesas e recursos nos processos administrativos conduzidos pela Egrégia Corte de Contas e assegurar o atendimento das recomendações e ressalvas efetuadas pelo TCM;<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 06 de dezembro de 2013.<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO MUNICIPAL<br><br>MARIO COSTA BORGES<br>CHEFE DE GABINETE DO PREFEITO<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

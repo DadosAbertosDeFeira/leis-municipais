@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 1641/93</h2><br>INSTITUI A FUNDAÇÃO HOSPITALAR DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, FAÇO saber que a Câmara Municipal decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica instituída a Fundação Hospitalar de Feira de Santana (FHFS), com prazo de duração indeterminado, sede e foro na cidade de Feira de Santana, Estado da Bahia.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> A Fundação Hospitalar de Feira de Santana (FHFS) é ente de cooperação para a prossecução de objetivos de interesse coletivo, sem finalidade lucrativa, vinculada à Secretaria de Saúde do Município de Feira de Santana, tem por finalidade promover e executar as ações de saúde pública e, especialmente:<br><br>I - Implementar assistência médico-hospitalar através de hospitais, clínicas, ambulatórios e profissionais especializados e firmar convênios de cooperação técnica, administrativa, social e científica, com entidades ou profissionais de cada área.<br><br>II - Realizar congressos, simpósios, cursos, conferências, publicações, estudos, pesquisas e análises de situações de saúde, promovendo intercâmbio com instituições congêneres nacionais, estrangeiras e internacionais, organizando e mantendo material científico, inclusive obras e revistas especializadas em acervo próprio;<br><br>III - Coletar, processar e divulgar informações sobre saúde;<br><br>IV - Realizar atividades laboratoriais de patologia clínica e diagnóstico por imagens, além de serviços técnicos e científicos;<br><br>V - atuar em todas as áreas de saúde, especial e prioritariamente, nas de medicina preventiva, ginecologia e obstetrícia, pediatria e doenças específicas;<br><br>VI - desenvolver atividades complementares nas áreas de puericultura e planejamento familiar.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> A Fundação Hospitalar de Feira de Santana (FHFS) fica autorizada a celebrar convênios para execução dos seus objetivos, na seguinte seqüência de prioridade.<br><br>a) com instituições conveniadas ao Sistema Único de Saúde;<br>b) com instituições privadas, em caráter complementar;<br><br>§ 1º A efetivação de convênios com entidades assistenciais privadas visando a contratação de serviços médico-hospitalares da Fundação Hospitalar de Feira de Santana, deverá ser autorizado por 2/3 (dois terços) do seu conselho deliberativo.<br><br>§ 2º Apenas 10% (dez por cento) dos leitos do Hospital Inácia Pinto dos Santos poderão ser utilizados para convênios particulares.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> A Fundação Hospitalar de Feira de Santana (FHFS) adquirirá personalidade jurídica a partir de seu ato construtivo no registro civil das pessoas jurídicas, do qual será parte integrante seu estatuto, aprovado pela autoridade competente.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> O patrimônio da Fundação Hospitalar de Feira de Santana (FHFS) será constituído pelos bens e direitos que essa entidade vier a adquirir, incluindo os bens que lhe venham a ser doados pela União, pelo Estado da Bahia, por municípios e por outras entidades públicas e particulares, nacionais, estrangeiras e internacionais reconhecidas pela Organização Mundial de Saúde.<br><br>§ 1º Serão destacados do patrimônio do Município e incorporados ao patrimônio da FHFS, mediante inventário elaborado conjuntamente pela Secretaria de Saúde e pela Secretaria de Administração;<br><br>I - o bem imóvel do Município, inclusive construções, ora ocupados pelo Hospital Inácia Pinto;<br><br>II - os bens móveis e instalações atualmente cedidos, doados ou utilizados pelo referido nosocômio, de prioridades do Município ou, especialmente do Hospital Inácia Pinto;<br><br>§ 2º Os bens e direitos da fundação serão utilizados ou aplicados exclusivamente para a consecução dos objetivos previstos nesta Lei:<br><br>§ 3º No caso de extinguir-se a fundação, seus bens e direitos serão incorporados ao Município de Feira de Santana.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Os recursos financeiros da Fundação Hospitalar de Feira de Santana serão provenientes de:<br><br>I - importância que, à conta de créditos orçamentários ou adcionais, lhe forem destinados por órgãos públicos federais, estaduais e municipais;<br><br>II - auxílios e subvenções que lhe venham a ser concedidos por quaisquer entidades públicas ou particulares, nacionais, estrangeiras ou internacionais;<br><br>III - doações individuais e donativos angariados através de campanha pública de mobilização social;<br><br>IV - contraprestações pelos serviços de qualquer natureza, inclusive quando executados mediante acordos, ajustes, convênios ou contratos;<br><br>V - taxas e emolumentos que forem cobrados pela prestação dos seus serviços;<br><br>VI - produtos de operações de crédito e juros bancários;<br><br>VII - rendimentos de aplicação no mercado financeiro, e<br><br>VIII - receitas eventuais.<br><br>Parágrafo Único - Quando se tratar de convênios firmados com instituições estrangeiras ou multinacionais da área médica, as mesmas deverão ser reconhecidas pela Organização Mundial de Saúde.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Fica assegurada à Fundação Hospitalar de Feira de Santana (FHFS) a imunidade prevista no art. 92, inciso VI, alínea c, da <a class="link_law" data-original-title="Lei Orgânica Feira de Santana BA" data-toggle="tooltip" href="/lei-organica-feira-de-santana-ba" rel="tooltip">Lei Orgânica</a> do Município.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> A administração superior da Fundação Hospitalar de Feira de Santana (FHFS) será exercida pelo Conselho Deliberativo, que define e propõe parâmetros norteadores de ação estratégica da fundação, havendo como órgão auxiliar um conselho fiscal.<br><br>§ 1º O Conselho Deliberativo da Fundação Hospitalar de Feira de Santana, compõe-se de 9 (nove) membros;<br><br>I - Secretário Municipal de Saúde - Presidente;<br><br>II - Diretor Geral do HIPS - Secretário Executivo;<br><br>III - um representante da ABM - Seccional de Feira de Santana;<br><br>IV - um representante de nível superior do corpo clínico do HIPS;<br><br>V - um representante do Conselho Municipal de Saúde;<br><br>VI - um representante dos funcionários do HIPS;<br><br>VII - três vereadores representando o Poder Legislativo Municipal.<br><br>§ 2º O regimento interno do Conselho Deliberativo será instituído através de Resolução aprovada por 2/3 (dois terços) dos seus membros.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> A fundação terá um conselho fiscal com mandato de 4 (quatro) anos, formado de 5 (cinco) membros titulares e respectivos suplentes, indicados pela Câmara Municipal e pelo representante da 2ª Dires, da Associação Bahiana de Medicina, do Conselho Regional de Contabilidade e do Departamento de Saúde da Universidade Estadual de Feira de Santana.<br><br>§ 1º O conselho fiscal reunir-se-á, ao menos uma vez semestralmente.<br><br>§ 2º A fiscalização institucional do Ministério Público poderá ser arguida para restringir a ação do conselho fiscal ou os controles internos e externos da administração pública.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10 -</span></a> A fundação poderá contratar pessoal por tempo determinado até 6 (seis) meses em caráter improrrogável em números não superior a 120 (cento e vinte), para atender a necessidade temporária de excepcional interesse público na forma do permissivo do art. 42 da <a class="link_law" data-original-title="Lei Orgânica Feira de Santana BA" data-toggle="tooltip" href="/lei-organica-feira-de-santana-ba" rel="tooltip">Lei Orgânica</a>.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11 -</span></a> As medidas necessárias para a instalação da Fundação Hospitalar de Feira de Santana (FHFS) poderão ser implementadas mediante auxílio concedidos pelo Município, à conta de recursos próprios adicionais.<br><br><a name="artigo_12"><span class="label label-pill label-danger">Art. 12 -</span></a> O Executivo regulamentará a presente Lei, no prazo de sessenta dias (60), aprovando os atos constitutivos da fundação, especialmente o seu estatuto, fazendo do mesmo constar a relação dos bens incorporados.<br><br><a name="artigo_13"><span class="label label-pill label-danger">Art. 13 -</span></a> O Hospital Inácia Pinto terá diretor geral (DA-I), diretor médico e diretor administrativo (DA-2), chefe coordenador de nutrição, chefe coordenador de análises clínicas, chefe coordenador de enfermagem e chefe coordenador do serviço social (DA-3), encarregado de contas médicas, encarregado do almoxarifado, encarregado de recursos humanos e encarregado de serviços auxiliares (DA-4).<br><br>Parágrafo Único - As unidades que vierem a ser constituídas ou incorporadas à Fundação Hospitalar de Feira de Santana terão suas estruturas administrativas propostas pelo seu conselho deliberativo aprovadas pelo chefe do Poder Executivo, e, se for o caso, encaminhadas à Câmara Municipal.<br><br><a name="artigo_14"><span class="label label-pill label-danger">Art. 14 -</span></a> Enquanto não estiver regularmente constituída e funcionando a Fundação Hospitalar de Feira de Santana, o Executivo aplicará os recursos financeiros necessários à manutenção do Hospital Inácia Pinto, à conta das dotações orçamentárias próprias.<br><br><a name="artigo_15"><span class="label label-pill label-danger">Art. 15 -</span></a> Esta Lei entrará em vigor na data de sua publicação.<br><br><a name="artigo_16"><span class="label label-pill label-danger">Art. 16 -</span></a> Revogam-se as disposições em contrário.<br><br>Prefeitura Municipal de Feira de Santana, em 14 de abril de 1993.<br><br>DR. JOÃO DURVAL CARNEIRO<br>Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI COMPLEMENTAR Nº 127, DE 19 DE DEZEMBRO DE 2019</h2><br>Altera o Símbolo de Direção e Assessoramento Superior (DAS), da Agência Reguladora de Feira de Santana - ARFS, e dá outras providências.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, no uso das suas atribuições legais, Faço saber que a Câmara Municipal de Feira de Santana, através do Projeto de Lei Complementar nº 008/2019, de autoria deste Poder Executivo, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica alterado o Símbolo DAS - Direção e Assessoramento Superior para NE-1, Nível Especial - 1.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O art. 16, inciso I, da Lei Complementar nº <a class="link_law" data-id="2104593" data-original-title=" Data da Norma: 23.02.2015 - ALTERA E CONSOLIDA A LEI COMPLEMENTAR Nº 57, DE 06 DE SETEMBRO DE 2011, QUE CRIOU A ARSEPUC - AGÊNCIA REGULADORA E FISCALIZADORA DOS SERVIÇOS PÚBLICOS MUNICIPAIS CONCEDIDOS, REVOGANDO TOTALMENTE O CAPÍTULO III DA ENTIDADE DE REGULAÇÃO E FISCALIZAÇÃO - ARTS. 11 A 31, FAZENDO-SE SUBSTITUIR PELA AGÊNCIA REGULADORA DE FEIRA DE SANTANA - ARFES, E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-complementar/2015/9/93/lei-complementar-n-93-2015-altera-e-consolida-a-lei-complementar-n-57-de-06-de-setembro-de-2011-que-criou-a-arsepuc-agencia-reguladora-e-fiscalizadora-dos-servicos-publicos-municipais-concedidos-revogando-totalmente-o-capitulo-iii-da-entidade-de-regulacao-e-fiscalizacao-arts-11-a-31-fazendo-se-substituir-pela-agencia-reguladora-de-feira-de-santana-arfes-e-da-outras-providencias" rel="tooltip">093</a>, de 26 de março de 2015, passa a viger com a seguinte disposição:<br><br>I - um Presidente, Símbolo NE-1;<br><br>II - ....;<br><br>III - ....;<br><br>IV - ....<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Esta Lei Complementar entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 19 de dezembro de 2019.<br><br>COLBERT MARTINS DA SILVA FILHO<br>PREFEITO MUNICIPAL<br><br>PAULO SERGIO AQUINO DE AZEVEDO SOUZA<br>CHEFE DE GABINETE DO PREFEITO<br><br>ICARO IVVIN DE ALMEIDA COSTA LIMA<br>PROCURADOR GERAL DO MUNICÍPIO<br><br>SEBASTIÃO EDUARDO DA CUNHA<br>SECRETÁRIO MUNICIPAL DE ADMINISTRAÇÃO<br><br>EXPEDITO CAMPODÔNIO ELOY<br>SECRETÁRIO MUNICIPAL DA FAZENDA<br><br>PUBLICADO NO DIÁRIO OFICIAL ELETRÔNICO DIA 20 DE DEZEMBRO DE 2019. <p> <a class="btn btn-default" href="https://leis.s3.amazonaws.com/originais/feira-de-santana-ba/2019/lc-127-2019-feira_de_santana-ba.doc" title="Lei Complementar nº 127/2019 - Feira de Santana-BA">Download do documento</a> </p> <p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

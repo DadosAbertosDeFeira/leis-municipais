@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 820, de 13 de julho de 1977</h2><br>REAJUSTA OS VALORES DE REMUNERAÇÃO DOS CARGOS EM COMISSÃO, FUNÇÕES GRATIFICADAS E NÍVEL UNIVERSITÁRIO, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, FAÇO saber que a Câmara Municipal decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Os cargos em comissão e as funções gratificadas, definidos em Lei, passam a ter os valores de remuneração correspondentes aos respectivos símbolos na conformidade das tabelas anexas, que passa a fazer parte integrante desta Lei.<br><br>Parágrafo Único - Sempre que forem majorados os subsídios de Prefeito e Vice-Prefeito, serão reajustados, na mesma proporção, os vencimentos dos ocupantes dos cargos em comissão, ficando devidamente esclarecido que este parágrafo somente será aplicado, a partir de 1978.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Fica fixada, em três e meio salário mínimo regionais, a remuneração básica do servidor de nível universitário, podendo, a critério do Executivo e observado a carga horária, ser elevada até oito salários mínimos regionais.<br><br>Parágrafo Único - O disposto no artigo somente se aplica aos servidores que, nas suas funções desempenhem atividades inerentes à sua habilitação profissional.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> As despesas decorrentes desta Lei correrão por conta da dotação relativa à custeio de pessoal, consignada no orçamento em vigor, ficando o Prefeito autorizado a abrir créditos adicionais necessários à sua execução, na forma da Lei Federal nº 4.320, de 17 de março de 1964.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Esta Lei entrará em vigor a partir de 1º de julho do corrente ano, revogadas as disposições em contrário.<br><br>Prefeitura Municipal de Feira de Santana, em 13 de julho de 1977.<br><br>DR. COLBERT MARTINS DA SILVA<br>Prefeito<br><br>TABELA<br><br>CARGOS EM COMISSÃO<pre> _____________________<br>|SÍMBOLOS|   VALORES  |<br>|========|============|<br>|  CC-1  |CR$ 8.500,00|<br>|--------|------------|<br>|  CC-2  |CR$ 4.000,00|<br>|--------|------------|<br>|  CC-3  |CR$ 3.000,00|<br>|--------|------------|<br>|  CC-4  |CR$ 2.000,00|<br>|--------|------------|<br>|  CC-5  |CR$ 1.500,00|<br>|--------|------------|<br>|  CC-6  |CR$ 1.000,00|<br>|________|____________| * tabela formatada pela equipe técnica do LeisMunicipais.com.br<br>TABELA<br><br>FUNÇÕES GRATIFICADAS<pre> _____________________<br>|SÍMBOLOS|   VALORES  |<br>|========|============|<br>|  FG-1  | CR$ 800,00 |<br>|--------|------------|<br>|  FG-2  | CR$ 700,00 |<br>|--------|------------|<br>|  FG-3  | CR$ 600,00 |<br>|--------|------------|<br>|  FG-4  | CR$ 500,00 |<br>|--------|------------|<br>|  FG-5  | CR$ 400,00 |<br>|________|____________| * tabela formatada pela equipe técnica do LeisMunicipais.com.br<br><p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

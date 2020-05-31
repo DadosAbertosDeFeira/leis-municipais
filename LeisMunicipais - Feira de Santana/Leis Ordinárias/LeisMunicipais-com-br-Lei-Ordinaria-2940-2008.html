@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 2940/2008</h2><br>DISPÕE SOBRE A PROIBIÇÃO DE DESTINAR ÓLEO COMESTÍVEL SERVIDO NO MEIO-AMBIENTE.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Autor: Marialvo Barreto<br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 29/2008, de autoria do Edil Marialvo Barreto, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> É proibido o lançamento de óleo comestível servido, utilizado na preparação de alimentos, no meio-ambiente.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Estarão sujeitos à proibição desta Lei somente as empresas e entidades que consumam, no mínimo, 100 (cem) litros de óleo comestível por mês.<br><br>§ 1º No caso de empresa ou entidade que possua vários estabelecimentos, o volume deverá ser apurado pela empresa ou entidade, e não em cada estabelecimento específico.<br><br>§ 2º Esta Lei abrange a empresa ou entidade que atue por franqueadas.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Para efeito de aplicação desta Lei, ficam estabelecidas as seguintes definições:<br><br>I - Óleo comestível: óleo vegetal de qualquer espécie, gordura vegetal hidrogenada e gordura animal;<br><br>II - Meio-ambiente: o solo, os cursos d`água, o sistema público de coleta e tratamento de esgoto, a fossa séptica, ou qualquer outro sistema de coleta ou de tratamento de esgoto;<br><br>III - Estabelecimento: complexo de bens organizado para o desenvolvimento das atividades da empresa ou da entidade pública ou privada que utilize o óleo comestível para o preparo dos alimentos;<br><br>IV - Entidade: associação, que é a união de pessoas que se organizem para fins não econômicos, nos termos dos artigos 53 a 61 do Código Civil, que tenham por objeto social, exemplificando, o esporte, a cultura, a religião, a assistência social, o ensino; órgãos da administração direta ou indireta e as fundações, exemplificando: hospitais, escolas e penitenciárias.<br><br>V - Empresa: atividade econômica organizada para a produção e a circulação de bens ou de serviços, como, por exemplo: shopping centers, restaurantes, hotéis, lanchonetes e cozinhas industriais.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> O Poder Executivo deverá estabelecer normas específicas para o controle desse poluente, devendo alertar sobre os riscos para o meio-ambiente em virtude da sua destinação nociva, inclusive com campanhas de esclarecimento e educativas.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> A Secretaria Municipal de Meio Ambiente manterá cadastrado, a ser divulgado no site dessa Secretaria na internet, das empresas especializadas na coleta, transporte, manuseio, tratamento e armazenamento do óleo comestível servido.<br><br>Parágrafo Único - As empresas a qual se refere este artigo deverão estar regularizadas junto aos órgãos ambientais competentes, municipal e estadual, e autorizadas para efetuar o beneficiamento de óleo vegetal usado.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> A empresa ou entidade que fizer uso do óleo comestível deverá depositar o resíduo em recipiente próprio, com rótulo contendo a seguinte inscrição: RESÍDUO DE ÓLEO COMESTÍVEL o nome e o CNPJ da empresa que dará a coleta.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> A fiscalização da presente Lei caberá à Vigilância Sanitária.<br><br>§ 1º Os funcionários da Vigilância Sanitária terão sua entrada franqueada nas dependências dos estabelecimentos, onde poderão permanecer o tempo necessário ao cumprimento de suas funções.<br><br>§ 2º No caso de embaraço ou impedimento à ação dos funcionários da Vigilância Sanitária, estes poderão requisitar o apoio das autoridades policiais, para garantir o exercício de suas funções.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> A empresa ou entidade que violar qualquer dos dispositivos desta Lei fica sujeita à multa de R$ 1.000,00 (mil reais).<br><br>Parágrafo Único - Em caso de reincidência, a multa será aplicada em dobro, até o limite de R$ 16.000,00 (dezesseis mil reais) e, após a quinta infração, a empresa ou entidade poderá ter seu estabelecimento lacrado até se adequar a esta Lei.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> O valor da multa será corrigido, anualmente, pelo IPC do IBGE, ou por outro índice que reflita a inflação do período.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10 -</span></a> As despesas decorrentes da aplicação desta Lei correrão por conta de dotações orçamentárias próprias, e suplementadas, se necessário.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11 -</span></a> O Poder Executivo regulamentará a presente Lei no prazo de 60 (sessenta) dias de sua publicação.<br><br><a name="artigo_12"><span class="label label-pill label-danger">Art. 12 -</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>PREFEITURA MUNICIPAL DE FEIRA DE SANTANA, em 18 de Agosto de 2008.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito.<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

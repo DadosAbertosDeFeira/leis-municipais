@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 1042, de 12 de março de 1987</h2><br>ALTERA O DISPOSTO NO ART. 2º DA LEI Nº  <a class="link_law" data-id="1713770" data-original-title=" Data da Norma: 01.01.1971 - (ATO INEXISTENTE, NUMERAÇÃO NÃO UTILIZADA)" data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1971/69/691/lei-ordinaria-n-691-1971-ato-inexistente-numeracao-nao-utilizada" rel="tooltip">691</a>, DE 27 DE JANEIRO DE 1971.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica alterado o disposto no Art. 2º da Lei nº  <a class="link_law" data-id="1713770" data-original-title=" Data da Norma: 01.01.1971 - (ATO INEXISTENTE, NUMERAÇÃO NÃO UTILIZADA)" data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1971/69/691/lei-ordinaria-n-691-1971-ato-inexistente-numeracao-nao-utilizada" rel="tooltip">691</a>, de 27 de janeiro de 1971, para permitir ao CENTRO DE DESENVOLVIMENTO INDUSTRIAL E COMERCIAL - CEDIC, Autarquia Estadual, vinculada à Secretaria da Indústria, Comércio e Turismo, criada pela Lei nº 4.385, de 06 de dezembro de 1984, sucessora da extinta Fundação Centro de Desenvolvimento Industrial - CEDIN, transmitir, mediante doação, em favor do INSTITUTO NACIONAL DE METROLOGIA, NORMALIZAÇÃO E QUALIDADE INDUSTRIAL - INMETRO, Autarquia Federal, vinculada ao Ministério da Indústria e Comércio, criada pela Lei nº 5.966, de 11 de dezembro de 1973, uma área de terra com 2.400 m² (dois mil e quatrocentos metros quadrados), situada no bairro do Tomba, a ser desmembrada da porção maior de 40.000 m² (quarenta mil metros quadrados), transferida a título gratuito de doação lavrada nas notas do Cartório do 2º Ofício da Comarca, devidamente transcrita no Registro de Imóveis do 2º Ofício sob nº 3.932, às fls. 153, do livro 3-B.<br><br>Parágrafo Único - A área referida no caput deste Artigo será destinada à construção de uma agência de serviços do INSTITUTO NACIONAL DE METROLOGIA, NORMALIZAÇÃO E QUALIDADE INDUSTRIAL - INMETRO.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Prefeitura Municipal de Feira de Santana, 12 de março de 1987.<br><br>DR. JOSÉ FALCÃO DA SILVA<br>Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

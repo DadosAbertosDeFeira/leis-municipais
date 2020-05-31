@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>DECRETO Nº 8902, de 24 de abril de 2013</h2><br>ESTABELECE REGRAS PARA O PAGAMENTO DE SERVIDORES MUNICIPAIS QUE ESPECIFICA.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O Prefeito Municipal de Feira de Santana, Estado da Bahia, no uso de suas atribuições, Considerando que o Decreto Municipal nº  <a class="link_law" data-id="" data-original-title=" Data da Norma: .. - " data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/decreto/2013/882/8827/decreto-n-8827-2013-este-ato-ainda-nao-esta-disponivel-no-sistema" rel="tooltip">8.827</a>, de 01 janeiro de 2013, determinou que todos os servidores municipais se apresentassem às suas respectivas repartições de lotação para fins de verificação, Considerando ainda que após tal providência, a Secretaria Municipal de Administração remeteu à todas as repartições municipais rol dos servidores nelas lotados para que fossem conferidos <i>in loco</i>, Considerando também que no início do ano letivo de 2013, todos os dirigentes de unidades escolares do Município remeteram à Secretaria Municipal de Educação a programação de carga horária de cada uma delas e que da confrontação entre as duas listas restaram sem programação de carga horária ou lotação correspondente centenas de servidores, Considerando enfim que a Administração tem o dever de zelar pela boa prática na aplicação de recursos públicos municipais, assim como pelos princípios da legalidade e moralidade que eventualmente podem ser malferidas por pagamento de remuneração indevida, DECRETA:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica a Secretaria Municipal de Administração encarregada de sustar o pagamento da remuneração relativa ao mês de maio devida a servidores municipais, cujos nomes não integrem a programação de carga horária remetida por dirigentes de unidades escolares e tampouco tenham lotação cadastrada na Secretaria Municipal de Educação.<br><br>Parágrafo Único - A relação dos servidores em situação prevista no caput deste artigo estará disponível para consulta aos interessados, no horário do expediente, a partir de 02 de maio de 2013, no setor de protocolo da Secretaria Municipal de Educação e as respectivas matrículas serão publicadas no site da Prefeitura Municipal de Feira de Santana.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Os servidores cujos nomes constarem no rol mencionado no artigo antecedente deverão comprovar o exercício efetivo, indicando a lotação e a programação correspondente, sob pena de permanecerem com o pagamento da remuneração de maio do corrente sustado.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Os servidores que cumprirem a exigência de comprovação de exercício serão reintegrados à folha de pagamento:<br><br>I - Em maio, caso cumpram a exigência ate 15 de maio do corrente;<br><br>II - Em folha complementar, caso cumpram a exigência ate 30 de maio do corrente.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> os servidores que não cumprirem a exigência contida no art. 2º, deste Decreto até 30 de maio do corrente permanecerão excluídos da folha de pagamento, devendo a Secretaria Municipal de Educação promover os processos de sindicância necessários a elucidação de possíveis irregularidades e indícios de autoria, para adoção das medidas disciplinares cabíveis.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Este Decreto entrará em vigor na data da sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 24 de abril de 2013.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito<br><br>MÁRIO COSTA BORGES<br>Chefe de Gabinete do Prefeito<br><br>CARLOS ANTÔNIO DE MORAES LUCENA<br>Procurador Geral do Município<br><br>JOÃO MARINHO GOMES JÚNIOR<br>Secretário Municipal de Administração<br><br>JAYANA BASTOS MIRANDA RIBEIRO<br>Secretária Municipal de Educação<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI PROMULGADA Nº 333/2018</h2><br>Dispõe sobre as mulheres vítimas de violência sobre a prioridade no atendimento psicoterápico, realização de cirurgia plástica repa radora, consultas e exames médicos, na rede pública de saúde no âmbito do Município de Feira de Santana, os encaminhamentos deverão estar devidamente acompanhados de solicitação médica e relatório social, comprovando o seu atendimento nos órgãos com petentes.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PRESIDENTE DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 115/2017, de autoria da Edil Gerusa Maria Bastos Silva Sampaio, e na conformidade do artigo 78, § 7º, da <a class="link_law" data-original-title="Lei Orgânica Feira de Santana BA" data-toggle="tooltip" href="/lei-organica-feira-de-santana-ba" rel="tooltip">Lei Orgânica</a> do Município, e artigo 25, e inciso V, do Regimento Interno, PROMULGA a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica estabelecida a prioridade de atendimento psicoterápico, de cirurgia plástica reparadora, consultas e exames médicos na rede pública de saúde no âmbito do Município de Feira de Santana, para a mulher vítima de violência. Os encaminhamentos deverão estar devidamente acompanhados de solicitação médica e relatório social, comprovando seu atendimento nos órgãos competentes.<br><br>§ 1º Fica estabelecida a necessidade de solicitação médica de procedimentos ou exames, de caráter regular, que deverá ser expedido por médico atendente em qualquer unidade de saúde.<br><br>§ 2º Fica estabelecido como órgão competente para elaboração e expedição de relatório social o Centro de Referência Maria Quitéria (CRMQ), centro especializado de atendimento à mulher vítima de violência, localizado no Município de Feira de Santana. Determina-se como de sua competência:<br><br>I - o relatório social, devendo atestar histórico de violência sofrida pela paciente devidamente acompanhada pela equipe multiprofissional do referido centro;<br><br>II - o documento supracitado terá caráter comprobatório de histórico da vítima, por meio de acompanhamento e triagem; e de pertinência para a solicitação de procedimento a ser oferecido à vítima, visando restaurar danos causados pelas agressões sofridas.<br><br>§ 3º É contemplado nesta Lei qualquer dano de ordem física ou psicológica sofrido pela vítima em decorrência de agressão, ainda que o dano seja verificado apenas posteriormente, desde que acarretado por agressão.<br><br>I - para os dispostos nesta Lei, considera-se:<br><br>a) dano físico-estético: qualquer deformidade ou deficiência em relação aos parâmetros clínicos estéticos reconhecidos pela comunidade médica;<br>b) dano psicológico: deterioração, disfunção, distúrbio, transtorno ou desenvolvimento psicogênico ou psicorgânico que afeta a esfera afetiva e/ou volitiva, limita a capacidade produtiva, laboral, familiar, social e autoestima.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Os serviços públicos de saúde, após efetiva comprovação de agressão sofrida pela mulher e da existência de dano à integridade física ou psicológica da vítima, por meio dos documentos supracitados, adotarão as medidas necessárias para que seja realizado, prioritariamente, procedimento cirúrgico, exames e/ou consultas médicas quantas forem necessárias, além de adequado acompanhamento psicoterápico.<br><br>Parágrafo único. Fica sob responsabilidade da paciente a marcação dos procedimentos junto ao serviço de saúde do Município de Feira de Santana, sendo-lhe garantida a prioridade no agendamento através desta Lei.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Para a efetiva e eficaz aplicação dos dispositivos contidos na presente Lei, poderão ser promovidas a capacitação e o treinamento dos profissionais de saúde para o devido acolhimento e assistência às mulheres vítimas de violência doméstica e familiar.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>PRESIDÊNCIA DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, em 24 de Abril de 2018.<br><br>JOSÉ CARNEIRO ROCHA<br>Presidente<br><br>PUBLICADO NO DIÁRIO OFICIAL ELETRÔNICO DIA 25 DE ABRIL DE 2018.<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

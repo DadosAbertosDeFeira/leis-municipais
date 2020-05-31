@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>DECRETO Nº 8975, de 25 de julho de 2013</h2><br>NOMEIA OS REPRESENTANTES DO PODER PÚBLICO E DA SOCIEDADE CIVIL ELEITOS EM ASSEMBLEIA PARA O CONSELHO MUNICIPAL DE CULTURA DE FEIRA DE SANTANA PARA BIÊNIO 2013-2015, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, no uso de suas atribuições e respaldado na Lei Nº <a class="link_law" data-id="1544077" data-original-title=" Data da Norma: 16.12.2008 - DISPÕE SOBRE O CONSELHO MUNICIPAL DE CULTURA." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2008/295/2956/lei-ordinaria-n-2956-2008-dispoe-sobre-o-conselho-municipal-de-cultura" rel="tooltip">2.956</a>/08, referente ao Conselho Municipal de Cultura, nomeia os representantes do poder público e da sociedade civil, eleitos em assembleia no 2º Fórum Municipal de Cultura, ocorrido no dia 12 de julho de 2013, para o biênio 2013-2015, DECRETA:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Ficam nomeados para compor o Conselho Municipal de Cultura de Feira de Santana (Biênio 2013-2015) as seguintes pessoas:<br><br>REPRESENTANTES DO PODER PÚBLICO:<br><br>I - Representando a Secretaria Municipal de Cultura, Esporte e Lazer:<br><br>Jailton Batista dos Santos.<br><br>II - Representando a Secretaria Municipal de Educação:<br><br>Jayana Bastos Miranda Ribeiro.<br><br>III - Representando a Fundação Cultural Municipal Egberto Tavares Costa:<br><br>Antonio Carlos Daltro Coelho.<br><br>IV - Representando as Atividades Culturais da Fundação Cultural Municipal Egberto Tavares Costa:<br><br>Márcio Luis de Araujo Carvalho.<br><br>V - Representando a Procuradoria Geral do Município:<br><br>Carlos Antonio de Moraes Lucena.<br><br>REPRESENTANTES DA SOCIEDADE CIVIL:<br><br>VI - Representando o Segmento de Áudio Visual:<br><br>TITULAR: Elsimar Vinícius de Jesus Pondé;<br>SUPLENTE: Manuela da Silva Muniz.<br><br>VII - Representando o Segmento de Artes Plásticas:<br><br>TITULAR: Gabriel Silva Ferreira;<br>SUPLENTE: Pedro Henrique Caldas Santos.<br><br>VIII - Representando o Segmento de Literatura:<br><br>TITULAR: José Wilson Martins Fialho Filho;<br>SUPLENTE: Larissa Rodrigues Santos.<br><br>IX - Representando o Segmento de Música:<br><br>TITULAR: Joilson de Jesus Santos;<br>SUPLENTE: Antonio Evaldo Barboza Machado.<br><br>X - Representando o Segmento de Cultura Popular:<br><br>TITULAR: Luiz Eduardo Correia Vila Nova Junior.<br>SUPLENTE: Cláudio Borges Brito.<br><br>XI - Representando o segmento de Teatro:<br><br>TITULAR: Jailton Silva do Nascimento;<br>SUPLENTE: Sonicleibe Guedes dos Santos.<br><br>XII - Representando o segmento da Identidade e da Diversidade Cultural:<br><br>TITULAR: Galdino Oliveira Souza;<br>SUPLENTE: Washington Luis Paim dos Reis.<br><br>XIII - Representando a Academia Feirense de Letras:<br><br>Eduardo José de Miranda Kruschewsky.<br><br>Parágrafo Único - A Presidência do Conselho Municipal de Cultura de Feira de Santana (Biênio 2013-2015) será exercida pelo representante da Secretaria Municipal de Cultura, Esporte e Lazer, Jailton Batista dos Santos.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Este Decreto entrará em vigor na data de sua publicação, revogas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 25 de julho de 2013.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito Municipal<br><br>MÁRIO COSTA BORGES<br>Chefe de Gabinete do Prefeito<br><br>JAILTON BATISTA DOS SANTOS<br>Secretário Municipal de Cultura, Esporte e Lazer<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

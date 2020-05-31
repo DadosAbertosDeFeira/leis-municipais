@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3485/2014</h2><br>REGULAMENTA A CONCESSÃO DA TRANSFERÊNCIA DO DIREITO DE CONSTRUIR, PREVISTA NA LEI COMPLEMENTAR Nº  <a class="link_law" data-id="" data-original-title=" Data da Norma: .. - " data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-complementar/1992/161/1614/lei-complementar-n-1614-1992-este-ato-ainda-nao-esta-disponivel-no-sistema" rel="tooltip">1.614</a>, DE 11 DE NOVEMBRO DE 1992 E PELO ART. 35 DA LEI FEDERAL Nº 10.257, DE 10 JULHO DE 2001, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Autor: Poder Executivo<br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, no uso de suas atribuições. Faço saber que a Câmara Municipal, através do Projeto de Nº 80/2014, deste PODER Executivo, decreta e eu sanciono a seguinte Lei:<br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> I<br>DAS DEFINIÇÕES<br></span></span><br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> O proprietário de um imóvel impedido de usar plenamente o potencial construtivo, ou Índice de Utilização - IU, estabelecido pelo Art. 44 da Lei Complementar nº  <a class="link_law" data-id="" data-original-title=" Data da Norma: .. - " data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-complementar/1992/161/1614/lei-complementar-n-1614-1992-este-ato-ainda-nao-esta-disponivel-no-sistema" rel="tooltip">1.614</a>, de 11 de novembro de 1992, pelo Art. 15 da Lei Complementar nº  <a class="link_law" data-id="2029265" data-original-title=" Data da Norma: 24.09.2014 - ALTERA, MODIFICA, AMPLIA E DÁ NOVA REDAÇÃO À LEI Nº 1615/92, QUE INSTITUI A LEI DO ORDENAMENTO DO USO E DA OCUPAÇÃO DO SOLO NA ÁREA URBANA DO MUNICÍPIO DE FEIRA DE SANTANA E REVOGA A LEI COMPLEMENTAR Nº 46, DE 19 DE AGOSTO DE 2010, QUE DISPÕE SOBRE O SISTEMA VIÁRIO DAS ÁREAS DE EXPANSÃO URBANA DA CIDADE DE FEIRA DE SANTANA." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-complementar/2014/8/86/lei-complementar-n-86-2014-altera-modifica-amplia-e-da-nova-redacao-a-lei-n-1615-92-que-institui-a-lei-do-ordenamento-do-uso-e-da-ocupacao-do-solo-na-area-urbana-do-municipio-de-feira-de-santana-e-revoga-a-lei-complementar-n-46-de-19-de-agosto-de-2010-que-dispoe-sobre-o-sistema-viario-das-areas-de-expansao-urbana-da-cidade-de-feira-de-santana" rel="tooltip">86</a>, de 24 de setembro de 2014 e pelo Art. 35 da Lei Federal nº 10.257, de 10 de julho de 2001, poderá transferir parcial ou totalmente o seu potencial não utilizável, mediante prévia autorização do Poder Executivo Municipal, obedecidas as disposições desta Lei, quando houver limitações relativas a:<br><br>I - necessidade de implantação de equipamentos urbanos e comunitários;<br><br>II - em caso de abertura, ampliação e adequação do sistema viário municipal;<br><br>III - preservação quando o imóvel for tombado ou considerado de interesse histórico, artístico, arquitetônico ou urbanístico;<br><br>IV - preservação ambiental;<br><br>V - tratando-se de imóvel declarado como reservado Particular do Patrimônio Natural - RPPN,ou Reserva Particular Ecológico - RPE;<br><br>VI - necessidade de implantação de programas de regularização fundiária, urbanização de áreas ocupadas por população de baixa renda e habitação de interesse social.<br><br>§ 1º Considera-se potencial construtivo, ou Índice de Utilização - IU, de um terreno o produto de sua área pelo coeficiente de aproveitamento estabelecimento pelo Capítulo IV, Seção II, Art. 15 da Lei Complementar nº  <a class="link_law" data-id="2029265" data-original-title=" Data da Norma: 24.09.2014 - ALTERA, MODIFICA, AMPLIA E DÁ NOVA REDAÇÃO À LEI Nº 1615/92, QUE INSTITUI A LEI DO ORDENAMENTO DO USO E DA OCUPAÇÃO DO SOLO NA ÁREA URBANA DO MUNICÍPIO DE FEIRA DE SANTANA E REVOGA A LEI COMPLEMENTAR Nº 46, DE 19 DE AGOSTO DE 2010, QUE DISPÕE SOBRE O SISTEMA VIÁRIO DAS ÁREAS DE EXPANSÃO URBANA DA CIDADE DE FEIRA DE SANTANA." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-complementar/2014/8/86/lei-complementar-n-86-2014-altera-modifica-amplia-e-da-nova-redacao-a-lei-n-1615-92-que-institui-a-lei-do-ordenamento-do-uso-e-da-ocupacao-do-solo-na-area-urbana-do-municipio-de-feira-de-santana-e-revoga-a-lei-complementar-n-46-de-19-de-agosto-de-2010-que-dispoe-sobre-o-sistema-viario-das-areas-de-expansao-urbana-da-cidade-de-feira-de-santana" rel="tooltip">86</a>, de 24 de setembro de 2014, descontada a área já edificada.<br><br>§ 2º A transferência total ou parcial do direito de construir também poderá ser autorizada pelo Poder Executivo Municipal como forma de indenização, mediante acordo com o proprietário, nas desapropriações destinadas a melhoramentos viários, equipamentos públicos, programas habitacionais de interesse social ou programas de recuperação ambiental.<br><br>§ 3º No caso de desapropriação de que trata o parágrafo anterior, a transferência do direito de construir poderá ser utilizada nas áreas remanescentes confrontadas com a área desapropriada.<br><br>I - No caso de não haver áreas remanescentes confrontantes, a transferência do direito de construir poderá ser utilizada em outras áreas desde que possuam o mesmo valor venal da área doadora.<br><br>§ 4º A transferência do direito de construir poderá ser concedida ao proprietário que doar ao Município seu imóvel, ou parte dele, para fins previstos no Art. 1º.<br><br>§ 5º A transferência do direito de construir deverá observar as limitações dos parâmetros urbanísticos específicos das zonas para quais está sendo realizada a transferência.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O requerimento solicitando a transferência do direito de construir será simultâneo ao pedido de aprovação de projeto de edificação receptora e instruído com os documentos relacionados a seguir:<br><br>I - registro dos imóveis envolvidos, atualizado nos últimos 30 (trinta) dias;<br><br>II - autorização da transferência do direito de construir emitida pelo Poder Executivo Municipal;<br><br>III - formulário específico de transferência de potencial construtivo, contendo, no mínimo, a identificação dos imóveis envolvidos, o valor venal de cada imóvel, a área a ser transferida em metros quadrados e a autorização expressa dos proprietários legalmente constituídos.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> A análise e aprovação da operação de transferência do direito de construir será de responsabilidade da Secretaria Municipal de Desenvolvimento Urbano de Secretaria Municipal de Planejamento e da Procuradoria Geral do Município.<br><br>§ 1º Aprovada a transferência do direito de construir, o Município expedirá Certidão de Transferência de Potencial Construtivo, a qual só terá valor depois de averbada no registro imobiliário competente, à margem da matrícula do imóvel doador e do imóvel receptor, o potencial construtivo.<br><br>§ 2º No imóvel doador, a averbação deverá conter as condições de proteção, preservação, conservação e destinação ao interesse público, quando for o caso.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> As transferências do direito de construir serão admitidas para imóveis na Zona Urbana do Município, entre imóveis que estejam na mesma Zona, salvo os imóveis situados nas Zonas: 01, 06 (apenas nas Concentrações Lineares de Usos Múltiplos: C1, C3, C6, C7, e 07, que poderão transferir e receber doações entre si.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> O potencial construtivo máximo acumulável por transferência de outros imóveis fica limitado a 50% (cinquenta por cento) do potencial construtivo definido pelo de aproveitamento básico do imóvel receptor para a Zona onde se situa.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> O valor do metro quadrado do terreno doador e do receptor, será avaliado com base nos critérios definidos na planta genérica de valores atualizados, atualizados na apuração do Imposto sobre a Propriedade Predial e Territorial Urbano (IPTU).<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> A Área construída a ser ao imóvel receptor será calculada segundo a equação a seguir:<br><br>ACr = Vtc + CAc x CAr + Vtr x Atc<br><br>Onde:<br><br>ACr = área construída a ser recebida;<br><br>Vtc = valor do m² do terreno cedente determinado da Planta Genérica de Valores (PGV);<br><br>Atc = área do terreno cedente;<br><br>Vtr = valor do m² do terreno receptor determinado na Planta Genérica de Valores (PGV);<br><br>CAc = coeficiente de aproveitamento do terreno cedente;<br><br>CAr = coeficiente de aproveitamento do terreno receptor.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> Quando ocorrer a doação de imóvel, a área construída a ser recebida deverá corresponder ao valor total do imóvel objeto da doação, segundo a equação:<br><br>Acr = (VVI+Vtr)xCAxFi<br><br>Onde:<br><br>Acr = Área construída a ser recebida;<br><br>Vvi = valor venal do imóvel doado constante da notificação do Imposto sobre a Propriedade Predial e Territorial Urbana (IPTU) no exercício correspondente;<br><br>Vtr = valor do m² do terreno constante da Planta Genérica de Valores no exercício correspondente:<br><br>Car = coeficiente de aproveitamento do terreno receptor;<br><br>Fi = fator de incentivo à doação.<br><br>Parágrafo Único - O fator de incentivo à doação (Fi) será determinado de acordo com os incisos seguintes seguindo parecer da Secretária Municipal de Planejamento:<br><br>I - 1,5 (um vírgula cinco) quando for de grande interesse para administração a doação;<br><br>II - 1,0 (um vírgula zero) quando for de interesse para a administração a doação;<br><br>III - 0,5 (zero vírgula cinco) quando não for de interesse para administração a doação.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> O órgão municipal compete manterá cadastro dos imóveis que cedem e dos que recebem potencial construtivo.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10</span></a> Os casos omissos serão resolvidos pela Secretaria Municipal de Desenvolvimento Urbano, pela Secretaria Municipal de Planejamento e pela Procuradoria Geral do Município.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições contrário.<br><br>Gabinete do Prefeito 13 de novembro de 2014.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito Municipal<br><br>MARIO COSTA BORGES<br>Chefe de Gabinete do Prefeito<br><br>CLEUDSON SANTOS ALMEIDA<br>Procurador Geral do Município<br><br>CARLOS ALBERTO OLIVEIRA BRITO<br>Secretário Municipal de Planejamento<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

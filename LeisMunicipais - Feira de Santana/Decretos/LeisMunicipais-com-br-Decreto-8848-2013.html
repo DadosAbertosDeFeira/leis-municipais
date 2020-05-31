@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>DECRETO Nº 8848, de 20 de fevereiro de 2013.</h2><br>NOMEIA O GRUPO DE ANÁLISE DE EMPREENDIMENTOS - GAE, QUE SERÁ RESPONSÁVEL PELA ANÁLISE DA VIABILIDADE PARA IMPLANTAÇÃO DOS NOVOS EMPREENDIMENTOS NO ÂMBITO DO PROGRAMA MINHA CASA MINHA VIDA.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, no uso de suas atribuições, CONSIDERANDO o que estabelece a Portaria nº 465, do Ministério das Cidades, de 03 de outubro de 2011, e que dispõe sobre as diretrizes gerais para aquisição e alienação de imóveis por meio de transferências de recursos do Fundo de Arrendamento Residencial - FAR, no âmbito do Programa Nacional de Habitação Urbana - PNHU, integrante do Programa Minha Casa Minha Vida - PMCMV, DECRETA:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica constituída a Equipe Técnica do Grupo de Análise de Empreendimentos - GAE, para implementar as ações definidas na Portaria nº 465, do Ministério das Cidades, de 03 de outubro de 2011, na forma do seu anexo IV, com os seguintes integrantes:<br><br>I - Coordenador Geral:<br><br>Amarildo Costa dos Santos<br><br>II - Coordenador de Planejamento Urbano:<br><br>José Reinaldo Coelho da Silva<br><br>III - Coordenador de Assistência Social:<br><br>Pedro Torres Filho<br><br>IV - Coordenador de Educação:<br><br>Fernanda Andrade Fonseca<br><br>VI - Coordenador de Saúde:<br><br>Valdenice de Queiroz Costa Rodrigues<br><br>VII - Coordenador de Transportes:<br><br>Carlos Rodolfo Suzarte Ferreira Júnior<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Este Decreto entrará em vigor na data de sua publicação revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 19 de fevereiro de 2013.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito Municipal<br><br>MÁRIO COSTA BORGES<br>Chefe de Gabinete do Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

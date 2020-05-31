@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 2494/2004</h2><br>DISPÕE SOBRE COMERCIALIZAÇÃO ARMAZENAGEM E TRANSPORTE DE ÁGUA MINERAL NATURAL E ÁGUA NATURAL NO MUNICÍPIO DE FEIRA DE SANTANA.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Autor: Manoel Messias Gonzaga<br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que Câmara Municipal, através do Projeto de Lei nº 001/2004, de autoria do Edil Manoel Messias Gonzaga, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> os estabelecimentos que comercializam, armazenam ou realizam o transporte de água mineral natural e água natural devem obrigatoriamente, manter afixado ou apresentar, quando solicitado, cópia do laudo que ateste a qualidade físico-química e microbiológica da água, elaborado por laboratório credenciado pelo Departamento Nacional de Produção Mineral - DNPM.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Ficam proibidos:<br><br>I - a comercialização de água mineral e água natural em;<br><br>a) postos de gasolina;<br>b) depósitos ou distribuição de gás;<br>c) borracharias;<br>d) oficinas mecânicas.<br><br>II - a armazenagem de galões retornáveis ou não, cheios ou vazios, de água mineral natural e de água natural, bem como a armazenagem destas águas em qualquer outra embalagem, principalmente:<br><br>a) em áreas abertas;<br>b) em áreas que permitam a passagem de unidade e/ou poeira;<br>c) em áreas fechadas sem ventilação;<br>d) junto a produtos tóxicos e de materiais de limpeza ;<br>e) em pisos rústicos e/ou em chão batido;<br>f) exposto a luz solar direta.<br><br>III - o transporte de galões cheios ou vazios de água mineral e de água natural, bem como o transporte destas águas em qualquer outra embalagem, em veículos de carroceria aberta, sem lonas e forrações impermeáveis ou com evidência de insetos, roedores, pássaros, pragas, vazamentos, umidade, materiais estranhos e odores intensos, ou ainda juntamente com:<br><br>a) animais;<br>b) plantas;<br>c) materiais de limpeza;<br>d) cargas tóxicas;<br>e) gás de cozinha.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> O descumprimento de qualquer um dos dispositivos desta Lei implica em:<br><br>I - notificação ao proprietário e/ou responsável pelo estabelecimento;<br><br>II - multa no valor de R$ 500,00 (quinhentos reais ) aplicada pela Vigilância Sanitária do Município;<br><br>III - proibição da continuidade da comercialização do produto e recolhimento do mesmo;<br><br>IV - cassação do Alvará de Funcionamento.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>PREFEITURA MUNICIPAL DE FEIRA DE SANTANA, em 16 de Março de 2004.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

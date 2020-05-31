@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 2658, DE 18 DE ABRIL DE 2006.</h2><br>ESTABELECE NOVAS DISPOSIÇÕES ACERCA DA COMPOSIÇÃO E ATRIBUIÇÕES DO CONSELHO MUNICIPAL DOS DIREITOS DA MULHER E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O Prefeito Municipal de Feira de Santana, Estado da Bahia no uso de suas atribuições, faço saber que a Câmara Municipal, através do Projeto de Lei Nº 40/2006, de autoria deste Poder Executivo, decretou e eu sanciono a seguinte Lei:<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> I<br>DAS DISPOSIÇÕES GERAIS<br></span></span><br><br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> O Conselho Municipal dos Direitos da Mulher, órgão deliberativo, fiscalizador da política básica, supleliva e das ações para garantia dos Direitos da Mulher, instituídos pela Lei Municipal nº <a class="link_law" data-id="1611714" data-original-title=" Data da Norma: 08.09.1986 - INSTITUI O CONSELHO MUNICIPAL DOS DIREITOS DA MULHER, E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1986/102/1027/lei-ordinaria-n-1027-1986-institui-o-conselho-municipal-dos-direitos-da-mulher-e-da-outras-providencias" rel="tooltip">1027</a>/86, reger-se-á pelo disposto nesta Lei.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O Conselho Municipal dos Direitos da Mulher tem por finalidade assegurar a efetivação dos direitos à vida, à saúde, à educação à profissionalização, à moradia, ao lazer, ao trabalho, à proteção no trabalho, à cultura, à dignidade e respeito, de mulheres, no âmbito do Município de Feira de Santana, além de colocá-las a salvo de toda forma de discriminação, exploração, violência, crueldade e opressão.<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> II<br>COMPETÊNCIAS<br></span></span><br><br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Compete ao Conselho Municipal dos Direitos da Mulher:<br><br>I - Formular as diretrizes da Política Municipal de atendimento aos direitos da mulher, inclusive fixando prioridades para as definições das ações e de aplicação dos recursos:<br><br>II - Lutar pela execução da política municipal de atendimento, estabelecendo critérios, formas e meios de fiscalização dos órgãos, ações e medidas referentes ao seu campo de competência;<br><br>III - Acompanhar e avaliar a proposta orçamentária do Poder Executivo Municipal, sugerindo ao órgão competente, as modificações necessárias à consecução da política formulada para a Mulher;<br><br>IV - Oferecer subsídios para elaboração de leis, decretos ou outros atos administrativos, normativos, atinentes aos interesses da Mulher;<br><br>V - Incentivar e apoiar realização de eventos, estudos e capacitação de pessoal no campo de promoção e defesa dos direitos da Mulher;<br><br>VI - Promover ações que visem resgatar a valorização da Mulher, sua autoestima, rompendo o ciclo de violência de que são vitimas, reconstruindo sua identidade de genero;<br><br>VII - Garantir ações em defesa dos direitos das Mulheres vulneráveis à violência, exclusão social e preconceitos.<br><br>VIII - Criar instrumentos concretos que assegurem a participação financeira em todos os setores da atividade produtiva do município, ampliando a possibilidade de emprego para a Mulher;<br><br>IX - Oportunizar dentre outros aspectos a concentração das Mulheres para a defesa de suas reivindicações e direitos, rumo à busca de sua emancipação, inclusão social e promoção humana;<br><br>X - Praticar todos os atos necessários à execução dos seus objetivos e a afirmação dos seus atos;<br><br>XI - Elaborar seu regimento interno, que será aprovado pelo Chefe do Executivo Municipal, através de Decreto;<br><br>XII - Exercer outras atribuições correlatas.<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> III<br><br></span></span><br>SECÇÃO I<br>COMPOSIÇÃO<br><br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> O Conselho Municipal dos Direitos da Mulher tem sua composição formada com representação da entidades governamentais e não governamentais na forma desta Lei.<br><br>Parágrafo Único - Os conselheiros representantes de organismos Municipais serão designados pelo titulares dos respectivos órgãos.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> As entidades não governamentais deverão ser legalmente constituídas e ter sede no Município, centre as suas atribuições a defesa dos Direitos da Mulher, atuando na área há pelo menos 02 (dois) anos.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> As entidades não governamentais elegerão em assembleias, a cada biênio, os seus representantes no Conselho.<br><br>§ 1º São critérios a serem observados na votação:<br><br>I - O voto será computado por entidade;<br><br>II - As células serão rubricadas pela comissão designada pela Secretária Municipal de Desenvolvimento Social, para conduzir o processo eleitoral.<br><br>III - Serão eleitas as entidades que obtiverem maior número de votos.<br><br>§ 2º A nomeação e posse dos membros do Conselho será feita pelo Prefeito Municipal, obedecendo aos critérios de escolha previsto nesta lei.<br><br>§ 3º A ausência injustificada por 3 reuniões consecutivas, ou 6 alternadas no decurso do mandato, implicará exclusão automática do Conselho, devendo ser convocada nova entidade, observando-se o resultado obtido na eleição, prevista nesta Lei; caso o faltoso seja representante do Poder Executivo, o órgão responsável pela indicação deverá ser imediatamente comunicado, para diligenciar sua substituição.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Os membros do Conselho e respectivos suplentes exercerão mandato de 2 (dois) anos, admitindo-se a recondução por uma vez e por iguaí prazo.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> A função dos membros do Conselho Municipal dos Direitos da Mulher é considerada de interesse público e não será remunerada.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> O Conselho será representado pelo Presidente, Vice-Presidente, e o Secretário, que serão eleitos pela maioria dos membros efetivos.<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br>SEÇÃO III<br><br></span><br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10 -</span></a> O Conselho Municipal dos Direitos da Muther será constituído de 16 membros efetivos e 16 suplentes na seguinte conformidade:<br><br>I - Representando o Poder Executivo Municipal:<br><br>1.01 - representante da Secretaria Municipal de Desenvolvimento Social;<br><br>2.01 - representante da Secretaria Municipal de Educação;<br><br>3.01 - representante da Secretaria Municipal de Saúde;<br><br>4.01 - representante da Secretaria Municipal de Cultura, Esporte e Lazer;<br><br>5.01 - representante da Secretaria Municipal de Habitação e Regularização Fundiária;<br><br>6.01 - representante da Procuradoria Geral do Município;<br><br>7.01 - representante da Fundação Hospital da Mulher;<br><br>8.01 - representante da Secretaria Municipal de Agricultura, Recursos Hídricos e Desenvolvimento Rural.<br><br>II - Representando as entidades não governamentais, com sede no Município, a seguir especificadas.<br><br>1.01 - representante de Instituições Religiosas;<br><br>2.01 - representante da Ordem dos Advogados - OAB;<br><br>3.01 - representante dos Sindicatos Patronais;<br><br>4.01 - representante de Instituições de Defesa da Igualdade Racial;<br><br>5.01 - representante dos Sindicatos de Trabalhadores;<br><br>6.01 - representante das Instituições de Ensino;<br><br>7.01 - representante das Associações Comunitárias;<br><br>8.01 - representante da Associação de Profissionais do Sexo.<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br>SEÇÃO IV<br><br></span><br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11 -</span></a> O plenário dos membros do Conselho é fórum máximo normativo e deliberativo do Conselho que se reunirá em seções ordinárias uma vez por mês e extraordinariamente por convocação do presidente ou por 1/3 de seus membros quando julguem necessários.<br><br>§ 1º As sessões do plenário são públicas, saivo decisão em contrário do presidente, ou da maioria dos membros do Conselho, não cabendo ao público direito a voz e voto.<br><br>§ 2º É indispensável a presença da maioria simples dos membros do Conselho para a realização das seções do plenário, em primeira convocação; e em segunda, com intervalo, poderá realizar-se com qualquer número de presentes.<br><br><a name="artigo_12"><span class="label label-pill label-danger">Art. 12 -</span></a> O Conselho Municipal dos Direitos da Mulher terá a seguinte estrutura:<br><br>1 - Plenária;<br><br>2 - Diretoria;<br><br>3 - Câmaras Técnicas.<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> IV<br>DAS DISPOSIÇÕES FINAIS E TRANSITÓRIAS<br></span></span><br><br><br><a name="artigo_13"><span class="label label-pill label-danger">Art. 13 -</span></a> No prazo máximo de 30 dias após a publicação desta Lei, a Secretaria Municipal de Desenvolvimento Social adotará as providências necessárias para instalar o Conselho Municipal dos Direitos da Mulher.<br><br><a name="artigo_14"><span class="label label-pill label-danger">Art. 14 -</span></a> No prazo de máximo de 60 dias, contados da publicação desta Lei, dar-se-á o primeiro processo de escolha dos membros do Conselho Municipal dos Direitos da Mulher.<br><br><a name="artigo_15"><span class="label label-pill label-danger">Art. 15 -</span></a> Fica o Poder Executivo autorizado a abrir crédito suplementar para as despesas iniciais decorrentes do cumprimento desta Lei, através de anulação de recursos existentes em outras dotações.<br><br><a name="artigo_16"><span class="label label-pill label-danger">Art. 16 -</span></a> Esta Lei entra em vigor na data de sua publicação, revogadas as disposições em contrário, especialmente a Lei nº <a class="link_law" data-id="1611714" data-original-title=" Data da Norma: 08.09.1986 - INSTITUI O CONSELHO MUNICIPAL DOS DIREITOS DA MULHER, E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1986/102/1027/lei-ordinaria-n-1027-1986-institui-o-conselho-municipal-dos-direitos-da-mulher-e-da-outras-providencias" rel="tooltip">1027</a>/86.<br><br>Gabinete do Prefeito Municipal, 18 de abril de 2006.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito Municipal<br><br>GERALDO DE OLIVEIRA SAMPAIO FILHO<br>Chefe de Gabinete do Prefeito<br><br>CARLOS ANTÔNIO DE MORAES LUCENA<br>Procurador Geral do Município<br><br>ANA LÚCIA FREITAS BASTOS MIRANDA<br>Secretária Municipal de Desenvolvimento Social<br><br>ANA RITA DE ALMEIDA NEVES<br>Secretária Municipal de Educação<br><br>DENISE LIMA MASCARENHAS<br>Secretária Municipal de Saúde<br><br>ANTÔNIO MAURÍCIO SANTANA DE CARVALHO<br>Secretário Municipal de Cultura, Esporte e Lazer<br><br>MÁRIO COSTA BORGES<br>Secretário Municipal de Agricultura, Recursos Hídricos e Desenvolvimento Rural<br><br>GENÉSIO SERAFIM DE LIMA<br>Secretário Municipal de Habitação e Regularização Fundiária<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

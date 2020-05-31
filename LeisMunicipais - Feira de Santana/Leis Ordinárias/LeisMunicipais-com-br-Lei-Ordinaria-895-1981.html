@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 895, de 25 de novembro de 1981</h2><br>ALTERA DISPOSITIVOS DA LEI Nº <a class="link_law" data-id="1713798" data-original-title=" Data da Norma: 01.01.1969 - (ATO INEXISTENTE, NUMERAÇÃO NÃO UTILIZADA)" data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1969/63/631/lei-ordinaria-n-631-1969-ato-inexistente-numeracao-nao-utilizada" rel="tooltip">631</a> DE 30 DE JULHO DE 1969, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, DO ESTADO DA Bahia, FAÇO saber que a Câmara Municipal decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Os artigos 16 e 38 da Lei Municipal de nº  <a class="link_law" data-id="1713798" data-original-title=" Data da Norma: 01.01.1969 - (ATO INEXISTENTE, NUMERAÇÃO NÃO UTILIZADA)" data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1969/63/631/lei-ordinaria-n-631-1969-ato-inexistente-numeracao-nao-utilizada" rel="tooltip">631</a>, de 30 de julho de 1969, que instituíram o Plano de Desenvolvimento Local Integrado e o zoneamento da cidade, passam a integrar com a seguinte redação:<br><br>&quot;Art. 16 - Para fins de ordenamento e disciplinarão do uso e da ocupação do solo, em consonância com as prescrições do Plano de Desenvolvimento Local e Integrado e o crescimento da cidade de Feira de Santana, fica, para os efeitos da presente Lei, a mesma dividida em 8 zonas, com os seguinte setores (Mapa-escala 1:10.000):<br><br>ZONA I - CENTRAL<br>SCI - SETOR COMERCIAL<br>ST - SETOR DE TRANSIÇÃO<br><br>ZONA II - MISTA<br>SC2 - SETOR COMERCIAL<br>SRIA - SETOR RESIDENCIAL DE MÉDIA OCUPAÇÃO TERRITORIAL<br>SRIB - SETOR RESIDENCIAL DE BAIXA OCUPAÇÃO TERRITORIAL<br><br>ZONA III - RESIDENCIAL<br>SR2A - SETOR RESIDENCIAL DE MÉDIA OCUPAÇÃO TERRITORIAL<br>SR2B - SETOR RESIDENCIAL DE BAIXA OCUPAÇÃO TERRITORIAL<br>SR2C - SETOR RESIDENCIAL DE BAIXA OCUPAÇÃO TERRITORIAL<br><br>ZONA IV - MISTA<br>SR3A - SETOR RESIDENCIAL DE MÉDIA OCUPAÇÃO TERRITORIAL<br>SR3B - SETOR MISTO<br>SR3C - SETOR RESIDENCIAL DE BAIXA OCUPAÇÃO TERRITORIAL<br><br>ZONA V - RESIDENCIAL<br>SR4A - SETOR RESIDENCIAL DE MÉDIA OCUPAÇÃO TERRITORIAL.<br>SR4B - SETOR RESIDENCIAL DE BAIXA OCUPAÇÃO TERRITORIAL<br>SR4C - SETOR RESIDENCIAL DE BAIXA OCUPAÇÃO TERRITORIAL<br><br>ZONA VI - RESIDENCIAL<br>SR5A - SETOR RESIDENCIAL DE MÉDIA OCUPAÇÃO TERRITORIAL<br>SR5B - SETOR RESIDENCIAL DE BAIXA OCUPAÇÃO TERRITORIAL<br>SR5C - SETOR RESIDENCIAL DE BAIXA OCUPAÇÃO TERRITORIAL<br><br>ZONA VII - RESIDENCIAL<br>SR6A - SETOR RESIDENCIAL DE MÉDIA OCUPAÇÃO TERRITORIAL<br>SR6B - SETOR RESIDENCIAL DE BAIXA OCUPAÇÃO TERRITORIAL<br><br>ZONA VIII - INDUSTRIAL<br>ST7A - SETOR INDUSTRIAL<br>STI7B - SETOR DE TRANSIÇÃO INDUSTRIAL<br><br>Parágrafo Único - Ficam definidas, como de alta densidade populacional, as seguintes áreas (Mapa-escala 1:10.000):<br><br>a) no setor residencial IA (SRIA), o trecho delimitado pela Rua Arivaldo de Carvalho, Rua Tomé de Souza, Anel intermediário (divisa com o setor SC2), e o anel de contorno;<br>b) no setor residencial IB (SRIB), o trecho delimitado pelo anel de contorno, pela continuação da Rua Arivaldo de Carvalho até encontrar a Rua Primavera, prosseguindo em direção ao ponto 05 do perímetro urbano até alcançar o limite da zona rural, e pela continuação da Rua Tomé de Souza com prolongamento na direção do ponto 04 até alcançar o limite da zona rural;<br>c) todo o setor residencial 2A (SR2A);<br>d) todo setor residencial 2B (SR2B), com exceção dos loteamentos Parque Filintos Marques Cerqueira e Porto Seco Campo Limpo;<br>e) no setor residencial 2C (SR2C), o trecho delimitado pelo anel de contorno, Avenida Maria Quitéria em direção à linha que delimita o perímetro urbano entre os pontos 06 e 07 até alcançar o limite da zona rural, e pela Rua Primavera na direção do ponto 05 do perímetro urbano até alcançar o limite da zona rural com exceção dos loteamentos Morada do Campo Limpo e Estrada da Mangabeira;<br>f) todo setor residencial 3A (SR3A);<br>g) todo setor residencial 3B (SR3B);<br>h) no setor residencial 3C (SR3C), o trecho delimitado pelo anel de contorno, pela Rua Concórdia até alcançar o limite da zona rural na direção ponto 09, do perímetro urbano e pela Avenida Maria Quitéria até alcançar os limites da zona rural, com exceção dos loteamentos Parque Lagoa, Quintas do Sol, Jardim Ana Paula, Estrada da Mangabeira, Alto do Papagaio e INOCOOP;<br>i) no setor residencial 4A (SR4A), o trecho delimitado pela Av. Anchieta, Rua Campos Sales até encontrar a Rua Iraque, divisa com o setor SR3A (prolongamento da Rua LÍDICE) e Estrada de São Roque;<br>j) no setor residencial 4B (SR4B), o trecho delimitado pela Rua Campos Sales até encontrar a Rua Iraque, Estrada de São Roque, contorno e divisa com o setor SR3B (prolongamento da Rua Visconde de Mauá);<br>k) todo o setor residencial 5B (SR5B);<br>l) no setor residencial 6B (SR6B), o trecho delimitado pela Rua Marte, Rua Papa João XXIII, Rua PEDRO SUZART, divisa com o setor SR5B (Av. Anchieta com o prolongamento pela Rua Pedro Américo de Brito e trecho da Rua Papa João XXIII), divisa com o setor STI, faixa de domínio da COELBA, Rua Nilo Peçanha com prolongamento até alcançar o loteamento Muchila que limita no sentido sudoeste.&quot;<br><br>&quot;Art. 38 - Nos setores residenciais de média ocupação territorial: SRIA, SR3A, SR4A, SR5A, SR6A, a taxa de ocupação será de 60% (sessenta por cento) e nos setores de baixa ocupação territorial (SRIB, SR2B, SR3B, SR4B, SR5B, SR6B, SR2C, SR3C, SR4C e SR5C), a taxa de ocupação será de 50% (cinqüenta por cento), ressalvados os casos previstos em Lei.&quot;<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Prefeitura Municipal de Feira de Santana, 25 de novembro de 1981.<br><br>DR. COLBERT MARTINS DA SILVA<br>Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

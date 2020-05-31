@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>DECRETO Nº 8972, de 19 de julho de 2013</h2><br>NOMEIA OS MEMBROS DO CONSELHO MUNICIPAL DO IDOSO DE FEIRA DE SANTANA.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O Prefeito Municipal de Feira de Santana, Estado da Bahia, no uso das atribuições que lhe são conferidas, no parágrafo único do art. 3º, da Lei Municipal nº  <a class="link_law" data-id="1618262" data-original-title=" Data da Norma: 01.10.1993 - DISPÕE SOBRE O CONSELHO MUNICIPAL DO IDOSO, E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1993/170/1700/lei-ordinaria-n-1700-1993-dispoe-sobre-o-conselho-municipal-do-idoso-e-da-outras-providencias" rel="tooltip">1.700</a>, de 1º de outubro de 1993, Considerando as alterações nas representações das entidades governamentais e da sociedade civil, decorrentes de conclusão de mandato e de processo de eleição da sociedade civil, e as indicações ora formuladas, DECRETA:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Ficam nomeados para compor o Conselho Municipal do Idoso de Feira de Santana- Bahia, as seguintes pessoas:<br><br>ENTIDADES GOVERNAMENTAIS:<br><br>I - Representando a Secretaria Municipal de Desenvolvimento Social<br><br>TITULAR: Cacilda Miranda da Silva<br>SUPLENTE: Aísile Monteiro Santana Andrade<br><br>II - Representando a Secretaria Municipal de Saúde<br><br>TITULAR: Valdenice de Queiroz Costa Rodrigues<br>SUPLENTE: Mariana Cerqueira Figueiredo e Matos<br><br>III - Representando a Secretaria Municipal de Educação<br><br>TITULAR: Ana Maria Pereira Mota Araújo<br>SUPLENTE: Lucia Oliveira da Silva<br><br>IV - Representando o Sistema Único de Saúde - SUS<br><br>TITULAR: Patrícia Pimenta de Oliveira Rios<br>SUPLENTE: Antonia Del Carmen Rivas Sanhueza<br><br>V - Representando o Instituto Nacional de Seguridade Social - INSS<br><br>TITULAR: Joseli Nascimento Pimentel Nunes<br>SUPLENTE: Gliciana da Silva Lima<br><br>VI - Representando do Poder Legislativo Municipal<br><br>TITULAR: Gilvan Torquato dos Anjos Lima<br>SUPLENTE: Helder dos Santos Bezerra<br><br>VII - Representando a Universidade Estadual de Feira de Santana - UEFS<br><br>TITULAR: Ana Angélica Vergne de Morais<br>SUPLENTE: Leila Cristina Amarante Coelho<br><br>ENTIDADES DA SOCIEDADE CIVIL:<br><br>VIII - Representando a Arquidiocese de Feira de Santana<br><br>TITULAR: Maria Liginalva de Jesus Miranda<br>SUPLENTE: Benildes Martins Oliveira Santos<br><br>IX - Representando a Federação das Associações de Moradores de Feira de Santana<br><br>TITULAR: João dos Reis Lima<br>SUPLENTE: Gidivaldo Alves de Jesus<br><br>TITULAR: Maria do Nascimento Moreira<br>SUPLENTE: Maria José de Andrade<br><br>X - Representando a Ordem dos Advogados do Brasil - Subseção de Feira de Santana - Bahia.<br><br>TITULAR: Ricardo Oliveira Rebelo de Matos<br>SUPLENTE: Eliana Mara Assunção Rocha Costa<br><br>XI - Representando Entidades de Atendimento, Promoção, Proteção e Defesa da Pessoa Idosa.<br><br>a) Associação Cristã Beneficente Nossa Senhora dos Humildes:<br><br>TITULAR: Ângela Maria de Oliveira Santos<br>SUPLENTE: Ana Carla Alves Lacerda<br><br>b) Instituição Lar do Irmão Velho:<br><br>TITULAR: Álvaro Arapiraca da Silva<br>SUPLENTE: Márcia Menezes Machado de Souza<br><br>c) Delegacia Regional de Feira do Sindicato dos Jornalistas do Estado da Bahia:<br><br>Sem representação<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O desempenho do mandato dos conselheiros nomeados por este Decreto será gratuito e considerado como &quot;serviço relevante prestado ao Município de Feira de Santana&quot;.<br><br>Parágrafo Único - O Conselho Municipal do Idoso será presidido por um dos seus integrantes, escolhido pelos membros que o constituem.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Este Decreto entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 19 de julho de 2013.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito Municipal<br><br>MÁRIO COSTA BORGES<br>Chefe de Gabinete do Prefeito<br><br>ILDES FERREIRA DE OLIVEIRA<br>Secretário Municipal de Desenvolvimento Social<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

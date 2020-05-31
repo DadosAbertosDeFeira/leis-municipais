@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>DECRETO Nº 7462, DE 21 DE FEVEREIRO DE 2008</h2><br>CRIA DISTRITO NESTE MUNICÍPIO.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O Prefeito Municipal de Feira de Santana, Estado da Bahia, no uso de suas atribuições,<br><br>Considerando o disposto no art. 6º das Disposições Transitórias da Lei nº <a class="link_law" data-id="" data-original-title=" Data da Norma: .. - " data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1990/3/37/lei-ordinaria-n-37-1990-este-ato-ainda-nao-esta-disponivel-no-sistema" rel="tooltip">37</a>/90, <a class="link_law" data-original-title="Lei Orgânica Feira de Santana BA" data-toggle="tooltip" href="/lei-organica-feira-de-santana-ba" rel="tooltip">Lei Orgânica</a> do Município, que estabelece sobre a criação de Distrito que englobe as regiões da Matinha, Olhos D`Água das Moças, Jacu, Candeia Grossa, Alecrim Miúdo e áreas circunvizinhas, após consultadas as respectivas populações;<br><br>Considerando ainda que o mencionado dispositivo estabelece que o Distrito a ser criado será desmembrado do atual Distrito de Maria Quitéria, guardados os mesmos limites do antigo Distrito a que pertencia, alterando-se tão somente o lado Oeste que terá como limitação a Rodovia BR-116, a qual estabelecerá a divisória entre o Novo Distrito e aquele de que foi desmembrado;<br><br>Considerando também o que consta na Lei Complementar Municipal nº <a class="link_law" data-id="1592759" data-original-title=" Data da Norma: 23.08.2006 - CRIA NORMAS PARA E CRIAÇÃO, ORGANIZAÇÃO E SUPRESSÃO DE DISTRITOS NO MUNICÍPIO DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-complementar/2006/3/30/lei-complementar-n-30-2006-cria-normas-para-e-criacao-organizacao-e-supressao-de-distritos-no-municipio-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">030</a>/2006, a qual dispõe sobre normas para a Criação, Organização e Supressão de Distritos no Município de Feira de Santana;<br><br>Considerando, outrossim, que a Lei Municipal nº <a class="link_law" data-id="1543955" data-original-title=" Data da Norma: 05.09.2007 - DISPÕE SOBRE A CRIAÇÃO DO NOVO DISTRITO NO TERRITÓRIO DO MUNICÍPIO DE FEIRA DE SANTANA E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2007/283/2831/lei-ordinaria-n-2831-2007-dispoe-sobre-a-criacao-do-novo-distrito-no-territorio-do-municipio-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">2.831</a>/2007, dispôs sobre a criação do Novo Distrito no território do Município de Feira de Santana, estabelecendo normas e procedimentos específicos para tal questão;<br><br>Considerando, ademais, que a Comissão Coordenadora para criação de Novo Distrito, formada pelo Procurador Geral do Município e pelos Secretários Municipais de Governo, Desenvolvimento Social, Comunicação Social e Agricultura, Recursos Hídricos e Desenvolvimento Rural realizou reuniões públicas preparatórias com os moradores das comunidades do território a ser desmembrado do Distrito de Maria Quitéria; Considerando que a mencionada Comissão também realizou consulta popular na forma de Plebiscito com os eleitores cadastrados das Secções Eleitorais existentes na região a ser desmembrada, em cujo resultado da apuração dos 2.248 (dois mil e duzentos e quarenta e oito) eleitores que votaram, foram computados 1.650 (mil seiscentos e cinqüenta) votos favoráveis ao SIM, ou seja, mais de 73% (setenta e três por cento) dos votos válidos exprimiram o desejo de que seja criado Novo Distrito;<br><br>Considerando ainda que a Comissão fez publicar Edital de Convocação das Associações Comunitárias com sede na região a ser desmembrada para participar de Assembléias para a escolha do nome do Distrito a ser criado, e após o cadastramento das entidades e realização dos respectivos encontros resultaram na escolha do nome Matinha;<br><br>Considerando enfim que a divisão do território do Distrito de Maria Quitéria para a Criação de um novo distrito, além de espelhar as disposições legais aplicáveis ao tema, culmina um lídimo sentimento de auto-determinação daquelas comunidades que aspiram o desenvolvimento de uma identidade própria dentro do universo municipal, além de representar um eficaz instrumento de aperfeiçoamento administrativo para a ação governamental na região, contribuindo assim decisivamente para a evolução institucional do Município, DECRETA:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica criado o DISTRITO DE MATINHA, localizado na porção Leste do atual Distrito de Maria Quitéria, do qual é desmembrado, tomando-se por eixo a BR-116 - Norte, neste Município.<br><br>§ 1º - As comunidades de Olhos D`Água das Moças, Candeal II, Santa Quitéria, Moita da Onça, Vila Menilha, Baixão, Tupy, Alto do Tanque, Tanquinho, Alto do Canuto, Alecrim Miúdo, Jacu, Capoeira do Rosário, Candeia Grossa, Jenipapo, passam a integrar o Distrito de Matinha.<br><br>§ 2º - A sede do Novo Distrito será a localidade da Matinha.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Este Decreto entrará em vigor na data de sua publicação.<br><br>Gabinete do Prefeito Municipal, 21 de fevereiro de 2008.<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO MUNICIPAL<br><br>GERALDO DE OLIVEIRA SAMPAIO FILHO<br>CHEFE DE GABINETE DO PREFEITO RESP. P/ SECRETARIA MUNICIPAL DE GOVERNO<br><br>CARLOS ANTONIO DE MORAES LUCENA<br>PROCURADOR GERAL DO MUNICÍPIO<br><br>JOÃO MARINHO GOMES JÚNIOR<br>SECRETÁRIO MUNICIPAL DE ADMINISTRAÇÃO<br><br>JOAQUIM JOSÉ BAHIA MENEZES<br>SECRETÁRIO MUNICIPAL DA FAZENDA<br><br>CARLOS ALBERTO OLIVEIRA BRITO<br>SECRETÁRIO MUNICIPAL DE PLANEJAMENTO<br><br>ANA RITA DE ALMEIDA NEVES<br>SECRETÁRIA MUNICIPAL DE EDUCAÇÃO<br><br>ANA LÚCIA FREITAS BASTOS MIRANDA<br>SECRETÁRIA MUNICIPAL DE DESENVOLVIMENTO SOCIAL<br><br>JUSTINIANO OLIVEIRA FRANÇA<br>SECRETÁRIO MUNICIPAL DE SERVIÇOS PÚBLICOS<br><br>JOSÉ ARISTÓTELES RIOS NERY<br>SECRETÁRIO MUNICIPAL DE DESENVOLVIMENTO ECONÔMICO<br><br>JOSÉ FERREIRA PINHEIRO<br>SECRETÁRIO MUNICIPAL DE DESENVOLVIMENTO URBANO E MEIO AMBIENTE<br><br>DENISE LIMA MASCARENHAS<br>SECRETÁRIA MUNICIPAL DE SAÚDE<br><br>MANOEL ANCHIÊTA NERY DE SOUZA<br>SECRETÁRIO MUNICIPAL DE COMUNICAÇÃO SOCIAL<br><br>GENÉSIO SERAFIM DE LIMA<br>SECRETÁRIO MUNICIPAL DE HABITAÇÃO E REGULARIZAÇÃO FUNDIÁRIA<br><br>ANTONIO MAÚRICIO SANTANA DE CARVALHO<br>SECRETÁRIO MUNICIPAL DE CULTURA, ESPORTE E LAZER<br><br>MÁRIO COSTA BORGES<br>SECRETÁRIO MUNICIPAL DE AGRICULTURA, RECURSOS HÍDRICOS E DESENVOLVIMENTO RURAL<br><br>ANTONIO CARLOS BORGES DOS SANTOS JÚNIOR<br>SECRETÁRIO MUNICIPAL DE TRANSPORTES E TRÂNSITO<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

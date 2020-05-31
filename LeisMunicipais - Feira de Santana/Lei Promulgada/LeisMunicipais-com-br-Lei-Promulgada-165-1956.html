@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI PROMULGADA Nº 165/1956</h2><br>DA NOVA REDAÇÃO AO ART. 1º, ITEM III, DA LEI Nº  <a class="link_law" data-id="" data-original-title=" Data da Norma: .. - " data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-promulgada/1946/14/145/lei-promulgada-n-145-1946-este-ato-ainda-nao-esta-disponivel-no-sistema" rel="tooltip">145</a>, DE 06/06/1946.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA ESTADO DA BAHIA. Faço saber que a Câmara de Vereadores decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Passem a ter a seguinte redação às letras a e b, do Item III, do art. 1º da Lei Municipal nº  <a class="link_law" data-id="" data-original-title=" Data da Norma: .. - " data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-promulgada/1946/14/145/lei-promulgada-n-145-1946-este-ato-ainda-nao-esta-disponivel-no-sistema" rel="tooltip">145</a>, de 06/06/1946, referente ao horário de funcionamento de barbearias e similares:<br><br>a) Abertura ás 8(oito) horas e fechamento ás 20 (vinte) horas;<br>b) Aos sábados será permitido o funcionamento até ás 22 (vinte e duas) horas e aos domingos, feriados e dias santificados, até ás 12 (doze) horas.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Obedecidas a legislação trabalhista e demais disposições legais que regem a espécie, esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Publique-se.<br><br>GABINETE DA PREFEITURA Municipal de Feira de Santana, Em 05 de Novembro de 1956.<br><br>AUGUSTO MATIAS DA SILVA<br>PRESIDENTE<br><br>DATA DE PUBLICAÇÃO: 05/11/1956<br><br>COMISSÃO DE REDAÇÃO, JUSTIÇA E LEGISLAÇÃO.<br>Parecer ao projeto de Lei nº 5/55<br><br>Com a incumbência de apreciar o projeto de Lei nº 5/55 que institui a Semana Inglesa nesta cidade queremos falá-lo de modo sucinto, já que recente decreto do Chefe do Executivo e um convênio assinado pelas classes comerciais fizeram vigorar o fechamento do comercio ao meio - dia dos sábados.<br><br>E a nossa preocupação, a mesma de toda a Câmara, como responsável direta pela vida legal do Município: elaborar a Lei que possa dar durabilidade e segurança a tão legítima aspiração das classes trabalhadoras de nossa terra. A matéria é das mais discutidas no que tange à competência do Município para legislar. Seria porem absurdo aceitar-se a tese, tantas vezes aludida de que deve emanar da União o poder de regulamentar a matéria, tanto mais agora, quando empolga a consciência cívica dos brasileiros, o vitorioso movimento municipalista que aproxima cada vez mais o Município da sua autonomia tantas vezes restringida e limitada por leis Federais e Estaduais.<br><br>A <a class="link_law" data-original-title="Lei Orgânica Feira de Santana BA" data-toggle="tooltip" href="/lei-organica-feira-de-santana-ba" rel="tooltip">Lei Orgânica</a> dos Municípios do Estado da Bahia no que se refere ao Horário de funcionamento do comercio e indústria é de clareza meridiana. O art. nº 28 itens XI da Lei <a class="link_law" data-id="" data-original-title=" Data da Norma: .. - " data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-promulgada/1948/14/140/lei-promulgada-n-140-1948-este-ato-ainda-nao-esta-disponivel-no-sistema" rel="tooltip">140</a> de 22/12/1948 da ao Município, clara e insofismavelmente, esse poder, desde que se respeite à legislação do Trabalho: &quot;O governo do município se exerce pela Câmara Municipal, com funções legislativas e pelo Prefeito, com funções Executivas.&quot; (Art. 34 da <a class="link_law" data-original-title="Lei Orgânica Feira de Santana BA" data-toggle="tooltip" href="/lei-organica-feira-de-santana-ba" rel="tooltip">Lei Orgânica</a> dos Municípios).<br><br>Delimitando as atribuições dos dois poderes do Governo Municipal, a Lei   <a class="link_law" data-id="" data-original-title=" Data da Norma: .. - " data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-promulgada/1948/14/140/lei-promulgada-n-140-1948-este-ato-ainda-nao-esta-disponivel-no-sistema" rel="tooltip">140</a> sábia e prudentemente, estabelece normas que enquadram à competência de cada qual, evitando o arbítrio que fere e a prepotência que Humilha.<br><br>O Comercio de Feira de Santana, através dos seus órgãos de classe, veio ao encontro do Poder Público na solução de tão justo desejo das classes trabalhadoras - a Semana Inglesa, que nivela a nossa cidade por imperativo da sua própria evolução aos centros civilizados. Referimo-nos ao Convênio publicado na &quot;Folha do Norte&quot; de 3 (três) do mês em curso. Ele em verdade dá ao poder público; a tranqüilidade de legitimar em perfeito atendimento ás aspirações dos munícipes.<br><br>O Ofício de 28/04/1958 do Exmº Senhor Prefeito Municipal, submetendo á deliberação da Câmara a decretação da Semana Inglesa e a posterior decretação da Semana Inglesa, por S. Excia. sem o pronunciamento solicitado representam evidentemente uma situação que está a exigir, se esclareça de maneira definitiva, sem preocupações demagógicas ou políticas e em favor do bom nome do Governo Municipal, a competência para legislar a matéria. Para isto basta invocarmos a Lei <a class="link_law" data-id="" data-original-title=" Data da Norma: .. - " data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-promulgada/1948/14/140/lei-promulgada-n-140-1948-este-ato-ainda-nao-esta-disponivel-no-sistema" rel="tooltip">140</a> de 22/12/1948. O Artigo 52, declarando expressamente COMPETIR Á CÂMARA MUNICIPAL com a sanção de o Prefeito deliberar sobre o previsto no item XI do art. 28 da mesma Lei, ou seja, regular o horário de funcionamento de estabelecimentos comerciais, responde de maneira indubitável a todas as inquirições e decide as dúvidas com a clareza do sol.<br><br>Concluindo, opinamos pela aprovação do projeto de Lei 5/55 com a seguinte redação: (Apresentou-se o Projeto com nova redação, sofrendo o mesmo, várias emendas até á sua redação final).<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

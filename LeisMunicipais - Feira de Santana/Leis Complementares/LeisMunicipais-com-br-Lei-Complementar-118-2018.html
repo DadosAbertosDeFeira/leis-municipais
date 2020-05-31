@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI COMPLEMENTAR Nº 118/2018.</h2><br>INSTITUI A LEI DE ORDENAMENTO DO USO E DA OCUPAÇÃO DO SOLO - LOUOS, NA ÁREA URBANA E DE EXPANSÃO URBANA DO MUNICÍPIO DE FEIRA DE SANTANA, REVOGANDO-SE AS SEGUINTES LEIS: LEI N O <a class="link_law" data-id="2595596" data-original-title=" Data da Norma: 11.11.1992 - Dispõe sobre o ordenamento do uso e da ocupação do solo na área urbana do Município de Feira de Santana e dá outras providências." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1992/161/1615/lei-ordinaria-n-1615-1992-dispoe-sobre-o-ordenamento-do-uso-e-da-ocupacao-do-solo-na-area-urbana-do-municipio-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">1.615</a>/1992, LEI Nº <a class="link_law" data-id="1544903" data-original-title=" Data da Norma: 26.03.2002 - DEFINE REGRAS PARA O PARCELAMENTO DO SOLO URBANO E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2002/232/2328/lei-ordinaria-n-2328-2002-define-regras-para-o-parcelamento-do-solo-urbano-e-da-outras-providencias" rel="tooltip">2.328</a>/2002, LEI Nº <a class="link_law" data-id="2028628" data-original-title=" Data da Norma: 13.11.2014 - REGULAMENTA A CONCESSÃO DA TRANSFERÊNCIA DO DIREITO DE CONSTRUIR, PREVISTA NA LEI COMPLEMENTAR Nº 1.614, DE 11 DE NOVEMBRO DE 1992 E PELO ART. 35 DA LEI FEDERAL Nº 10.257, DE 10 JULHO DE 2001, E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2014/348/3485/lei-ordinaria-n-3485-2014-regulamenta-a-concessao-da-transferencia-do-direito-de-construir-prevista-na-lei-complementar-n-1614-de-11-de-novembro-de-1992-e-pelo-art-35-da-lei-federal-n-10-257-de-10-julho-de-2001-e-da-outras-providencias" rel="tooltip">3.485</a>/2014, LEI COMPLEMENTAR Nº <a class="link_law" data-id="2029265" data-original-title=" Data da Norma: 24.09.2014 - ALTERA, MODIFICA, AMPLIA E DÁ NOVA REDAÇÃO À LEI Nº 1615/92, QUE INSTITUI A LEI DO ORDENAMENTO DO USO E DA OCUPAÇÃO DO SOLO NA ÁREA URBANA DO MUNICÍPIO DE FEIRA DE SANTANA E REVOGA A LEI COMPLEMENTAR Nº 46, DE 19 DE AGOSTO DE 2010, QUE DISPÕE SOBRE O SISTEMA VIÁRIO DAS ÁREAS DE EXPANSÃO URBANA DA CIDADE DE FEIRA DE SANTANA." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-complementar/2014/8/86/lei-complementar-n-86-2014-altera-modifica-amplia-e-da-nova-redacao-a-lei-n-1615-92-que-institui-a-lei-do-ordenamento-do-uso-e-da-ocupacao-do-solo-na-area-urbana-do-municipio-de-feira-de-santana-e-revoga-a-lei-complementar-n-46-de-19-de-agosto-de-2010-que-dispoe-sobre-o-sistema-viario-das-areas-de-expansao-urbana-da-cidade-de-feira-de-santana" rel="tooltip">086</a>/2014, LEI COMPLEMENTAR Nº <a class="link_law" data-id="2385803" data-original-title=" Data da Norma: 27.08.2015 - ACRESCENTA AO CAPÍTULO V - RESTRIÇÕES DE USO E OCUPAÇÃO ZONAIS, ARTIGO 23, PARÁGRAFOS 1º E 2º, DA LEI COMPLEMENTAR Nº 86, DE 24 DE SETEMBRO DE 2014, NOVO GRUPO DE ATIVIDADES E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-complementar/2015/9/98/lei-complementar-n-98-2015-acrescenta-ao-capitulo-v-restricoes-de-uso-e-ocupacao-zonais-artigo-23-paragrafos-1-e-2-da-lei-complementar-n-86-de-24-de-setembro-de-2014-novo-grupo-de-atividades-e-da-outras-providencias" rel="tooltip">098</a>/2015, E DÁ OUTRAS PROVIDENCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br> Arquivo completo disponivilizado para download pelo cliente: <a href="https://www2.leismunicipais.com.br/leismunicipais/originais/ba/feira-de-santana/lei-complementar-0118-2018.tif"> clique aqui para baixar </a> <p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>RESOLUÇÃO Nº 59/1966</h2><br>REAJUSTA VENCIMENTOS E GRATIFICAÇÃO DOS FUNCIONÁRIOS DA CÂMARA MUNICIPAL E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>A CÂMARA MUNICIPAL DE FEIRA DE SANTANA, DECRETA E PROMULGA A SEGUINTE RESOLUÇÃO:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Os vencimentos e gratificação do pessoal da Câmara Municipal de Feira de Santana, passam a ser fixados na seguinte forma:<pre> ____________________________________________<br>|          CARGO          |NÍVEL |VENCIMENTO |<br>|                         |      |MENSAL     |<br>|=========================|======|===========|<br>|1 - Diretor da Secretaria|VII   |CR$ 180.000|<br>|-------------------------|------|-----------|<br>|1 - Assessor Jurídico    |VII   |    180.000|<br>|-------------------------|------|-----------|<br>|2 - Redatores de Debates |V     |    130.000|<br>|-------------------------|------|-----------|<br>|1 - Escriturário         |V     |    130.000|<br>|-------------------------|------|-----------|<br>|2 - Escriturários        |IV    |    110.000|<br>|-------------------------|------|-----------|<br>|1 - Datilógrafo          |IV    |    110.000|<br>|-------------------------|------|-----------|<br>|1 - Porteiro             |III   |     82.000|<br>|-------------------------|------|-----------|<br>|1 - Servente             |II    |     74.000|<br>|-------------------------|------|-----------|<br>|1 - Mensageiro           |I     |     70.000|<br>|-------------------------|------|-----------|<br>|1 - Chefe de Serviço     |F.G.-1|    100.000|<br>|_________________________|______|___________| * tabela formatada pela equipe técnica do LeisMunicipais.com.br<br>Parágrafo Único - A Função de Mensageiro quando exercida por menor de 18 anos será remunerada na base de 50%(cinquenta por cento) do respectivo valor.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> o cargo de Diretor da Secretaria é gratificado e corresponderá ao símbolo F.G.-1, constante desta Resolução.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Ficam reajustados para CR$ 2.000 (DOIS MIL CRUZEIROS) os Salários-Família e Esposa.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> É aberto na Contadoria da Prefeitura Municipal, o crédito Especial de CR$ 4.189,350 (QUATRO MILHÕES, CENTO E OITENTA E NOVE MIL TREZENTOS E CINQUENTA CRUZEIROS) para atender a presente Resolução, cujas despesas correrão por conta dos recursos previstos no art. 186, parágrafo único, alíneas A e B, da Lei Estadual  <a class="link_law" data-id="186061" data-original-title=" Data da Norma: 22.12.1948 - LEI ORGÂNICA DOS MUNICÍPIOS." data-toggle="tooltip" href="http://leisestaduais.com.br/ba/lei-ordinaria-n-140-1948-bahia-lei-organica-dos-municipios" rel="tooltip">140</a>, de 22/12/948.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Esta Resolução entrará em vigor a partir de 1º de junho do ano de 1966.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Revogadas as disposições em contrário.<br><br>SALA DAS SESSÕES, EM 7 DE JUNHO DE 1966.<br><br>PAULO ALMEIDA CORDEIRO<br>Presidente<br><br>ALTAMIR ALVES LOPES<br>1º Secretário<br><br>NEWTON TAVARES CARNEIRO<br>2º Secretário<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

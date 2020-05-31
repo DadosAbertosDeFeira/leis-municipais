@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI PROMULGADA Nº 340/2018</h2><br>Institui a Semana &quot;Respeito é Bom e Elas Gostam&quot; que Dispõe sobre a reflexão, conscientização e responsabilização dos autores de violência doméstica e grupos reflexivos de homens, e dá outras providências.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PRESIDENTE DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 112/2017, de autoria do Edil Luiz Augusto de Jesus, e na conformidade do artigo 78, § 7º, da <a class="link_law" data-original-title="Lei Orgânica Feira de Santana BA" data-toggle="tooltip" href="/lei-organica-feira-de-santana-ba" rel="tooltip">Lei Orgânica</a> do Município, e artigo 25, e inciso V, do Regimento Interno, PROMULGA a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica instituído no âmbito do Município de Feira de Santana a semana &quot;Respeito é Bom e Elas Gostam&quot; que trata sobre a reflexão, conscientização e responsabilização dos autores de violência e grupos reflexivos de homens nos casos de violência doméstica contra as mulheres na Cidade de Feira de Santana.<br><br>Parágrafo único. A semana no qual institui o caput deste artigo deverá coincidir com o Dia Internacional da Mulher.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> A semana a que se refere esta Lei tem como objetivos principais a conscientização dos autores de violência, bem como a prevenção, combate e redução dos casos de reincidência de violência doméstica contra as mulheres.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> A Semana &quot;Respeito é Bom e Elas Gostam&quot; tem como diretrizes:<br><br>I - a conscientização e responsabilização dos autores de violência, tendo como parâmetro a Lei nº 11.340 de 07 de Agosto de 2006;<br><br>II - a transformação e rompimento com a cultura de violência contra as mulheres, em todas as suas formas e intensidades de manifestação;<br><br>III - a desconstrução da cultura do machismo;<br><br>IV - o combate à violência contra as mulheres, com ênfase na violência doméstica;<br><br>V - a participação do Ministério Público e do Poder Judiciário no encaminhamento dos autores de violência. Artigo 4º A semana a que se refere esta Lei terá como objetivos específicos:<br><br>I - promover o acompanhamento e reflexão dos autores de violência contra mulher;<br><br>II - conscientizar os autores de violência sobre a cultura de violência contra a mulher;<br><br>III - promover um ambiente reflexivo que favoreça a construção de alternativas à violência para a resolução de problemas e conflitos familiares;<br><br>IV - evitar a reincidência em atos e crimes que caracterizem violência contra mulher;<br><br>V - promover a integração entre Município, Ministério Público, Poder Judiciário e sociedade civil, para discutir as questões relativas ao tema, visando sempre o enfrentamento à violência praticada contra a mulher;<br><br>VI - promover a ressignificação de valores intrínsecos na sociedade no que diz respeito a sobreposição, dominação e poder do homem sobre a mulher;<br><br>VII - promover a ressocialização, de modo a melhorar os relacionamentos familiares e profissionais.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Esta Lei se aplica aos homens autores de violência doméstica contra a mulher e que estejam com inquérito policial, procedimento de medida protetiva e/ou processo criminal em curso.<br><br>Parágrafo único. Não poderão participar da semana os homens autores de violência que:<br><br>I - estejam com sua liberdade cerceada;<br><br>II - sejam acusados de crimes sexuais;<br><br>III - sejam dependentes químicos com alto comprometimento;<br><br>IV - sejam portadores de transtornos psiquiátricos;<br><br>V - sejam autores de crimes dolosos conta a vida.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> A semana será composta e realizada por meio de:<br><br>I - trabalho psicossocial de reflexão e reeducação promovido por profissionais habilitados;<br><br>II - palestras expositivas ministradas por convidados com notório conhecimento sobre os temas abordados;<br><br>III - discussão em grupos reflexivos sobre o tema palestrado;<br><br>IV - orientação e assistência social.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> A Semana &quot;Respeito é Bom e Elas Gostam&quot; será anualmente elaborada, executada e reavaliada por uma equipe técnica composta por psicólogos, assistentes sociais, e especialistas no tema a ser formada por indicação de representantes da Prefeitura Municipal de Feira de Santana, do Ministério Público e do Poder Judiciário.<br><br>Parágrafo único. A Prefeitura Municipal participará na elaboração do Programa por meio das Secretarias Municipais de Saúde, Assistência e Desenvolvimento Social, Educação, Segurança Urbana, Direitos humanos, e Cidadania e Coordenadoria da Mulher.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> As despesas decorrentes da execução desta Lei correrão por conta de dotações orçamentárias próprias, suplementadas se necessário.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> O Poder Executivo regulamentará esta Lei, no prazo de 60 (sessenta) dias, contados a partir da data de sua publicação.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>PRESIDÊNCIA DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, em 14 de Maio de 2018<br><br>JOSÉ CARNEIRO ROCHA<br>Presidente<br><br>PUBLICADO NO DIÁRIO OFICIAL ELETRÔNICO DIA 15 DE MAIO DE 2018.<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

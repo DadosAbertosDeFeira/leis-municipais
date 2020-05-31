@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3488/2014</h2><br>DISPÕE SOBRE AUTORIZAÇÃO DE INCINERAÇÃO DE DOCUMENTOS DA RECEITA E DESPESAS PÚBLICAS E OUTROS DOCUMENTOS DE EXPEDIENTE CONSIDERADOS INSERVÍVEIS NO ÂMBITO DO MUNICÍPIO DE FEIRA DE SANTANA, REFENTES AOS EXERCÍCIOS QUE MENCIONA E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Autor: Poder Executivo<br><br>O Prefeito municipal de Feira de Santana, Estado da Bahia, no uso de suas atribuições, Faço saber que a Câmara Municipal, através do Projeto de LEI Nº 94/2014, de autoria do Poder Executivo, decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica o Poder Executivo autorizado a proceder à incineração de documentos considerados inservíveis, existentes nos arquivos deste Município nos termos desta Lei.<br><br>Parágrafo Único - A incineração, de que trata esta Lei, deverá ser regulamentada mediante Decreto.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Será designada uma Comissão, através de Portaria, pelo Chefe do Poder Executivo, para análise dos documentos que serão objetivo de incineração.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Serão incinerados em ato público e em local a ser definido em ato do Poder Executivo, os documentos e comprovantes das Receitas e Despesas Públicas, matérias de expediente já utilizados, correspondências oficiais expedidas e recebidas, bem como, outros documentos burocráticos e sem nenhum valor, referentes ao quinquênio dos exercícios dos anos bases de 2005,2004,2003,2002,2001 e anteriores.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Excluem-se desta Lei os documentos existentes nos arquivos deste Município:<br><br>I - que se referem à Câmara Municipal de Feira de Santana;<br><br>II - que possuam natureza histórica.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> O Executivo Municipal informará por Decreto, com antecedência mínima de trinta dias, o local, a data e horário de incineração dos documentos mencionados no artigo 3º, que será publicado no seu resumo para conhecimento público e de outros interessados incertos e não sabidos sobre a preservação da documentação a ser incinerada.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito, 20 de novembro de 2014.<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO MUNICIPAL<br><br>MÁRIO COSTA BORGES<br>CHEFE DE GABINETE DO PREFEITO<br><br>CLEUDSON SANTOS ALMEIDA<br>PROCURADOR GERAL DO MUNICÍPIO<br><br>JOÃO MARINHO GOMES JÚNIOR<br>SECRETÁRIO MUNICIPAL DE ADMINISTRAÇÃO<br><br>EXPEDITO CAMPODÔNIO ELOY<br>SECRETÁRIO MUNICIPAL DA FAZENDA<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

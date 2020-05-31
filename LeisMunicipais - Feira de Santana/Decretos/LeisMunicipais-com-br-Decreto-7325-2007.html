@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>DECRETO Nº 7325, DE 21 DE JUNHO DE 2007.</h2><br>NOMEIA OS MEMBROS INTEGRANTES DA COMISSÃO PREPARATÓRIA PARA A 3ª CONFERÊNCIA MUNICIPAL DAS CIDADES.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, no uso de suas atribuições que lhe conferem o Decreto nº  <a class="link_law" data-id="696745" data-original-title=" Data da Norma: 25.05.2007 - CONVOCA A 3ª CONFERÊNCIA DO MUNICÍPIO DE FEIRA DE SANTANA E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/decreto/2007/731/7313/decreto-n-7313-2007-convoca-a-3-conferencia-do-municipio-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">7.313</a>, de 25 de maio de 2007, DECRETA:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Ficam nomeados os membros integrantes da Comissão Preparatória para a 3ª Conferência Municipal das Cidades:<br><br>I - Segmento de Gestores, Administradores Públicos e Legislativo Federal<br><br>1) Titular: Caixa Econômica Federal - Luiz Antonio de Souza<br>Suplente: Banco do Nordeste do Brasil - Eraldo Carneiro de Miranda<br><br>II - Segmento de Gestores, Administradores Públicos e Legislativo Estadual<br><br>1) Titular: Universidade Estadual de Feira de Santana (UEFS) Genival Correa<br>Suplente: Universidade Estadual de Feira de Santana (UEFS) Rossine Cerqueira da Cruz<br>2) Titular: Empresa Baiana de Águas e Saneamento (EMBASA) Roque Angélico Araújo<br>Suplente: Empresa Baiana de Águas e Saneamento (EMBASA) Raimundo Costa Mascarenhas<br><br>III - Segmento de Gestores, Administradores Públicos e Legislativo Municipal<br><br>1) Titular: Câmara Municipal de Vereadores de Feira de Santana - Ver. Antonio Joel Barbosa<br>Suplente: Câmara Municipal de Vereadores de Feira de Santana - Edson de Oliveira Matos<br>2) Titular: Secretaria Municipal de Planejamento - Carlos Alberto Oliveira Brito<br>Suplente: Secretaria Municipal de Planejamento - Luiz Ivan dos Santos Silva<br>3) Titular: Secretaria Municipal de Desenvolvimento Urbano e Meio Ambiente - José Ferreira Pinheiro<br>Suplente: Secretaria Municipal de Desenvolvimento Urbano e Meio Ambiente - Antonio Sérgio Aras de Almeida<br>4) Titular:Secretaria Municipal de Desenvolvimento Econômico - José Aristótelis Rios Nery<br>Suplente: Secretaria Municipal de Desenvolvimento Econômico - Expedito Fernando Santos Freitas<br>5) Titular: Gabinete do Prefeito - Geraldo de Oliveira Sampaio Filho<br>Suplente: Gabinete do Prefeito - Eduardo Teles de Andrade<br>6) Titular: Secretaria Municipal de Agricultura, Rec. Hídricos e Desenv. Rural - Mario Costa Borges<br>Suplente: Secretaria Municipal de Agricultura, Rec. Hídricos e Desenv. Rural - Joedilson Machado de Freitas<br>7) Titular: Secretaria Municipal de Educação - Ana Rita de Almeida Neves<br>Suplente: Secretaria Municipal de Educação - Tereza Cristina Mendes Costa<br>8) Titular: Procuradoria Geral do Município - Carlos Antonio de Moraes Lucena<br>Suplente: Procuradoria Geral do Município - Geraldo Aragão Guerra<br><br>IV - Segmento de Movimentos Sociais e Populares<br><br>1) Titular: Fórum Luta Popular - Diego Carvalho Correia<br>Suplente: Fórum Luta Popular - Exeuby Souza Lopes<br>2) Titular: Movimento Negro Afoxé Pomba de Malé - Edson Jorge Freitas Martins<br>Suplente: Núcleo Cultural Educacional e Social ODUNGE - Maria de Lourdes Souza Santana<br>3) Titular: Associação Comunitária União e Progresso da Pedra do Descanso (ACUP) Maria da Paixão Mascarenhas Pedreira<br>Suplente: Associação Comunitária União e Progresso da Pedra do Descanso (ACUP) Edvaldo Miranda<br>4) Titular: Associação Comunitária Ação e Parceria do Feira X - Maria Santana de Araújo<br>Suplente: Associação Comunitária Ação e Parceria do Feira X - Magno Santana<br>5) Titular: Associação dos Moradores do Conjunto Feira IV - Roberto Carlos Carvalho de Santana<br>Suplente: Associação dos Moradores do Conjunto Feira IV - Maria das Dores Lopes Souza<br>6) Titular: Associação de Moradores de Santo Antonio dos Prazeres - Vera Lucia de Lima Torres<br>Suplente: Associação de Moradores de Santo Antonio dos Prazeres - Ana Rita da Costa Oliveira<br>7) Titular: União por Moradia Popular do Estado da Bahia - Solange Costa Guerra<br>Suplente: União por Moradia Popular do Estado da Bahia - Wilma da Silva Almeida<br><br>V - Segmento de Trabalhadores por Suas Entidades Sindicais<br><br>1) Titular: Associação dos Docentes da Universidade Estadual de Feira de Santana (ADUFS) Andre Almeida Uzeda<br>Suplente: Sindicato dos Trabalhadores Empregados nas Empresas de Transporte Rodoviário de Cargas de Feira de Santana e Região (SINDCARFS) José Luiz Machado Sampaio<br>2) Titular: Sindicato dos Agentes de Endemias de Feira de Santana e Região - Isabel Cristina Fernandes Gonçalves<br>Suplente: Sindicato dos Agentes de Endemias de Feira de Santana e Região - Magali Andrade Santos<br><br>VI - Segmento de Empresários Relacionados à Produção e ao Financiamento do Desenvolvimento Urbano<br><br>1) Titular: Associação Comercial e Empresarial de Feira de Santana (ACEFS) Cloves Lopes Cedraz<br>Suplente: Associação Comercial e Empresarial de Feira de Santana (ACEFS) Cícero João dos Santos<br>2) Titular: Centro das Indústrias de Feira de Santana (CIFS) Manoel Cordeiro Neto<br>Suplente: Centro das Indústrias de Feira de Santana (CIFS) Luiz da Costa Neto<br><br>VII - Segmento de Entidades Profissionais, Acadêmicas e de Pesquisa e Conselhos Profissionais<br><br>1) Titular: Conselho Regional de Engenharia, Arquitetura e Agronomia da Bahia - Inspetoria Feira de Santana - Gerinaldo Costa Alves<br>Suplente: Conselho Regional de Engenharia, Arquitetura e Agronomia da Bahia - Inspetoria de Feira de Santana - João Evangelista Basto Falcão<br>2) Titular:- Diretório Central dos Estudantes da Universidade Estadual de Feira de Santana (DCE) Luiz Gabriel Santos de Lacerda<br>Suplente: Associação Profissional dos Arquitetos de F. de Santana (APAFS) Jairo Cedraz de Oliveira<br><br>VIII - Segmento de Ong`s com Atuação na Área<br><br>1) Titular: Movimento Água é Vida - Vivaldo França<br>2) Suplente: Fundação Ecológica Buriti - Pedro Paulo Ferreira da Silva<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> A Comissão Preparatória terá as seguintes atribuições, de acordo com a Resolução Normativa, nº 4 de 06 de dezembro de 2006:<br><br>I - definir Regimento Municipal contendo os critérios de participação na Conferência Municipal, para a eleição de delegados, para a realização das Conferências Municipais, respeitadas as diretrizes e as definições deste Regimento, bem como a proporcionalidade da população e dos segmentos;<br><br>II - definir data, local e pauta da Conferência Municipal;<br><br>III - sistematizar o Relatório da Conferência Municipal mediante a criação de um Grupo de Trabalho.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> A Comissão Preparatória terá um prazo determinado até a realização da 3ª Conferência Municipal das Cidades.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Este Decreto entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 21 de junho de 2007.<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO MUNICIPAL<br><br>GERALDO DE OLIVEIRA SAMPAIO FILHO<br>CHEFE DE GABINETE DO PREFEITO<br><br>CARLOS ALBERTO OLIVEIRA BRITO<br>SECRETÁRIO MUNICIPAL DE PLANEJAMENTO<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

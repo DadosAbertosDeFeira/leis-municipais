@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3230/2011</h2><br>DISPÕE SOBRE A CONTRATAÇÃO EM MEIO AMBIENTE POR EMPRESAS POTENCIALMENTE POLUIDORAS, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 163/2010, de autoria do Edil Ângelo Mario Cerqueira de Almeida, e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> As empresas consideradas potencialmente poluidoras, instaladas ou a se instalarem no Município de Feira de Santana ficam obrigadas a contratarem no mínimo um responsável técnico ambiental, de acordo com a necessidade de empresa.<br><br>Parágrafo Único - Com o objetivo de atender ao que reza o caput deste artigo, o responsável técnico deverá ser profissional de uma das seguintes áreas, com respectivo registro no Conselho da Classe:<br><br>I - engenheiro ambiental;<br><br>II - engenheiro químico com especialização em segurança ambiental;<br><br>III - técnico em meio ambiente;<br><br>IV - geógrafos;<br><br>V - biólogos;<br><br>VI - geólogos e demais profissionais com especialização na área ambiental.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> São consideradas empresas potencialmente poluidoras aquelas que exercem atividades conforme tabela de atividades do Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis - IBAMA.<br><br>Parágrafo Único - Para os fins previstos nesta Lei, entende-se por:<br><br>I - poluição: a degradação da qualidade ambiental resultante de atividades humanas seja direta ou indiretamente que:<br><br>a) prejudiquem a saúde, a segurança e o bem-estar da população;<br>b) criem condições adversas as atividades sociais e econômicas;<br>c) afetem desfavoravelmente a biota;<br>d) afetem as condições estéticas ou sanitárias do meio ambiente;<br>e) lancem matérias ou energia em desacordo com os padrões ambientais estabelecidos.<br><br>II - poluidor: a pessoa física ou jurídica, de direito privado responsável, direta ou indiretamente, por atividades causadora de degradação ambiental.<br><br>III - degradação da qualidade ambiental: a alteração adversa das características do meio ambiente.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> A responsabilidade técnica do estabelecimento será comprovada por declaração de forma individual, contrato social ou estatuto de pessoa jurídica ou pelo contrato de trabalho do profissional responsável.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> O responsável técnico ambiental deverá produzir programas que garantam, tanto quanto possível, as condições de segurança ambiental, trabalho na prevenção de acidentes e nas medidas emergenciais nos possíveis acidentes.<br><br>§ 1º Os programas de que trata o caput deverão estar à disposição na sede da empresa, nos edifícios, nas plantas industriais e, os casos de transporte deverão estar em posse do motorista, para as autoridades públicas consultarem a qualquer momento.<br><br>§ 2º Além dos programas descritos no caput, o responsável técnico deverá assegurar, por meio de laudos periódicos encaminhados a Secretaria Municipal de Meio Ambiente, que o plano está sendo cumprido e que não há contaminação de meio ambiente pelos efluentes potencialmente poluidores.<br><br>§ 3º Nos casos em que o plano não estiver sendo cumprido, ou não tiver sido suficiente para a contenção dos efluentes poluidores, o responsável técnico deverá dimensionar os danos, apresentar o laudo com o resultado a Secretaria Municipal do Meio Ambiente, contendo, ainda, as medidas de compreensão e de contenção do dano, bem como, as empresas poluidoras deverão arcar com os custos necessários a recuperação causada pelo acidente ambiental.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> A Secretaria Municipal do Meio Ambiente exigirá o cumprimento integral da presente Lei quando da emissão do licenciamento de operação das empresas enquadradas no art. 2º deste disposto legal.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> O não-cumprimento desta Lei implicará multa a ser aplicada pela Secretária Municipal de Meio Ambiente, com os seguintes valores:<br><br>I - primeira ocorrência: 10 (dez) salários mínimos;<br><br>II - segunda ocorrência: 20 (vinte) salários mínimos;<br><br>III - reincidência: o dobro da multa referente à segunda ocorrência e suspensão do alvará de funcionamento pro 30 (trinta) dias;<br><br>IV - a cada reincidência a multa dobrará bem como a suspensão do alvará de funcionamento.<br><br>Parágrafo Único - Do auto da infração caberá recurso para a Secretaria Municipal de Meio Ambiente.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> As empresas consideradas potencialmente poluidoras, conforme tabela de atividades do Instituto Brasileiro do Meio Ambiente e dos Recursos Renováveis - IBAMA, constantes do cadastro de atividades potencialmente poluidoras, terão um prazo de 120 (cento e vinte) dias para se adequarem a presente Lei.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> A presente Lei entrará em vigor a partir da data de sua publicação, revogadas as disposições em contrário.<br><br>Prefeitura Municipal de Feira de Santana, 11 de julho de 2011.<br><br>TARCÍZIO SUZART PIMENTA JÚNIOR<br>Prefeito Municipal<br><br>MILTON PEREIRA DE BRITTO<br>Chefe de Gabinete do Prefeito<br><br>CARLOS ANTÔNIO DE MORAES LUCENA<br>Procurador Geral do Município<br><br>CARLOS ALBERTO OLIVEIRA BRITO<br>Sec. Municipal de Planejamento<br><br>ANTONIO CARLOS DALTRO COELHO<br>Sec. Municipal de Meio Ambiente e Recursos Naturais<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

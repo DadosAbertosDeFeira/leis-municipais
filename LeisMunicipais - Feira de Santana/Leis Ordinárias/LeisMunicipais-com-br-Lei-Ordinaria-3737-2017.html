@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3737, DE 12 DE SETEMBRO DE 2017</h2><br>&quot;Dispõe sobre o enquadramento e delimitação de área no Loteamento Parque Nova América, bairro Aviário, classificando-a como Zona Especial de Interesse Social - ZEIS.&quot;<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, no uso das suas atribuições legais. Faço saber que a Câmara Municipal, através do Projeto de Lei nº 154/2017, de autoria do Poder Executivo, decreta e eu sanciono a seguinte Lei.<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica classificada como Zona Especial de Interesse Social - ZEIS, nos termos do art. 4º, inciso III, alínea f, da Lei Federal nº 10.257, de 10 de julho de 2001, Estatuto da Cidade; do art. 6º, inciso I, da Lei Municipal nº  <a class="link_law" data-id="1612775" data-original-title=" Data da Norma: 01.01.1992 - DISPÕE SOBRE O PLANO DIRETOR DE DESENVOLVIMENTO DO MUNICÍPIO DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1992/161/1614/lei-ordinaria-n-1614-1992-dispoe-sobre-o-plano-diretor-de-desenvolvimento-do-municipio-de-feira-de-santana-e-da-outras-proviencias" rel="tooltip">1.614</a>, de 11 de novembro de 1992; do art. 1º da Lei Municipal nº  <a class="link_law" data-id="1544108" data-original-title=" Data da Norma: 29.06.2009 - DISPÕE SOBRE O ENQUADRAMENTO E DELIMITAÇÃO DAS ÁREAS DESTINADAS A IMPLEMENTAÇÃO DO PROGRAMA MINHA CASA MINHA VIDA COMO ZONAS ESPECIAIS DE INTERESSE SOCIAL - ZEIS E DEFINE OS PARÂMETROS URBANOS PARA O PROGRAMA PARA A RENDA DE 0 A 3 SALÁRIOS MÍNIMOS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2009/298/2987/lei-ordinaria-n-2987-2009-dispoe-sobre-o-enquadramento-e-delimitacao-das-areas-destinadas-a-implementacao-do-programa-minha-casa-minha-vida-como-zonas-especiais-de-interesse-social-zeis-e-define-os-parametros-urbanos-para-o-programa-para-a-renda-de-0-a-3-salarios-minimos" rel="tooltip">2.987</a>, de 29 de junho de 2009; e do art. 30 da Lei Complementar nº  <a class="link_law" data-id="1592790" data-original-title=" Data da Norma: 15.03.2012 - INSTITUI O PLANO HABITACIONAL DE INTERESSE SOCIAL DO MUNICÍPIO DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-complementar/2012/6/65/lei-complementar-n-65-2012-institui-o-plano-habitacional-de-interesse-social-do-municipio-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">65</a>, de 15 de março de 2012, a área de 2.804,43 m 2, localizada no bairro Aviário, denominada como terreno, destinada à implantação de uma unidade de ensino, no âmbito do Programa PROINFÂNCIA - TIPO 1, junto ao Fundo Nacional de Desenvolvimento da Educação - FNDE. Termo de Compromisso PAC 2 nº 9315/2014.<br><br>§ 1º Os limites da Zona Especial de Interesse Social - ZEIS da área de terra com 2.804,43 m 2 no Loteamento Parque Nova América, bairro Aviário, são aqueles estabelecidos nos anexos desta Lei.<br><br>§ 2º A planta contida no Anexo II desta está traçada sobre original componente do Sistema Cartográfico - SICAR, nas escalas 1:250, podendo ser reduzida para efeito de publicação desta Lei.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> A classificação das áreas previstas no art. 1º desta Lei como Zona Especial de Interesse Social - ZEIS tem os seguintes objetivos:<br><br>I - possibilitar a oferta de equipamentos urbanos e comunitários para a população de baixa renda;<br><br>II - propiciar recuperação ambiental das áreas degradadas;<br><br>III - preservar o meio ambiente natural e construído;<br><br>IV - incentivar a participação comunitária no processo de urbanização e regularização fundiária;<br><br>V - respeitar a tipicidade e características das áreas quando das intervenções de urbanização e regularização fundiária.<br><br>Parágrafo único. Os objetivos definidos neste artigo devem orientar qualquer intervenção nas referidas áreas, bem como o licenciamento de projetos, considerando sempre o conjunto das determinações urbanísticas referentes à matéria.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 12 de setembro de 2017<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO MUNICIPAL<br><br>MARIO COSTA BORGES<br>CHEFE DE GABINETE DO PREFEITO<br><br>CLEUDSON SANTOS ALMEIDA<br>PROCURADOR GERAL DO MUNICÍPIO<br><br>EXPEDITO CAMPODÔNIO ELOY<br>SECRETÁRIO MUNICIPAL DA FAZENDA<br><br>CARLOS ALBERTO OLIVEIRA BRITO<br>SECRETÁRIO MUNICIPAL DE PLANEJAMENTO<br><br>JOSÉ FERREIRA PINHEIRO<br>SECRETÁRIO MUNICIPAL DE DESENVOLVIMENTO URBANO<br><br>ELIZIARIO RIBEIRO DA SILVA<br>SECRETÁRIO MUNICIPAL DE HABITAÇÃO E REGULARIZAÇÃO FUNDIÁRIA<br><br>PUBLICADO NO DIÁRIO OFICIAL ELETRÔNICO DIA 13 DE SETEMBRO DE 2017.<br><br><i class="icon-warning-sign"></i> Os anexos encontram-se disponíveis, ainda, no Paço Municipal<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

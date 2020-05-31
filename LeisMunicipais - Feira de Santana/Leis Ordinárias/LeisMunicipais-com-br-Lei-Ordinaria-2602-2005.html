@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 2602/2005</h2><br>DISPÕE SOBRE O USO E APARELHOS E VEÍCULOS PARA EMERGÊNCIAS NA ÁREA DE SAÚDE, EM LOCAIS DE GRANDES CONCENTRAÇÕES E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Autor: Getúlio da Silva Barbosa<br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 101/2005, de autoria do Edil Getúlio da Silva Barbosa, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Todo estabelecimento, evento, instituição pública ou privada (de grande concentração ou circulação) que estejam envolvidos mais de 1500 (hum mil e quinhentas) pessoas, obrigatoriamente seus responsáveis deverão manter disponível no local um desfibrilador cardíaco automático com pessoal habilitado em suporte básico de vida, treinado para o uso da aparelhagem, em caso de &quot;ataque cardíaco&quot;.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Para os efeitos desta Lei consideram-se eventos e estabelecimentos de grande concentração e circulação de pessoas os seguintes:<br><br>I - Terminais rodoviários urbanos e interurbanos de transporte coletivo;<br><br>II - Shoppings e centros comerciais;<br><br>III - Estádio de Futebol e Ginásio de Esportes;<br><br>IV - Salas de Conferências e os Centros e Casas de Eventos;<br><br>V - Clubes Sociais;<br><br>VI - Instituições de Ensino Superior.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Para o uso correto do desfibrilador cardíaco automático, todo os estabelecimentos públicos e privados mencionados no artigo 2º desta Lei deverão, por meio da Secretaria Municipal de Saúde, promover ou firmar convênio para treinamento de uma equipe de seus funcionários, de diferentes turnos, através de cursos com programas credenciados que sigam as diretrizes internacionais aceitas para e reanimação cardiovascular.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Nos eventos festivos, religiosos e esportivos em áreas abertas ou fechadas, públicas ou privadas, que ultrapassem 5000 (cinco mil) pessoas, deverá estar no local UTI móvel totalmente equipada tecnicamente, com médico e enfermeiro(a) ou técnico de enfermagem, para atender possíveis graves ocorrências.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> A Prefeitura Municipal fica autorizada a firmar convênios com órgãos públicos ou privados, quando necessário, para atender o disposto nesta Lei.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Para os eventos em locais públicos ou fechados, o Poder Público Municipal só autorizará se os responsáveis promotores atendem o contido nesta Lei.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Cabe à Secretaria Municipal de Saúde a supervisão e o acompanhamento para o bom e fiel cumprimento do disposto nesta Lei.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> Em se tratando de estabelecimentos fixos que estejam enquadrados nas exigências desta Lei, deverão receber para conhecimento e cumprimento, com protocolo, cópia da publicação desta Lei, através da Secretaria de Saúde da Prefeitura Municipal.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> O não cumprimento desta Lei, implicará aos infratores as seguintes penalidades por parte do Poder Público Municipal:<br><br>a) Multa de R$ 10.000,00 (dez mil reais) quando da primeira infração;<br>b) Multa de R$ 50.000,00 (cinqüenta mil reais) quando da reincidência e ;<br>c) Suspensão da licença de funcionamento pela Prefeitura Municipal, pelo prazo de 1 ( um ) ano, das atividades da empresa e dos seus sócios responsáveis, só voltando a funcionar após preenchidas as exigências desta Lei.<br><br>§ 1º Os valores contidos neste artigo serão atualizados no primeiro dia útil de cada ano pelo INPC ou outro índice que venha substituí-lo.<br><br>§ 2º Os recursos oriundos das multas estabelecidas neste artigo serão destinados e aplicados nas atividades do Hospital Inácia Pinto da Silva ( Hospital da Mulher ), que faz parte da Fundação Hospitalar de Feira de Santana.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10.</span></a> A Prefeitura Municipal regulamentará esta Lei, no que couber, no prazo de 60 ( sessenta ) dias após a sua publicação.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11.</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>PREFEITURA MUNICIPAL DE FEIRA DE SANTANA, em 09 de Agosto de 2005.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>
