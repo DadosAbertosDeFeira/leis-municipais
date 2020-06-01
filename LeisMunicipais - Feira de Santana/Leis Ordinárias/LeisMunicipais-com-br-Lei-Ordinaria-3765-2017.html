@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3765, DE 18 DE OUTUBRO DE 2017</h2><br>&quot;Autoriza a abertura de crédito adicional especial, na forma que indica, e dá outras providências.&quot;<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, no uso de suas atribuições, Faço Saber que a Câmara Municipal, através do Projeto de Lei nº 188/2017, de autoria deste Poder Executivo, decreta e sanciona a seguinte Lei.<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica o Poder Executivo autorizado a abrir no Orçamento do Município, no corrente exercício, crédito adicional especial no valor de R$ 6.173.000,00 (seis milhões, cento e setenta e três mil reais), destinado a alocar recursos no grupo de natureza de despesa &quot;5&quot; (inversões financeiras) na modalidade de aplicação 60 - Transferências a Instituições Privadas com Fins Lucrativos no elemento 45 - subvenções econômicas, bem como, na modalidade de aplicação 67 - Execução de Contrato de Parceria Público-Privada - PPP no elemento 82 - Aporte de Recursos pelo Parceiro Público em favor do Parceiro Privado Decorrente de Contrato de Parceria PúblicoPrivada - PPP, Categoria Econômica 4 - Despesas de Capital, Fonte 00 - Fontes do Tesouro, no Projeto 1038 - &quot;Construção do Shopping Popular&quot; - Classificação Funcional Programática 15.451.029.1038, na Secretaria Municipal de Trabalho, Turismo e Desenvolvimento Econômico (SETTDEC) - Órgão 14 e Unidade 14.14 - Secretaria Municipal de Trabalho, Turismo e Desenvolvimento Econômico, conforme Anexo I.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Os recursos disponíveis para atender às despesas decorrentes do presente crédito especial correrão por anulação de despesas no valor de R$ 6.173.000,00 (seis milhões, cento e setenta e três mil reais), conforme Anexo II.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Fica o Poder Executivo, havendo necessidade, respeitadas as demais prescrições constitucionais e nos termos da Lei nº 4.320/64, autorizado a fazer suplementação nas ações descritas no Anexo I deste Projeto de Lei, obedecendo a limites estabelecidos no art. 6º da Lei Orçamentária Anual nº 3.655, de 21 de dezembro de 2016.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogando-se as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 18 de outubro de 2017.<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO MUNICIPAL<br><br>MARIO COSTA BORGES<br>CHEFE DE GABINETE DO PREFEITO<br><br>CLEUDSON SANTOS ALMEIDA<br>PROCURADOR GERAL DO MUNICÍPIO<br><br>EXPEDITO CAMPODÔNIO ELOY<br>SECRETÁRIO MUNICIPAL DA FAZENDA<br><br>ANTONIO CARLOS BORGES DOS SANTOS JÚNIOR<br>SECRETÁRIO MUNICIPAL DO TRABALHO, TURISMO E DESENVOLVIMENTO ECONÔMICO<br><br>PUBLICADO NO DIÁRIO OFICIAL ELETRÔNICO DIA 19 DE OUTUBRO DE 2017.<br><br><i class="icon-warning-sign"></i> O anexo encontra-se disponível, ainda, no Paço Municipal<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

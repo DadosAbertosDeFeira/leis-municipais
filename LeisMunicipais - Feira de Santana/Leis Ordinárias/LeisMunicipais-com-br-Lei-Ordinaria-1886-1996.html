@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 1886/96</h2><br>ESTIMA A RECEITA E FIXA A DESPESA DO MUNICÍPIO DE FEIRA DE SANTANA PARA O EXERCÍCIO FINANCEIRO DE 1997.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PRESIDENTE DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, no uso de suas atribuições,<br><br>CONSIDERANDO que a Câmara Municipal rejeitou o Veto nº 02/96, de acordo com o parágrafo 4º do artigo 77, da <a class="link_law" data-original-title="Lei Orgânica Feira de Santana BA" data-toggle="tooltip" href="/lei-organica-feira-de-santana-ba" rel="tooltip">Lei Orgânica</a> do Município;<br><br>CONSIDERANDO que a proposição objeto do Veto foi enviada para o Prefeito Municipal para promulgação, de acordo com o parágrafo 5º do artigo 77, da <a class="link_law" data-original-title="Lei Orgânica Feira de Santana BA" data-toggle="tooltip" href="/lei-organica-feira-de-santana-ba" rel="tooltip">Lei Orgânica</a> do Município;<br><br>CONSIDERANDO enfim o disposto no parágrafo 7º, do artigo 77, da <a class="link_law" data-original-title="Lei Orgânica Feira de Santana BA" data-toggle="tooltip" href="/lei-organica-feira-de-santana-ba" rel="tooltip">Lei Orgânica</a> do Município, RESOLVE PROMULGAR a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> ....<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> ....<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> ....<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> ....<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> A despesa fixada a conta de recursos previstos nesta Lei, observada a programação em anexo, apresenta, segundo a categoria econômica, o seguinte desdobramento:<br><br>DESPESAS CORRENTES<pre> ______________________________________________________________<br>|Pessoal e Encargos Sociais                   |   78.087.000,00|<br>|---------------------------------------------|----------------|<br>|Juros e Encargos da Dívida Interna           |    2.400.000,00|<br>|---------------------------------------------|----------------|<br>|Outras Despesas Corrente                     |   66.376.000,00|<br>|---------------------------------------------|----------------|<br>|TOTAL                                        |  146.863.000,00|<br>|_____________________________________________|________________| * tabela formatada pela equipe técnica do LeisMunicipais.com.br<br><br>DESPESAS DE CAPITAL<pre> ______________________________________________________________<br>|Investimentos                                |   24.587.000,00|<br>|---------------------------------------------|----------------|<br>|Amortização da Dívida Interna                |    1.800.000,00|<br>|---------------------------------------------|----------------|<br>|Outras Despesas de Capital                   |    3.540.000,00|<br>|---------------------------------------------|----------------|<br>|TOTAL                                        |   29.927.000,00|<br>|---------------------------------------------|----------------|<br>|Reserva de Contingência                      |    1.410.000,00|<br>|---------------------------------------------|----------------|<br>|TOTAL GERAL DAS DESPESAS                     |  178.200.000,00|<br>|_____________________________________________|________________| * tabela formatada pela equipe técnica do LeisMunicipais.com.br<br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> A despesa fixada de acordo com o artigo 5º, apresenta por órgão, o seguinte desdobramento:<pre> ________________________________________________________________________<br>|               DISCRIMINAÇÃO               |    FISCAL    |SEGUR. SOCIAL|<br>|===========================================|==============|=============|<br>|01 - Câmara Municipal                      | 10.745.000,00|             |<br>|-------------------------------------------|--------------|-------------|<br>|02 - Gabinete do Prefeito                  |    734.000,00|   582.000,00|<br>|-------------------------------------------|--------------|-------------|<br>|03 - Procuradoria Geral do Município       |  2.386.000,00|             |<br>|-------------------------------------------|--------------|-------------|<br>|04 - Secretaria Municipal do Governo       |    406.000,00|             |<br>|-------------------------------------------|--------------|-------------|<br>|05 - Secretaria Municipal de Administração | 31.986.000,00| 9.962.000,00|<br>|-------------------------------------------|--------------|-------------|<br>|06 - Secretaria Municipal da Fazenda       |  9.658.000,00|             |<br>|-------------------------------------------|--------------|-------------|<br>|07 - Secretaria Municipal de Com. Social   |  3.047.000,00|             |<br>|-------------------------------------------|--------------|-------------|<br>|08 - Secretaria Municipal de Planejamento  |  1.016.000,00|             |<br>|-------------------------------------------|--------------|-------------|<br>|09 - Secretaria Municipal de Educação      | 48.542.000,00|   480.000,00|<br>|-------------------------------------------|--------------|-------------|<br>|10 - Secretaria de Cult., Esp. e Lazer     |  5.481.000,00|   720.000,00|<br>|-------------------------------------------|--------------|-------------|<br>|11 - Secretaria Municipal de Saúde         |  1.060.000,00|19.916.000,00|<br>|-------------------------------------------|--------------|-------------|<br>|12 - Secretaria Municipal de Desenv.Social |  3.405.000,00| 3.638.000,00|<br>|-------------------------------------------|--------------|-------------|<br>|13 - Secretaria de Desenv. Urb. e Meio Amb |  8.837.000,00|   108.000,00|<br>|-------------------------------------------|--------------|-------------|<br>|14 - Secretaria de Desenv. Econômico       |  5.593.000,00|    60.000,00|<br>|-------------------------------------------|--------------|-------------|<br>|15 - Secretaria Municipal de Serv. Públicos|  8.428.000,00|             |<br>|-------------------------------------------|--------------|-------------|<br>|16 - Reserva de Contingência               |  1.410.000,00|             |<br>|-------------------------------------------|--------------|-------------|<br>|TOTAL                                      |142.734.000,00|35.466.000,00|<br>|-------------------------------------------|--------------|-------------|<br>|TOTAL GERAL                                |178.200.000,00|             |<br>|___________________________________________|______________|_____________| * tabela formatada pela equipe técnica do LeisMunicipais.com.br<br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> A despesa fixada de acordo com o artigo 5º, apresenta por função, o seguinte desdobramento:<pre> ________________________________________________________________________<br>|                   FUNÇÃO                  |    FISCAL    | SEG. SOCIAL |<br>|===========================================|==============|=============|<br>|01 - Legislativo                           | 10.745.000,00|             |<br>|-------------------------------------------|--------------|-------------|<br>|02 - Judiciário                            |  1.560.000,00|             |<br>|-------------------------------------------|--------------|-------------|<br>|03 - Administração e Planejamento          | 50.497.000,00|             |<br>|-------------------------------------------|--------------|-------------|<br>|04 - Agricultura                           |  2.769.000,00|             |<br>|-------------------------------------------|--------------|-------------|<br>|05 - Comunicações                          |  3.047.000,00|             |<br>|-------------------------------------------|--------------|-------------|<br>|08 - Educação e Cultura                    | 53.963.000,00|             |<br>|-------------------------------------------|--------------|-------------|<br>|10 - Habitação e Urbanismo                 | 17.407.000,00|             |<br>|-------------------------------------------|--------------|-------------|<br>|11 - Indústria, Comércio e Serv            |     60.000,00|             |<br>|-------------------------------------------|--------------|-------------|<br>|13 - Saúde e Saneamento                    | 22.656.000,00|             |<br>|-------------------------------------------|--------------|-------------|<br>|15 - Assistência e Previdência             | 13.810.000,00|             |<br>|-------------------------------------------|--------------|-------------|<br>|16 - Transporte                            |    276.000,00|             |<br>|-------------------------------------------|--------------|-------------|<br>|99 - Reserva de Contigência                |  1.410.000,00|             |<br>|-------------------------------------------|--------------|-------------|<br>|TOTAL                                      |141.734.000,00|36.466.000,00|<br>|___________________________________________|______________|_____________| * tabela formatada pela equipe técnica do LeisMunicipais.com.br<br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> SUPRIMIDO<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> ....<br><br>Parágrafo Único - ...<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10 -</span></a> ...<br><br>Gabinete do Presidente da Câmara Municipal de Feira de Santana, 04 de junho de 1997.<br><br>DR. EVERTON PEREIRA DE CERQUEIRA<br>Presidente<br><br>Data da Publicação: 14/06/1996<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

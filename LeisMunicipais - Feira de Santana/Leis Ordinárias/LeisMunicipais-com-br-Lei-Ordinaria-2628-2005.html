@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 2628/2005</h2><br>INSTITUI O PROGRAMA PARLAMENTAR E EXECUTIVO JUVENIL E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Autor: Poder Executivo<br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, no uso de suas atribuições legais, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 12, de autoria do Poder Executivo, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica criado, no âmbito do Município de Feira de Santana, o Programa Parlamentar e Executivo Juvenis, que reger-se-á pelos preceitos desta Lei e demais normas pertinentes, coordenado pela Secretaria Municipal de Desenvolvimento Social.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O presente Programa tem como finalidade precípua integrar os segmentos da juventude do Município de Feira de Santana, às ações públicas e sociais dos Poderes Municipais empreendendo programas voltados à cidadania.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> O Programa será organizado da seguinte forma:<br><br>I - Será realizado a cada ano, na oportunidade do aniversário do ECA - Estatuto da Criança e do Adolescente, em julho, o Congresso Municipal da Juventude com a finalidade de discutir temas de interesse da Juventude e produzir recomendações aos Poderes Legislativo, Executivo e Judiciário;<br><br>II - Durante a realização dos Congressos serão escolhidos, dentre os participantes, os representantes da juventude para atuarem em colaboração com os Poderes Legislativo e Executivo Municipal;<br><br>III - Serão criadas na Câmara de Vereadores cinco cadeiras honoríficas de Jovem Parlamentar;<br><br>IV - Serão criados no Poder Executivo, a título honorífico, cinco cargos de jovens Executivos - Secretários da Juventude;<br><br>V - Ocupação os cargos honoríficos criados na Câmara de Vereadores e no Poder Executivo, os jovens escolhidos durante o Congresso do Parlamento Juvenil de Feira de Santana;<br><br>VI - Os jovens nomeados para atuar no parlamento juvenil municipal promoverão reuniões com diversos segmentos da juventude visando colher subsídio para suas atuações sistemáticas junto a Câmara Municipal;<br><br>VII - Os jovens nomeados para atuar no parlamento juvenil municipal se reunirão a cada dois meses com a Plenária de Vereadores para apresentarem as principais reivindicações e sugestões advindas dos segmentos jovens;<br><br>VIII - Os jovens nomeados para atuar junto ao Poder Executivo participarão das atividades empreendidas pela Prefeitura em suas respectivas áreas de representação;<br><br>IX - Todas as Secretarias, conjuntamente, estabelecerão planos de ação a serem realizados visando à aplicabilidade dos princípios erigidos na presente Lei;<br><br>X - Caberá ainda aos jovens parlamentares e secretários elaborar o cronograma de reuniões mensais entre si e respectivamente com a Câmara de Vereadores e Secretaria Municipal de Desenvolvimento Social;<br><br>XI - Caberá à Câmara de Vereadores e à Prefeitura Municipal promover a divulgação nos diversos meios de comunicação das ações desenvolvidas e dos projetos elaborados, bem como, mobilizar a comunidade quanto à importância da participação da sociedade nas finalidades da presente Lei.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> As 05 (cinco) Secretarias da Juventude serão divididas da seguinte forma:<br><br>I - Desenvolvimento Social;<br><br>II - Cultura Esporte e Lazer;<br><br>III - Educação;<br><br>IV - Saúde;<br><br>V - Serviços Públicos, Planejamento e Meio Ambiente.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Cada Jovem Parlamentar e Secretário, eleito pelo Congresso da Juventude, nos termos do Regimento Interno, terá mandato de 01 (um) ano, permitida uma única reeleição, por igual período.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Compete à Secretaria Municipal de Desenvolvimento Social:<br><br>I - Coordenar o presente Programa, em todas suas fases, podendo intervir quando necessário;<br><br>II - Reunir os Secretários e Parlamentares Juvenis, visando Planejamento e Avaliação das atividades;<br><br>III - Dar suporte as atividades, correspondentes a cada Secretaria e Parlamentar Juvenis;<br><br>IV - Orientar os Secretários e Parlamentares Juvenis quanto à elaboração de Planos e Projetos de atuação por meio de projeto específico;<br><br>V - Apoiar a realização das ações integradas de forma, que, quando uma secretaria estiver executando determinada atividade na condição de titular do evento, as outras possam desenvolver ações paralelas no mesmo evento;<br><br>VI - Auxiliar na divulgação das atividades de cada Secretário e Parlamentar Juvenis, através dos meios de imprensa;<br><br>VII - Disponibilizar, para atendimento de suas atribuições e no auxílio ao Programa, 02 (duas) assistentes e 01 (uma) coordenadora, além das instalações físicas correspondentes e móveis diversos.<br><br>Parágrafo Único - O processo de monitoramento e avaliação será realizado conjuntamente entre os destinatários do programa, a sociedade em geral e profissionais dos diversos organismos municipais, coordenado pela Secretaria Municipal de Desenvolvimento Social.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> A cada ano deverá constar no orçamento municipal à destinação de recursos para manutenção do presente programa.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> Poderão ser firmados convênios e demais termos com entidades públicas ou privadas, além de pessoas jurídicas de direito público ou privado, visando o aprimoramento do programa aqui estabelecido.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> Está Lei entrará em vigor na data de sua publicação, ficando revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 13 de outubro de 2005.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

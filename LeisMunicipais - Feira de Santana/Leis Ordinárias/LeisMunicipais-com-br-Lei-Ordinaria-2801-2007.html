@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 2801/2007</h2><br>CRIA O FUNDO MUNICIPAL DE HABITAÇÃO DE INTERESSE SOCIAL DE FEIRA DE SANTANA - FMHISFS INSTITUI O CONSELHO GESTOR DO FMHISFS E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Autor: Poder Executivo<br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, no uso de suas atribuições, Faço saber que a Câmara Municipal decreta e eu sanciono a seguinte Lei:<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> I<br>DISPOSIÇÕES GERAIS<br></span></span><br><br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica criado o Fundo Municipal de Habitação de Interesse Social de Feira de Santana - FMHISFS, instituído o Conselho Gestor do FMHISFS, na forma do disposto na Lei Federal nº 11.124 de 16 de junho de 2005, que trata sobre o Sistema Nacional de Habitação de Interesse Social - SNHIS e o Fundo Nacional de Habitação de Interesse Social.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Para fins do disposto nesta lei, considera-se:<br><br>I - família de baixa renda: aquela cuja situação socioeconômica, definida segundo seu padrão de consumo, não lhe permita arcar, total ou parcialmente, com os custos de quaisquer formas de acesso a habitação, a preços de mercado;<br><br>II - habitação: a moradia inserida no contexto urbano, provida de infra-estrutura básica, os serviços urbanos, os equipamentos comunitários básicos, ser obtida em forma imediata ou progressiva, localizada em área com situação legal regularizada;<br><br>III - habitação de interesse social: a habitação urbana, nova ou usada, com o respectivo terreno e serviços de infra-estrutura, com destinação a famílias de baixa renda;<br><br>IV - áreas de interesse social: são aquelas originadas por ocupação espontânea ou por lotes irregulares ou clandestinos que apresentam condições precárias de moradia;<br><br>V - lote urbanizado: parcela legalmente definida de uma área, conforme as diretrizes de planejamento urbano municipal ou regional, que disponha de acesso por via pública e, no seu interior, no mínimo, de soluções de abastecimento de água e esgotamento sanitário e ainda de instalações que permitam a ligação de energia elétrica;<br><br>VI - lote social: lote de terreno, urbano, situado em loteamento ou desmembramento aprovado pelo órgão municipal competente e registrado o Cartório de Registro de Imóveis, cujo preço seja igual ou inferior ao que vier a ser determinado pelo Conselho Gestor, atendendo a parâmetros técnicos de padrão de consumo familiar;<br><br>VII - regularização fundiária: é o processo de intervenção pública, sob os aspectos jurídico, físico e social, que objetiva legalizar a permanência de populações moradoras de áreas urbanas, ocupadas em desconformidade com a lei.<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> II<br>DO FUNDO MUNICIPAL DE HABITAÇÃO DE INTERESSE SOCIAL<br></span></span><br><span class="titulo" style="width: auto;display: block;text-align:center"><br>SEÇÃO I<br>DA NATUREZA E FINALIDADES<br></span><br><br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> O Fundo Municipal de Habitação de Interesse Social de Feira de Santana - FMHISFS é órgão de natureza contábil que tem o objetivo de receptar, captar e gerenciar recursos orçamentários para os programas estruturados no Município, no âmbito do Sistema Nacional de Habitação de Interesse Social - SNHIS, destinado a implementar políticas públicas habitacionais direcionadas à população de baixa renda.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> O Fundo Municipal de Habitação de Interesse Social de Feira de Santana - FMHISFS é constituído por:<br><br>I - recursos do Fundo Municipal de Habitação de Interesse Social de Feira de Santana - FMHISFS;<br><br>II - dotações do Orçamento do Poder Executivo Municipal, destinadas para o objetivo de habitação;<br><br>III - os provenientes do Fundo de Garantia por Tempo de Serviço - FGTS que lhe forem repassados;<br><br>IV - outros fundos ou programas que vierem a ser incorporados ao FMHISFS;<br><br>V - recursos provenientes de empréstimos externos e internos para programas de habitação;<br><br>VI - as doações efetuadas, com ou sem encargo, por pessoas jurídicas de direito público ou privado, nacionais ou estrangeiras, bem assim por organismos internacionais ou multilaterais;<br><br>VII - receitas operacionais e patrimoniais de operação realizadas com recursos do FMHIS;<br><br>VIII - outros recursos que lhe vierem a ser destinados.<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br>SEÇÃO II<br>DO CONSELHO GESTOR DO FMHIS<br></span><br><br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> O Fundo de Habitação do Interesse Social - FMHIS será gerido pelo Conselho Gestor, órgão de caráter deliberativo composto pelas seguintes entidades:<br><br>I - Secretaria Municipal de Habitação e Regularização Fundiária;<br><br>II - Secretaria Municipal de Planejamento;<br><br>III - Secretaria Municipal de Desenvolvimento Urbano e Meio Ambiente;<br><br>IV - Secretaria Municipal da Fazenda;<br><br>V - Conselho Regional de Engenharia, Arquitetura e Agronomia, Inspetoria de Feira de Santana - CREA;<br><br>VI - Ordem dos Advogados do Brasil, Conselho Seccional da Bahia, Subseção de Feira de Santana - OAB/BA.<br><br>VII - duas Associações de Moradores de Bairros do Município de Feira de Santana.<br><br>§ 1º A Presidência do FMHISFS será exercida pelo Secretário Municipal de Habitação e Regularização Fundiária.<br><br>§ 2º O Presidente do Conselho Gestor exercerá o voto de qualidade.<br><br>§ 3º Compete ao Presidente do Conselho Gestor oferecer ao mesmo, os meios necessários ao exercício regular de suas funções e competências.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Ao Conselho Gestor do FMHISFS compete:<br><br>I - propor e participar da deliberação, junto ao processo de elaboração do Orçamento Municipal, sobre a execução de projetos e programas de urbanização, construção de moradias e de regularização fundiária em áreas irregulares;<br><br>II - propor e aprovar os planos de aplicação e metais anuais e plurianuais dos recursos do Fundo Municipal de Habitação de Interesse Social, instituído pela presente Lei;<br><br>III - definir as condições básicas de subsídios e financiamentos com recursos do FMHIS;<br><br>IV - regulamentar, fiscalizar e acompanhar todas as ações referentes a subsídios habitacionais;<br><br>V - aprovar as contas do Fundo Municipal de Habitação de Interesse Social - FMHISFS;<br><br>VI - apreciar as formas de apoio às entidades associativas e cooperativas habitacionais cuja população seja de baixa renda, bem como as solicitações de melhorias habitacionais em autoconstrução ou ajuda mútua de moradias populares;<br><br>VII - propor ao Executivo a elaboração de estudos e projetos, constituir Grupos Técnicos ou Comissões Especiais e Câmaras, quando julgar necessário, para o desempenho das suas funções;<br><br>VIII - elaborar seu regimento interno;<br><br>IX - estabelecer diretrizes e fixar critérios para priorização de linhas de ação, alocação de recursos do FHIS e atendimento dos beneficiários dos programas habitacionais, observando o disposto nesta lei, a política e o plano municipal de habitação;<br><br>X - deliberar sobre as contas do FMHISFS;<br><br>XI - dirimir dúvidas quanto à aplicação das normas regulamentares aplicáveis ao FMHIS, nas matérias de sua competência;<br><br>XII - outras atribuições que lhe sejam atribuídas por seu Regimento Interno.<br><br>§ 1º O Conselho Gestor do FMHISFS promoverá ampla publicidade de forma e critérios de acesso aos programas, das modalidades de acesso à moradia, das metas anuais de atendimento habitacional, dos recursos previstos e aplicados; identificados pelas fontes de origem das áreas objeto de intervenção, dos números e valores dos benefícios e dos financiamentos e subsídios concedidos de modo a permitir o acompanhamento e fiscalização pela sociedade.<br><br>§ 2º O Conselho gestor do FMHIS promoverá audiências públicas e conferências representativas dos segmentos sociais existentes para debater e avaliar critérios de alocação de recursos e programas habitacionais existentes.<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br>SEÇÃO III<br>DAS APLICAÇÕES DOS RECURSOS DO FMHISFS<br></span><br><br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> As aplicações dos recursos do FMHISFS serão destinadas a ações vinculadas aos programas de habitação de interesse social que contemplem:<br><br>I - aquisição, construção, conclusão, melhoria, reforma, locação social e arrendamento de unidades habitacionais em áreas urbanas e rurais;<br><br>II - produção de lotes sociais e urbanizados para fins habitacionais;<br><br>III - urbanização, produção de equipamentos comunitários, regularização fundiária e urbanística de áreas de interesse social.<br><br>IV - implantação de infra-estrutura e equipamentos urbanos complementares aos programas habitacionais de interesse social;<br><br>V - aquisição de materiais para construção, ampliação e reforma de moradias;<br><br>VI - recuperação ou edificação de imóveis em áreas encortiçadas ou deterioradas, centrais ou periféricos, para fins habitacionais de interesse social;<br><br>VII - outros programas e intervenções na forma aprovada pelo Conselho Gestor do FMHISFS.<br><br>Parágrafo Único - Será admitida a aquisição de terrenos vinculada à implantação de projetos habitacionais.<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> III<br>DISPOSIÇÕES TRANSITÓRIAS E FINAIS<br></span></span><br><br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> O FMHISFS será regulamentado em até 180 (cento e oitenta dias), após a publicação desta Lei.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> Esta Lei entra em vigor na data de sua publicação, revogadas as disposições em contrario.<br><br>Gabinete do Prefeito Municipal, em 13 de junho de 2007.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito Municipal<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

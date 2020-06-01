@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI PROMULGADA Nº 191/2006</h2><br>TORNA OBRIGATORIO OS HOSPITAIS DA REDE PÚBLICA E PRIVADA DA MUNICIPIO, A FIXAÇÃO EM LOCAL VISIVEL, DE AVISO ESCLARECENDO O DIREITO DOS PAIS PERMANECEREM COM SEUS FILHOS EM CASO DE INTERNAÇÃO DE CRIANÇA OU ADOLESCENTE.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PRESIDENTE DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, FAÇO SABER QUE A CÂMARA MUNICIPAL, ATRAVÉS DO PROJETO DE LEI Nº 73/2006, DE AUTORIA DO EDIL ROBERTO LUIS DA SILVA TOURINHO, E NA CONFORMIDADE DO ART. 78, § 7, DA LEI Nº  <a class="link_law" data-id="1739637" data-original-title=" Data da Norma: 05.04.1990 - DISPÕE SOBRE A LEI ORGÂNICA DO MUNICIPIO DE FEIRA DE SANTANA E DA OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-promulgada/1990/3/37/lei-promulgada-n-37-1990-dispoe-sobre-a-lei-organica-do-municipio-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">37</a>, DE 05 DE ABRIL DE 1990, E ARTIGO 25, INCISO V, DO REGIME INTERNO, PROMULGA A SEGUINTE LEI:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Ficam os hospitais da rede pública ou privada que mantenham convênio com o SUS (SISTEMA ÚNICO DE SAUDE), obrigados a fixar aviso ao público em geral, que de acordo com o estatuto da Criança e do Adolescente e legislações concernentes, é direito de um dos pais ou responsável permanecer com seus filhos em caso de internação.<br><br>Parágrafo Único - O aviso de que trata este artigo, com o timbre do hospital, deverá ter especificações, medidas e localização estratégica que facilitem sua visualização pelo público e terá o seguinte teor:<br><br>&quot;AVISO SO PÚBLICO&quot;<br><br>&quot;De acordo com o artigo 12, da lei nº 8.069/90 (Estatuto da Criança e do Adolescente) e legislações concernentes, é direito de um dos pais ou responsável em permanecer em tempo integral nos casos de internação de criança ou adolescente com idade igual ou inferior a 14 (quatorze) anos, devendo o hospital proporcionar condições para tal permanência&quot;.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O descumprimento das disposições contidas nesta Lei sujeitará a parte infratora às sanções previstas no Código Sanitário Estadual (advertência; multa; interdição temporária; interdição definitiva; cassação da licença sanitária), sem prejuízo das sanções judiciais cabíveis.<br><br>Parágrafo Único - As apurações das infrações previstas nesta Lei obedecerão ao rito previsto no Código Sanitário Estadual.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>CÂMARA MUNICIPAL DE FEIRA DE SANTANA, em 14 de Novembro de 2006.<br><br>Ver. ANTONIO ALCIONE DA SILVA CEDRAZ<br>PRESIDENTE<br><br>Autor: Roberto Luis da Silva Tourinho<br>DATA DE PUBLICAÇÃO: 17/11/2006<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

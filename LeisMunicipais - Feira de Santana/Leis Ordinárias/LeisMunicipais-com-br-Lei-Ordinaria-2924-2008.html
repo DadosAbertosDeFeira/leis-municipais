@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 2924, DE 04 DE SETEMBRO DE 2008.</h2><br>REVISA O PLANO PLURIANUAL, INSTITUÍDO PELA LEI MUNICIPAL Nº <a class="link_law" data-id="696761" data-original-title=" Data da Norma: 14.10.2005 - INSTITUI O PLANO PLURIANUAL PARA O PERÍODO DE 2006 A 2009, E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2005/261/2616/lei-ordinaria-n-2616-2005-institui-o-plano-plurianual-para-o-periodo-de-2006-a-2009-e-da-outras-providencias" rel="tooltip">2.616</a>/2005, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, no uso de suas atribuições. Faço saber que a Câmara Municipal, através do Projeto de Lei nº 105/2008, de autoria deste Poder Executivo, decretou e eu sanciono a seguinte Lei.<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica revisada a Lei nº <a class="link_law" data-id="696761" data-original-title=" Data da Norma: 14.10.2005 - INSTITUI O PLANO PLURIANUAL PARA O PERÍODO DE 2006 A 2009, E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2005/261/2616/lei-ordinaria-n-2616-2005-institui-o-plano-plurianual-para-o-periodo-de-2006-a-2009-e-da-outras-providencias" rel="tooltip">2.616</a>/2005, conforme os seguintes procedimentos:<br><br>I - adequa ações dos programas apoio administrativo, atenção e promoção da saúde, regulação e ampliação do sistema de saúde, infra-estrutura urbana, e esporte para todos, conforme Anexo I.<br><br>II - ficam projetados os valores dos programas, macroação e objetivos estratégicos, conforme anexos II, III, IV, V e VI.<br><br>§ 1º - Os valores projetados poderão ser alterados quando da elaboração da Lei Orçamentária Anual.<br><br>§ 2º - Ficam evidenciados os indicadores dos programas em anexo específico.<br><br>§ 3º - Cria o programa Gestão Ambiental com o objetivo de promover a melhoria da qualidade do meio ambiente do Município, com as seguintes ações: licenciamento ambiental, controle e fiscalização de ações nocivas ao meio ambiente e educação ambiental, com suas metas explicitadas no Anexo I.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Fica o Poder Executivo autorizado a alterar indicadores de programas e a incluir, excluir ou alterar ações e suas respectivas metas, sempre que tais modificações visem o atingimento dos objetivos do programa, evidenciados na Lei Orçamentária Anual.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Esta Lei entrará em vigor na data de sua publicação.<br><br>Gabinete do Prefeito Municipal, 04 de setembro de 2008.<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO MUNICIPAL<br><br>GERALDO DE OLIVEIRA SAMPAIO FILHO<br>CHEFE DE GABINETE DO PREFEITO<br><br>CARLOS ANTONIO DE MORAES LUCENA<br>PROCURADOR GERAL DO MUNICÍPIO<br><br>JOÃO MARINHO GOMES JÚNIOR<br>SECRETÁRIO MUNICIPAL DE ADMINISTRAÇÃO<br><br>JOAQUIM JOSÉ BAHIA MENEZES<br>SECRETÁRIO MUNICIPAL DA FAZENDA<br><br>CARLOS ALBERTO OLIVEIRA BRITO<br>SECRETÁRIO MUNICIPAL DE PLANEJAMENTO<br><br>JOÃO BATISTA CRUZ DE SOUZA<br>RESP. P/ SECRETARIA MUNICIPAL DE COMUNICAÇÃO SOCIAL<br><br>ANA LÚCIA FREITAS BASTOS MIRANDA<br>SECRETÁRIA MUNICIPAL DE DESENVOLVIMENTO SOCIAL<br><br>ANA RITA DE ALMEIDA NEVES<br>SECRETÁRIA MUNICIPAL DE EDUCAÇÃO<br><br>DENISE LIMA MASCARENHAS<br>SECRETÁRIA MUNICIPAL DE SAÚDE<br><br>EUCLIDES ARTUR COSTA ANDRADE<br>SECRETÁRIO MUNICIPAL DE CULTURA, ESPORTE E LAZER<br><br>JOSÉ FERREIRA PINHEIRO<br>SECRETÁRIO MUNICIPAL DE DESENVOLVIMENTO URBANO<br><br>AURELINO CERQUEIRA DA SILVA<br>SECRETÁRIO MUNICIPAL DE GOVERNO<br><br>ANTONIO CARLOS DALTRO COELHO<br>SECRETÁRIO MUNICIPAL DE MEIO AMBIENTE E RECURSOS NATURAIS<br><br>ARCENIO JOSÉ OLIVEIRA<br>SECRETÁRIO MUNICIPAL DE HABITAÇÃO E REGULARIZAÇÃO FUNDIÁRIA<br><br>JOSÉ ARISTÓTELES RIOS NERY<br>SECRETÁRIO MUNICIPAL DE DESENVOLVIMENTO ECONÔMICO<br><br>JAIRO VICTOR ALVES DE SOUZA<br>RESP. P/ SECRETARIA MUNICIPAL DE TRANSPORTES E TRÂNSITO<br><br>LUIZ CARLOS FERREIRA DE ARAÚJO<br>RESP. P/ SECRETARIA MUNICIPAL DE SERVIÇOS PÚBLICOS<br><br>AUGUSTO CEZAR PEREIRA ORRICO<br>DIRETOR PRESIDENTE DA DIRETORIA EXECUTIVA DA FUNDAÇÃO CULTURAL MUNICIPAL EGBERTO TAVARES COSTA<br><br>GUTEMBERG SANTOS DE ALMEIDA<br>DIRETOR PRESIDENTE DA FUNDAÇÃO HOSPITALAR DE FEIRA DE SANTANA<br><br>ANTONIO CARLOS MACHADO<br>DIRETOR SUPERINTENDENTE DA SUPERINTENDÊNCIA MUNICIPAL DE TRÂNSITO<br><br>MAGNO FELZEMBURGH<br>DIRETOR PRESIDENTE DO INSTITUTO DE PREVIDÊNCIA DE FEIRA DE SANTANA<br><br>OZENY JOSÉ MORAES CERQUEIRA<br>SECRETÁRIO MUNICIPAL DE AGRICULTURA, RECURSOS HÍDRICOS E DESENVOLVIMENTO RURAL<br><br><br><a class="btn btn-danger" href="https://leismunicipais.com.br/BA/FEIRA.DE.SANTANA/A2924-2008.zip"><span style="font-weight:bold">Download:</span> Anexos</a><p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

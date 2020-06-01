@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 2188/2000</h2><br>ALTERA LEI Nº <a class="link_law" data-id="1611762" data-original-title=" Data da Norma: 24.09.1987 - ASSEGURA ÀS GESTANTES, O ACESSO AOS TRANSPORTES COLETIVOS URBANOS, SEM A UTILIZAÇÃO DO TORNIQUETE, CATRACA OU BORBOLETA." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1987/105/1056/lei-ordinaria-n-1056-1987-assegura-as-gestantes-o-acesso-aos-transportes-coletivos-urbanos-sem-a-utilizacao-do-torniquete-catraca-ou-borboleta" rel="tooltip">1056</a>/87 QUE ASSEGURA ÀS GESTANTES, ACESSO AOS TRANSPORTES COLETIVOS URBANOS, SEM A UTILIZAÇÃO DO TORNIQUETE, CATRACA OU BORBOLETA.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Autor: Manoel Messias Gonzaga<br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 105/2000, de autoria do Edil Manoel Messias Gonzaga, decretou eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> O artigo 1º da Lei <a class="link_law" data-id="1611762" data-original-title=" Data da Norma: 24.09.1987 - ASSEGURA ÀS GESTANTES, O ACESSO AOS TRANSPORTES COLETIVOS URBANOS, SEM A UTILIZAÇÃO DO TORNIQUETE, CATRACA OU BORBOLETA." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1987/105/1056/lei-ordinaria-n-1056-1987-assegura-as-gestantes-o-acesso-aos-transportes-coletivos-urbanos-sem-a-utilizacao-do-torniquete-catraca-ou-borboleta" rel="tooltip">1.056</a>/87 passa a ter seguinte redação:<br><br>&quot;Art. 1º Fica assegurado às gestantes e mulheres conduzindo crianças de colo, acesso aos transportes urbanos, em todos os ramais do Município, sem a utilização do torniquete, catraca ou borboleta.&quot;<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O Parágrafo Único da mesma Lei passa a ter a seguinte redação:<br><br>&quot;Parágrafo Único - O serviço de transportes coletivos da Prefeitura Municipal, no prazo de 30 (trinta) dias da vigência desta Lei, regulamentará o seu uso, devendo a gestante e as mulheres com as crianças de colo efetuarem o pagamento da passagem, sem ter que ultrapassarem o torniquete, catraca ou borboleta.&quot;<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Esta Lei entrará em vigor na data da sua publicação, revogadas as disposições em contrário.<br><br>PREFEITURA MUNICIPAL DE FEIRA DE SANTANA, EM 05 DE OUTUBRO DE 2000.<br><br>CLAILTON COSTA MASCARENHAS<br>Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

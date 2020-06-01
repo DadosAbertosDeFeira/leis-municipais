@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 894, de 23 de novembro de 1981</h2><br>ALTERA DISPOSITIVOS DA LEI Nº  <a class="link_law" data-id="1607951" data-original-title=" Data da Norma: 04.07.1969 - DISPÕE SOBRE O LOTEAMENTO, E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1969/62/629/lei-ordinaria-n-629-1969-dispoe-sobre-o-loteamento-e-da-outras-providencias" rel="tooltip">629</a>, DE 04 DE JULHO DE 1969. E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA Bahia, FAÇO saber que a Câmara Municipal decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Os artigos 17, 18, 21, 22 e 26 da Lei Municipal de nº  <a class="link_law" data-id="1607951" data-original-title=" Data da Norma: 04.07.1969 - DISPÕE SOBRE O LOTEAMENTO, E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1969/62/629/lei-ordinaria-n-629-1969-dispoe-sobre-o-loteamento-e-da-outras-providencias" rel="tooltip">629</a>, de 04 de julho de 1969, que dispõe sobre loteamento, passam a vigorar com a seguinte redação:<br><br>&quot;Art. 17 - Os loteamentos ou parcelamentos de terrenos na zona urbana do Município deverão possuir área mínima de 200,00m² (duzentos metros quadrados), com testada mínima de 10.00 m (dez metros).<br><br>§ 1º A critério do EPI, poderá ser concedida licença para construção em áreas já existentes, com dimensões inferiores às previstas no caput deste artigo.<br><br>§ 2º Nos setores classificados por Lei como de alta densidade populacional será permitido parcelamento com área mínima de 125,00m² (cento e vinte e cinco metros quadrados), e testada mínima de 5,00M (cinco metros)&quot;.<br><br>&quot;Art. 18 - Quando o lote estiver situado em esquina do logradouro, a testada de menor dimensão do mesmo será acrescida de uma extensão igual ao recuo obrigatório, isto é, será de 14.00 m (quatorze metros).<br><br>Parágrafo Único - Nos setores classificados por Lei como de alta densidade populacional a testada mínima passa a ser de 9,00M (nove metros), com área mínima de 125,00m² (cento e vinte e cinco metros quadrados).&quot;<br><br>&quot;Art. 21 - Num mesmo lote de terreno, poderá ser feita mais de uma edificação de frente, desde que, a cada uma corresponda uma testada mínima de 10.00 m (dez metros) no logradouro público, e uma área própria de terreno não inferior a 200.00m² (duzentos metros quadrados).<br><br>Parágrafo Único - Nos setores classificados por Lei de alta densidade populacional a cada edificação deve corresponder uma área própria não inferior a 125,00m² (cento e vinte e cinco metros quadrados), e testada mínima de 5,00M (cinco metros).&quot;<br><br>&quot;Art. 22 - Em qualquer terreno poderão ser construídas edificações de fundo, desde que sejam observadas as eguintes exigências mínimas:<br><br>a) fica assegurada à edificação de frente uma testada mínima de 10.00 m (dez metros), e uma área própria de terreno de 200.00m² (duzentos metros quadrados); b) fique assegurado às edificações de fundo uma área própria de terreno de 200.00m² (duzentos metros quadrados) para cada unidade habitacional, e um acesso privativo ao logradouro público de largura mínima de 2,00 m (dois metros).<br><br>§ 1º Em qualquer dos casos constantes do caput deste artigo, poderá dar-se melhor aproveitamento da área disponível, obrigando-se o proprietário a apresentar o projeto arquitetônico do conjunto, cuja apresentação ficará a critério do EPI.<br><br>§ 2º Nos setores classificados por Lei como de alta densidade populacional, a testada mínima exigida será de 5,00 m (cinco metros) com área própria de cada edificação de no mínimo, 125,00m² (cento e vinte e cinco metros quadrados).&quot;.<br><br>&quot;Art. 26 - Aprovado o loteamento ou desmembramento pela Prefeitura, não será permitido o desdobro de lote ou de outra qualquer área do mesmo, excetuando-se apenas as situações de fato constatadas, antes da vigência da presente Lei, em loteamentos situados nos setores classificados como de alta densidade populacional, observadas as exigências legais especialmente as contidas nos artigos 17, 18, 21, 22, cada área já estejam lançadas no cadastro imobiliário.&quot;<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Prefeitura Municipal de Feira de Santana, 23 de novembro de 1981.<br><br>DR. COLBERT MARTINS DA SILVA<br>Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

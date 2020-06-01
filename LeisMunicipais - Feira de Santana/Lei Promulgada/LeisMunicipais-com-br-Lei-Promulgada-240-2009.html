@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI PROMULGADA Nº 240/2009</h2><br>ALTERA A REDAÇÃO DE DISPOSITIVO DA LEI Nº <a class="link_law" data-id="1544993" data-original-title=" Data da Norma: 03.03.2004 - PERMITE A TRANSFERÊNCIA DA CONCESSÃO OU PERMISSÂO DE SERVIÇOS PÚBLICO SUCESSORES." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2004/248/2483/lei-ordinaria-n-2483-2004-permite-a-transferencia-da-concessao-ou-permissao-de-servicos-publico-sucessores" rel="tooltip">2483</a>/2004, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PRESIDENTE DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA. FAÇO SABER QUE A CÂMARA MUNICIPAL, ATRAVÉS DO PROJETO DE LEI Nº 101/2009, DE AUTORIA DO EDIL OTÁVIO JOEL DE ARAÚJO, E NA CONFORMIDADE DO ARTIGO 78, § 7º, DA LEI Nº  <a class="link_law" data-id="1739637" data-original-title=" Data da Norma: 05.04.1990 - DISPÕE SOBRE A LEI ORGÂNICA DO MUNICIPIO DE FEIRA DE SANTANA E DA OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-promulgada/1990/3/37/lei-promulgada-n-37-1990-dispoe-sobre-a-lei-organica-do-municipio-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">37</a>, DE 05 DE ABRIL DE 1990, E ARTIGO 25 E INCISO V, DO REGIMENTO INTERNO, PROMULGA A SEGUINTE LEI:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Dê-se ao art. 1º da Lei nº <a class="link_law" data-id="1544993" data-original-title=" Data da Norma: 03.03.2004 - PERMITE A TRANSFERÊNCIA DA CONCESSÃO OU PERMISSÂO DE SERVIÇOS PÚBLICO SUCESSORES." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2004/248/2483/lei-ordinaria-n-2483-2004-permite-a-transferencia-da-concessao-ou-permissao-de-servicos-publico-sucessores" rel="tooltip">2.483</a>/2004, a seguinte redação:<br><br>&quot;Art. 1º Fica permitida a transferência da concessão ou permissão para prestação do Serviço de Transporte Público Alternativo e Complementares (STPAC), Serviço de Transporte Individual Alternativo Complementar (STIAC) e Transporte Individual de Táxi no caso de falecimento do titular para sucessores do de cujos, indicados na Lei Civil&quot;.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Esta Lei entrará em vigor após a data de sua publicação, revogada as disposições em contrário.<br><br>CÂMARA MUNICIPAL DE FEIRA DE SANTANA, em 26 de Agosto de 2009.<br><br>Ver. ANTONIO CARLOS PASSOS ATAÍDE<br>PRESIDENTE<br><br>Autor: Otávio Joel de Araújo<br>DATA DE PUBLICAÇÃO: 28/08/2009<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

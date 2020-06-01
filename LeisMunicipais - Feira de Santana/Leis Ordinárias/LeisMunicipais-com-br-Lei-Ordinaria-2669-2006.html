@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 2669, DE 28 DE ABRIL DE 2006.</h2><br>DISPÕE SOBRE A OBRIGATORIEDADE DA PRESENÇA DE SALVA-VIDAS NOS CLUBES DE LAZER QUE POSSUAM PISCINAS EM SUAS DEPENDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O Prefeito Municipal de Feira de Santana, Estado da Bahia, no uso das suas atribuições, faço saber que a Câmara Municipal, através do Projeto de Lei nº 15/2006, de autoria do Edil Roberto Luis da Silva Tourinho, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Os clubes de lazer instalados no município que possuam piscinas em suas dependência devem manter o serviço permanente de salva-vidas durante o período anual em que as piscinas estão abertas aos seus associados e frequentadores.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O não cumprimento desta Lei acarretará ao clube infrator:<br><br>I - notificação da infração e o prazo de 30 (trinta) dias para o enquadramento na Lei;<br><br>II - decorrido o prazo referido no inciso I e constatado o não cumprimento da Lei, será cobrada multa de 500,00 (quinhentos reais), reajustáveis anualmente com base no IPCA - índice de Preços ao Consumidor Ampliado, medido pelo IBGE - Instituto Brasileiro de Geografia Estatística ou o que vier substituí-lo;<br><br>III - na reincidência da infração, a multa será aplicada em dobro;<br><br>IV - persistindo a infração da Lei, além da cobrança da multa, acarretará, sucessivamente:<br><br>a) na não renovação do alvará de funcionamento;<br>b) na cassação do alvará de funcionamento.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 28 de abril de 2006.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito Municipal<br><br>GERALDO DE OLIVEIRA SAMPAIO FILHO<br>Chefe de Gabinete do Prefeito<br><br>DENISE LIMA MASCARENHAS<br>Secretária Municipal de Saúde<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

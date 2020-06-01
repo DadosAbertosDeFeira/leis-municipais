@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI COMPLEMENTAR Nº 40/2008</h2><br>ALTERA DISPOSITIVOS DO CÓDIGO TRIBUTÁRIO MUNICIPAL E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, no uso de suas atribuições, Faço saber que a Câmara Municipal, através do Projeto de Lei Complementar Nº 004, de autoria deste Poder Executivo, decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Ficam atualizados pela inflação medida pelo Índice de Preços ao Consumidor Amplo (IPCA), apurado pelo Instituto Brasileiro de Geografia e Estatística (IBGE), acumulado no período de novembro de 2007 a outubro de 2008, com vigência a partir do exercício de 2009, os valores devidos a título de Contribuição para o Custeio do Serviço de Iluminação Pública (CIP).<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Ficam atualizados pela inflação medida pelo Índice de Preços ao Consumidor Amplo (IPCA), apurado pelo Instituto Brasileiro de Geografia e Estatística (IBGE), acumulado no período de novembro de 2007 a outubro de 2008, com vigência a partir do exercício de 2009, os valores constantes das Tabelas de Receita Nº s: II, art. 119; III, art. 140; IV, art. 144; V, art.149; VI-Parte &quot;A&quot;, art. 155, da Lei nº <a class="link_law" data-id="1592758" data-original-title=" Data da Norma: 29.11.2000 - INSTITUI O NOVO CÓDIGO TRIBUTÁRIO E DE RENDAS DO MUNICÍPIO DE FEIRA DE SANTANA, ESTADO DA BAHIA." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-complementar/2000/0/3/lei-complementar-n-3-2000-institui-o-novo-codigo-tributario-e-de-rendas-do-municipio-de-feira-de-santana-estado-da-bahia" rel="tooltip">003</a>, de 22 de dezembro de 2000, e alterações posteriores.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Ficam atualizados pela inflação medida pelo Índice de Preços ao Consumidor Amplo (IPCA), apurado pelo Instituto Brasileiro de Geografia e Estatística (IBGE), acumulado no período de novembro de 2007 a outubro de 2008, com vigência a partir do exercício de 2009, os valores constantes da Tabela VI, Parte &quot;B&quot;, art. 155, da Lei nº <a class="link_law" data-id="1592758" data-original-title=" Data da Norma: 29.11.2000 - INSTITUI O NOVO CÓDIGO TRIBUTÁRIO E DE RENDAS DO MUNICÍPIO DE FEIRA DE SANTANA, ESTADO DA BAHIA." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-complementar/2000/0/3/lei-complementar-n-3-2000-institui-o-novo-codigo-tributario-e-de-rendas-do-municipio-de-feira-de-santana-estado-da-bahia" rel="tooltip">003</a>, de 22 de dezembro de 2000, e alterações posteriores.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Ficam atualizados pela inflação medida pelo Índice de Preços ao Consumidor Amplo (IPCA), apurado pelo Instituto Brasileiro de Geografia e Estatística (IBGE), acumulado no período de novembro de 2007 a outubro de 2008, com vigência a partir do exercício de 2009, os valores a que se refere o artigo 1º, do Decreto nº  <a class="link_law" data-id="" data-original-title=" Data da Norma: .. - " data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/decreto/2002/653/6531/decreto-n-6531-2002-este-ato-ainda-nao-esta-disponivel-no-sistema" rel="tooltip">6.531</a>, de 22 de fevereiro de 2002, e alterações posteriores.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Ficam atualizados pela inflação medida pelo Índice de Preços ao Consumidor Amplo (IPCA), apurado pelo Instituto Brasileiro de Geografia e Estatística (IBGE), acumulado no período de novembro de 2007 a outubro de 2008, com vigência a partir do exercício de 2009, os valores para pagamento a que se refere a Lei nº  <a class="link_law" data-id="1555761" data-original-title=" Data da Norma: 23.12.2003 - ESTABELECE A LEI DE VIGILÂNCIA À SAÚDE NO MUNICÍPIO E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2003/246/2466/lei-ordinaria-n-2466-2003-estabelece-a-lei-de-vigilancia-a-saude-no-municipio-e-da-outras-providencias" rel="tooltip">2.466</a>, de 23 de dezembro de 2003 e alterações posteriores.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Ficam atualizados pela inflação medida pelo Índice de Preços ao Consumidor Amplo (IPCA), apurado pelo Instituto Brasileiro de Geografia e Estatística (IBGE), acumulado no período de novembro de 2007 a outubro de 2008, com vigência a partir do exercício de 2009, os valores constantes do ANEXOS I e III, documentos integrantes da Lei nº  <a class="link_law" data-id="1544881" data-original-title=" Data da Norma: 12.12.2001 - EDITA A PLANTA GENÉRICA DE VALORES, REGULA A FORMA DE APURAÇÃO DO VALOR VENAL DE IMÓVEIS PARA EFEITO DE LANÇAMENTO DO IMPOSTO SOBRE A PROPRIEDADE PREDIAL E TERRITORIAL URBANA E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2001/230/2303/lei-ordinaria-n-2303-2001-edita-a-planta-generica-de-valores-regula-a-forma-de-apuracao-do-valor-venal-de-imoveis-para-efeito-de-lancamento-do-imposto-sobre-a-propriedade-predial-e-territorial-urbana-e-da-outras-providencias" rel="tooltip">2.303</a>, de 27 de dezembro de 2001, e alterações posteriores.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Ficam extintos, por remissão, os créditos de natureza tributária vencidos até 2002, inscritos ou não em dívida ativa, ajuizados ou não, cujos valores atualizados na data da publicação desta Lei alcancem o equivalente até R$ 600,00.<br><br>Parágrafo Único - Excluem-se deste artigo os créditos de natureza tributária decorrentes do IPTU.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> Ficam extintos, por remissão, os créditos de natureza tributária decorrentes do IPTU, vencidos até 2002, inscritos ou não em dívida ativa, ajuizados ou não, cujos valores atualizados na data da publicação desta Lei alcancem o equivalente até R$ 300,00.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> Ficam extintos, por remissão, os créditos de natureza tributária, inscritos ou não em dívida ativa, ajuizados ou não, decorrentes de IPTU, dos contribuintes beneficiados pela isenção descrita no artigo 82, incisos III e IV, da LEI COMPLEMENTAR Nº <a class="link_law" data-id="1592758" data-original-title=" Data da Norma: 29.11.2000 - INSTITUI O NOVO CÓDIGO TRIBUTÁRIO E DE RENDAS DO MUNICÍPIO DE FEIRA DE SANTANA, ESTADO DA BAHIA." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-complementar/2000/0/3/lei-complementar-n-3-2000-institui-o-novo-codigo-tributario-e-de-rendas-do-municipio-de-feira-de-santana-estado-da-bahia" rel="tooltip">03</a>/2000, e alterações posteriores.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10.</span></a> Os créditos fiscais previstos nos artigos 7º, 8º e 9º compreendem, também, os constituídos por Auto de Infração e Notificação Fiscal.<br><br>§ 1º Para efeito de aplicação do limite previsto nos artigos 7º, 8º e 9º será considerado o conjunto dos débitos do contribuinte responsável, levando-se em conta o valor originário do débito fiscal, atualizado até a publicação desta Lei, acrescido da multa de mora, dos juros de mora e demais acréscimos legais, excetuando-se os honorários advocatícios.<br><br>§ 2º A Secretaria Municipal da Fazenda adotará os procedimentos necessários à extinção dos débitos fiscais, independentemente de requerimento do contribuinte.<br><br>§ 3º Os créditos fiscais previstos nos artigos 8º e 9º compreendem, também, aqueles constituídos por aforamento.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11.</span></a> O § 6º, do art. 82, da LEI COMPLEMENTAR Nº <a class="link_law" data-id="1592758" data-original-title=" Data da Norma: 29.11.2000 - INSTITUI O NOVO CÓDIGO TRIBUTÁRIO E DE RENDAS DO MUNICÍPIO DE FEIRA DE SANTANA, ESTADO DA BAHIA." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-complementar/2000/0/3/lei-complementar-n-3-2000-institui-o-novo-codigo-tributario-e-de-rendas-do-municipio-de-feira-de-santana-estado-da-bahia" rel="tooltip">03</a>/2000, passará a viger com a seguinte redação:<br><br>&quot;§ 6º Art. 82 - A isenção prevista nos incisos III e IV deste artigo não poderá ser concedida aos contribuintes enquadrados na condição de pessoa jurídica.&quot;<br><br><a name="artigo_12"><span class="label label-pill label-danger">Art. 12.</span></a> Os créditos fiscais tributários e não-tributários, decorrentes de fatos geradores ocorridos até o mês da publicação desta Lei, constituídos ou não, inscritos ou não em dívida ativa, ajuizados ou não, poderão ser pagos à vista, desde que atualizados monetariamente com dispensa de juros de mora, multa de mora, multa por infração e demais parcelas acessórias até o dia 22 de dezembro de 2008.<br><br><a name="artigo_13"><span class="label label-pill label-danger">Art. 13.</span></a> A fruição dos benefícios ocorridos em função da remissão ou dispensa dos acréscimos previstos nos artigos 7º, 8º, 9º e 12 não confere direito à restituição ou compensação de importâncias pagas a qualquer título.<br><br><a name="artigo_14"><span class="label label-pill label-danger">Art. 14.</span></a> As medidas de compensação para a renúncia de receita, na forma do art. 14, da Lei nº 101/2000, estão estabelecidas na forma do Anexo único desta Lei.<br><br><a name="artigo_15"><span class="label label-pill label-danger">Art. 15.</span></a> O contribuinte enquadrado no Pró-Uniser - Programa de Incentivo à Formação Universitária do Servidor Municipal poderá efetuar o pagamento dos seus tributos de forma parcelada com dispensa de juros e multa de mora, e demais parcelas acessórias, mediante consolidação de dívida, através de instrumento próprio.<br><br><a name="artigo_16"><span class="label label-pill label-danger">Art. 16.</span></a> Fica revogado o § 5º, do art. 82, da LEI COMPLEMENTAR Nº <a class="link_law" data-id="1592758" data-original-title=" Data da Norma: 29.11.2000 - INSTITUI O NOVO CÓDIGO TRIBUTÁRIO E DE RENDAS DO MUNICÍPIO DE FEIRA DE SANTANA, ESTADO DA BAHIA." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-complementar/2000/0/3/lei-complementar-n-3-2000-institui-o-novo-codigo-tributario-e-de-rendas-do-municipio-de-feira-de-santana-estado-da-bahia" rel="tooltip">03</a>/2000.<br><br><a name="artigo_17"><span class="label label-pill label-danger">Art. 17.</span></a> Esta Lei entra em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 03 de dezembro de 2008.<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO MUNICIPAL<br><br>GERALDO DE OLIVEIRA SAMPAIO FILHO<br>CHEFE DE GABINETE DO PREFEITO<br><br>CARLOS ANTONIO DE MORAES LUCENA<br>PROCURADOR GERAL DO MUNICÍPIO<br><br>JOÃO MARINHO GOMES JÚNIOR<br>SECRETÁRIO MUNICIPAL DE ADMINISTRAÇÃO<br><br>JOAQUIM JOSÉ BAHIA MENEZES<br>SECRETÁRIO MUNICIPAL DA FAZENDA<br><br>ANEXO ÚNICO À LEI COMPLEMENTAR Nº 40, DE 03 DE DEZEMBRO DE 2008.<br><br>MEDIDAS DE COMPENSAÇÃO PARA A RENÚNCIA DE RECEITA, CONFORME DISPÕE O ART. 14, DA LEI COMPLEMENTAR Nº 101/2000<br><br>ESTIMATIVA<br><br>RECEITA - Incremento:....................................R$ 500.000,00<br><br>- Em função da atualização dos tributos municipais para o exercício de 2009;<br><br>RENÚNCIA:................................................R$ 300.000,00<br><br>- com a concessão de remissão;<br>- anistia.<br><br>SUPERÁVIT ...............................................R$ 200.000,00<br><br>DATA DE PUBLICAÇÃO: 4/12/2008<br>PREFEITO: José Ronaldo de Carvalho<br>Presidente: Antonio Carlos Passos Ataíde<br>Assunto: Códigos<br>Autor: Poder Executivo<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

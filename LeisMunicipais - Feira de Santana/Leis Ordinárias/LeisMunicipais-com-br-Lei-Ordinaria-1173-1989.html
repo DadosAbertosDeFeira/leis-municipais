@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 1173, de 10 de abril de 1989.</h2><br>ALTERA DISPOSITIVOS DAS LEIS Nº <a class="link_law" data-id="1611755" data-original-title=" Data da Norma: 25.05.1987 - DISPÕE SOBRE O ESTATUTO DO MAGISTÉRIO PÚBLICO DO MUNICÍPIO DE FEIRA DE SANTANA." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1987/104/1044/lei-ordinaria-n-1044-1987-dispoe-sobre-o-estatuto-do-magisterio-publico-do-municipio-de-feira-de-santana" rel="tooltip">1.044</a>/87 E <a class="link_law" data-id="1611838" data-original-title=" Data da Norma: 17.10.1988 - ALTERA DISPOSITIVOS DA LEI Nº 1044/87, DE 25 DE MAIO DE 1987, E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1988/113/1134/lei-ordinaria-n-1134-1988-altera-dispositivos-da-lei-n-1044-87-de-25-de-maio-de-1987-e-da-outras-providencias" rel="tooltip">1.134</a>/88, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Os dispositivos das Leis nº <a class="link_law" data-id="1611755" data-original-title=" Data da Norma: 25.05.1987 - DISPÕE SOBRE O ESTATUTO DO MAGISTÉRIO PÚBLICO DO MUNICÍPIO DE FEIRA DE SANTANA." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1987/104/1044/lei-ordinaria-n-1044-1987-dispoe-sobre-o-estatuto-do-magisterio-publico-do-municipio-de-feira-de-santana" rel="tooltip">1.044</a>/87, de 25.05.87 e <a class="link_law" data-id="1611838" data-original-title=" Data da Norma: 17.10.1988 - ALTERA DISPOSITIVOS DA LEI Nº 1044/87, DE 25 DE MAIO DE 1987, E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1988/113/1134/lei-ordinaria-n-1134-1988-altera-dispositivos-da-lei-n-1044-87-de-25-de-maio-de-1987-e-da-outras-providencias" rel="tooltip">1.134</a>/88, de 17.10.88, abaixo indicados, passam a vigorar com a redação que lhes é dada por esta Lei, na forma que se segue:<br><br>&quot;Art. 41 - Haverá em cada unidade escolar, que exceda de 02 (duas) salas de aulas, uma Função Gratificada (FG) de Diretor.<br><br>§ 1º Para preenchimento da função de Diretor e Vice-Diretor, é exigido que o Professor faça parte do quadro do Magistério Municipal que esteja em atividade, possuir habilitação de 2º grau para as escolas de 1ª à 4ª séries, e licenciatura para as de 5ª à 8ª séries e 2º grau.<br><br>§ 2º O Diretor e o Vice-Diretor serão designados pelo Prefeito Municipal, atendendo o disposto no Art. 56, da Lei <a class="link_law" data-id="1611755" data-original-title=" Data da Norma: 25.05.1987 - DISPÕE SOBRE O ESTATUTO DO MAGISTÉRIO PÚBLICO DO MUNICÍPIO DE FEIRA DE SANTANA." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1987/104/1044/lei-ordinaria-n-1044-1987-dispoe-sobre-o-estatuto-do-magisterio-publico-do-municipio-de-feira-de-santana" rel="tooltip">1.044</a>/87.&quot;<br><br>&quot;Art. 56 - O Diretor e Vice-Diretor de unidade escolar serão escolhidos por escrutínio secreto, em eleição direta, da qual participarão todos os professores do quadro do Magistério do Município em atividades de magistério, todos os servidores, um representante de cada classe de alunos, um representante do grêmio, se houver, e um da associação de pais e mestres, se houver, para cada classe de alunos nos turnos matutino e vespertino.<br><br>§ 1º Os votos de que trata este artigo serão dados em duas urnas separadas assim distribuídas: uma urna receberá os votos de professores e servidores, e outra, receberá os votos de alunos e dos representantes do grêmio e da associação de pais e mestres, e o resultado da apuração de cada urna terá valor independente e paritário de 50 % (cinqüenta por cento) cada, sendo eleito o andidato que mais ponto somar.<br><br>§ 2º O exercício das funções de Diretor e Vice-Diretor terá a duração de 02 (dois) anos, ficando vedada a reeleição.<br><br>§ 3º As eleições diretas de que trata este artigo, serão realizadas a partir de 1989, e sempre na primeira quinzena do mês de maio, e de acordo com o regulamento próprio, na elaboração do qual será ouvida a entidade de classe.<br><br>§ 4º Entende-se como atividade de magistério para efeito deste artigo, aquela referente a regência de classe, coordenação geral e de área, vice-direção e direção, e supervisão.<br><br>§ 5º Haverá uma comissão eleitoral composta de 02 (dois) professores, (dois) funcionários e 02(dois) estudantes do estabelecimento de ensino.<br><br>§ 6º A convocação da eleição deverá ser publicada através de edital, 30 (trinta) dias antes da data fixada para a sua realização.&quot;<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O Prefeito Municipal regulamentará a presente Lei no prazo de 15 (quinze) dias.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Prefeitura Municipal de Feira de Santana, 10 de abril de 1989.<br><br>Dr. COLBERT MARTINS DA SILVA<br>Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

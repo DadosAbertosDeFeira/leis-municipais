@@ -17,11 +17,11 @@ lazy_static! {
 
 #[derive(Debug, PartialEq, Serialize)]
 pub struct Lei {
-    titulo: String,
-    categoria: String,
-    resumo: String,
-    texto: String,
-    documento: Option<String>,
+    pub titulo: String,
+    pub categoria: String,
+    pub resumo: String,
+    pub texto: String,
+    pub documento: Option<String>,
 }
 
 pub fn parse_html_to_lei(file_name: &str, categoria: String) -> Result<Lei, Error> {

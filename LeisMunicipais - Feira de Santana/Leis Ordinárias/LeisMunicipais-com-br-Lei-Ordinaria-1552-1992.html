@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 1552, de 13 de maio de 1992</h2><br>DISPÕE SOBRE A PARTICIPAÇÃO COMUNITÁRIA NO PROCESSO DE ELABORAÇÃO DO PLANO PLURIANUAL, DAS DIRETRIZES ORÇAMENTÁRIAS E DOS ORÇAMENTOS ANUAIS DO MUNICÍPIO.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, FAÇO saber que a Câmara Municipal decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> O Plano Plurianual, as Diretrizes Orçamentárias e os Orçamentos anuais serão elaborados pelo Poder Executivo após discussão com a comunidade.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> A participação comunitária dar-se-á através das suas entidades representativas, dos diversos segmentos organizados da população e dos munícipes em geral.<br><br>§ 1º Para atender o disposto no caput deste artigo, o Executivo, a Federação das Associações de Moradores de Feira de Santana, a Associação Comercial de Feira de Santana, o Centro das Indústrias, Central Única dos Trabalhadores (CUT), organizarão um cronograma que incluirá, trabalho de comissões para discussão de temas específicos e um encontro municipal de entidades para apreciar a proposta global;<br><br>§ 2º O Poder Executivo fornecerá aos segmentos envolvidos um documento contendo os dados relativos à realidade das diversas áreas e setores a serem contemplados pelo orçamento anual, bem como as linhas gerais do orçamento, para propiciar o início do processo de participação comunitária.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> O Poder Executivo fará uma ampla campanha de esclarecimento da população a respeito do plano plurianual, das diretrizes orçamentárias e dos orçamentos anuais, sua importância para o Município e seus componentes.<br><br>Parágrafo Único - A campanha referida no caput deste artigo será viabilizada pelo Poder Executivo, utilizando-se de todos os meios disponíveis e necessários, inclusive a imprensa local do Município, a fim de informar aos munícipes.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Os projetos de lei resultantes do processo participativo estabelecidos nos artigos anteriores serão encaminhados pelo Executivo para deliberação da Câmara Municipal, consideradas as diversas contribuições e decisões no curso da consulta popular.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> O Poder Executivo regulamentará esta Lei no prazo de 45 (quarenta e cinco dias) da sua publicação.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Prefeitura Municipal de Feira de Santana, em 13 de maio de 1992.<br><br>DR. COLBERT MARTINS DA SILVA<br>Prefeito<br><br>Autor: Manoel Messias Gonzaga<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

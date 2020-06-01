@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 1519, de 19 de dezembro de 1991</h2><br>ESTRUTURA O PLANO DE CARREIRA PARA MAGISTÉRIO E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, FAÇO saber que a Câmara Municipal decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> O magistério público municipal abrange cargos de docentes e especialistas em educação.<br><br>Parágrafo Único - Consideram-se especialistas em educação o orientador educacional, o supervisor educacional e o administrador escolar.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> A carreira do magistério público municipal fica estruturado em classes e níveis na forma estabelecida nesta Lei:<br><br>§ 1º Os níveis de que trata o caput deste artigo são os seguintes:<br><br>a) nível I - os docentes com habilitação específica de 2º grau de 04 (quatro) anos, ou professores leigos com habilitação de haprol ou logos;<br>b) nível II - os docentes com habilitação específica de 2º grau de 04 (quatro) anos, ou 3 (três) anos com estudos adicionais ou curso de especialização em educação física, reconhecidos por órgão oficial;<br>c) nível III - os docentes e especialistas habilitados em licenciatura de curta duração, ou de titulação similar (cades ou premen);<br>d) nível IV - os docentes e especialistas com licenciatura de curta duração mais estudos adicionais;<br>e) nível V - os docentes e especialistas com titulação em licenciatura plena;<br>f) nível VI - os docentes e especialistas com estudos de pós-graduação.<br><br>§ 2º Os atuais professores não licenciados portadores de habilitação de 2º grau ou com graduação de nível universitário, enquadrar-se-ão, respectivamente, nos níveis I e V, sendo-lhes assegurado o direito ao avanço horizontal por tempo de serviço.<br><br>§ 3º Os atuais assistentes de ensino, auxiliares de ensino, assistentes de administração e auxiliares de administração, portadores de habilitação para o magistério, e que estejam em efetiva regência de classe, ficam enquadrados no nível correspondente à sua qualificação e na classe correspondente ao seu tempo de serviço.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> A progressão funcional far-se-á:<br><br>I - por avanço vertical, mediante passagem do docente e do especialista de uma para outro nível, em virtude de obtenção de titulação específica;<br><br>II - por avanço horizontal do docente e do especialista, por tempo de serviço, respeitado o interstício de 05 (cinco) anos para cada classe, contando o tempo de serviço a partir do ingresso no serviço público municipal.<br><br>§ 1º O avanço horizontal, em virtude de tempo de serviço, é de 10% (dez por cento) calculados, em cada qüinqüênio, sobre a classe anterior;<br><br>§ 2º São incorporados como vantagens pessoais aos docentes e especialistas de educação os percentuais de titularidade estabelecida na legislação municipal.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Os docentes e especialistas de educação integrantes do magistério municipal, que estejam em efetiva atividade de magistério, ficam automaticamente enquadrados no nível compatível com a sua titulação e na classe correspondente ao seu tempo de serviço.<br><br>§ 1º Entende-se por atividade do magistério:<br><br>a) Direção escolar;<br>b) Administração escolar;<br>c) Coordenação escolar;<br>d) Supervisão educacional;<br>e) Orientação educacional;<br>f) As exercidas nos setores pedagógicos da Secretaria de Educação, Cultura e Esportes;<br>g) As exercidas na Biblioteca Municipal em salas infantis e de pesquisa orientada;<br>h) As relacionadas com a aplicação do Sistema Brailler;<br>i) Regência de classe.<br><br>§ 2º Ficam excluídos da exigência de efetiva do magistério os docentes e especialistas impossibilitados de nela atuarem por força de laudo médico expedido pela junta médica da Secretaria de Saúde do Município e os que, na data de aprovação desta Lei, tiverem mais de 25 anos de serviço público municipal de Feira de Santana (sexo feminino) e 30 anos (sexo masculino), lotados na Secretaria de Educação, Cultura e Esportes.<br><br>§ 3º O prazo para enquadramento de que trata o caput deste artigo será de (sessenta e cinco) dias, a contar da vigência da presente Lei.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> A progressão funcional dos docentes e especialistas em razão de titulação dar-se-á sempre a requerimento do interessado, que se processará no prazo de 30 (trinta) dias.<br><br>Parágrafo Único - A percepção dos benefícios e vantagens decorrentes da progressão de que trata este artigo é devida ao docente ou especialista a partir da data do seu requerimento, desde que devidamente comprovada a titulação.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> O instituto da progressão funcional por avanço horizontal se aplica, exclusivamente, aos docentes e especialistas do magistério público municipal que estejam em efetiva atividade do magistério.<br><br>Parágrafo Único - Ficam excluídos da exigência de efetiva atividade de magistério os docentes e especialistas impossibilitados de nela atuarem por força de laudo médico expedido pela junta médica da Secretaria Municipal de Saúde.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Os docentes e especialistas integrantes do magistério público municipal submeter-se-ão a um dos seguintes regimes de trabalho:<br><br>a) de tempo parcial, com 20 (vinte) horas semanais.<br>b) de tempo integral, com 40 (quarenta) horas semanais.<br><br>§ 1º Os especialistas de educação cumprirão o regime de 20 (vinte) ou 40 (quarenta) horas, em jornada de 04 (quatro) ou 08 (oito) horas, durante 05 (cinco) dias da semana.<br><br>§ 2º Além do número normal de aulas, em tempo parcial, a que se obriga pelo exercício do cargo, o docente poderá ministrar aulas extraordinárias em razão das necessidades de ensino, mediante acréscimo de sua retribuição calculado à base do valor da hora aula, respeitado o limite de 40 (quarenta) horas, e sujeito a critério estabelecidos em regulamento, não sendo incorporados aos seus vencimentos.<br><br>§ 3º Da carga horária do professor de 5ª à 8ª série do 1º grau e das do 2º grau, em regência de classe, 30% (trinta por cento) serão destinados à preparação de atividades pedagógicas.<br><br>§ 4º Os docentes e especialistas em educação optantes no regime de 20 (vinte) horas poderão ter a sua carga horária alterada para o regime de 40 (quarenta) horas, na dependência de vaga no quadro do magistério público municipal, observando-se em ordem de prioridades, os critérios de assiduidade, antiguidade e de dedicação exclusiva no exercício de magistério na unidade escolar, no magistério público municipal e no serviço público municipal.<br><br>§ 5º Os docentes e especialistas em educação enquadrados no regime de 40 (quarenta) horas poderão solicitar o seu enquadramento para o regime de 20 (vinte) horas, desde que justifiquem a impossibilidade de exercer a carga horária de 40 (quarenta) horas semanais.<br><br>§ 6º Os vencimentos dos docentes e especialistas de educação submetidos ao regime de 40 (quarenta) horas serão o dobro do valor atribuído, no mesmo cargo, ao regime de referentes a benefícios ou vantagens a que faz jus, enquanto permanecerem nesse regime.<br><br>§ 7º O professor de 1º à 4º série do 1º grau, em efetiva regência de classe, fará jus a uma gratificação de 15% (quinze por cento) sobre os seus vencimentos, a título de atividades pedagógicas.<br><br>§ 8º Fica assegurada a gratificação de 20% (vinte por cento) sobre os vencimentos dos docentes que estiverem em efetiva regência de classe de excepcionais<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> Os docentes e especialistas de educação, comprovadamente residentes na sede deste Município, perceberão gratificação de 20% (vinte por cento) sobre os vencimentos, quando no exercício dos cargos na sede dos distritos e na zona rural dos distritos.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> Os docentes e especialistas de educação que, durante 05 (cinco) anos seguidos ou 10 (dez) anos interpolados, tiverem ministrado aulas extraordinárias, terão assegurado o direito de incorporarem seus vencimentos, para o efeito de aposentadoria, a média do total anual de aulas.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10 -</span></a> É vedada a remuneração por aulas extraordinárias para os docentes e especialistas de educação em regime de 40 (quarenta) horas semanais.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11 -</span></a> A parcela básica dos proventos do pessoal inativo do magistério municipal será reajustado nas mesmas condições do pessoal ativo de igual categoria.<br><br>Parágrafo Único - O pessoal inativo, do quadro atual de servidores efetivos, fica enquadrado na classe VI e no nível de acordo com a sua titulação.<br><br><a name="artigo_12"><span class="label label-pill label-danger">Art. 12 -</span></a> O piso salarial do magistério público municipal será uma vez o menor salário pago pela Prefeitura Municipal de Feira de Santana mais setenta e cinco por cento (75%).<br><br>§ 1º O piso de que trata este artigo se refere ao nível 1, classe I, com jornada de trabalho de 20 (vinte) horas semanais.<br><br>§ 2º Ficam estabelecidos os seguintes percentuais de diferença entre os níves em relação ao nível I.<br><br>a) nível II - 15% (quinze por cento);<br>b) nível III - 40% (quarenta por cento);<br>c) nível IV - 50% (cinqüenta por cento);<br>d) nível V - 70% (setenta por cento);<br>e) nível VI - 80% (oitenta por cento).<br><br><a name="artigo_13"><span class="label label-pill label-danger">Art. 13 -</span></a> Os atuais professores leigos constituirão quadro em extinção.<br><br>§ 1º Os vencimentos do pessoal de que trata o caput deste artigo será o correspondente a 60% (sessenta por cento) do salário referente ao nível I.<br><br>§ 2º Fica garantido ao professor leigo o direito ao avanço horizontal em virtude do tempo de serviço, de que trata esta Lei.<br><br>§ 3º Fica assegurado aos atuais professores leigos enquadrados no quadro do magistério municipal no nível correspondente à sua nova titulação, respeitando o tempo de serviço.<br><br>§ 4º O pedido de enquadramento far-se-á mediante requerimento do interessado, que se processará no prazo de 30 (trinta) dias.<br><br><a name="artigo_14"><span class="label label-pill label-danger">Art. 14 -</span></a> Os valores do piso constante desta Lei serão majorados automaticamente de acordo com a legislação em vigor.<br><br><a name="artigo_15"><span class="label label-pill label-danger">Art. 15 -</span></a> As despesas decorrentes desta Lei serão atendidas pelas dotações próprias, consignadas em orçamento, autorizado o Poder Executivo Municipal a abrir créditos com adicionais necessários.<br><br><a name="artigo_16"><span class="label label-pill label-danger">Art. 16 -</span></a> Fica criada a Comissão Permanente de Avaliação e Promoção (COPAP), de acordo com o art. 18 da Lei Municipal nº  <a class="link_law" data-id="1612065" data-original-title=" Data da Norma: 25.06.1990 - INSTITUI O PLANO DE CARREIRA DO SERVIDOR PÚBLICO DO MUNICÍPIO DE FEIRA DE SANTANA, FIXA AS SUAS DIRETRIZES, E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1990/126/1266/lei-ordinaria-n-1266-1990-institui-o-plano-de-carreira-do-servidor-publico-do-municipio-de-feira-de-santana-fixa-as-suas-diretrizes-e-da-outras-providencias" rel="tooltip">1.266</a>, de 25.06.90, com atribuições em regulamento próprio.<br><br>Parágrafo Único - O Sindicato dos Trabalhadores em Educação do Estado da Bahia (APLB) participará da Comissão de que trata o caput deste artigo com 03 (três) membros.<br><br><a name="artigo_17"><span class="label label-pill label-danger">Art. 17 -</span></a> Os valores básicos de vencimentos do magistério público municipal e vantagens terão vigência a partir de 1º de janeiro de 1992.<br><br><a name="artigo_18"><span class="label label-pill label-danger">Art. 18 -</span></a> O Poder Executivo Municipal regulamentará a presente Lei no prazo de 15 (quinze) dias.<br><br><a name="artigo_19"><span class="label label-pill label-danger">Art. 19 -</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Prefeitura Municipal de Feira de Santana, em 19 de dezembro de 1991.<br><br>DR. COLBERT MARTINS DA SILVA<br>Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

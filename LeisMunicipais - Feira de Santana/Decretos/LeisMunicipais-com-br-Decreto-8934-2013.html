@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>DECRETO Nº 8934, de 12 de junho de 2013.</h2><br>CONVOCA A 3ª CONFERÊNCIA MUNICIPAL DE CULTURA DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, no uso de suas atribuições e com fundamento no Artigo 3º, inciso 1º, item II na Lei nº <a class="link_law" data-id="1657403" data-original-title=" Data da Norma: 06.06.2013 - DISPÕE SOBRE A CRIAÇÃO DO SISTEMA MUNICIPAL DE CULTURA E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2013/338/3383/lei-ordinaria-n-3383-2013-dispoe-sobre-a-criacao-do-sistema-municipal-de-cultura-e-da-outras-providencias" rel="tooltip">3.383</a>, do Sistema Municipal de Cultura de Feira de Santana, de 06 de junho de 2013, nos Artigos 269 e 270 da Constituição Estadual, na <a class="link_law" data-original-title="Lei Orgânica Feira de Santana BA" data-toggle="tooltip" href="/lei-organica-feira-de-santana-ba" rel="tooltip">Lei Orgânica</a> da Cultura nº 12.365, de 30 de novembro de 2011, no Decreto nº 14.486, de 23 de maio de 2013, que convoca a V Conferência Estadual de Cultura da Bahia, e considerando o disposto na Portaria Ministerial nº 33, de 16 de abril de 2013, que convoca a III Conferência Nacional de Cultura e torna público seu Regimento Interno, DECRETA:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica convocada a 3ª Conferência Municipal de Cultura de Feira de Santana, a realizar-se no dia 16 de julho de 2013, sob a coordenação da Secretaria Municipal de Cultura, Esporte e Lazer, através da Fundação Cultural Municipal Egberto Tavares Costa.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> A 3ª Conferência Municipal de Cultura de Feira de Santana é etapa integrante da V Conferência Estadual de Cultura da Bahia e da III Conferência Nacional de Cultura e realizará seus trabalhos a partir do tema central: &quot;Uma política de estado para a cultura: desafios do Sistema Municipal de Cultura&quot;.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> A 3ª Conferência Municipal de Cultura de Feira de Santana tem por objetivos:<br><br>I - Estimular a adesão aos Sistemas Estadual e Nacional de Cultura;<br><br>II - Diagnosticar a situação do Sistema Municipal de Cultura;<br><br>III - Elaborar um Plano de Ações Estratégicas para a Cultura no Município;<br><br>IV - Estimular a implantação/consolidação do Sistema Municipal de Cultura;<br><br>V - Estimular a elaboração de políticas culturais a partir das dimensões simbólicas, cidadã e econômica da cultura;<br><br>VI - Estimular o planejamento de políticas, projetos e ações municipais para a cultura com a participação e o controle da sociedade civil;<br><br>VII - Eleger delegados para Conferência Territorial de Cultura;<br><br>VIII - Eleger um delegado da sociedade civil para a Conferência Estadual de Cultura.<br><br>Parágrafo Único - A eleição dos delegados aludidos no inciso VII e VIII deste artigo será realizada em plenária, conforme critérios definidos no regulamento da 3ª Conferência Municipal de Cultura de Feira de Santana.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> A 3ª Conferência Municipal de Cultura de Feira de Santana será presidida pelo Prefeito Municipal e, na sua ausência ou impedimento, pelo Secretário Municipal de Cultura, Esporte e Lazer ou Diretor Presidente da Diretoria Executiva da Fundação Cultural Municipal Egberto Tavares Costa.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> As despesas para realização da 3ª Conferência Municipal de Cultura de Feira de Santana, bem como as de participação dos delegados municipais na etapa territorial da V Conferência Estadual de Cultura, correrão por conta de dotações próprias, consignadas no Orçamento Anual do Município para o corrente exercício, ou serão custeadas através de colaborações provenientes de pessoas, instituições e órgãos parceiros.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Ficam o Secretário Municipal de Cultura, Esporte e Lazer e o Diretor Presidente da Diretoria Executiva da Fundação Cultural Municipal Egberto Tavares Costa, autorizados a:<br><br>I - Nomear a Comissão Organizadora da 3ª Conferência Municipal de Cultura de Feira de Santana;<br><br>II - Aprovar e fazer publicar o Regulamento da 3ª Conferência Municipal de Cultura de Feira de Santana, após apreciação pelo Conselho Municipal de Cultura;<br><br>III - Exercer a coordenação executiva da 3ª Conferência Municipal de Cultura de Feira de Santana;<br><br>IV - Dirimir dúvidas e solucionar os casos omissos da convocação objeto deste Decreto.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Este Decreto entrará em vigor na data de sua publicação.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> Revogam-se as disposições em contrário.<br><br>Gabinete do Prefeito, em 12 de junho de 2013.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito Municipal<br><br>MÁRIO COSTA BORGES<br>Chefe de Gabinete do Prefeito<br><br>JAILTON BATISTA DOS SANTOS<br>Secretário Municipal de Cultura, Esporte e Lazer<br><br>ANTÔNIO CARLOS DALTRO COELHO<br>Diretor Presidente da Diretoria Executiva da Fundação Cultural Municipal Egberto Tavares Costa<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

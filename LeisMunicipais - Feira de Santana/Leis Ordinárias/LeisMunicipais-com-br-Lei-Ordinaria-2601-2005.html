@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 2601/2005</h2><br>DISPÕE SOBRE A POLÍTICA MUNICIPAL DE ESPORTE E LAZER.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Autor: Roberto Luis da Silva Tourinho<br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 10/2005, de autoria do Edil Roberto Luis da Silva Tourinho, decretou e eu sanciono a seguinte Lei:<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> I<br>DA FINALIDADE<br></span></span><br><br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> A Política Municipal de Esporte e Lazer tem a finalidade de fomentar práticas de esporte, lazer e atividades físicas para o desenvolvimento de potencialidades do ser humano, visando bem-estar, promoção social e inserção na sociedade, consolidando sua cidadania.<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> II<br>DOS PRINCÍPIOS E DAS DIRETRIZES<br></span></span><br><span class="titulo" style="width: auto;display: block;text-align:center"><br>SEÇÃO I<br>DOS PRINCÍPIOS<br></span><br><br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> A Política Municipal de Esporte e Lazer rege-se pelos seguintes princípios:<br><br>I - democratização - proporcionar à comunidade o acesso às atividades de esporte, lazer e atividade física, dentro de um quadro humanizador, em todos os segmentos sociais, respeitando o interesse e as potencialidades do cidadão;<br><br>II - participação - legitimar o esporte, o lazer e a atividade física como atitudes de qualidade de vida, compartilhando com o cidadão o processo de integração entre comunidade e gestão pública;<br><br>III - informação - aperfeiçoar continuamente as informações à comunidade, em ações que objetivem a promoção constante do ser humano, para que se alcance um estilo de vida saudável através do esporte, do lazer e da atividade física;<br><br>IV - descentralização - possibilitar que as ações ocorram próximas ao cidadão, permitindo que as características locais e ambientais sejam respeitadas no intuito de alcançar as metas estabelecidas;<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Constituem diretrizes da Política Municipal de Esporte e Lazer:<br><br>I - estabelecer co-responsabilidades entre o poder público e a comunidade no desenvolvimento de ações de esporte, lazer e atividade física;<br><br>II - fomentar lideranças e organizações sociais no sentido da descentralização de ações, direcionando-as para a autogestão e conseqüente participação nas atividades socioculturais de esporte e lazer realizadas na comunidade;<br><br>III - viabilizar parcerias com organizações públicas e privadas para obtenção de recursos necessários ao desenvolvimento das ações;<br><br>IV - criar mecanismos que efetivem uma cultura de esporte, lazer e atividade física;<br><br>V - oportunizar a formação de equipes, nas diversas modalidades esportivas, visando a representação do Município em competições;<br><br>VI - democratizar o acesso às ações de esporte, lazer e atividades físicas na cidade, através da divulgação e informação clara e atualizada;<br><br>VII - viabilizar a capacitação profissional, objetivando o envolvimento consciente do indivíduo com a sua atuação e resultado final;<br><br>VIII - incentivar na população, a mudança de hábitos e atitudes visando à prevenção de doenças, manutenção da saúde e preservação do meio ambiente, nos diferentes segmentos sociais e faixas etárias.<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> III<br>DA ORGANIZAÇÃO E GESTÃO<br></span></span><br><br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> A secretaria Municipal de Cultura, Esporte e Lazer, como gestora das ações de esporte, lazer e atividade física, compartilha suas atividades com as organizações governamentais e não governamentais.<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> IV<br>DAS AÇÕES MUNICIPAIS<br></span></span><br><br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Na implementação da Política Municipal de Esporte e Lazer, são competências do Município:<br><br>Na área social:<br><br>a) desenvolver ações voltadas à inserção e promoção social do cidadão;<br>b) destacar a função social do esporte e do lazer como meio de afastar as crianças e adolescentes de problemas relacionados às drogas e ociosidade;<br>c) sensibilizar a comunidade quando à manutenção e gerenciamento de espaço e equipamentos públicos da cidade e também,quando ao respeito e à preservação do meio ambiente;<br>d) estimular parcerias com diversos segmentos da sociedade, em ações descentralizadas;<br>e) promover e incentivar a atualização profissional;<br>f) estabelecer parcerias com universidades para o desenvolvimento de projetos;<br>g) desenvolver ações que privilegiem os portadores de deficiências;<br>h) desenvolver ações voltadas ao idoso na promoção do seu bem-estar e sua integração social.<br><br>Na área do esporte:<br><br>a) realizar eventos que possibilitem a participação de atletas de alto nível;<br>b) organizar e participar de eventos esportivos estudantis;<br>c) promover ações esportivas diferenciadas que possibilitem a integração social, respeitando a cultura corporal;<br>d) proporcionar atividades de iniciação esportiva a crianças e adolescentes.<br><br>Nas áreas do lazer:<br><br>a) desenvolver ações voltadas para diferentes segmentos da sociedade, em atividades educativas, sócio recreativas e culturais que propiciem a participação espontânea, a ocupação do tempo disponível, o incentivo à criatividade e à melhoria da condição física;<br>b) realizar eventos em datas alusivas;<br>c) promover assessoramento e apoio técnico a entidades governamentais e não governamentais, na construção de equipamentos e materiais de lazer e práticas de atividades lúdicas;<br>d) estimular a prática de atividades sócio recreativas e culturais, visando a apropriação dos espaços públicos multifuncionais, por parte da população.<br><br>Na área da atividade física:<br><br>criar uma rede de atenção à população através da informação, sensibilização, incentivo e oferta de atividade física, visando mudança de atitudes.<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> V<br>DAS DISPOSIÇÕES GERAIS<br></span></span><br><br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> O Poder Execultivo regulamentará esta Lei, no prazo de 90 ( noventa ) dias a partir da data de sua publicação.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>CÂMARA MUNICIPAL DE FEIRA DE SANTANA, em 03 de Agosto de 2005.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>RESOLUÇÃO Nº 103/1977</h2><br>FIXA A REMUNERAÇÃO DE VEREADORES DE FEIRA DE SANTANA E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Faço saber que a Câmara Municipal de Feira de Santana, Estado da Bahia, no uso de suas atribuições, e de acordo com o Artigo 65, item IV da Lei 3531, de 10 de novembro de 1976, promulga a seguinte Resolução:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> É fixada a remuneração dos Vereadores de acordo com os critérios e limites estabelecidos na Lei Complementar nº 25 de 02 de julho de 1975.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> A remuneração atribuída a cada Vereador será constituída de duas partes: Fixa, 50% (cinquenta por cento) e variável 50% (cinquenta por cento).<br><br>Parágrafo Único - O cálculo do valor das sessões ordinárias e extraordinárias será efetuado pela Secretaria da Câmara.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> O Vereador só poderá receber a parte variável da remuneração se comparecer às Sessões, comprovado pela lista de presença e participar das votações, se houver.<br><br>§ 1º Nos períodos de recesso o Vereador terá direito à remuneração total.<br><br>§ 2º Por sessão extraordinária, até o limite de 04 ( quatro) por mês, o Vereador perceberá o valor correspondente a parte variável de uma sessão, comprovado o seu comparecimento.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Serão remuneradas as sessões ordinárias estabelecidas na Resolução anualmente aprovada, no início de cada legislatura.<br><br>§ 1º Somente poderá ser remunerada uma Sessão por dia e, no máximo, 04 (quatro) extraordinárias por mês.<br><br>§ 2º Entende-se como sessões ordinárias as que se realizarem nos dias de terça, quarta e quintafeira, de acordo com o estabelecido pelo Artigo 109 do <a class="link_law" data-original-title="Regimento Interno da Câmara" data-toggle="tooltip" href="/regimento-interno-feira-de-santana-ba" rel="tooltip">Regimento Interno da Câmara</a> Municipal e as demais como extraordinárias, com exceção das solenes.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> É vedado o pagamento ao Vereador, de qualquer vantagem pecuniária, como ajuda de custo, representação ou gratificação, não autorizada expressamente por esta Resolução.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> O Vereador licenciado por moléstia devidamente comprovada e para desempenhar missões temporárias de caráter cultural ou de interesse do Município, perceberá a parte fixa e variável da remuneração.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Sempre que houver alteração nos subsídios dos Deputados Estaduais, no Ato da Mesa, será reajustada a remuneração dos Vereadores.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> Sempre que houver aumento de população comprovado através de Certidão da Fundação Instituto Brasileiro de Geografia e Estatística - IBGE que altere a posição do Município em relação ao disposto nos itens I à IX do Artigo 4º da Lei Complementar nº 25, de 02 de julho de 1975, por ato da Mesa, será atualizada a remuneração de Vereadores.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> Esta Resolução entrará em vigor na data da sua publicação, revogadas as disposições em contrário, especialmente a Resolução nº  <a class="link_law" data-id="1948533" data-original-title=" Data da Norma: 17.07.1975 - DISPÕE SOBRE A FIXAÇÃO E PAGAMENTO DOS SUBSÍDIOS AOS VEREADORES E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/resolucao/1975/9/97/resolucao-n-97-1975-dispoe-sobre-a-fixacao-e-pagamento-dos-subsidios-aos-vereadores-e-da-outras-providencias" rel="tooltip">97</a>, de 17 de julho de 1975.<br><br>SALA DAS SESSÕES, 31 DE MAIO DE 1977.<br><br>RUBENS CARVALHO<br>Presidente<br><br>JOSÉ CARLOS MENDES DE CARVALHO<br>1º Secretário<br><br>WERTHER MASCARENHAS FARIAS<br>2º Secretário<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

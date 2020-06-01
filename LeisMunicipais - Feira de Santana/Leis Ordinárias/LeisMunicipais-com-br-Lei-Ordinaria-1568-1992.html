@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 1568, de 23 de junho de 1992</h2><br>ALTERA A LEI Nº  <a class="link_law" data-id="1611898" data-original-title=" Data da Norma: 08.11.1989 - ESTABELECE NORMAS PARA DECLARAR SOCIEDADE DE UTILIDADE PÚBLICA NO ÂMBITO MUNICIPAL." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1989/120/1205/lei-ordinaria-n-1205-1989-estabelece-normas-para-declarar-sociedade-de-utilidade-publica-no-ambito-municipal" rel="tooltip">1205</a>, DE 08 DE NOVEMBRO DE 1989, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, FAÇO saber que a Câmara Municipal decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Dê-se o nº 1 ao parágrafo único do art. 2º da Lei nº  <a class="link_law" data-id="1611898" data-original-title=" Data da Norma: 08.11.1989 - ESTABELECE NORMAS PARA DECLARAR SOCIEDADE DE UTILIDADE PÚBLICA NO ÂMBITO MUNICIPAL." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1989/120/1205/lei-ordinaria-n-1205-1989-estabelece-normas-para-declarar-sociedade-de-utilidade-publica-no-ambito-municipal" rel="tooltip">1.205</a>, de 08 de novembro de 1989, modificando-lhe a redação como a seguir e acrescente-se-lhe o § 2º com o teor de abaixo:<br><br>&quot;§ 1º O documento hábil para comprovar a data do início de atividade exigido na alínea &quot;c&quot; deste artigo é o Certificado de Registro no CADASTRO GERAL DO CONTRIBUINTE - CGC, do Ministério da Fazenda.<br><br>§ 2º Em se tratando de entidade de reconhecida e excepcional utilidade à comunidade, o prazo exigido na alínea &quot;C&quot;, poderá ser dispensado pelo Plenário da Câmara Municipal, exigido o quorum qualificado de maioria absoluta.&quot;<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Fica revogada a Lei nº  <a class="link_law" data-id="1612760" data-original-title=" Data da Norma: 19.11.1991 - ALTERA A ALÍNEA &#39;C&#39; DO ART. 2º DA LEI Nº 1205/89." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1991/150/1501/lei-ordinaria-n-1501-1991-altera-a-alinea-c-do-art-2-da-lei-n-1205-89" rel="tooltip">1.501</a>, de 19 de novembro de 1991.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> A presente Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Prefeitura Municipal de Feira de Santana, em 23 de junho de 1992.<br><br>DR. COLBERT MARTINS DA SILVA<br>Prefeito<br><br>Autor: Dival Figueiredo Machado<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>RESOLUÇÃO Nº 93/1974</h2><br>REORGANIZA O QUADRO DE PESSOAL DA CÂMARA MUNICIPAL E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>A Câmara Municipal de Feira de Santana, Estado da Bahia, decreta e promulga a seguinte Resolução:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> O Quadro de Funcionários da Secretaria da Câmara Municipal de Feira de Santana, organizado e reorganizado pelas Resoluções nº  <a class="link_law" data-id="1950708" data-original-title=" Data da Norma: 14.07.1948 - ORGANIZA O QUADRO DO PESSOAL DA SECRETARIA DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/resolucao/1948/0/3/resolucao-n-3-1948-organiza-o-quadro-do-pessoal-da-secretaria-da-camara-municipal-de-feira-de-santana" rel="tooltip">3</a>, de 14/07/1948; nº  <a class="link_law" data-id="1950708" data-original-title=" Data da Norma: 14.07.1948 - ORGANIZA O QUADRO DO PESSOAL DA SECRETARIA DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/resolucao/1948/0/3/resolucao-n-3-1948-organiza-o-quadro-do-pessoal-da-secretaria-da-camara-municipal-de-feira-de-santana" rel="tooltip">3</a>, de 06/06/1951; nº  <a class="link_law" data-id="1948550" data-original-title=" Data da Norma: 17.07.1963 - REORGANIZA O QUADRO DO PESSOAL DA CÂMARA E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/resolucao/1963/4/43/resolucao-n-43-1963-reorganiza-o-quadro-do-pessoal-da-camara-e-da-outras-providencias" rel="tooltip">43</a>, de 17/07/1963 e nº  <a class="link_law" data-id="1948618" data-original-title=" Data da Norma: 26.11.1969 - REORGANIZA O QUADRO DO PESSOAL DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/resolucao/1969/8/81/resolucao-n-81-1969-reorganiza-o-quadro-do-pessoal-da-camara-municipal-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">81</a>, de 26/11/1969, passará a ter a constituição seguinte:<pre> ______________________________________________<br>|1 - Diretor da Secretaria          |Nível X   |<br>|-----------------------------------|----------|<br>|1 - Vice Diretor                   |Nível IX  |<br>|-----------------------------------|----------|<br>|1 - Assessor Jurídico              |Nível VIII|<br>|-----------------------------------|----------|<br>|1 - Assistente Administrativo      |Nível VII |<br>|-----------------------------------|----------|<br>|2 - Redatores de Debates           |Nível VI  |<br>|-----------------------------------|----------|<br>|1 - Tesoureiro                     |Nível V   |<br>|-----------------------------------|----------|<br>|1 - Auxiliar de Administração      |Nível IV  |<br>|-----------------------------------|----------|<br>|2 - Datilógrafos                   |Nível III |<br>|-----------------------------------|----------|<br>|1 - Porteiro                       |Nível II  |<br>|-----------------------------------|----------|<br>|1 - Almoxarife                     |Nível  II |<br>|-----------------------------------|----------|<br>|1 - Mensageiro                     |Nível II  |<br>|___________________________________|__________| * tabela formatada pela equipe técnica do LeisMunicipais.com.br<br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Para fazer face ao artigo anterior ficam criados os cargos seguintes:<br><br>1 - Vice-Diretor<br>1 - Assistente Administrativo<br>1 - Tesoureiro<br>1 - Datilógrafo<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Fica aprovada a Tabela anexa, sob nº 1, constante de símbolos e valores, a qual fará parte integrante da presente Resolução.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Os cargos de Diretor da Secretaria, Vice-Diretor, Tesoureiro e Assistente Administrativo, passarão a ser cargos de provimento efetivo e terão remuneração constante da Tabela a que se refere o artigo anterior.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Os atuais funcionários da Câmara Municipal terão assegurados os seus lugares, devendo ser promovidos para cargos mais elevados, obedecendo os critérios fixados em lei.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Dentro do prazo de 30(trinta) dias da vigência desta Resolução, a Mesa regulamentará, através da portaria, as atribuições de cada um dos servidores da Câmara.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> O Presidente da Câmara, em prazo igual ao do artigo anterior, enquadrará os atuais servidores dando-lhes as denominações respectivas.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> A Mesa da Câmara, após cumprida a exigência contida no artigo 6º, promoverá concurso público para preenchimento ou regularização das vagas existentes no quadro, como preceitua os artigos 97 § 1º, e 108 § 1º e 2º, da Constituição Federal e as disposições estatutárias pertinentes.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> As despesas decorrentes com o cumprimento desta Resolução correrão por conta de verbas próprias consignadas no Orçamento Municipal para o presente exercício.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10</span></a> Esta Resolução entrará em vigor a partir de 01 de agosto de 1974, revogadas as disposições em contrário.<br><br>SALA DAS SESSÕES DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, 24 DE ABRIL de 1974.<br><br>ANTÔNIO CARLOS DALTRO COÊLHO<br>Presidente<br><br>RENATO RIBEIRO DE SÁ BITENCOURT CÂMARA<br>2º Secretário no exercício da 1ª Secretaria<br><br>OTAVIANO FERREIRA CAMPOS<br>2º Secretário Ad-hoc<br><br>TABELA 1<br><br>CARGOS DE PROVIMENTO EFETIVO SEGUNDO NÍVEIS DE VENCIMENTOS GRUPO OCUPACIONAL<pre> __________________________________________________<br>|           CARGOS           | NÍVEIS |Nº DE CARGOS|<br>|============================|========|============|<br>|ADiretor da Secretaria    |X       |           1|<br>|----------------------------|--------|------------|<br>|Vice-Diretor                |IX      |           1|<br>|----------------------------|--------|------------|<br>|Assessor Jurídico           |VIII    |           1|<br>|----------------------------|--------|------------|<br>|Assistente Administrativo   |VII     |           1|<br>|----------------------------|--------|------------|<br>|Redatores de Debates        |VI      |           2|<br>|----------------------------|--------|------------|<br>|Tesoureiro                  |V       |           1|<br>|----------------------------|--------|------------|<br>|Auxiliar de Administração   |IV      |           1|<br>|----------------------------|--------|------------|<br>|Datilógrafos                |III     |           2|<br>|----------------------------|--------|------------|<br>|Porteiro                    |II      |           1|<br>|----------------------------|--------|------------|<br>|Almoxarife                  |II      |           1|<br>|----------------------------|--------|------------|<br>|Mensageiro                  |II      |           1|<br>|____________________________|________|____________| * tabela formatada pela equipe técnica do LeisMunicipais.com.br<br>B - VENCIMENTOS DOS CARGOS DE PROVIMENTO EFETIVO<pre> ___________________________________________<br>|           CARGO           |  VENCIMENTOS  |<br>|===========================|===============|<br>|Diretor da Secretaria      |     C$ 1500,00|<br>|---------------------------|---------------|<br>|Vice-Diretor               |     C$ 1300,00|<br>|---------------------------|---------------|<br>|Assessor Jurídico          |     C$ 1008,00|<br>|---------------------------|---------------|<br>|Assistente Administrativo  |     C$ 1000,00|<br>|---------------------------|---------------|<br>|Redator de Debates         |      C$ 900,00|<br>|---------------------------|---------------|<br>|Tesoureiro                 |      C$ 800,00|<br>|---------------------------|---------------|<br>|Auxiliar de Administração  |      C$ 700,00|<br>|---------------------------|---------------|<br>|Datilógrafo                |      C$ 600,00|<br>|---------------------------|---------------|<br>|Porteiro                   |      C$ 500,00|<br>|---------------------------|---------------|<br>|Almoxarife                 |      C$ 500,00|<br>|___________________________|_______________| * tabela formatada pela equipe técnica do LeisMunicipais.com.br<br>SALA DAS SESSÕES DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, 24 DE ABRIL de 1974.<br><br>ANTÔNIO CARLOS DALTRO COÊLHO<br>Presidente<br><br>RENATO RIBEIRO DE SÁ BITENCOURT CÂMARA<br>2º Secretário no exercício da 1ª Secretaria<br><br>OTAVIANO FERREIRA CAMPOS<br>2º Secretário Ad-hoc<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

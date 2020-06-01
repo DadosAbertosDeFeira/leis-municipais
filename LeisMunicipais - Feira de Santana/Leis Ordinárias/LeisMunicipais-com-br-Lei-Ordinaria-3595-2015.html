@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3595 DE 17 DE DEZEMBRO DE 2015</h2><br>AUTORIZA O EXECUTIVO MUNICIPAL FIRMAR CONTRATO DE COMODATO COM ASSOCIAÇÃO COMUNITÁRIA RURAL SÍTIO DO MEIO E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, faz saber que a Câmara Municipal através do Projeto de Lei nº 158/2015, de autoria deste Poder Executivo aprovou, e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica o Município de Feira de Santana, por seu Poder Executivo, autorizado a firmar contrato de comodato com a Associação Comunitária Rural Sítio do Meio, entidade sem fins lucrativos, inscrita no CNPJ nº 08.560.601/0001-60, com sede no Povoado Sítio do Meio, no Distrito de Jaguara, neste Município, tendo por objetivo um imóvel, com área de 100m², situado no Povoado de Cascalheira, no Distrito de João Durval Carneiro (Ipuaçu), neste Município, onde funcionava a Escola Municipal Philadelfio Pereira Almeida.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O comodato firmado entre as partes tem por objetivo a utilização por parte do comodatário do imóvel para realização de eventos sociais, culturais, educacionais, esportivos, profissionalizantes, religiosos, ou qualquer outro tipo de atividade que atenda às necessidades da comunidade local, ficando vedada a utilização do imóvel para realização de eventos para fins lucrativos e que colaborem para o enriquecimento de particulares.<br><br>Parágrafo único. O prazo do contrato de comodato é 10 (dez) anos, podendo ser renovado por igual período.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> As obrigações e responsabilidades atribuídas ao comodante e à comodatária constam no contrato firmado entre ambos, conforme minuta que integra o Anexo I desta Lei.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Esta Lei entra em vigor na data de sua publicação.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Revogam-se as disposições em contrário.<br><br>Gabinete do Prefeito, 17 de dezembro de 2015.<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO MUNICIPAL<br><br>MARIO COSTA BORGES<br>CHEFE DE GABINETE DO PREFEITO<br><br>CLEUDSON SANTOS ALMEIDA<br>PROCURADOR GERAL DO MUNICÍPIO<br><br>EXPEDITO CAMPODÔNIO ELOY<br>SECRETÁRIO MUNICIPAL DA FAZENDA<br><br>CARLOS ALBERTO OLIVEIRA BRITO<br>SECRETÁRIO MUNICIPAL DE PLANEJAMENTO<br><br>PUBLICADO NO DIÁRIO OFICIAL ELETRÔNICO DIA 18 DE DEZEMBRO DE 2015.<br><br><a class="btn btn-danger" href="https://leismunicipais.com.br/BA/FEIRA.DE.SANTANA/ANEXO-LEI-3595-2015-FEIRA-DE-SANTANA-BA.zip" title="Anexo - Lei nº 3595/2015 de Feira de Santana"><span style="font-weight:bold">Download:</span> Anexo - Lei nº 3595/2015 - Feira de Santana-BA</a><p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

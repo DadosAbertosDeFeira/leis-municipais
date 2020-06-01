@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3623 DE 01 DE JUNHO DE 2016</h2><br>&quot;AUTORIZA A ABERTURA DE CRÉDITO ADICIONAL ESPECIAL, NA FORMA QUE INDICA, E DÁ OUTRAS PROVIDÊNCIAS. &quot;<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, no uso de suas atribuições, Faço Saber que a Câmara Municipal, através do Projeto de Lei nº 36/2016, de autoria Poder Executivo, decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica o Poder Executivo autorizado a abrir Orçamento do Município, no corrente exercício, crédito adicional especial no valor de R$ 950.000,00 (novecentos e cinquenta mil reais).<br><br>Parágrafo único. O Crédito autorizado será destinado a:<br><br>I - alocar recursos para o elemento 61 - Aquisição de imóveis, modalidade de aplicação 90 - Aplicações Diretas, Grupo de Despesa 4 - Investimentos, Categoria Econômica 4 - Despesas de Capital, fonte 50 - Receitas Próprias de Entidades de Administração Indireta, na Atividade 2224 - &quot;Manutenção do PROCON&quot; (Código 14.122.004.2224), Órgão 02 - Gabinete do Prefeito e Unidade 0228 - Superintendência Municipal de Defesa do Consumidor - PROCON no valor de R$ 930.000,000 (novecentos e trinta mil reais);<br><br>II - alocar recursos para o elemento 36 - Outros Serviços Terc. Pessoa Física, modalidade de aplicação 90 - Aplicações Diretas, Grupo de Despesa 3 - Outras Despesas Correntes, Categoria Econômica 3 - Despesas Correntes, fonte 00 - de tesouro e 29 - Transferências de Recursos do Fundo Nacional de Assistência Social, na atividade 2210 - &quot;Benefícios Eventuais&quot; (Código 08.244.067.2210), Órgão 12 - Secretaria Municipal de Desenvolvimento Social e Unidade 1224 - Unidade Gestora do Fundo Municipal de Assistência Social - FMAS no valor de R$ 20.000,00 (vinte mil reais), conforme Anexo I.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Os recursos disponíveis para atender as despesas recorrentes do presente crédito especial, ocorrerão por anulação de despesas no valor de R$ 20.000,00 (vinte mil reais) conforme Anexo II e decorrente de incorporação de R$ 930.000,00 (novecentos e trinta mil reais) e do superávit financeiro apuro no Balanço Patrimonial de 2015 no fonte 50, conforme Anexo III.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Fica o Poder Executivo, havendo necessidade respeitada às demais prescrições constitucionais e nos termos da Lei nº 4.320/64, autorizado a fazer suplementação nas ações descritas no Anexo I deste Projeto de Lei, obedecendo a limites estabelecidos no art. 6º da Lei Orçamentária Anual nº 3.600, de 28 de dezembro de 2015.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogando-se as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, em 01 de junho de 2016.<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO MUNICIPAL<br><br>MARIO COSTA BORGES<br>CHEFE DE GABINETE DO PREFEITO<br><br>EXPEDITO CAMPODÔNIO ELOY<br>SECRETÁRIO MUNICIPAL DA FAZENDA<br><br>PUBLICADO NO DIÁRIO OFICIAL ELETRÔNICO DIA 02 DE JUNHO DE 2016.<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI PROMULGADA Nº 45/92</h2><br>ESTABELECE NORMAS PARA O ABATE DE ANIMAIS DESTINADOS AO CONSUMO NO MUNICÍPIO DE FEIRA DE SANTANA E ADOTA OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PRESIDENTE DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, NA CONFORMIDADE DO § 7º ARTIGO 77, DA LEI Nº <a class="link_law" data-id="1739637" data-original-title=" Data da Norma: 05.04.1990 - DISPÕE SOBRE A LEI ORGÂNICA DO MUNICIPIO DE FEIRA DE SANTANA E DA OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-promulgada/1990/3/37/lei-promulgada-n-37-1990-dispoe-sobre-a-lei-organica-do-municipio-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">37</a> DE 05 DE ABRIL DE 1990 DECRETA E PROMULGA A SEGUINTE LEI:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> É obrigatório em todos os matadouros, matadouros-frigoríficos e abatedouros estabelecidos no Município de Feira de Santana, o emprego de métodos científicos e modernos de insensibilização aplicados antes da sangria por instrumentos de percussão mecânica, por processamento químico (gás Co2), choque elétrico (eletronarcose), ou ainda, por outros métodos que impeçam o abate cruel de qualquer tipo de animal destinado ao consumo.<br><br>§ 1º É vedado o uso de marreta e da picada do bulbo (choupa), bem como ferir ou mutilar os animais antes da insensibilização.<br><br>§ 2º Nos casos em que se utilizarem tanques de escaldagem, a velocidade do trilho aéreo será regulada de forma a impedir a queda de animais ainda vivos neste recipiente.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O boxe deverá ser adequado para o uso do equipamento do abate de método científico, visando a contenção de um animal por vez.<br><br>§ 1º O fechamento do boxe da comporta somente será efetuada após a entrada do animal naquele compartimento evitando-se assim que a comporta venha atingir e ferir parte do corpo do animal.<br><br>§ 2º O choque elétrico, para mover animais no corredor de abate, terá a menor carga possível, usado com máximo critério e não será aplicado, em qualquer circunstância, sobre as partes sensíveis do animal, como mucosa, vulva, ânus, nariz e olhos.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> É vedado abate de fêmeas com mais de dois terços do tempo normal de gestação ou em parto recente, ou ainda, de animais caquéticos ou que padeçam de qualquer enfermidade, que torne a carne imprópria para o consumo.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> É vedado abate de qualquer animal que não tenha permanecido pelo menos 24 horas em descanso em dependência adequadas do estabelecimento.<br><br>§ 1º O período de repouso poderá ser reduzido quando o tempo de viagem não for superior a duas horas e o animal ficará sob controle sanitário.<br><br>§ 2º O repouso, em qualquer circunstância, não será inferior a seis horas.<br><br>§ 3º Durante o período de repouso o animal será alimentado somente com água.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> O corredor de abate será adequado à espécie do animal a que se destina, visando facilitar seus deslocamentos, sem provocar ferimentos ou contusões.<br><br>Parágrafo Único - O animal que cair no corredor de abate será insensibilizado no local onde tombou antes de ser arrastado para o boxe.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Os animais quando estiverem aguardando o abate não poderão ser alvos de maus tratos, provocações ou outras formas de falsa diversão pública, ou ainda, sujeitos a qualquer condição que provoque estresse ou sofrimento físico e psíquico.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> os animais doentes, agonizantes, com fraturas, contusões generalizadas ou hemorragias, deverão ser abatidos de forma emergencial, no local e com método científicos.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> Não será permitida a presença de menores de idade no local de abate nem de pessoas estranhas ao serviço, salvo funcionários autorizados, representantes de órgãos governamentais e membros de associações protetoras de animais, mediante autorização dos Serviços de Inspeção, desde que estejam devidamente uniformizados.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> Para efeito desta Lei, são aplicáveis as seguintes definições:<br><br>I - &quot;Matadouro Frigorífico&quot; - é o estabelecimento dotado de instalações completas para o abate de várias espécies vendidas em açougue com o aproveitamento dos subprodutos não comestíveis, possuindo instalações de frio industrial;<br><br>II - &quot;Matadouro&quot;- é o estabelecimento dotado de instalações adequadas para o abate de qualquer espécie vendidas em açougue com ou sem dependência para a industrialização;<br><br>III - &quot;Abatedouro&quot;- é o estabelecimento dotado de instalação para o abate de aves, suínos com peso máximo de 60 quilos, coelhos, ovinos e caprinos;<br><br>IV - &quot;Animais de Consumo&quot;- diz-se dos animais de qualquer espécie, destinados à alimentação humana ou de outros animais;<br><br>V - &quot;Métodos Científicos&quot;- são todos aqueles processos que provoquem a perda total da consciência e da sensibilidade previamente à sangria;<br><br>VI - &quot;Métodos Mecânicos&quot;- são aqueles que utilizam de pistolas mecânicas de penetração ou concussão que provoquem coma cerebral imediato;<br><br>VII - &quot;Métodos Elétricos&quot;- são os que se utilizam de aparelhos com eletrodos que provocam uma passagem de corrente elétrica pelo cérebro do animal, tornando-se inconsciente e insensível ( eletronarcose);<br><br>VIII - &quot;Métodos Químicos&quot;- é o caso do emprego do Co2 (dióxido de carbono), em mistura adequada com o ar ambiental, que provoque a perda de consciência nos animais.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10</span></a> Sem prejuízo das penalidades definidas pela Legislação Federal, Estadual, Municipal, o não cumprimento do estabelecido nesta Lei sujeitará o infrator às seguintes sanções:<br><br>I - multas simples ou diária, nos valores correspondentes, no mínimo, a 10 (dez) e, no máximo, a 1.000 (mil) UF (Unidades Fiscais) do Município de Feira de Santana ou por outro índice que venha substituí-lo, vigente na data da infração ou no dia imediatamente posterior, agravada em casos de reincidência específica, vedada a sua cobrança pelo Município, quando se já tiver sido aplicada pelo Estado ou União;<br><br>II - perda ou restrição de incentivos e benefícios fiscais concedidos pelo Município;<br><br>III - suspensão temporária de sua atividade, até 60 (sessenta) dias, por ato do Prefeito Municipal;<br><br>IV - suspensão definitiva de sua atividade, por ato do Prefeito Municipal, desde que ocorra qualquer das seguintes hipóteses:<br><br>a) reincidência continuada, caracterizada pela ação ou omissão inicialmente punida;<br>b) dolo, mesmo eventual;<br>c) infração reiterada no período noturno, em domingo, feriado e dia declarado ponto facultativo municipal;<br>d) danos permanentes à saúde humana;<br>e) emprego reiterado de métodos cruéis na morte de animais.<br><br>§ 1º O valor das multas referidas no inciso I deste Artigo será cobrado em dobro, se a infração tiver sido praticada no período noturno, em domingo, feriado ou dia declarada ponto facultativo municipal.<br><br>§ 2º Nos casos previstos nos incisos II e III deste Artigo, o ato declaratório da perda, restrição ou suspensão caberá à autoridade administrativa ou financeira que concedeu os benefícios, mediante a respectiva comunicação, de responsabilidades da autoridade competente.<br><br>§ 3º A suspensão temporária referida no inciso III poderá ser interrompida por ato do Prefeito Municipal no caso de comprovada a reparação do fato motivador da sanção.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11</span></a> Os órgãos e instituições públicos responsáveis pela aplicação desta lei deverão comunicar ao Ministério Público, de imediato, a inobservância de suas exigências e de seu regulamento.<br><br><a name="artigo_12"><span class="label label-pill label-danger">Art. 12</span></a> O disposto no Artigo 1º e no &quot;caput&quot; do Artigo 2º desta Lei será exigido a partir do décimo segundo mês de sua vigência.<br><br>Parágrafo Único - O prazo referido neste Artigo poderá ser prorrogado por até doze meses (12), a juízo da autoridade competente e mediante requerimento do interessado, desde que devidamente comprovada a impossibilidade técnica de adaptação de suas instalações e equipamentos às exigências contidas no Artigo 1º e no &quot;caput&quot; do Artigo 2º desta Lei.<br><br><a name="artigo_13"><span class="label label-pill label-danger">Art. 13</span></a> O Poder Executivo Municipal regulamentará o disposto nesta Lei, no prazo de 90 (noventa) dias, contados de sua publicação, e estabelecerá o procedimento administrativo e os agentes públicos para sua aplicação, bem como o valor das multas e o prazo de suspensão temporária de atividade, referidos nos incisos I e III do seu Artigo 10, de acordo com a gravidade da infração.<br><br><a name="artigo_14"><span class="label label-pill label-danger">Art. 14</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Câmara Municipal de Feira de Santana, em 12 de agosto de 1992.<br><br>DR. OYAMA DE FIGUEIREDO<br>PRESIDENTE<br><br>Autor: Manoel Messias Gonzaga.<br>DATA DE PUBLICAÇÃO: 12/08/1992<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

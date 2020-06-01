@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3024/2009</h2><br>DISPÕE DIRETRIZES PARA REALIZAÇÃO DE DESPESAS COM COMUNICAÇÃO SOCIAL, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Autor: Poder Executivo<br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do projeto de Lei nº 226/2009, de autoria do Poder Executivo, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> A publicidade de ato, programa, projeto, obra ou serviço, e campanhas de órgãos e entidades públicas, somente poderão ter caráter informativo, educativo ou de orientação social, e dela não poderemos contar nomes, Símbolos e imagens que caracterizem promoção pessoal de autoridades ou servidores públicos.<br><br>Parágrafo Único - Ficam também vedada a utilização de símbolos que combinados sejam associados a partido político nacional ou estrangeiro, estendendo-se a proibição á manutenção do mobiliário urbano e demais bens públicos.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> A publicação de leis, contratos e atos municipais é condição para a respectiva eficácia e deverá ser feita através de veiculo de divulgação local.<br><br>Parágrafo Único - A publicação dos atos administrativos e contratos da administração Publica Municipal, poderá ser resumida na forma de extrato, devendo, neste caso, ostentar todos os elementos necessários á sua perfeita compreensão.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> As despesas realizadas com publicidade oficial, assim compreendida aquelas destinadas a atender o quanto estabelecido no artigo 1º desta lei, não poderão ultrapassar a 1º (um por cento) do valor total do orçamento anual do Municipal.<br><br>I - O Limite estabelecido no caput deste artigo igualmente se aplica a:<br><br>a) Fundação instituída e mantida pelo Município;<br>b) Autarquias e fundos Municipais criados pelo Município;<br>c) Empresas Públicas Municipais.<br><br>II - O Limite estabelecido no caput deste artigo não se aplica a:<br><br>a) Ás despesas decorrentes de publicação oficiais na forma do art. 2º desta lei.<br>b) Ás despesas relativas á publicidade na forma do art. 1º desta lei, mas que tenham fonte de custeio diversa do orçamento municipal, caso em que serão computadores para efeitos desta lei apenas os valores a cargo do tesouro Municipal.<br>c) Publicações decorrentes de transferências intergovernamentais ou repasse a entidades civis.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Ficam alterados os seguintes cargos na estrutura organizacional do Executivo Municipal:<br><br>I - No Gabinete do Prefeito fica extinto um cargo de Assessor do Prefeito, símbolo DA - 1.<br><br>II - Na Secretaria Municipal de Administrativa fica extinta a Divisão de licitações, Contratos e Compras, e o cargo de Chefe de Divisão a ela correspondente, símbolo DA - 2.<br><br>III - No Gabinete do Prefeito fica criado o Departamento de Publicações, e o cargo de Diretor a ele correspondente, símbolo DAE.<br><br>IV - No departamento de Publicações, fica criada uma Divisão de Arquivo Expediente, e o de Chefe de Divisão a ele correspondente, símbolo DA - 2.<br><br>V - Na Secretaria Municipal de Administração fica criado o Departamento de a ele correspondente, símbolo DAE;<br><br>VI - No Departamento de Licenças e Contratos, ficam criadas a Divisão de Licitações e a Divisão de Administração de Contratos, e dois cargos de Chefe de Divisão a elas a elas correspondentes, símbolo DA - 2.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> O Poder Executivo Municipal editará os decretos e demais atos administrativos necessários á regulamentação e aplicação da presente lei, estando autorizado a realizar as alterações orçamentárias decorrentes do que aqui estabelecido.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>PREFEITURA MUNICIPAL DE FEIRA DE SANTANA, em 22 de Outubro de 2009.<br><br>DR.TARCÍZIO SUZART PIMENTA JÚNIOR<br>Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

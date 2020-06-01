@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>RESOLUÇÃO Nº 394/2002</h2><br>DISPÕE SOBRE O FUNCIONAMENTO TEMPORÁRIO DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>A CÂMARA MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, na conformidade do artigo 70, inciso VII, da Lei Municipal nº 37, de 05 de abril de 1990, e artigos 72, inciso III e, 138, § 2º, do Regimento Interno, promulga a seguinte Resolução:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> a Câmara Municipal de Feira de Santana, Estado da Bahia, exercerá as suas funções legislativas temporariamente no auditório da Secretaria Municipal de Saúde, situado na Avenida João Durval Carneiro, s/nº, na sede deste Município, onde serão realizadas as sessões plenárias ordinárias, extraordinárias, solenes e especiais, a partir de mês de setembro de corrente ano.<br><br>Parágrafo Único - O funcionamento temporário mencionado no caput deste artigo dar-se-á em consonância com o disposto no parágrafo único, do artigo 1º, da resolução nº <a class="link_law" data-id="1952838" data-original-title=" Data da Norma: 05.07.2002 - DISPÕE SOBRE O REGIMENTO INTERNO DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/resolucao/2002/39/393/resolucao-n-393-2002-dispoe-sobre-o-regimento-interno-da-camara-municipal-de-feira-de-santana" rel="tooltip">393</a>/2002 - Regimento Interno, enquanto durarem as reformas que estão sendo realizadas no prédio próprio desta Casa Legislativa, situado na Rua Visconde do Rio Branco nº 122, Centro.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Esta Resolução entrará em vigor na data da sua publicação, revogadas as disposições em contrário.<br><br>MESA DIRETIVA DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, EM 14 DE AGOSTO DE 2002.<br><br>ANTONIO CARLOS DALTRO COELHO<br>Presidente<br><br>ANTONIO FRANCISCO NETO<br>1º Vice-Presidente<br><br>JOSÉ FERNANDO DOS SANTOS SILVA<br>2º Vice-Presidente<br><br>GERMANO CORREIA DOS SANTOS<br>1º Secretário<br><br>FÁBIO FERNANDES DE MORAES LUCENA<br>2º Secretário<br><br>JOSÉ CARNEIRO ROCHA<br>3º Secretário<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

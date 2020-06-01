@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI PROMULGADA Nº 326/2016</h2><br>&quot;REDUZ PARA 40% O PERCENTUAL COBRADO DE TARIFA DO SERVIÇO DE ESGOTAMENTO SANITÁRIO EFETUADO PELA EMPRESA CONCESSIONÁRIA RESPONSÁVEL PELO SERVIÇO NO MUNICÍPIO DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS&quot;<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PRESIDENTE DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 14/2016, de autoria do Edil Pablo Roberto Gonçalves da Silva, e na conformidade do artigo 78, § 7º, da <a class="link_law" data-original-title="Lei Orgânica Feira de Santana BA" data-toggle="tooltip" href="/lei-organica-feira-de-santana-ba" rel="tooltip">Lei Orgânica</a> do Município, e artigo 25 e inciso V, do Regimento Interno, PROMULGA a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica a empresa concessionária responsável pelos serviços de esgotamento sanitário em Feira de Santana, obrigada a cobrar o percentual máximo de 40% (quarenta por cento) sobre o consumo de água, para a tarifa de serviço de esgotamento sanitário no Município de Feira de Santana.<br><br>§ 1º A redução no percentual cobrado a que se refere o caput deste artigo aplica-se à prestação de serviços públicos essências de operação, coleta, transporte, tratamento e disposição final dos esgotos sanitários desde as ligações prediais até o seu lançamento final no meio ambiente.<br><br>§ 2º A redução estatuída nesta Lei alcança qualquer denominação dada à cobrança pela prestação dos serviços públicos elencados no parágrafo anterior.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O não cumprimento da presente Lei acarretará à empresa infratora as seguintes penalidades:<br><br>I - advertência na primeira infração;<br><br>II - multa no valor de R$ 10.000,00 (dez mil reais) na segunda infração;<br><br>III - multa no valor de R$ 100.000,00 (cem mil reais) na terceira infração;<br><br>IV - cassação da permissão de exploração do serviço pelo executivo municipal, na quarta infração.<br><br>§ 1º Os valores estabelecidos nos incisos I e II deste artigo serão cobrados por cada infração.<br><br>§ 2º A multa de que trata o &quot;caput&quot; deste artigo será atualizada anualmente pela variação do Índice de Preços ao Consumidor Amplo - IPCA, apurado pelo Instituto Brasileiro de Geografia e Estatística - IBGE, acumulada no exercício anterior, sendo que, no caso de extinção deste índice, será aplicado outro que venha a substituí-lo.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> A redução da cobrança do serviço de esgotamento sanitário no Município de Feira de Santana, será por tempo indeterminado.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Fica a concessionária, obrigada a garantir o fechamento dos buracos, quando realizada intervenção na tubulação, devendo providenciar, às suas expensas, a recomposição da pavimentação das vias públicas, utilizando o material e respeitando os mesmos padrões de qualidade em que se encontravam anteriormente às obras, no prazo máximo de 2 (dois) dias úteis.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> O descumprimento de que trata o artigo anterior, ensejará multa diária no valor de R$ 50.000,00 (cinquenta mil reais), limitada a 30 (trinta) dias, a ser aplicada pela Agência Reguladora de Feira de Santana - ARFES, bem como seu envio à Procuradoria Geral do Município para promoção da competente ação judicial, caso haja necessidade.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> O Poder Executivo Municipal através da Agência Reguladora de Feira de Santana - ARFES, ficará encarregada de receber as denúncias e implementar a cobrança das multas.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> O Poder Executivo Municipal terá o prazo máximo de 60 (sessenta) dias para regulamentar a presente Lei, sem que exista qualquer contrariedade com os dispositivos acima mencionados.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>CAMARA MUNICIPAL DE FEIRA DE SANTANA, em 23 de Maio de 2016.<br><br>REINALDO MIRANDA VIEIRA FILHO<br>PRESIDENTE<br><br>PUBLICADA NO DIÁRIO OFICIAL ELETRÔNICO DIA 24 MAIO DE 2016.<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

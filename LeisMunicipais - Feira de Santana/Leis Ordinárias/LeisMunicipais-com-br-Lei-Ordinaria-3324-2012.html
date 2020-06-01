@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3324, DE 24 DE MAIO DE 2012.</h2><br>ALTERA DISPOSITIVO DA LEI Nº <a class="link_law" data-id="1555790" data-original-title=" Data da Norma: 26.04.2006 - DISPÕE SOBRE O COMÉRCIO DE ANIMAIS SILVESTRES EM RECINTOS E ÁREAS ADMINISTRADAS PELO PODER PÚBLICO MUNICIPAL, E DA OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2006/266/2668/lei-ordinaria-n-2668-2006-dispoe-sobre-o-comercio-de-animais-silvestres-em-recintos-e-areas-administradas-pelo-poder-publico-municipal-e-da-outras-providencias" rel="tooltip">2668</a>/2006, QUE &quot;DISPÕE SOBRE O COMÉRCIO ILEGAL DE ANIMAIS SILVESTRES EM RECINTOS E ÁREAS ADMINISTRADAS PELO PODER PÚBLICO MUNICIPAL, E DÁ OUTRAS PROVIDÊNCIAS&quot;.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O Prefeito Municipal de Feira de Santana, Estado da Bahia, faço saber que a Câmara Municipal, através do Projeto de Lei nº 47/2012, de autoria do Edil Marialvo Barreto, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Acrescenta-se ao art. 2º da Lei nº <a class="link_law" data-id="1555790" data-original-title=" Data da Norma: 26.04.2006 - DISPÕE SOBRE O COMÉRCIO DE ANIMAIS SILVESTRES EM RECINTOS E ÁREAS ADMINISTRADAS PELO PODER PÚBLICO MUNICIPAL, E DA OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2006/266/2668/lei-ordinaria-n-2668-2006-dispoe-sobre-o-comercio-de-animais-silvestres-em-recintos-e-areas-administradas-pelo-poder-publico-municipal-e-da-outras-providencias" rel="tooltip">2668</a>/2006 os § 1º e 2º com a seguinte redação:<br><br>&quot;Art. 2º ...<br><br>§ 1º Quando constatado o comércio de animais silvestres, vivos ou mortos (caça) em bancas de feiras livres municipais ou em equipamentos comerciais similares, a licença será Imediatamente cassada e em caráter irrevogável.<br><br>§ 2º Aplica-se o mesmo princípio quando a banca estiver sublocada.&quot;<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito, 24 de maio de 2012.<br><br>TARCÍZIO SUZART PIMENTA JÚNIOR<br>Prefeito Municipal<br><br>MILTON PEREIRA DE BRITTO<br>Chefe de Gabinete do Prefeito<br><br>JOSÉ ARISTOTELES RIOS NERY<br>Secretário Municipal de Turismo e Desenvolvimento Econômico<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

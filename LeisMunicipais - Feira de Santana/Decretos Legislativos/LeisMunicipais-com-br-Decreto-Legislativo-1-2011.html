@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>DECRETO LEGISLATIVO Nº 1, DE 02/03/2011</h2><br>CONCEDE A MEDALHA 8 DE MARÇO - DIA INTERNACIONAL DA MULHER ÀS SEGUINTES HOMENAGEADAS:<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>01 - LINDAURA DOS SANTOS SAMPAIO<br>(VER. AILTON ARAÚJO RIOS)<br>02 - HELENA SILVA VILLA FLOR<br>(VER. ANTÔNIO ALCIONE DA SILVA CEDRAZ)<br>03 - MARIA DO SOCORRO PITOMBRO CRISTO<br>(VER. ANTÔNIO CARLOS PASSOS ATAÍDE)<br>04 - IONE MONTENEGRO MANSUR DE CARVALHO<br>(VER. ANTÔNIO FRANCISCO NETO)<br>05 - DELCY SANTANA DE CARVALHO<br>(VER. ANTÔNIO MAURÍCIO SANTANA DE CARVALHO)<br>06 - DEJACIRA MARIA DE OLIVEIRA<br>(VER. ÂNGELO MÁRIO CERQUEIRA DE ALMEIDA)<br>07 - ELIZABETTE MATOS DE SANTANA<br>(VER. CARLOS ALBERTO COSTA ROCHA)<br>08 - ISABEL CRISTINA DE MACÊDO ALMEIDA<br>(VER.ª CÍNTIA DALTRO MACHADO)<br>09 - SONIA MARGARIDA DA SILVA ROCHA<br>(VER. DAVID EVANGELISTA LEITE NETO)<br>10 - IRAILDES DOS REIS DE JESUS LEMOS<br>(VER.ª EREMITA MOTA DE ARAÚJO)<br>11 - RITA DE CÁSSIA DANTAS SIMOURA CAMPOS<br>(VER. EWERTON CARNEIRO DA COSTA)<br>12 - DRA. MÁRCIA SUELY SILVA DO AMARAL<br>(VER. JOSÉ CARNEIRO ROCHA)<br>13 - EPONINA DE SOUZA MENDES<br>(VER. JOSÉ MARQUES DE MESSIAS)<br>14 - ALSONIA ALVES DE SOUZA VACAREZZA<br>(VER. JOSÉ SEBASTIÃO ALVES DE SOUZA)<br>15 - ROSELÂNDIA SOUZA FRANÇA<br>(VER. JUSTINIANO OLIVEIRA FRANÇA)<br>16 - DRA. EMÍLIA STELA DE ALMEIDA CRUZ<br>(VER. LUIS AUGUSTO DE JESUS)<br>17 - MARIA SANTANA DE ARAÚJO<br>(VER. MARIALVO BARRETO)<br>18 - MARIA JOSÉ ROCHA DOS SANTOS<br>(VER. OTÁVIO JOEL DE ARAÚJO)<br>19 - DRA. MARY DIVA PORTUGAL MAKHOUL<br>(VER. ROBERTO LUIS DA SILVA TOURINHO)<br>20 - MAGALI DE SÁ SOUZA VIEIRA<br>(VER. REINALDO MIRANDA VIEIRA FILHO)<br>21 - ANTONIA MARQUES CARDOSO<br>(VER. ROQUE PEREIRA DO CARMO)<br><br>Visualizar Ato: <a href="/BA/FEIRA.DE.SANTANA/DECRETO-LEGISLATIVO-1-2011-FEIRA-DE-SANTANA-BA.pdf" title="Decreto Legislativo nº 1/2011 - Feira de Santana">Decreto Legislativo nº 1/2011 - Feira de Santana-BA</a><p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

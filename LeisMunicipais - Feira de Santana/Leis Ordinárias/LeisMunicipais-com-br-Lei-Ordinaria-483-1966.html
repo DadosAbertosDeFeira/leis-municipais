@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 483, de 03 de junho de 1966</h2><br>ESTABELECE NORMAS PARA O FUNCIONAMENTO DO &quot;ESTÁDIO MUNICIPAL DE FEIRA DE SANTANA&quot; E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA. FAÇO SABER QUE A CÂMARA DE VEREADORES DECRETOU E EU SANCIONO A SEGUINTE LEI:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> O &quot;Estádio Municipal de Feira de Santana&quot; destina-se ao incentivo da Educação Física, à eugenia da raça e ao desenvolvimento do desporto estudantil e amadorista, devendo funcionar em colaboração com os estabelecimentos de ensino do Município e entidades outras, que se destinem ao preparo e à educação da juventude.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Serão admitidos, no &quot;Estádio Municipal de Feira de Santana&quot;, jogos torneios, campeonatos e quaisquer outras atividades desportivas ou festas cívicas, com a participação de clubes ou organizações desportivas amadoristas ou profissionais, com entradas pagas, ou não, mediante acordo com convênio com a Prefeitura Municipal, respeitando o calendário oficial aprovado.<br><br>§ 1º Quando nos casos previstos no artigo, forem cobrados ingressos da renda bruta, deverão ser recolhidos 10% (dez por cento) aos cofres municipais, incluído nessa percentagem os impostos e taxas acaso devidos ao Município, e mais 5% (cinco por cento) à Liga Feirense de Desportos Terrestres.<br><br>§ 2º Nos Jogos noturnos, para fazer face às despesas com a iluminação do estádio, a prefeitura recolherá mais 5% (cinco por cento) sobre a renda bruta.<br><br>§ 3º Nos jogos noturnos, para fazer face às despesas com a iluminação do Estádio, a Prefeitura recolherá mais de 5% (cinco por cento) sobre a renda bruta.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Fica criado o cargo de administrador do &quot;Estádio Municipal de Feira de Santana&quot;, subordinado à Secretaria de Educação e Cultura, com vencimentos correspondentes ao símbolo CC 1, provido por nomeação do prefeito e demissível <i>ad nutum</i>.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Compete ao administrador do &quot;Estádio Municipal de Feira de Santana&quot;:<br><br>a) Controlar e fiscalizar as rendas do Estádio, recolhendo semanalmente à tesouraria da Prefeitura, mediante detalhada prestação de contas as cotas especificadas nos parágrafos 1º e 2º, do art. 2º, desta Lei;<br>b) Elaborar e submeter à aprovação do Secretário de Educação e Cultura, mensalmente, o programa de atividade no Estádio;<br>c) Supervisionar e finalizar todos os serviços do Estádio, zelando pelo seu perfeito funcionamento;<br>d) Zelando pela boa ordem, conservação e asseio de todas as dependências do Estádio.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Todos os móveis e utensílios do &quot;Estádio Municipal de Feira de Santana&quot;, serão sujeitos a tombamento em livro próprio, ficando sob a responsabilidade do Administrador.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Anualmente, sob proposta do administrador, aprovada pelo Secretário de Educação e Cultura, o &quot;Estádio Municipal de Feira de Santana&quot; terá interrompida as suas atividades, por prazo nunca inferior a 15 (quinze) dias, para os reparos que se tornarem necessários e restauração do gramado.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Fica o Prefeito Municipal autorizado a promover a locação, por prazo não superior a 10 (dez) anos, de cadeiras cativas do &quot;Estádio Municipal de Feira de Santana&quot;, em número não excedente a 50% (cinqüenta por cento) das cadeiras de que for dotado o Estádio, mediante pagamento de preço a ser fixado por decreto, podendo, para tal fim, contratar os serviços de empresa idônea, com remuneração não superior a 10% (dez por cento) do total do preço de cada locação.<br><br>Parágrafo Único - O produto da locação das cadeiras será empregado nas obras de construção do estádio.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> O Prefeito Municipal poderá contrair empréstimos em Bancos ou Casas Bancários idôneas, para a conclusão do Estádio, até o limite de Cr$ 100.000.000 (Cem Milhões de Cruzeiros).<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> O Prefeito Municipal deverá incluir nos orçamentos anuais seguintes, verbas específicas, visando a conclusão do Estádio, ou para ressarcir obrigações assumidas com a sua construção.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10 -</span></a> O Prefeito Municipal regulamentará esta Lei no prazo de 30 (trinta) dias.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11 -</span></a> Esta Lei entrará em vigor na data da sua publicação, revogadas as disposições em contrário.<br><br>Prefeitura Municipal de Feira de Santana, 03 de junho de 1966.<br><br>JOSELITO FALCÃO DE AMORIM<br>Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

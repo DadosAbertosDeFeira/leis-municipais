@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3357, DE 28 DE MARÇO DE 2013.</h2><br>INSTITUI OS SELOS &quot;EMPRESA AMIGA DA CRIANÇA E DO ADOLESCENTE&quot; E O TÍTULO &quot;BENEMÉRITO AMIGO DA CRIANÇA E DO ADOLESCENTE&quot; NO MUNICÍPIO DE FEIRA DE SANTANA E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, no uso de suas atribuições, Faço saber que a Câmara Municipal, através do Projeto de Lei nº 019/2013, de autoria deste Poder Executivo, decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Ficam instituídos o selo &quot;Empresa Amiga da Criança e do Adolescente&quot;, para pessoas jurídicas, e o título &quot;Benemérito Amigo da Criança e do Adolescente&quot;, para pessoas físicas que contribuam voluntariamente com projetos objetivando o atendimento da criança e do adolescente no Município de Feira de Santana.<br><br>Parágrafo Único - O objetivo do selo e dos títulos instituídos no caput deste artigo é divulgar e estimular a participação de empresas e de pessoas físicas que venham propiciar projetos sociais destinados às crianças e aos adolescentes neste Município.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Para a concessão do selo &quot;Empresa Amiga da Criança e do Adolescente&quot; as pessoas jurídicas deverão atender cumulativamente os seguintes requisitos:<br><br>I - o preenchimento voluntário da cota aprendizagem previsto no art. 429, da CLT;<br><br>II - manutenção de contratos com no mínimo 20% (vinte por cento) de aprendizes que:<br><br>a) pertençam às famílias cuja renda familiar per capita seja de até meio salário mínimo;<br>b) tenham sido encontrados pelo Ministério Público do Trabalho ou Ministério do Trabalho e Emprego em situações de trabalho proibido, degradante ou em condições análogas à de escravo; ou<br>c) sejam egressos de programas sociais ou do sistema de cumprimento de medidas sócio-educativas e/ou estar em cumprimento de liberdade assistida ou semi-liberdade.<br><br>III - inclusão, em todos os contratos celebrados com prestadores de serviços, de previsão da observância das cotas de aprendizes, a partir do ano em que foi solicitado, da não exploração do trabalho infantil e não empregar adolescentes em atividades noturnas, perigosas, insalubres ou em qualquer atividade constante na Lista das Piores Formas do Trabalho Infantil, observando a legislação regulamentadora.<br><br>IV - não explorar o trabalho infantil e não empregar adolescente em atividades noturnas, perigosas, insalubres ou em qualquer atividade constante na Lista das Piores formas do Trabalho Infantil, observando a legislação regulamentora;<br><br>V - contratação prioritária de adolescentes entre 14 e 18 anos para preenchimento da cota aprendizagem;<br><br>VI - alertar os fornecedores contratados que a denúncia comprovada de trabalho infantil causará rompimentos da relação comercial;<br><br>VII - realizar ações de conscientização dos clientes, fornecedores e comunidades sobre os prejuízos do trabalho infantil;<br><br>VIII - desenvolver ações em benefício de crianças e Adolescentes, consistente na doação ao Fundo da Infância e Adolescência do Município do valor mínimo anual definido por resolução do Conselho Municipal dos Direitos da Criança e do Adolescente do Município de Feira de Santana.<br><br>Parágrafo Único - A empresa poderá efetuar o repasse da contribuição financeira prevista no inciso VIII em parcelas trimestrais, semestrais ou anual.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> São requisitos cumulativos para a concessão do título de &quot;Benemérito Amigo da Criança e do Adolescente&quot;:<br><br>I - não explorar o trabalho infantil doméstico e não empregar adolescentes em atividades constantes na Lista das Piores Formas do Trabalho Infantil, observando a legislação regulamentadora;<br><br>II - realizar ações de conscientização da sociedade sobre os prejuízos do trabalho infantil;<br><br>III - desenvolver ações em benefício de crianças e adolescentes, no âmbito do Município, com cunho social;<br><br>IV - efetivar uma doação ao Fundo da Infância e Adolescência do Município, do valor mínimo anual definido por resolução do Conselho Municipal dos Direitos da Criança e do Adolescente do Município de Feira de Santana;<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> O selo e o título serão outorgados em ato solene especialmente convocado para este fim, na primeira quinzena do mês de outubro, pelo Executivo Municipal, às pessoas físicas e jurídicas que forem indicadas pelo Conselho Municipal dos Direitos da Criança e do Adolescente do Município, em razão de terem atendido o disposto nesta Lei.<br><br>§ 1º As solicitações do selo e do título para o ano corrente deverão ser formuladas diretamente ao Conselho Municipal dos Direitos da Criança e do Adolescente no período compreendido entre o primeiro dia do mês de junho e até o último dia do mês de julho.<br><br>§ 2º As indicações deverão ser encaminhadas pelo Conselho Municipal da Criança e do Adolescente ao Chefe do Executivo Municipal de Feira de Santana até o final do mês de agosto de cada ano, em processo próprio, com parecer correspondente.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> A pessoa jurídica que possuir o título &quot;Empresa Amiga da Criança&quot; poderá usá-lo em publicidade com finalidade comercial e exemplo de responsabilidade social.<br><br>§ 1º Fica vedada a utilização do selo em embalagens ou materiais de produtos e serviços impróprios ou inadequados para crianças e adolescentes e que não respeitem sua condição peculiar de pessoa em desenvolvimento.<br><br>§ 2º Fica autorizada a utilização do selo pelas filiais da pessoa jurídica localizada no Município, desde que os dados apresentados ao Conselho Municipal dos Direitos da Criança e do Adolescente sejam consolidados, sendo a matriz da pessoa jurídica responsável pela utilização do selo por todas as suas unidades.<br><br>§ 3º A autorização para uso do selo não poderá ser transferida para outras pessoas jurídicas, ainda que façam parte do mesmo grupo econômico.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> O selo e o título serão confeccionados pela Prefeitura Municipal de Feira de Santana, em forma de diploma, e fino acabamento, com inscrições esteticamente elaboradas, constando o nome da pessoa jurídica ou física, o número desta lei e o ano da concessão.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Caberá ao Conselho Municipal dos Direitos da Criança e do Adolescente avaliar a possibilidade de rever a concessão do selo e do título nos casos em que tenha conhecimento de fatos que contrariem a proposta de certificação por responsabilidade social, assegurado o contraditório, submetendo a proposta ao Chefe do Executivo Municipal.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> A pessoa jurídica que não atender ao disposto nesta lei perderá o direito ao uso do selo e deverá retirá-lo de qualquer material de divulgação no prazo máximo de seis meses, contados a partir da data em que for comunicada pelo Conselho Municipal dos Direitos da Criança e do Adolescente, mediante correspondência com Aviso de Recebimento - AR, do cancelamento da certificação.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> Esta lei será regulamentada pelo Poder Executivo, no que couber, a partir da data de sua publicação.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10</span></a> As despesas decorrentes da execução desta Lei correrão por conta das verbas próprias do orçamento, suplementadas se necessário.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11</span></a> Esta lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito, 28 de março de 2013.<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO MUNICIPAL<br><br>MARIO COSTA BORGES<br>CHEFE DE GABINETE DO PREFEITO<br><br>CARLOS ANTÔNIO DE MORAES LUCENA<br>PROCURADOR GERAL DO MUNICÍPIO<br><br>JOÃO MARINHO GOMES JÚNIOR<br>SECRETÁRIO MUNICIPAL ADMINISTRAÇÃO<br><br>ILDES FERREIRA DE OLIVEIRA<br>SECRETÁRIO MUNICIPAL DE DESENVOLVIMENTO SOCIAL<br><br>EXPEDITO CAMPODÔNIO ELOY<br>SECRETÁRIO MUNICIPAL DA FAZENDA<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

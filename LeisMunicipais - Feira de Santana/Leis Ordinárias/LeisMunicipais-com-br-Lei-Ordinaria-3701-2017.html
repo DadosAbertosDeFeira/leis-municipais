@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3701 DE 23 DE MAIO DE 2017</h2><br>&quot;Dispõe sobre a criação e inclusão no Calendário Oficial a SEMANA MUNICIPAL DE PREVENÇÃO À VIOLÊNCIA CONTRA PROFISSIONAIS DA EDUCAÇÃO na rede municipal de ensino no município de Feira de Santana, e dá outras providências.&quot;<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 74/2017, de autoria do Edil Marcos Antonio dos Santos Lima, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica instituído e inserido no Calendário Oficial de Eventos do Município de Feira de Santana a Semana Municipal de Prevenção à Violência contra Profissionais da Educação na rede municipal de ensino de Feira de Santana, objetivando a conscientização do corpo escolar e da comunidade para a prevenção da violência contra os profissionais da educação.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Para efeitos da presente Lei ficam classificados como profissionais da educação os professores, dirigentes educacionais, orientadores educacionais, agentes administrativos e demais profissionais que desempenham suas atividades no ambiente escolar.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> A Semana Municipal de Prevenção à Violência contra Profissionais da Educação se efetivará anualmente, na terceira semana do mês de outubro.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Na Semana Municipal de Prevenção à Violência contra Profissionais da Educação serão desenvolvidas ações educativas através de palestras, seminários, conferencias e atividades culturais e de lazer, com a participação do Poder Público, instituições e autoridades, com objetivo de implementar ações preventivas.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Ficam instituídas as Secretarias Municipais de Prevenção à Violência e Promoção dos Direitos Humanos (SEPREV) e Secretaria Municipal de Educação como responsáveis pelo cumprimento da presente Lei.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do<br><br>Prefeito, 23 de maio de 2017.<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO MUNICIPAL<br><br>MARIO COSTA BORGES<br>CHEFE DE GABINETE DO PREFEITO<br><br>CLEUDSON SANTOS ALMEIDA<br>PROCURADOR GERAL DO MUNICÍPIO<br><br>PABLO ROBERTO GONÇALVES DA SILVA<br>SECRETÁRIO MUNICIPAL DE PREVENÇÃO À VIOLÊNCIA E PROMOÇÃO DOS DIREITOS HUMANOS<br><br>AYANA BASTOS MIRANDA RIBEIRO<br>SECRETÁRIA MUNICIPAL DE EDUCAÇÃO<br><br>PUBLICADO NO DIÁRIO OFICIAL ELETRÔNICO DIA 24 DE MAIO DE 2017.<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

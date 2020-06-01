@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3527/2015</h2><br>ALTERA DISPOSITIVOS DA LEI MUNICIPAL Nº <a class="link_law" data-id="1618232" data-original-title=" Data da Norma: 08.07.1993 - DISCIPLINA OS SERVIÇOS DE CARGAS EM VIAS PÚBLICAS, DISPONDO SOBRE ÁREA DE CARGA E DESCARGA, TONELAGEM MÁXIMA PERMITIDA, CIRCULAÇÃO DE VEÍCULOS TRANSPORTADORES DE CARGA E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1993/167/1672/lei-ordinaria-n-1672-1993-disciplina-os-servicos-de-cargas-em-vias-publicas-dispondo-sobre-area-de-carga-e-descarga-tonelagem-maxima-permitida-circulacao-de-veiculos-transportadores-de-carga-e-da-outras-providencias" rel="tooltip">1.672</a>/93, QUE FOI ALTERADA PELAS LEIS Nº <a class="link_law" data-id="" data-original-title=" Data da Norma: .. - " data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1999/9/90/lei-ordinaria-n-90-1999-este-ato-ainda-nao-esta-disponivel-no-sistema" rel="tooltip">90</a>/99 E Nº <a class="link_law" data-id="1544863" data-original-title=" Data da Norma: 28.11.2001 - ALTERA A REDAÇÃO DE DISPOSITIVO DA LEI Nº 1672/93, ALTERADA PELA LEI Nº 90/99, QUE DISCIPLINA OS SERVIÇOS DE CARGAS E DESCARGAS EM VIAS PÚBLICAS E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2001/228/2285/lei-ordinaria-n-2285-2001-altera-a-redacao-de-dispositivo-da-lei-n-1672-93-alterada-pela-lei-n-90-99-que-disciplina-os-servicos-de-cargas-e-descargas-em-vias-publicas-e-da-outras-providencias" rel="tooltip">2.285</a>/01, ATUALIZANDO E ESTABELECENDO AS NOVAS NORMAS PARA AS OPERAÇÕES DE CARGA E DESCARGA E A CIRCULAÇÃO DE VEÍCULOS DE GRANDE PORTE, DE TRATORES E DE TRAÇÃO ANIMAL NO MUNICÍPIO DE FEIRA DE SANTANA E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O Prefeito Municipal de Feira de Santana, Estado da Bahia, no uso de suas atribuições, Faço Saber que a Câmara Municipal, através do Projeto de LEI Nº 019/2015, de autoria do Poder Executivo, decreta e eu sanciono a seguinte<br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> I<br>DAS DISPOSIÇÕES PRELIMINARES<br></span></span><br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> A circulação de veículos de serviços e as operações de carga descarga no Município de Feira de Santana obedecerão às normas desta Lei.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Para fins desta Lei considera-se:<br><br>I - Operação de carga e descarga: a imobilização de veículos na via pública, pelo tempo estritamente necessário ao carregamento ou descarregamento de carga e deverá ser feito sempre paralelo ao meio fio no sentido do fluxo. (CTB, art. 47 e 48)<br><br>II - Veículo urbano de carga: caminhões ou quaisquer outros veículos automotores que atendam conjuntamente as seguintes características: largura máxima de 2,20m (dois metros e vinte centímetros); comprimento máximo de 6,50 m. (seis metros e cinqüenta centímetros) de pára-choque a pára-choque, com até 15% (quinze por cento) de tolerância e que possuam a espécie carga ou misto no CRLV;<br><br>III - Áreas e Vias com Restrição de Operação de Carga e Descarga: áreas e ruas do Município de Feira de Santana com restrição à operação de carga e descarga por veículos de grande porte e veículos de tração animal.<br><br>IV - Áreas e Vias com Restrição a Circulação: áreas ou ruas do Município de Feira de Santana com restrição à circulação de veículos de grande porte, tratores e veículos de tração animal.<br><br>V - Veículos de grande porte: veículos destinados ao transporte de carga e descarga com dimensões superiores ao descrito nO Art. 2º inciso II.<br><br>VI - Tratores: veículo automotor: com características caminhão-trator, trator de rodas, trator de esteiras e trator misto, para realizar trabalho agrícola, de construção, pavimentação e tracionar outros veículos e equipamentos.<br><br>VII - Tração animal: veículos tipo carroça, puxados por um ou mais animais.<br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> II<br>DAS OPERAÇÕES DE CARGA E DESCARGA<br></span></span><br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> As operações de carga e descarga em estabelecimentos comerciais e de serviços e a circulação por veículos de grande porte (acima de 6,50 metros) e de veículos de tração animal não poderão ser realizados nos períodos compreendidos entre:<br><br>I - 07 h (sete horas) e 19 h (dezenove horas), de segunda a sexta-feira;<br><br>II - 07 h (sete horas) e 13 h (treze horas), aos sábados.<br><br>III - Somente veículos de até 6,50 metros poderão fazer a Carga e Descarga entre os horários especificados<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> As áreas e vias com restrição de horário para operação de carga e descarga e de restrição à circulação, previstas no Anexo I desta Lei, são as seguintes:<br><br>I - Nas vias Av. Presidente Dutra, Rua Monsenhor Mario Pessoa, Av. Rio de Janeiro, Av. Getulio Vargas, Rua Olimpio Vital, Av. Maria Quitéria, Av. João Durval, Rua Pedro Américo de Brito, Av. José Falcão e Av. Noide Cerqueira;<br><br>II - Na área central da cidade limitada pelas seguintes vias: iniciando na Rua Carlos Valadares, esquina com Av. Maria Quitéria, deste ponto segue até a esquina com a Av. Presidente Dutra; deste ponto, passando pela Rua Mons. Mario Pessoa até a Praça da Matriz, segue pela Rua Desembargador Felinto Bastos até a Praça Fróes da Mota, segue pela Rua São José até a Rua Carlos Valadares, concluindo o perímetro da área de controle;<br><br>§ 2º Constituem exceções ao cumprimento dos horários fixados neste artigo as operações de carga e descarga e circulação:<br><br>I - realizadas por veículos urbanos de carga que não excedam a 6.50 metros ou a tolerância como descrito no art. 2º, inciso II, desta Lei.<br><br>II - e para veículos de grande porte acima de 6,50 metros ou como descrito no inciso II, do art. 2º, que estejam envolvidos na execução dos seguintes serviços:<br><br>a) tratamento e abastecimento de água;<br>b) assistência médica e hospitalar;<br>c) coleta de lixo ou entulho;<br>d) prestadores de serviços públicos devidamente identificados;<br>e) asfaltamento;<br>f) remoção de veículos sinistrados ou em pane, por meio de caminhões reboque.<br><br>§ 3º a carga e descarga em vias públicas realizada com veículos urbanos de carga e descarga só será permitida em locais sinalizados para esta finalidade.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Fica delegada à Superintendência Municipal de Trânsito - SMT a competência para re-definir ou modificar as Zonas de Restrição de Operação de Carga e Descarga baseado em definições técnicas e após análise e com prévia anuência das entidades representativas interessadas.<br><br>Parágrafo Único - A SMT poderá emitir autorização mediante solicitação prévia com até 72 (setenta e duas) horas de antecedência, em caráter extraordinário, a carga e descarga de bens e mercadorias e a circulação em logradouros específicos pertencentes às áreas definidas como Áreas e Vias com restrição por veículos acima de 6.50 metros e 2.20 de largura.<br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> III<br>DAS NORMAS DE CIRCULAÇÃO<br></span></span><br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Fica proibido o trânsito de veículos de grande porte, tratores e veículos de tração animal nas Áreas e Vias com restrição do Município de Feira de Santana, nos períodos especificados no art. 3º, parágrafos I e II desta Lei:<br><br>§ 1º Veículos tipo basculante (caçambas) de acordo com os artigos 102 e 103 do CTB, ao transitar pelo município com carga deverá providenciar cobertura apropriada para a carga que transportar e quem não cumprir poderá ser penalizado de acordo com os art. 24, parágrafos XX e XXI da mesma Lei.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Os veículos com mais de uma unidade tracionada ficam proibidos de transitar pelas áreas com restrição de carga e descarga e de circulação em qualquer horário e dia da semana.<br><br>Parágrafo Único - Fica proibido o estacionamento de veículos de grande porte carregados ou não nas vias públicas da cidade entre as 00:00 horas e 06:00 horas, exceto quando executando operação de carga e descarga e quando for permitido não poderá perturbar, prejudicar ou interromper o fluxo de veículos ou a locomoção de pedestres no local, bem como obedecer às regras de circulação e conduta descritas no Capítulo XV do CTB.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> A Superintendência Municipal de Trânsito será o órgão responsável:<br><br>a) pela aplicação da sinalização horizontal e vertical;<br>b) pela realização de campanhas educativas;<br>c) pela sinalização dos acessos da cidade com placas de advertência, indicativas e de regulamentação, em parceria com outros órgãos, nas rodovias que cruzam a região com o intuito de alertar os condutores sobre as proibições de circulação e carga e descarga;<br>d) pela apreensão e reboques dos veículos infratores e aplicando multas;<br>e) peia disponibilização das áreas de carga e descarga, observando o período de adaptação descrito no art. 13 desta Lei.<br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> IV<br>DAS DISPOSIÇÕES FINAIS E TRANSITÓRIAS<br></span></span><br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> Caberá à Superintendência Municipal de Trânsito - a SMT, no âmbito das suas competências, realizar atividades de fiscalização das operações de carga e descarga e circulação previstas nesta Lei, através dos Agentes de Trânsito e demais prepostos disponíveis.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10</span></a> A competência da Entidade Executiva de Trânsito do Município, bem como as sanções, infrações e penalidades estão previstas na Lei nº 9.503, no Artigo 24 e no Capitulo XV do CTB e as infrações dispostas desta Lei acarretará na aplicação das penalidades legais pertinentes.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11</span></a> Caberá à SMT expedir normas complementares para a aplicação desta Lei, inclusive no tocante à sua fiscalização.<br><br><a name="artigo_12"><span class="label label-pill label-danger">Art. 12</span></a> Os casos excepcionais deverão ser submetidos previamente à apreciação da Superintendência Municipal de Trânsito - a SMT, que poderá conceder autorização especial, especificando dia e hora para a realização da operação de carga e descarga, circulação e estacionamento.<br><br><a name="artigo_13"><span class="label label-pill label-danger">Art. 13</span></a> O prazo para que a Superintendência Municipal de Trânsito comeca a aplicar as sanções cabíveis para quem desrespeitar o disposto contido nesta Lei, será de no máximo 45(quarenta e cinco) dias, podendo ser prorrogado por igual período a contar da publicação desta Lei.<br><br><a name="artigo_14"><span class="label label-pill label-danger">Art. 14</span></a> As penalidades pecuniárias e administrativas para quem não cumprir o disposto nesta Lei, são as previstas na Lei Federal nº 9503/1997 (CTB) e nas Resoluções do CONTRAN - Conselho Nacional de Trânsito.<br><br><a name="artigo_15"><span class="label label-pill label-danger">Art. 15</span></a> Esta Lei entra em vigor da data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito, 09 de abril de 2015<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO MUNICIPAL<br><br>MARIO COSTA BORGES<br>CHEFE DE GABINETE DO PREFEITO<br><br>CLEUDSON SANTOS ALMEIDA<br>PROCURADOR GERAL DO MUNICÍPIO<br><br>EBENEZÉR NOEL CARNEIRO NOGUEIRA JÚNIOR<br>DIRETOR SUPERINTENDENTE DA SUPERINTENDÊNCIA MUNICIPAL DE TRÂNSITO.<br><br><a class="btn btn-danger" href="https://leismunicipais.com.br/BA/FEIRA.DE.SANTANA/ANEXO-LEI-3527-2015-FEIRA-DE-SANTANA-BA.zip" title="Anexo - Lei nº 3527/2015 de Feira de Santana"><span style="font-weight:bold">Download:</span> Anexo - Lei nº 3527/2015 - Feira de Santana-BA</a><p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI PROMULGADA Nº 99/2000</h2><br>AUTORIZA AO EXECUTIVO MUNICIPAL A CRIAR O FUNDO DE AVAL DO MUNICIPIO DE FEIRA DE SANTANA E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PRESIDENTE DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, ATRAVÉS DO PROJETO DE LEI Nº 120/99, DE AUTORIA DO EDIL ANTONIO CARLOS DALTRO COELHO, E NA CONFORMIDADE DO § 7º DO ART. 77, DA LEI Nº  <a class="link_law" data-id="1739637" data-original-title=" Data da Norma: 05.04.1990 - DISPÕE SOBRE A LEI ORGÂNICA DO MUNICIPIO DE FEIRA DE SANTANA E DA OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-promulgada/1990/3/37/lei-promulgada-n-37-1990-dispoe-sobre-a-lei-organica-do-municipio-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">37</a>, DE 05 DE ABRIL DE 1990, DECRETA E PROMULGA A SEGUINTE LEI:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica criado o fundo de Aval do Município de Feira de Santana, de natureza financeira, vinculada a Secretaria Municipal de Desenvolvimento Econômico, com a finalidade de prover recursos para honrar o aval prestado em nome dele em operações de crédito realizadas pelo Banco do Nordeste do Brasil S/A e outros bancos com programas similares.<br><br>Parágrafo Único - Poderão ser avaliadas pelo Fundo as operações e créditos que o Banco do Nordeste do Brasil S/A e outros bancos com programas similares, celebre de acordo com as regras, termos e condições dos seus programas e crédito, com agentes econômicos localizados no município de Feira de Santana e que ai exerçam a sua atividade econômica.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O patrimônio inicial do Fundo de Aval será constituído mediante a transferência de recursos originários de verba a ser locada no Orçamento Municipal (lei orçamentária).<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Constituem recursos do Fundo de Aval:<br><br>a) As condições cobradas por conta da garantia prestada em seu nome;<br>b) O resultado das aplicações financeiras dos recursos;<br>c) A recuperação de crédito de operações honradas com recursos por ele providos;<br>d) A reversão de saldos não aplicados;<br>e) Outros recursos destinados pelo Poder Público ou por particulares a titulo de doação e empréstimos.<br><br>§ 1º O saldo positivo apurado em cada exercício será transferido para o exercício seguinte, a crédito de Fundo Aval<br><br>§ 2º As disponibilidades financeiras do Fundo de Aval serão aplicadas no banco do Nordeste do Brasil S/A e outros bancos com programas similares, nos produtos financeiros deste.<br><br>§ 3º O Banco do Nordeste do Brasil S/A e outros bancos com programas similares, será gestor do Fundo de Aval, devendo seus direitos e obrigações, decorrentes dessa condição, ser estabelecidas mediante convênio celebrado com a Prefeitura Municipal de Feira de Santana.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> O Fundo de Aval cobrará 100% (cem por cento) do valor de cada operação de crédito.<br><br>§ 1º O reajusto do valor do aval prestado será feito na forma estabelecida no § 3º do artigo precedente.<br><br>§ 2º Será devida ao Fundo de Aval comissão que será cobrada pelo Banco do Nordeste do Brasil S/A em cada uma das operações, revertendo seu valor para o Fundo.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> O convênio de que trata o § 3º estabelecerá ainda:<br><br>a) O volume máximo de operações que serão realizadas;<br>b) Os percentuais da comissão prevista no § 2º do artigo procedente<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Esta lei entrará em vigor na data da sua publicação.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Revogam-se as disposições em contrário.<br><br>CÂMARA MUNICIPAL DE FEIRA DE SANTANA, EM 16 DE OUTUBRO DE 2000.<br><br>Ver. EVERTON PEREIRA CERQUEIRA<br>PRESIDENTE<br><br>Autor: Antonio Carlos Daltro Coelho<br>DATA DE PUBLICAÇÃO: 16/10/2000<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

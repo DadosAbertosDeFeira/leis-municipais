@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 551, de 01 de dezembro de 1967</h2><br>DISPÕE SOBRE OS PREÇOS DOS SERVIÇOS EXPLORADOS DIRETAMENTE PELO MUNICÍPIO, O USO DE SEUS BENS E O FORNECIMENTO DE UTILIDADES PRODUZIDAS PELO MUNICÍPIO.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA. Faço saber que a Câmara Municipal decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> As rendas provenientes dos serviços de natureza industrial, comercial e civil, prestados pelo Município, em caráter de empresa e suscetíveis de serem explorados por empresa privada, são para os efeitos desta Lei, considerados preços.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> A fixação dos preços para os serviços que sejam monopólio do Município terá por base o custo unitário.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Quando não for possível a obtenção do custo unitário, a fixação far-se-á levando-se em consideração: o custo total do serviço verificado no último exercício encerrado; a flutuação nos preços de aquisição dos fatores de produção do serviço e o volume de serviços prestados no exercício encerrado e a prestar no exercício considerado.<br><br>§ 1º O volume de serviço, para efeito do disposto neste artigo, será medido, conforme o caso, pelo número de utilidades produzidas ou fornecidas pelo número de ligações feitas ou pela média de usuários atendidos.<br><br>§ 2º O custo total, para efeito do disposto neste artigo, compreenderá custos de produção, manutenção e administração, bem assim as reservas para recuperação do equipamento e expansão do serviço.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Quando o Município não tiver o monopólio do serviço, a fixação do preço será feita com base nos preços de mercado.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Fica o Poder Executivo autorizado a fixar os preços dos serviços até o limite da recuperação do custo total; a fixação de preços além desse limite dependerá da Lei autorizativa da Câmara Municipal.<br><br>Parágrafo Único - O Executivo publicará anualmente, uma relação de preços afixados para os serviços.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> O sistema de preços do Município compreende os seguintes serviços, além de outros que vierem a ser prestados:<br><br>I - de luz e energia elétrica;<br><br>II - de matadouros;<br><br>III - de mercados e entrepostos;<br><br>IV - de feiras e exposições de gado.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> O não pagamento dos débitos resultantes do fornecimento de utilidades produzidas ou de uso das instalações mantidas pela Prefeitura, em razão da exploração direta de serviços municipalizados, acarretará, decorridos os prazos regulamentares, o corte do fornecimento ou a suspensão do uso.<br><br>Parágrafo Único - O corte do fornecimento ou a suspensão do uso de que trata esse artigo é aplicável, também, nos casos de infração outras, praticadas pelos consumidores ou usuários, previstos em posturas ou regulamentos próprios.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> O despejo de ocupantes de espaços em mercados, ou em prédios e terrenos municipais, equiparamse as penalidades previstas em posturas e regulamentos próprios.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> As penalidades serão aplicadas conforme o caso, apenas quanto aos pagamentos que devem ser feitos &quot;a posteriori&quot;, e após apropriados os depósitos, cauções ou fianças feitas como garantia do consumo ou uso.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10 -</span></a> Aplicam-se aos preços, no tocante a lançamento cobrança, pagamento, restituição, fiscalização, domicílio e obrigações acessórias dos usuários, dívida ativa, penalidade e processo fiscal, as disposições do Código Tributário Municipal.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11 -</span></a> O órgão incumbido da administração do serviço expedirá os regulamentos, portarias, circulares e avisos que se fizerem necessários à execução desta Lei.<br><br><a name="artigo_12"><span class="label label-pill label-danger">Art. 12 -</span></a> Esta Lei entrará em vigor a partir de 01 de janeiro de 1968, revogadas as disposições em contrário.<br><br>Prefeitura Municipal de Feira de Santana, 01 de dezembro de 1967.<br><br>DR. JOÃO DURVAL CARNEIRO<br>Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

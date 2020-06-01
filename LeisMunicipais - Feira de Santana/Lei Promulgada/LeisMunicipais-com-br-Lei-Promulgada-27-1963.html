@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI PROMULGADA Nº 27/1963</h2><br>PERDOA DÍVIDA ATIVA E CONCEDE ANISTIA FISCAL.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>CÂMARA MUNICIPAL DE FEIRA DE SANTANA DECRETA E PROMULGA A SEGUINTE LEI:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica perdoada a divida ativa constituída de Impostos, taxas ou proveniente de fóros e infrações, que não excedam a importância total de Cr$ 5.000,00 (Cinco mil cruzeiros) e que conte mais de (10) dez anos.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Fica isento do pagamento de multa e juros de mora o contribuinte que quitar sua dívida até 30 de Junho do corrente ano.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Os benefícios da presente Lei só se aplicam ao devedor que for reconhecidamente pobre.<br><br>Parágrafo Único - Considera-se reconhecidamente pobre o devedor que viver do seu salário, não superior ao dobro do salário mínimo da região, ou que possua como único bem uma propriedade rural de menos de (5) cinco hectares ou urbana de lançamento inferior a Cr$ 100.000,00 (Cem mil cruzeiros).<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> a dívida ativa até a importância de Cr$ 1.000,00 (mil cruzeiros) será perdoada sem as exigências constantes da presente Lei.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>PUBLIQUE-SE.<br><br>SALA das Sessões da Câmara Municipal de Feira de Santana, Em 12 de Junho de 1963.<br><br>JOSELITO FALCÀO DE AMORIM<br>PRESIDENTE<br><br>Autor: Francisco José Pinto dos Santos<br>DATA DE PUBLICAÇÃO: 12/06/1963<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

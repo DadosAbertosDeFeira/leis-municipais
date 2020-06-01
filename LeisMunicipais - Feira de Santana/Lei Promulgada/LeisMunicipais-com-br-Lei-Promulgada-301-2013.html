@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI PROMULGADA Nº 301/2013</h2><br>INSTITUI O PROGRAMA DE INFORMAÇÕES SOBRE VIOLÊNCIA NAS ESCOLAS DA REDE MUNICIPAL DE ENSINO, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PRESIDENTE DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 77/2013, de autoria do Edil Eliziário Ribeiro da Silva, e na conformidade do artigo 78, § 7º, da Lei nº  <a class="link_law" data-id="1739637" data-original-title=" Data da Norma: 05.04.1990 - DISPÕE SOBRE A LEI ORGÂNICA DO MUNICIPIO DE FEIRA DE SANTANA E DA OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-promulgada/1990/3/37/lei-promulgada-n-37-1990-dispoe-sobre-a-lei-organica-do-municipio-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">37</a>, de 05 de Abril de 1990, e artigo 25 e inciso V, do Regimento Interno, PROMULGA a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica instituído o Programa de informações sobre violência nas escolas de Rede Municipal de Ensino que deverá constituir na elaboração de registro detalhado dos casos de violência ocorridas nas mesmas com os seguintes objetivos:<br><br>I - mapear e monitorar condutas ou atos de violência acorridos no ambiente escolar envolvendo alunos, professores, dirigentes e agentes públicos que atuam nas escolas;<br><br>II - identificar estabelecimentos de ensino com mais ocorrências relacionadas à violência;<br><br>III - promover ações sociais de combate a violência nas escolas identificadas;<br><br>IV - colaborar com a formação de políticas públicas necessárias para redução da violência no ambiente escolar;<br><br>V - adotar providências cabíveis, com vistas à redução da sensação de impunidade;<br><br>VI - colaborar com a melhoria e a qualidade dos serviços educacionais prestados na rede municipal de ensino, proporcionando um ambiente adequado ao aprendizado e desenvolvimento do educando;<br><br>VII - valorizar o corpo docente das escolas;<br><br>VIII - fortalecer a humanização e acolhimento do corpo discente.<br><br>Parágrafo Único - Para efeitos desta Lei, entende-se como conduta ou ato de violência o fato que provoque constrangimento físico ou moral, por meio de coação ou força física que resulte em atentado à integridade de alunos, professores, dirigentes e agentes públicos que atuam nas escolas, bem como qualquer ação que resulte em dano ao patrimônio público ou social.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O programa deverá identificar as escolas onde ocorrem conduta ou atos de violência, suas principais causas, o perfil das vítimas e dos agressores, o local dos fatos, bem como outros fatores considerados relevantes para a sua análise.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Os dados coletados no programa de informações que dispõe esta Lei serão copilados, tabulados, sistematizados e analisados com visitas à elaboração de relatórios que irão orientar ou subsidiar ações sociais, políticas de prevenção, estudos e pesquisas com o objetivo de reduzir ou erradicar a violência no ambiente escolar.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Fica autorizado o Poder Executivo através das Secretarias de Educação em parceria com a Seprev - Secretaria de Prevenção a Violência, Sedeso - Secretaria de Desenvolvimento Social, a adotar com a peculiaridade de cada escola, entre as quais:<br><br>I - implantação de projetos pedagógicos específicos nas escolas que sofrem com os maiores índices de violência, com vistas ao reconhecimento dos direitos humanos e a promoção da cultura da paz;<br><br>II - campanhas educativas de conscientização, valorização da vida e do exercício da cidadania;<br><br>III - ações culturais, esportivas e socais como forma de fortalecer a conexão entre a escola e a comunidade;<br><br>IV - qualificação e capacitação do corpo docente e agentes públicos que atuam a rede municipal de ensino;<br><br>V - seminários, debates e eventos que estimulam na prevenção e o combate à violência.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> As escolas da Rede Municipal de Ensino ficam obrigadas a notificar qualquer conduta ou ato de violência, formalizando-o em termo de ocorrência especialmente elaborado para este fim, que deverão subsidiar o relatório semestral.<br><br>§ 1º Termo de ocorrência é o registro informativo destinado a caracterizar o fato relacionado à conduta ou ato de violência ocorrido no ambiente escolar, sem prejuízo das demais providências a serem adotados, conforme legislação em vigor.<br><br>§ 2º O relatório semestral deverá ser devidamente preenchido e encaminhado ao órgão da administração municipal competente, conforme estabelecimento no art. 4º desta Lei.<br><br>§ 3º Poderão figurar como declarantes os dirigentes, professores e funcionários, pais ou responsáveis ou ainda qualquer cidadão que tiver conhecimento ou presenciado conduta ou ato de violência ocorrido no interior de estabelecimento de ensino.<br><br>§ 4º A Administração Municipal deverá manter sigilo, quando solicitado, providenciado junto aos órgãos competentes proteção aos declarantes.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> A cada 6 (meses) o Poder Executivo encaminhará relatórios à Câmara Municipal, contendo dados relativos ao mapeamento, monitoramento e medidas adotadas no combate a violência apurada pelo programa de informações ora instituído.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> O Poder Executivo regulamentará esta Lei.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>CÂMARA MUNCIPAL DE FEIRA DE SANTANA, em 10 de Dezembro de 2013.<br><br>JUSTINIANO OLIVEIRA FRANÇA<br>Presidente<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

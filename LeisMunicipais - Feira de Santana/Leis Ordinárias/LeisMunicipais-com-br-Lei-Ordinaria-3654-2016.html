@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3654 DE 19 DE DEZEMNRO DE 2016</h2><br>&quot;DISPÕE SOBRE AUTORIZAÇÃO DE DESCARTE OU DOAÇÃO DE LIVROS DIDÁTICOS IRRECUPERÁVEIS OU DESATUALIZADOS NO ÂMBITO DA SECRETARIA MUNICIPAL DE EDUCAÇÃO DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS.&quot;<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 100/2016, de autoria do Poder Executivo, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica o Poder Executivo autorizado a proceder ao descarte e doação de livros didáticos tidos como irrecuperáveis ou desatualizados que estejam na posse das unidades escolares municipais ou, no órgão central da Secretaria Municipal de Educação.<br><br>Parágrafo único. O descarte ou a doação, de que trata esta Lei, deverá ser regulamentado mediante Portaria.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Será designada uma Comissão, através de Portaria, pela Secretária Municipal de Educação, para análise dos livros didáticos que serão objeto de descarte ou doação.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Para fins desta Lei considera-se:<br><br>I - livros didáticos - todos os livros cedidos aos estudantes para uso durante o ano letivo;<br><br>II - doação sem encargos - cabível para livros avaliados como irrecuperáveis ou desatualizados pela Comissão de que trata o art. 2º, e consoante determinação do art. 34, II, &quot;a&quot;, da Lei Estadual nº <a class="link_law" data-id="20457" data-original-title=" Data da Norma: 01.03.2005 - DISPÕE SOBRE AS LICITAÇÕES E CONTRATOS ADMINISTRATIVOS PERTINENTES A OBRAS, SERVIÇOS, COMPRAS, ALIENAÇÕES E LOCAÇÕES NO ÂMBITO DOS PODERES DO ESTADO DA BAHIA E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="http://leisestaduais.com.br/ba/lei-ordinaria-n-9433-2005-bahia-dispoe-sobre-as-licitacoes-e-contratos-administrativos-pertinentes-a-obras-servicos-compras-alienacoes-e-locacoes-no-ambito-dos-poderes-do-estado-da-bahia-e-da-outras-providencias" rel="tooltip">9.433</a>/05, bem como do art. 17, II, &quot;a&quot;, da Lei Federal nº 8.666/93, observando o uso de interesse social expressamente justificado pela Autoridade Competente, mediante termo específico;<br><br>III - descarte - a doação sem encargos de livros, após 03 ( três) anos de efetivo uso, aos estudantes ou às cooperativas de reciclagem;<br><br>IV - irrecuperáveis - todos os livros que não puderem ser utilizados para os fins a que se destinam, devido a perda de suas características ou em razão da inviabilidade econômica de sua recuperação;<br><br>V - desatualizados - todos os livros cujos dados não estão atualizados e que não acompanham a evolução de sua área de especialização.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito, 19 de dezembro de 2016.<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO MUNICIPAL<br><br>MARIO COSTA BORGES<br>CHEFE DE GABINETE DO PREFEITO<br><br>CLEUDSON SANTOS ALMEIDA<br>PROCURADOR GERAL DO MUNICÍPIO<br><br>JAYANA BASTOS MIRANDA RIBEIRO<br>SECRETÁRIA MUNICIPAL DE EDUCAÇÃO<br><br>PUBLICADO NO DIÁRIO OFICIAL ELETRÔNICO DIA 20 DE DEZEMBRO DE 2016.<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

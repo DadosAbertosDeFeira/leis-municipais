@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 2252/2001</h2><br>MODIFICA E ACRESCENTA DISPOSITIVOS À LEI Nº  <a class="link_law" data-id="1612631" data-original-title=" Data da Norma: 21.06.1991 - INCLUI NO CALENDÁRIO DE FESTAS POPULARES DE FEIRA DE SANTANA, O FESTIVAL DE BANDAS E FANFARRAS, E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1991/143/1439/lei-ordinaria-n-1439-1991-inclui-no-calendario-de-festas-populares-de-feira-de-santana-o-festival-de-bandas-e-fanfarras-e-da-outras-providencias" rel="tooltip">1439</a>, DE 21 DE JUNHO DE 1991, QUE &quot;INCLUI NO CALENDÁRIO DE FESTAS POPULARES, O FESTIVAL DE BANDAS E FANFARRAS&quot; E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Autor: Antônio Carlos Daltro Coelho<br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia; FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 65/2001, de autoria do Edil Antonio Carlos Daltro Coelho, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Os artigos 2º, 3º, 4º e 5º da Lei Municipal nº  <a class="link_law" data-id="1612631" data-original-title=" Data da Norma: 21.06.1991 - INCLUI NO CALENDÁRIO DE FESTAS POPULARES DE FEIRA DE SANTANA, O FESTIVAL DE BANDAS E FANFARRAS, E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1991/143/1439/lei-ordinaria-n-1439-1991-inclui-no-calendario-de-festas-populares-de-feira-de-santana-o-festival-de-bandas-e-fanfarras-e-da-outras-providencias" rel="tooltip">1.439</a>, de 21 de junho de 1991, passam a vigorar com a seguinte redação:<br><br>&quot;Art. 2º A realização do evento dar-se-á, preferencialmente, no dia 18 de setembro, data comemorativa da Emancipação Política de Feira de Santana.<br><br>Parágrafo Único - O Festival será sempre realizado em dia de Domingo, mais próximo às festividades, quando estas não coincidirem com a data referida neste artigo.&quot;<br><br>&quot;Art. 3º Caberá à Secretaria Municipal de Cultura, Esporte e Lazer, através da sua Diretoria competente, a coordenação do Festival e sua organização e programação será efetivada por uma Comissão Especial designada pelo Titular da Secretaria, o qual apresentará um projeto ao Prefeito Municipal para a devida autorização para a realização do evento.&quot;<br><br>&quot;Art. 4º O Festival terá a supervisão técnica da entidade representativa das Fanfarras Associadas na Bahia, cabendo, entretanto, toda a responsabilidade ao Governo Municipal.<br><br>Parágrafo Único - O local das apresentações das Fanfarras será indicado pela Comissão Especial que verificará as dimensões da área, sua segurança, visibilidade e fácil acesso ao público.&quot;<br><br>&quot;Art. 5º A premiação será realizada logo após o encerramento da competição e conhecidos os resultados serão conferidos troféus de 1º, 2º e 3º lugares às categorias participantes.<br><br>§ 1º Será conferido o Troféu CIDADE DE FEIRA DE SANTANA, à Fanfarra que somar maior número de pontos, dentre todas as participantes do Festival, na pontuação tanto musical como nos Periféricos.<br><br>§ 2º Aos vencedores dos Periféricos serão concedidos Diplomas - Melhor Regente, Melhor Mor, Melhor Baliza, Melhor Pelotão Coreográfico e Melhor Pelotão Cívico.&quot;<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O Parágrafo Único do artigo 6º, passa ser o art. 7º, sendo que o artigo subseqüente levará o número 8.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Esta Lei entrará em vigor na data da sua publicação.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Revogam-se as disposições em contrário.<br><br>PREFEITURA MUNICIPAL DE FEIRA DE SANTANA, EM 28 DE JUNHO DE 2001.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

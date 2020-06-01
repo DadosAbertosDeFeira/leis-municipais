@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>DECRETO Nº 8864, de 11 de março de 2013.</h2><br>DECLARA SITUAÇÃO DE EMERGÊNCIA NAS ÁREAS DO MUNICÍPIO AFETADAS POR ESTIAGEM - COBRADE, CONFORME IN/MI 01/2012. ESTIAGEM - 1.4.1.1.0.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, no uso de suas atribuições legais, conferidas pela <a class="link_law" data-original-title="Lei Orgânica Feira de Santana BA" data-toggle="tooltip" href="/lei-organica-feira-de-santana-ba" rel="tooltip">Lei Orgânica</a> Municipal nº 37/90, e pelo inciso VI, do art. 8º, da Lei Federal nº 12.608, de 10 de abril de 2012, CONSIDERANDO:<br><br>I - A permanência das condições climáticas que motivaram o Decreto nº  <a class="link_law" data-id="" data-original-title=" Data da Norma: .. - " data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/decreto/2011/837/8378/decreto-n-8378-2011-este-ato-ainda-nao-esta-disponivel-no-sistema" rel="tooltip">8.378</a>, de 19 de setembro de 2011, Decreto nº  <a class="link_law" data-id="" data-original-title=" Data da Norma: .. - " data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/decreto/2012/851/8510/decreto-n-8510-2012-este-ato-ainda-nao-esta-disponivel-no-sistema" rel="tooltip">8.510</a>, de 19 de janeiro de 2012;<br><br>II - O Relatório da Amostragem do Programa Garantia Safra do Município de Feira de Santana, SAFRA 2010-2011, produzido pelos técnicos da Secretaria Municipal de Agricultura, Recursos Hídricos e Desenvolvimento Rural, demonstrou que houve déficit hídrico por ocasião das fases de floração e maturação dos grãos das culturas do feijão (Phaseolus vulgaris L.) e do milho (Zea mays), causando perdas na ordem superior a 90% da produção agrícola;<br><br>III - Que também para minimizar as perdas dos agricultores e viabilizar os recursos das esferas federal e estadual é necessário o reconhecimento formal da situação de emergência;<br><br>IV - Que o parecer da Coordenação Municipal de Proteção e Defesa Civil, relatando a ocorrência deste desastre é favorável à declaração de SITUAÇÃO DE EMERGÊNCIA, DECRETA:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica declarada Situação de Emergência nas áreas do município contidas no Formulário de Informações do Desastre - FIDE e demais documentos anexos a este Decreto, em virtude do desastre classificado e codificado como ESTIAGEM - COBRADE, conforme IN/MI nº 01/2012. ESTIAGEM - 1.4.1.1.0.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Autoriza-se a mobilização de todos os órgãos municipais para atuarem sob a coordenação da Coordenação Municipal de Proteção e Defesa Civil, nas ações de resposta ao desastre e reabilitação do cenário e reconstrução.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Autoriza-se a convocação de voluntários para reforçar as ações de resposta ao desastre e realização de campanhas de arrecadação de recursos junto à comunidade, com o objetivo de facilitar as ações de assistência à população afetada pelo desastre, sob a coordenação da Coordenação Municipal de Proteção e Defesa Civil.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> De acordo com o estabelecido nos incisos XI e XXV, do art. 5º, da Constituição Federal, autoriza-se as autoridades administrativas e os agentes de defesa civil, diretamente responsáveis pelas ações de resposta aos desastres, em caso de risco iminente, a:<br><br>I - penetrar nas casas, para prestar socorro ou para determinar a pronta evacuação;<br><br>II - usar de propriedade particular, no caso de iminente perigo público, assegurada ao proprietário indenização ulterior, se houver dano.<br><br>Parágrafo Único - Será responsabilizado o agente da defesa civil ou autoridade administrativa que se omitir de suas obrigações, relacionadas com a segurança global da população.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> De acordo com o estabelecido no at. 5º, do Decreto-Lei nº 3.365, de 21 de junho de 1941, autoriza-se o início de processos de desapropriação, por utilidade pública, de propriedades particulares comprovadamente localizadas em áreas de risco intensificado de desastre.<br><br>§ 1º No processo de desapropriação, deverão ser consideradas a depreciação e a desvalorização que ocorrem em propriedades localizadas em áreas inseguras.<br><br>§ 2º Sempre que possível essas propriedades serão trocadas por outras situadas em áreas seguras, e o processo de desmontagem e de reconstrução das edificações, em locais seguros, será apoiado pela comunidade.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Com base no inciso IV, do art. 24, da Lei nº 8.666, de 21.06.1993, sem prejuízo das restrições da Lei de Responsabilidade Fiscal (LC 101/2000), ficam dispensados de licitação os contratos de aquisição de bens necessários às atividades de resposta ao desastre, de prestação de serviços e de obras relacionadas com a reabilitação dos cenários dos desastres, desde que possam ser concluídas no prazo máximo de 180 (cento e oitenta) dias consecutivos e ininterruptos, contados a partir da caracterização do desastre, vedada a prorrogação dos contratos.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Este Decreto entra em vigor na data de sua publicação.<br><br>REGISTRE-SE, PUBLIQUE-SE E CUMPRA-SE.<br><br>Gabinete do Prefeito, 11 de março de 2013.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito Municipal<br><br>MÁRIO COSTA BORGES<br>Chefe de Gabinete do Prefeito<br><br>OZENY JOSÉ DE MORAES CERQUEIRA<br>Secretário Municipal de Agricultura, Recursos Hídricos e Desenvolvimento Rural<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

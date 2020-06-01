@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>EMENDA À <a class="link_law" data-original-title="Lei Orgânica Feira de Santana BA" data-toggle="tooltip" href="/lei-organica-feira-de-santana-ba" rel="tooltip">LEI ORGÂNICA</a> Nº 54/2018.</h2><br>Acrescenta e altera dispositivos da <a class="link_law" data-original-title="Lei Orgânica Feira de Santana BA" data-toggle="tooltip" href="/lei-organica-feira-de-santana-ba" rel="tooltip">Lei Orgânica</a> do Município de Feira de Santana, e dá outras providências.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>A CÂMARA MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, na conformidade do artigo 72, § 4º da <a class="link_law" data-original-title="Lei Orgânica Feira de Santana BA" data-toggle="tooltip" href="/lei-organica-feira-de-santana-ba" rel="tooltip">Lei Orgânica</a> do Município, e Proposta de Emenda nº 113/2018, de autoria de diversos Edis, promulga a seguinte Emenda:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Acrescente-se a alínea &quot;e&quot; no inciso I, do art. 19 da <a class="link_law" data-original-title="Lei Orgânica Feira de Santana BA" data-toggle="tooltip" href="/lei-organica-feira-de-santana-ba" rel="tooltip">Lei Orgânica</a> do Município, com a seguinte redação:<br><br>&quot;Art. 19. ...<br><br>a)<br>b)<br>c)<br>d)<br>e) extrato de contrato.&quot;<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> A alínea &quot;a&quot;, do inciso III, do art. 19, passará a ter a seguinte redação:<br><br>&quot;III - ....<br><br>a) Licenças ambientais, a serem também publicadas pelas empresas solicitantes.&quot;<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Esta Emenda entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>MESA DIRETIVA DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, em 08 de Maio de 2018.<br><br>Ver. JOSÉ CARNEIRO ROCHA<br>Presidente<br><br>Ver. EWERTON CARNEIRO DA COSTA<br>1º Vice-Presidente Ver. MARCOS ANTONIO DOS SANTOS LIMA<br>2º Vice-Presidente Ver. ISAÍAS DOS SANTOS<br>3º Vice-Presidente Ver. GERUSA MARIA BASTOS SILVA SAMPAIO<br>1º Secretária<br><br>Ver. LUIZ AUGUSTO DE JESUS<br>2º Secretário Ver. FABIANO NASCIMENTO DE SOUZA<br>3º Secretário PUBLICADO NO DIÁRIO OFICIAL ELETRÔNICO DIA 09 DE MAIO DE 2018. <p> <a class="btn btn-default" href="https://leis.s3.amazonaws.com/originais/feira_de_santana-ba/2018/eo-54-2018-feira_de_santana-ba.doc" title="Emenda à Lei Orgânica nº 54/2018 - Feira de Santana-BA">Download do documento</a> </p> <p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

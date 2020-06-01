@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3700 DE 23 DE MAIO DE 2017</h2><br>&quot;Institui no Calendário Oficial do Município a SEMANA DE COLETA DE RESÍDUOS a ser divulgada e estimulada trimestralmente no Município.&quot;<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 71/2017, de autoria do Edil Roberto Luis da Silva Tourinho, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica instituído e incluído no Calendário Oficial de Eventos do Município de Feira de Santana a Semana de Coleta de Resíduos a ser divulgada e estimulada trimestralmente no Município.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O Município poderá, através de parcerias firmadas com entidades, instituições e empresas privadas, promover ações conjuntas para planejar e executar o evento, visando a coleta de resíduos das ruas da Cidade.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> As parcerias serão firmadas a titulo gratuito, tendo como principal objetivo a sustentabilidade e o meio ambiente.<br><br>Parágrafo único. As ações serão desenvolvidas pela Secretaria Municipal de Serviços Públicos em parceria com o Departamento de Educação Ambiental da Secretaria Municipal de Meio Ambiente e Recursos Naturais.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Os resíduos a serem coletados serão selecionados e destinados em conformidade com as leis ambientais vigentes, compreendendo: material eletrônico, gesso, madeira, tintas, latas em geral, pneus, óleo de cozinha, garrafas pet, sacos de cimento, pilhas e baterias, papéis revista e jornais, vidros e garrafas, remédios, plásticos em geral, material de demolição, roupas e móveis.<br><br>§ 1º O Poder Público municipal poderá destinar às cooperativas, associações de catadores de lixo ou recicladores, organização não-governamental, o material coletado como forma de incentivo ao emprego e renda.<br><br>§ 2º Ficam vedadas do recebimento destas matérias empresas particulares de produtos recicláveis de qualquer natureza, sendo permitido para tanto o descarte no aterro sanitário que preste serviço ao município dos produtos inservíveis ou de uso inadequado ao manuseio humano.<br><br>§ 3º A Secretaria Municipal de Serviços Públicos aplicará sempre que possível o critério de sorteio ou rodizio para destinação dos produtos recicláveis a cada associação, cooperativa, organização não-governamental a cada trimestre.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito, 23 de maio de 2017.<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO MUNICIPAL<br><br>MARIO COSTA BORGES<br>CHEFE DE GABINETE DO PREFEITO<br><br>CLEUDSON SANTOS ALMEIDA<br>PROCURADOR GERAL DO MUNICÍPIO<br><br>JUSTINIANO OLIVEIRA FRANÇA<br>SECRETÁRIO MUNICIPAL DE SERVIÇOS PÚBLICOS<br><br>SÉRGIO BARRADAS CARNEIRO<br>SECRETÁRIO MUNICIPAL DE MEIO AMBIENTE E RECURSOS NATURAIS<br><br>PUBLICADO NO DIÁRIO OFICIAL ELETRÔNICO DIA 24 DE MAIO DE 2017.<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

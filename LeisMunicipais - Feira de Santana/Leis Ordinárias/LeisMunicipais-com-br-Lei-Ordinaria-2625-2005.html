@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 2625/2005</h2><br>DISPÕE SOBRE A IMPLANTAÇÃO DO PROGRAMA S.O S. RIOS E LAGOAS DO MUNICÍPIO, DESPOLUIÇÃO E REVITALIZAÇÃO.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Autor: Roberto Luis da Silva Tourinho<br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 08/2005, de autoria do Edil Roberto Luis da Silva Tourinho, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica o Município de Feira de Santana autorizado a implantar o Programa S.O.S. Rios e Lagoas do Município, objetivando a sua despoluição e revitalização, a partir da publicação desta Lei.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> A presente Lei tem como finalidade proteger, preservar, conservar, incentivar e fiscalizar:<br><br>I - Toda a forma de lançamento de dejetos líquidos ou sólidos nos rios e lagoas, tais como: esgoto domésticos, industriais e hospitalares, lixos domésticos e industriais, pneus, materiais plásticos, produtos tóxicos, químicos, bem como quaisquer outros rejeitos não devidamente tratados;<br><br>II - O cadastramento de todas as indústrias, hotéis, pousadas, restaurantes e empresas nas margens dos rios e lagoas, potencialmente poluidoras, bem como as empresa de mineração que extraem área ou quaisquer outros minérios e produtos dos rios e lagoas, localizadas nas proximidades das margens e na área de influência das bacias hidrográficas;<br><br>III - A efetiva fiscalização de estações de tratamento de efluentes, e das unidades de captação e tratamento de águas brutas e das redes de coleta de esgoto e distribuição de água tratada, principalmente nas comunidades de baixa renda;<br><br>IV - Incentivar todos os órgãos ambientais nas diversas esferas de governo, as fundações públicas, ONGs e demais entidades públicas ou privadas controladas direta ou indiretamente, que desenvolverem políticas ambientais auto sustentáveis, estendendo os incentivos aos órgãos nacionais e estrangeiros;<br><br>V - Os projetos de despoluição e limpeza dos rios e lagoas através do incentivo empresas que adotem a medida de compra e tratamento de esgotos na forma &quot;in natura&quot; ;<br><br>VI - Estudos de preservação e conservação ambiental dos rios e lagoas e suas respectivas bacias, com monitoramento periódicos da qualidade das águas e exame semestral com laudo técnico, emitido pelos órgãos ambientais responsáveis, do Município;<br><br>VII - Contenção do processo erosivo nas bacias e seu conseqüente assoreamento através da implantação de práticas conservacionistas tais como o combate à erosão do solo e da vegetação ciliar;<br><br>VIII - Elaborar projetos de reflorestamento quando necessário, levantamento periódico da situação de rios e lagoas, seus afluentes e defluentes;<br><br>IX - A utilização dos rios e lagoas de Feira de Santana, para fins de educação ambiental promovendo cursos, palestras, excursões, concursos literários e atividades correlatas incentivando o eco turismo em suas diversas modalidades;<br><br>X - Realizar o cadastramento de todos os tipos de edificações que se instalaram indevidamente nas faixas marginais dos rios do município, visando sua posterior remoção;<br><br>XI - Incentivar a prática de esportes náuticos, através de competições de remo, jet-sky, vela e outras modalidades;<br><br>XII - Realizar cadastramento de todos os pontos de emissão de efluentes, quantificando sua vazão;<br><br>XIII - Fomentar em todos os rios e lagoas, trabalhos de pesquisas visando o melhoramento enético e sanitário para a criação de alevinos de várias espécies, incentivando a psicultura e outros cultivos aquáticos para o melhor aproveitamento ao longo do leito do rio e lago da diversidade de espécies nativas existentes no local, como meio de subsistência social, econômica e turística;<br><br>XIV - Promover congressos, simpósios e encontros técnicos e científicos sobre os rios e lagoas do município, com mostra de trabalhos e discussões sobre projetos desenvolvidos, seus cessos e problemas, buscando o apontamento das soluções e ações a serem implementadas;<br><br>XV - Recuperação e organização de todo o acervo disponível sobre os rios e lagoas do município, com informações como a série histórica, das obras hidráulicas realizadas, tais como comportas, pontes e outras afins;<br><br>XVI - O reflorestamento das margens dos rios, lagoas e represas com plantio de árvores frutíferas e, espécies nativas em locais adequados para o desenvolvimento das plantas e sementes, para fins de revitalização da fauna e flora de Feira de Santana;<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> A fiscalização e aplicação de sanções, bem como os recursos financeiros para implementação e realização do presente Projeto será de responsabilidade da Secretaria Municipal de Desenvolvimento Urbano e Meio Ambiente.<br><br>§ 1º As receitas deverão estar programadas no orçamento municipal e, também constituídas através de:<br><br>I - Multas oriundas de indenizações por danos causados ao meio ambiente;<br><br>II - Dotações orçamentárias próprias, outras receitas orçamentárias que lhe vierem a ser destinadas;<br><br>III - Doações de qualquer natureza, de pessoas físicas ou jurídicas do país ou do exterior.<br><br>§ 2º Fica instituído o Conselho Consultivo e de Acompanhamento do Programa S.O.S. Rios e Lagoas de Feira de Santana, cujos membros serão designados pelo Prefeito Municipal, e Associações de Classe, com atribuição de opinar sobre as políticas, diretrizes e prioridades sobre o Programa S.O.S. Rios e Lagoas do Município.<br><br>§ 3º Ato do Poder Executivo regulamentará a composição e o funcionamento do Conselho de que trata este artigo, assegurada a representação da sociedade civil.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> No prazo de 120 ( cento e vinte ) dias o Poder Executivo Municipal deverá executar e regulamentar a presente Lei, após a data de sua vigência.<br><br>Parágrafo Único - A Secretaria Municipal de Desenvolvimento Urbano e Meio Ambiente, poderá firmar convênios com pessoas físicas, jurídicas, fundações públicas e privadas, ONGs e demais entidades públicas ou privadas, nacionais ou estrangeiras, controladas direta ou indiretamente e outras Secretarias Estaduais ou Municipais e, com o Governo Federal, ou entidades vinculadas para a execução da presente Lei.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Esta Lei entrará em vigor na data da sua publicação, revogadas as disposições em contrário.<br><br>PREFEITURA MUNICIPAL DE FEIRA DE SANTANA, em 31 de Outubro de 2005.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

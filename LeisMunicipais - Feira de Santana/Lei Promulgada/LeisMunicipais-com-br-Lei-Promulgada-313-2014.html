@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI PROMULGADA Nº 313/2014</h2><br>DISPÕE SOBRE A DESTINAÇÃO FINAL, AMBIENTALMENTE ADEQUADA DE RESÍDUOS SÓLIDOS PRODUZIDOS POR SHOPPINGS CENTERS E INDÚSTRIAS, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>PREFEITO: José Ronaldo de Carvalho<br>Presidente: Justiniano Oliveira França<br>Assunto: Meio Ambiente<br>Autor: Marcos Antonio dos Santos Lima<br><br>O PRESIDENTE DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através de Projeto de Lei nº 127/2013, de autoria do Edil Marcos Antonio dos Santos Lima, e na conformidade do artigo 78, § 7º, da Lei nº  <a class="link_law" data-id="1739637" data-original-title=" Data da Norma: 05.04.1990 - DISPÕE SOBRE A LEI ORGÂNICA DO MUNICIPIO DE FEIRA DE SANTANA E DA OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-promulgada/1990/3/37/lei-promulgada-n-37-1990-dispoe-sobre-a-lei-organica-do-municipio-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">37</a>, de 05 de Abril de 1990, e artigo 25 e inciso V, do Regimento Interno, PROMULGA a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Os centro comerciais denominados shoppings centers e indústrias, situados no Município de Feira de Santana - BA, deverão apresentar um plano de gerenciamento de resíduos sólidos ao órgão competente do Poder Executivo Municipal (Secretaria Municipal de Serviços Públicos), comprovando a destinação final ambientalmente adequada dos resíduos sólidos produzidos pelos estabelecimentos e pelos seus frequentadores.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Para efeitos desta Lei entende-se por destinação final ambientalmente adequada a reutilização, a reciclagem, a compostagem, a recuperação e o aproveitamento energético ou outras destinações admitidas pelos órgãos competentes do Sistema Nacional do Meio Ambiente (SISNAMA) e do Sistema de Vigilância Sanitária (SNVS).<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Para efeitos desta Lei entende-se por gerenciamento de resíduos sólidos o conjunto de ações exercidas, direta ou indiretamente, nas etapas de coleta, transporte, transbordo, tratamento e destinação final ambientalmente adequada dos resíduos sólidos e disposição final ambientalmente adequada dos rejeitos.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> O plano de gerenciamento de resíduos sólidos terá o seguinte conteúdo mínimo:<br><br>I - descrição do empreendimento ou atividade;<br><br>II - ações e preventivas e corretivas a serem executadas em situações de gerenciamento incorreto ou acidentes;<br><br>III - metas e procedimentos relacionados à minimização da geração de resíduos sólidos e relacionados à reutilização e à reciclagem;<br><br>IV - medidas saneadoras dos passivos ambientais relacionados aos resíduos sólidos;<br><br>V - periodicidade de sua revisão.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Os estabelecimentos previstos no art. 1º desta Lei deverão:<br><br>I - separar os resíduos produzidos em seu setor por espécie, distinguido os papéis, os plásticos, os metais, os vidros e os resíduos orgânicos;<br><br>II - implantar os recipientes de coleta em locais acessíveis e de ampla visualização, com as especificações da Resolução nº 275/2001 do CONAMA;<br><br>III - disponibilizar adequadamente os resíduos sólidos reutilizáveis e recicláveis para coleta ou devolução, encaminhando-os preferencialmente as cooperativas de reciclagem existentes no município.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> O plano de gerenciamento de resíduos sólidos produzidos por shoppings centers e indústrias, deverá ser apresentado ao órgão competente do Poder Executivo Municipal em 180 (cento e oitenta) dias após a publicação desta Lei.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> A inobservância ao disposto nesta Lei sujeitará o estabelecimento infrator as seguintes penalidades:<br><br>I - advertência por escrito;<br><br>II - na segunda fiscalização, que ocorrerá em 30 (trinta) dias após a primeira, multa de R$ 800,00 (oitocentos reais) em descumprimento do disposto na presente Lei;<br><br>III - a partir da terceira reincidência, além do disposto no inciso II haverá suspensão de funcionamento por 30 (trinta) dias;<br><br>IV - o valor da multa estabelecida nesta Lei será reajustado anualmente pelo Índice Geral de Preços - IGP, sendo que, no caso de extinção deste índice, será adotado o substitutivo.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> O Poder Executivo regulamentará a presente Lei.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> Fica instituída a Secretaria de Serviços Públicos como órgão municipal competente para fiscalizar a presente Lei.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10</span></a> esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>CÂMARA MUNICIPAL DE FEIRA DE SANTANA, em 04 de Agosto de 2014.<br><br>Ver. JUSTINIANO OLIVEIRA FRANÇA<br>Presidente<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI PROMULGADA Nº 344/2018</h2><br>DISPÕE SOBRE A REMOÇÃO DE VEÍCULOS NAS VIAS PÚBLICAS NO ÂMBITO DO MUNICÍPIO DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PRESIDENTE DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 21/2018, de autoria do Edil Cadmiel Mascarenhas Pereira, e na conformidade do artigo 78, § 7º, da <a class="link_law" data-original-title="Lei Orgânica Feira de Santana BA" data-toggle="tooltip" href="/lei-organica-feira-de-santana-ba" rel="tooltip">Lei Orgânica</a> do Município, e artigo 25, e inciso V, do Regimento Interno, PROMULGA a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Esta Lei disciplina o uso das vias públicas por veículos de propulsão humana, animal, motorizado ou não, e em condição de visível estado de abandono, os quais apresentando as características elencadas nesta Lei, serão considerados abandonados e assim removidos quando forem encontrados nas condições a seguir:<br><br>I - veículos motorizados ou não, estacionados em vias públicas sem sinais de identificação;<br><br>II - veículos motorizados ou não que se apresentem em uma ou mais das seguintes condições:<br><br>a) sem identificação de nº de chassi, sem identificação do nº do motor, com registro de comunicação de venda no sistema informatizado do DETRANNET, BIN (Base de Identificação Nacional) DETRAN, com identificação de compra ou não.<br><br>III - veículos motorizados ou não, com débitos fiscais registrados no sistema DETRANNET, ou Base de Identificação Nacional (BIN) imposto, multas, taxas, entre outros débitos condicionados ao veículo encontrado em visível estado de abandono em via pública;<br><br>IV - veículos motorizados ou não, em estado de abandono visível, com aparências externas e internas, identificadas a olho nu pelo mau estado de conservação;<br><br>V - veículos de propulsão humana ou animal, encontrados em qualquer uma das condições do inciso IV.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Os veículos encontrados em vias públicas e que sejam identificados pelo mau estado de conservação e abandono, serão conduzidos ao pátio da SMT e levados a hasta pública decorridos 90 (noventa) dias após o seu recolhimento, quando não forem recolhidos por seus proprietários neste prazo, conforme prevê o art. 328 da Lei nº 9.503, de 23 de Setembro de 1992 (Código de Trânsito Brasileiro).<br><br>§ 1º Fica dispensada a notificação dos eventuais proprietários, conforme prevê o art. 1.215 da Lei 10.406, de 10 de Janeiro de 2002 (Código Civil), que trata do abandono, afirmando que ao abandonar um bem, perde-se a propriedade do mesmo.<br><br>§ 2º São agentes da autoridade de trânsito, competentes para lavrar o auto de identificação de características de abandono e remoção da via pública:<br><br>I - agentes de trânsito;<br><br>II - policiais militares;<br><br>III - fiscais de serviços públicos.<br><br>§ 3º Conduzido ao pátio da SMT, o objeto da retirada só poderá ser retirado, nas seguintes condições:<br><br>I - no prazo de 30 (trinta) dias, conforme prevê o art. 262 do Código deTrânsito Nacional, por quem se apresente como proprietário do objeto, devidamente identificado pelos meios em direito admitido, ou por procurador devidamente habilitado, por meio de procuração pública, trazendo provas de que o objeto abandonado é de sua propriedade;<br><br>II - pagamento dos custos do reboque e das diárias do pátio da SMT, pelo período em que permaneceu no local;<br><br>III - quando o objeto abandonado se tratar de veículo automotor, será exigido o pagamento de multas, caso tiver registro, seguro obrigatório e demais taxas devidas;<br><br>a) em caso de veículo automotor com registro de venda comunicada, somente se transferida a propriedade;<br>b) em caso de impossibilidade de recuperação, somente será retirado após a respectiva baixa junto ao órgão de trânsito competente.<br><br>IV - o objeto apreendido, somente será retirado do pátio, mediante guinchos plataforma, ou sobre carrocerias, vetado o uso de cordas, correntes, cambão, do leilão dos objetos e veículos abandonados em via pública.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Compete ao Poder Executivo nomear comissão de leilão de veículos e objetos abandonados em via pública.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Compete ao Poder Executivo regulamentar por meio de Decreto Executivo as disposições necessárias à efetiva aplicação da presente Lei.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Esta Lei entrará em vigor, 30 (trinta) dias após a sua publicação, revogadas as disposições em contrário.<br><br>PRESIDÊNCIA DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, em 16 de Outubro de 2018<br><br>JOSÉ CARNEIRO ROCHA<br>Presidente<br><br>PUBLICADO NO DIÁRIO OFICIAL ELETRÔNICO DIA 17 DE OUTUBRO DE 2018.<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

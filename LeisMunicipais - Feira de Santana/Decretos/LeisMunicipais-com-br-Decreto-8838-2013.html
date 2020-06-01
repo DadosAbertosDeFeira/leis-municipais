@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>DECRETO Nº 8838, de 23 de janeiro de 2013.</h2><br>INSTITUI GRUPO DE TRABALHO COM O OBJETIVO DE DEFINIR MODELO DE FINANCIAMENTO PARA O REGIME PRÓPRIO DE PREVIDÊNCIA SOCIAL DO MUNICÍPIO DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O Prefeito Municipal de Feira de Santana, Estado da Bahia, no uso de suas atribuições que lhe confere a <a class="link_law" data-original-title="Lei Orgânica Feira de Santana BA" data-toggle="tooltip" href="/lei-organica-feira-de-santana-ba" rel="tooltip">Lei Orgânica</a> do Município,<br><br>CONSIDERANDO a necessidade de constituição de modelo de financiamento do Regime Próprio de Previdência Social do Município de Feira de Santana que possa equacionar o déficit atuarial do Fundo Previdenciário do Município,<br><br>CONSIDERANDO que o equilíbrio atuarial pressupõe o financiamento do déficit supramencionado e por força da Portaria MPS, nº 402/08, deverá ser garantido pelo RPPS,<br><br>CONSIDERANDO que as ações necessárias ao atendimento da referida Portaria e à cobertura do déficit pressupõem uma análise integral da forma adequada de financiamento e modelo vigente,<br><br>CONSIDERANDO que o equilíbrio atuarial e financeiro e a organização do Regime Próprio de Previdência Social constituem-se em requisitos para a concessão do Certificado de Regularidade Previdenciária ao Município de Feira de Santana, DECRETA:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica instituído, no âmbito do Poder Executivo do Município de Feira de Santana, grupo de trabalho com o objetivo de analisar e apresentar sugestões de modelo de financiamento do passivo atuarial e estrutura do Regime Próprio de Previdência Social do Município de Feira de Santana, assim composto:<br><br>I - João Marinho Gomes Júnior<br><br>Secretário Municipal de Administração;<br><br>II - Antônio Alcione da Silva Cedraz<br><br>Diretor Presidente do Instituto de Previdência de Feira de Santana;<br><br>III - Expedito Campodônio Eloy<br><br>Secretário Municipal da Fazenda;<br><br>IV - Osvaldo Coelho Torres Neto<br><br>Subprocurador de Moralidade Administrativa da Procuradoria Geral do Município;<br><br>V - Vicente Aliomar Barros<br><br>Diretor do Departamento Administrativo e Financeiro do Instituto de Previdência de Feira de Santana;<br><br>VI - Hamilton Ramos Lima<br><br>Presidente do Sindicato dos Servidores Públicos Municipais de Feira de Santana;<br><br>VII - Germano Barreto de Gois<br><br>Presidente da APLB.<br><br>§ 1º O Grupo de Trabalho será presidido pela primeira integrante, podendo esta convocar qualquer servidor, no âmbito do Poder Executivo, para auxiliar na execução das atividades e estudos a serem desenvolvidos.<br><br>§ 2º O Grupo de Trabalho terá o prazo de 180 (cento e oitenta) dias para apresentar suas conclusões e sugestões.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> As sugestões e conclusões do Grupo de Trabalho de que trata o artigo anterior serão levadas e discutidas com os demais Poderes e órgãos que não integram o Poder Executivo do Município de Feira de Santana.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Este Decreto entrará em vigor na data da sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 23 de janeiro de 2013.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito Municipal<br><br>MÁRIO COSTA BORGES<br>Chefe de Gabinete do Prefeito<br><br>JOÃO MARINHO GOMES JÚNIOR<br>Secretário Municipal de Administração<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

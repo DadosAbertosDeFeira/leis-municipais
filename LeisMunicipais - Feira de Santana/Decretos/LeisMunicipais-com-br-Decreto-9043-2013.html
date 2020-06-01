@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>DECRETO Nº 9043, DE 01 DE OUTUBRO DE 2013.</h2><br>INSTITUI A CREDENCIAL DA PESSOA IDOSA E DA PESSOA PORTADORA DE DEFICIÊNCIA E COM DIFICULDADE DE LOCOMOÇÃO PARA O USO DE VAGAS ESPECIAIS EM ESTACIONAMENTOS PÚBLICOS E PRIVADOS NO MUNICIPIO DE FEIRA DE SANTANA E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, no uso de suas atribuições, com base nas Leis Federais de nºs 10.098/2000, que estabelece normas gerais para promoção de acessibilidade para pessoas portadoras de deficiência e com dificuldade de locomoção, 10.741/2003, que instituiu o Estatuto do Idoso, e considerando, ainda, as Resoluções nºs 303 e 304, de 18 de setembro de 2008, do CONTRAN, DECRETA:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica estabelecida a Credencial de Estacionamento, como requisito essencial para utilização de vagas de estacionamento reservadas para pessoas idosas e para pessoas portadoras de deficiências e com dificuldades de locomoção no Município de Feira de Santana.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Todas as áreas para estacionamento particulares ou públicos, de instituições e órgão públicos que disponham de 20 (vinte) ou mais vagas, deverão reservar:<br><br>I - Percentual mínimo de 5% (cinco por cento) das vagas destinadas para veículos tipo automóvel, caminhoneta e caminhonete particular que transportem pessoa idosa;<br><br>II - Percentual mínimo de 2% (dois por cento) das vagas destinadas para veículos tipo automóvel, caminhoneta e caminhonete particular que transportem pessoa portadora de deficiência e com dificuldade de locomoção.<br><br>Parágrafo Único - Nos estacionamentos de que trata o caput deste artigo que disponham de mais de 09(nove) vagas até 19(dezenove) vagas, será obrigatória a reserva de, pelo menos, 01(uma) vaga para o idoso, e nos que disponham de mais de 09(nove) vagas até 49(quarenta e nove) vagas, será obrigatória a reserva de pelo, menos 01(uma) vaga para o deficiente físico e com dificuldade de locomoção.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> A credencial é intransferível e só poderá ser utilizada quando do transporte da pessoa idosa ou da pessoa com deficiência e com dificuldade de locomoção cadastrada na SMT, e não dá direito à gratuidade em estacionamentos públicos tipo zona azul nem em estacionamentos privados, apenas assegura o percentual de vagas a serem reservadas para pessoas idosas e para pessoas portadoras de deficiência e com dificuldade de locomoção, assim como não isenta o seu portador de obedecer às demais regras de circulação e conduta contidas no CTB ou às demais regras internas de utilização dos estacionamentos;<br><br>IV - A pessoa idosa ou a pessoa portadora de deficiência e com dificuldade de locomoção poderá optar por estacionar em outra vaga que não as sinalizadas exclusivamente para elas, devendo observar a sinalização do local quanto às permissões para parada e estacionamento.<br><br>Parágrafo Único - As vagas mencionadas no art. 1º serão sinalizadas utilizando-se os símbolos de regulamentação estabelecidos no Anexo I das Resoluções nºs 303/2008 e 304/2008 do Conselho Nacional de Trânsito - CONTRAN.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> A credencial que autoriza o estacionamento em vaga especial será emitida pela SUPERINTENDÊNCIA MUNICIPAL DE TRÂNSITO - SMT, para pessoas idosas e para pessoas com deficiência e com dificuldade de locomoção domiciliadas neste município, que, através de portaria, deverá informar todos os procedimentos para a sua emissão, bem como explicitar as regras para utilização, sanções e penalidades para o mau uso das credenciais.<br><br>Parágrafo Único - A Credencial de Estacionamento deverá ser emitida utilizando-se dos modelos previstos no Anexo II das Resoluções 303 e 304/2008 do CONTRAN, conforme o caso, a fim de uniformizar os procedimentos de fiscalização em todo o território nacional sendo acrescidas de instrumentos de validação a fim de se evitar falsificações e dificultar o uso indevido das credenciais.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> O período de validade da Credencial de Estacionamento será definido de acordo com os critérios a serem estabelecidos pela Superintendência Municipal de Trânsito - SMT.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Os veículos estacionados nas vagas reservadas para pessoas idosas e para pessoas com deficiência e com dificuldade de locomoção deverão exibir, obrigatoriamente, a credencial de que trata este Decreto sobre o painel frontal do veículo, com a frente para cima, para facilitar a sua visualização, devendo o condutor, se solicitado, apresentá-la para o agente da autoridade de trânsito para verificações.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> O uso irregular de vagas e das credenciais destinadas para pessoas idosas e para pessoas com deficiência e com dificuldades de locomoção em desacordo com o disposto neste Decreto constituía, infração prevista no art. 181, inciso XVII, da Lei Federal nº 9.503/97 (Código Brasileiro de Trânsito), sujeita à pena de multa e remoção do veículo.<br><br>Parágrafo Único - A receita arrecadada com a cobrança das multas, estadia no pátio e taxas de remoção referidas neste artigo deverá ser aplicada nos termos do art. 320 da Lei Federal nº 9.503/97.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> Ficam também sujeitos a penalidades administrativas (multas) a serem fixadas pelo Poder Público, através do PROCON Municipal, os estabelecimentos privados que não reservarem e que não fiscalizarem a utilização regular das vagas reservadas para pessoas idosas e pessoas com deficiência e dificuldades de locomoção, ou que não providenciarem a sua sinalização de acordo com as Resoluções nºs 303/2008 e 304/200/8, a fim de identificá-las.<br><br>Parágrafo Único - O Poder Executivo Municipal, através da Superintendência Municipal de Trânsito - SMT ou de outro órgão designado, fica autorizado a realizar campanhas de conscientização social para os motoristas, além dos responsáveis e funcionários dos estabelecimentos privados em que vagas especiais devam ser disponibilizadas, a fim de evitar o uso indevido das vagas e a aplicação das multas previstas neste Decreto.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> A Superintendência Municipal de Trânsito - SMT, fica autorizada a firmar Convênios de Cooperação com estabelecimentos particulares e os promotores de eventos com grandes estacionamentos para uso público, a fim de facilitar a fiscalização do cumprimento deste Decreto.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10</span></a> A Superintendência Municipal de Trânsito - SMT tem o prazo de até 120 (cento e vinte) dias, a partir da publicação deste Decreto, para providenciar a emissão das Credenciais de Estacionamento.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11</span></a> As despesas decorrentes deste Decreto correrão por conta de dotações orçamentárias próprias.<br><br><a name="artigo_12"><span class="label label-pill label-danger">Art. 12</span></a> Este Decreto entrará em vigor na data de sua publicação.<br><br>Gabinete do Prefeito, 01 de outubro de 2013.<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO MUNICIPAL<br><br>MARIO COSTA BORGES<br>CHEFE DE GABINETE DO PREFEITO<br><br>EBENEZER CARNEIRO DA SILVA TUY<br>SECRETARIO MUNICIPAL DE TRANSPORTES E TRÂNSITO<br><br>FRANCISCO ANTONIO BRITO NOGUEIRA JÚNIOR<br>DIRETOR SUPERINTENDENTE DA SUPERINTENDÊNCIA MUNICIPAL DE TRÂNSITO<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

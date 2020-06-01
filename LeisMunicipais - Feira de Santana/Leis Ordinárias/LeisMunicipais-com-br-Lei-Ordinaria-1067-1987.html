@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 1067, de 01 de dezembro de 1987</h2><br>AUTORIZA O PODER EXECUTIVO MUNICIPAL A DOAR UMA ÁREA DE TERRA AO FLUMINENSE DE FEIRA FUTEBOL CLUBE, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, FAÇO saber que a Câmara Municipal decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica o Poder Executivo Municipal autorizado a doar ao FLUMINENSE DE FEIRA FUTEBOL CLUBE, entidade representativa do futebol profissional de Feira de Santana, uma área de terra situada no bairro do Campo Limpo, nesta cidade de Feira de Santana, a ser desmembrada da área total onde funcionava o Campo de Aviação medindo 15 (quinze) tarefas, ou seja 65.340,00m² (sessenta e cinco mil, trezentos e quarenta metros quadrados), limitando-se ao norte (frente) com a rua da Aviação, onde mede 200,00m. aoSul (fundos) onde igualmente mede 200,00m, com terrenos do Município, ao leste com terrenos do Município, onde mede 326,70m, e ao oeste também com terrenos do Município, onde mede 326,70m.<br><br>Parágrafo Único - No citado terreno será construída a Vila Olímpica do Fluminense de Feira Futebol Clube.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O Poder Executivo Municipal fará consignar na escritura pública de doação, que somente será assinada após a rescisão de Escritura Pública de Doação lavrada aos 26 dias do mês de março de 1984, às fls. 139/140, do livro 263, sob nº de ordem 115, do Tabelionato de Notas do 1º Ofício desta Comarca, em que figura como donatário de outra área o FLUMINENSE DE FEIRA FUTEBOL CLUBE, as obrigações do FLUMINENSE DE FEIRA FUTEBOL CLUBE, de acordo com os objetivos constantes do Parágrafo Único, do Artigo 1º.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> A área doada não poderá ser transferida nem usada para outras fins que não os previstos nesta Lei, sob pena de revogação da doação e reversão ao Patrimônio Municipal, sem qualquer ônus para o doador, o que também ocorrerá se não forem iniciadas as obras no prazo de 01 (hum) ano, decorrido da assinatura do contrato de doação ou no caso de permanecerem a área e suas instalações sem a devida utilização pela inatividade do FLUMINENSE DE FEIRA FUTEBOL CLUBE.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Serão também incluídas na Escritura de Doação, as Cáusulas de inalienabilidade e impenhorabilidade, não somente da área como das acessões nela introduzidas.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Prefeitura Municipal de Feira de Santana, em 1º de dezembro de 1987.<br><br>DR. JOSÉ FALCÃO DA SILVA<br>Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

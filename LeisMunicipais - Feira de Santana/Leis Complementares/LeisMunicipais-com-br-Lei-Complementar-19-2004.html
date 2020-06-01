@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI COMPLEMENTAR Nº 19/2004</h2><br>AMPLIA AZR-3 NA REGIÃO SUDESTE DA CIDADE.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, no uso de suas atribuições, Faço saber que a Câmara Municipal, através do Projeto de LEI COMPLEMENTAR Nº 06/2004, de autoria deste Poder Executivo, decreta e eu sanciono a seguinte Lei:<br><br><span class="label label-pill label-danger">Art. </span> A partir da publicação deste Lei, a ZR-3 (Zona de Predominância Três) e ZS (Zona de Predominância de Usos Industriais) terão os seguintes limites:<br><br>I - ZR-3: Ao Norte com Avenida Eduardo Fróes da Motta (Anel de Contorno), ao Sul com a linha limite da Zona Urbana do Município, a leste com a linha que limita a ZS n BR324 e a Oeste com a Avenida Colbert Martins da Silva (BA502 - Feira Santana/São Gonçalo dos Campos).<br><br>II - ZS: Ponto Inicial: Interseção da Avenida Eduardo Fróes da Motta (Anel de Contorno) com BR116 Sul<br><br>a) Inicia-se no ponto de interseção da Avenida da Motta (Contorno) com a BR116-Sul, e seguindo-se por sua margem esquerda (esquerda (sentido Feira de Santana/Rio de Janeiro) até à interseção da referida Rodovia com a margem esquerda do Rio Jacuípe; daí seguindo-se a cota de máxima enchente da margem esquerda do Rio Jacuípe, chega-se ao bebedouro de Sabina: daí, á Leste, acompanhando a linha divisória entre os Municípios de Feira de Santana e São Gonçalo dos Campos, chega-se à interseção desta linha com a Avenida Colbert Martins da Silva (BA502); daí, ao Norte, pelo traçado da Avenida Colbert Martins Silva (BA502) (sentido São Gonçalo dos Campos/Feira de Santana) chega-se à Interseção desta com a Avenida Eduardo Fróes da Motta (Anel de Contorno); daí a Oeste seguindo-se pela Avenida Eduardo Fróes da Motta (Anel de Contorno), sentido Salvador/Rio de Janeiro, chega-se ao inicio da poligonal;<br>Ponto Inicial: Avenida Eduardo Fróes da Motta (anel de Contorno)<br>b) Área de terra localizada ao longo da Rodovia BR324, no Município de Feira de Santana, com 9,36km, de comprimento, a partir da Avenida Eduardo Fróes da Motta (Anel de Contorno), em direção a Salvador, por 500,00m (quinhentos metros) de largura para cada lado, a contar do limite da faixa de domínio da citada Rodovia.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Esta Lei entra em vigor na data de sua publicação, e revogam-se as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 01 de Dezembro de 2004.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito<br><br>GERALDO DA OLIVEIRA SAMPAIO FILHO<br>Chefe de Gabinete do Prefeito<br><br>JOSÉ FERREIRA PINHEIRO<br>Sec. Municipal de Desenvolvimento Urbano e Meio Ambiente<br><br>CARLOS ALBERTO OLIVEIRA BRITO<br>Sec. Municipal de Planejamento<br><br>DATA DE PUBLICAÇÃO: 3/12/2004<br>PREFEITO: José Ronaldo de Carvalho<br>Presidente: Antonio Carlos D. Coelho<br>Assunto: Urbanismo<br>Autor: Poder Executivo<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

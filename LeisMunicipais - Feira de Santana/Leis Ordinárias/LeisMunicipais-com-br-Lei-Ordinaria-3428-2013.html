@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3428, DE 05 DE DEZEMBRO DE 2013.</h2><br>ESTABELECE A OBRIGATORIEDADE DA PRESTAÇÃO DE INFORMAÇÕES DE OPERAÇÕES REALIZADAS NO MUNICÍPIO DE FEIRA DE SANTANA, ATRAVÉS DE CARTÕES DE CRÉDITO OU DÉBITO E SIMILARES, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O Prefeito Municipal de Feira de Santana, Estado da Bahia, no uso de suas atribuições, Faço saber que a Câmara Municipal de Feira de Santana, através do Projeto de Lei nº 129/2013, deste Poder Executivo decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> A Administração Tributária poderá exigir das administradoras de cartões de crédito ou débito declaração de operações de cartões de crédito ou débito em estabelecimentos credenciados, prestadores de serviços, localizados no Município de Feira de Santana, Estado da Bahia.<br><br>§ 1º As administradoras de cartões de crédito ou débito prestarão informações sobre as operações efetuadas com cartões de crédito ou débito, compreendendo os montantes globais por estabelecimento prestador credenciado, ficando proibida a identificação do tomador de serviço, salvo por decisão judicial, quando se tratar de pessoas físicas.<br><br>§ 2º Para os efeitos desta Lei, considera-se administradora de cartões de crédito ou débito, em relação aos estabelecimentos prestadores credenciados, a pessoa jurídica responsável pela administração da rede de estabelecimentos, bem assim pela captura e transmissão das transações dos cartões de crédito ou débito.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> A Declaração deverá conter a informação sobre todas as operações realizadas com cartões de crédito ou débito, com ou sem transferência eletrônica de fundos, em estabelecimentos credenciados, prestadores de serviços, localizados no Município de Feira de Santana, compreendendo os montantes globais por estabelecimento.<br><br>§ 1º Até que seja disponibilizado pela Administração Tributária aplicativo para transmissão eletrônica da Declaração de Operações de Cartões de Crédito ou Débito - DOCCD, as informações referidas neste artigo serão encaminhadas mensalmente pelas administradoras de cartões de crédito ou débito até o vigésimo dia do mês posterior, no formato TXT ou Excel, através dos seguintes meios:<br><br>I - arquivo eletrônico gravado em DVD/CD-ROM, a ser remetido para Secretaria Municipal da Fazenda - Departamento de Administração Tributária, localizada na Rua Barão de Cotegipe, 764, Centro - CEP: 44.001.550 - Feira de Santana, Estado da Bahia;<br><br>II - comunicação eletrônica de dados através de e-mail com confirmação de entrega e leitura para o endereço sefaz@sefaz.feiradesantana.ba.gov.br<br><br>§ 2º A Declaração de Operações de Cartões de Crédito ou Débito - DOCCD, deverá conter, pelo menos:<br><br>I - nome da administradora;<br><br>II - estabelecimento credenciado;<br><br>III - CNPJ do estabelecimento credenciado; IV) data da operação;<br><br>V - valor da operação;<br><br>VI - se originária de crédito; VII) se originária de débito.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> As Administradoras de cartões de crédito ou débito ficam obrigadas a entregar as declarações (DOCCD), referentes aos períodos de 2009 a setembro de 2013, até 27 de dezembro de 2013.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> As Administradoras de cartões de crédito ou débito e similares que deixarem de remeter à Secretaria Municipal da Fazenda, no prazo indicado no § 1º do art. 2º desta Lei, as declarações das operações de crédito e débito dos estabelecimentos prestadores de serviços credenciados e localizados no Município de Feira de Santana, ficam sujeitas às seguintes penalidades:<br><br>I - multa de R$ 5.000,00, em caso de atraso de até trinta dias;<br><br>II - multa de R$ 10.000,00, na hipótese de atraso superior a trinta dias.<br><br>Parágrafo Único - As penalidades previstas neste artigo se aplicam também no caso de descumprimento da solicitação das informações previstas no art. 3º, bem como no caso de entrega de informações inexatas ou incompletas.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> O Poder Executivo Municipal expedirá outros atos que se fizerem necessários à regulamentação e ajustes desta Lei.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Esta Lei entra em vigor na data da sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito, 05 de dezembro de 2013.<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO MUNICIPAL<br><br>MARIO COSTA BORGES<br>CHEFE DE GABINETE DO PREFEITO<br><br>EXPEDITO CAMPODÔNIO ELOY<br>SECRETÁRIO MUNICIPAL DA FAZENDA<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

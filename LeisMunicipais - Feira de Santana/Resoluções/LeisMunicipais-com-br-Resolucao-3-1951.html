@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>RESOLUÇÃO Nº 3/1951</h2><br>REORGANIZA O QUADRO DO FUNCIONALISMO DA SECRETARIA DESTA CÂMARA, FIXA-LHE OS VENCIMENTOS E DÁ OUTRAS PROVIDÊNCIAS<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>A Mesa da Câmara Municipal de Vereadores do Município de Feira de Santana, faz saber que o Poder Legislativo Decreta, promulga e manda publicar para seus devidos efeitos, o seguinte:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> O quadro dos funcionários da Secretaria da Câmara Municipal, de acordo com o art. 53, inciso III, e parágrafo único do mesmo artigo, combinado com o § 5º, do art. 66, todos da Lei Nº 140, de 22 de Dezembro de 1948, e art. 44, inciso I, do Regimento Interno desta colenda Câmara de Vereadores, ficará assim constituído:<br><br>Um (1) Diretor da Secretaria;<br>Um (1) Redator de Debates;<br>Um (1) Escriturário;<br>Um (1) Porteiro;<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O atual 2º Escriturário exercerá o cargo de Redator de Debates, em caráter efetivo, gozando de todos os direitos e vantagens da Lei.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Os vencimentos serão fixados de acordo com a tabela seguinte:<br><br>Diretor da Secretaria .......Cr.$ 1.500,00,<br>Redator de Debates ..........Cr.$ 1.350,00,<br>Escriturário ................Cr.$ 1.200,00,<br>Porteiro ......................Cr.$ 700,00.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Para atender ao pagamento do aumento previsto no artigo anterior, até o fim do corrente exercício, a vigorar de 1º de Junho do corrente ano, fica o PODER EXECUTIVO MUNICIPAL autorizado a abrir o crédito especial de Cr.$ 10.150,00 (dez mil cento e cinquenta cruzeiros), que correrá por conta do excesso de arrecadação de corrente exercício.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Revogam-se as disposições em contrário. Sala de Sessões, 6 de Junho de 1951.<br><br>HAMILTON SABACK COHIM<br>Presidente<br><br>WALTER NINCK MENDONÇA<br>ANTONIO MANOEL DE ARAUJO<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

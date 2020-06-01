@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI PROMULGADA Nº 24/1961</h2><br>DISPÕE SOBRE A CONSTRUÇÃO DA VILA OPERÀRIA, NESTA CIDADE, E DA OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>CÂMARA MUNICIPAL DE FEIRA DE SANTANA DECRETA E PROMULGA A SEGUINTE LEI:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica o Poder Executivo autorizado a adquirir uma área de terra para a construção da VILA OPERÁRIA, nesta cidade.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> A área de terra adquirida será dividida em lotes os quais serão vendidos exclusivamente às pessoas pobres que não possuam bens imóveis e exercem atividades como empregado neste Município.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Os lotes serão vendidos para pagamento no prazo de (10) dez anos, pelo preço de custo.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> A aquisição do lote, além do que a respeito dispuser o regulamento, atenderá as seguintes condições:<br><br>I - Não será vendido à mesma pessoa mais de um lote;<br><br>II - Somente poderão candidatar-se à compra de um lote os chefes de família, tendo primazia no deferimento dos requerimentos os que possuírem maior prole;<br><br>III - O contrato de aquisição do lote não poderá ser transferido a terceiro, sem prévia e expressa autorização do Prefeito Municipal;<br><br>IV - Não poderá adquirir outro lote aquele que, tendo adquirido um, na forma desta Lei, o alienou;<br><br>V - Aos funcionários municipais será assegurada preferência sobre outros candidatos, na aquisição de lote.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> A Prefeitura Municipal promoverá CONVÊNIO com os Institutos de Previdência Social, a Fundação da Casa Popular, a Caixa Econômica Federal, além dos governos federal e estadual, para o financiamento da construção de casas para os que adquiriram lotes.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> O produto do recolhimento das prestações pagas pelos que adquiriram lotes, será depositado em Banco à conta do Fundo de Ampliação da VILA OPERÁRIA, que fica criado por esta Lei.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Durante o prazo de (10) dez anos, a partir da data da promulgação desta Lei, fica destinado 1/2% (meio por cento) da receita proveniente de impostos municipais para o Fundo de Ampliação da VILA OPERÀRIA.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> O Poder Executivo, no prazo de (60) sessenta dias, regulamentará a presente Lei.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> Para atender às despesas decorrentes desta Lei, fica o Poder Executivo autorizado a abrir o credito especial de Cr$ 5.000,000, 00 (cinco milhões de cruzeiros).<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10</span></a> Esta Lei entrará em vigor na data de sua publicação.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11</span></a> Revogam-se as disposições em contrário.<br><br>PUBLIQUE-SE.<br><br>SALA das Sessões da Câmara Municipal de Feira de Santana, Em 29 de Novembro de 1961.<br><br>ALBERTO OLIVEIRA<br>VICE-PRESIDENTE NO EXERCÍCIO DA PRESIDÊNCIA.<br><br>Autor: Poder Executivo<br>DATA DE PUBLICAÇÃO: 29/11/1961<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

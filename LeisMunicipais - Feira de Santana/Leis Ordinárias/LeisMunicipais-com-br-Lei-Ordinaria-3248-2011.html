@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3248/2011</h2><br>DISPÕE SOBRE A OBRIGATORIEDADE DE SER DESTINADO LOCAL EXCLUSIVO NAS PRAÇAS DE ALIMENTAÇÃO PARA DEFICIENTES, IDOSOS, E GESTANTES EM CENTROS COMERCIAIS, ESTABELECIMENTOS DE ENSINO, SHOPPINGS CENTERES, HIPERMMECARDOS E SUPERMECADOS, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 106/2011, de autoria do Edil Cintia Daltro Machado, e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> No Município de Feira de Santana todos os centros comerciais, shoppings centeres, estabelecimentos de ensino, hipermercados e supermercados que possuírem as chamadas praças de alimentação, terão de todas as pessoas idosas; pessoas obesas, pessoas portadoras de algum tipo de deficiência, ou com mobilidade reduzida, incluídas as consideradas temporária ou permanentemente, gestantes e pessoas portadoras de criança de colo.<br><br>§ 1º Os assentos que trata o caput do presente artigo serão reservados com observância da seguinte proporção:<br><br>I - 10% (dez por cento) dos assentos ou o número inteiro imediatamente superior, com base no resultado calculado em tal porcentagem, independentemente do número de lugares disponibilizados nas praças de alimentação;<br><br>II - com um número mínimo de 02 (dois) lugares destinados para tal reserva de que trata o caput do presente artigo.<br><br>§ 2º O cálculo da porcentagem a que se refere o parágrafo 1º do presente artigo será sempre realizado a partir do número total de assentos existentes em cada praça de alimentação.<br><br>§ 3º Os assentos reservados nos termos desta Lei deverão ser posicionados em local de fácil acesso, de forma a garantir a maior comodidade aos seus beneficiários.<br><br>§ 4º Entende-se por pessoa idosa aquela que comprovar 60 (sessenta) anos de idade ou acima.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Os estabelecimentos comerciais mencionados no art. 1º da presente Lei terão o prazo de 90 (noventa) dias para se adequarem às disposições desta Lei.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Nas praças de alimentação citadas no art. 1º da presente Lei deverão ser fixados em local de grande visibilidade, através de placas e ou adesivos indicativos da localização dos assentos preferenciais de que trata o art. 1º da presente Lei.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> A não-observância ao disposto nesta Lei sujeitará o estabelecimento infrator às seguintes penalidades:<br><br>I - a incidência de multa de R$ 1.000,00 (um mil reais), e aplicada em dobro caso de reincidência;<br><br>II - suspensão do alvará de funcionamento, após 02 (duas) multas pecuniárias e consecutivas, exposta no caput do presente artigo.<br><br>Parágrafo Único - O valor da multa de que trata o caput do presente artigo será atualizado anualmente pela variação do Índice de Preços ao Consumidor Amplo - IPCA, apurado pelo Instituto Brasileiro de Geografia e Estatística - IBGE, acumulada no exercício anterior, sendo que na eventual hipótese de extinção do citado índice, este será substituído do poder aquisitivo da moeda.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> As despesas decorrentes da execução da presente Lei correrão por conta de dotações orçamentárias próprias, e suplementadas se necessário.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> O Poder Executivo regulamentará a presente Lei, no que couber, no prazo máximo de 60 (sessenta) dias, contados da data de sua publicação.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito, 24 de agosto de 2011.<br><br>TARCÍZIO SUZART PIMENTA JÚNIOR<br>Prefeito Municipal<br><br>MILTON PEREIRA DE BRITTO<br>Chefe de Gabinete do Prefeito<br><br>CARLO ANTÔNIO DE MORAES LUCENA<br>Procurador Geral do Município<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

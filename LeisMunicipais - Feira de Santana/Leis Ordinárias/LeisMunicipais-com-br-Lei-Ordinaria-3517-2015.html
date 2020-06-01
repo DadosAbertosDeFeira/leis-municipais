@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3517/2015</h2><br>CRIA O CONSELHO MUNICIPAL DE TRÂNSITO DE FEIRA DE SANTANA, NO ÂMBITO DA SECRETARIA MUNICIPAL DE TRANSPORTES E TRÂNSITO E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Prefeito Municipal de Feira  de Santana, Estado da Bahia, no uso de suas atribuições, faço saber que a Câmara Municipal, através do Projeto de LEI Nº 03/2015, de autoria do Poder Executivo, decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica criado, no âmbito da Secretaria Municipal de Transportes de Trânsito, o Conselho Municipal de Trânsito de Feira de Santana.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O Conselho Municipal de Trânsito de Feira de Santana é o órgão colegiado de caráter consultivo, propositivo e participativo em questões relacionadas às ações de acessibilidade, mobilidade urbana, segurança do trânsito, educação para o trânsito e fiscalização eletrônica executadas pela Secretaria Municipal de Transportes e Trânsito e pela Superintendência Municipal de Trânsito.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> São atribuições do Conselho Municipal de Trânsito:<br><br>I - Acompanhar o planejamento da Secretaria Municipal de Transportes e Trânsito e da Superintendência Municipal. de Trânsito;<br><br>II - Apresentar sugestões sobre novas implantações ou mudança nas vias do município que causem grande impacto;<br><br>VII - Contribuir para uma melhor educação e fiscalização do trânsito;<br>`<br><br>VIII - Fomentar a cidadania e o respeito à legislação de trânsito;<br><br>§ 1º O Presidente do Conselho Mlinicipal de Trânsito poderá conferir outras atribuições ao Conselho Municipal de Trânsito, desde que compatíveis com a área de sua atuação.<br><br>§ 2º Pedido de implantação, mudança, novo projeto, abaixo-assinado, ou seja, qualquer solicitação ou sugestão que vise à melhoria da vida do munícipe no que se refere a trânsito será encaminhada ao Conselho Municipal de Trânsito.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> A Secretaria Municipal de Transportes e Trânsito, para fins do disposto nesta Lei, encaminhará ao Conselho Municipal de Trânsito todos os elementos técnicos que justifiquem a alteração, modificação ou implantação, fazendo o mesmo quando for apresentado em seção propostas dos demais conselheiros, que deverá passar primeiro por analise técnica sobre a viabilidade para só então retornar a plenária para ser referendada ou não pelo conselho.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> A Presidência do Conselho Municipal de Trânsito, será exercita pelo Secretário Municipal de Transportes e Trânsito efetivo ou interino e seu período como presidente está atrelado a sua efetiva permanência no cargo que designará um(a) Secretário(a) Executivo(a) e uma(a) Secretário(a) geral, que serão responsáveis pelo suporte às reuniões do conselho.<br><br>Parágrafo Único - Os ocupantes das divisões de engenharia, sinalização e um(a) engenheiro(a) da Superintendência Municipal deTrânsito - SMT como assessoria técnica para as sessões.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> O conselho Municipal de Trânsito de Feira de Santana será composto por mais 22 (vinte e dois) órgãos e entidades fixas e respectivos suplentes, devendo ser servidor ou funcionário, com mandato de livre escolha do gestor ou responsável pelos órgãos/entidadesm devendo o titular ou suplente comparecer quando convocado para as reuniões do conselho mais;<br><br>I - 11 (onze) representantes dos órgãos municipais, indicados pelos titulares, a saber:<br><br>a) 1 (um) dda Secretaria Municipal de Transportes e Trânsito - SMTT;<br>b) 1 (um) da Superintendência Municipal de Trânsito - SMT;<br>c) 1 (um) da Secretaria Municipal de Desenvolvimento Urbano - SEDUR;<br>d) 1 (um) da Secretaria Municipal de Meio Ambiente e Recursos Naturais - SEMMAM;<br>e) 1 (um) da Secretaria Municipal de Planejamento - SEPLAN;<br>f) 1 (um) da Secreta Municipal de trabalho, Turismo e Desenvolvimento Econômico - SETDEC<br>g) 1 (um) da Secretaria Municipal de Cultura, Esporte e Lazer - SECEL;<br>h) 1 (um) da Secretaria Municipal de Educação - SEDUC;<br>i) 1 (um) da Secretaria Municipal de Saúde - SMS;<br>j) 1 (um) da Casa dos Conselhos de Feira de Santana - CCFS;<br>k) 1 (um) da Câmara dos Vereadores de Feira de Santana.<br><br>II - 7 (sete) representantes de outros órgãos públicos, indicados pelos titulares, a saber:<br><br>a) 1 (um) do Comando de Policiamento Regional Leste - CPRL;<br>b) 1 (um) do Segundo Grupamento de Bombeiros Militares - 2º GBM;<br>c) 1 (um) da terceira Circunscrição Regional de Trânsito - 3ª CIRETRAN;<br>d) 1 (um) da Primeira Coordenadoria de Política do Interior - 1ª COORPIN;<br>e) 1 (um) da Segunda Diretoria Regional de Saúde 0 2ª DIRES;<br>f) 1 (um) da Segunda Diretoria Regional de Ensino - DIREC 2;<br>g) 1 (um) do Departamento de Infraestrutura de Transportes da Bahia - DERBA;<br><br>III - 4(quatro) representantes da sociedade civil, indicados pelos titularesm a saber:<br><br>a) 1 (um) do Conselho Regional de Engenharia e Arquitetura - CREA;<br>b) 1 (um) da Associação Comercial de Feira de Santana - ACEFS;<br>c) 1 (um) da Associação Feirense dos Agentes de Trânsito - AFAT;<br>d) 1 (um) da Ordem dos Advogados - OAB/FEIRA.<br><br>IV - A SMTT, indicará três representantes dos modais de transporte coletivos, alternativo e complementar para participar como delegados de suas entidades com a missão de acompanhar os trabalhos do Conselho.<br><br>V - A casa dos Conselhos indicará dois representantesm um dos idosos e um dos deficientes para participar como delegados de suas entidades com a missão de acompanhar os trabalhos do Conselho.<br><br>§ 1º Poderão ser convidados também para participar do Conselho de Trânsito membros do Ministério Público do Estado da Bahia.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> A Secretaria Municipal de Transportes e Trânsito oficiará aos titulares dos órgãos e entidades referidas no artigo 6º, parágrafos I, II, III, desta Lei, para que, no prazo máximo de 15 (quinze) dias, contados do recebimento do ofício, indiquem seus representantes e respectivos suplentes.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> A Participação no Conselho Municipal de Trânsito será considerada relevante função pública, não remunerada.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> Para consecução de suas atribuições, o Conselho Municipal de Trânsito poderá solicitar informações e esclarecimentos dos órgãos e entidades competentesm bem como convidar técnicos e especialistas para discussão de temas específicos, mediante aprovação em reunião.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10</span></a> Poderão ser constituídas comissões temáticas ou regionais para o melhor andamento dos trabalhos do Conselho Municipal de Trânsito;<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11</span></a> O Conselho Municipal de Trânsito de Feira de Santana manterá registro de seus atos, assegurada a publicidade de todas as atividades;<br><br><a name="artigo_12"><span class="label label-pill label-danger">Art. 12</span></a> O Conselho Municipal de Trânsito de Feira de Santana fornecerá os meios e recursos necessários à instalação e funcionamento do Conselho Municipal de Trânsito, mas poderá ter apoio dos demais órgãos componentes do referido conselho.<br><br><a name="artigo_13"><span class="label label-pill label-danger">Art. 13</span></a> A Secretaria Municipal de Transportes e Trânsito terá 45 (quarenta e cinco dias) para realizar a primeira reunião do conselho e mais 30 dias para apresentar o seu regimento interno detalhado como serão as reuniões, atribuições dos participantes, possíveis adequações e mudanças nos quadros permanentes do conselho e etc.<br><br><a name="artigo_14"><span class="label label-pill label-danger">Art. 14</span></a> Esta Lei entrará em vigor na data de sua publicação.<br><br>Gabinete do Prefeito Municipal, 12 de março de 2015<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO MUNICIPAL<br><br>MARIO COSTA BORGES<br>CHEFE DE GABINETE DO PREFEITO<br><br>CLEUDSON SANTOS ALMEIDA<br>PROCURADOR GERAL DO MUNICÍPIO<br><br>EBENÉZER NOEL CARNEIRO DA SILVA TUY<br>SECRETÁRIO MUNICIPAL DE TRANSPORTES E TRÂNSITO<br><br>FRANCISCO ANTÔNIO BRITO NOGUEIRA JÚNIOR<br>DIRETOR SUPERINTENDENTE DA SUPERINTENDÊNCIA MUNICIPAL DE TRÂNSITO<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

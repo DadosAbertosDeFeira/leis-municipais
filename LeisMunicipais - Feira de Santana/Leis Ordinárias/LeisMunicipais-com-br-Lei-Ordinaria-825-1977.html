@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 825, de 15 de agosto de 1977</h2><br>CRIA O PLANO MUNICIPAL DE HABITAÇÃO POPULAR - PLANOLAR E A DIRETORIA DE HABITAÇÃO SOCIAL, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, FAÇO saber que a Câmara Municipal decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica criado o Plano Municipal de Habitação Popular - PLANOLAR,- com a finalidade de proporcionar às famílias de baixa renda, o acesso à casa própria.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> As unidades residenciais previstas nesta Lei serão construídas na área urbana do Município pelo sistema de mutirão.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> O PLANOLAR constará de etapas anuais, com dotações fixadas no Orçamento Municipal.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> A Prefeitura Municipal doará os terrenos onde serão construídas as unidades residenciais e executará, sem ônus para os futuros proprietários, todas as obras de infra-estrutura, nelas incluídas escola, posto médico e mercado público.<br><br>Parágrafo Único - Os terrenos referidos neste artigo serão utilizados prioritariamente com o fim de remanejar moradores das áreas consideradas &quot;invasões&quot;.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> A Prefeitura Municipal financiará a compra de material necessário à construção das unidades residenciais e será ressarcida pelos beneficiários em prestações mensais, reajustáveis de acordo com os critérios vigentes no país.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> A mão-de-obra necessária à construção das unidades residenciais e demais obras estabelecidas no Art. 4º, serão de exclusiva responsabilidade dos futuros proprietários, pelo sistema previsto na presente Lei.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Com o objetivo de coordenar, fiscalizar e executar o PLANOLAR, fica criada, junto ao Gabinete do Prefeito a Diretoria de Habitação Social.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> Dos candidatos à casa própria será exigido:<br><br>I - prova de identidade civil;<br><br>II - certidões dos cartórios do registro de imóveis, provando que o candidato não possui atualmente, em seu nome ou do cônjuge, imóvel no Município e de que não alienou propriedade nos 2 (dois) últimos anos imediatamente anteriores à data da inscrição;<br><br>III - folha corrida fornecida pelas delegacias de polícia deste Município;<br><br>IV - prova de renda familiar de, no máximo 2 (dois) salários mínimos regionais e indicação comprovada de seus respectivos dependentes.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> Para julgar o atendimento das exigências estabelecidas no artigo anterior, a Diretoria de Habitação Social criará uma comissão especial, composta de três membros.<br><br>Parágrafo Único - A comissão especial terá como membro nato um representante eleito do conselho de moradores, logo após a criação deste.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10 -</span></a> Na eleição a comissão especial dará preferência aos candidatos:<br><br>I - que tenham menor renda familiar;<br><br>II - que tenham maior número de dependentes.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11 -</span></a> No ato de inscrição, os candidatos selecionados optarão pelo tipo de residência desejada, dentre os padrões oficiais.<br><br><a name="artigo_12"><span class="label label-pill label-danger">Art. 12 -</span></a> Concluída a etapa de seleção, os candidatos à casa própria, na qualidade de promitentes compradores, celebrarão contrato de promessa de compra e venda com a Prefeitura Municipal.<br><br>§ 1º Não serão cobrados, a qualquer título, impostos ou taxas pela transmissão do imóvel ao promitente comprador.<br><br>§ 2º Os candidatos que vierem a falecer após a celebração do contrato a que se refere o presente artigo serão seus dependentes considerados proprietários do imóvel, ficando o Poder Público Municipal obrigado a outorgar a escritura definitiva e o competente registro.<br><br>§ 3º A distribuição das áreas com os candidatos selecionados será feita mediante sorteio público, promovido pela Diretoria de Habitação Social.<br><br><a name="artigo_13"><span class="label label-pill label-danger">Art. 13 -</span></a> O valor das prestações mensais não poderá ser inferior a 10% (dez por cento), nem ultrapassar a 15% (quinze por cento) do salário mínimo regional.<br><br><a name="artigo_14"><span class="label label-pill label-danger">Art. 14 -</span></a> Fica expressamente vedada a mudança de destinação das unidades residenciais prevista nesta Lei.<br><br>§ 1º Cada conjunto residencial será servido por transporte coletivo urbano, através de linha própria.<br><br>§ 2º Em cada conjunto residencial haverá uma área para a prática de esportes e recreação infantil.<br><br><a name="artigo_15"><span class="label label-pill label-danger">Art. 15 -</span></a> É facultada aos promitentes-compradores e às suas expensas, a ampliação dos respectivos imóveis, respeitadas as normas do Código de Edificações do Município.<br><br><a name="artigo_16"><span class="label label-pill label-danger">Art. 16 -</span></a> A partir do habite-se, cada conjunto residencial terá um Conselho de Moradores, eleito dentre os seus membros por sufrágio universal, e secreto.<br><br>Parágrafo Único - Ao Conselho de Moradores caberá encaminhar as reivindicações dos moradores aos órgãos competentes e administrar todas as demais atividades comunitárias.<br><br><a name="artigo_17"><span class="label label-pill label-danger">Art. 17 -</span></a> Esta Lei será regulamentada pelo Poder Executivo no prazo de 60 (sessenta) dias, e entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Prefeitura Municipal de Feira de Santana, em 15 de agosto de 1977.<br><br>DR. COLBERT MARTINS DA SILVA<br>Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

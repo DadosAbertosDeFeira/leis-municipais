@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 2718/2006</h2><br>CRIA O COMTUR - CONSELHO MUNICIPAL DE TURISMO E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Autor: Fábio Fernandes de Moraes Lucena<br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 151/2005, de autoria do Edil Fábio Fernandes de Moraes Lucena, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica criado no âmbito da Secretaria Municipal de Desenvolvimento Econômico o COMTUR - Conselho Municipal de Turismo, como órgão consultivo e de assessoramento, com o objetivo de implantar a política municipal de turismo, elegendo a promoção e o incentivo turístico como fator de desenvolvimento sustentável, social, econômico e ambiental nos termos do artigo 180 da Constituição Federal.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Compete ao COMTUR:<br><br>I - formular as diretrizes básicas a serem obedecidas na política municipal de turismo;<br><br>II - propor resoluções, atos ou instruções regulamentares necessários ao pleno exercício de suas funções, bem como modificações ou supressões de exigências administrativas ou que dificultem as atividades de turismo;<br><br>III - opinar, previamente, sobre Projetos de Leis que se relacionem com o turismo ou adotem medidas que nesse possam ter implicações;<br><br>IV - desenvolver e estimular programas e projetos de interesse turístico visando incrementar o fluxo de visitantes, a partir dos seus atributos, e dos interesses da comunidade;<br><br>V - estabelecer diretrizes para um trabalho coordenado entre os serviços públicos municipais e os prestados pela iniciativa privada, com o objetivo de promover a infra - estrutura adequada à implantação do turismo;<br><br>VI - estudar de forma sistemática e permanente o mercado turístico do município e seus impactos, a fim de contar com os dados necessários para um adequado controle técnico;<br><br>VII - incentivar ações que sejam capazes de conscientizar a sociedade sobre a importância do turismo como instrumento de desenvolvimento econômico, inclusão social, preservação ambiental e atributos culturais locais;<br><br>VIII - criar, manter e facilitar o acesso de todos os segmentos da sociedade ao banco de dados de informações turísticas de interesse do município;<br><br>IX - promover e divulgar as atividades ligadas ao turismo;<br><br>X - apoiar, em nome do município, a realização de congressos, seminários, convenções de interesse para o implemento turístico regional bem como promover programas e executar debates, reuniões e cursos direcionados ao estudo vinculado à atividades;<br><br>XI - implementar convênios com órgãos, entidades e instituições públicas ou privadas, nacionais e internacionais, com o objetivo de proceder intercâmbios de interesse turístico;<br><br>XII - propor planos de financiamentos e convênios com instituições financeiras, públicas ou privadas;<br><br>XIII - emitir parecer prévio sobre os programas e projetos de implantação e desenvolvimento de atividades turística no município na forma a ser estabelecida por Decreto do Poder Executivo;<br><br>XIV - examinar, julgar e aprovar as contas que lhe forem apresentadas referentes aos planos e programas de trabalho executados;<br><br>XV - fiscalizar a captação, o repasse e a destinação dos recursos que lhe forem destinados;<br><br>XVI - decidir sobre a destinação e aplicação dos recursos financeiros;<br><br>XVII - elaborar o seu Regimento Interno.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> O COMTUR terá a seguinte composição:<br><br>I - O Secretário Municipal de Desenvolvimento Econômico;<br><br>II - O Diretor do Departamento de Turismo da Secretaria Municipal de Desenvolvimento Econômico;<br><br>III - um representante da Associação Brasileira de Hotelaria - ABIH;<br><br>IV - um representante da Associação de Artesãos do Mercado de Arte Popular;<br><br>V - um representante do Sindicato de Hotéis, Restaurantes, Bares e Similares de Feira de Santana.<br><br>VI - um representante da Associação Brasileira dos Agentes de Viagem - ABVA;<br><br>VII - um representante do SEBRAE;<br><br>VIII - um representante da Associação Comercial de Feira de Santana - ACFS;<br><br>IX - um representante das faculdades particulares de ensino superior de Feira de Santana;<br><br>X - um representante da Universidade Estadual de Feira de Santana;<br><br>XI - um representante da CDL - Câmara de Diretores Lojistas;<br><br>XII - um representante do Sindicato do Comércio de Feira de Santana;<br><br>XIII - um representante do SENAC - Serviço Nacional do Comércio.<br><br>§ 1º O COMTUR será presidido pelo primeiro membro.<br><br>§ 2º A cada um dos membros denominados nesse artigo corresponderá um suplente, igualmente indicado pelo órgão ou entidade representado.<br><br>§ 3º Cada representante terá mandato de 02 (dois) anos, podendo ser reeleito por igual período.<br><br>§ 4º Sempre que se faça necessário, em função da tecnicidade dos temas em desenvolvimento, o COMTUR poderá contar com a participação de consultores, a serem indicados pole Presidente.<br><br>§ 5º Os integrantes do COMTUR serão nomeados por Decreto do Poder Executivo.<br><br>§ 6º Não há remuneração pelo exercício da função de conselheiro, considerando - se serviço público relevante.<br><br>§ 7º O COMTUR deverá avaliar, periodicamente, a conjuntura municipal, mantendo atualizados o Exercício e o Legislativo, quanto ao resultado de suas ações.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> O Poder Executivo regulamentará a presente Lei em um prazo de 30 (trinta) dias.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>PREFEITURA MUNICIPAL DE FEIRA DE SANTANA, EM 03 DE OUTUBRO DE 2006.<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

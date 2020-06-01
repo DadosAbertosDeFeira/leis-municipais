@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3532/2015</h2><br>DISPÕE SOBRE A ALTERAÇÃO DO § 1º DO ART. 1º DA LEI Nº <a class="link_law" data-id="2005584" data-original-title=" Data da Norma: 26.09.2014 - DISPÕE SOBRE A ALTERAÇÃO DO PARÁGRAFO 1º DO ART. 1º E DO INCISO IV DO ART. 2º, SUPRIMA-SE O INCISO III E PARÁGRAFO ÚNICO DO ART. 3º E O ART. 4º, DA LEI Nº 311 DE 2014" data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2014/347/3478/lei-ordinaria-n-3478-2014-dispoe-sobre-a-alteracao-do-paragrafo-1-do-art-1-e-do-inciso-iv-do-art-2-suprima-se-o-inciso-iii-e-paragrafo-unico-do-art-3-e-o-art-4-da-lei-n-311-de-2014" rel="tooltip">3478</a>/2014.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 2/2015, de autoria do Edil José Carneiro Rocha, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Dê-se ao § 1º, do art. 1º, da Lei nº <a class="link_law" data-id="2005584" data-original-title=" Data da Norma: 26.09.2014 - DISPÕE SOBRE A ALTERAÇÃO DO PARÁGRAFO 1º DO ART. 1º E DO INCISO IV DO ART. 2º, SUPRIMA-SE O INCISO III E PARÁGRAFO ÚNICO DO ART. 3º E O ART. 4º, DA LEI Nº 311 DE 2014" data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2014/347/3478/lei-ordinaria-n-3478-2014-dispoe-sobre-a-alteracao-do-paragrafo-1-do-art-1-e-do-inciso-iv-do-art-2-suprima-se-o-inciso-iii-e-paragrafo-unico-do-art-3-e-o-art-4-da-lei-n-311-de-2014" rel="tooltip">3.478</a>/2014 a seguinte redação:<br><br>&quot;Art. 1º <br><br>§ 1º Somente através de Lei serão atribuídos nomes aos bairros às ruas e avenidas. E somente através de Decreto serão atribuídos nomes aos prédios públicos, escolas, ginásios e parques situados no âmbito do Município de Feira de Santana.&quot;<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>PREFEITURA MUNICIPAL DE FEIRA DE SANTANA, em 14 de Março de 2015.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

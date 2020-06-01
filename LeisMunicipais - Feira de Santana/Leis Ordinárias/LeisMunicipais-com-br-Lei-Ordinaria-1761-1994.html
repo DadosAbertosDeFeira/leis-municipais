@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 1761/94</h2><br>DISPÕE SOBRE A CRIAÇÃO DO CONSELHO MUNICIPAL DE ASSISTÊNCIA SOCIAL E DO FUNDO MUNICIPAL A ELE VINCULADO, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, FAÇO saber que a Câmara Municipal decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica criado o Conselho Municipal de Assistência Social, de acordo com o disposto no art. 16º, item IV, da Lei Federal nº 8.742, de 07 de dezembro de 1993, vinculado à administração pública municipal, responsável pela coordenação da política municipal de assistência social.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Compete ao Conselho Municipal de Assistência Social:<br><br>I - Aprovar a política municipal de assistência social, de acordo com as diretrizes do conselho nacional de assistência social;<br><br>II - Aprovar o plano municipal de assistência social, bem como os programas e projetos governamentais e não-governamentais, conforme as prioridades estabelecidas pela conferência municipal de assistência social;<br><br>III - Regulamentar as ações de prestação de serviços de natureza pública e privada no campo de assistência social;<br><br>IV - Estabelecer diretrizes, analisar e aprovar os programas do Fundo Municipal de Assistência Social, definindo critérios de repasse de recursos, destinados às entidades não-governamentais;<br><br>V - Apresentar proposta orçamentária de assistência social para integrar o orçamento municipal;<br><br>VI - Inscrever e fiscalizar as entidades e organizações de assistência social;<br><br>VII - Convocar, a cada 2 (dois) anos ou extraordinariamente, por maioria absoluta de seus membros, a conferência municipal de assistência social, com atribuição de avaliar a situação da assistência social e aprovar diretrizes para o aperfeiçoamento do sistema;<br><br>VIII - Fiscalizar e avaliar a gestão dos recursos, o desempenho dos programas e projetos aprovados;<br><br>IX - Incentivar a realização e pesquisas e estudos referentes à realidade da assistência social, objetivando conhecimento mais aprofundado da questão;<br><br>X - Credenciar uma equipe multiprofissional conforme dispõe o art. 20, parágrafo 6º da Lei Federal nº 8.742, de 07.12.93.<br><br>XI - Regulamentar suplementarmente as normas estabelecidas pelo Conselho Nacional de Assistência Social, no que se refere ao art. 22 da Lei Federal nº 8.742, de 07.12.93.<br><br>XII - Propor ao Conselho Estadual de Assistência e demais órgãos de outras esferas de governo e órgãos não-governamentais, programas, serviços e financiamentos de projetos;<br><br>XIII - Elaborar o seu regimento interno.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> O Conselho Municipal de Assistência Social será composto de 10 (dez) membros efetivos e seus respectivos suplentes, nomeados pelo chefe do Poder Executivo Municipal, após indicação pelos órgãos que representam, a saber:<br><br>2 (dois) Representantes da Secretaria Municipal de Ação Social;<br>2 (dois) Representantes da Secretaria Municipal de Saúde;<br>1 ( um ) Representante do Poder Legislativo;<br>1 ( um ) Representante de organizações religiosas;<br>1 ( um ) Representante das entidades comunitárias;<br>1 ( um ) Representante do Conselho Regional de Serviço Social;<br>1 ( um ) Representante dos segmentos beneficiados pela <a class="link_law" data-original-title="Lei Orgânica Feira de Santana BA" data-toggle="tooltip" href="/lei-organica-feira-de-santana-ba" rel="tooltip">Lei Orgânica</a> da Assistência Social.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> O Conselho Municipal de Assistência Social terá a seguinte estrutura:<br><br>a) Secretaria Executiva;<br>b) Diretoria composta por: Presidente, Vice-presidente, 1º Secretário e 2º Secretário;<br>c) Comissões;<br>d) Plenário;<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> A Diretoria será escolhida pelos integrantes do Conselho, nos primeiros 30 (trinta) dias de cada mandato.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> O mandato dos conselheiros será de 2 (dois) anos, permitida uma única recondução.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> O exercício do mandato de conselheiro será gratuito, ficando expressamente vedada qualquer remuneração, benefício ou vantagem financeira.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> A administração pública municipal cederá o espaço físico, as instalações e os recursos humanos necessários à manutenção e funcionamento regular do Conselho.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> Fica criado o Fundo Municipal de Assistência Social em conformidade com o art. 30, item II, da Lei Federal nº 8.742, de 07.12.93, com o objetivo de financiar os benefícios, serviços, programas e projetos de assistência social.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10 -</span></a> As receitas do Fundo Municipal de Assistência Social serão proveniente de:<br><br>1 - Fundo Nacional de Assistência Social;<br>2 - Fundo Estadual de Assistência Social;<br>3 - Dotações orçamentárias próprias;<br>4 - Doações, auxílios e contribuições de terceiros;<br>5 - Doações financeiras de organismos internacionais de cooperação, filantropia e solidariedade;<br>6 - Rendas oriundas da aplicação financeira de seus recursos;<br>7 - Receitas eventuais aqui não explicitadas.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11 -</span></a> O Fundo Municipal de Assistência Social ficará vinculado ao Conselho Municipal de Assistência Social, o qual definirá a aplicação dos recursos na área da sua competência.<br><br><a name="artigo_12"><span class="label label-pill label-danger">Art. 12 -</span></a> A presente Lei será regulamentada por decreto do Executivo, no prazo de 60 (sessenta) dias, contados a partir de sua publicação.<br><br><a name="artigo_13"><span class="label label-pill label-danger">Art. 13 -</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Prefeitura Municipal de Feira de Santana, em 17 de Junho de 1994.<br><br>PROFº. JOSÉ RAIMUNDO PEREIRA DE AZEVÊDO<br>Prefeito<br><br>MARIA DE LOURDES BARRETO DE CERQUEIRA<br>Secretária de Ação Social<br><br>Autor: Roberto Luis da Silva Tourinho<br><br>Data da Publicação: 18/6/1994<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

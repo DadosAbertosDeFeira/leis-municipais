@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI PROMULGADA Nº 152/2005</h2><br>INSTITUI A COBRANÇA POR TEMPO FRACIONADO NOS ESTACIONAMENTOS PARTICULARES DO MUNICÍPIO DE FEIRA DE SANTANA E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O VICE-PRESIDENTE DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, FAÇO SABER QUE A CÂMARA MUNICIPAL, ATRAVÉS DO PROJETO DE LEI Nº  108/2003, DE AUTORIA DO EDIL ROBERTO LUIS DA SILVA TOURINHO, E NA CONFORMIDADE DO ART. 77, § 7, DA LEI Nº  <a class="link_law" data-id="1739637" data-original-title=" Data da Norma: 05.04.1990 - DISPÕE SOBRE A LEI ORGÂNICA DO MUNICIPIO DE FEIRA DE SANTANA E DA OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-promulgada/1990/3/37/lei-promulgada-n-37-1990-dispoe-sobre-a-lei-organica-do-municipio-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">37</a>, DE 05 DE ABRIL DE 1990, E ARTIGO 33, INCISO IV, DO REGIME INTERNO, DECRETA E PROMULGA A SEGUINTE LEI:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Ficam os estacionamentos particulares do Município de Feira de Santana, obrigados a dotar o sistema de cobrança por tempo fracionado em parcelas de 10 (dez) minutos, durante o período de permanência dos veículos.<br><br>§ 1º Por estabelecimento particular entende-se o estabelecimento comercial destinado a permanência, ainda que exercendo atividade subsidiária a outro estabelecimento comercial.<br><br>§ 2º O sistema de cobrança fracionado terá como base parcelas de 10 (dez) minutos, sendo o valor de cada parcela estipulado pela divisão do valor cobrado pelo período de 01 (uma) hora por 6 (seis).<br><br>§ 3º O cálculo do valor a ser cobrado dos motoristas será feito multiplicando-se o número de parcelas de 10 (dez) minutos de permanência, pelo valor encontrado conforme parágrafo anterior.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> No caso de período de permanência compreender parcela que não inteire 10 (dez) minutos, a cobrança será feita segundo a fórmula de arredondamento aritmético, da seguinte forma:<br><br>I - A parcela de tempo inferior ou igual a 4 (quatro) minutos e 59 (cinquenta e nove) segundos, será considerado para o cômputo do valor a ser cobrado pela permanência dos veículos;<br><br>II - A parcela de tempo superior ou igual a 05 (cinco) minutos e 00 (zero) segundos, será considerada como uma parcela de 10 (dez) minutos inteira para o cômputo do valor a ser cobrado pela permanência dos veículos.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Os estacionamentos particulares em funcionamento no Município deverão apresentar, junto ao aviso do valor a ser cobrado pelo período de permanência equivalente a 01 (uma ) hora, o valor a ser cobrado pelo período de permanência equivalente a 10 (dez) minutos.<br><br>Parágrafo Único - A forma de veiculação da informação do valor a ser cobrado pelo período equivalente a 10 (dez) minutos, deverá ter as mesmas dimensões, formato e tamanho de fonte que integram o aviso de valor a ser cobrado pelo período de permanência equivalente a 01 (uma) hora, tornando possível sua fácil e ampla visualização pelo público.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Além da indicação do valor a ser cobrado pelos períodos de permanência de 01 (uma) hora e de 10 (dez) minutos, a tabela de preço fixada no interior dos estacionamentos deve conter a forma de arredondamento aritmético das parcelas de tempo inferiores a 10 (dez) minutos, descrito no Artigo 2º, incisos I e I desta Lei.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Os estacionamentos particulares que não atenderem ao disposto nesta Lei estarão sujeitos as seguintes penalidades:<br><br>I - A multa equivalente a R$ 500,00 (quinhentos reais), duplicada em caso de nova reincidência;<br><br>II - Cassação de alvará de funcionamento, em caso de nova reincidência no espaço de 01 (um) ano, contado da primeira infração.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> O Poder Público Municipal regulamentará esta Lei no prazo de 90 (noventa) dia.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>CÂMARA MUNICIPAL DE FEIRA DE SANTANA, EM 05 DE SETEMBRO DE 2005.<br><br>Ver. ANTONIO FRANCISCO NETO<br>PRESIDENTE EM EXERCÍCIO<br><br>Autor: Roberto Luis da Silva Tourinho<br>DATA DE PUBLICAÇÃO: 17/09/2005<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3.971, DE 15 DE OUTUBRO DE 2019.</h2><br>Dispõe sobre a transparência das mangueiras nas bombas dos postos de combustíveis, e dá outras providências.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 89/2019, de autoria do Edil Edvaldo Lima dos Santos, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Para efeitos da Lei, os postos de combustíveis do Município de Feira de Santana ficam obrigados a implantar mangueiras transparentes para as bombas de combustíveis.<br><br>Parágrafo único. Considera-se transparente a mangueira, pela qual, é possível ver a passagem da gasolina da bomba até o veículo.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Os estabelecimentos, que não cumprirem com o disposto na presente Lei, ficam sujeitos à aplicação de sanções administrativas a serem impostas pela Superintendência Municipal de Defesa do Consumidor (Procon-FSA), bem como, aos incisos abaixo:<br><br>I - advertência;<br><br>II - multa administrativa diária no valor de R$ 5.000,00 (cinco mil reais), adicionado as penalidades ligadas a critério da administração pública municipal e estadual;<br><br>III - suspensão das atividades comerciais por 15 (quinze) dias, acompanhado por multa.<br><br>Parágrafo único. Em caso de reincidência da infração, os valores da multa diária mencionado no art. 2º, inciso II desta Lei, serão duplicados.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Esta Lei entrará em vigor 180 (cento e oitenta) dias após a sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito, 15 de outubro de 2019.<br><br>COLBERT MARTINS DA SILVA FILHO<br>PREFEITO MUNICIPAL<br><br>MARIO COSTA BORGES<br>CHEFE DE GABINETE DO PREFEITO<br><br>CLEUDSON SANTOS ALMEIDA<br>PROCURADOR GERAL DO MUNICÍPIO<br><br>ICARO IVVIN DE ALMEIDA COSTA LIMA SUPERINTENDENTE MUNICIPAL DE PROTEÇÃO E DEFESA DO CONSUMIDOR - PROCON/FSA PUBLICADO NO DIÁRIO OFICIAL DIA 16 DE OUTUBRO DE 2019 <p> <a class="btn btn-default" href="https://leis.s3.amazonaws.com/originais/feira-de-santana-ba/2019/ord-3971-2019-feira_de_santana-ba.doc" title="Lei Ordinária nº 3971/2019 - Feira de Santana-BA">Download do documento</a> </p> <p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

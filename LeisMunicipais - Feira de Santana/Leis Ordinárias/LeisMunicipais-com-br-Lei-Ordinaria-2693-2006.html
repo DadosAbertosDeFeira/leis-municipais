@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 2693/2006</h2><br>INSTITUI A COMISSÃO PERMANENTE - CPA, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Autor: Roberto Luis da Silva Tourinho<br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 194/2005, de autoria do Edil Roberto Luis da Silva Tourinho, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica instituída, diretamente subordinada à Secretaria Municipal de Desenvolvimento Urbano e Meio Ambiente; a COMISSÃO PERMANENTE DE ACESSIBILIDADE - CPA, para a elaboração de normas e controles que garantam a acessibilidade de pessoas portadoras de deficiência física, ou com mobilidade reduzida, a edificações, vias e espaços públicos, transportes, mobiliário e equipamentos urbanos, bem como os meios de divulgação de informações e sinalizações relativas à acessibilidade.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> A Comissão em questão será integrada por 15 (quinze) membros, designados pelo Prefeito, a saber:<br><br>I - um representante do Gabinete do Prefeito;<br><br>II - um representante da Secretaria Municipal de Desenvolvimento Urbano e Meio Ambiente;<br><br>III - um representante da Secretaria Municipal de Desenvolvimento Social;<br><br>IV - um representante da Secretaria Municipal de Planejamento;<br><br>V - um representante da Secretaria Municipal de Saúde;<br><br>VI - um representante da Procuradoria Geral do Município;<br><br>VII - um representante da Secretaria Municipal da Educação;<br><br>VIII - um representante da Secretaria Municipal de Transporte;<br><br>IX - um representante do Conselho Regional de Engenharia e Arquitetura - CREA;<br><br>X - um representante da Universidade Estadual de Feira de Santana - UEFS;<br><br>XI - um representante da Secretaria Municipal de Governo;<br><br>XII - um representante do NEFEA;<br><br>XIII - um representante da 3ª Ciretran;<br><br>XIV - um representante da Associação de Pais e Amigos dos Deficientes APAE;<br><br>XV - um representante do Conselho Municipal dos Direitos da Pessoa Portadora de Deficiência.<br><br>Parágrafo Único - Cada representante terá um suplente.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> A Comissão será presidida pelo representante da Secretaria Municipal de Desenvolvimento Urbano e Meio Ambiente, designado pelo Titular da Pasta.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Constituem atribuições da Comissão:<br><br>I - elaboração de normas relativas à matéria de sua competência, especialmente propondo planos integrados de acessibilidade, envolvendo a intervenção das várias Secretarias Municipais e as entidades relacionadas no art. 2º;<br><br>II - controle da acessibilidade para pessoas portadoras de deficiência física ou com mobilidade reduzida, a saber:<br><br>a) exame das irregularidades da edificação, quanto à acessibilidade da pessoa portadora de deficiência física;<br>b) indicação da situação de infração à norma legal e acionamento das unidades competentes da Prefeitura para aplicação das penalidades previstas;<br><br>III - apresentação ou análise de propostas de intervenção nas vias públicas, compreendendo sinalização, rebaixamento de guias e regularização do pavimento do passeio público de pedestres;<br><br>IV - apresentação ou análise de propostas para adaptação da frota de transporte público, inclusive táxis, de forma a permitir o acesso pela pessoa portadora de deficiência física;<br><br>V - providências objetivando reserva de locais para estacionamento, na área central e nas áreas de maior concentração de comércio e serviços, incluindo áreas de estacionamento controlado;<br><br>VI - providências visando á garantia para uso de vias de acesso restrito;<br><br>VII - elaboração de programas para cadastramento e identificação da pessoa portadora de deficiência física;<br><br>VIII - efetivação da cobrança de ações do Poder Público e do particular, para implementação das normas definidas pela Comissão;<br><br>IX - análise de propostas de criação de serviços ou programas públicos municipais, no que se refere à garantia da acessibilidade.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Deverão ser objeto de prévio exame da CPA, exclusivamente para verificação do atendimento de acessibilidade para pessoas portadoras de deficiência física ou com mobilidade reduzida:<br><br>I - a locação ou a renovação de contratos de locação de imóveis destinados a abrigar repartições públicas municipais;<br><br>II - a construção ou a reforma de edifícios públicos municipais;<br><br>III - as obras relativas a vias e espaços públicos municipais;<br><br>IV - proposta de adaptação, aquisição e concessão de veículos de transporte coletivo.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> A CPA divulgará sua atuação, de forma a maximizar o atendimento às normas de acessibilidade.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> A Comissão poderá celebrar termos de cooperação técnica com entidades nacionais e internacionais, de acordo com a legislação vigente, para troca de experiências e divulgação de matérias à sua área de atuação.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> A Comissão poderá solicitar a colaboração de servidores de unidades da Prefeitura, quando necessário à consecução de seus fins.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>PREFEITURA MUNICIPAL DE FEIRA DE SANTANA, em 07 de Junho de 2006.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

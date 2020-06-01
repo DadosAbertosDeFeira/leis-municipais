@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>DECRETO Nº 8845, de 05 de fevereiro de 2013.</h2><br>REGULA O TRATAMENTO A SER DISPENSADO QUANDO DO PAGAMENTO A QUAISQUER CREDORES DO MUNICÍPIO.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, no uso de suas atribuições,<br><br>CONSIDERANDO o inciso III, do art. 29, da Lei 8.666, de 21 de junho de 1993:<br><br>&quot;Art. 29 A documentação relativa à regularidade fiscal, conforme o caso, consistirá em:<br><br>...<br><br>III - prova de regularidade para com a Fazenda Federal, Estadual e Municipal do domicílio ou sede do licitante, ou outra equivalente, na forma da Lei;&quot;<br><br>CONSIDERANDO o inciso XIII, do art. 55, da Lei 8.666, de 21 de junho de 1993:<br><br>&quot;Art. 55 São cláusulas necessárias em todo contrato as que estabeleçam:<br><br>...<br><br>XIII - a obrigação do contratado de manter, durante toda a execução do contrato, em compatibilidade com as obrigações por ele assumidas, todas as condições de habilitação e qualificação exigidas na licitação;&quot;<br><br>DECRETA:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica o poder Executivo Municipal autorizado a proceder à verificação junto ao cadastro de dívidas, sempre que for promover quaisquer desembolsos para quitação de débito a favor de fornecedor ou prestador de serviços, com o propósito de se constatar a existência de algum tipo de débito vencido na relação destes para com o município de FEIRA DE SANTANA.<br><br>Parágrafo Único - Acontecendo a hipótese prevista no caput deste artigo, tornar-se-á indispensável a regularização da pendência antes ou mesmo concomitante com o pagamento ao credor.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Para que seja colocada em prática a rotina estabelecida no art. 1º, deste decreto, todas as autarquias e órgãos vinculados à Administração Municipal deverão informar a Secretaria Municipal da Fazenda com a devida antecedência:<br><br>a) razão social do fornecedor ou prestador de serviços;<br>b) número de inscrição municipal e estadual;<br>c) CNPJ;<br>d) valor a ser desembolsado.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> A Secretaria Municipal da Fazenda instituirá formulário padrão que deverá ser preenchido pela Diretoria de Administração Tributária e remetido a todos os órgãos que integram a Administração Municipal, e que em nome da Prefeitura, promovem pagamentos.<br><br>Parágrafo Único - O formulário a que alude o caput deste artigo envolverá, inclusive, as informações indicadas no art. 2º, deste decreto, e terá toda sua tramitação efetuada através de e-mail que será especialmente criado para este fim.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> O não-atendimento ao disposto neste decreto implicará em responsabilidade pessoal e funcional.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Este decreto entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito, 05 de fevereiro de 2013.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito Municipal<br><br>MÁRIO COSTA BORGES<br>Chefe de Gabinete do Prefeito<br><br>EXPEDITO CAMPODÔNIO ELOY<br>Secretário Municipal da Fazenda<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

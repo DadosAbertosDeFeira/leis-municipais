@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3575 DE 22 DE OUTUBRO DE 2015</h2><br>DISPÕE SOBRE O DIREITO DOS CONSUMIDORES NA UTILIZAÇÃO DE ESTACIONAMENTOS DOS SHOPPINGS CENTERS, SUPERMERCADOS, HOSPITAIS E CLÍNICAS NO MUNICÍPIO, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, Faço Saber que a Câmara Municipal, através do Projeto de LEI Nº 134/2015, de autoria de Diversos Edis, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> A cobrança aos consumidores pelos estacionamentos próprios ou terceirizados de shoppings centers, supermercados, hospitais e clínicas se dará da seguinte forma:<br><br>§ 1º O consumidor que apresentar comprovante de pagamento de produtos ou serviços terá isenção de cobrança nas seguintes condições:<br><br>I - Consumidores que apresentarem comprovante de pagamento de produtos e/ou serviços dos referidos estabelecimentos ficarão isentos de cobrança com tolerância até 03 (três) horas;<br><br>II - Consumidores que não adquirirem produtos e/ou serviços ficarão isentos de cobrança com tolerância de 30 (trinta) minutos;<br><br>III - A isenção da cobrança aos consumidores de estacionamentos dos hospitais e clínicas terá tolerância de 10 (dez) minutos;<br><br>IV - A cobrança de estacionamento será fracionada de 30 (trinta) em 30 (trinta) minutos, a partir do período de tolerância disposto acima.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Fica determinada a obrigatoriedade de fornecimento de ticket para acesso de veículos, onde estará incluído o horário de entrada, a placa do veículo e horário de saída.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Os estabelecimentos comerciais a serem construídos no município com área superior a 1.000m² (mil metros quadrados) com estacionamento próprio ou terceirizado deverão destinar no mínimo, 10 (dez) vagas específicas para táxi.<br><br>Parágrafo único. O alvará de funcionamento, só deverá ser expedido pela Prefeitura Municipal de Feira de Santana, após o cumprimento do caput deste artigo.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Os estabelecimentos ficam obrigados a divulgar o texto da presente Lei, com a colocação de cartazes em local visível aos seus clientes.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Os estabelecimentos que infringirem o disposto nesta Lei sofrerão as seguintes penalidades sucessivamente:<br><br>I - Advertência;<br><br>II - Multa no valor de R$ 5.000,00 (cinco mil reais);<br><br>III - Cassação do alvará de funcionamento<br><br>Parágrafo único. Os valores contidos neste artigo serão atualizados no início de cada ano pelo IPC ou índice que o substitua.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> A Superintendência Municipal de Proteção e Defesa do Consumidor (PROCON) fiscalizará o cumprimento da presente Lei.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Revogam-se a Lei Municipal de nº <a class="link_law" data-id="1620170" data-original-title=" Data da Norma: 22.05.1998 - FIXA NORMAS PARA ESTACIONAMENTOS PRIVADOS NO MUNICÍPIO DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1998/200/2001/lei-ordinaria-n-2001-1998-fixa-normas-para-estacionamentos-privados-no-municipio-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">2.001</a>/98, a Lei Municipal de nº <a class="link_law" data-id="1543916" data-original-title=" Data da Norma: 15.05.2007 - DISPÕE SOBRE ESTACIONAMENTO NOS SHOPPINGS CENTERS E SUPERMERCADOS NO MUNICÍPIO, E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2007/279/2792/lei-ordinaria-n-2792-2007-dispoe-sobre-estacionamento-nos-shoppings-centers-e-supermercados-no-municipio-e-da-outras-providencias" rel="tooltip">2.792</a>/07, a Lei Municipal de nº <a class="link_law" data-id="1739216" data-original-title=" Data da Norma: 02.12.2008 - DISPÕE SOBRE A DESTINAÇÃO DE ÁREA PARA TAXI NOS ESTABELECIMENTOS COMERCIAIS DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDENCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-promulgada/2008/22/220/lei-promulgada-n-220-2008-dispoe-sobre-a-destinacao-de-area-para-taxi-nos-estabelecimentos-comerciais-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">220</a>/08, a Lei Municipal de nº <a class="link_law" data-id="1739235" data-original-title=" Data da Norma: 22.06.2009 - ACRESCENTA DISPOSITIVOS A LEI Nº 2001/98, MODIFICADA PELA LEI Nº 170/2005, QUE FIXA NORMAS PARA ESTACIONAMENTOS PRIVADOS DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-promulgada/2009/23/232/lei-promulgada-n-232-2009-acrescenta-dispositivos-a-lei-n-2001-98-modificada-pela-lei-n-1702005-que-fixa-normas-para-estacionamentos-privados-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">232</a>/09 e a Lei Municipal de nº <a class="link_law" data-id="1739312" data-original-title=" Data da Norma: 13.09.2005 - ACRESCENTA DISPOSITIVOS À LEI Nº 2001/98, QUE FIXA NORMAS PARA ESTACIONAMENTOS PRIVADOS NO MUNICIPIO DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDENCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-promulgada/2005/17/170/lei-promulgada-n-170-2005-acrescenta-dispositivos-a-lei-n-2001-98-que-fixa-normas-para-estacionamentos-privados-no-municipio-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">170</a>/05.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> Esta lei entrará em vigor na data da sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 22 de outubro de 2015.<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO MUNICIPAL<br><br>MARIO COSTA BORGES<br>CHEFE DE GABINETE DO PREFEITO<br><br>CLEUDSON SANTOS ALMEIDA<br>PROCURADOR GERAL DO MUNICÍPIO<br><br>EXPEDITO CAMPODÔNIO<br>ELOY SECRETÁRIO MUNICIPAL DA FAZENDA<br><br>SUZANA OLIVEIRA FERREIRA MENDES<br>SUPERINTENDENTE MUNICIPAL DE PROTEÇÃO E DEFESA DO CONSUMIDOR - PROCON/FSA<br><br>PUBLICADO NO DIÁRIO OFICIAL ELETRÔNICO DIA 23 DE OUTUBRO DE 2015.<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

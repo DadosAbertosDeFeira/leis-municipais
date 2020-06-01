@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3811, DE 29 DE MARÇO DE 2018</h2><br>Dispõe sobre a proibição dos agentes ou prepostos de empresas de telefonia, provedores de internet e demais grupos de manutenção subir à parte elevada dos postes, sem uso de sinais de identificação na cidade de Feira de Santana.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 18/2018, de autoria do Edil João dos Santos, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Dispõe sobre a proibição de agentes ou prepostos de empresas de telefonia, provedores de internet, grupos de manutenção de energia elétrica escalar à parte elevada dos postes de luz na área urbana de Feira de Santana sem sinais identificadores do profissional.<br><br>Parágrafo único. São considerados sinais identificadores dos profissionais que tratam o caput deste artigo, o porte de crachás, identidades funcionais, termos de compromisso ou modelos internos da repartição ou empresa capazes de revelar a identidade do agente operador do serviço técnico pretendido.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Cabe ao agente que estiver exercendo alguma atividade, manutenção, instalação ou remoção nos limites da cidade de Feira de Santana afixar identificação de agente, nos postes de luz que irá proceder o serviço.<br><br>§ 1º Cabe ainda ao agente isolar a área que será efetuado o serviço.<br><br>§ 2º A área isolada que trata o parágrafo anterior não poderá ser inferior a 6m² (seis metros quadrados) e não poderá exceder 15m² (quinze metros quadrados).<br><br>§ 3º Conforme necessidade, questão de perigo ou conveniência para a melhor execução do serviço, poderá o agente ampliar o isolamento por espaço não excedente a 30² (trinta metros quadrados), ressalvada autorização prévia expedida pela Secretaria de Serviços Públicos - SESP.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> O agente que for flagrado escalando ou encimando ao poste de luz sem motivo justo, ou mesmo, não estiver por finalidade a feitura de serviço de ordem técnica, será devidamente identificado.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Identificado o agente que praticava o ato definido no artigo antecedente, este deverá ser notificado e, posteriormente, punido pela Secretaria de Serviços Públicos - SESP.<br><br>§ 1º A notificação será expedida pela Secretaria no lapso de 30 (trinta) dias.<br><br>§ 2º Da notificação constará os dados referentes a identificação do agente autuado, bem como o valor da multa definida pela Secretaria.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Em conformidade com o artigo anterior, a multa não poderá ser inferior à 01 (um) salário mínimo, ressalvada a reincidência.<br><br>Parágrafo único. Em caso de reincidência, o agente será penalizado com acréscimo de 01 (um) salário mínimo, a cada vez que for constatada a repetição do ato que trata esta Lei.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 29 de março de 2018<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO MUNICIPAL<br><br>MARIO COSTA BORGES<br>CHEFE DE GABINETE DO PREFEITO<br><br>CLEUDSON SANTOS ALMEIDA<br>PROCURADOR GERAL DO MUNICÍPIO<br><br>JUSTINIANO OLIVEIRA FRANÇA<br>SECRETÁRIO MUNICIPAL DE SERVIÇOS PÚBLICOS<br><br>PUBLICADO NO DIÁRIO OFICIAL ELETRÔNICO DIA 30 DE MARÇO DE 2018.<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

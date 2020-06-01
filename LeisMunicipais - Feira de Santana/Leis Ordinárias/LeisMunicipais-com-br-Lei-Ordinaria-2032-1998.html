@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 2032, de 04 de novembro de 1998.</h2><br>AUTORIZA O MUNICÍPIO DE FEIRA DE SANTANA, A FIRMAR TODOS OS AJUSTES NECESSÁRIOS COM O ESTADO DA BAHIA, ATRAVÉS DA SEPLANTEC - SECRETARIA DE PLANEJAMENTO CIÊNCIA E TECNOLOGIA, COM A CAR - COMPANHIA DE DESENVOLVILMENTO E AÇÃO REGIONAL, COM O DESENBANCO - BANCO DE DESENVOLVILMENTO DO ESTADO DA BAHIA S/A, INCLUSIVE OPERAÇÒES DE CRÉDITO COM OUTORGA DE GARANTIA PARA O FIM ESPECÍFICO DE IMPLEMENTAÇÃO NESTE MUNICÍPIO DO PRODUR E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, no uso de suas atribuições, FAÇO saber que a Câmara Municipal decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica o Chefe do Executivo do Município de Feira de Santana, autorizado a celebrar todos e quaisquer ajustes com o Estado da Bahia, representado pela sua SEPLANTEC - Secretaria de Planejamento, Ciência e Tecnologia, com a CAR - Companhia de Desenvolvimento e Ação Regional, com o Banco de Desenvolvimento do Estado da Bahia S/A - DESENBANCO, operações de crédito até o montante de R$ 7.000.000,00 (Sete Milhões de Reais), destinadas ao financiamento dos estudos, projetos técnicos e execução de obras dentro do PRODUR - Programa de Administração Municipal e Desenvolvimento de Infra-Estrutura Urbana, de conformidade com as regras estipuladas pelo programa.<br><br>§ 1º Os recursos consignados no caput deste artigo, quando destinados à obras de infra-estrutura urbana, terão seus projetos sempre definidos segundo critérios da SEPLANTEC e da CAR, que serão aplicados nos seguintes bairros:<br><br>01 - PARQUE IPÊ<br><br>Ruas: Bandeirante, Aymoré, Maringá, Atlético Grenal, Curitiba, Água Verde, Maguarí, Paranavaí, Salviano, Serra Dourada, Rodolfo Valentino, Jandaia, Londrina, Tijuca, Moto Clube, Bangu Anapolina, Nacional, Americano, Tijucana, Campo Grande, Portuguesa de Desportos, Ponte Preta, Botafogo, Travessa Bonsucesso e Marginal Transnordestina.<br>Obra: drenagem urbana e pavimentação.<br><br>Valor do investimento: R$ 2.238.533,97<br>Área pavimentada em paralelo 74.553.50m².<br>Área recuperada em paralelo 288.90m².<br>Área recuperada em asfalto/frio 452.20m².<br>Área total pavimentada e/ou recuperada 75.294.60m².<br>Extensão da rede 5.207.00m.<br><br>02 - QUEIMADINHA<br><br>Ruas: Picos, Ceará, Francisco Amaral, Paraíba, Pernambuco, Minas Gerais, Espírito Santo, Picanha do Sul, Goías, Uikatan, Bahia, Santa Catarina, Amazonas, Paraná, Rio Grande do Norte, Rondônia, Colatina, Travessas: Paraná e Espírito Santo e Caminho São Lucas.<br>Obra: drenagem urbana e pavimentação.<br><br>Valor do investimento: R$ 966.372,28.<br>Área recuperada em paralelo 112.00m²<br>Área pavimentada em paralelo 40.63400m².<br>Área total recuperada e/ou pavimentada 40.746.00m².<br>Extensão da rede 5.443.00m.<br><br>03 - CIDADE NOVA<br><br>Praça João Havelange, Rua Pelé, Caminhos: Jequié, Xique-Xique, Anguera e A.<br>Obra: drenagem urbana e pavimentação.<br><br>Valor do investimento: R$ 198.550,98<br>Área recuperada em paralelo 530.80m²<br>Área pavimentada em paralelo 2.160.00m².<br>Total da área recuperada e/ou pavimentada 2.690.80m².<br>Extensão da rede 372.00m.<br><br>04 - GABRIELA I, II e III<br><br>Ruas: Ninho da Serpente, Pedra sobre Pedra, Topázio, História com Amor, Avenida Paraíso, Sinhazinha, Rainha da Sucata, Imigrantes, Sétimo Sentido, Bravo, Corrida do Ouro, Cuca Legial, Super Manuela, Bem Amado, Noviça Rebelde, Olhos Escuros, Selenium, Semideus, Uma Rosa com Amor, Irmãos Coragem, Verão Vermelho, Cavalo de Aço, Carinhoso, Olhos Verdes, Marion, Mandala da Sucata, Flamengo, Olhos Azuis, Corinthias, Ipiaú, Olhos Claros, Casarão, Olhos Castanhos, Solidão, Carmélia, Santana do Agreste, Fluminense, Quatro por Quatro, Perigosas Peruas, Meu Bem Meu Mal, Que Rei Sou Eu e Travessas: Treslado e Corinthias.<br>Obra: drenagem urbana e pavimentação<br><br>Valor do Investimento: R$ 1.463.394,62<br>Área pavimentada em paralelo 78.274.40m²<br>Extensão da rede 10.687.60m.<br><br>§ 2º Após a assinatura dos contratos, o Executivo encaminhará à Câmara, cópia de seus instrumentos e dos projetos à eles correspondentes.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> São as seguintes condições que subordinarão as operações de crédito:<br><br>I - juros de até 3% a.a. (três por cento ao ano), pagáveis inclusive durante o prazo de carência;<br><br>II - atualização monetária do saldo devedor calculada segundo o IGP-M, Índice Geral de Preços (M) da Fundação Getúlio Vargas e na ausência ou extinção, outro que vier a ser definido, em comum acordo com o BIRD;<br><br>III - prazos de até 216 meses, sendo até 36 meses de carência e até 180 meses de amortização.<br><br>§ 1º O principal da dívida será pago mensalmente, em prestações consecutivas, calculadas pela Tabela Price e reajustadas consoante legislação em vigor.<br><br>§ 2º Os juros serão pagos trimestralmente durante a carência e mensalmente durante o período de amortização e serão incidentes sobre o saldo devedor reajustado.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> O município poderá oferecer em garantia das operações de crédito; autorizados no Art. 1º desta Lei; por todo o tempo de vigência dos contratos de financiamento, e até a liquidação total da dívida, Caução das Receitas de Transferências do Imposto; sobre Operações Relativas à Circulação de Mercadorias e sobre Prestação de Serviços de Transporte Interestadual e Intermunicipal e de Comunicações - ICMS e do Fundo de Participação dos Municípios - FPM, em montante necessário e suficiente para a amortização das parcelas do principal e o pagamento dos acessórios da dívida.<br><br>Parágrafo Único - As receitas de transferências sobre as quais se autoriza a constituição de caução como garantia das operações de crédito serão alteradas, em caso de sua extinção, pelas receitas que vierem a ser estabelecidas constitucionalmente em sua substituição, independentemente de nova autorização.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> O Chefe do Executivo do Município está autorizado a constituir o Banco de Desenvolvimento do Estado da Bahia S/A - Desenbanco; em seu mandatário, com poderes irrevogáveis para receber junto às fontes pagadoras das receitas de transferências mencionadas no caput do Art. 3º, os recursos vinculados, podendo utilizar esses recursos no pagamento do que lhe for devido por força dos contratos a que se refere o Art. 1º, desta Lei.<br><br>Parágrafo Único - Os poderes mencionados se limitam aos casos de inadimplemento do Município e se restringem às parcelas vencidas e não pagas.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> O Poder Executivo encaminhará à Câmara Municipal, dentro de 30 dias, contados da contratação das operações de crédito autorizadas por esta Lei, cópias dos respectivos instrumentos contratuais.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Fica o Município autorizado a:<br><br>I - aceitar o foro da cidade de Salvador para dirimir quaisquer controvérsias decorrentes da execução dos contratos;<br><br>II - participar e assinar contratos, convênios, aditivos e termos que possibilitem a execução da presente Lei;<br><br>III - aceitar todas as condições estabelecidas pelas normas do PRODUR referentes às operações de crédito, vigentes à época da assinatura dos contratos de empréstimo para financiamento;<br><br>IV - abrir conta bancária, vinculada ao contrato de empréstimo para financiamento, em estabelecimento bancário oficial no Município, destinada a centralizar a movimentação dos recursos decorrentes do contrato.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Os orçamentos municipais consignarão, obrigatoriamente, as dotações necessárias às amortizações e aos pagamentos dos encargos anuais, relativos aos empréstimos para financiamento a que se refere o Art. 1º desta Lei.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> Fica o Chefe do Executivo autorizado a abrir créditos especiais, se necessários; destinados a fazer face a pagamentos de obrigações decorrentes das operações de crédito; ora autorizadas e que se vençam neste exercício, bem como para assegurar a participação de recursos próprios nas inversões necessárias para a implantação dos Projetos, e ainda, abrir crédito especial no valor total, em caso de inexistência de dotações orçamentárias próprias, para assegurar a realização do programa autorizado nesta Lei.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 04 de novembro de 1998.<br><br>CLAILTON COSTA MASCARENHAS<br>Prefeito<br><br>EVANGIVALDO DE FIGUEIREDO OLIVEIRA<br>Chefe de Gabinete do Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

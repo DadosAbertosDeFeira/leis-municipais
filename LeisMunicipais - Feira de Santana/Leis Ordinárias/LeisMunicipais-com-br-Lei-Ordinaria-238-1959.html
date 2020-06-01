@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 238, de 26 de maio de 1959</h2><br>CRIA O SERVIÇO DE CADASTRO IMOBILIÁRIO E ADOTA, OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>FAÇO saber que a Câmara de Vereadores decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica criado o Serviço de Cadastro Imobiliário, com a finalidade de mediante o censo de todos os bens imóveis situados no Município, obterem-se dados necessários ao planejamento e execução de obras, serviços e melhoramentos públicos municipais.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Os proprietários, a qualquer título de bens imóveis situados no Município, tais como casas, telheiros, abrigos, armazéns, galpões, fazendas, sítios, chácaras, terrenos ou quaisquer outros, são obrigados a inscrevê-los no Serviço de Cadastro Imobiliário, observadas as normas desta Lei.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> O pedido de inscrição será dirigido ao Prefeito e conterá:<br><br>I - o nome, nacionalidade, estado civil, profissão e residência do proprietário;<br><br>II - o local da situação do imóvel;<br><br>III - a denominação atual e anterior do imóvel se houver;<br><br>IV - o uso a que se destina o imóvel;<br><br>V - a área e respectivos limites;<br><br>VI - o valor venal;<br><br>VII - o valor locativo, quando se tratar de prédios urbanos e suburbanos;<br><br>VIII - o nome do anterior proprietário;<br><br>IX - os dados sobre o título de aquisição e sua inscrição no Cartório do Registro de Imóveis da Comarca.<br><br>§ 1º A petição será instituída com o título de aquisição e acompanhamento da folha de arrolamento (modelo I e II), devidamente preenchida.<br><br>§ 2º O título de domínio será devolvido ao requerente, mediante simples recibo, no ato de pagamento da taxa de inscrição estabelecida no artigo 7º.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Os bens imóveis sujeitos a enfiteuse, usufruto ou fideicomisso serão inscritos pelos respectivos titulares desses direitos.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> A inscrição de Terrenos loteados depende de prova de que o plano de loteamento será aprovado pela Prefeitura e satisfez as exigências do Decreto-Lei nº 58, de 10 de dezembro de 1973.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Os proprietários de terreno loteado são obrigados a comunicar, dentro do prazo de 30 (trinta dias) a contar da data da celebração da escritura, as alienações realizadas, para os fins de lançamento do imposto.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Por inscrição de cada bem imóvel cobrar-se-á a taxa de 1% (um por cento) sobre o valor da transmissão se houver, ou sobre o valor venal ou locativo do imóvel.<br><br>Parágrafo Único - O imóvel aforado pela Prefeitura pagará pela metade a taxa de inscrição prevista neste artigo.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> A certidão de quitação de bem imóvel, para efeito de transmissão, depende de sua inscrição na forma desta Lei e pagamento da respectiva taxa.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> Os proprietários de bens imóveis existentes na vigência desta Lei são obrigados a inscrevê-los no Serviço de Cadastro Imobiliário, observadas as disposições contidas nesta Lei.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10 -</span></a> Fica criada no quadro do funcionalismo da Prefeitura a carreira permanente de oficial de cadastro, constante de:<br><br>1 Oficial de Cadastro, padrão N.<br>1 Oficial de Cadastro, padrão M.<br>2 Oficiais de Cadastro, padrão L.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11 -</span></a> A presente Lei entrará em vigor a 1º de janeiro de 1960, revogadas as disposições em contrário.<br><br>Gabinete da Prefeitura Municipal de Feira de Santana, 26 de maio de 1959.<br><br>ARNOLD FERREIRA DA SILVA<br>Prefeito<br><br>Autor: Poder Executivo<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

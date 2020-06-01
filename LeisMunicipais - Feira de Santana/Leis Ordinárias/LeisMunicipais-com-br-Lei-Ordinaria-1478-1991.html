@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 1478, de 13 de setembro de 1991</h2><br>DISPÕE SOBRE A OBRIGATORIEDADE DE RESERVA DE ÁREAS PARA EQUIPAMENTOS SOCIAIS NOS CONJUNTOS HABITACIONAIS DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, FAÇO saber que a Câmara Municipal decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Todo projeto de construção de conjunto habitacional no Município, deverá conter em suas áreas de uso institucional, lugar para que, sejam instalados equipamentos sociais, exigidos cumulativamente de acordo com o número de unidades habitacionais, na forma seguinte:<br><br>I - a partir de cinqüenta (50) unidades habitacionais, centro de convivência e parque infantil;<br><br>II - de cem (100) a trezentas (300) unidades habitacionais, edificações destinadas ao funcionamento de creche e pré-escola;<br><br>III - de trezentas e uma (301) a quinhentas (500) unidades habitacionais, edificações destinadas ao funcionamento de escola de 1º grau de nível I e posto médico;<br><br>IV - A partir de quinhentas (500) unidades habitacionais, edificações destinadas ao funcionamento de escola de 1º grau de nível II e centro destinado à instalação de estabelecimentos comerciais para abastecimento local.<br><br>Parágrafo Único - Nos conjuntos habitacionais de nível popular, a instalação dos equipamentos sociais a que se refere o &quot;caput&quot; deste artigo, será feito pelo poder público e nos níveis superiores, será obrigação das próprias construtoras.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O órgão técnico da Prefeitura Municipal, encarregado do exame de projetos de construções com as destinações descritas no artigo anterior, fixará padrões e exercerá a fiscalização necessária ao cumprimento desta Lei.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Prefeitura Municipal de Feira de Santana, em 13 de setembro de 1991.<br><br>DR. COLBERT MARTINS DA SILVA<br>Prefeito<br><br>Autor: Liomar Ferreira da Silva<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

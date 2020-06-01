@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3245/2011</h2><br>DISPÕE SOBRE A CONSTRUÇÃO E CONSERVAÇÃO DE MUROS, PASSEIOS E LIMPEZA DE TERRENOS NA ZONA URBANA DO MUNICÍPIO DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 89/2011, de autoria do Edil David Evangelista Leite Neto, e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Os terrenos edificados ou não, situados na zona urbana do Município, definida pela Lei Complementar nº  <a class="link_law" data-id="696775" data-original-title=" Data da Norma: 08.07.2004 - DEFINE O PERÍMETRO URBANO, DELIMITA OS BAIRROS DA CIDADE DE FEIRA DE SANTANA E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-complementar/2004/1/18/lei-complementar-n-18-2004-define-o-perimetro-urbano-delimita-os-bairros-da-cidade-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">18</a>, de 08 de julho de 2004, com frente para via pública, logradouros e acessos, serão obrigatoriamente fechados nos respectivos alinhamentos nas formas a seguir estabelecidas e sempre dotados de portão.<br><br>§ 1º Fica proibida a construção de cercas de arame farpado, de materiais pontiagudos ou cortantes, plantas espinhosas, ou qualquer elemento que possa prejudicar a transparência da visibilidade da paisagem ou colocar em risco a integridade física da população nas divisas que margeiam a via, logradouro público ou ruas de acesso a servidões.<br><br>§ 2º A construção do muro deverá obedecer aos padrões técnicos dispostos na legislação urbanística em vigor, em especial ao disposto na Lei Municipal nº  <a class="link_law" data-id="2595596" data-original-title=" Data da Norma: 11.11.1992 - Dispõe sobre o ordenamento do uso e da ocupação do solo na área urbana do Município de Feira de Santana e dá outras providências." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1992/161/1615/lei-ordinaria-n-1615-1992-dispoe-sobre-o-ordenamento-do-uso-e-da-ocupacao-do-solo-na-area-urbana-do-municipio-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">1.615</a>, de 11 de novembro de 1992 ( Lei do Ordenamento do Uso e da Ocupação do Solo).<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> A Prefeitura poderá dispensar a construção de muro quando os terrenos se localizarem junto a córregos ou apresentarem um desnível acentuado e relação ao leito dos logradouros, que não permitam a execução da obra.<br><br>§ 1º Para a dispensa da construção do muro, o proprietário do imóvel deverá protocolar o requerimento junto à Secretaria Municipal de Serviços Públicos - SESP, anexando a certidão negativa de débitos tributários municipais da unidade imobiliária, documento comprobatório da posse ou do domínio, e a respectiva justificativa técnica assinada por profissional competente, regularmente inscritos no CREA - Conselhos Regional de Engenharia.<br><br>§ 2º A SESP avaliará o pedido de dispensa considerando a conveniência e oportunidade da Administração Pública, bem como os parâmetros estabelecidos por esta Lei, e emitirá decisão fundamentada acerca da dispensa ou não da construção do muro.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Considerar-se-á como inexistente o muro cuja construção, reconstrução, ou conservação esteja em desacordo com as normas técnicas, legais ou regulamentares, cabendo inteira responsabilidade pelas consequências advindas dessas irregularidades ao proprietário do imóvel.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Os proprietários de imóveis edificados ou não, situados na zona urbano do Município em vias ou logradouros públicos dotados de guias, são obrigados a construir os respectivos passeios e mantê-los em perfeito estado de conservação.<br><br>Parágrafo Único - Para os fins do disposto neste artigo, consideram-se susceptíveis a esta Lei, os passeios, se:<br><br>I - construídos ou reconstruídos em desacordo com as especificações técnicas ou regulamentares;<br><br>II - o mau estado de conservação excede a 1/5 (um quinto) de sua área total;<br><br>III - obstruídos e/ou sujos com a presença de água estagnada, lixo, e/ou entulhos, e/ou material de construção, e/ou matos, e/ou pedras, e/ou resíduos semelhantes.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Os passeios serão executados em folhetas de pedras ou concreto simples sarrafeado ou em mosaico de pedras.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Aplicam-se aos passeios a dispensa contida no parágrafo único do art. 2º, além da dispensa para imóveis localizados em ruas sem pavimentação.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Os proprietários dos imóveis edificados ou não, situados na zona urbana do Município são obrigados a manter seus pátios, quintais e calçadas em perfeito estado de asseio, limpos, livre de lixo, capinados, desinfetados e drenados.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> São responsáveis pelas obras e serviços versados nesta Lei:<br><br>I - o proprietário do imóvel;<br><br>II - o inquilino;<br><br>III - o concessionário de serviço público, se resultante de dados provocados pela execução do serviço concedido;<br><br>IV - o Município em imóvel de seu domínio ou que esteja sob sua guarda, ou ainda, quando de redução do passeio, alteração de seu nivelamento, bem como danos ocasionados pela execução de outras melhorias.<br><br>Parágrafo Único - O entes Estaduais e Federais, bem como os de suas entidades paraestaduais, ficam incluídas nas exigências desta Lei, celebrados, se necessários, convênios para o seu cumprimento.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> Nos casos de destruição ou danificação ainda que parcial da rua, calçada, guia, sarjeta ou muro, fica o responsável, ainda que concessionária de serviços públicos, obrigado, via notificação, a estabelecer, no estado de antes, com prazo máximo de 5 (cinco) dias, sob pena de multa de 01 (um) a 100 (cem) vezes o salário mínimo por dia de infração, até o dia de sua regularização.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10.</span></a> No caso de imóvel do Município, ou que esteja sob sua guarda, as obras e serviços a que se refere esta Lei serão executados diretamente pela Prefeitura ou por terceiros mediante processo licitatório.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11.</span></a> Os responsáveis pelos imóveis definidos no art. 8º, que se encontrem em situação irregular quanto a construção, conservação, restauração e limpeza de muros, passeios e terrenos, ficam sujeitos, às seguintes sanções:<br><br>I - notificação;<br><br>II - auto de infração e multa.<br><br><a name="artigo_12"><span class="label label-pill label-danger">Art. 12.</span></a> A notificação concederá ao infrator prazo máximo de 72h (setenta e duas horas) e se dará pessoalmente, ou não sendo encontrado o responsável, será feita por correspondência com Aviso de Recebimento - AR.<br><br>Parágrafo Único - Não sendo possível localizar o responsável, a notificação será feita por edital.<br><br><a name="artigo_13"><span class="label label-pill label-danger">Art. 13.</span></a> Se, após decorrido o prazo concedido na notificação, a infração subsistir, o agente fiscal lavrará o auto de infração.<br><br><a name="artigo_14"><span class="label label-pill label-danger">Art. 14.</span></a> Nos casos onde o agente fiscal constatar risco à comunidade, lavrará laudo circunstanciado e auto de infração, independente de notificação.<br><br><a name="artigo_15"><span class="label label-pill label-danger">Art. 15.</span></a> O auto de infração conterá, no mínimo, os seguintes elementos:<br><br>I - identificação do autuado;<br><br>II - identificação de autoridade atuante;<br><br>III - discriminação clara e precisa do fato, indicação da infração e multa correspondente;<br><br>IV - indicação do dispositivo legal violado;<br><br>V - indicação de prazo para saneamento da irregularidade.<br><br><a name="artigo_16"><span class="label label-pill label-danger">Art. 16.</span></a> O prazo máximo permitido para o saneamento da infração será de até 10 (dez) dias corridos, a critério do agente fiscal, considerando a gravidade da infração, a contar da ciência pelo autuando.<br><br>Parágrafo Único - A critério do agente fiscal, o prazo de 19 (dez) dias poderá ser prorrogado por igual período, tendo em vista a situação do imóvel ou do proprietário.<br><br><a name="artigo_17"><span class="label label-pill label-danger">Art. 17.</span></a> Da lavratura do auto da infração intimar-se-á o infrator, mediante entrega da copia do instrumento fiscal, observadas as formas de comunicação disposta no art. 12 desta Lei.<br><br>§ 1º O infrator terá o prazo de 10 (dez) dias, contados a partir da data do recebimento do auto de infração, para apresentar defesa, que deverá ser feita através de petição, acompanhada da certidão negativa de débitos tributários municipais do imóvel objetivo da autuação e documento comprobatório de posse ou propriedade, e será entregue na Secretaria Municipal de Serviços Públicos, por onde corre o respectivo processo administrativo.<br><br>§ 2º Decorrido o prazo fixado no artigo anterior sem que o autuado tenha apresentado defesa, será considerado revel, lavrando-se no processo o termo de revelia.<br><br>§ 3º Apresentada a defesa, a mesma será apreciada no prazo de 10 (dez) dias a contar do seu recebimento.<br><br>§ 4º Da decisão será notificado o interessado ou infrator, por instrumento de comunicação contra recibo ou registro em livro-protocolo, ou mediante Carta com Aviso de Recebimento, ou publicação na imprensa local.<br><br>§ 5º O prazo para o pagamento da multa é de 10 (dez) dias, a contar da ciência da decisão.<br><br>§ 6º No caso de não pagamento de penalidade pecuniária, o processo será encaminhado para inscrição do débito em dívida ativa, aplicando-se, juros e correção monetária a partir da data do não pagamento.<br><br>§ 7º Nos casos em que a continuidade, a Prefeitura poderá executar a limpeza do imóvel ou do passeio, através da Secretaria de Serviços Públicos, que, cobrará do proprietário ou inquilino do imóvel, indenização pelas despesas acrescidas de 20% (vinte por cento) por serviços de administração.<br><br><a name="artigo_18"><span class="label label-pill label-danger">Art. 18.</span></a> A multa prevista para os casos de descumprimento desta Lei será de:<br><br>I - dois salários mínimos vigentes à época da infração, quando a infração se der em relação ao disposto no art. 1º desta Lei.<br><br>II - um salario mínimo vigente à época da infração, quando a infração se der em relação ao disposto no art. 4º desta Lei.<br><br>Parágrafo Único - Em caso de reincidência, a multa será aplicada em dobro.<br><br><a name="artigo_19"><span class="label label-pill label-danger">Art. 19.</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito, 23 de agosto de 2011.<br><br>TARCÍZIO SUZART PIMENTA JÚNIOR<br>Prefeito Municipal<br><br>MILTON PEREIRA DE BRITTO<br>Chefe de Gabinete do Prefeito<br><br>CARLO ANTÔNIO DE MORAES LUCENA<br>Procurador Geral do Município<br><br>LUIZ CARLOS FERREIRA DE ARAÚJO<br>Sec. Municipal de Serviços Públicos<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

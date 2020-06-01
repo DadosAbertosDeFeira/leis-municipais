@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>DECRETO LEGISLATIVO Nº 1, DE 06/03/2012</h2><br><br>DISPÕE SOBRE A CONCESSÃO DA MEDALHA 8 DE MARÇO - DIA INTERNACIONAL DA MULHER, ÀS SEGUINTES PESSOAS:<br><br>01 - LENILDA SOUZA OLIVEIRA<br>02 - ELIANA DE CARVALHO SILVA<br>03 - DR.ª BÁRBARA CRISTIANE DE OLIVERA LINO LIMA<br>04 - MARIA MADALENA DE JESUS<br>05 - CÁSSIA PERPÉTUA DE FREITAS MAGALÃES<br>06 - MARGARIDA MARIA DE AZEVEDO LACERDA<br>07 - MÁCIA MATOS PORTO<br>08 - HERRIETTE LOPES CEDRAZ<br>09 - RISONETE SILVA SANTOS<br>10 - MARIA LUIZA DA SILVA CONCEIÇÃO<br>11 - IRACI BASTOS BRANDÃO<br>12 - MARGARETH CEDRAZ FREIRE<br>13 - CINRA NASCIMENTO SOARES<br>14 - RAIMUNDA DAMARES SILVA ROCHA<br>15 - VERA LÚCIA MAMONA LIMA<br>16 - RAIMUNDA PEREIRA FERREIRA<br>17 - ALAÍDE ALMEIDA SANTOS<br>18 - MARIA DAMIANA PEIXOTO<br>19 - GUIOMAR LOPES CEDRAZ<br>20 - ANÁLIA EMÍLIA DA FONSECA DE AQUINO<br>21 - MARGARIDA PEREIRA SANTANA<br><br>Visualizar Ato: <a href="/BA/FEIRA.DE.SANTANA/DECRETO-LEGISLATIVO-1-2012-FEIRA-DE-SANTANA-BA.pdf" title="Decreto Legislativo nº 1/2012 - Feira de Santana">Decreto Legislativo nº 1/2012 - Feira de Santana-BA</a><p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

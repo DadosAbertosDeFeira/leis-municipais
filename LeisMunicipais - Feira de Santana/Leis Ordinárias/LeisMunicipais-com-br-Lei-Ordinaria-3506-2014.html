@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3506/2014</h2><br>INSTITUI NO ÂMBITO DO MUNICÍPIO DE FEIRA DE SANTANA O PROGRAMA DE INCENTIVOS AMBIENTAIS DENOMINADO &quot;IPTU VERDE&quot;.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Autor: Poder Executivo<br><br>O Prefeito municipal de Feira de Santana, Estado da Bahia, no uso de suas atribuições, Faço Saber que a Câmara Municipal, através do Projeto de Lei nº 98/2014, de autoria do Poder Executivo, decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica instituído no âmbito do Município de Feira de Santana o IPTU Verde, cujo propósito é fomentar medidas que preservem, protejam e recuperem o meio ambiente, ofertando em contraparte benefício tributário ao contribuinte.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O benefício tributário em questão, consiste na redução do Imposto Predial e Territorial Urbano (IPTU) sob responsabilidade dos proprietários de imóveis residenciais e não-residenciais, que aderirem as seguintes medidas:<br><br>I - Sistema de capitação da água da chuva;<br><br>II - Sistema de reutilização da água;<br><br>III - Sistema de aquecimento hidráulico solar;<br><br>IV - Edificação com materiais sustentáveis;<br><br>V - Construção de telhado Verde;<br><br>V - Separação de resíduos sólidos, sendo exclusivos para condomínios horizontais ou verticais;<br><br>VI - Adaptação da calçada ou calçada cidadã;<br><br>VIII - Utilização de energia passiva;<br><br>IX - Arborização do imóvel;<br><br>X - Edificações com áreas permeáveis;<br><br>XI - Área de Preservação Permanente (APP), proporcional à área preservada.<br><br>XII - Construção de qualquer natureza com materiais sustentáveis.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Para efeito desta Lei considera-se:<br><br>I - Sistema de captação da água da chuva: aquele que capta água da chuva e armazena em reservatório para utilização no próprio imóvel;<br><br>II - Sistema de reutilização de água: aquele utilizado após o devido tratamento da água residual do próprio imóvel, para atividades que não exijam que a mesma seja potável;<br><br>III - Sistema de aquecimento hidráulico solar: aquele que utiliza sistema de captação de energia solar térmica para aquecimento da água, com a captação de energia solar térmica para aquecimento da água, com a finalidade de reduzir parcialmente o consumo de energia elétrica na residência;<br><br>IV - Edificação com materiais sustentáveis: aqueles que utilizem materiais que atenuem ambientais, devendo ser comprovado mediante apresentação de selo certificado;<br><br>V - Construção de telhado Verde: as residências que optarem por terem seus telhados vegetação com a finalidade de diminuir o aquecimento global;<br><br>VI - Separação de resíduos sólidos: os condomínios horizontais ou verticais, que comprovadamente destinem sua coleta para reciclagem;<br><br>VII - Adaptação da calçada da residência, ou condomínio para trânsito livre e seguro: o proprietário que adaptar sua calçada para favorecer o trânsito livre para pedestres e cadeirantes, e pessoas com necessidade especiais, mantendo de 1 (um metro) a 1,5 (um metro e meio) para melhorar a circulação e mobilidade urbana;<br><br>VIII - Utilização de energia passiva: o proprietário que por ocasião da construção do imóvel, residência ou condomínio, este vertical ou horizontal, optar pela elaboração e devida execução de projeto arquitetônico que propicie o melhor aproveitamento da luz solar, dispensando ou minimizando o uso de ar condicionado e iluminação artificial;<br><br>IX - Arborização no imóvel: o proprietário de imóvel edificado que plantar ou preservar uma ou mais árvores (de espécie adequada) em sua propriedade;<br><br>X - Edificações com áreas permeáveis, residenciais e condomínios: os imóveis residências, condomínios horizontais ou verticais, que optarem por jardins ou gramados que permitam a absorção das águas das chuvas;<br><br>XI - Área de Preservação Permanente (APP), propiciando à área preservada: as propriedades sem edificações, que mantiverem a preservação proporcional à área preservada, devendo a preservação ser comprovada por laudos técnicos.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> O benefício tributário no Imposto Predial e Territorial Urbano (IPTU), a que aludem os artigos os artigos 1º e 2º, será concedido nas seguintes proporções:<br><br>I - 2% (dois por cento) para medidas descritas nos incisos I e II, do artigo 3º, sendo 1% (um por cento) para cada cumprido;<br><br>II - 4% (quatro por cento) para a medida descrita no inciso III do artigo 3º;<br><br>III - 4% (quatro por cento) para a medida descrita no inciso IV do artigo 3º;<br><br>IV - 2% (dois por cento) para as medidas descritas nos incisos V e VI do artigo 3º, sendo 1% (um por cento) para cada inciso cumprido;<br><br>V - 4% (quatro opor cento) para a medida descrita no inciso VII do artigo 3º;<br><br>VI - 2% (dois por cento) para as medidas descritas nos incisos VIII e IX do artigo 3º, sendo 1% (um por cento) para cada inciso cumprido;<br><br>VII - 2% (dois por cento) para a medida descrita no inciso X do artigo 3º, sendo 1% (um por cento) para condomínio vertical.<br><br>VIII - Isenção do Imposto Predial Territorial Urbano para o proprietário que optar pela medida descrita no inciso XI, do artigo 3º desta lei.<br><br>Parágrafo Único - Os benefícios podem ser cumulativos, estes somados, não podem ultrapassar o total de 20% (vinte por cento), por proprietário.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Os interessados em obter o benefício tributário devem protocolar o pedido e sua justificativa na Secretária Municipal de Meio Ambiente, localizada na Rua Leolinda Bacelar, nº 224, Kalilândia, Feira de Santana - Bahia, contendo a medida aplicada em sua edificação ou terreno, devidamente comprovada.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> O inciso fiscal desta lei, apenas será concedido aos contribuintes que estiverem em dia com suas obrigações tributarias para com o município de Feira de Santana.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> O benefício será revogado quando o proprietário:<br><br>I - Inutilizar a medida que levou a concessão do desconto;<br><br>II - Deixar de pagar uma das prestações, em caso de parcelamento do IPTU;<br><br>III - Não fornecer as informações pelos órgãos competentes.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> As medidas de compensação, conforme dispõe o art. 14, da Lei Complementar nº 101/2000, constam do anexo único, parte integrante desta lei.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> O chefe do Poder Executivo regulamentará a presente Lei em 90 (noventa) dias, contados da data de sua publicação.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10</span></a> Esta Lei entra em vigor na data de sua publicação.<br><br>Gabinete do Prefeito, 11 de dezembro de 2014.<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO MUNICIPAL<br><br>MÁRIO COSTA BORGES<br>CHEFE DE GABINETE DO PREFEITO<br><br>CLEUDSON SANTOS ALMEIDA<br>PROCURADOR GERAL DO MUNICÍPIO<br><br>EXPEDITO CAMPODÔNIO ELOY<br>SECRETÁRIO MUNICIPAL DA FAZENDA<br><br>ROBERTO LUIZ DA SILVA TOURINHO<br>SECRETÁRIO MUNICIPAL DO MEIO AMBIENTE E RECURSOS NATURAIS<br><br>ANEXO ÚNICO, À LEI Nº 3506, DE DEZEMBRO DE 2014.<br><br>MEDIDAS DE COMPENSAÇÃO PARA A RENÚNCIA DE RECEITA, CONFORME DISPÕE O ART. 14, DA LEI COMPLEMENTAR Nº 101/2000.<br><br>ESTIMATIVA<br><br>RECEITA - INCREMENTOS QUE SERÃO CONSOLIDADOS EM 2015:<br><br>a) Decorrente da implantação da Lei nº  <a class="link_law" data-id="1607513" data-original-title=" Data da Norma: 28.03.2013 - AUTORIZA O PODER EXECUTIVO MUNICIPAL A PROTESTAR AS CERTIDÕES DE DÍVIDA ATIVA CORRESPONDENTE AOS CRÉDITOS TRIBUTÁRIOS E NÃO-TRIBUTÁRIOS DO MUNICÍPIO DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2013/336/3360/lei-ordinaria-n-3360-2013-autoriza-o-poder-executivo-municipal-a-protestar-as-certidoes-de-divida-ativa-correspondente-aos-creditos-tributarios-e-nao-tributarios-do-municipio-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">3.360</a>, de 28 de março de 2013;<br>b) Decorrente da implantação da Lei nº  <a class="link_law" data-id="1690742" data-original-title=" Data da Norma: 08.08.2013 - DISPÕE SOBRE A CONCESSÃO DE INCENTIVO NA MODALIDADE DE CRÉDITO A FAVOR DE TOMADORES DE SERVIÇOS QUE RECEBEREM A NOTA FISCAL DE SERVIÇOS ELETRÔNICA - NFS-E, &#39;NOTA FEIRENSE&#39;, PARA FINS DE ABATIMENTO NO IMPOSTO SOBRE A PROPRIEDADE PREDIAL E TERRITORIAL URBANA - IPTU." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2013/340/3403/lei-ordinaria-n-3403-2013-dispoe-sobre-a-concessao-de-incentivo-na-modalidade-de-credito-a-favor-de-tomadores-de-servicos-que-receberem-a-nota-fiscal-de-servicos-eletronica-nfs-e-nota-feirense-para-fins-de-abatimento-no-imposto-sobre-a-propriedade-predial-e-territorial-urbana-iptu" rel="tooltip">3.403</a>, DE 08 DE AGOSTO DE 2013;<br>c) Decorrente da implantação da Lei Complementar Nº <a class="link_law" data-id="1765970" data-original-title=" Data da Norma: 16.12.2013 - ALTERA O ARTIGO 105, DA LEI COMPLEMENTAR Nº 003, DE 22 DE DEZEMBRO DE 2000, QUE INSTITUI O NOVO CÓDIGO TRIBUTÁRIO E DE RENDAS DO MUNICÍPIO DE FEIRA DE SANTANA, ESTADO DA BAHIA." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-complementar/2013/8/83/lei-complementar-n-83-2013-altera-o-artigo-105-da-lei-complementar-n-003-de-22-de-dezembro-de-2000-que-institui-o-novo-codigo-tributario-e-de-rendas-do-municipio-de-feira-de-santana-estado-da-bahia" rel="tooltip">83</a>/2013 - ITIV DIGITAL;<br>d) Decorrente da implantação da Central de Conciliação Tributária;<br>e) Decorrente do cruzamento entre o valor do faturamento informado pelo contribuinte, com o valor do faturamento do mesmo contribuinte informados pelas administradoras de cartões de crédito;<br>f) Majoração da alíquota do Imposto de Transmissão Inter Vivos - ITIV;<br>g) Atualização dos tributos municipais para o exercício de 2015;<br>h) IPTU - Com ampliação da base de contribuintes do IPTU, com o lançamento de novos loteamentos, novos registros e ajustes de áreas construídas, identificação de reformas e novas construções não informadas, etc.;<br>i) Substituição - Aumento do controle da substituição Tributária;<br>j) Repasse do ICMS - Aumento do repasse do ICMS, tendo em vista 26 (vinte e seis) recursos interpostos pelo município ;<br>k) com retorno das empresas que migraram para outros municípios, tanto com relação ao ISS quanto às taxas...<br><br>INCREMENTO:.......................................... R$ 5.000.000,00<br><br>PERDA:<br>Com redução tendo em vista isenção para o IPTU VERDE... R$ 200.000,00<br>&quot;SUPERAVIT&quot;.......................................... R$ 4.800.000,00<br><br>Nota: Os valores apresentados, levam em consideração a possibilidade da adimplência de todos contribuintes cadastrados na condição de &quot;ativo&quot;.<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

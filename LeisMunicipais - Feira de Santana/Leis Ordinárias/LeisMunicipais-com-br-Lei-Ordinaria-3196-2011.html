@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3196/2011</h2><br>INSTITUI A CAMPANHA PERMANENTE SOBRE INCLUSÃO DE MEDIDAS DE PREVENÇÃO, CONSIENTIZAÇÃO E COMBATE AO BULLYING ESCOLAR NAS ESCOLAS DE EDUCAÇÃO INFANIL E DE ENSINO FUNDAMENTAL E MÉDIO DO MUNICÍPIO DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 200/2010, de autoria do Edil Marialvo Barreto, e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica instituída, na forma desta Lei, a campanha permanente sobre inclusão de medidas de prevenção, conscientização e combate ao bullying escolas públicas de educação infantil, de ensino fundamental e médio do Município de Feira de Santana.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Entende-se por bullying atitudes de violência física ou psicológica, intencionais e repetitivas, que ocorrem sem motivação evidente, praticadas por um indivíduo (bully) ou grupos de indivíduos, contra uma ou mais pessoas, com o objetivo de intimidá-la ou agredi-la, causando dor e angústia à vitima, em relação de desequilíbrio de poder entre as partes envolvidas.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> A violência física ou psicológica pode ser evidenciada em atos de intimidação, humilhação e discriminação, entre os quais:<br><br>I - insultos pessoais;<br><br>II - comentários pejorativos;<br><br>III - ataques físicos;<br><br>IV - grafitagens depreciativas;<br><br>V - expressões ameaçadoras e preconceituosas;<br><br>VI - isolamento social;<br><br>VII - ameaças; e<br><br>VIII - pilhérias.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> O bullying pode ser classificado em três tipos, conforme as ações praticadas:<br><br>I - sexual: assediar, induzir e/ou abusar;<br><br>II - exclusão social: ignorar, isolar e excluir: e<br><br>III - psicológica: perseguir, amedrontar, aterrorizar, intimidar, dominar, infernizar, tiranizar, chantagear e manipular.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Para a implantação desta campanha, cada unidade escolar criará uma equipe multidisciplinar, com a participação de docentes, alunos, pais e voluntários, para a promoção de atividades didáticas, informativas, de orientação e prevenção.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> São objetivos da campanha:<br><br>I - prevenir e combater a prática de bullying nas escolas;<br><br>II - capacitar docentes e equipe pedagógica para implementação das ações de discussão, prevenção, orientação e solução do problema;<br><br>III - incluir, no Regimento Escolar, após ampla discursão no Conselho de Escola, regras normativas contra o bullying;<br><br>IV - esclarecer sobre os aspectos éticos e legais que envolvem o bullying;<br><br>V - observar, analisar e identificar eventuais praticantes e vítimas de bullying nas escolas;<br><br>VI - discernir, de forma clara e objetiva, o que é brincadeira e o que é bullying;<br><br>VII - desenvolver campanhas educativas, informativas e de conscientização com a utilização de cartazes e de recursos de áudio e audiovisual;<br><br>VIII - valorizar as individualidades, canalizando as diferenças para a melhoria a autoestima dos estudantes;<br><br>IX - integrar a comunidade, as organizações da sociedade e os meios de comunicação nas ações multidisciplinares de combate ao bullying;<br><br>X - coibir atos de agressão, discriminação, humilhação e qualquer outro comportamento de intimidação, constrangimento ou violência;<br><br>XI - realizar debates e reflexões a respeito do assunto, com ensinamentos que visem a convivência harmônica na escola;<br><br>XII - promover um ambiente escolar seguro e sadio, incentivando a tolerância e o respeito mútuo;<br><br>XIII - propor dinâmicas de integração entre alunos e professores;<br><br>XIV - estimular a amizade, a solidariedade, a cooperação e o companheirismo no ambiente escolar;<br><br>XV - orientar pais e familiares sobre como proceder diante da prática de bullying; e<br><br>XVI - auxiliar vítimas e agressores.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Compete à unidade escolar aprovar um plano de ações, no calendário da escola, para a implantação das medidas preventivas na Campanha.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> Fica autorizada a realização de convênios e parcerias para a garantia do cumprimento dos objetivos da Campanha.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> A escola poderá encaminhar vítimas e agressores aos serviços públicos de assistência médica, social, psicológica e jurídica, que poderão ser oferecidos também por meio de parcerias e convênios.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10.</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 18 de maio de 2011.<br><br>TARCÍZIO SUZART PIMENTA JÚNIOR<br>Prefeito Municipal<br><br>MILTON PEREIRA DE BRITTO<br>Chefe de Gabinete do Prefeito<br><br>CARLOS ANTÔNIO DE MORAES LUCENA<br>Procurador Geral do Município<br><br>JOSÉ RAIMUNDO PEREIRA DE AZEVVEDO<br>Sec. Municipal de Educação<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

@@ -6,7 +6,9 @@ extern crate lazy_static;
 
 use crate::error::Error;
 use crate::parser::Lei;
-use crate::parser_executor::{parse_on_directory, Folder};
+use crate::parser_executor::Folder;
+use crate::parser_executor_async::parse_on_directory_async;
+use async_std::task;
 use prettytable::Table;
 use std::collections::HashMap;
 use std::env;
@@ -15,24 +17,29 @@ use std::time::Instant;
 
 mod error;
 mod parser;
+mod parser_async;
 mod parser_executor;
+mod parser_executor_async;
 
 fn main() -> Result<(), Error> {
     let now = Instant::now();
     let args: Vec<String> = env::args().collect();
     let directory_path = &args[1]; // TODO: error handler
 
-    let (directories, leis) = parse_on_directory(directory_path);
+    // let (directories, leis) = parse_on_directory_async(directory_path);
+    task::block_on(async {
+        let (directories, leis) = parse_on_directory_async(directory_path).await;
+        let total_files = directories
+            .iter()
+            .map(|(_, folder)| folder.total)
+            .sum::<i32>();
+        println!("\nTotal de arquivos: {}", total_files);
+        print_report(&directories);
+        write_json_file(&leis);
 
-    let total_files = directories
-        .iter()
-        .map(|(_, folder)| folder.total)
-        .sum::<i32>();
-    println!("\nTotal de arquivos: {}", total_files);
-    print_report(&directories);
-    write_json_file(&leis);
+        println!("Tempo de execução: {} segundos", now.elapsed().as_secs());
+    });
 
-    println!("Tempo de execução: {} segundos", now.elapsed().as_secs());
     Ok(())
 }
 

@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI PROMULGADA Nº 139/2004</h2><br>DISPÕE SOBRE A INSTALAÇÃO DE CERCAS ENERGIZADAS DESTINADAS À PROTEÇÃO DE PERIMETROS NO MUNICIPIO DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O 1º VICE-PRESIDENTE DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, ATRAVÉS DO SUBSTUTIVO DO PROJETO DE LEI Nº 135/2001, DE AUTORIA DO EDIL ANTONIO CARLOS DALTRO COELHO, E NA CONFORMIDADE DO ART. 77, DA LEI Nº  <a class="link_law" data-id="1739637" data-original-title=" Data da Norma: 05.04.1990 - DISPÕE SOBRE A LEI ORGÂNICA DO MUNICIPIO DE FEIRA DE SANTANA E DA OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-promulgada/1990/3/37/lei-promulgada-n-37-1990-dispoe-sobre-a-lei-organica-do-municipio-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">37</a>, DE 05 DE ABRIL DE 1990, E ARTIGO 33, INCISO IV,DA RESOLUÇÃO Nº 393/2002 - REGIME INTERNO, PROMULGA A SEGUINTE LEI:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Todas as cercas destinadas à proteção de perímetros e que sejam dotadas de correntes elétricas, serão classificadas como energizadas, ficando incluídas na mesma legislação as ercas que utilizem outras denominações, tais como eletrônicas, elétricas, eletrificadas ou outras similares.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> As empresas e pessoas físicas que se dediquem à instalação de cercas energizadas deverão possuir registro no Conselho Regional de Engenharia, Arquitetura e Agronomia (CREA) e possuir engenheiro eletricista na condição de responsável técnico.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Será obrigatório em todas as instalações de cercas energizadas a apresentação de Anotação de responsabilidade Técnica (ART).<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> O Executivo Municipal, através de Secretaria Municipal de Desenvolvimento Urbano e Meio Ambiente, procederá è fiscalização das instalações de cercas energizadas no Município de Feira de Santana.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> As cercas energizadas deverão obedecer, na ausência de Normas Técnicas Brasileiras, às Normas Técnicas Internacionais editadas pela IEC (Internacional Eletrotechnical Commission) que regem a matéria.<br><br>Parágrafo Único - A obediência às normas técnicas de que trata o &quot;caput&quot; deste artigo deverá ser objeto de declaração expressa do técnico responsável pela instalação, que responderá por eventuais informações inverídicas.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> As cercas energizadas deverão utilizar corrente elétrica com as seguintes características técnicas:<br><br>I - tipo de corrente: intermitente ou pulsante;<br><br>II - potência máxima: 5 (cinco) Joules;<br><br>III - Intervalo dos impulsos elétricos (média): 50 (cinqüenta) impulsos/minutos; e<br><br>IV - Duração dos impulsos elétricos (média): 0,001 ( um milésimo) de segundos.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> A Unidade de Controle deverá ser constituída, no mínimo, de um aparelho energizador de cerca que apresente 01 (um) transformador e 01 (um) capacitor.<br><br>Parágrafo Único - Fica proibida a utilização de aparelhos energizados fabricados a partir de bobinas automotivas ou &quot;fly-backs&quot; de televisão.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> Fica obrigatória a instalação de um sistema de aterramento especifico para a cerca energizada, não podendo ser utilizado para este fim outro sistema de aterramento existente no imóvel.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> Os cabos elétricos destinados às conexões da cerca energizada com a Unidade de Controle e com o sistema de aterramento deverão, comprovadamente, possuir características técnicas para isolamento mínimo de 10 (dez) Kv.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10</span></a> Os isoladores utilizados no sistema devem ser constituídos em material de alta durabilidade, não higroscópico e com capacidade de isolamento mínima de 10 (dez) Kv.<br><br>Parágrafo Único - Mesmo na hipótese de utilização de estruturas de apoio ou suporte dos arames da cerca energizada fabricadas em material isolante, fica obrigatória a utilização de isoladores com as características técnicas exigidas no art. 10 desta lei.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11</span></a> Fica obrigatória a instalação, a cada 10 (dez) metros de cerca energizada, de placas de advertência.<br><br>§ 1º Deverão ser colocadas placas de advertência nos portões e/ou portas de acesso existentes ao longo da cerca e em mudança de as direção.<br><br>§ 2º As placas de advertência de que trata o &quot; caput&quot; deste artigo deverão, obrigatoriamente, possuir dimensões mínimas de10 cm ( dez centímetros ) x 20 cm ( vinte centímetros) e deverão ter seu texto e símbolos.<br><br>§ 3º A cor de fundo das placas de advertência deverá ser, obrigatoriamente amarela.<br><br>§ 4º O texto mínimo das placas de advertência deverá ser de: CERCA ENERGIZADA, ou CERCA ELETRIFICA, ou CERCA ELETRÔNICA, ou CERCA ELÉTRICA.<br><br>§ 5º As letras do texto mencionado no parágrafo anterior deverão ser, obrigatoriamente, de cor preta e ter as dimensões mínimas de:<br><br>I - altura: 2 cm (dois centímetros); e<br><br>II - espessura: 0,5 (meio centímetro)<br><br>§ 6º Fica obrigatória a inserção na mesma placa de advertência de símbolos que possibilitem, sem a margem de dúvidas, a interpretação de que se trata de um sistema dotado de energia elétrica e que pode transmitir choque.<br><br>§ 7º Os símbolos mencionados no parágrafo anterior deverão ser, obrigatoriamente, de cor preta.<br><br><a name="artigo_12"><span class="label label-pill label-danger">Art. 12</span></a> Os arames utilizados para condução da corrente elétrica da cerca energizada deverão ser, obrigatoriamente, do tipo liso.<br><br>Parágrafo Único - Fica expressamente proibida a utilização de arames farpados ou similares para a condução da corrente elétrica da cerca energizada.<br><br><a name="artigo_13"><span class="label label-pill label-danger">Art. 13</span></a> Sempre que a cerca energizada for instalada na parte superior de muros, grades, telas ou outras estruturas similares, a altura mínima do primeiro fio de arame energizado deverá ser de 1,80 (um metro e oitenta centímetro), em relação ao nível do solo da parte externa do imóvel cercado.<br><br><a name="artigo_14"><span class="label label-pill label-danger">Art. 14</span></a> Sempre que a cerca energizada possuir fios de arame energizados desde o nível do solo, estes deverão estar separados da parte externa do imóvel, cercados através de estruturas (telas, muros, grandes ou similares).<br><br>Parágrafo Único - O espaçamento horizontal entre os arames energizados e outras estruturas deverá situar-se na faixa de 10 cm (dez centímetros) a 20 cm (vinte centímetros), ou corresponder a espaços superiores a 1,00 (um metro).<br><br><a name="artigo_15"><span class="label label-pill label-danger">Art. 15</span></a> Sempre que a cerca energizada estiver instalada em linhas divisórias de imóveis, deverá haver a concordância explicita dos proprietários dos imóveis com relação à referida instalação.<br><br>Parágrafo Único - -Na hipótese de haver recusa por parte dos proprietários dos imóveis vizinhos na instalação de sistema de cerca energizada em linha divisória, a referida cerca só poderá ser instalada com um ângulo de 45º (quarenta e cinco graus) máximos de inclinação para dentro do imóvel beneficiado.<br><br><a name="artigo_16"><span class="label label-pill label-danger">Art. 16</span></a> A empresa ou o técnico instalador, sempre que solicitado pela fiscalização da Secretaria Municipal de Desenvolvimento Urbano e Meio Ambiente, deverá comprovar, por ocasião da conclusão da instalação e/ou dentro do período mínimo de 01 (um) ano após a conclusão da instalação e/ou dentro do período mínimo de 01 (um) ano após a conclusão da instalação, as características técnicas da corrente elétrica na corrente elétrica na cerca energizada instalada.<br><br>Parágrafo Único - Para efeitos de fiscalização, essas características técnicas deverão estar de acordo com os parâmetros fixados no art. 6º desta lei.<br><br><a name="artigo_17"><span class="label label-pill label-danger">Art. 17</span></a> O Executivo Municipal regulamentará esta lei no prazo de 60 (sessenta) dias a contar da data de sua publicação.<br><br><a name="artigo_18"><span class="label label-pill label-danger">Art. 18</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>CÂMARA MUNICIPAL DE FEIRA DE SANTANA, EM 1º DE MARÇO DE 2004.<br><br>Ver. ANTONIO FRANCISCO NETO<br>PRESIDENTE EM EXERCÍCIO<br><br>Autor: Antonio Carlos Daltro Coelho<br>DATA DE PUBLICAÇÃO: 10/03/2004<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

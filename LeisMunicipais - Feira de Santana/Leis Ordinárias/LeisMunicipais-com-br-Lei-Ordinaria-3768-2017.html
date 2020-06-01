@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3768, DE 06 DE NOVEMBRO DE 2017</h2><br>&quot;Dispõe sobre o repasse de recursos públicos municipais para Organizações da Sociedade Civil, através de Parceria, para fins de inexigibilidade de chamamento público e dá outras providências.&quot;<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O Prefeito Municipal de Feira de Santana, Estado da Bahia, no uso de suas atribuições legais, FAÇO saber que a Câmara Municipal, através do Projeto de LEI Nº 194/2017, de autoria do Executivo, decretou e eu sanciono a seguinte Lei:<pre> ___________________________________________________________________________________<br>|         ENTIDADES         |            CNPJ           | VALOR DO TERMO DE PARCERIA|<br>|===========================|===========================|===========================|<br>|Associação   de   Apoio   a|05.363.115/0001-64         |               R$ 40.125,72|<br>|Pessoa  com Câncer de Feira|                           |                           |<br>|de Santana                 |                           |                           |<br>|---------------------------|---------------------------|---------------------------|<br>|Liga  Cultural  de Bandas e|09.597.049/0001-48         |               R$ 29.192,10|<br>|Fanfarras da Bahia         |                           |                           |<br>|---------------------------|---------------------------|---------------------------|<br>|Associação   Semeadores  de|05. 285. 636/0001-40       |               R$ 60.000,00|<br>|Cristo                     |                           |                           |<br>|---------------------------|---------------------------|---------------------------|<br>|Associação    Feirense   de|04.691.951/0001-05         |              R$ 120.000,00|<br>|Síndrome de Down           |                           |                           |<br>|___________________________|___________________________|___________________________| * tabela formatada pela equipe técnica do LeisMunicipais.com.br<br><br>Parágrafo único. O Termo de Fomento acordado com o Município usará a dotação orçamentária: Elemento de Despesa 33.50.43.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> As entidades beneficiadas com os recursos públicos deverão observar a legislação pertinente, tanto para recebimento dos recursos pleiteados, quanto para a respectiva prestação de contas, em especial, a Lei Federal nº 13.019/14 e Decreto Municipal nº <a class="link_law" data-id="" data-original-title=" Data da Norma: .. - " data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/decreto/2017/1016/10166/decreto-n-10166-2017-este-ato-ainda-nao-esta-disponivel-no-sistema" rel="tooltip">10.166</a>/17.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogando-se as disposições em contrário.<br><br>Gabinete do Prefeito, 06 de novembro de 2017.<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO MUNICIPAL<br><br>MARIO COSTA BORGES<br>CHEFE DE GABINETE DO PREFEITO<br><br>CLEUDSON SANTOS ALMEIDA<br>PROCURADOR GERAL DO MUNICÍPIO<br><br>EXPEDITO CAMPODÔNIO ELOY<br>SECRETÁRIO MUNICIPAL DA FAZENDA<br><br>PUBLICADO NO DIÁRIO OFICIAL ELETRÔNICO DIA 07 DE NOVEMBRO DE 2017.<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

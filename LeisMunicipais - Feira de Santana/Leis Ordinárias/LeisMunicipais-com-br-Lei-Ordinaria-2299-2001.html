@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 2299/2001</h2><br>REGULAMENTA O FUNCIONAMENTO DOS ESTABELECIMENTOS COMERCIAIS NO MUNICÍPIO E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Autor: Poder Executivo<br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia; Faço saber que a Câmara Municipal, através do Projeto de Lei nº 80/2001, de autoria do Poder Executivo, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica autorizado o funcionamento de estabelecimentos comerciais no Município de Feira de Santana em horários especiais, aos sábados, domingos e feriados, desde que atendidos os seguintes requisitos:<br><br>I - sejam rigorosamente realizados os pagamentos dos direitos sociais dos empregados envolvidos, a exemplo de horas extras e repouso semanal remunerado, dentre outros assegurados por Lei ou convenção coletiva de trabalho;<br><br>II - sejam acordados entre os sindicatos; patronal e de empregados, as condições do funcionamento em horários excepcionais;<br><br>§ 1º O disposto no art. 1º, Inciso II, não se aplica a centros empresariais que possuam mais de 50 (cinqüenta) unidades autônomas e a empreendimentos do comércio varejista de alimentos que empreguem mais de 100 (cem) pessoas.<br><br>§ 2º Em se tratando de ocasiões sazonais ou ainda de meras prorrogações de horário de funcionamento em dias úteis, não previstas na convenção coletiva de trabalho respectiva, a autorização será concedida por ato do Poder Executivo Municipal, expedido à vista de solicitação sindical das partes envolvidas.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Ao pactuarem as datas especiais de funcionamento dos estabelecimentos comerciais, as entidades sindicais mencionadas no artigo anterior, preservarão como proibida expressamente a atividade das empresas durante o período fixado para realização dos festejos Micaretescos, a partir das 14:00 h de Sexta-feira até o Domingo.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> O Poder Executivo Municipal fiscalizará o cumprimento desta Lei, através de agentes fiscais lotados na Secretaria Municipal da Fazenda, atribuindo aos infratores as seguintes penalidades:<br><br>I - Advertência;<br><br>II - Multa de R$ 180,00 (cento e oitenta reais) por empregado, nos casos de reincidência;<br><br>III - Suspensão da licença de funcionamento por seis meses, em casos de reincidência após a aplicação da multa.<br><br>Parágrafo Único - Para aplicação das penas previstas nos incisos II e III deste artigo, será assegurado ao infrator o contraditório e a ampla defesa.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Esta Lei entrará em vigor na data da sua publicação, revogadas as disposições em contrário.<br><br>PREFEITURA MUNICIPAL DE FEIRA DE SANTANA, EM 06 DE DEZEMBRO DE 2001.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

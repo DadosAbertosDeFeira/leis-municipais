@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 2016/98</h2><br>DISPÕE SOBRE A ABERTURA DE CRÉDITO ADICIONAL ESPECIAL, NO VALOR DE R$ 12.000.000,00 (DOZE MILHÕES DE REAIS) PARA A CRIAÇÃO DO FUNDO DE MANUTENÇÃO E DESENVOLVIMENTO DO ENSINO FUNDAMENTAL E DE VALORIZAÇÃO DO MAGISTÉRIO.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, no uso de suas atribuições, FAÇO saber que a Câmara Municipal decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica aberto, unidade orçamentária na Secretaria Municipal de Educação, um crédito adicional especial, no valor de R$ 12.000.000,00 (Doze milhões de reais), com recursos do Fundo de Manutenção e Desenvolvimento do Ensino Fundamental e de Valorização do Magistério, com desdobramentos:<br><br>16. Crédito Adicional Especial<br>16.08 Educação e Cultura<br>16.080042 Ensino Fundamental<br>16.08042188 Ensino Regular<br>16.080421882.030 Manutenção do Ensino Fundamental<br>16.080421882.030.311 Pessoal............................ R$ 8.000.000,00<br>16.080421882.030.3120. Material de Consumo................ R$ 100.000,00<br>16.080421822.030.3131. Remuneração de Serviços Pessoais... R$ 100.000,00<br>16.080421822.030.3132. Outros Serviços e Encargos....... R$ 2.500.000,00<br>16.080421882.030.3254. Apoio Financeiro a Estudantes...... R$ 400.000,00<br>16.080421822.030.4110. Obras e Instalações................ R$ 600.000,00<br>16.080421822.030.4120. Equip. e Material Permanente....... R$ 300.000,00<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O crédito aberto no artigo anterior correrá por conta dos recursos provenientes de transferências inter-governamentais à conta do Fundo de Manutenção e Desenvolvimento do Ensino Fundamental e de Valorização do Magistério.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> A presente Lei entrará em vigor na data de sua publicação revogadas as disposições em contrário.<br><br>Gabinete do Prefeito, 21 de julho de 1998.<br><br>CLAILTON COSTA MASCARENHAS<br>Prefeito<br><br>EVANGIVALDO DE FIGUEIREDO OLIVEIRA<br>Chefe de Gabinete do Prefeito<br><br>DATA DE PUBLICAÇÃO: 22/7/1998<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

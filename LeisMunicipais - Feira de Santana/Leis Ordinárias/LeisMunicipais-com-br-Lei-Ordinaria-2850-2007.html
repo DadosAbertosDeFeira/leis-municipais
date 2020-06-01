@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 2850/2007</h2><br>DISPÕE SOBRE O PARCELAMENTO E PAGAMENTO DOS DÉBITOS DA PREFEITURA MUNICIPAL DE FEIRA DE SANTANA, DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA E DA FUNDAÇÃO HOSPITALAR DE FEIRA DE SANTANA REFERENTES ÀS CONTRIBUIÇÕES PREVIDENCIÁRIAS DEVIDAS AO REGIME PRÓPRIO DE PREVIDÊNCIA SOCIAL DOS SERVIDORES MUNICIPAIS, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Autor: Poder Executivo<br><br>O PREFEITO MUNICÍPIO DE FEIRA DE SANTANA, ESTADO DA BAHIA. Faço saber que a Câmara Municipal aprovou e eu sanciono e promulgo a seguinte lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Ficam os Poderes Executivo e Legislativo Municipal; e a Fundação Hospitalar de Feira de Santana;autorizados a realizarem o parcelamento de débitos referentes às contribuições previdenciárias não recolhidas no período de janeiro de 1993 a dezembro de 2000 no valor já atualizado de até R$ 16.491.194,23 (dezesseis milhões, quatrocentos e noventa e um mil e cento e noventa e quatro reais e vinte e três centavos), ao Regime Próprio de Previdência Social do Município, a cargo do Instituto de Previdência Feira de Santana - IPFS.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Fica o Instituto de Previdência de Feira de Santana autorizado a celebrar parcelamento nos termos aqui dispostos.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> O débito originário ora confessado, em razão do princípio financeiro e atuarial deverá ser corrigido, pelo IPCA - Índice de Preços ao Consumidor Ampliado mais juros de mora à razão de 6% (seis por cento) ao ano, e será paga em parcelas, vincendas no dia 10 (dez) de cada mês, mediante depósito automático na conta do IPFS.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> O débito, ora confessado, consolidado em reais será pago em 240 (duzentos e quarenta) parcelas fixas, mensais e sucessivas, no valor de até R$ 68.713,31 (sessenta e oito mil, setecentos e treze reais e trinta e um centavos) cada uma, acrescidas dos juros estabelecidos no artigo antecedente.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Quaisquer outras operações ou negociações referentes a estes débitos fora termos definidos nesta Lei serão consideradas nulas de pleno direito.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> O pagamento a que se refere esta Lei independe do devido pela contribuição previdenciária mensal a cargo do Município ao Regime Próprio de Previdência Social dos Servidores Municipais.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> O Instituto de Previdência de Feira de Santana promoverá junto à Prefeitura Municipal de Feira de Santana, à Câmara Municipal de Feira de Santana e à Fundação Hospitalar de Feira de Santana negociações para que sejam firmados termos de confissão dos débitos do período estabelecido no artigo primeiro desta Lei.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> Esta Lei entra em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 28 de novembro de 2007.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

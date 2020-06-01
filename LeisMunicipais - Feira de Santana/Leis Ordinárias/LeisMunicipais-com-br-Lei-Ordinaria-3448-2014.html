@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3448/2014.</h2><br>DISPÕE SOBRE A INSTITUIÇÃO DO CONSELHO MUNICIPAL DE DESENVOLVIMENTO SUSTENTÁVEL DE FEIRA DE SANTANA - CMDSFS E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, no uso de suas atribuições, FAÇO saber que a Câmara Municipal, através do Projeto de Lei Nº 15/2014, substitutivo de autoria do Poder Executivo, decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica o Poder Executivo autorizado a instituir o Conselho Municipal de Desenvolvimento Sustentável de Feira de Santana - CMDSFS, órgão colegiado gestor do desenvolvimento sustentável do Município de Feira de Santana, que terá função de formulação, consulta ou deliberação, segundo o contexto de cada política pública ou programa de desenvolvimento em implementação.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Fica extinto o Conselho Municipal de Desenvolvimento Rural de Feira de Santana, competindo suas atribuições ao Conselho Municipal de Desenvolvimento Sustentável - CMDSFS.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Ao CMDSFS compete promover:<br><br>I - o desenvolvimento sustentável no Município, assegurando-lhe a efetiva e legítima participação de representações dos diversos segmentos sociais e movimentos na discussão e elaboração do Plano Municipal de Desenvolvimento Sustentável - PMDS, de forma que este contemple estratégias, ações, programas e projetos de apoio e fomento ao desenvolvimento econômico e social, em bases sustentáveis, do Município;<br><br>II - a execução, a monitoria e a avaliação das ações previstas no Plano Municipal de Desenvolvimento Sustentável, os impactos dessas ações no desenvolvimento municipal e propor redirecionamento;<br><br>III - a formulação e a proposição de políticas públicas municipais voltadas para o desenvolvimento sustentável;<br><br>IV - a aprovação e compatibilização da programação físico-financeira anual, em nível municipal, dos programas que integram o Plano Municipal de Desenvolvimento Sustentável, acompanhando seu desempenho e apreciando relatórios de execução;<br><br>V - a formulação e proposição de ações, programas e projetos no Plano Municipal de Desenvolvimento Sustentável para o Plano Plurianual (PPA), na Lei de Diretrizes Orçamentárias (LDO) e na Lei Orçamentária Anual (LOA) do Município;<br><br>VI - a elaboração, o monitoramento e a avaliação de planos, programas, projetos, ações e atividades, de natureza transitória ou permanente;<br><br>VII - a priorização, a hierarquização e o exercício do controle social local no desenvolvimento de ações e atividades de responsabilidade do setor público;<br><br>VIII - a consulta quanto ao público beneficiário, à localização, ao período adequado e às demais informações para a composição dos investimentos governamentais no Município;<br><br>IX - a instalação de comissões, câmaras ou comitês específicos para deliberar, e/ou executar, acompanhar e avaliar ações e atividades especificas;<br><br>X - a interlocução privilegiada junto aos órgãos públicos para sugerir adequações e denunciar as irregularidades das suas ações;<br><br>XI - a compatibilização entre as políticas públicas municipal, territorial, estadual e federal voltadas para o desenvolvimento sustentável e para a conquista e consolidação da plena cidadania no Município;<br><br>XII - o estímulo à implantação e reestruturação de organizações representativas de segmentos sociais, tanto no meio urbano, quanto rural, estimulando-as, também, para participação no CMDSFS;<br><br>XIII - a articulação com os municípios vizinhos, visando à elaboração, qualificação e implementação dos Planos Territoriais de Desenvolvimento Sustentável;<br><br>XIV - identificação, encaminhamento e monitoramento de demandas relacionadas ao fortalecimento da agricultura familiar e outros segmentos sociais fragilizados;<br><br>XV - ações que estimulem, preservem e fortaleçam a cultura local;<br><br>XVI - buscar o melhor funcionamento e representatividade do Conselho, através do estímulo à participação de diferentes atores sociais do Município, como a participação de organizações representativas de mulheres, jovens e, quando houver, de indígenas e descendentes de quilombolas.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> O CMDSFS tem foro e sede no Município de Feira de Santana-BA.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> O mandato dos membros do CMDSFS será de 02 (dois) anos, e será exercido sem ônus para os cofres públicos, sendo considerado serviço relevante prestado ao Município.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> O CMDSFS será composto pelos seguintes membros:<br><br>I - 01(um) representante da Secretaria Municipal de Agricultura, Recursos Hídricos e Desenvolvimento Rural de Feira de Santana;<br><br>II - 01(um) representante da Secretaria Municipal de Planejamento de Feira de Santana;<br><br>III - 01(um) representante da Secretaria Municipal de Trabalho, Turismo e Desenvolvimento Econômico de Feira de Santana;<br><br>IV - 01(um) representante da Empresa Baiana de Desenvolvimento Agrícola - EBDA;<br><br>V - 01(um) representante da Companhia de Desenvolvimento e Ação Regional - CAR;<br><br>VI - 01(um) representante da Universidade Estadual de Feira de Santana - UEFS;<br><br>VII - 01(um) representante da Cooperativa Pecuária de Feira de Santana - COOPERFEIRA;<br><br>VIII - 01(um) representante do Sindicato dos Produtores Rurais de Feira de Santana;<br><br>IX - 01(um) representante do Centro das Indústrias de Feira de Santana - CIFS;<br><br>X - 01(um) representante da Associação Comercial de Feira de Santana - ACEFS;<br><br>XI - 01(um) representante do Sindicato dos Trabalhadores Rurais de Feira de Santana;<br><br>XII - 01(um) representante do Instituto Social Recicla Zona Rural de Feira de Santana;<br><br>XIII - 01(um) representante da Cooperativa de Beneficiamento e Comercialização de Produtos da Agricultura Familiar de Feira de Santana - COOBAF/FS;<br><br>XIV - 01(um) representante da Associação dos Pequenos Agricultores do Município de Feira de Santana - APAEB;<br><br>XV - 01(um) representante da Associação de Engenheiros Agrônomos de Feira de Santana;<br><br>XVI - 01(um) representante da Associação dos Produtores em Agricultura Familiar e Economia Solidária de Feira de Santana - ACRIFEIRA;<br><br>XVII - 01(um) representante da Associação dos Floristas de Feira de Santana;<br><br>XVIII - 01(um) representante da Associação dos Produtores Rurais e Pescadores do Distrito Governador João Durval Carneiro;<br><br>§ 1º Em virtude da predominância de características rurais do Município e da representatividade da Agricultura Familiar, será garantida a ampla participação de membros representantes dos agricultores familiares, trabalhadores assalariados rurais, agroextrativistas, pescadores, indígenas, assentados de reforma agrária e outras populações e comunidades tradicionais do campo, escolhidos e indicados por suas respectivas comunidades, associações, sindicatos e demais entidades representativas.<br><br>§ 2º Todos os Conselheiros Titulares e Suplentes devem ser indicados formalmente, em documento escrito, pelas instituições/entidades que representam:<br><br>a) para conselheiros e suplentes indicados por entidades da sociedade civil organizada, órgãos públicos e organizações para-governamentais, a indicação deverá ser feita em papel timbrado e assinado pelo responsável pela respectiva instituição;<br><br>§ 3º As indicações serão encaminhadas ao Prefeito Municipal para publicação, através de Decreto Municipal, no prazo de 30(trinta) dias.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> A composição do CMDSFS obedece ao estabelecido nas orientações para constituição ou reformulação de CMDS, recomendadas pelo Conselho Estadual de Desenvolvimento Rural Sustentável - CEDRS.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> O presidente do CMDSFS será escolhido na primeira sessão deste conselho, por maioria simples dos seus membros, a ser realizada no prazo de 30(trinta) dias.<br><br>Parágrafo Único - A presidência do Conselho será exercida interinamente pelo Secretário Municipal de Agricultura, Recursos Hídricos e Desenvolvimento Rural de Feira de Santana, durante o período compreendido entre a aprovação do Conselho e a primeira sessão de seus membros para escolha do presidente.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> O Executivo Municipal, através de seus órgãos e entidades da administração direta e indireta, fornecerá as condições técnicas e materiais, e as informações necessárias para o CMDSFS cumprir suas atribuições.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10</span></a> O CMDSFS elaborará o seu Regimento Interno para regular o seu funcionamento, no prazo der 30(trinta) dias.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11</span></a> Esta Lei entra em vigor na data de sua publicação, revogadas as disposições em contrario.<br><br>Gabinete do Prefeito, 24 de Abril de 2014.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito<br><br>MÁRIO COSTA BORGES<br>Chefe de Gabinete do Prefeito<br><br>CLEUDSON SANTOS DE ALMEIDA<br>Procurador Geral do Município<br><br>Autor: Poder Executivo<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>DECRETO Nº 8842, de 30 de janeiro de 2013.</h2><br>CRIA A COMISSÃO DE PREPARAÇÃO AO PROCEDIMENTO EXPROPRIATÓRIO DO BEM IMÓVEL DENOMINADO FEIRA TÊNIS CLUBE NO MUNICÍPIO DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, no uso de suas atribuições,<br><br>CONSIDERANDO que a desapropriação de bem imóvel, conforme a legislação federal que trata da matéria, pode se dar pelo modo administrativo, onde o Poder Público Municipal e o expropriado acordam com relação ao preço, havendo a aquisição compulsória sem a intervenção do Poder Judiciário;<br><br>CONSIDERANDO também que o Poder Executivo Municipal possui interesse em desapropriar o imóvel onde está localizado o Feira Tênis Clube, e, para tal, já editou a necessária declaração de utilidade pública do bem em questão;<br><br>CONSIDERANDO, enfim, a necessidade da criação de uma Comissão de Preparação ao Procedimento Expropriatório do bem já mencionado, a fim de que esforços sejam somados e haja maior integração dos órgãos que compõem a Administração Municipal para que seja efetivada uma desapropriação favorável ao interesse público, não apenas para os atos expropriatórios como também para avaliar as melhores possibilidades de utilização do bem pelo Município, DECRETA:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica criada a Comissão de Preparação ao Procedimento Expropriatório do bem imóvel denominado Feira Tênis Clube na forma deste Decreto.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> A Comissão de Preparação do Procedimento Expropriatório do bem imóvel denominado Feira Tênis Clube será composta por:<br><br>I - Procurador Geral do Município, Carlos Antônio de Moraes Lucena, que presidirá a Comissão;<br><br>II - Secretário Municipal da Fazenda, Expedito Campodônio Eloy;<br><br>III - Secretário Municipal de Planejamento, Carlos Alberto de Oliveira Brito;<br><br>IV - Secretário Municipal de Administração, João Marinho Gomes Júnior;<br><br>V - Secretário Municipal Extraordinário de Convênios e Gestão, Arcênio José Oliveira.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Compete à Comissão de Preparação do Procedimento Expropriatório do bem imóvel denominado Feira Tênis Clube:<br><br>I - Emitir orientações e recomendações sobre a avaliação do valor do bem a ser expropriado.<br><br>II - Realizar o levantamento dos possíveis créditos e débitos que o bem imóvel possui frente aos particulares e aos órgãos municipais, estaduais e federais.<br><br>III - Coordenar as atividades de negociação frente aos órgãos de deliberação que administram o bem que se deseja desapropriar.<br><br>IV - Propor critérios para decidir prioridades de ocupação do bem a ser expropriado.<br><br>V - Assegurar o cumprimento das medidas estabelecidas em conjunto.<br><br>VI - Compatibilizar os trabalhos técnicos com os pareceres administrativos dos membros da Comissão durante todo o processo.<br><br>VII - Estabelecer datas e critérios para realização de reuniões, assembleias, dentre outras sessões que tratem do tema em questão.<br><br>VIII - Promover as diretrizes e as negociações da forma que atenda tanto ao interesse público quanto ao dos particulares administradores do bem a ser expropriado.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Caso a Comissão entenda que não seja possível a realização da desapropriação através da via administrativa, esta será realizada por meio judicial.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Este Decreto entrará em vigor na data da sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito, 30 de janeiro de 2013.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito Municipal<br><br>MÁRIO COSTA BORGES<br>Chefe de Gabinete do Prefeito<br><br>CARLOS ANTÔNIO DE MORAES LUCENA<br>Procurador Geral do Município<br><br>JOÃO MARINHO GOMES JÚNIOR<br>Secretário Municipal de Administração<br><br>EXPEDITO CAMPODÔNIO ELOY<br>Secretário Municipal da Fazenda<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

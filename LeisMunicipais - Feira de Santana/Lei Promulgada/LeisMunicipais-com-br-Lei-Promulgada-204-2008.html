@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI PROMULGADA Nº 204/2008</h2><br>DISPÕE SOBRE O SERVIÇO DE ASSISTÊNCIA TÉCNICA NO MUNICIPIO DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PRESIDENTE DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, FAÇO SABER QUE A CÂMARA MUNICIPAL, ATRAVÉS DO PROJETO DE LEI Nº 143/2007, DE AUTORIA DO EDIL MAGNO FELZEMBUR, E NA CONFORMIDADE DO ART. 78, § 7, DA LEI Nº  <a class="link_law" data-id="1739637" data-original-title=" Data da Norma: 05.04.1990 - DISPÕE SOBRE A LEI ORGÂNICA DO MUNICIPIO DE FEIRA DE SANTANA E DA OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-promulgada/1990/3/37/lei-promulgada-n-37-1990-dispoe-sobre-a-lei-organica-do-municipio-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">37</a>, DE 05 DE ABRIL DE 1990, E ARTIGO 25, INCISO V, DO REGIME INTERNO, PROMULGA A SEGUINTE LEI:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> As assistências técnicas que prestam serviço neste município, devem fixar um prazo, nunca superior a 30 (trinta) dias, no caso de produtos em garantia, para que os consumidores resgatem os bens submetidos aos seus serviços.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Caso o consumidor não resgate o produto no prazo determinado, não poderá o prestador de serviços desfazer-se do bem antes do prazo de 06 (seis) meses, a contar desta data.<br><br>Parágrafo Único - Durante o prazo supra mencionado, a assistência técnica poderá fixar multa diária ou multa única, pela não retirada do bem, sendo que a primeira não pode ser cobrada em valor superior a 2 % (dois por cento) do valor de mercado do bem e a última não poderá superar o valor do mesmo.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Após os 06 (seis) meses estipulados, a assistência técnica poderá desfazer-se do bem, desde que notifique o consumidor através de carta com aviso de recebimento (AR).<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> O descumprimento do disposto nesta lei sujeita os prestadores deste serviço as seguintes sanções:<br><br>I - advertência quando da primeira infração ou abuso;<br><br>II - multa no valor, mínimo, de R$ 200,00 (duzentos reais), e máxima, no valor de R$ 3.000,00 (três mil reais);<br><br>III - suspensão do alvará de funcionamento por até 06 (seis) meses;<br><br>IV - interdição do estabelecimento.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> O Executivo Municipal, através de sua Coordenadoria Municipal de Defesa do Consumidor - CONDECON - órgão integrante da Secretaria Municipal de Governo fiscalizará e aplicará as sanções previstas nesta Lei Municipal, com o objetivo de coibir abusos ou infrações cometidas.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>CÂMARA MUNICIPAL DE FEIRA DE SANTANA, em 18 de Março de 2008.<br><br>Ver. ANTONIO CARLOS PASSOS ATAÍDE<br>PRESIDENTE<br><br>Autor: Magno Felzemburg<br>DATA DE PUBLICAÇÃO: 28/03/2008<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

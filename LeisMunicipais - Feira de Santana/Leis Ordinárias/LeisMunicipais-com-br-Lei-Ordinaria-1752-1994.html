@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 1752/94</h2><br>DISPÕE SOBRE A CRIAÇÃO DO PARQUE DA CIDADE, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, FAÇO saber que a Câmara Municipal decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica criado o Parque da Cidade que se localizará nas margens direita e esquerda do Rio Jacuípe, nas imediações da ponte da BR-116, onde será constituída uma área enquadrada como ASRE - área sujeita a regime específico de acordo com o anexo 5, ítem 1 da Lei nº <a class="link_law" data-id="2595596" data-original-title=" Data da Norma: 11.11.1992 - Dispõe sobre o ordenamento do uso e da ocupação do solo na área urbana do Município de Feira de Santana e dá outras providências." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1992/161/1615/lei-ordinaria-n-1615-1992-dispoe-sobre-o-ordenamento-do-uso-e-da-ocupacao-do-solo-na-area-urbana-do-municipio-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">1.615</a>/92 (Lei de Ordenamento do Uso e da Ocupação do Solo) e atendendo ao disposto no inciso IX, do Art. 9, da <a class="link_law" data-original-title="Lei Orgânica Feira de Santana BA" data-toggle="tooltip" href="/lei-organica-feira-de-santana-ba" rel="tooltip">Lei Orgânica</a> do Município (Lei <a class="link_law" data-id="1739637" data-original-title=" Data da Norma: 05.04.1990 - DISPÕE SOBRE A LEI ORGÂNICA DO MUNICIPIO DE FEIRA DE SANTANA E DA OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-promulgada/1990/3/37/lei-promulgada-n-37-1990-dispoe-sobre-a-lei-organica-do-municipio-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">037</a>/90).<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O Parque da Cidade, quando da sua implantação, terá observados os seguintes critérios:<br><br>a) proibição de instalação de empreendimentos ou atividades que configurem usos de categorias incompatíveis com as necessidades de preservação;<br>b) fixação de densidade habitacionais brutas, máximas, admitidas para os usos a serem implantados;<br>c) fixação de parâmetros e índices urbanísticos, visando prevenir a ocorrência de assentamentos causadores de concentrações de efluentes em níveis superiores às capacidades de digestão das bacias;<br>d) proibição de realização de empreendimentos associados, ou não, a atividades, que resultem na eliminação de elementos de proteção natural do sítio, dos cursos d`água e das condições de acumulação e retenção de água potável;<br>e) proibições de empreendimentos, associados ou não, a atividades, que resultem na distribuição da flora ou fauna nativas, alterações nas formas do relevo natural ou interferência no equilíbrio do sistema-hídrico;<br>f) fixação das restrições de ocupação para edificações, incluindo: índice de ocupação máxima, coeficiente de aproveitamento máximo, número de pavimentos e recuos mínimos.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> A Secretaria de Planejamento do Município ficará responsável pelos levantamentos topográficos e confecção do projeto arquitetônico necessários à viabilização do Parque da Cidade.<br><br>§ 1º Fica o Poder Executivo autorizado a firmar convênios com órgãos dos governos estadual e federal, organizações governamentais e não governamentais nacional e/ou estrangeiras que contribuam com efetiva instalação, manutenção e assessoramento do Parque.<br><br>§ 2º Fica o Poder Executivo autorizado a firmar contratos de arrendamento com empresas, preferencialmente sediadas nesta cidade, com o fim específico de exploração dos equipamentos e outras formas de lazer a serem instalados no Parque.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Prefeitura Municipal de Feira de Santana, em 27 de maio de 1994.<br><br>PROFº. JOSÉ RAIMUNDO PEREIRA DE AZEVEDO<br>Prefeito<br><br>DR. RAYMUNDO ALVES PIRES<br>Secretário de Planejamento e Meio Ambiente<br><br>Autor: Tarcízio Pimenta<br><br>Data da Publicação: 28/5/1994<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

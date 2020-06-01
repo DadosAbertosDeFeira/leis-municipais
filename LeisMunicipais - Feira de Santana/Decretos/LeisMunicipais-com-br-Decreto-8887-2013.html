@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>DECRETO Nº 8887, de 02 de abril de 2013.</h2><br>AUTORIZA O FUNCIONAMENTO DE ESTABELECIMENTOS COMERCIAIS EM HORÁRIOS EXCEPCIONAIS, NO PERÍODO DA MICARETA/2013.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, no uso das suas atribuições,<br><br>CONSIDERANDO que a programação da Micareta/2013 definiu como dias festivos: 25 (quinta-feira), 26 (sexta-feira), 27 (sábado) e 28 (domingo) do mês de abril;<br><br>CONSIDERANDO que a Lei nº  <a class="link_law" data-id="696758" data-original-title=" Data da Norma: 06.12.2001 - REGULAMENTA O FUNCIONAMENTO DOS ESTABELECIMENTOS COMERCIAIS NO MUNICÍPIO E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2001/229/2299/lei-ordinaria-n-2299-2001-regulamenta-o-funcionamento-dos-estabelecimentos-comerciais-no-municipio-e-da-outras-providencias" rel="tooltip">2.299</a>, de 11 de dezembro de 2001, que regulamenta o funcionamento dos estabelecimentos comerciais no Município, estabelece que as empresas devem encerrar as atividades durante o período fixado para realização dos festejos Micaretescos, a partir das 14h de sexta-feira até domingo;<br><br>CONSIDERANDO ainda que no dia 01 de abril de 2013, através de consulta formulada pelo Secretário Municipal de Cultura, Esporte e Lazer, Jailton Batista dos Santos, aos representantes do Shopping Boulevard, da Associação Comercial de Feira de Santana, do Sindicato dos Empregados no Comércio, do Sindicato do Comércio de Feira de Santana, do Sindicato dos Supermercados de Feira de Santana, fato que deu origem a um &quot;TERMO DE COMPROMISSO DE CONDUTA&quot;, DECRETA:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica autorizado, excepcionalmente, o funcionamento dos estabelecimentos comerciais durante o período da Micareta/2013, de conformidade com os horários abaixo especificados:<br><br>I - dia 25 de abril de 2013 (quinta-feira):<br><br>a) Comércio - horário normal;<br>b) Shopping - horário normal;<br>c) Supermercado - horário normal.<br><br>II - dia 26 de abril de 2013 (sexta-feira):<br><br>a) Comércio - horário normal;<br>b) Shopping - das 10h às 20h;<br>c) Supermercado - horário normal.<br><br>III - dia 27 de abril de 2013 (sábado):<br><br>a) Comércio - fechado;<br>b) Shopping - das 10h às 16h;<br>c) Supermercado - das 07h às 20h.<br><br>IV - dia 28 de abril de 2013 (domingo):<br><br>a) Comércio - fechado;<br>b) Shopping - fechado;<br>c) Supermercado - fechado.<br><br>V - dia 29 de abril de 2013 (segunda-feira):<br><br>a) Comércio - a partir das 12h;<br>b) Shopping - a partir das 10h;<br>c) Supermercado - a partir das 08h.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O presente Decreto entrará em vigor na data de sua publicação.<br><br>Gabinete do Prefeito, 02 de abril de 2013.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito Municipal<br><br>MÁRIO COSTA BORGES<br>Chefe de Gabinete do Prefeito<br><br>JAILTON BATISTA DOS SANTOS<br>Secretário Municipal de Cultura, Esporte e Lazer<br><br>ANTÔNIO CARLOS BORGES DOS SANTOS JÚNIOR<br>Secretário Municipal do Trabalho, Turismo e Desenvolvimento Econômico<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

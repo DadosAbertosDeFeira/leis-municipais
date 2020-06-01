@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 1624/92</h2><br>INSTITUI A OUVIDORIA MUNICIPAL DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, FAÇO saber que a Câmara Municipal decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> É instituída a Ouvidoria Municipal, junto ao Poder Legislativo, com a finalidade de fiscalizar e controlar os atos da Administração Pública.<br><br>§ 1º Na execução das funções referidas neste artigo, atuará o Ouvidor Municipal, que será escolhido pela Câmara de Vereadores para um mandato de 02 (dois) anos, renovável por igual período, entre cidadãos domicialiados em Feira de Santana há mais de cinco anos, além de idoneidade, moral, elevada conduta e destacada atuação em favor do Município e dos direitos civis.<br><br>§ 2º A Mesa da Câmara Municipal abrirá prazo de 30 (trinta) dias para receber indicações de nomes através de entidades da sociedade civil, elaborando posteriormente uma lista tríplice a ser apresentada ao plenário que escolherá, em votação secreta, o Ouvidor Municipal, observando-se o seguinte processo de votação:<br><br>I - Em primeira votação será excluído aquele que obtiver o menor número de votos e, em caso de empate, será classificado o que for mais idoso;<br><br>II - Repetir-se-á a votação entre os dois primeiros classificados, recaindo a escolha sobre aquele que obtiver a maioria absoluta dos membros da Câmara Municipal;<br><br>III - Se na primeira votação um dos 03 (três) concorrentes obtiver a maioria absoluta dos votos da Câmara Municipal, será este proclamado vitorioso.<br><br>§ 3º Recaindo a escolha sobre servidor público, será o mesmo imediatamente cedido pelo órgão em que esteja lotado para o exercício das funções previstas nesta lei.<br><br>§ 4º A Câmara Municipal procederá o contido no § 2º deste artigo dentro de 60 (sessenta) dias contados a partir da publicação desta Lei.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O desempenho das atribuições de Ouvidor Municipal requererá dedicação exclusiva por parte do respectivo titular, sendo-lhe garantida uma remuneração mensal igual às procedidas aos Secretários do Município.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Incluem-se entre as atribuições do Ouvidor Municipal:<br><br>I - Velar pelo cumprimento da lei e demais disposições por parte da administração;<br><br>II - Proteger o cidadão com relação a ações ou omissões lesivas a seus interesses, quando atribuídas a titular ou responsável por cargo ou função pública;<br><br>III - Receber e apurar queixas ou denúncias apresentadas por quem se considere prejudicado por ato da administração pública municipal nas esferas dos poderes Executivo e Legislativo;<br><br>IV - Zelar pela celeridade e racionalização dos procedimentos administrativos;<br><br>V - Criticar e censurar atos da administração pública e recomendar as correções e melhorias do serviço público em geral.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> O Ouvidor Municipal será substituído, em seus impedimentos, por um substituto, escolhido, juntamente com aquele, nas mesmas condições estabelecidas nos parágrafos 1º e 2º do art. 1º desta Lei.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> As autoridades municipais e os funcionários que lhes forem subordinados, devem dispensar ao Ouvidor Municipal o apoio e informações por ele solicitados, necessários ao desempenho de suas atribuições.<br><br>Parágrafo Único - O Ouvidor Municipal terá acesso aos arquivos e documentos sob a guarda de qualquer repartição ou autoridade.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> O Ouvidor Municipal proporá ação judicial quando se fizer necessário ao cumprimento de suas atribuições e poderá determinar o arquivamento de qualquer queixa ou denúncia que considerar irrelevante.<br><br>§ 1º Poderá, ainda, demandar em juízo na defesa de legítimos interesses comunitários, bem como daqueles de que são titulares relevantes segmentos sociais, entidades representativas da sociedade ou indivíduos, ainda que carecedores de ação na forma do disposto no Código de Processo Civil, em casos tais como:<br><br>a) Proteção ao Município;<br>b) Preservação do Patrimônio Histórico, Cultural e Artístico do Município;<br>c) Defesa das condições ecológicas.<br><br>§ 2º Compete ao Ouvidor Municipal apresentar denúncias sobre ilegalidade ou irregularidades na Administração Pública ao Tribunal de Contas dos Municípios que as processarão e julgarão.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> O Ouvidor Municipal apresentará relatório anual de suas atividades à Câmara Municipal.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> O Ouvidor Municipal e o seu substituto exercerão suas funções sem prejuízo dos direitos e vantagens do cargo de que são titulares, quando se tratar de servidores do Município.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> Mediante proposta justificada da Mesa, a Câmara Municipal poderá, pelo voto de dois terços de seus membros, em votação secreta, destituir o Ouvidor Municipal, ou seu substituto, em qualquer tempo.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10 -</span></a> A Ouvidoria Municipal terá como estrutura administrativa:<br><br>I - Um chefe de gabinete;<br><br>II - Um assistente do Ouvidor Municipal;<br><br>III - Um secretário do Ouvidor Municipal;<br><br>IV - Um secretário do chefe de gabinete;<br><br>V - Um Procurador Jurídico.<br><br>Parágrafo Único - A estes cargos serão atribuídas remuneração semelhantes às praticadas pela Câmara Municipal e serão designados seus ocupantes pelo Ouvidor Municipal.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11 -</span></a> Compete à Mesa da Câmara Municipal, prioritariamente prover os meios necessários ao pleno desempenho das funções do Ouvidor Municipal, incluindo-se servidores.<br><br><a name="artigo_12"><span class="label label-pill label-danger">Art. 12 -</span></a> Se, durante o período de recesso da Câmara de Vereadores, ocorrer impedimento ou afastamento definitivo do Ouvidor Municipal e de seu substituto, o Presidente da Câmara Municipal designará quem o suceda até a reabertura dos trabalhos legislativos, quando proceder-se-á a nova escolha, na forma dos parágrafos 1º e 2º do artigo 1º desta Lei.<br><br><a name="artigo_13"><span class="label label-pill label-danger">Art. 13 -</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Prefeitura Municipal de Feira de Santana, em 15 de dezembro de 1992.<br><br>DR. COLBERT MARTINS DA SILVA<br>Prefeito<br><br>Autor: Hosannah Leite<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

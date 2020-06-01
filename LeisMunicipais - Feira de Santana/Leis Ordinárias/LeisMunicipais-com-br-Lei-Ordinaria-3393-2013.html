@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3393, de 28 de junho de 2013</h2><br>AUTORIZA O PODER EXECUTIVO A FIRMAR TERMO DE CONFISSÃO DE DÍVIDA E ACORDO DE PARCELAMENTO E QUITAÇÃO DE DÉBITOS COM A EMPRESA BAIANA DE ÁGUAS E SANEAMENTO S/A - EMBASA, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, no uso de suas atribuições, FAÇO saber que a Câmara Municipal, através do Projeto de Lei Nº 81/2013, de autoria do Poder Executivo, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica o Poder Executivo autorizado a reconhecer e confessar dívida decorrente do serviço de fornecimento de água e firmar acordo de parcelamento com a EMBASA BAIANA DE ÁGUAS E SANEAMENTO S/A, em até 72 (setenta e dois) meses, nos termos do art. 2, 1º da Lei Complementar 101/2000 - Lei de Responsabilidade Fiscal - e art. 21, 1º, 2º e 3º da Resolução 43/2001 do Senado Federal.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O orçamento do município consignará, anualmente, os recursos necessários ao atendimento das despesas relativas à amortização do principal, juros e demais encargos decorrentes do parcelamento autorizado por esta Lei, podendo o Executivo promover quaisquer modificações orçamentárias necessárias ao cumprimento do disposto nesta Lei.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Fica o Poder Executivo autorizado a ceder e/ou vincular em garantia dos pagamentos de principal e encargos, em caráter irrevogáveL E Irretratável, a modo pro solvendo, por todo o tempo de vigência do parcelamento e até sua liquidação, as receitas do ICMS.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Esta Lei entrará em vigor na data de sua publicação, ficando revogadas as disposições em contrário.<br><br>Gabinete do Prefeito, 27 de junho de 2013.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito<br><br>MÁRIO COSTA BORGES<br>Chefe de Gabinete do Prefeito<br><br>CARLOS ANTÔNIO DE MORAES LUCENA<br>Procurador Geral do Município<br><br>JOÃO MARINHO GOMES JÚNIOR<br>Secretário Municipal Administração<br><br>EXPEDITO CAMPODÔNIO ELOY<br>Secretário Municipal da Fazenda<br><br>CARLOS ALBERTO OLIVEIRA BRITO<br>Secretário Municipal de Planejamento<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

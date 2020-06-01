@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 1610, de 13 de novembro de 1992</h2><br>CONSIDERA DE UTILIDADE PÚBLICA CENTRO DE INTEGRAÇÃO DO DEFICIENTE, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, FAÇO saber que a Câmara Municipal decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> O Plano de Carreira dos Servidores Públicos Municipais, com exceção do magistério e demais servidores das áreas de educação e saúde, tem por objetivo a continuidade da ação administrativa, valorização e a profissionalização do servidor, mediante os critérios seguintes:<br><br>I - Adoção do princípio do concurso e de merecimento para ingresso e desenvolvimento na carreira;<br><br>II - Adoção de uma sistemática de vencimento e remuneração harmônica e justa que permita a valorização da contribuição de cada servidor através de seu desempenho.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O Quadro de Carreira dos Servidores Públicos Municipais, fica estruturado em classe e níveis na forma estabelecida no anexo I desta Lei:<br><br>a) Nível I - Os servidores de símbolo PDA (pessoal de apoio) cuja escolaridade exigir-se-á até o 1º grau;<br>b) Nível II - Os servidores de símbolo PA (pessoal auxiliar) cuja escolaridade exigir-se-á o 1º grau;<br>c) Nível III - Os servidores de símbolo PAD (pessoal administrativo), cuja escolaridade exigir-se-á no mínimo o 1º grau completo;<br>d) Nível IV - Os servidores de símbolo PTE (pessoal técnico especializado), cuja escolaridade exigir-se-á 2º grau, curso técnico ou curso especializado na profissão;<br>e) Nível V - Os servidores de símbolo PE (pessoal especializado), cuja escolaridade exigir-se-á 1º e 2º graus completos admitindo-se em substituição ao 2º grau, formação profissional comprovada na função, com o mínimo de 05 (cinco) anos;<br>f) Nível VI - Os servidores de símbolo NU (nível universitário), cuja escolaridade exigir-se-á a formação universitária completa;<br>g) Nível VII - Os servidores de símbolo NPG (nível pós-graduação), cuja escolaridade exigir-se-á a formação universitária com pós-graduação completa.<br><br>Parágrafo Único - As condições estabelecidas neste artigo, serão aplicadas para os casos novos, ou seja, em se tratando de novos provimentos, não prejudicando situações anteriores ou direitos adquiridos.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> A progressão funcional, far-se-á:<br><br>I - Por avanço vertical, mediante passagem do servidor de um para outro nível em virtude de obtenção de titulação específica comprovada.<br><br>II - Por avanço horizontal do servidor por tempo de serviço respeitando o interstício de 05 (cinco) anos, para cada classe, contando o tempo de serviço a partir do ingresso no serviço público municipal.<br><br>Parágrafo Único - O avanço horizontal, em virtude do tempo de serviço é de 10% (dez por cento), calculado em cada qüinqüênio sobre a classe anterior.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> O piso de vencimentos do servidor público será de uma vez o menor valor pago pela Prefeitura Municipal e que não será inferior ao salário mínimo regional estabelecido pela União.<br><br>Parágrafo Único - Ficam estabelecidos os seguintes percentuais de diferença entre os níveis em relação ao nível I:<br><br>a) Nível II e III = 20% (vinte por cento)<br>b) Nível IV e V = 30% (trinta por cento)<br>c) Nível VI - NU = ( nível universitário) será o equivalente ao nível universitário da área de saúde do Município, com as progressões estabelecidas no art. 3º incisos I e II, parágrafo único desta Lei.<br>d) Nível VII - NPG = o piso de vencimento do pessoal de nível VI - Nu (nível universitário) e VII - NPG (nível pós-graduação), será equivalente ao Nível Universitário da área de saúde do Município com as progressões estabelecidas no art. 3º, inciso I e II e parágrafo único desta Lei.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Os atuais servidores municipais serão enquadrados, de acordo com os critérios estabelecidos nesta Lei.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> O prazo para enquadramento de que trata a presente Lei será de 90 (noventa) dias a contar da vigência desta.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> A progressão funcional dos servidores dar-se-á sempre a requerimento do interessado, com prazo máximo de 60 (sessenta) dias para o seu processamento, assistindo-lhe o direito a partir da publicação da decisão.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> O instituto da progressão funcional só se aplica, exclusivamente, aos servidores que estejam no exercício de suas funções.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> Caberá à Secretaria de Administração do Município, a implantação da presente Lei.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10 -</span></a> A carga horária dos servidores públicos municipais será a de 40 (quarenta horas semanais), ressalvado o direito de horários especiais aos estabelecidos nas diversas categorias profissionais.<br><br>Parágrafo Único - Assistirá, entretanto, ao Município, o direito de convocação de horários extraordinários estabelecidos em Lei, com os pagamentos suplementares devidos.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11 -</span></a> A parcela básica dos vencimentos do pessoal inativo dos servidores públicos municipais, serão reajustados nas condições do pessoal ativo de igual categoria.<br><br><a name="artigo_12"><span class="label label-pill label-danger">Art. 12 -</span></a> Os valores do piso de vencimentos do pessoal inativo dos servidores públicos municipais, serão reajustados nas condições do pessoal ativo de igual categoria.<br><br><a name="artigo_13"><span class="label label-pill label-danger">Art. 13 -</span></a> As despesas decorrentes desta Lei, serão atendidas pelas dotações próprias, consignadas em orçamento, autorizando o Poder Executivo Municipal abrir créditos adicionais necessários.<br><br><a name="artigo_14"><span class="label label-pill label-danger">Art. 14 -</span></a> Fica criada a Comissão Permanente de Avaliação e Promoção, com inclusão na mesma da representação do Sindicato dos Servidores Públicos Municipais, com atribuições próprias em regulamento, para promover o enquadramento do pessoal decorrente da presente Lei.<br><br><a name="artigo_15"><span class="label label-pill label-danger">Art. 15 -</span></a> O piso salarial dos servidores diplomados em engenharia, química, arquitetura, agronomia e veterinária diplomados pelo cursos regulares superiores mantidos pelas escolas de engenharia, será o estabelecido pela Lei Federal nº 4.950-a de 22 de abril de 1966.<br><br><a name="artigo_16"><span class="label label-pill label-danger">Art. 16 -</span></a> Os valores básicos de vencimentos dos servidores públicos municipais, com as respectivas vantagens, terão vigência a partir de 1º de outubro do corrente ano.<br><br><a name="artigo_17"><span class="label label-pill label-danger">Art. 17 -</span></a> O Poder Executivo Municipal regulamentará a presente Lei no prazo de 25 (vinte e cinco) dias.<br><br><a name="artigo_18"><span class="label label-pill label-danger">Art. 18 -</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Prefeitura Municipal de Feira de Santana, em 13 de novembro de 1992.<br><br>DR. COLBERT MARTINS DA SILVA<br>Prefeito<br><br><i class="icon-warning-sign"></i> O anexo encontra-se disponível, ainda, no Paço Municipal<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

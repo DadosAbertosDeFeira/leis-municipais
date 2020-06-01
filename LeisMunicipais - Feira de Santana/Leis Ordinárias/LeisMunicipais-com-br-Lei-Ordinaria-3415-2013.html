@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3415, DE 23/09/2013</h2><br>&quot;DISCIPLINA AS NOMEAÇÕES PARA CARGOS EM COMISSÃO E FUNÇÕES GRATIFICADAS NO ÂMBITO DOS ÓRGÃOS DO PODER EXECUTIVO E LEGISLATIVO MUNICIPAL, E DÁ OUTRAS PROVIDÊNCIAS.&quot;<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, no uso de suas atribuições, FAÇO saber que a Câmara Municipal, a partir de um Projeto de Lei Nº 102/2013, do Executivo, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Esta Lei denominada &quot;Lei da Ficha Limpa Municipal&quot; estabelece critérios para o provimento de cargos em comissão e funções gratificadas com o intuito de proteger a moralidade administrativa, evitar o abuso do poder econômico e político, aplicando-se de forma complementar aos demais critérios gerais e especiais de provimento estabelecidos nas legislações Municipal, Estadual e Federal.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Fica vedada a nomeação de cidadãos para cargos em comissão ou função gratificada, no âmbito dos órgãos do Poder Executivo e Legislativo do Município de Feira de Santana, enquadrados nas seguintes hipóteses:<br><br>§ 1º Os que tenham contra si julgada procedente representação formulada perante a Justiça Eleitoral, em decisão transitada em julgado ou proferida por órgão judicial colegiado em processo de apuração de abuso do poder econômico ou político, desde a decisão até o transcurso do prazo de 8 (oito) anos;<br><br>§ 2º Os condenados, em decisão transitada em julgado ou proferida por órgão judicial colegiado, desde a condenação até o transcurso do prazo de 8 (oito) anos após o cumprimento da pena, pelos crimes:<br><br>a) contra a economia popular, a fé pública, a administração pública e o patrimônio público;<br>b) contra o patrimônio privado, sistema financeiro, o mercado de capitais e os previstos na Lei regula a falência;<br>c) contra o meio ambiente e a saúde pública;<br>d) eleitorais, para os quais a Lei comine pena privativa de liberdade;<br>e) de abuso de autoridade, nos casos em que houver condenação à perda do cargo ou à inabilitação para o exercício de função pública;<br>f) de lavagem ou ocultação de bens, direitos e valores;<br>g) de tráfico de entorpecentes e drogas afins, racismo, tortura, terrorismo e hediondos;<br>h) de redução à condição análoga à de escravo;<br>i) contra a vida e a dignidade sexual;<br>j) praticados por organização criminosa, quadrilha ou bando.<br><br>§ 3º Os declarados indignos do oficialato, ou com ele incompatíveis, pelo prazo de 8 (oito) anos;<br><br>§ 4º Os detentores de cargo na administração pública direta, indireta ou fundacional, que beneficiarem a si ou terceiros, pelo abuso do poder econômico ou político, que forem condenadas em decisão transitada em julgado ou preferida por órgão judicial colegiado, desde a decisão até o transcurso de 8 (oito) anos;<br><br>§ 5º Os condenados, em decisão transitada em julgado ou preferida por órgão colegiado da Justiça Eleitoral, por capacitação ilícita de sufrágio, por doação captação ou gastos ilícitos de recursos de campanha ou por conduta vedada aos agentes públicos em campanhas eleitorais que impliquem cassação do registro ou do diploma, desde até o transcurso do prazo de 8 (oito) anos;<br><br>§ 6º Os que forem condenados à suspensão dos direitos políticos, em decisão transitada em julgado ou preferida por órgão judicial colegiado, por ato doloso de improbidade administrativa que importe administrativa que importe lesão ao patrimônio público e enriquecido ilícito, desde a condenação ou o trânsito em julgado até o transcurso do prazo de 8 (oito) anos após o cumprimento da pena;<br><br>§ 7º Os que forem excluídos do exercício da profissão, por decisão sancionatória do órgão profissional competente, em decorrência de infração ético-profissional, pelo prazo de 8 (oito) anos, salvo se o ato houver sido anulado ou suspenso pelo Poder Judiciário;<br><br>§ 8º Os que forem demitidos do serviço público em decorrência de processo administrativo ou judicial, pelo prazo de 8 (oito) anos, contado da decisão, salvo se o ato houver sido suspenso ou anulado pelo Poder Judiciário ou pela própria Administração;<br><br>§ 9º Os servidores do Poder Executivo e Legislativo, que forem aposentados compulsoriamente por decisão sancionatória, e que tenha perdido o cargo por sentença ou que tenha pedido exoneração ou aposentadoria voluntária na pendência de processo administrativo disciplinar, pelo prazo de 8 (oito) anos;<br><br>§ 10 Os que tiveram suas contas relativas ao exercício de cargos ou funções públicas rejeitadas por irregularidade insanável que configure ato doloso de improbidade administrativa, e por decisão irrecorrível do órgão competente, salvo se esta houver sido suspensa ou anulada pelo Poder Judiciário, para as eleições que se realizarem nos 8 anos seguintes, contados a partir da data da decisão, aplicando-se o disposto no inciso II do art. 71 da Constituição Federal, a todos os ordenadores de despesa, sem exclusão de mandatórios que houverem agido nessa condição;<br><br>§ 11 A vedação prevista neste artigo não se aplica aos crimes culposos, àqueles definidos em Lei como de menor potencial ofensivo, nem aos crimes de ação penal privada.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Todos os atos efetuados em desobediência às vedações previstas nesta Lei serão considerados nulos a partir da entrada em vigor desta Lei.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Caberá ao Poder Executivo Municipal e ao Poder Legislativo, de forma individualizada, a fiscalização, de seus atos em obediência a presente Lei, com a possibilidade de requerer aos órgãos competentes informações e documentos que entenderem necessários para o cumprimento de suas disposições.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> O nomeado ou designado para o cargo em comissão ou função gratificada, obrigatoriamente, antes da investidura, terá ciência das restrições aqui previstas, devendo declarar, por escrito, sob as penas da lei, não se encontrar inserido nas vedações do art. 1º.<br><br>Parágrafo Único - O nomeado ou designado para o cargo em comissão ou função gratificada obrigatoriamente apresentará o atestado de nada consta de antecedente criminal e as certidões negativas de execuções criminais das Justiças Estadual e Federal, antes da investidura no cargo.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> As autoridades competentes, dentro do prazo de 90 (noventa) dias, contados da publicação da Lei, promoverão a exoneração dos ocupantes de cargos de provimento em comissão ou função gratificada que se enquadrem nas situações previstas no art. 2º, sob pena de responsabilidade.<br><br>Parágrafo Único - Os atos e exoneração produzirão efeitos a contar de suas respectivas publicações.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> As denúncias de descumprimento da presente Lei poderão ser formuladas por qualquer pessoa, por escrito ou verbalmente, caso em que deverão ser reduzidas a termo, sendo vedado, todavia, o anonimato.<br><br>§ 1º A denúncia deverá ser processada mesmo se vier desacompanhada de prova ou indicação da forma com obtê-la, não podendo ser desconsiderada em qualquer hipótese, salvo quando demonstrada de plano a sua inveracidade, ou quando de má-fé do denunciante .<br><br>§ 2º Encaminhada a denúncia, está será imediatamente enviada para a autoridade competente, sob pena de responsabilidade.<br><br>§ 3º A autoridade que não tornar as providências cabíveis ou, de qualquer forma, frustrar a aplicação das disposições da presente Lei, responderá pelo ato da forma da legislação municipal.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> A apuração administrativa a que se refere o art. 7º não excluirá a atuação do Ministério Público, das autoridades policiais e demais legitimadas para o questionamento do ato respectivo.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito, 26 de setembro de 2013.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito<br><br>MARIO COSTA BORGES<br>Chefe de Gabinete do Prefeito<br><br>JOÃO MARINHO GOMES JÚNIOR<br>Secretário Municipal de Administração<br><br>CARLOS ANTÔNIO DE MORAES LUCENA<br>Procurador Geral do Município<br><br>EXPEDITO CAMPODÔNIO ELOY<br>Secretário Municipal da Fazenda<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3742, DE 13 DE SETEMBRO DE 2017</h2><br>&quot;Dispõe sobre a concessão de Incentivos Fiscais e dá outras providências.&quot;<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O Prefeito Municipal de Feira de Santana, Estado da Bahia, no uso de suas atribuições, FAÇO saber que a Câmara Municipal, através do Projeto de LEI Nº 148/2017, de autoria do Executivo, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Para fins de estímulo à implantação do Parque Shopping Feira, no Município de Feira de Santana, fica concedida às empresas PSF SHOPPING CENTER EMPREENDIMENTO IMOBILIÁRIO LTDA, inscrita no CNPJ sob o nº 22.501.540/0001-91; EPP EMPREENDIMENTOS IMOBILIÁRIOS, CONSTRUÇÕES E PARTICIPAÇÕES LTDA, inscrita no CNPJ sob nº 00.888.663/0001-94; DBGZIBEN PARTICIPAÇÕES LTDA, inscrita no CNPJ sob nº 09.459.394/0001-15; incentivo fiscal de redução de alíquota do Imposto Sobre Serviços de Qualquer Natureza (ISSQN), incidente sobre as obras e serviços relacionados com a construção do referido empreendimento; Isenção da Taxa de Licença para Execução de Obras e Urbanização de Áreas Particulares (TLE) e isenção do Imposto sobre a Propriedade Predial e Territorial Urbana (IPTU).<br><br>§ 1º A redução da alíquota do ISSQN de que trata o caput deste artigo é de 5% (cinco por cento) para 2,5% (dois e meio por cento).<br><br>§ 2º Os serviços que serão objeto da redução prevista no parágrafo precedente são aqueles constantes do item 7.02, da lista de Serviços, a que se refere o art. 112, anexo VII, da Lei Complementar nº <a class="link_law" data-id="1592758" data-original-title=" Data da Norma: 29.11.2000 - INSTITUI O NOVO CÓDIGO TRIBUTÁRIO E DE RENDAS DO MUNICÍPIO DE FEIRA DE SANTANA, ESTADO DA BAHIA." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-complementar/2000/0/3/lei-complementar-n-3-2000-institui-o-novo-codigo-tributario-e-de-rendas-do-municipio-de-feira-de-santana-estado-da-bahia" rel="tooltip">03</a>/2000, conforme reprodução a seguir:<br><br>I - Execução, por administração, empreitada ou subempreitada, de obras de construção civil, hidráulica ou elétrica e de outras obras semelhantes, inclusive sondagem;<br><br>II - Perfuração de poços, escavação, drenagem e irrigação, terraplanagem, pavimentação, concretagem e a instalação e montagem de produtos, peças e equipamentos (exceto o fornecimento de mercadorias produzidas pelo prestador de serviços fora do local da prestação dos serviços, que fica sujeito ao ICMS).<br><br>§ 3º O ISSQN não será objeto de concessão de isenções, incentivos ou benefícios tributários ou financeiros, inclusive de redução de base de cálculo ou de crédito presumido ou outorgado, ou sob qualquer outra forma que resulte, direta ou indiretamente, em carga tributária menor que a decorrente da aplicação da alíquota mínima estabelecida, salvo nas situações de exceção previstas no artigo 8º A, § 1º, da Lei Complementar nº 116, de 31 de julho de 2003, acrescido pela alteração implementada pela Lei Complementar Nº 157, de 29 de dezembro de 2016.<br><br>§ 4º O benefício fiscal ora concedido aplica-se também às empresas que venham a ser contratadas pelos empreendedores PSF Shopping Center Empreendimento Imobiliário Ltda; EPP Empreendimentos Imobiliários, Construções e Participações Ltda, e DBGZIBEN Participações Ltda, para a execução das obras relacionadas à construção do Parque Shopping Feira, isso quanto ao ISSQN devido ao Município de Feira de Santana.<br><br>§ 5º A redução do ISSQN relacionado com a construção do empreendimento; a isenção do IPTU incidente sobre o imóvel e a isenção da TLE terá vigência enquanto perdurar as obras, não podendo ultrapassar 05 (cinco) anos, contados a partir da aprovação do projeto pelo Município de Feira de Santana.<br><br>§ 6º As empresas que se instalarem no PSF Shopping Center Empreendimento Imobiliário Ltda ficam isentas de IPTU por um período de 05 (cinco) anos, contado a partir da data de inauguração do empreendimento.<br><br>§ 7º A concessão do benefício de redução, de que trata o parágrafo 4º, estará vinculada ao protocolo, junto à Administração Municipal, de requerimento expresso instruído com cópia do contrato para execução das obras e serviços de implantação do empreendimento, firmado entre a empresa requerente e as empresas PSF Shopping Center Empreendimento Imobiliário Ltda; EPP Empreendimentos Imobiliários, Construções e Participações Ltda, e DBGZIBEN Participações Ltda.<br><br>§ 8º A Taxa de Licença para Execução de Obras e Urbanização de Áreas Particulares (TLE), de que trata esta lei, está prevista no art. 149, Tabela de Receita anexo V, da Lei Complementar nº <a class="link_law" data-id="1592758" data-original-title=" Data da Norma: 29.11.2000 - INSTITUI O NOVO CÓDIGO TRIBUTÁRIO E DE RENDAS DO MUNICÍPIO DE FEIRA DE SANTANA, ESTADO DA BAHIA." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-complementar/2000/0/3/lei-complementar-n-3-2000-institui-o-novo-codigo-tributario-e-de-rendas-do-municipio-de-feira-de-santana-estado-da-bahia" rel="tooltip">03</a>/2000, e alterações.<br><br>§ 9º O empreendimento e as obras a ele relativas serão executados em uma área localizada na Avenida Noide Cerqueira, contendo 76.312,27m², destinada ao Shopping Center, com capacidade para 120 lojas, área de estacionamento externo contendo 37.788.50m², estacionamento coberto G1, contendo 3.406,76m² e quantidade de vagas estabelecida no total de 1.312.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> As medidas de compensação para a renúncia de receita, na forma do art. 14, da Lei nº 101/2000, estão estabelecidas na forma do Anexo Único desta Lei.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> As normas de procedimento para habilitação da redução e isenções concedidas nos termos desta Lei serão fixadas por Decreto do Poder Executivo, se necessário.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Esta Lei entra em vigor na data de sua publicação.<br><br>Gabinete do Prefeito, 13 de setembro de 2017.<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO MUNICIPAL<br><br>MARIO COSTA BORGES<br>CHEFE DE GABINETE DO PREFEITO<br><br>CLEUDSON SANTOS ALMEIDA<br>PROCURADOR GERAL DO MUNICÍPIO<br><br>EXPEDITO CAMPODÔNIO ELOY<br>SECRETÁRIO MUNICIPAL DA FAZENDA<br><br>PUBLICADO NO DIÁRIO OFICIAL ELETRÔNICO DIA 14 DE SETEMBRO DE 2017.<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

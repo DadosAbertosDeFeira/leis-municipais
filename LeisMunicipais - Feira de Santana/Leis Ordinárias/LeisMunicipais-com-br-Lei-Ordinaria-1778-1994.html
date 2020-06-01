@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 1778/94</h2><br>REGULAMENTA O ART. 136, VII, &quot;C&quot; E O ART. 137, III DA <a class="link_law" data-original-title="Lei Orgânica Feira de Santana BA" data-toggle="tooltip" href="/lei-organica-feira-de-santana-ba" rel="tooltip">LEI ORGÂNICA</a> MUNICIPAL, DISPONDO SOBRE ELEIÇÕES PARA PREENCHIMENTO DE FUNÇÕES GRATIFICADAS EM EDUCAÇÃO.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, FAÇO saber que a Câmara Municipal decreta e eu sanciono a seguinte Lei:<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> I<br>DAS FUNÇÕES GRATIFICADAS EM EDUCAÇÃO<br></span></span><br><br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> As unidades escolares do Município terão funções gratificadas em educação, de diretor e vicediretor, na conformidade com o estabelecido neste capítulo.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Nas unidades escolares que contarem com mais de 02 (duas) salas de aula, em funcionamento, haverá uma função gratificada em educação de diretor.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Nas unidades escolares haverá igualmente funções de vice-diretor, cujo número será fixado conforme os critérios abaixo:<br><br>I - nas unidades escolares que funcionem 03 (três) turnos:<br><br>a) 1 função de vice-diretor, caso a unidade possua até cinco salas de aula;<br>b) 2 funções de vice-diretor, caso a unidade possua 06 à 15 salas de aula;<br>c) 3 funções de vice-diretor, caso a unidade possua mais de 15 salas de aula;<br><br>II - nas unidades escolares que funcionem 02 (dois) turnos:<br><br>a) 1 função de vice-diretor, caso a unidade possua mais de 10 salas de aula;<br><br>III - nas unidades escolares que funcionem 01 (um) turno:<br><br>a) não haverá vice-diretor.<br><br>Parágrafo Único - Para efeito do disposto neste artigo será considerado o número de salas de aula em funcionamento durante um turno, sendo determinante para efeito de fixação do número das funções de vicediretor o turno que o maior número de salas apresentar.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Para o preenchimento das funções criadas por esta Lei o Prefeito Municipal designará os professores escolhidos através de escrutíneo direto, secreto e partidário.<br><br>Parágrafo Único - As eleições de que trata este artigo serão simultâneas em todas as unidades escolares do Município.<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> II<br>DOS CANDIDATOS E DOS ELEITORES<br></span></span><br><br>SECÇÃO I<br>DOS CANDIDATOS<br><br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Poderão concorrer as eleições para diretor e vice-diretor os servidores ocupantes de cargos de professor, em exercício de regência de classe, coordenação, supervisão e direção escolares que ofereçam apenas 1º grau, nível I, ou licenciatura, para as unidades escolares que ofereçam 1º grau, nível II.<br><br>Parágrafo Único - O professor só poderá ser candidato em uma unidade escolar no mesmo pleito.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> O mandato para o qual os professores serão eleitos, é de 02 (dois) anos, permitida a reeleição para o eríodo subsequente apenas uma vez.<br><br>Parágrafo Único - Será considerado reeleição para efeitos deste artigo, o exercício da função de diretor pelo vice-diretor do período imediatamente anterior e vice-versa.<br><br><br>SECÇÃO II<br>DOS ELEITORES<br><br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> São eleitores do processo de escolha dos diretores e vice-diretores:<br><br>I - todos os professores que, exercendo atividades de magistério, sejam lotados na unidade escolar;<br><br>II - todos os servidores municipais lotados na unidade escolar;<br><br>III - um aluno por cada classe matriculada;<br><br>IV - um representante da associação de pais e mestres, quando houver, por cada classe de alunos do turno matutino e vespertino;<br><br>V - um representante do grêmio estudantil, se houver.<br><br>§ 1º O professor que seja lotado em duas unidades escolares exercerá em ambas seu direito à voto.<br><br>§ 2º A lista dos eleitores aptos em cada unidade escolar e dos candidatos inscritos será publicada na portaria da mesma, com antecedência mínima de 72 (setenta e duas) horas.<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> III<br>DO PROCESSO ELEITORAL<br></span></span><br><span class="titulo" style="width: auto;display: block;text-align:center"><br>SEÇÃO I<br>DISPOSIÇÕES GERAIS<br></span><br><br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> O Prefeito Municipal, com antecedência mínima de 60 (sessenta) dias, expedirá decreto, do qual constarão obrigatoriamente:<br><br>I - a designação de uma comissão eleitoral central, composta de um representante da APLB/Sindicato, um representante da CEFS, um representante do serviço jurídico, um representante do departamento de organização escolar e do Secretário Municipal de Educação e Cultura que presidirá;<br><br>II - a fixação da data para a realização das eleições, na primeira quinzena do mês de maio, bienalmente a partir de 1995;<br><br>III - a data limite para registro de candidaturas, que antecederá em 30 (trinta) dias a data das eleições;<br><br>IV - as normas regulamentadoras do pleito, ouvida a APLB/Sindicato.<br><br>Parágrafo Único - Não poderá integrar a comissão criada no inciso I, qualquer professor que venha a concorrer, seus cônjuges, ascendentes, descendentes e colaterais até 3º grau.<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br>SEÇÃO II<br>DO REGISTRO DAS CHAPAS<br></span><br><br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> A comissão eleitoral central, receberá os pedidos de registro de candidaturas, no prazo fixado conforme o art. 8º, III, desta Lei e se pronunciará sobre elas até 72 (setenta e duas) horas após o encerramento do mesmo.<br><br>§ 1º O registro deverá ser solicitado por todos os candidatos que integrem a chapa, assim considerados o candidato a diretor e os candidatos a vice-diretor conforme quantidade definida no art. 3º desta Lei.<br><br>§ 2º O indeferimento de uma candidatura importará na substituição do candidato indeferido, num prazo de 48 (quarenta e oito) horas.<br><br>§ 3º Da decisão da comissão eleitoral central sobre o registro, caberá recurso, dirigido ao Prefeito Municipal, que decidirá, ouvido o serviço jurídico, num prazo de 72 (setenta e duas) horas.<br><br>§ 4º O recurso poderá ser apresentado por qualquer servidor da Secretaria Municipal de Educação e Cultura, aluno da rede municipal de ensino ou membro de associação de pais e mestres, num prazo de 48 (quarenta e oito) horas após a divulgação da decisão.<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br>SEÇÃO III<br>DO PROCESSO ELEITORAL<br></span><br><br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10 -</span></a> A comissão eleitoral central designará uma junta eleitoral em cada unidade escolar, integrada por dois professores, um aluno e dois servidores, todos vinculados ao estabelecimento escolar, que coordenar; a todo o seu processo eleitoral.<br><br>Parágrafo Único - Compete a Junta Eleitoral promover a eleição para a escolha dos eleitores, previsto no art. 7º, III e IV, a divulgação da lista prevista no art. 7º, parágrafo 2º, a preparação do local de votação, a recepção dos votos e a respectiva apuração.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11 -</span></a> As eleições ocorrerão na data estabelecida conforme o art. 8º, II, no horário de 08:00 às 21:00, salvo nas escolas que não funcionem no turno noturno, hipótese na qual o horário será de 08:00 às 15:00 horas.<br><br><a name="artigo_12"><span class="label label-pill label-danger">Art. 12 -</span></a> Serão colocadas duas urnas em cada unidade escolar, destinadas:<br><br>I - aos eleitores descritos no art. 7º, I e II desta Lei;<br><br>II - aos eleitores descritos no art. 7º, III, IV e V desta Lei.<br><br><a name="artigo_13"><span class="label label-pill label-danger">Art. 13 -</span></a> Cada urna será apurada separadamente e terá o peso de um ponto para chapa vencedora independente da vantagem de votos.<br><br>§ 1º Será declarada vencedora a chapa que somar dois pontos e, em caso de empate, vencerá aquela cujo candidato a diretor contar com mais tempo de efetivo serviço público no quadro do magistério público municipal.<br><br>§ 2º A junta eleitoral procederá a apuração das urnas logo após o encerramento da votação, lavrando ata das ocorrências e do resultado final, encaminhado-a em seguida à comissão eleitoral central.<br><br>§ 3º A comissão eleitoral central, após homologação das atas, encaminhará ao prefeito municipal o resultado geral.<br><br>§ 4º Da homologação dos resultados caberá recurso, na forma do art. 9º, parágrafos 3º e 4º.<br><br>§ 5º Sendo deferido o recurso será anulado o processo eleitoral da unidade escolar, sendo realizadas novas eleições num prazo de 30 (trinta) dias contados da data da decisão da comissão eleitoral.<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> IV<br>DAS DISPOSIÇÕES FINAIS<br></span></span><br><br><br><a name="artigo_14"><span class="label label-pill label-danger">Art. 14 -</span></a> A designação dos eleitos deverá ocorrer no prazo máximo de 30 (trinta) dias, após a realização das eleições.<br><br><a name="artigo_15"><span class="label label-pill label-danger">Art. 15 -</span></a> Nas unidades escolares nas quais não se apresentarem candidatos a eleição, o Prefeito Municipal designará um professor para preencher as funções gratificadas a ela correspondentes.<br><br><a name="artigo_16"><span class="label label-pill label-danger">Art. 16 -</span></a> Em caso de vacância de quaisquer das funções de que se trata esta lei, ocorrida após as eleições, o Prefeito Municipal designará outro servidor para responder pela função vaga até o término do mandato.<br><br><a name="artigo_17"><span class="label label-pill label-danger">Art. 17 -</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Prefeitura Municipal de Feira de Santana, 09 de Dezembro de 1994.<br><br>JOSÉ RAIMUNDO PEREIRA DE AZEVÊDO<br>Prefeito<br><br>PROFº. RAIMUNDO GONÇALVES GAMA<br>Secretário de Edecuação<br><br>Autor: Poder Executivo<br>Data da Publicação: 31/12/1994<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

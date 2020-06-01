@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>RESOLUÇÃO Nº 330/1996</h2><br>DISPÕE SOBRE A FIXAÇÃO DA REMUNERAÇÃO DOS VEREADORES DO MUNICÍPIO DE FEIRA DE SANTANA PARA A LEGISLATURA QUE SE INICIA EM 1º DE JANEIRO DE 1997.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>A CÂMARA MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, na conformidade do Art. 70, inciso VII, da Lei Municipal nº <a class="link_law" data-id="1739637" data-original-title=" Data da Norma: 05.04.1990 - DISPÕE SOBRE A LEI ORGÂNICA DO MUNICIPIO DE FEIRA DE SANTANA E DA OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-promulgada/1990/3/37/lei-promulgada-n-37-1990-dispoe-sobre-a-lei-organica-do-municipio-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">37</a> de 05 de abril de 1990, e Artigos 72, inciso III e 138 § 2º, do Regimento Interno, Promulga a seguinte Resolução:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> A remuneração mensal dos Vereadores da Câmara Municipal de Feira de Santana corresponderá, a no máximo, 75% (setenta e cinco por cento) da remuneração percebida a qualquer título pelos Deputados da Assembléia Legislativa do Estado da Bahia.<br><br>Parágrafo Único - O total da despesa com a remuneração dos vereadores, não poderá, sob hipótese alguma, ultrapassar o montante de 5% (cinco por cento) da Receita do Município, aí incluindo, também, a verba de representação do Presidente e as sessões extraordinárias porventura realizadas.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> A remuneração dos Vereadores dividir-se-á:<br><br>a) parte fixa, 50% (cinquenta por cento);<br>b) parte variável, 50 % (cinquenta por cento);<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> A parte variável será dividida em partes iguais das sessões ordinárias, determinadas através de Resolução no início da Legislatura.<br><br>§ 1º As parcelas serão pagas à medida em que o Vereador compareça a sessão ordinária tomando parte nas votações.<br><br>§ 2º Não elidirá o pagamento das parcelas que compõe a parte variável da remuneração a ausência de matéria a ser votada, a não realização de sessão por falta de quórum, para os que tenham a ela comparecido, e o recesso parlamentar.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Por sessão extraordinária, até o máximo de 04 (quatro) por mês, os vereadores receberão valor correspondente a uma das parcelas de que trata o Artigo 3º.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Para efeito do cumprimento do disposto na Emenda Constitucional nº 01/92 entende-se como Receita Municipal o conjunto de ingressos financeiros em fontes e fatos geradores próprios e permanentes, não se considerando como tal operações de crédito e outras das quais surjam obrigações com terceiros, a exemplo de convênios e alienações de bens.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Ao Presidente da Câmara será paga, mensalmente, desde que efetivamente em exercício, verba de representação equivalente a 50% (cinquenta por cento) da sua remuneração.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Esta Resolução entrará em vigor na data de sua publicação, produzindo os seus efeitos a partir de 1º de janeiro de 1997.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> Revogam-se as disposições em contrário.<br><br>MESA DIRETIVA DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, EM 13 DE NOVEMBRO DE 1996.<br><br>JOSÉ FLANTILDES RIBEIRO DE OLIVEIRA<br>Presidente<br><br>JOSÉ MARCONE PAULO DE SOUSA<br>1º Vice-Presidente<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

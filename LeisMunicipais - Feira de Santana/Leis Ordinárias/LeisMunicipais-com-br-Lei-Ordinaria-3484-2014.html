@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3484/2014</h2><br>AUTORIZA A CONCESSÃO E O SUBSÍDIO PÚBLICO PARA CONSTRUÇÃO, OPERAÇÃO E MANUTENÇÃO DO CENTRO DE COMÉRCIO POPULAR DE FEIRA DE SANTANA.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Autor: Poder Executivo<br><br>O Prefeito do Município de Feira de Santana, Estado da Bahia, no uso de suas atribuições, Faço saber que a Câmara Municipal através do Projeto de LEI Nº 79/2014, DE AUTORIA DO Poder Executivo, decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica o Poder Executivo Municipal, na forma do § 4º, art. 20 e no art. 69, XXII da <a class="link_law" data-original-title="Lei Orgânica Feira de Santana BA" data-toggle="tooltip" href="/lei-organica-feira-de-santana-ba" rel="tooltip">Lei Orgânica</a> do Município de Feira de Santana, autorizado a realizar a concessão do projeto aprovado, nos termos da Resolução nº 1/20144, do Conselho Gestor de Parcerias Público-Privadas, e, na forma do art. 17, da Lei Federal nº 8.987, de 13 de fevereiro de 1995, a conceder subsídios pecuniários no montante de R$ 13.000.000,00 (treze milhões de reais) à concessão da construção, operação e manutenção do Centro Comercial Popular, na forma que dispuseram o Edital, a proposta vendedora o contrato de concessão e a Lei Orçamentária Anual.<br><br>Parágrafo Único - O subsídio previsto no caput deste artigo será transferido ao concessionário de acordo com o cronograma previsto no contrato de concessão.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Esta Lei entra em vigor na data de sua publicação revogadas as disposições em contrário.<br><br>Gabinete do Prefeito, 13 de novembro de 2014.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito Municipal<br><br>MÁRIO COSTA BORGES<br>Chefe de Gabinete do Prefeito<br><br>CLEUDSON SANTOS ALMEIDA<br>Procurador Geral do Município<br><br>JOÃO MARINHO GOMES JÚNIOR<br>Secretário Municipal de Administração<br><br>EXPEDITO CAMPODÔNIO ELOY<br>Secretário Municipal da Fazenda<br><br>CARLOS ALBERTO OLIVEIRA BRITO<br>Secretário Municipal de Planejamento<br><br>ANTÔNIO CARLOS BORGES DOS SANTOS JÚNIOR<br>Secretário Municipal de Trabalho, Turismo e Desenvolvimento Econômico<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

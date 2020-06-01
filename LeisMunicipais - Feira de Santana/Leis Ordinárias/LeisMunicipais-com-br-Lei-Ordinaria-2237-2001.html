@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 2237/2001</h2><br>CRIA A SEMANA DE DEFESA DA CULTURA REGIONAL NAS ESCOLAS MUNICIPAIS DE FEIRA DE SANTANA, COMO PARTE DO CONTEÚDO PROGRAMÁTICO DO ENSINO FUNDAMENTAL DE 1ª A 8ª SÉRIE.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Autor: José Cerqueira de Santana Neto<br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 38/2001, de autoria do Edil José Cerqueira de Santana Neto, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica o Poder Executivo, através da Secretaria Municipal de Educação autorizado a criar, no segundo semestre do ano letivo, a Semana de Defesa da Cultura Regional nas Escolas Municipais de Feira de Santana, com o objetivo de compor o conteúdo programático do ensino fundamental de 1ª a 8ª série.<br><br>Parágrafo Único - A data específica da Semana de Cultura deverá ser determinada pela Secretaria Municipal de Educação, em conformidade com os Diretores das Escolas.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> A Semana de Cultura nas Escolas Municipais de Feira de Santana, obedecerá aos parâmetros curriculares nacionais (PCNs), segundo os critérios da Lei de Diretrizes e Bases.<br><br>Parágrafo Único - A Semana de Defesa da Cultura Regional nas Escolas Municipais de Feira de Santana deverá ser avaliada, levando em consideração a relação dos temas transversais referidos nos parâmetros curriculares nacionais, com enfoque direto dos temas regionais, manutenção e resgate, visando inclusive um melhor conhecimento das culturas econômicas da região e suas variedades e especificidades.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> A Secretaria Municipal de Educação, criará uma equipe interdisciplinar (composta paritariamente por membros do poder público e da sociedade civil organizada) que ficará responsável pelas diretrizes de organização e funcionamento da Semana de Defesa da Cultura Regional nas Escolas Municipais de Feira de Santana, obedecendo aos seguintes critérios:<br><br>I - cada escola deverá escolher a sede e a temática para realização da Semana de Defesa da Cultura Regional, com antecedência de 30 (trinta) dias e informar a Secretaria de Educação que aprovará no máximo em cinco dias a partir da data do recebimento do ofício.<br><br>II - todas as escolas municipais de Feira de Santana deverão realizar a Semana de Defesa da Cultura Regional, ficando obrigada a integração de professores, direção e alunos na sua totalidade compatibilizando a carga horária semanal de cada segmento com a realização do evento.<br><br>III - a Semana de Defesa da Cultura Regional será realizada no curso dos meses de agosto a outubro de cada ano, em cinco dias úteis da semana, com apresentações de música, dança teatro, poesia, pintura, e demais representações culturais, atinentes aos temas regionais do sertão e mais atenciosamente aos temas da cultura feirense.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>PREFEITURA MUNICIPAL DE FEIRA DE SANTANA, EM 08 DE MAIO DE 2001.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>DECRETO Nº 9017, de 04 de setembro de 2013</h2><br>ABRE CRÉDITO SUPLEMENTAR AO ORÇAMENTO DO MUNICÍPIO E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, no uso de suas atribuições legais e com base na autorização contida na Lei Nº  <a class="link_law" data-id="1579379" data-original-title=" Data da Norma: 11.12.2012 - ESTIMA A RECEITA E FIXA A DESPESA DO MUNICÍPIO DE FEIRA DE SANTANA PARA O EXERCÍCIO FINANCEIRO DE 2013. (R$ 751.967.206,00)" data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2012/335/3350/lei-ordinaria-n-3350-2012-estima-a-receita-e-fixa-a-despesa-do-municipio-de-feira-de-santana-para-o-exercicio-financeiro-de-2013-r-751967-206-00" rel="tooltip">3.350</a>, de 11 de dezembro de 2012, artigo 6º, § 1º, DECRETA:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica aberto Crédito Suplementar ao Orçamento do Município no valor de R$ 1.315.000,00 (Um milhão, trezentos e quinze mil reais), conforme detalhamento abaixo:<pre> ____________________________________________________<br>| CLASS.|  PROGRAMÁTICA |ECONÔMICA|FONTE| VALOR (R$ )|<br>| INST. |               |         |     |            |<br>|=======|===============|=========|=====|============|<br>|12.1212|08.244.039.2077|3.3.90.39| 0000|   50.000,00|<br>|-------|---------------|---------|-----|------------|<br>|12.1212|08.122.001.2078|4.4.90.52| 0000|   70.000,00|<br>|-------|---------------|---------|-----|------------|<br>|12.1224|08.244.065.1079|3.3.90.39| 0000|   15.000,00|<br>|-------|---------------|---------|-----|------------|<br>|12.1224|08.244.065.1079|3.3.90.39| 0024|   30.000,00|<br>|-------|---------------|---------|-----|------------|<br>|12.1224|08.244.030.1083|3.3.90.39| 0000|   20.000,00|<br>|-------|---------------|---------|-----|------------|<br>|12.1224|08.243.005.2083|3.3.90.39| 0000|  140.000,00|<br>|-------|---------------|---------|-----|------------|<br>|12.1224|08.243.005.2084|3.3.90.39| 0000|   30.000,00|<br>|-------|---------------|---------|-----|------------|<br>|12.1224|08.244.018.2194|3.3.90.39| 0000|   35.000,00|<br>|-------|---------------|---------|-----|------------|<br>|12.1224|08.244.018.2194|3.3.90.39| 0029|   80.000,00|<br>|-------|---------------|---------|-----|------------|<br>|12.1224|08.244.018.2195|3.3.90.39| 0000|   15.000,00|<br>|-------|---------------|---------|-----|------------|<br>|12.1224|08.241.063.2197|3.3.90.39| 0000|   10.000,00|<br>|-------|---------------|---------|-----|------------|<br>|12.1224|08.241.063.2198|3.3.50.43| 0000|    5.000,00|<br>|-------|---------------|---------|-----|------------|<br>|12.1224|08.241.063.2198|3.3.50.43| 0029|   60.000,00|<br>|-------|---------------|---------|-----|------------|<br>|12.1224|08.244.045.2210|3.3.90.39| 0000|   60.000,00|<br>|-------|---------------|---------|-----|------------|<br>|12.1224|08.244.066.2211|3.3.90.39| 0029|   80.000,00|<br>|-------|---------------|---------|-----|------------|<br>|12.1224|08.244.067.2212|3.3.50.43| 0029|  600.000,00|<br>|-------|---------------|---------|-----|------------|<br>|12.1227|08.243.064.2214|3.3.90.39| 0000|   15.000,00|<br>|-------|---------------|---------|-----|------------|<br>|       |               |         |TOTAL|1.315.000,00|<br>|_______|_______________|_________|_____|____________| * tabela formatada pela equipe técnica do LeisMunicipais.com.br<br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Os recursos disponíveis para acorrer às despesas decorrentes do presente crédito suplementar correrão à conta de anulações nas dotações abaixo detalhadas:<pre> ____________________________________________________<br>| CLASS.|  PROGRAMÁTICA |ECONÔMICA|FONTE| VALOR (R$ )|<br>| INST. |               |         |     |            |<br>|=======|===============|=========|=====|============|<br>|12.1212|08.122.001.2078|3.3.90.36| 0000|  135.000,00|<br>|-------|---------------|---------|-----|------------|<br>|12.1224|08.244.067.2093|3.3.50.43| 0000|  330.000,00|<br>|-------|---------------|---------|-----|------------|<br>|12.1224|08.244.018.2192|4.4.90.51| 0024|   30.000,00|<br>|-------|---------------|---------|-----|------------|<br>|12.1224|08.244.030.2234|3.3.90.30| 0029|  450.000,00|<br>|-------|---------------|---------|-----|------------|<br>|12.1224|08.244.030.2234|3.3.90.39| 0029|  230.000,00|<br>|-------|---------------|---------|-----|------------|<br>|12.1224|08.244.005.2239|3.3.50.43| 0029|  140.000,00|<br>|-------|---------------|---------|-----|------------|<br>|       |               |         |TOTAL|1.315.000,00|<br>|_______|_______________|_________|_____|____________| * tabela formatada pela equipe técnica do LeisMunicipais.com.br<br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Fica a Contabilidade Municipal autorizada a efetuar os registros contábeis necessários ao cumprimento deste Decreto.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Este Decreto entra em vigor na data da sua publicação.<br><br>Gabinete do Prefeito Municipal, 04 de setembro de 2013.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito Municipal<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

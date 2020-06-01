@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3136/2010</h2><br>GARANTE AOS PORTADORES DE DEFICIÊNCIAS FÍSICAS, BEM COMO AS PESSOAS COM MOBILIDADE REDUZIDA, DIREITO A QUARTOS COM ESTRUTURA ADAPTADA EM HOTÉIS, MOTÉIS E SIMILARES DE FEIRA DE SANTANA.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Autor: Ailton Araújo Rios<br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 28/2010, de autoria do Edil Ailton Araújo Rios, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica determinado que os hotéis, motéis e similares situados na Cidade de Feira de Santana, que tenham capacidade igual ou superior a 20 cômodos, a fornecer vagas específicas, a deficientes físicos e portadores de mobilidade reduzida, devendo adequar sua estrutura física para receber esses consumidores, na forma deste.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Os hotéis, motéis e similares deverão oferecer condições estruturais e equipamentos que garantam o acesso destes consumidores, devendo proceder:<br><br>a) construção de rampas de acesso;<br>b) alargamento de portas e passagens;<br>c) adaptação de sanitários;<br>d) sinalização visual, tátil e sonora;<br>e) eliminação de obstáculos e de barreiras de comunicação.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Submetem-se a esta Lei, os hotéis, motéis e similares que tiverem capacidade igual ou superior a 20 cômodos, os quais deverão separar 10% (dez por cento) das suas acomodações para esses consumidores.<br><br>I - em caso da construção ser em forma de prédio de andar, será preferencialmente, reservado o térreo e o primeiro andar para os destinatários desta Lei;<br><br>II - os hotéis, motéis e similares que ofereçam acomodações diferenciadas, como suítes e quarto simples, deverão oferecer percentagem, exigida por este, dividindo igualmente as acomodações.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Os estabelecimentos da rede hoteleira, de motéis e similares terão o prazo de 12 (doze) meses para se adequar as mudanças exigidas nesta Lei, ficando submetidas à fiscalização do Poder Municipal, que poderá impor sanções em caso de descumprimento.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Fica a Secretaria Municipal de Desenvolvimento Urbano incumbida de fiscalizar as obras de adaptação de rede hoteleira, devendo autuar os estabelecimentos que descumprirem as disposições desta Lei, remetendo o auto de autuação a Secretaria Municipal de Desenvolvimento Social.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> A Secretaria de Desenvolvimento Social desenvolverá o serviço de ouvidoria, recebimento dos autos de autuação enviados pela Secretaria de Desenvolvimento Urbano aplicado, conforme a gravidade de caso, as seguintes penalidades:<br><br>I - no caso de cumprimento parcial dos preceitos impõe-se o pagamento de multa, de no mínimo R$ 1.000,00 (hum mil reais) e máxima de até R$ 8.000 (oito mil reais), por ocorrência;<br><br>II - no caso de descumprimento de todos os preceitos será imposta a cassação dos alvarás das empresas.<br><br>Parágrafo Único - As organizações de pessoas portadoras de deficiência terão legitimidade para acompanhar o cumprimento da Lei, devendo informar ao órgão competente o descumprimento.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Esta Lei entrará em vigor após a data da sua publicação, revogadas as disposições em contrário.<br><br>PREFEITURA MUNICIPAL DE FEIRA DE SANTANA, em 29 de Junho de 2010.<br><br>DR. TARCÍZIO SUZART PIMENTA JÚNIOR<br>Prefeito Municipal<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

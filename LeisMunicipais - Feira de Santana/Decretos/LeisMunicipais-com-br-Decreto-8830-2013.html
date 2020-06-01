@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>DECRETO Nº 8830, de 01 de janeiro de 2013.</h2><br>CRIA COMISSÃO ADMINISTRATIVA PARA SINDICAR DE PROCEDIMENTOS ADMINISTRATIVOS RELATIVOS À CELEBRAÇÃO DE CONVÊNIOS E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O Prefeito Municipal de Feira de Santana, Estado da Bahia, no uso de suas atribuições,<br><br>CONSIDERANDO a necessidade da Administração Municipal de conhecer detalhadamente o cenário administrativo do Município, notadamente face ao início de uma nova gestão,<br><br>CONSIDERANDO que foi verificado a existência de diversos convênios celebrados com a Municipalidade nos quais o órgão convenente anuncia a falta de regularidade na prestação de contas,<br><br>CONSIDERANDO também que em tal cenário o Município sofre o risco de inserir-se no cadastro de inadimplência da União perdendo o acesso a recursos que se apresentam vitais para seu desenvolvimento, DECRETA:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica criada uma Comissão Administrativa, para analisar a regularidade e legalidade dos diversos procedimentos administrativos necessários à prestação de contas dos diversos convênios firmados entre a Administração Pública do Município de Feira de Santana, e outras esferas da Administração, buscando realçar a atenção ao cumprimento dos princípios da moralidade, economicidade e razoabilidade de tais atos, com a seguinte composição:<br><br>I - João Marinho Gomes Júnior, Secretário Municipal de Administração, que a presidirá;<br><br>II - Paulo Roberto Costa Nunes, Secretário Municipal Interino da Fazenda;<br><br>III - Carlos Alberto Oliveira Brito, Secretário Municipal de Planejamento;<br><br>IV - Ildes Ferreira de Oliveira, Secretário Municipal de Desenvolvimento Social;<br><br>V - Arcênio José Oliveira, Secretário Municipal Extraordinário de Convênios e Gestão.<br><br>Parágrafo Único - A Comissão designada neste artigo pesquisará quais os convênios que têm suas prestações de contas reputadas como não regulares, e sobre eles exercerá suas atribuições, devendo ao fim de cada análise submeter ao Chefe do Executivo suas observações para adoção das medidas que se fizerem cabíveis, inclusive a promoção de Inquéritos Administrativos e Ações Judiciais, objetivando manter as condições de adimplência do Município.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Este Decreto entrará em vigor na data da sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 01 de janeiro de 2013.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito Municipal<br><br>CARLOS ANTÔNIO DE MORAES LUCENA<br>Procurador Geral do Município<br><br>PAULO SÉRGIO AQUINO DE AZEVEDO SOUZA<br>Secretário Municipal de Governo<br>Respondendo pelo Cargo de Chefe de Gabinete do Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

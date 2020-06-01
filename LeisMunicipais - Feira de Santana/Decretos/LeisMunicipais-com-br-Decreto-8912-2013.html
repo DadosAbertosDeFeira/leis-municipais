@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>DECRETO Nº 8912, de 13 de maio de 2013.</h2><br>ACRESCENTA DISPOSITIVO AO DECRETO Nº  <a class="link_law" data-id="1712936" data-original-title=" Data da Norma: 14.03.2013 - NOMEIA MEMBROS PARA INTEGRAR O CONSELHO MUNICIPAL DAS PESSOAS PORTADORAS DE DEFICIÊNCIA." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/decreto/2013/886/8866/decreto-n-8866-2013-nomeia-membros-para-integrar-o-conselho-municipal-das-pessoas-portadoras-de-deficiencia" rel="tooltip">8866</a>, DE 14 DE MARÇO DE 2013, QUE NOMEIA MEMBROS PARA INTEGRAR O CONSELHO MUNICIPAL DAS PESSOAS PORTADORAS DE DEFICIÊNCIA.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O Prefeito Municipal de Feira de Santana, Estado da Bahia, no uso de suas atribuições, Considerando que à época da publicação da composição do Conselho Municipal das Pessoas Portadoras de Deficiência a Câmara Municipal não havia designado os membros de sua representação e posteriormente o fez, DECRETA:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Acresça-se o inciso V, ao art. 1º, do Decreto Municipal nº  <a class="link_law" data-id="1712936" data-original-title=" Data da Norma: 14.03.2013 - NOMEIA MEMBROS PARA INTEGRAR O CONSELHO MUNICIPAL DAS PESSOAS PORTADORAS DE DEFICIÊNCIA." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/decreto/2013/886/8866/decreto-n-8866-2013-nomeia-membros-para-integrar-o-conselho-municipal-das-pessoas-portadoras-de-deficiencia" rel="tooltip">8.866</a>, de 14 de março de 2013, com a seguinte redação:<br><br>&quot;V - CÂMARA DE VEREADORES:<br><br>a) Titular: Iramar Nascimento Vieira;<br>b) Suplente: Denivaldo Reis de Andrade.&quot;<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Este Decreto entrará em vigor na data da sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 13 de maio de 2013.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito Municipal<br><br>MÁRIO COSTA BORGES<br>Chefe de Gabinete do Prefeito<br><br>ILDES FERREIRA DE OLIVEIRA<br>Secretário Municipal de Desenvolvimento Social<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

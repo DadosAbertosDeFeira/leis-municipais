@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI PROMULGADA Nº 316/2014</h2><br>DISPÕE SOBRE O FECHAMENTO AO TRÁFEGO DE VEÍCULOS ESTRANHOS AOS MORADORES DE VILAS, RUAS SEM SAÍDAS E RUAS E TRAVESSAS COM CARACTERÍSTICAS DE RUA SEM SAÍDA NO ÂMBITO DO MUNICÍPIO DE FEIRA DE SANTANA.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>PREFEITO: José Ronaldo de Carvalho<br>Presidente: Justiniano Oliveira França<br>Assunto: Transporte<br>Autor: Justiniano Oliveira França<br><br>O VICE-PRESIDENTE DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 2/2014, de autoria do Edil Justiniano Oliveira França, e na conformidade do artigo 78, § 7, da Lei nº  <a class="link_law" data-id="1739637" data-original-title=" Data da Norma: 05.04.1990 - DISPÕE SOBRE A LEI ORGÂNICA DO MUNICIPIO DE FEIRA DE SANTANA E DA OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-promulgada/1990/3/37/lei-promulgada-n-37-1990-dispoe-sobre-a-lei-organica-do-municipio-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">37</a>, de 05 de Abril de 1990, e artigo 25 e inciso V, do Regimento Interno, PROMULGA a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica autorizado o fechamento ao tráfego de veículos estranhos aos moradores de vilas, ruas sem saída e ruas e travessas com características de &quot;ruas sem saída&quot; de pequena circulação de veículos em áreas residenciais, ficando limitado o tráfego local de veículos apenas a seus moradores e visitantes.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Para os fins desta lei, considera-se:<br><br>I - vila: conjunto de lotes destinados exclusivamente à habitação, cujo acesso se dá por meio de uma única via de circulação de veículos, a qual deve articular-se em único ponto com uma única via oficial de circulação existente;<br><br>II - rua sem saída: rua oficial que se articula, em uma de sua extremidades, com via oficial e cujo traçado original não tem continuidade com a malha viária na sua outra extremidade;<br><br>III - ruas e travessas com características de &quot;ruas sem saída&quot;: ruas e travessas oficiais que são vias locais com importância exclusiva para o trânsito de veículos de acesso ás moradias nelas inseridas.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> As vilas e ruas sem saída, bem como as ruas e travessas com características de &quot;ruas sem saída&quot;, que são passíveis de fechamento, deverão necessariamente:<br><br>I - ter apenas usos residenciais;<br><br>II - não apresentar mais de 10,00 (dez) metros de largura de leito transitável;<br><br>III - servir de passagem exclusivamente para as casas nelas existentes, vedado o fechamento quando servir de passagem única a outros locais, especialmente a áreas verdes de uso público, a áreas institucionais ou a equipamentos públicos.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> O fechamento poderá ser realizado por intermédio de portão, cancela, correntes ou similares, no espaço correspondente ao leito transitável, devendo ficar aberto, sem qualquer obstáculo, o espaço destinado às calçadas, permitindo-se o livre acesso de pedestres.<br><br>§ 1º Quando não for possível identificar o espaço destinado ás calçadas, deverá ser deixado aberto espaço com largura mínima de 1,00 (um) metro para o livre acesso de pedestres.<br><br>§ 2º Não serão permitidos fechos que impeçam o eventual acesso de caminhões.<br><br>§ 3º O fechamento deverá respeitar a linha que define o prolongamento do alinhamento da via pública com a qual o acesso à vila, rua sem saída, e ruas e travessas com características de &quot;ruas sem saída&quot; se articular.<br><br>§ 4º A abertura dos portões deverá se dar para o interior da vila, rua sem saída e ruas e travessas com características de &quot;ruas sem saída&quot;.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Fica obrigatório o pedido de autorização para o fechamento de vilas, ruas sem saída e ruas e travessas com características de &quot;ruas sem saída&quot;, devendo ser protocolada na Prefeitura a solicitação por escrito e instruída com os seguintes documentos:<br><br>I - declaração expressa de anuência ao fechamento subscrita por, no mínimo, 70% (setenta por cento) dos proprietários dos imóveis situados na vila, rua sem saída e ruas e travessas com características de &quot;ruas sem saída&quot;, sendo que o teor será de total responsabilidade dos signatários, sob as penas da legislação administrativa, civil e criminal pertinentes;<br><br>II - cópia dos títulos de propriedade e da certidão de dados cadastrais do imóvel - IPTU relativos aos imóveis pertencentes aos solicitantes;<br><br>III - croqui esquemático ou relatório descritivo da via e imóveis abrangidos pelo pedido, bem como do tipo de fecho a ser utilizado.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> A solicitação será analisada pela Secretaria municipal de Desenvolvimento Urbano que emitirá o parecer sobre a situação dominial dos imóveis situados na vila, rua sem saída e ruas e travessas com características de &quot;ruas sem saída&quot;, cujo fechamento seja postulado.<br><br>§ 1º O fechamento ao tráfego de veículos estranhos aos moradores não poderá ser realizado se a análise mencionada no &quot;caput&quot; deste artigo concluir pela existência de reflexo negativo no tráfego de veículos.<br><br>§ 2º Caso haja necessidade, o Poder Executivo indicará as obras viárias e de sinalização necessárias para a implementação do fechamento.<br><br>§ 3º Na hipótese prevista no § 2º deste artigo, o fechamento somente poderá ser implementado após realização das obras viárias e de sinalização necessárias, devidamente atestada pela Secretaria Municipal de Transporte e transito.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Observado o disposto no art. 6º, o fechamento será implementado pelos moradores do local, às suas expensas e na conformidade das demais disposições desta lei.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> Verificado, pela Secretaria competente, o descumprimento das condições estabelecidas nesta lei, será expedida intimação aos moradores do local para saneamento da irregularidade, no prazo de 30 (trinta) dias, sob pena de retirada do dispositivo de fechamento, com adoção das medidas administrativas e judiciais cabíveis.<br><br>Parágrafo Único - No caso de alteração do uso dos imóveis situados na vila, rua sem saída e ruas e travessas com característica de &quot;ruas sem saída&quot;, a solicitação perderá automaticamente seus efeitos, intimando-se os moradores a remover o fecho, no prazo de 5 (cinco) dias, sob pena de adoção das medidas previstas no &quot;caput&quot; deste artigo.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> O lixo proveniente das casas situadas na vila, rua sem saída e ruas e travessas com características de &quot;ruas sem saída&quot;, objeto do fechamento de que trata esta lei, deverá ser, obrigatoriamente, depositado em recipientes próprios, colocados na via oficial com a qual se articulam.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10</span></a> As despesas decorrentes da execução desta lei correrão por conta das dotações orçamentárias próprias, suplementadas se necessário.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>CÂMARA MUNICIPAL DE FEIRA DE SANTANA, em 05 de Agosto de 2014<br><br>Ver. REINALDO MIRANDA VIEIRA FILHO<br>1º Vice-Presidente<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

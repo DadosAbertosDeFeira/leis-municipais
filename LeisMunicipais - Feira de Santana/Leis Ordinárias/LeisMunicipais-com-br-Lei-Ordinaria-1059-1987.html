@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 1059, de 05 de outubro de 1987</h2><br>CRIA O CONSELHO MUNICIPAL DE DEFESA DO MEIO AMBIENTE - CONDEMA, NA FORMA QUE INDICA.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, FAÇO saber que a Câmara Municipal decreta e eu sanciono a seguinte Lei:<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> I<br>DA INSTALAÇÃO DO CONDEMA E SUA COMPOSIÇÃO<br></span></span><br><br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica criado o CONSELHO MUNICIPAL DE DEFESA DO MEIO AMBIENTE - CONDEMA de Feira de Santana, órgão de assessoramento da Prefeitura Municipal, na área de proteção, conservação e melhoria do meio ambiente, vinculado ao Chefe do Poder Executivo.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O CONDEMA será composto de 17 membros, nomeados por ato do Prefeito Municipal, sendo dois de sua livre escolha, e os demais indicados por entidades representativas dos diversos segmentos da sociedade, assim constituído:<br><br>I - dois representantes pela Prefeitura Municipal:<br><br>a) Secretaria de Desenvolvimento Comunitário;<br>b) Escritório de Planejamento Integrado;<br><br>II - um representante da Câmara Municipal;<br><br>III - um representante da Universidade Estadual de Feira de Santana - UEFS;<br><br>IV - um representante do Centro de Desenvolvimento Industrial e Comercial - CEDIC;<br><br>V - um representante do Centro Industrial do Subaé - CIS;<br><br>VI - um representante da Associação Comercial de Feira de Santana;<br><br>VII - um representante do Sindicato dos Metalúrgicos;<br><br>VIII - um representante de uma Associação de Bairro;<br><br>IX - um representante da Associação Bahiana de Medicina - Secção de Feira de Santana;<br><br>X - um representante da Sub-Secção da Ordem dos Advogados do Brasil - OAB em Feira de Santana;<br><br>XI - um representante do Centro das Indústrias de Feira de Santana - CIFS;<br><br>XII - um representante do Diretório Central dos Estudantes da Universidade Estadual de Feira de Santana - UEFS;<br><br>XIII - um representante da Associação dos Arquitetos;<br><br>XIV - um representante do Sindicato dos Jornalistas Profissionais no Estado da Bahia - SINJORBA;<br><br>XV - um representante da Associação dos Engenheiros Agrônomos da Bahia - Delegacia de Feira de Santana;<br><br>XVI - um representante do Instituto Biológico da Bahia - Coordenadoria Regional de Feira de Santana.<br><br>§ 1º Cada membro do CONDEMA, nomeado por ato do Prefeito, terá um Suplente que o substituirá nos seus impedimentos os quais serão também nomeados pelo Prefeito Municipal, por indicação das entidades que representam;<br><br>§ 2º O período do mandato dos membros do CONDEMA coincidirá com o do Prefeito Municipal, sendo permitida a sua recondução;<br><br>§ 3º As funções desempenhadas pelos membros do CONDEMA serão consideradas de relevantes serviços prestados à comunidade, exercidas gratuitamente.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> A direção do CONDEMA estará a cargo de um presidente, um vice-presidente, e um secretário, os quais deverão ser eleitos na primeira reunião do Conselho, por maioria simples de votos dos membros que o integram.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> O CONDEMA, reunir-se-á, ordinariamente, mensalmente, ou em caráter extraordinário, quando convocado pelo seu presidente.<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> II<br>DA COMPETÊNCIA<br></span></span><br><br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Ao CONDEMA compete:<br><br>I - elaborar normas e padrões de qualidade ambiental, no que couber, respeitadas as legislações federal e estadual pertinentes;<br><br>II - sugerir à autoridade competente a instituição de áreas de proteção ambiental, visando proteger sítios de excepcional beleza, asilar exemplares da fauna e flora ameaçados de extinção, proteger mananciais, proteger patrimônio histórico, artístico, cultural, arqueológico e áreas representativas de ecosistemas destinados à realização de pesquisas básicas e aplicadas de ecologia;<br><br>III - opinar sobre uso do solo municipal e seu zoneamento;<br><br>IV - orientar a ação de educação ambiental no município, promovendo seminários, palestras, debates, estudos e eventos outros;<br><br>V - fornecer subsídios técnicos relacionados à proteção do ambiente, às indústrias, empresas comerciais, e aos produtores rurais do município;<br><br>VI - manter intercâmbio com órgãos federais, estaduais e entidades privadas que, direta e indiretamente, exerçam atribuições de proteção ambiental;<br><br>VII - elaborar o programa anual de atividades do CONDEMA;<br><br>VIII - elaborar relatório anual das atividades desenvolvidas pelo CONDEMA, encaminhando-o ao Prefeito Municipal;<br><br>IX - propor legislação municipal do meio ambiente e suas atribuições;<br><br>X - opinar sobre implantação do município de projetos de atividades econômicas potencialmente poluidoras, sujeitos a licenciamento, conforme dispõe a legislação estadual de meio ambiente;<br><br>XI - diligenciar, em face de qualquer alteração significativa do meio ambiente, no sentido de sua apuração, encaminhando parecer, aos órgãos competentes.<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> III<br>DAS DISPOSIÇÕES GERAIS<br></span></span><br><br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> O Executivo Municipal, poderá firmar termos de cooperação técnica com órgãos federais e estaduais, objetivando assistência técnica ao CONDEMA.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> O suporte administrativo insdispensável para a instalação e o funcionamento do CONDEMA será dado pelo Prefeito Municipal.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> Dentro do prazo de 60 (sessenta) dias de sua instalação, o CONDEMA elaborará e submeterá à aprovação do Executivo Municipal, seu regimento interno.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Prefeitura Municipal de Feira de Santana, em 05 de outubro de 1987.<br><br>DR. JOSÉ FALCÃO DA SILVA<br>Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

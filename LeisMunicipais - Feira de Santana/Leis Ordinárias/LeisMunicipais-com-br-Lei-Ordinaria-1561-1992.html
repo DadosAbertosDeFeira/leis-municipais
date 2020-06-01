@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 1561, de 22 de maio de 1992</h2><br>MAJORA OS VENCIMENTOS, PROVENTOS E RENDA MENSAL DOS SERVIDORES ATIVOS INATIVOS, DA`S, FG`S, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, FAÇO saber que a Câmara Municipal decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Ficam majorados sobre os vencimentos pagos no mês de abril, os níveis de classificação dos grupos das categorias funcionais dos servidores do Município constantes das tabelas I, II, III, IV, V, VI, VII, VIII, IX, X, XI e XII.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O magistério recebe conforme o estabelecido na Lei nº  <a class="link_law" data-id="1612683" data-original-title=" Data da Norma: 19.12.1991 - ESTRUTURA O PLANO DE CARREIRA PARA MAGISTÉRIO E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1991/151/1519/lei-ordinaria-n-1519-1991-estrutura-o-plano-de-carreira-para-magisterio-e-da-outras-providencias" rel="tooltip">1.519</a>, de 19.12.91 - tabela XIII - anexa e os servidores da Secretaria de Saúde, terão seus vencimentos equiparados aos pagos pelo Estado da Bahia, conforme tabelas 4 e 5.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Os proventos do pessoal inativo serão majorados nas mesmas bases e condições estabelecidas nesta Lei para os correspondentes cargos dos servidores em atividades.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Os reajustes determinados por esta Lei serão devidos a partir de 1º de maio do corrente ano, correndo as despesas deles decorrentes por conta da dotação orçamentária em vigor, ficando o Poder Executivo autorizado a abrir crédito suplementar, no mesmo valor do aumento para execução, na forma da Lei Federal nº 4.320, de 17 de março de 1964.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Prefeitura Municipal de Feira de Santana, em 22 de maio de 1992.<br><br>DR. COLBERT MARTINS DA SILVA<br>Prefeito<br><br><i class="icon-warning-sign"></i> Os anexos encontram-se disponíveis, ainda, no Paço Municipal<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

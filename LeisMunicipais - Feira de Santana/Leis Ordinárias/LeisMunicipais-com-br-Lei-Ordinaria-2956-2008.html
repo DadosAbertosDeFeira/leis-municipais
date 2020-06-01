@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 2956/2008</h2><br>DISPÕE SOBRE O CONSELHO MUNICIPAL DE CULTURA.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Autor: Antonio Maurício Santana de Carvalho<br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 78/2008, de autoria do Edil Antônio Maurício Santana de Carvalho, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> O Conselho Municipal de Cultura é consultivo, sendo o órgão colegiado de planejamento, orientação, fiscalização e coordenação das atividades artístico-culturais do Município, possuindo também o caráter deliberativo no âmbito da sua atuação.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Compete ao Conselho Municipal de Cultura:<br><br>I - estudar e propor à Administração Municipal a política cultural do Município, bem como o Plano Anual e a sua execução, e auxiliar na definição e elaboração do calendário de eventos artístico-culturais do Município;<br><br>II - colaborar com os órgãos colegiados das esferas municipal, estadual e federal, na formulação, execução e fiscalização das políticas de cultura do Município, Estado e do País.<br><br>III - apoiar e promover campanhas que visem o desenvolvimento artístico-cultural do Município;<br><br>IV - cooperar na defesa e na conservação do patrimônio cultural do Município;<br><br>V - opinar sobre os projetos apresentados pelas instituições artístico-culturais, para efeitos de celebração de convênio com o Município;<br><br>VI - emitir parecer ou tomar providências acerca de assuntos de natureza artístico-cultural que lhe sejam submetidos pela Administração Municipal, por seus Conselheiros ou por entidade artístico-cultural do Município;<br><br>VII - opinar sobre articulações necessárias, com órgãos federais, estaduais ou municipais, universidades, escolas e demais instituições, para assegurar a coordenação e execução de programas inerentes aos segmentos culturais;<br><br>VIII - instituir ou reformar o seu Regimento Interno;<br><br>IX - exercer as demais atividades de interesse das artes e da cultura;<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> O Conselho Municipal de Cultura será presidido pelo Secretário Municipal de Cultura, Esporte e Lazer e composto de membros e seus respectivos suplentes, dentre nomes apresentados em lista única ao Prefeito Municipal.<br><br>§ 1º Os conselheiros serão nomeados pelo Prefeito Municipal, dentro os escolhidos em Assembléia dos diversos segmentos das artes e da cultura.<br><br>§ 2º Os membros do Conselho e os respectivos suplentes exercerão mandato de 02 (dois) anos, admitindo-se a recondução por mais 01 (um) período.<br><br>§ 3º A função de membro do Conselho é considerada de interesse público relevante e não será remunerada.<br><br>§ 4º A Mesa Diretiva do Conselho Municipal de Cultura será presidida pelo Secretário Municipal de Cultura, Esporte e Lazer, e mais de um vice-presidente e um secretário, estes, eleitos pelos Membros do Conselho.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> O Conselho Municipal de Cultura terá a seguinte composição:<br><br>I - o titular da Secretaria Municipal de Cultura, Esporte e Lazer, que o presidirá;<br><br>II - o titular da Secretaria Municipal de Educação;<br><br>III - o titular da Fundação Cultural Municipal Egberto Tavares Costa;<br><br>IV - o titular da Diretoria de Atividades Culturais da Fundação Cultural Municipal Egberto Tavares Costa;<br><br>V - um representante do segmento áudio visual;<br><br>VI - um representante do segmento de artes plásticas;<br><br>VII - um representante do segmento de literatura;<br><br>VIII - um representande do segmento de música;<br><br>IX - um representante do segmento de cultura popular;<br><br>X - um representante do segmento de teatro;<br><br>XI - um representante do segmento da identidade e da diversidade cultural;<br><br>XII - o Presidente da Academia Feirense de Letras;<br><br>XIII - o titular da Procuradoria Geral do Município;<br><br>§ 1º O Presidente é a autoridade administrativa superior do Conselho, cabendo-lhe dirigir as reuniões plenárias e exercer a representação externa, cumprindo e fazendo cumprir a legislação e as resoluções expedidas pelo órgão.<br><br>§ 2º Nos casos de faltas e impedimentos, o Presidente será substituído pelo Vice-Presidente.<br><br>§ 3º O Conselho Municipal de Cultura manterá uma Secretaria Geral, destinada ao suporte administrativo necessário ao seu funcionamento, utilizando-se, dentro das disponibilidades, instalações e funcionários cedidos pelo Poder Público Municipal.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário, em especial as Leis <a class="link_law" data-id="1612602" data-original-title=" Data da Norma: 07.06.1991 - DISPÕE SOBRE O CONSELHO MUNICIPAL DE CULTURA." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1991/142/1420/lei-ordinaria-n-1420-1991-dispoe-sobre-o-conselho-municipal-de-cultura" rel="tooltip">1420</a>/91 e <a class="link_law" data-id="1618261" data-original-title=" Data da Norma: 04.10.1993 - ALTERA DISPOSITIVO DA LEI Nº 1420/91 QUE DISPÕE SOBRE O CONSELHO MUNICIPAL DE CULTURA, E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1993/170/1704/lei-ordinaria-n-1704-1993-altera-dispositivo-da-lei-n-1420-91-que-dispoe-sobre-o-conselho-municipal-de-cultura-e-da-outras-providencias" rel="tooltip">1704</a>/93<br><br>Gabinete do Prefeito, em 16 de dezembro de 2008.<br><br>JOSÉ RONALDO DE CRVALHO<br>PREFEITO<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

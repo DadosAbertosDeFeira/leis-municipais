@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI PROMULGADA Nº 335/2018</h2><br>Institui a Política Pública de Auxílio à Mulher Vítima de Violência no Município de Feira de Santana com o objetivo de promover capacitação, qualificação e demais medidas para auxiliar a mão de obra desta parcela da população do Município.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PRESIDENTE DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 161/2017, de autoria da Edil Gerusa Maria Bastos Silva Sampaio, e na conformidade do artigo 78, § 7º, da <a class="link_law" data-original-title="Lei Orgânica Feira de Santana BA" data-toggle="tooltip" href="/lei-organica-feira-de-santana-ba" rel="tooltip">Lei Orgânica</a> do Município, e artigo 25, e inciso V, do Regimento Interno, PROMULGA a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica instituída a Política Pública de Auxílio à Mulher Vítima de Violência, cujo objetivo é a qualificação da mão de obra desta parcela da população do Município de Feira de Santana.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> A Política Pública de Auxílio à Mulher Vítima de Violência atenderá, prioritariamente, a mulheres que tenham sido vítimas de violência doméstica, desempregadas, cujo sustento seja efetuado por parte do cônjuge ou agressor.<br><br>Parágrafo único. A situação de violência doméstica a que foi vítima deve ser comprovada mediante relatório de caráter oficial do Centro de Referência Maria Quitéria, boletim de ocorrência, atestados ou laudos emitidos por órgãos oficiais capazes de atestar tal situação.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> A Política Pública será desenvolvida, implementada e executada pela Secretaria de Desenvolvimento Social - SEDESO, podendo esta estabelecer convênios e parcerias com as demais secretarias e órgãos públicos municipais, estaduais ou federais.<br><br>Parágrafo único. Ficam a Secretaria de Desenvolvimento Social, a Casa do Trabalhador e o Centro de Referência Maria Quitéria autorizados a encaminhar as mulheres que se enquadrem nos requisitos para participar do programa a outros órgãos públicos que ofereçam cursos de capacitação e qualificação profissional no âmbito do Município.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Os executores da referida política ficam autorizados a celebrar convênios também com universidades ou instituições de ensino, empresas públicas ou privadas e organizações não-governamentais, visando a implementação da mesma.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Para a devida eficácia da Política Pública de Auxílio à Mulher Vítima de Violência, a entidade executora terá como atribuição as seguintes ações, dentre outras correlatas:<br><br>I - criação, manutenção e atualização de banco de dados contendo:<br><br>a) cadastro das mulheres interessadas em participar do projeto;<br>b) cadastro de empresas públicas ou privadas, órgãos e entidades públicas, que universidade ou instituições de ensino e organizações não-governamentais que tenham estabelecido parceria para a execução da Política Pública Pró-Mulher;<br>c) ofertas de empregos destinada às mulheres beneficiadas pela política.<br><br>II - promoção de qualificação da mão de obra feminina, encaminhando as mulheres cadastradas para:<br><br>a) cursos que promovam melhoria do nível educacional e cultural;<br>b) cursos profissionalizantes, observando-se os parâmetros e aptidão profissional da demanda:<br>c) empregos oferecidos, prioritariamente, pelos parceiros do projeto.<br><br>III - divulgação constante sobre ofertas de empregos e cursos de qualificação, por meio de parceria com a imprensa e com o Sistema Nacional de Emprego - SINE;<br><br>IV - geração de emprego, incentivo e fomento a formatação de cooperativas de trabalho.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> As empresas, estabelecimentos, órgãos ou entidades que absorverem a mão de obra proveniente do Programa Política Pública de Auxílio à Mulher Vítima de Violência passam a enquadrar os critérios descritos na Lei nº <a class="link_law" data-id="1620131" data-original-title=" Data da Norma: 15.07.1997 - DISPÕE SOBRE O PLANO DE INCENTIVOS FISCAIS DE FEIRA DE SANTANA, VISANDO ESTIMULAR A GERAÇÃO DE EMPREGO E RENDA, SUPRIR SETORES DEFICIENTES DA CADEIA PRODUTIVA E DE SERVIÇOS NO ÂMBITO MUNICIPAL." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1997/192/1923/lei-ordinaria-n-1923-1997-dispoe-sobre-o-plano-de-incentivos-fiscais-de-feira-de-santana-visando-estimular-a-geracao-de-emprego-e-renda-suprir-setores-deficientes-da-cadeia-produtiva-e-de-servicos-no-ambito-municipal" rel="tooltip">1923</a>/97, do Município, por constituírem-se relevantes para a geração de divisas, emprego e renda e passam a ser de real interesse do município.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> As demais citadas no &quot;caput&quot; do artigo anterior deverão solicitar formalmente a concessão dos incentivos e benefícios concedidos pelo Poder Executivo, garantidos pela Lei nº <a class="link_law" data-id="1620131" data-original-title=" Data da Norma: 15.07.1997 - DISPÕE SOBRE O PLANO DE INCENTIVOS FISCAIS DE FEIRA DE SANTANA, VISANDO ESTIMULAR A GERAÇÃO DE EMPREGO E RENDA, SUPRIR SETORES DEFICIENTES DA CADEIA PRODUTIVA E DE SERVIÇOS NO ÂMBITO MUNICIPAL." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1997/192/1923/lei-ordinaria-n-1923-1997-dispoe-sobre-o-plano-de-incentivos-fiscais-de-feira-de-santana-visando-estimular-a-geracao-de-emprego-e-renda-suprir-setores-deficientes-da-cadeia-produtiva-e-de-servicos-no-ambito-municipal" rel="tooltip">1923</a>/97. Uma vez comprovado a efetiva adesão ao Programa Política Pública de Auxílio à Mulher Vítima de Violência, sob a forma de contratação formal e regulamentada de mão de obra proveniente do mesmo, as mesmas passam a atender os critérios dispostos na citada Lei, devendo prosseguir os demais trâmites legais do processo.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> Mediante avaliação do impacto social gerado pelas empresas, estabelecimentos, órgãos ou entidades, fica possibilitada a premiação das mesmas com título que leve nome da Política Pública tratada nesta Lei em reconhecimento à importância social dos serviços prestados no Município.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>PRESIDÊNCIA DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, em 24 de Abril de 2018.<br><br>JOSÉ CARNEIRO ROCHA<br>Presidente<br><br>PUBLICADO NO DIÁRIO OFICIAL ELETRÔNICO DIA 25 DE ABRIL DE 2018.<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3526/2015</h2><br>ALTERA DISPOSITIVOS DA LEI MUNICIPAL Nº <a class="link_law" data-id="2042069" data-original-title=" Data da Norma: 10.12.2014 - ALTERA A LEI Nº 3366, DE 09 DE 09 ABRIL DE 2013, QUE DISPÕE SOBRE A POLÍTICA DE ATENDIMENTO AOS DIREITOS DA CRIANÇA E DO ADOLESCENTE NO MUNICÍPIO, E DÁ OUTRAS PROVIDÊNCIAS" data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2014/349/3499/lei-ordinaria-n-3499-2014-altera-a-lei-n-3366-de-09-de-09-abril-de-2013-que-dispoe-sobre-a-politica-de-atendimento-aos-direitos-da-crianca-e-do-adolescente-no-municipio-e-da-outras-providencias" rel="tooltip">3.499</a>/2014 E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Prefeito Municipal de Feira de Santana, Estado da Bahia, no uso de suas atribuições, Faço Saber que a Câmara Municipal, através do Projeto de LEI Nº 028/2015, de autoria do Poder Executivo, decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Suprima-se o inciso XI do Art. 24.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Dê-se ao Art. 31 a seguinte redação:<br><br>&quot;Art. 31 O processo seletivo para conselheiros titulares do município de Feira de Santana dar-se-á através dos seguintes procedimentos:<br><br>I - Edital do Conselho Municipal dos Direitos da Criança e do Adolescente (CMDCA) estabelecimentos dos procedimentos a serem adotados;<br><br>II - Prova de conhecimentos que será realizada através de prova escrita, com redação e questões objetivas;<br><br>a) A prova de conhecimento vale 100 (cem) pontos, sendo que a redação e as questões objetivas valem, cada. uma, 50% (ciquenta por cento);<br>b) Serão classificados os candidatos que obtiverem 70 (setenta) pontos, que, divididos por 10 (dez), correspondem a nota 7 (sete).&quot;<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Esta Lei entrará em vigor na data da sua publicação, ficando revogadas as disposições em contrário.<br><br>Gabinete do Prefeito, 9 de ABRIL de 2015.<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

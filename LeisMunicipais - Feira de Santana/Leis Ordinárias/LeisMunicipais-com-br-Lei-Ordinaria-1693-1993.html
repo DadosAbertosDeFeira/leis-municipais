@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 1693/93</h2><br>CRIA O INSTITUTO DE PREVIDÊNCIA DOS SERVIDORES MUNICIPAIS, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, FAÇO saber que a Câmara Municipal decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica criado o Instituto de Previdência dos Servidores Municipais e Agentes Políticos de Feira de Santana, Autarquia Municipal com sede em Feira de Santana e vinculado à Secretaria de Administração da Prefeitura Municipal de Feira de Santana.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O IPSEMFS é órgão de atendimento a servidores municipais de Feira de Santana, seu beneficiários e agentes políticos competindo-lhe:<br><br>I - coordenar, propor e executar uma política de previdência e assistência em favor de seus destinatários;<br><br>II - proporcionar aos contribuintes e aos seus dependentes, assim considerados pela Lei previdenciária, proteção e melhoria de suas condições de vida;<br><br>III - participar de atividades, planos, programas e projetos que obtiverem o aprimoramento do sistema;<br><br>IV - administrar e controlar os recursos patrimoniais e humanos alocados à previdência de servidores municipais, e agentes políticos de Feira de Santana;<br><br>V - promover a articulação entre os órgãos e entidades de previdência em vista à compensação financeira de encargos assumidos.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Para a consecução de sua finalidade, o IPSEMFS celebrará convênios, contratos e ajustes com pessoas jurídicas de direito público e instituições públicas e privadas mediante autorização específica do Poder Legislativo.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> O IPSEMFS tem a seguinte estrutura básica:<br><br>I - Conselho Deliberativo;<br><br>II - Diretoria;<br><br>III - Conselho Fiscal;<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Compete ao Conselho Deliberativo elaborar seu regimento interno, do qual constará a obrigatoriedade de reunir-se uma vez, ao menos, em cada bimestre, e extraordinariamente, quando convocado pelo seu Presidente ou por maioria dos seus membros.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> O Conselho Deliberativo compõe-se de:<br><br>I - 2 (dois) representantes do Poder Executivo;<br><br>II - 1 (um) representante do Poder Legislativo;<br><br>III - 1 (um) representante do Sindicato da Categoria;<br><br>IV - 1 (um) representante do Conselho Regional de Contabilidade;<br><br>§ 1º O representante que trata o inciso II será eleito pelo voto secreto entre os Vereadores.<br><br>§ 2º Os representantes de que tratam os incisos III e IV serão indicados em lista tríplice enviada ao Chefe do Executivo.<br><br>§ 3º Cada membro do Conselho terá um suplente exclusivo.<br><br>§ 4º Os membros serão nomeados pelo Chefe Executivo e terão mandato de 2 (dois) anos, permitida uma recondução.<br><br>§ 5º O Conselho Deliberativo do IPSEMFS será presidido pelo titular da Secretaria Municipal de Administração.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> A Diretoria compõe-se do Diretor-Presidente, que representa a autarquia judicial e extrajudicialmente e de 01 (um) diretor-técnico e 01 (um) diretor administrativo financeiro.<br><br>Parágrafo Único - Ficam criados, em comissão, 01 (um) cargo de Diretor-Presidente e 02 (dois) cargos de diretor correspondentes aos símbolos DA-1 e DA-2, respectivamente, da estrutura organizacional, os cargos de Diretor do Departamento da Previdência Municipal (DA-1) e chefe da Divisão de Apoio Administrativo e Financeiro (DA-2), da referida estrutura.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> Constituem receitas do IPSEMFS:<br><br>I - os recursos específicos do sistema de seguridade constantes das leis de diretrizes orçamentárias e dos planos plurianuais, inseridos nos orçamentos;<br><br>II - contribuições de segurados;<br><br>III - juros, cotas e taxas provenientes do investimento de reservas;<br><br>IV - valores oriundos de convênios;<br><br>V - valores de restituições, pagamento ou qualquer importância não recebida pelos interessados e já prescritos;<br><br>VI - preço público da prestação de serviços;<br><br>VII - doações, subvenções, legados e rendas extraordinárias não previstas nos ítens procedentes.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> Constituem o patrimônio do Instituto de Previdência dos Servidores Municipais e Agentes Políticos de Feira de Santana:<br><br>I - os bens, direitos e valores doados ou adquiridos pelo IPSEMFS;<br><br>II - o que vier a ser constituído na forma legal;<br><br>§ 1º Os bens e direitos do IPSEMFS serão utilizados, exclusivamente, no cumprimento de seus objetivos, permitida, a critério do Conselho Deliberativo a aplicação de uns e outros para obtenção de rendas destinadas ao atendimento de sua finalidade.<br><br>§ 2º As disponibilidades de caixa do IPSEMFS serão depositadas exclusivamente em instituições financeiras oficiais, admitida a permanência em estabelecimentos privados do produto de arrecadação ou pagamento de prestações a beneficiários, pelo tempo estritamente necessário a compensar eventuais custos bancários.<br><br>§ 3º O orçamento do IPSEMFS será aprovado pela Câmara Municipal.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10 -</span></a> O pessoal do IPSEMFS será submetido ao regime estatutário.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11 -</span></a> Em caso de extinção da autarquia, o patrimônio líquido reverterá ao Município de Feira de Santana.<br><br><a name="artigo_12"><span class="label label-pill label-danger">Art. 12 -</span></a> Fica o Poder Executivo autorizado a:<br><br>I - praticar os atos regulamentares e regimentais que decorrem, implícita ou explicitamente, das disposições desta Lei, inclusive os que se relacionem com pessoal, material e patrimônio;<br><br>II - efetuar, mediante decreto, as modificações orçamentárias decorrentes desta Lei:<br><br><a name="artigo_13"><span class="label label-pill label-danger">Art. 13 -</span></a> A Secretaria de Administração do Município de Feira de Santana dará o suporte necessário ao pleno funcionamento do IPSEMFS.<br><br><a name="artigo_14"><span class="label label-pill label-danger">Art. 14 -</span></a> Esta Lei entrará em vigor na data de sua publicação.<br><br><a name="artigo_15"><span class="label label-pill label-danger">Art. 15 -</span></a> Revogam-se as disposições em contrário.<br><br>Prefeitura Municipal de Feira de Santana, em 20 de setembro de 1993.<br><br>DR. JOÃO DURVAL CARNEIRO<br>Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

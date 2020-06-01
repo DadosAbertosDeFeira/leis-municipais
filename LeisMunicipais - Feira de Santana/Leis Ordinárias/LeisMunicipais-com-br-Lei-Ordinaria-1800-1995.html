@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 1800/95</h2><br>TORNA OBRIGATÓRIO A INSTALAÇÃO DE PORTA DE SEGURANÇA NAS AGÊNCIAS BANCÁRIAS, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, FAÇO saber que a Câmara Municipal decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> É obrigatório, nas agências e postos de serviços bancários, a instalação de porta eletrônica de segurança individualizada, em todos os acessos destinados ao público.<br><br>§ 1º A porta a que se refere este artigo deverá, entre outras, obedecer as seguintes características técnicas:<br><br>a) equipada com detector de metais;<br>b) travamento e retorno automático;<br>c) abertura ou janela para entrega ao vigilante do metal detectado;<br>d) vidros laminados e resistentes ao impacto de projeteis oriundos de arma de fogo, até o calibre 45.<br><br>§ 2º VETADO.<br><br>§ 3º VETADO.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O estabelecimento bancário que infringir o disposto nesta Lei, ficará sujeito às seguintes penalidades:<br><br>a) advertência: para a primeira autuação, devendo o banco ser notificado para que efetue a regularização da pendência em 20 (vinte) dias úteis.<br>b) multa: será aplicada a multa de 1.000 (hum mil) UFM por atraso de até 30 (trinta) dias para implantação de sistema objeto desta Lei.<br><br>Parágrafo Único - O Sindicato dos Empregados em Estabelecimentos Bancários de Feira de Santana e o Sindicato de Vigilância e Transportes de Valores e, dos Trabalhadores em Serviço de Segurança, Vigilância, Segurança Pessoal, Cursos de Formação e Especialização de Vigilantes, Vigias, Prevenção e Combate a Incêndios, similares e seus anexos e afins do Estado da Bahia, poderão apresentar, junto à Prefeitura Municipal, o (s) infrator (es) desta Lei.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Os estabelecimentos bancários terão um prazo de até 120 (cento e vinte) dias, a contar da publicação desta Lei, para instalação dos equipamentos exigidos no artigo primeiro desta Lei.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 17 de maio de 1995.<br><br>PROFº. JOSÉ RAIMUNDO P. DE AZEVEDO<br>Prefeito<br><br>DR. RAIMUNDO ALVES PIRES<br>Secretário de Planejamento e Meio Ambiente<br><br>DR. CARLOS ANTÔNIO DE MORAES LUCENA<br>Chefe de Gabinete do Prefeito<br><br>Autor: Manoel Messias Gonzaga<br>Data da Publicação: 20/5/1995<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 1349, de 28 de dezembro de 1990</h2><br>INTRODUZ ALTERAÇÕES NA ESTRUTURA DA ADMINISTRAÇÃO PÚBLICA DO MUNICÍPIO DE FEIRA DE SANTANA, DISPÕE SOBRE A EXTINÇÃO, CRIAÇÃO E ALTERAÇÃO DE ÓRGÃOS, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, FAÇO saber que a Câmara Municipal decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Ficam extintos:<br><br>I - A Secretaria de Desenvolvimento Comunitário;<br><br>II - A Secretaria de Expansão Econômica;<br><br>III - A Secretaria de Turismo;<br><br>IV - A Superintendência de Urbanização de Feira de Santana;<br><br>V - O Centro de Abastecimento.<br><br>Parágrafo Único - Ficam extintos os cargos e funções de confiança correspondentes aos órgãos mencionados neste artigo.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Ficam criados os seguintes órgãos e entidades:<br><br>I - SECRETARIA DE SAÚDE, dirigida por um secretário do município, tendo por finalidade orientar, coordenar, supervisionar e executar ações de atendimento de saúde e assistência social, bem como exercer a fiscalização sanitária no município;<br><br>II - SECRETARIA DE INDUSTRIA, COMÉRCIO E TURISMO, dirigida por um secretário do município, tendo por finalidade dar apoio técnico à indústria, ao comércio e ao turismo local, e orientar, coordenar e executar ações de fomento às citadas atividades do município;<br><br>III - SECRETARIA DE AGRICULTURA dirigida por um secretário do município, tendo por finalidade dar apoio técnico e fomentar ações do setor agropecuário, bem como manter o funcionamento do parque de exposições agropecuário;<br><br>IV - SECRETARIA DE OBRAS, dirigida por um secretário do município, tendo por finalidade a execução, supervisão e fiscalização de obras e serviços públicos;<br><br>V - SECRETARIA DE ABASTECIMENTO, dirigida por um secretário do município, tendo por finalidade traçar e executar políticas de abastecimento para o município;<br><br>VI - SECRETARIA DE HABITAÇÃO POPULAR E DESENVOLVIMENTO COMUNITÁRIO, dirigida por um secretário do município, com o objetivo de traçar, orientar, executar e fiscalizar as políticas municipais de habitação e desenvolvimento comunitário.<br><br>Parágrafo Único - Ficam criados os seguintes cargos de direção e assessoramento:<br><br>CARGOS DE NIVEL ESPECIAL (NE)<br><br>Secretário de Saúde<br>Secretário de Indústria, Comércio e Turismo<br>Secretário de Agricultura<br>Secretário de Habitação Popular e Desenvolvimento Comunitário<br>Secretário de Obras<br>Secretário de Abastecimento<br><br>CARGOS DE DIREÇÃO E ASSESSORAMENTO (DA-1)<br><br>SECRETARIA DE SAÚDE<br>Diretor do Departamento de Saúde<br><br>SECRETARIA DE OBRAS<br>Diretor Administrativo<br>Diretor de Operações<br>Chefe de Assessoria de Projetos<br>Assistente do Secretário<br><br>SECRETARIA DE ABASTECIMENTO<br>Diretor Administrativo<br>Diretor de Operações<br>Diretor do Complexo Matadouro Municipal<br><br>SECRETARIA DE HABITAÇÃO POPULAR E DESENVOLVIMENTO COMUNITÁRIO<br>Diretor de Departamento de Administração<br>Diretor do Departamento de Operações<br><br>SECRETARIA DE PLANEJAMENTO, URBANISMO E MEO AMBIENTE<br>Diretor de Controle da Ocupação do Solo<br>Diretor de Meio Ambiente<br><br>SECRETARIA DE AGRICULTURA<br>Diretor de Fomento Agro-Pastoril SECRETARIA DE INDUSTRIA, COMÉRCIO E TURISMO<br>Diretor de Apoio Técnico<br><br>SECRETARIA DE EDUCAÇÃO, CULTURA E ESPORTES<br>Diretor do Departamento de Ensino<br>Diretor do Departamento de Cultura<br>Diretor do Departamento de Esportes<br>Diretor de Apoio Administrativo<br><br>CARGOS DE DIREÇÃO E ASSESSORAMENTO (DA-2)<br><br>SECRETARIA DE HABITAÇÃO POPULAR E DESENVOLVIMENTO COMUNITÁRIO<br>Chefe do Departamento de Organização e Comunidade<br><br>SECRETARIA DE SAÚDE<br>Coordenador de Medicina Preventiva<br>Chefe do Departamento de Fiscalização Sanitária<br><br>SECRETARIA DE PLANEJAMENTO, URBANISMO E MEIO AMBIENTE<br>Chefe do Setor de Planejamento Estratégico<br><br>GABINETE DO PREFEITO<br>Coordenador de Articulação Social<br><br>SECRETARIA DE AGRICULTURA<br>Diretor de Mecanização Agrícola<br><br>SECRETARIA DE INDÚSTRIA, COMÉRCIO E TURISMO<br>Diretor do Departamento de Fomento<br><br>SECRETARIA DE OBRAS<br>Diretor do DMER<br>Chefe da Usina de Asfalto<br><br>CARGOS DE DIREÇÃO E ASSESSORAMENTO (DA-3)<br><br>SECRETARIA DE SERVIÇOS PÚBLICOS<br>Coordenador de Apoio Técnico do Departamento de Transportes<br><br>SECRETARIA DE AGRICULTURA<br>Chefe do Parque de Exposições Agropecuárias<br>Chefe do Setor Administrativo<br><br>SECRETARIA DE INDÚSTRIA, COMÉRCIO E TURISMO<br>Diretor de Indústria e Comércio<br>Diretor de Turismo<br><br>SECRETARIA DE EDUCAÇÃO, CULTURA E ESPORTE<br>Administrador do Teatro Municipal<br>Administrador do Estádio Municipal<br>Coordenador do Pré-Escolar<br>Coordenador do Ensino Não Regular<br>Chefe do Setor de Material Didático<br>Chefe do Setor de Apoio e Manutenção<br><br>SECRETARIA DE SAÚDE<br>Chefe do Setor de Nutrição<br>Chefe do Setor de Assistência Social<br>Chefe do Setor de Recursos Humanos<br>Chefe do Setor de Apoio Material<br><br>SECRETARIA DE HABITAÇÃO POPULAR E DESENVOLVIMETO COMUNITÁRIO<br>Chefe do Setor de Atendimento<br><br>SECRETARIA DE OBRAS<br>Chefe do Setor de Iluminação Pública<br><br>GABINETE DO PREFEITO<br>Oficial de Gabinete CARGOS DE DIREÇÃO E ASSESSORAMENTO (DA-4)<br><br>SECRETARIA DE SERVIÇOS PÚBLICOS<br>Coordenador de Transito do Departamento de Transportes<br>Coordenador de Operações do Departamento de Transportes<br><br>SECRETARIA DE ADMINISTRAÇÃO<br>Coordenador do Setor de Manutenção do Centro de Processamento de Dados<br><br>SECRETARIA DE ABATECIMENTO<br>Coordenador do Setor de Feiras Livres<br><br>SECRETARIA DE PLANEJAMENTO, URBANISMO E MEIO AMBIENTE<br>Coordenador do Setor de Fiscalização de Obras<br><br>SECRETARIA DE HABITAÇÃO POPULAR E DESENVOLVIMENTO<br>Coordenador Geral da Divisão de Escolas de Artes<br><br>SECRETARIA DE OBRAS<br>Coordenador de Material e Serviços<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Os servidores estáveis das secretarias e órgãos extintos por esta Lei serão redistribuídos e movimentados, mediante ato do Poder Executivo, a cargo da Secretaria de Administração, entre outros órgãos e entidades da Administração Pública Municipal, observando-se o contido no parágrafo 3º, do art. 41, da Constituição Federal.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Ficam alterados as denominações dos seguintes órgãos:<br><br>I - O ESCRITÓRIO DE PLANEJAMENTOINTEGRADO passa a denominar-se SECRETARIA DE PLANEJAMENTO, URBANISMO E MEIO AMBIENTE, dirigida por um secretário do município, tendo por finalidade executar as atividades referentes ao planejamento das ações do Poder Executivo Municipal, elaborar e apresentar diversos elementos orçamentários, controlar e fiscalizar a ocupação e uso do solo do município, bem como formular, coordenar e fiscalizar a política de meio ambiente do município.<br><br>II - A Secretaria de Educação passa a denominar-se Secretaria de Educação, Cultura e Esportes, dirigida por um secretário do município, tendo por finalidade formular a política e executar as ações de ensino público, além de fomentar e dar apoio a atividades culturais e esportivas do município.<br><br>III - a Secretaria de Serviços Urbanos passa a denominar-se Secretaria de Serviços Públicos, dirigida por um secretário do município, tendo por finalidade coordenar, orientar e fiscalizar os serviços públicos de transporte e limpeza do município.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> O Poder Executivo, mediante decreto e no prazo de 60 (sessenta) dias, expedirá os atos regulamentares necessários a adequar a estrutura dos órgãos e entidades da administração municipal ao disposto nesta Lei.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> As despesas decorrentes da aplicação desta Lei correrão por conta do art. 43, da Lei nº 4.320, de 17 de março de 1964.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> As despesas com as secretarias e órgãos ora instituídos, correrão por conta das dotações previstas no orçamento para o exercício de 1991, destinados as secretarias e órgãos similares extintos pela presente Lei, mantendo-se os mesmos valores atribuidos no orçamento.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> As alterações na estrutura da administração pública municipal serão implantadas a 1º de janeiro de 1991.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Prefeitura Municipal de Feira de Santana, 28 de dezembro 1990.<br><br>DR. COLBERT MARTINS DA SILVA<br>Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

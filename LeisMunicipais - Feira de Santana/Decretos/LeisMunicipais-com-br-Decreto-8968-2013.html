@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>DECRETO Nº 8968, de 18 de julho de 2013.</h2><br>NOMEIA OS REPRESENTANTES PARA COMPOR A COMISSÃO DE LEVANTAMENTO E REGISTRO DE TODOS OS BENS SERVÍVEIS E INSERVÍVEIS EM TODA A ESTRUTURA DO PODER EXECUTIVO DO MUNICÍPIO DE FEIRA DE SANTANA.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O Prefeito Municipal de Feira de Santana, Estado da Bahia, no uso de suas atribuições, DECRETA:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Nomear os representantes indicados para compor a Comissão de Levantamento e Registro de todos os bens servíveis e inservíveis em toda a estrutura do Poder Executivo do Município de Feira de Santana:<br><br>I - Procuradoria Geral do Município:<br><br>a) Augusto Dias da Silva - matrícula nº 01010961-0;<br>b) Rosilda de Sousa Lima - matrícula nº 01007234-8.<br><br>II - Secretaria Municipal de Governo:<br><br>a) Jilvan Dias Leal - matrícula nº 01080064-2;<br>b) Wiara Mascarenhas Silva Ferreira - matrícula nº 01073029-9;<br>c) Roberto de Souza Brito - matrícula nº 01002950-9.<br><br>III - Secretaria Municipal da Fazenda:<br><br>a) Jackson Dias Lobo - matrícula nº 01076666-4;<br>b) Carlos Luciano Pires de Almeida - matrícula nº 01072521-8;<br>c) André Luiz Anunciação Nobre - matrícula nº 01074782-6.<br><br>IV - Secretaria Municipal de Desenvolvimento Urbano:<br><br>a) Wanderlan da Cruz Santos - matrícula nº 01007192-8;<br>b) Alfredo Rego Neto - matrícula nº 01080173-7;<br>c) Luiz Wilson Santos Paolilo - matrícula nº 01070035-9.<br><br>V - Secretaria Municipal de Comunicação Social:<br><br>a) Gislaine Sena Oliveira - matrícula nº 01080228-6;<br>b) Renata Leite Cerqueira - matrícula nº 01080087-4;<br>c) Ordachson Silva Gonçalves - matrícula nº 01080067-8.<br><br>VI - Secretaria Municipal de Trabalho, Turismo e Desenvolvimento Econômico:<br><br>a) Georgeton José Nery Rios - matrícula nº 01080107-4;<br>b) Gilberto A. Vaccarezza - matrícula nº 01009789-3;<br>c) Laurêncio Ferreira Gonçalves - nº 01010517-1.<br><br>VII - Secretaria Municipal de Agricultura, Recursos Hídricos e Desenvolvimento Rural:<br><br>a) Antonio Joel Barbosa - matrícula nº 01080149-0;<br>b) Roberto William Melo de Freitas - matrícula nº 01080604-8;<br>c) Silvia Cássia C. Arlindo - matrícula nº 01074461-6.<br><br>VIII - Secretaria Municipal de Serviços Públicos:<br><br>a) Maria Conceição Silva dos Santos - matrícula nº 01061209-5;<br>b) Jose Francisco Barros - matrícula nº 01013895-8;<br>c) Evandro Silva Ramos - matrícula nº 01013399-6.<br><br>IX - Secretaria Municipal de Saúde:<br><br>a) Iridan de Santana - matrícula nº 01008731-7;<br>b) Daniell Souza Bento - matrícula nº 01075220-9;<br>c) João dos Santos Soares - matrícula nº 01007448-7.<br><br>X - Secretaria Municipal de Prevenção à Violência e Promoção dos Direitos Humanos:<br><br>a) Fabio dos Santos Lima - matrícula nº 01072419-7;<br>b) Cassia Dias de Jesus - matrícula nº 01074814-3;<br>c) Jaqueline de Santana Machado Sampaio - matrícula nº 01074185-8.<br><br>XI - Secretaria Municipal de Planejamento:<br><br>a) Ana Katia da Silva Adorno - matrícula nº 01005642-3;<br>b) Rose Mary Cidade Almeida - matrícula nº 01008438-9;<br>c) Paulo Edmilson Miranda - matrícula nº 01007271-4.<br><br>XII - Secretaria Municipal de Meio Ambiente e Recursos Naturais:<br><br>a) Carlos Alberto Costa da Rocha - matrícula nº 01080140-2;<br>b) Katiuscia Valle S. Gusmão - matrícula nº 01077339-4;<br>c) Caroline Moraes Silva Santana - matrícula nº 01077341-1.<br><br>XIII - Secretaria Municipal de Habitação e Regularização Fundiária:<br><br>a) Angelo Daniel Pinho de Assis - matrícula nº 01077237-6;<br>b) Antonio Conceição Bastos - matrícula nº 01020358-3;<br>c) Maria Helena Borges Cordeiro - matrícula nº 01003048-1.<br><br>XIV - Secretaria Municipal de Educação:<br><br>a) Damião Brandão da Silva - matrícula nº 01002994-9;<br>b) Gilvan Silva Parente - matrícula nº 01080074-5;<br>c) Livia Maria Souza Oliveira - matrícula nº 01076678-1.<br><br>XV - Secretaria Municipal de Desenvolvimento Social:<br><br>a) Elycarla Oliveira de Souza - matrícula nº 08034244-0;<br>b) Silvia da Silva Carvalho - matrícula nº 01008389-2;<br>c) Joselita Alves dos Santos - matrícula nº 01030109-8.<br><br>XVI - Secretaria Municipal de Cultura, Esporte e Lazer:<br><br>a) Eder dos Santos Silva - matrícula nº 01075707-7;<br>b) Jose Fernandes Carneiro - matrícula nº 01000444-4;<br>c) Rose Di Paula Dias de Oliveira Silva - matrícula nº 01075140-1.<br><br>XVII - Secretaria Municipal de Transportes e Trânsito:<br><br>a) Gildete Villas Boas Carvalho - matrícula nº 01010167-0;<br>b) Cinthia Quaresma Vieira dos Santos - matrícula nº 01076145-6;<br>c) Claudia Santana Ferreira - matrícula nº 01076276-1.<br><br>XVIII - Superintendência Municipal de Trânsito:<br><br>a) Izabel Cristina Morais Fonseca - matrícula nº 06000120-8;<br>b) Suzane de Brito Miranda - matrícula nº 06000263-0;<br>c) Wellington M de Azevedo - matrícula nº 06000116-7.<br><br>XIX - Instituto de Previdência de Feira de Santana:<br><br>a) Edivonete Santos de Carvalho - matrícula nº 04070367-8;<br>b) Elisangela Cristina dos Santos - matrícula nº 04076032-7;<br>c) Valnisia Miranda Bastos - matrícula nº 04004814-5.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Este Decreto entrará em vigor na data da sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 18 de julho de 2013.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito Municipal<br><br>MÁRIO COSTA BORGES<br>Chefe de Gabinete do Prefeito<br><br>JOÃO MARINHO GOMES JÚNIOR<br>Secretário Municipal de Administração<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

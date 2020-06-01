@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>RESOLUÇÃO Nº 97/1975</h2><br>DISPÕE SOBRE A FIXAÇÃO E PAGAMENTO DOS SUBSÍDIOS AOS VEREADORES E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>A MESA DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, no uso de suas atribuições, de acordo com a Lei complementar nº 25, de 04 de julho de 1975, Lei Estadual nº  <a class="link_law" data-id="4914" data-original-title=" Data da Norma: 12.02.1971 - LEI ORGÂNICA DOS MUNICÍPIOS." data-toggle="tooltip" href="http://leisestaduais.com.br/ba/lei-ordinaria-n-2902-1971-bahia-lei-organica-dos-municipios" rel="tooltip">2.902</a>, de 12 de fevereiro de 1971 e a Resolução nº  <a class="link_law" data-id="1948526" data-original-title=" Data da Norma: 31.05.1972 - APROVA O REGIMENTO INTERNO DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/resolucao/1972/9/92/resolucao-n-92-1972-aprova-o-regimento-interno-da-camara-municipal-de-feira-de-santana" rel="tooltip">92</a>, de 31 de maio de 1972 - Regimento interno - resolve:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> O Subsídio mensal dos Vereadores do Município de Feira de Santana, será pago à base de 25% (vinte e cinco por cento) do subsídio mensal fixado aos deputados da Assembleia Legislativa do Estado da Bahia.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> A remuneração atribuída a cada Vereador, será constituída de duas partes distintas: Fixa, 50% (cinquenta por cento), e Variável, 50% (cinquenta por cento).<br><br>§ 1º A parte variável corresponderá ao comparecimento efetivo do Vereador às Sessões e a sua participação nas votações.<br><br>§ 2º Somente poderão ser remuneradas uma Sessão Ordinária por dia e, no máximo, quatro Sessões Extraordinárias por mês.<br><br>§ 3º No período de recesso o Vereador fará jus à parte variável.<br><br>§ 4º O comparecimento do Vereador à Sessão será apurado pelas listas de presenças assinadas pelo mesmo e a verificação efetuada pela Mesa no término da Ordem do Dia.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> É vedado o pagamento ao Vereador de qualquer vantagem pecuniária, como ajuda de custo, representação ou gratificação, não autorizada expressamente por esta Resolução.<br><br>§ 1º Quando afastado da Câmara Municipal o Vereador terá direito à remuneração, exclusivamente de acordo com o Art. 50 § 1º, da Lei Estadual nº  <a class="link_law" data-id="4914" data-original-title=" Data da Norma: 12.02.1971 - LEI ORGÂNICA DOS MUNICÍPIOS." data-toggle="tooltip" href="http://leisestaduais.com.br/ba/lei-ordinaria-n-2902-1971-bahia-lei-organica-dos-municipios" rel="tooltip">2.902</a>, de 12 de fevereiro de 1971.<br><br>§ 2º Quando a licença para tratamento de saúde for por período superior a 30 (trinta) dias, será obrigatório anexar ao pedido, laudo médico por junta médica oficial.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Para atender as despesas decorrentes da presente Resolução, fica o Poder Executivo Municipal autorizado a abris crédito especial necessário, ainda no decorrer deste período.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Esta lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>SALA DAS SESSÕES, 17 DE JULHO DE 1975.<br><br>OTAVIANO FERREIRA CAMPOS<br>Presidente<br><br>JOSÉ FERREIRA PINTO<br>1º Secretário<br><br>SINÉZIO FÉLIX<br>2º Secretario<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

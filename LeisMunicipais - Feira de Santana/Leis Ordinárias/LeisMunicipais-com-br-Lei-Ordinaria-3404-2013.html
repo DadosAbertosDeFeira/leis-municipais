@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3404/13</h2><br>DISPÕE SOBRE A PROIBIÇÃO DA UTILIZAÇÃO DE FOGOS DE ARTIFÍCIOS EM LOCAIS FECHADOS, NO ÂMBITO DO MUNICÍPIO DE FEIRA DE SANTANA.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei Nº 70/2013, de autoria da Edil Gerusa Maria Bastos Sampaio, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica proibido à utilização de fogos de artifício, tais como: bombas, foguetes, morteiros, sinalizadores e similares em estabelecimentos e ou recintos comerciais fechados com cobertura de uso coletivo, no âmbito do Município de Feira de Santana.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O descumprimento ao disposto nesta Lei sujeitará o infrator às seguintes penalidades, sem prejuízo de eventuais conseqüências cíveis e criminais de seus atos:<br><br>I - advertência;<br><br>II - multa de R$ 1.000,00 (um mil reais);<br><br>III - o valor da multa sofrerá correção anualmente pelo Índice de Preços ao Consumidor Ampliado (IPCA);<br><br>IV - Interdição parcial ou total da atividade;<br><br>V - cassação do alvará de localização e funcionamento do estabelecimento.<br><br>§ 1º A penalidade referida no inciso I do caput deste artigo será aplicada às infrações de menor potencial ofensivo.<br><br>§ 2º Na hipótese de reincidência no descumprimento ao disposto nesta Lei, no período de 3 (três) anos da aplicação de penalidades referidas nos incisos do caput deste artigo, será aplicada a penalidade mais gravosa.<br><br>§ 3º Os procedimentos administrativos para a aplicação das penalidades referidas nos incisos do caput deste artigo seguirão, no que couber, aqueles utilizados pelo Executivo Municipal para aplicação de sanções administrativas.<br><br>§ 4º Nos casos de iminente risco ao meio ambiente, à segurança ou à saúde da população, mediante avaliação da autoridade municipal competente, será procedida, liminarmente, à interdição parcial ou total da atividade do estabelecimento, abrindo-se prazo para defesa.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito, 22 de agosto de 2013.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito<br><br>MARIO COSTA BORGES<br>Chefe de Gabinete do Prefeito <p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

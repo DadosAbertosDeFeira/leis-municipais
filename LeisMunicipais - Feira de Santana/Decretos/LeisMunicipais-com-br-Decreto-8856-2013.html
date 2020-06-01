@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>DECRETO Nº 8856, de 28 de fevereiro de 2013</h2><br>CRIA A COMISSÃO DE ERRADICAÇÃO DO SUBREGISTRO CIVIL DE NASCIMENTO E AMPLIAÇÃO DO ACESSO À DOCUMENTAÇÃO BÁSICA DO MUNICÍPIO DE FEIRA DE SANTANA E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, no uso de suas atribuições,<br><br>CONSIDERANDO o quanto estabelecido na normatização pátria, esculpido no art. 236 e 103-B, § 4º, III da Constituição Federal, nos art. 37 e 38 da Lei Federal nº 11.977 de 2009, no Decreto nº 6.289/2007, no art. 8º, X, do Regimento Interno do Conselho Nacional de Justiça e no Provimento nº 13 da Corregedoria do Conselho Nacional de Justiça,<br><br>CONSIDERANDO que o Município de Feira de Santana firmou Termo de Adesão ao Compromisso Nacional pela Erradicação do Subregistro civil de Nascimento e Ampliação do Acesso à Documentação Básica estabelecido pela Secretaria Especial dos Direitos Humanos,<br><br>CONSIDERANDO ainda que a Municipalidade percebe a necessidade de melhorar o relacionamento formal do cidadão com os Estado através da identificação dos mesmos, pensamento este também amparado pela denominada Mobilização Nacional pela Certidão de Nascimento,<br><br>CONSIDERANDO que o Poder Executivo Municipal possui a consciência de que o registro civil das pessoas naturais é a forma de conferir personalidade jurídica às pessoas, sendo necessário ampliar o acesso à Documentação Básica e erradicar o subregistro civil;<br><br>CONSIDERANDO ademais, a conveniência de uniformizar e aperfeiçoar o registro de nascimento e a emissão da respectiva certidão nos estabelecimentos de saúde, antes da alta hospitalar da mãe ou da criança,<br><br>CONSIDERANDO enfim, a necessidade de se criar um Comitê Gestor Municipal para planejar, implementar e monitorar as ações para erradicação do subregistro civil de nascimento e ampliação do acesso à documentação básica No Município de Feira de Santana, DECRETA:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica criada a Comissão de Erradicação do Subregistro Civil e Ampliação do Acesso à Documentação Básica do Município de Feira de Santana.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> A Comissão de Erradicação do subregistro civil e Ampliação do Acesso à Documentação Básica do Município de Feira de Santana será composta por:<br><br>I - Rosângela Adorno Carneiro, representante da Secretaria Municipal de Desenvolvimento Social, que Presidirá a Comissão, e Silvia da Silva Carvalho, suplente;<br><br>II - Rosângela Serra Leite representante da Procuradoria Geral do Município, e Edna Souza Fonseca, suplente;<br><br>III - Ana Cristina Farias Franqueira, representante da Secretaria Municipal de Saúde, e a suplente Elizabete Moreira dos Santos;<br><br>IV - Paulo Sérgio Aquino de Azevedo Souza representante da Secretaria Municipal de Governo, e Jilvan Dias Leal, suplente;<br><br>V - Telma Portugal Nascimento Dantas representante da Secretaria Municipal de Educação, e Karine Cunha Peleteiro Bastos, suplente;<br><br>VI - Renata Leite Cerqueira, representante da Secretaria Municipal de Comunicação Social, e Ronaldo Belo Venas de Queiroz, suplente;<br><br>VII - Jader Cirqueira Amaral representante da Secretaria Municipal de Prevenção à Violência e Ana Lúcia Freitas Bastos Miranda, suplente.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Compete à Comissão de Erradicação do subregistro civil e Ampliação do Acesso à Documentação Básica do Município de Feira de Santana, em relação à consolidação da proposta:<br><br>I - Mobilizar ações para erradicar o subregistro civil de nascimento por meio de realização e fomentar o regular registro civil das pessoas naturais;<br><br>II - Instrumentalizar meios de informação e orientação sobre documentação básica;<br><br>III - Propor mecanismos para ampliar a rede de serviços de Registro Civil de Nascimento e Documentação Básica, objetivando maior capilaridade e mobilidade dentro do plano territorial municipal;<br><br>IV - Compreender condições de aperfeiçoamento do Sistema Brasileiro de Registro Civil de Nascimento, a fim de garantir uniformidade, padronização e segurança no sistema;<br><br>V - Criar vias efetivas para a Universalização do acesso gratuito ao RG e CPF com a garantia da sustentabilidade dos serviços.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Este Decreto entrará em vigor na data da sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 28 de fevereiro de 2013.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito Municipal<br><br>MÁRIO COSTA BORGES<br>Chefe de Gabinete do Prefeito<br><br>CARLOS ANTÔNIO DE MORAES LUCENA<br>Procurador Geral do Município<br><br>PAULO SÉRGIO AQUINO DE AZEVEDO SOUZA<br>Secretário Municipal Governo<br><br>ILDES FERREIRA DE OLIVEIRA<br>Secretário Municipal de Desenvolvimento Social<br><br>JAYANA BASTOS MIRANDA RIBEIRO<br>Secretária Municipal de Educação<br><br>DENISE LIMA MASCARENHAS<br>Secretária Municipal de Saúde<br><br>MAURO DE OLIVEIRA MORAES<br>Secretário Municipal de Prevenção à Violência e Promoção dos Direitos Humanos<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

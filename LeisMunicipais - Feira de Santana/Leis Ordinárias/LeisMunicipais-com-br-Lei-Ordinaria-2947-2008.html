@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 2947/2008</h2><br>ESTIMA A RECEITA E FIXA A DESPESA DO MUNICÍPIO DE FEIRA DE SANTANA PARA O EXERCÍCIO FINANCEIRO DE 2009.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Autor: Poder Executivo<br><br>O Prefeito Municipal de Feira de Santana, Estado da Bahia, faz saber que a Câmara Municipal aprovou e eu sanciono a seguinte Lei:<br><br><span class="titulo" style="width: auto;display: block;text-align:center;text-transform:uppercase"><br>TÍTULO I<br>DAS DISPOSIÇÕES COMUNS<br></span><br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Esta Lei estima a Receita e fixa a Despesa do Orçamento Anual do Município de Feira de Santana, para o exercício financeiro de 2009, compreendendo:<br><br>I - O Orçamento Fiscal, referente aos Poderes Legislativo e Executivo do Município, seus fundos, órgãos e entidades da Administração Pública Municipal direta e indireta, instituídas e mantidas pelo Poder Público.<br><br>II - O Orçamento da Seguridade Social, abrangendo todas as entidades, órgãos e fundos da Administração direta e indireta a ela vinculados, bem como fundações instituídas e mantidas pelo Poder Público.<br><br><span class="titulo" style="width: auto;display: block;text-align:center;text-transform:uppercase"><br>TÍTULO II<br>DO ORÇAMENTO FISCAL E DA SEGURIDADE SOCIAL<br></span><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> I<br>DA ESTIMATIVA DA RECEITA<br></span></span><br><br>DA RECEITA TOTAL<br><br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> A Receita Orçamentária, a preços correntes e conforme a legislação tributária vigente é estimada em R$ 456.889.603,00 (quatrocentos e cinqüenta e seis milhões, oitocentos e oitenta e nove mil e seiscentos e três reais), desdobrada nos seguintes agregados:<br><br>I - Orçamento Fiscal, em R$ 297.979.627,00 (duzentos e noventa e sete milhões, novecentos e setenta e nove mil e seiscentos e vinte e sete reais);<br><br>II - Orçamento da Seguridade Social, em R$ 158.909.976,00 (cento e cinqüenta e oito milhões, novecentos e nove mil e novecentos e setenta e seis reais).<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> As receitas decorrerão da arrecadação de tributos, contribuições e outras receitas correntes e de capital, previstos na legislação vigente, e são estimadas com o seguinte desdobramento:<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> II<br>DA FIXAÇÃO DA DESPESA<br></span></span><br><br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> A Despesa Orçamentária, no mesmo valor da Receita Orçamentária, é fixada em R$ 456.889.603,00 (quatrocentos e cinqüenta e seis milhões, oitocentos e oitenta e nove mil e seiscentos e três reais), desdobrada nos seguintes agregados:<br><br>I - Orçamento Fiscal, em R$ 263.039.488,00 (duzentos e sessenta e três milhões, trinta e novel mil, quatrocentos e oitenta e oito reais);<br><br>II - Orçamento da Seguridade Social, em R$ 193.850.115,00 (cento e noventa e três milhões, oitocentos e cinqüenta mil e cento e quinze reais).<br><br>Parágrafo Único - Do montante fixado no inciso II deste artigo, a parcela de R$ 34.940.139,00 (trinta e quatro milhões, novecentos e quarenta mil e cento e trinta e nove reais) será custeada com recursos do Orçamento Fiscal.<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> III<br>DA DISTRIBUIÇÃO DA DESPESA POR ÓRGÃO<br></span></span><br><br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> A Despesa Total, fixada por Órgãos, Funções, está definida conforme discriminado a seguir:<br><br>I - por órgãos:<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> IV<br>DA AUTORIZAÇÃO PARA ABERTURA DE CRÉDITO<br></span></span><br><br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Fica o Poder Executivo, respeitadas as demais prescrições constitucionais e nos termos da Lei nº 4.320/64, autorizado a abrir créditos adicionais suplementares até o valor correspondente a 80% (oitenta por cento) dos Orçamentos Fiscal e da Seguridade Social, com a finalidade de incorporar valores que excedam as previsões constantes desta Lei, mediante a utilização de recursos provenientes de:<br><br>I - anulação parcial ou total de dotações;<br><br>II - incorporação de superávit e/ou saldo financeiro disponível do exercício anterior, efetivamente apurados em balanço;<br><br>III - excesso de arrecadação em bases constantes;<br><br>IV - operações de crédito;<br><br>V - reserva de contingência.<br><br>§ 1º As Suplementações podem ser feitas através de transposição, remanejamento ou transferência de uma categoria para outra ou de um órgão para outro.<br><br>§ 2º Exclui da base de cálculo do limite a que se refere o caput deste artigo os valores correspondentes à amortização e encargos da dívida e às despesas financiadas com operações de crédito contratadas e a contratar.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> O limite autorizado no artigo anterior não será onerado quando o crédito se destinar a:<br><br>I - atender insuficiências de dotações do grupo de Pessoal e Encargos Sociais, mediante a utilização de recursos oriundos da anulação de despesas consignadas ao mesmo grupo, até o limite de 100% (cem por cento) do grupo.<br><br>II - atender ao pagamento de despesas decorrentes de precatórios judiciais, amortização e juros da dívida, mediante utilização de recursos provenientes de anulação de dotações orçamentárias até o limite de 100% (cem por cento) do grupo.<br><br>III - atender a despesas financiadas com recursos vinculados a operações de crédito e convênios até 100% (cem por cento) dos mesmos.<br><br>IV - atender a insuficiências de outras despesas de custeio e de capital consignadas em Programas de Trabalho das funções Saúde, Assistência, Previdência, e em Programas de Trabalho relacionados à Manutenção e Desenvolvimento do Ensino, mediante o cancelamento de dotações das respectivas funções, até 100% (cem por cento) dos programas das respectivas funções.<br><br>V - atender a insuficiências de dotações em elementos de despesa mediante utilização de recursos provenientes da anulação em elementos pertencentes ao mesmo grupo de despesa dentro do mesmo projeto ou atividade até o limite de 100% (cem por cento).<br><br><span class="titulo" style="width: auto;display: block;text-align:center;text-transform:uppercase"><br>TÍTULO III<br>DAS DISPOSIÇÕES FINAIS<br></span><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> CINCO<br><br></span></span><br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> A utilização das dotações com origem de recursos em convênios ou operações de crédito fica condicionada à celebração dos instrumentos.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> Fica o Poder Executivo autorizado a realizar operações de crédito por antecipação de receita, com a finalidade de manter o equilíbrio orçamentário-financeiro do Município, observados os preceitos legais aplicáveis à matéria.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10 -</span></a> O Prefeito, no âmbito do Poder Executivo, poderá adotar parâmetros para utilização das dotações, de forma a compatibilizar as despesas à efetiva realização das receitas, para garantir as metas de resultado primário, conforme o art. 42, da Lei nº  <a class="link_law" data-id="696773" data-original-title=" Data da Norma: 18.06.2008 - DISPÕE SOBRE AS DIRETRIZES PARA A ELABORAÇÃO DA LEI ORÇAMENTÁRIA PARA O EXERCÍCIO DE 2009 E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2008/290/2909/lei-ordinaria-n-2909-2008-dispoe-sobre-as-diretrizes-para-a-elaboracao-da-lei-orcamentaria-para-o-exercicio-de-2009-e-da-outras-providencias" rel="tooltip">2.909</a>, de 18 de junho de 2008.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11 -</span></a> As metas fiscais e o anexo de metas e prioridades definidas na Lei nº  <a class="link_law" data-id="696773" data-original-title=" Data da Norma: 18.06.2008 - DISPÕE SOBRE AS DIRETRIZES PARA A ELABORAÇÃO DA LEI ORÇAMENTÁRIA PARA O EXERCÍCIO DE 2009 E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2008/290/2909/lei-ordinaria-n-2909-2008-dispoe-sobre-as-diretrizes-para-a-elaboracao-da-lei-orcamentaria-para-o-exercicio-de-2009-e-da-outras-providencias" rel="tooltip">2.909</a>, de 18 de junho de 2008, ficam reajustadas na conformidade dos quadro correspondentes, que integram os demonstrativos consolidados desta Lei.<br><br><a name="artigo_12"><span class="label label-pill label-danger">Art. 12 -</span></a> Esta Lei vigorará de 01 de janeiro a 31 de dezembro de 2009.<br><br>Gabinete do Prefeito Municipal, em 26 de novembro de 2008.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito Municipal.<br><br><i class="icon-warning-sign"></i> O anexo encontra-se disponível, ainda, no Paço Municipal<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

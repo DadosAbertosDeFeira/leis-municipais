@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>DECRETO Nº 9010, de 30 de agosto de 2013</h2><br>APROVA A PROGRAMAÇÃO ORÇAMENTÁRIA E FINANCEIRA DO PODER EXECUTIVO MUNICIPAL PARA O 5º BIMESTRE/2013 E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, no uso de suas atribuições legais e com base no art. 80, da Lei Complementar Federal nº 101/2000, nas Leis Municipais nº <a class="link_law" data-id="1576792" data-original-title=" Data da Norma: 01.07.2011 - DISPÕE SOBRE AS DIRETRIZES E ORIENTAÇÕES PARA A ELABORAÇÃO DA LEI ORÇAMENTÁRIA PARA O EXERCÍCIO DE 2012 E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2011/322/3227/lei-ordinaria-n-3227-2011-dispoe-sobre-as-diretrizes-e-orientacoes-para-a-elaboracao-da-lei-orcamentaria-para-o-exercicio-de-2012-e-da-outras-providencias" rel="tooltip">3.227</a>/2011 e nº <a class="link_law" data-id="1569145" data-original-title=" Data da Norma: 28.12.2011 - ESTIMA A RECEITA A FIXA A DESPESA DO MUNICÍPIO DE FEIRA DE SANTANA PARA O EXERCÍCIO FINANCEIRO DE 2012. (R$ 659.795.267,00)" data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2011/329/3299/lei-ordinaria-n-3299-2011-estima-a-receita-a-fixa-a-despesa-do-municipio-de-feira-de-santana-para-o-exercicio-financeiro-de-2012-r-659795-267-00" rel="tooltip">3.299</a>/2011, DECRETA:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica aprovada a programação orçamentária e financeira do Poder Executivo para o 5º bimestre de 2013, de acordo com os anexos I e II deste Decreto.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> A execução da despesa obedecerá aos limites globais estabelecidos no Anexo II.<br><br>Parágrafo Único - Fica a Secretaria da Fazenda, através do Departamento de Contabilidade, autorizada a proceder ao remanejamento de cotas financeiras entre as unidades, sem alterações dos limites globais estabelecidos para o Poder Executivo.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Este Decreto entra em vigor na data da sua publicação.<br><br>Gabinete do Prefeito, de 30 de agosto de 2013.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito Municipal<br><br>MÁRIO COSTA BORGES<br>Chefe de Gabinete do Prefeito<br><br>CARLOS ANTÔNIO DE MORAES LUCENA<br>Procurador Geral do Município<br><br>ANEXO I<br>FLUXO BIMENSAL DA RECEITA<pre> ___________________________________________________<br>|      MESES      | SETEMBRO |  OUTUBRO |   TOTAL   |<br>|=================|==========|==========|===========|<br>|RECEITAS         |55.667.218|59.921.797|115.589.015|<br>|CORRENTES        |          |          |           |<br>|-----------------|----------|----------|-----------|<br>|Receita          |10.560.084|11.558.046| 22.118.130|<br>|Tributária       |          |          |           |<br>|-----------------|----------|----------|-----------|<br>|Receita        de| 1.764.984| 1.862.224|  3.627.208|<br>|Contribuições    |          |          |           |<br>|-----------------|----------|----------|-----------|<br>|Receita          |   686.133|   783.244|  1.469.377|<br>|Patrimonial      |          |          |           |<br>|-----------------|----------|----------|-----------|<br>|Receita        de|     9.075|     9.075|     18.150|<br>|Serviços         |          |          |           |<br>|-----------------|----------|----------|-----------|<br>|Transferências   |40.849.410|43.530.777| 84.380.187|<br>|Correntes        |          |          |           |<br>|-----------------|----------|----------|-----------|<br>|Outras   Receitas| 2.542.811| 2.914.417|  5.457.228|<br>|Correntes        |          |          |           |<br>|-----------------|----------|----------|-----------|<br>|Rec.Cor.         | 3.432.011| 3.508.387|  6.940.398|<br>|Intraorçamentária|          |          |           |<br>|-----------------|----------|----------|-----------|<br>|(-)       Dedução|-4.177.290|-4.244.373|-8.421.663 |<br>|Receitas         |          |          |           |<br>|Correntes        |          |          |           |<br>|-----------------|----------|----------|-----------|<br>|RECEITAS       DE| 1.473.900| 2.678.921|  4.152.821|<br>|CAPITAL          |          |          |           |<br>|-----------------|----------|----------|-----------|<br>|Alienação de bens|          |          |           |<br>|-----------------|----------|----------|-----------|<br>|Transferências de|          |          |           |<br>|Capital          |          |          |           |<br>|-----------------|----------|----------|-----------|<br>|TOTAL         DAS|57.141.118|62.600.718|119.741.836|<br>|RECEITAS         |          |          |           |<br>|_________________|__________|__________|___________| * tabela formatada pela equipe técnica do LeisMunicipais.com.br<br>ANEXO II<br>FIXAÇÃO BIMENSAL DA DESPESA<pre> _______________________________________________<br>|DISCRIMINAÇÃO| SETEMBRO |  OUTUBRO |   TOTAL   |<br>|=============|==========|==========|===========|<br>|Poder        | 1.262.150| 1.262.150|  2.524.300|<br>|Legislativo  |          |          |           |<br>|-------------|----------|----------|-----------|<br>|Câmara       | 1.262.150| 1.262.150|  2.524.300|<br>|Municipal    |          |          |           |<br>|-------------|----------|----------|-----------|<br>|Poder        |55.878.968|61.338.568|117.217.536|<br>|Executivo    |          |          |           |<br>|-------------|----------|----------|-----------|<br>|Gabinete   do|    15.340|    16.334|     31.674|<br>|Prefeito     |          |          |           |<br>|-------------|----------|----------|-----------|<br>|PROCON       |    90.765|    93.453|    184.218|<br>|-------------|----------|----------|-----------|<br>|Procuradoria |    16.604|    17.227|     33.831|<br>|Geral        |          |          |           |<br>|-------------|----------|----------|-----------|<br>|Secretaria de|     7.963|     8.480|     16.443|<br>|Governo      |          |          |           |<br>|-------------|----------|----------|-----------|<br>|Sec.       da| 4.887.273| 5.204.023| 10.091.296|<br>|Administração|          |          |           |<br>|-------------|----------|----------|-----------|<br>|Inst.        | 4.230.657| 4.204.851|  8.435.508|<br>|Previdência -|          |          |           |<br>|IPFS         |          |          |           |<br>|-------------|----------|----------|-----------|<br>|Secretaria da| 1.971.968| 3.154.117|  5.126.085|<br>|Fazenda      |          |          |           |<br>|-------------|----------|----------|-----------|<br>|Sec.  de Com.|   165.622|   607.233|    772.855|<br>|Social       |          |          |           |<br>|-------------|----------|----------|-----------|<br>|Sec.       de|   266.371|   228.236|    494.607|<br>|Planejamento |          |          |           |<br>|-------------|----------|----------|-----------|<br>|Secretaria de|16.714.722|16.892.253| 33.606.975|<br>|Educação     |          |          |           |<br>|-------------|----------|----------|-----------|<br>|Sec.  de Cul.|   686.905|   710.128|  1.397.033|<br>|Esp. e Lazer |          |          |           |<br>|-------------|----------|----------|-----------|<br>|Fund.        |   353.268|   389.126|    742.394|<br>|Cult.E.T.    |          |          |           |<br>|Costa        |          |          |           |<br>|-------------|----------|----------|-----------|<br>|Secretaria de|16.570.924|18.154.208| 34.725.132|<br>|Saúde        |          |          |           |<br>|-------------|----------|----------|-----------|<br>|Fund.        | 1.620.087| 1.789.898|  3.409.985|<br>|Hospitalar  -|          |          |           |<br>|FHFS         |          |          |           |<br>|-------------|----------|----------|-----------|<br>|Sec.  de Des.| 1.047.971| 2.074.221|  3.122.192|<br>|Social       |          |          |           |<br>|-------------|----------|----------|-----------|<br>|Sec.  de Des.| 1.531.793| 1.950.514|  3.482.307|<br>|Urbano       |          |          |           |<br>|-------------|----------|----------|-----------|<br>|Sec.de       |   478.955|   442.402|    921.357|<br>|Trab.Tur.    |          |          |           |<br>|Des.         |          |          |           |<br>|Econômico    |          |          |           |<br>|-------------|----------|----------|-----------|<br>|Sec. de Serv.| 3.643.065| 3.671.710|  7.314.775|<br>|Públicos     |          |          |           |<br>|-------------|----------|----------|-----------|<br>|ARSEPUC      |    50.295|    65.764|    116.059|<br>|-------------|----------|----------|-----------|<br>|Sec.  de Agr.|   400.038|   190.919|    590.957|<br>|Rec.     Hid.|          |          |           |<br>|Des. Rural   |          |          |           |<br>|-------------|----------|----------|-----------|<br>|Sec.  de Hab.|    77.078|    97.998|    175.076|<br>|e  Reg. Fund.|          |          |           |<br>|Urbana       |          |          |           |<br>|-------------|----------|----------|-----------|<br>|Gab.       do|     4.191|     4.463|      8.654|<br>|Vice-Prefeito|          |          |           |<br>|-------------|----------|----------|-----------|<br>|Sec.  Transp.|   105.372|   218.682|    324.054|<br>|e Trânsito   |          |          |           |<br>|-------------|----------|----------|-----------|<br>|Sup.       M.|   547.194|   508.583|  1.055.777|<br>|Trânsito    -|          |          |           |<br>|SMT          |          |          |           |<br>|-------------|----------|----------|-----------|<br>|Sec.  de Meio|    90.590|   107.110|    197.700|<br>|Amb.  e  Rec.|          |          |           |<br>|Naturais     |          |          |           |<br>|-------------|----------|----------|-----------|<br>|Sec.         |   296.413|   528.586|    824.999|<br>|Prev.Viol.   |          |          |           |<br>|Dir. Humanos |          |          |           |<br>|-------------|----------|----------|-----------|<br>|Sec.Ext.de   |     7.544|     8.049|     15.593|<br>|Convênios    |          |          |           |<br>|-------------|----------|----------|-----------|<br>|Reserva    de|          |          |           |<br>|Contingência |          |          |           |<br>|-------------|----------|----------|-----------|<br>|TOTAL     DAS|57.141.118|62.600.718|119.741.836|<br>|DESPESAS     |          |          |           |<br>|_____________|__________|__________|___________| * tabela formatada pela equipe técnica do LeisMunicipais.com.br<br><p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

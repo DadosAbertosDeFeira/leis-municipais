@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI COMPLEMENTAR Nº 64/2011</h2><br>INSTITUI O PLANO HABITACIONAL DE INTERESSE SOCIAL DO MUNICÍPIO DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, no uso de suas atribuições, Faço saber que a Câmara Municipal de Feira de Santana, através do Projeto de LEI COMPLEMENTAR Nº 15/2011, de autoria do Poder Executivo, decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Ficam desincorporados da classe dos bens de uso comum do povo e transferidas para a dos bens dominiais do Município as áreas ocupadas, por população de baixa renda, relacionadas e identificadas no Anexo I, integrante desta Lei, com a finalidade de promover Programa de Regularização Urbanística e Fundiária.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> As áreas públicas municipais da classe dos bens dominiais ocupadas pro população de baixa renda relacionadas do Anexo II integrante desta Lei ficam destinadas ao Programa de Regularização Urbanística e Fundiária.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> As áreas de que tratam os art. 1º e 2º, configuradas nos croquis e plantas dos arquivos do Banco de Dados Digitais da Secretaria Municipal de Habitação e Regularização Fundiária, serão descritas e caracterizadas mediante levantamento planialtimétrico cadastral da situação fática das ocupações.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Os perímetros, as dimensões e a caracterização das áreas públicas municipais relacionadas nos Anexos I e II, desta Lei, obtidos pelo levantamento planialtimétrico cadastral mencionado no art. 3º, serão reconhecidos por meio de Decreto, que constituirá documento hábil para fins de registro perante o Cartório de Registros de Imóveis competente.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Fica o Executivo autorizado a efetuar desafetação de áreas públicas municipais da classe de bens de uso comum do povo, situadas em Zonas Especiais de interesse Social - ZEIS, ocupadas por núcleos habitacionais de população de baixa renda, não relacionadas nesta Lei, e cuja situação esteja consolidada anteriormente a 30 de junho de 2011, com a finalidade de promover o Programa de Regularização Urbanística e Fundiária.<br><br>Parágrafo Único - Para os fins do disposto no &quot;caput&quot; deste artigo, será expedido Decreto específico com a identificação e caracterização da área objeto de desafetação.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Fica o Executivo autorizado a outorgar concessão de uso especial para fins de moradia, prevista na Medida Provisória nº 2.220, de 04 de setembro de 2001, aos ocupantes dos imóveis públicos de que trata esta Lei.<br><br>§ 1º Fica facultado ao Executivo autorizar usos para fins comerciais, nos termos do artigo 9º da Medida Provisória nº 2.220/01, e institucionais e do serviços, desde que atendam ao interesse social da respectiva comunidade.<br><br>§ 2º A concessão de uso especial para fins de moradia, também, poderá ser outorgada pelo Executivo Municipal ao ocupante de imóvel com ocupação mista, cujo uso predominante é o de sua moradia ou de sua família.<br><br>§ 3º Nas condições estatuídas por esta Lei, a Procuradoria Geral do Município deverá rever as ações judiciais em curso, tomando as medidas necessárias para desistência e arquivamento de eventuais ações.<br><br>§ 4º Na hipótese de não ocorrer o implemento da totalidade das exigências previstas na Medida Provisória mencionada no &quot;caput&quot; deste artigo, o Executivo poderá, como alternativa, outorgar aos ocupantes, concessão de direito real de uso para fins de moradia, atendidas às normas da legislação federal quanto às condições de uso do bem.<br><br>§ 5º O possuidor pode, para o fim de contagem do prazo de ocupação exigido para a concessão de uso especial, na forma individual ou coletiva, acrescentar sua posse a de seu antecessor, contanto que sejam contínuas.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Fica o Executivo autorizado a realizar a Demarcação Urbanística e a Legitimação de Posse, prevista na Lei Federal nº 11.977, de 07 de junho de 2009, nas áreas indicadas no Anexo III, desta Lei.<br><br>§ 1º Para os fins do disposto no &quot;caput&quot; deste artigo, as áreas indicadas no Anexo III só poderão sofrer Demarcação Urbanística após terem seus Projetos de Regularização Fundiária específicos concluídos e aprovados segundo os termos do artigo 53, da Lei Federal nº 11.977, de 07 de junho de 2009.<br><br>§ 2º O Projeto de Regularização Fundiária Especifico das áreas propostas à Demarcação Urbanística deverão conter no mínimo os seguintes elementos:<br><br>I - as áreas ou lotes a serem regularizados e, se houver necessidade, as edificações que serão relocadas;<br><br>II - as vias de circulação existentes ou projetadas e, se possível, as outras áreas destinadas a uso público;<br><br>III - as medidas necessárias para a promoção da sustentabilidade urbanista, social e ambiental da área ocupada, incluindo as compensações urbanísticas e ambiental prevista em lei;<br><br>IV - as condições para promover a segurança da população em situações de risco; e<br><br>V - as medidas prevista para adequação da infraestrutura básica.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> Fica o Executivo autorizado a admitir a Regularização Fundiária dos Assentamentos Consolidados em Áreas de Preservação Permanente - APP`s, nos termos dos parágrafos § 1º e § 2º, do art. 54, da Lei Federal nº 11.977/09, desde que atendam ao interesse social.<br><br>§ 1º Para os fins do disposto no &quot;caput&quot; deste artigo, será expedido Decreto específico com a identificação e caracterização da área objeto de Regularização Fundiária.<br><br>§ 2º As Áreas de Preservação Permanente - APP`s só poderão sofrer Regularização Fundiária após aprovação de estudo Técnico comprobatório de que a intervenção implica a melhoria das condições ambientais em relação à situação de ocupação irregular anterior.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> A Secretaria Municipal de Habitação poderá definir, nas áreas de que trata esta Lei as parcelas de terreno ou lotes necessários à construção de habitações de interesse social destinadas ao parcelamento das famílias removidas que aderirem a Programas de Intervenção Urbana.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10</span></a> Fica o executivo autorizado a doar as parcelas de áreas de que trata esta Lei as parcelas a outro órgão ou entidade da Administração Pública, direta ou indireta, de qualquer esfera de governo, quando as construções forem por ele executadas mediante convênio, devendo constar da escritura de doação os encargos do donatário, o prazo para seu cumprimento, a cláusula de reversão e eventual indenização.<br><br>Parágrafo Único - Na hipótese de que trata este artigo, fica o Executivo autorizado, por si ou pelo ente convenente, a alienar ao beneficiário do Programa a unidade habitacional para se ressarcir dos custos da construção, excluído o valor do terreno.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11</span></a> As despesas decorrentes da execução desta Lei correrão por conta das dotações orçamentárias próprias, suplementadas, se necessário.<br><br><a name="artigo_12"><span class="label label-pill label-danger">Art. 12</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 16 de dezembro de 2011.<br><br>TARCÍZIO SUZART PIMENTA JÚNIOR<br>Prefeito Municipal<br><br>MILTON PEREIRA DE BRITTO<br>Chefe de Gabinete do Prefeito<br><br>CARLOS ANTÔNIO DE MORAES LUCENA<br>Procurador Geral do Município<br><br>JOSÉ FERREIRA PINHEIRO<br>Sec. Municipal de Desenvolvimento Urbano<br><br>GILBERTO RUY SOUZA ROCHA<br>Sec. Municipal de Habitação e Regularização Fundiária<br><br>DATA DE PUBLICAÇÃO: 23/12/2011<br>PREFEITO: Tarcízio Suzart Pimenta Júnior.<br>Presidente: Antônio Francisco Neto<br>Autor: Poder Executivo<br>Assunto: Habitação<br><br><i class="icon-warning-sign"></i> Os anexos encontram-se disponíveis, ainda, no Paço Municipal<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

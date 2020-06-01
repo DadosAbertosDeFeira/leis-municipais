@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3383, DE 06 DE JUNHO DE 2013.</h2><br>DISPÕE SOBRE A CRIAÇÃO DO SISTEMA MUNICIPAL DE CULTURA E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, no uso de suas atribuições, Faço saber que a Câmara Municipal de Feira de Santana, Estado da Bahia, através do Projeto de Lei Nº 60/2013, de autoria do Poder Executivo, aprovou e eu sanciono a seguinte lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica instituído o Sistema Municipal de Cultura, com a finalidade de estimular o desenvolvimento municipal com pleno exercício dos direitos culturais, promovendo a economia da cultura e o aprimoramento artístico-cultural em Feira de Santana.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O Sistema Municipal de Cultura observará os seguintes princípios:<br><br>I - Reconhecimento e valorização da diversidade cultural do município;<br><br>II - Cooperação entre os agentes públicos e privados atuantes na área da cultura;<br><br>III - Interatividade dos agentes culturais;<br><br>IV - Cultura como política pública transversal e qualificadora do desenvolvimento;<br><br>V - Democratização dos processos decisórios e do acesso ao fomento, aos bens e serviços culturais;<br><br>VI - Integração e interação das políticas, programas, projetos e ações desenvolvidas;<br><br>VII - Cultura como direito e valor simbólico, econômico e de cidadania;<br><br>VIII - Liberdade de criação e expressão como elementos indissociáveis do desenvolvimento cultural;<br><br>IX - Territorialização, descentralização e participação como estratégias de gestão.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> O Sistema Municipal de Cultura é constituído pelos seguintes entes orgânicos:<br><br>I - Conselho Municipal de Política Cultural;<br><br>II - Secretaria Municipal de Cultura, Esporte e Lazer;<br><br>III - Fundação Cultural Municipal Egberto Tavares Costa e demais órgãos de co-gestão a ela ligados.<br><br>§ 1º O Sistema Municipal de Cultura contará com os seguintes instrumentos de suporte institucional: Cultura;<br><br>I - Plano Municipal de Cultura;<br><br>II - Mecanismos Permanentes de Consulta - Fórum Municipal de Cultura e Conferência Municipal de<br><br>III - Fundo Municipal de Cultura;<br><br>IV - Sistema de Informações e Indicadores Culturais;<br><br>V - Programas de Capacitação e Formação na área cultural;<br><br>VI - Demais programas incorporados existentes no município.<br><br>§ 2º O Sistema Municipal de Cultural buscará atuar de forma integrada e convergente aos Sistemas Estadual e Nacional de Cultura, potencializando, através destes, o alinhamento das políticas culturais e o provimento de meios para o desenvolvimento do município através da cultura.<br><br>§ 3º Poderão integrar o Sistema Municipal de Cultura organismos privados, com ou sem fins lucrativos, com comprovada atuação na área cultural e que venham a celebrar termo de adesão específico.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> O Conselho Municipal de Política Cultural, órgão colegiado de caráter opinativo, consultivo e fiscalizador, vinculado ao órgão de cultura do município, com participação paritária do poder público e da sociedade civil, que colabora na elaboração e fiscalização da política cultural do município, tem as seguintes finalidades:<br><br>I - Formular políticas e diretrizes para o Plano Municipal de Cultura;<br><br>II - Apreciar, aprovar e acompanhar a execução do Plano Municipal de Cultura;<br><br>III - Garantir a cidadania cultural como direito de acesso e fruição dos bens culturais, de produção cultural e de preservação das memórias histórica, social, política, artística, paisagística e ambiental, encorajando a distribuição das atividades de produção, construção e propagação culturais no município;<br><br>IV - Defender o patrimônio cultural e artístico do Município e incentivar sua difusão e proteção;<br><br>V - Colaborar na articulação das ações entre organismos públicos e privados da área da cultura;<br><br>VI - Criar mecanismos de comunicação permanente com a comunidade, cumprindo seu papel articulador e mediador entre a sociedade civil e o poder público no campo cultural.<br><br>VII - Formular diretrizes para financiamento de projetos culturais apoiados pelo Fundo Municipal de Cultura;<br><br>VIII - Supervisionar, acompanhar e fiscalizar as ações do Fundo Municipal de Cultura;<br><br>IX - Promover e incentivar a realização de estudos e pesquisas na área cultural.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> A Fundação Cultural Municipal Egberto Tavares Costa - (FCMETC), vinculada à Secretaria Municipal de Cultura, Esporte e Lazer, unidade integrante da administração municipal, objeto da Lei Nº <a class="link_law" data-id="1543762" data-original-title=" Data da Norma: 05.07.2005 - DISPÕE SOBRE A CRIAÇÃO DA FUNDAÇÃO CULTURAL MUNICIPAL EGBERTO TAVARES COSTA." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2005/259/2592/lei-ordinaria-n-2592-2005-dispoe-sobre-a-criacao-da-fundacao-cultural-municipal-egberto-tavares-costa" rel="tooltip">2592</a>/05 de 08/07/2005, é responsável por planejar e executar políticas públicas para promover a criação, produção, formação, circulação, difusão, preservação da memória cultural, e zelar pelo patrimônio artístico, histórico e cultural do município.<br><br>Parágrafo Único - A FCMETC será responsável ainda, através do seu Departamento de Atividades Culturais, por dinamizar e potencializar as diversas manifestações artístico-culturais, programas e projetos já desenvolvidos, e outros a serem implementados, promovendo também a diminuição da exclusão sócio-cultural, com formação e qualificação através de Oficinas Artísticas e de Inclusão Digital, facilitando o acesso aos meios de produção e difusão das diversas áreas da cultura, disponibilizando os seus espaços físicos, inclusive com pautas gratuitas quando se tratar exclusivamente de atividades culturais sem finalidade lucrativa.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> É de exclusiva responsabilidade da FCMETC a manutenção e administração de todos os órgãos de co-gestão artístico-cultural a ela ligados.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> As atividades e ações de alcance cultural, inerentes a cada organismo integrante do Sistema Municipal de Cultura, deverão ser orientadas e estar compatibilizadas e consubstanciadas no Plano Municipal de Cultura, principal instrumento de gestão da execução de políticas, programas e projetos culturais.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> O Plano Municipal de Cultura, enquanto instrumento de planejamento da ação cultural no âmbito do município, deverá, no prazo de até 120 (cento e vinte) dias, a contar da data de publicação desta Lei, ser elaborado e/ou ajustado pelo órgão oficial de cultura, com participação das diversas instâncias de consulta.<br><br>Parágrafo único - O Plano Municipal de Cultura será aprovado pelo Conselho Municipal de Política Cultural e submetido à homologação do executivo municipal, através de decreto específico.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> Fica instituído o Fundo Municipal de Cultura - FMC, com o objetivo de promover a economia da cultura e fomentar a criação, produção, formação, circulação e memória artístico-cultural, custeando total ou parcialmente projetos e atividades culturais de iniciativa de pessoas físicas ou jurídicas de direito público ou privado.<br><br>§ 1º O FMC é vinculado à Secretaria Municipal da Cultura, Esporte e Lazer e à FCMETC, competindo-lhes prover os meios necessários à sua operacionalização.<br><br>§ 2º O gestor e ordenador de despesas do FMC será o titular da Secretaria de Cultura esporte e Lazer, nomeado pelo Prefeito.<br><br>§ 3º A fiscalização da aplicação dos recursos do FMC será exercida pelo Conselho Municipal de Política Cultural e demais órgãos de controle.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10</span></a> Constituem-se receitas do Fundo Municipal de Cultura:<br><br>I - transferências à conta do orçamento geral do município;<br><br>II - transferências realizadas pelo Estado e pela União;<br><br>III - receitas diretamente arrecadadas pelas unidades integrantes do Sistema Municipal de Cultura;<br><br>IV - contribuições de mantenedores, na forma de regulamento específico;<br><br>V - auxílios, subvenções e outras contribuições de entidades públicas ou privadas, nacionais ou internacionais;<br><br>VI - doações e legados;<br><br>VII - saldos remanescentes de projetos e atividades apoiados, bem como devolução de recursos por utilização indevida;<br><br>VIII - saldos financeiros de exercícios anteriores, no caso de empenho;<br><br>IX - outros recursos a ele destinados na forma da lei.<br><br>Parágrafo Único - O Chefe do Poder Executivo fixará o montante dos recursos orçamentários destinado ao FMC em cada exercício.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11</span></a> O Regulamento do FMC aprovado pelo Chefe do Poder Executivo definirá:<br><br>I - as áreas de enquadramento dos projetos e atividades que poderão ser custeados pelo FMC;<br><br>II - os limites de financiamento;<br><br>III - os meios e critérios de acesso e seleção de projetos e atividades;<br><br>IV - as formas de prestação de contas.<br><br><a name="artigo_12"><span class="label label-pill label-danger">Art. 12</span></a> Caberão às unidades integrantes do Sistema Municipal de Cultura, ou órgãos de co-gestão (entes orgânicos), prover os meios necessários ao desenvolvimento de programas de capacitação de profissionais, através de cursos, palestras, debates e atividades similares.<br><br><a name="artigo_13"><span class="label label-pill label-danger">Art. 13</span></a> O Poder Executivo Municipal regulamentará esta Lei no prazo de 90 (noventa) dias de sua publicação, promovendo, no orçamento vigente, as alterações que se fizerem necessárias.<br><br><a name="artigo_14"><span class="label label-pill label-danger">Art. 14</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas disposições em contrário.<br><br>Gabinete do Prefeito, 06 de junho de 2013<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO MUNICIPAL<br><br>MARIO COSTA BORGES<br>CHEFE DE GABINETE DO PREFEITO<br><br>CARLOS ANTÔNIO DE MORAES LUCENA<br>PROCURADOR GERAL DO MUNICÍPIO<br><br>JAILTON BATISTA DOS SANTOS<br>SECRETÁRIO MUNICIPAL DE CULTURA, ESPORTE E LAZER<br><br>ANTONIO CARLOS DALTRO COELHO<br>DIRETOR PRESIDENTE DA DIRETORIA EXECUTIVA DA FUNDAÇÃO CULTURAL MUNICIPAL EGBERTO TAVARES COSTA<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

@@ -4,6 +4,14 @@ use failure::Fail;
 pub enum Error {
     #[fail(display = "{} não encontrado no arquivo {}", _0, _1)]
     PatternNotFound(String, String),
+    #[fail(display = "async error")]
+    Async(#[cause] std::io::Error),
+}
+
+impl From<std::io::Error> for Error {
+    fn from(inner: std::io::Error) -> Self {
+        Error::Async(inner)
+    }
 }
 
 pub trait CapturedOkOrUnexpected<T> {

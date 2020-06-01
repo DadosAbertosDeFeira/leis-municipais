@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3746, DE 06 DE OUTUBRO DE 2017</h2><br>&quot;Autoriza firmar Convênio de Cooperação entre Entes Federados, celebrado entre o Município de Feira de Santana e o Estado da Bahia, autorizando a gestão associada de serviços públicos de abastecimento de água e de esgotamento sanitário e dá outras providências.&quot;<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O Prefeito Municipal de Feira de Santana, Estado da Bahia, no uso de suas atribuições, FAÇO saber que a Câmara Municipal, através do Projeto de LEI Nº 174/2017, de autoria do Executivo, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica autorizado firmar o Convênio de Cooperação entre Entes Federados, celebrado entre o Município de Feira de Santana e o Estado da Bahia, Anexo Único desta Lei, especialmente para:<br><br>I - autorizar a gestão associada de serviços públicos de abastecimento de água e esgotamento sanitário;<br><br>II - no âmbito da gestão associada, delegar o exercício das competências de regulação e fiscalização dos serviços públicos de abastecimento de água e de esgotamento sanitário à Agência Reguladora de Saneamento Básico do Estado da Bahia - AGERSA, órgão autônomo vinculado à Secretaria de Infraestrutura Hídrica e Saneamento - SIHS do Estado da Bahia e a Agência Reguladora de Feira de Santana/BA - ARFES, no âmbito de sua competência; e<br><br>III - no âmbito da gestão associada, delegar a prestação dos serviços públicos de abastecimento de água e de esgotamento sanitário mediante o cumprimento das condições de validade dos contratos previstas no art. 11, caput e incisos, da Lei Federal nº 11.445, de 5 de janeiro de 2007, que estabelece a existência de plano de saneamento básico editado pelo Titular, a existência de estudo comprovando a viabilidade técnica e econômicofinanceira da prestação universal e integral dos serviços na área de atendimento contratual, a existência de normas de regulação e fiscalização e a realização de audiência e consulta pública a respeito da minuta do contrato de programa, bem como mediante as tratativas dos termos do futuro contrato de programa a ser celebrado entre o Município de Feira de Santana e a Empresa Baiana de Águas e Saneamento S/A.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Esta lei entra em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito, 06 de outubro de 2017.<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO MUNICIPAL<br><br>MARIO COSTA BORGES<br>CHEFE DE GABINETE DO PREFEITO<br><br>CLEUDSON SANTOS ALMEIDA<br>PROCURADOR GERAL DO MUNICÍPIO<br><br>JOÃO MARINHO GOMES JÚNIOR<br>SECRETÁRIO MUNICIPAL ADMINISTRAÇÃO<br><br>EXPEDITO CAMPODÔNIO ELOY<br>SECRETÁRIO MUNICIPAL DA FAZENDA<br><br>PUBLICADO NO DIÁRIO OFICIAL ELETRÔNICO DIA 10 DE OUTUBRO DE 2017.<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

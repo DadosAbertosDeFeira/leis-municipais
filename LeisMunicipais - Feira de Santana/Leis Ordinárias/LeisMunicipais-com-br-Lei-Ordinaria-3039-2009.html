@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3039/2009</h2><br>DISPÕE SOBRE AS EXIGÊNCIAS DE INSTRUMENTOS DE SEGURANÇA E COMBATE A INCÊNDIO E PÂNICO EM EDIFICAÇÕES NESTE MUNICÍPIO, E DA OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Autor: José de Arimatéia Coriolano de Paiva<br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do projeto de Lei nº 257/2009, de autoria do Edil José de Arimatéia Coriolano de Paiva, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Esta Lei tem por finalidade determinar as exigências de Instrumentos de Segurança e combate a incêndio, explosão e pânico em edificações no Município de Feira de Santana.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Constitui instrumentos de Segurança e combate, o conjunto de equipamentos ou instalações a serem dispostos nas edificações, necessários para evitar o surgimento de incêndio e pânico, limitar sua propagação, possibilitar a extinção, bem como propiciar a proteção á vida, ao meio ambiente e ao patrimônio.<br><br>§ 1º O projeto de incêndio e pânico deverá acompanhar o processo de licença para construção, devidamente assinado por responsável técnico credenciado e aprovado por órgão ou entidade que tenha competência para tal, como o Corpo de Bombeiros da Policia Militar.<br><br>§ 2º Em caso de pequenas edificações, as exigências podem ser dispensadas de acordo com parecer técnico exarado pelo Departamento de Uso e Ocupação do Solo do Município.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Esta lei aplica-se a todas as edificações existências e a construir, localizadas no território municipal, sejam públicas ou particulares, de uso coletivo ou universal.<br><br>Parágrafo Único - Nas edificações existentes no Município, será exigido projeto de incêndio e pânico, caso a reforma a ser realizada ultrapasse área superior a 35%. Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>PREFEITURA MUNICIPAL DE FEIRA DE SANTANA, em 21 de Outubro de 2009.<br><br>DR.TARCÍZIO SUZART PIMENTA JÚNIOR<br>Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

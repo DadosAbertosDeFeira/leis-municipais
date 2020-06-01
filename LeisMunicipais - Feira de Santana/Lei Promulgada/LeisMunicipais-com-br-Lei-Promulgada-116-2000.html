@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI PROMULGADA Nº 116/2000</h2><br>DISPÕE SOBRE O SERVIÇO FUNERARIO NO MUNICIPIO DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDENCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PRESIDENTE DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, ATRAVÉS DO PROJETO DE LEI Nº 121/99, DE AUTORIA DO EDIL ROBERTO LUIZ DA SILVA TOURINHO, E NA CONFORMIDADE DO § 7º DO ART. 77, DA LEI Nº  <a class="link_law" data-id="1739637" data-original-title=" Data da Norma: 05.04.1990 - DISPÕE SOBRE A LEI ORGÂNICA DO MUNICIPIO DE FEIRA DE SANTANA E DA OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-promulgada/1990/3/37/lei-promulgada-n-37-1990-dispoe-sobre-a-lei-organica-do-municipio-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">37</a>, DE 05 DE ABRIL DE 1990, DECRETA E PROMULGA A SEGUINTE LEI:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Os serviços funerários de Feira de Santana, são considerados de caráter essencial, podendo ser delegados a iniciativa privada e reger-se ao pôr esta lei, decretos, portarias, normas e demais atos emanados do Poder competente.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> A atividade funerária compreende todo ato relacionado com a prestação de serviço funerários, homenagem póstumas, comercialização de planos funerários, translados, embalsamentos (tanatopraxia) providencias administrativas para o registro de óbito.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Fica estabelecido a legislação da fiscalização, aos estabelecimentos funerários existentes em Feira de Santana, através dos órgão municipais competentes, em parceria com a ABREDIF (Associação Brasileira de Empresas e Diretores Funerários), a orientar sobre o funcionamento e normas a serem cumpridas.<br><br>Parágrafo Único - Devem ser também atribuições dos referidos órgãos municipais:<br><br>I - zelar e fiscalizar pelo cumprimento da legislação que regulamenta a matéria;<br><br>II - receber denuncias relativas à prestação de serviços funerários irregulares do Município;<br><br>III - reconhecer a importância para a disciplina do setor do CEARF (código de Ética e Auto-regulamentação do Setor Funerário), que é a nível nacional.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> A concessão de alvará de funcionamento a estabelecimento de serviço funerário, será fornecido de acordo com a demanda, segundo a relação proporcional (empresa/nº de habitantes) cuja média nacional, é de uma empresa para cada cinqüenta mil habitantes, e deverá ser obedecido critérios para instalação no município de Feira de Santana.<br><br>§ 1º É vetada a concessão de alvará ou a sua renovação para instalação de estabelecimento funerário, em áreas estritamente residenciais, e a uma distancia mínima de 300m (trezentos metros), de estabelecimentos hospitalares, casas de saúde e similares, instituto médico legal e delegacias de policia, na área do Município de Feira de Santana.<br><br>§ 2º O não atendimento ao disposto neste Artigo, nulo de pleno direito.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> É delegado a Secretaria de Saúde do Município a criação do S.V.O. (Serviço de Verificação de Óbitos), para atestar óbitos pôr causas naturais, sem acompanhamento médio, ocorrido em residências particulares, dado entrada em hospitais, casas de saúde ou similares e casos outros que não são da competência do I.M.L. (instituto Médico Legal).<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> É vetado o transporte de cadáver no município de Feira de Santana, através de veículos de uso particular ou ambulância de saúde exceto em casos de tragédia.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> O translado de cadáver para sepultamento dentro do Município de Feira de Santana, só será permitido em carros funerários, devidamente adaptados e identificados mediante cor, nome do estabelecimento e telefone.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> É vetado aos estabelecimentos funerários exibir urnas e artigos funerários em local visível ao público no estabelecimento, sendo recomendado uma ante-sala ou sala de recepção.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> Os estabelecimentos que se encontrarem em funcionamento antes da entrada em vigor desta Lei, terão o prazo máximo de doze meses para regularizarem a sua situação, enquadrado-se nas condições de funcionamento desta, sob pena de cassação imediata do alvará.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10</span></a> Fica expressamente proibida, no município de Feira de Santana, a presença de pessoas nas dependências do estabelecimentos públicos e privados de saúde e das unidades médicos-legais, com fins de agenciamento ou venda de produtos ou serviços de agências funerárias.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11</span></a> Qualquer pessoa que seja flagrada em desrespeito à norma do Artigo anterior, deverá ser denunciada, pelo servidor público competente ou por qualquer cidadão que tenha conhecimento da infração, junto ao Ministério Público, pelas práticas de prevaricação funcional.<br><br>Parágrafo Único - As penalidades atribuídas ao infrator deverão alcançar a agência funerária responsável, na pessoa do seu representante legal, a fim de coibir a pratica abusiva destes atos de improbilidade administrativa.<br><br><a name="artigo_12"><span class="label label-pill label-danger">Art. 12</span></a> A apuração da infração, prevista nesta lei, deverá ser feita mediante processo administrativo regular, com amplo direito de defesa dos envolvidos, devendo ao final ser tomadas às medidas administrativas cabíveis, e enviadas copias ao Ministério Públicos para adoção da aplicação das penalidades previstas em lei.<br><br><a name="artigo_13"><span class="label label-pill label-danger">Art. 13</span></a> É vetada qualquer autorização, acordo ou convênio entre estabelecimentos públicos de saúde ou unidade médico-legais e estabelecimentos prestadores de serviços funerários, no âmbito deste Município.<br><br><a name="artigo_14"><span class="label label-pill label-danger">Art. 14</span></a> O estabelecimento público de saúde, em que se verificar óbito de paciente, comunicará imediatamente o ocorrido aos respectivos familiares, observadas as disposições desta lei.<br><br>Parágrafo Único - Constatada a morte de paciente, interado ou removido para o estabelecimento de saúde, compete exclusivamente ao estabelecimento a responsabilidade pelo cadáver, até sejam ultimadas todas as providencias necessárias à liberação do corpo aos familiares.<br><br><a name="artigo_15"><span class="label label-pill label-danger">Art. 15</span></a> A comunicação de que trata artigo anterior se fará através das assistentes sociais e, no caso da falta destas, através de serviços específicos, regulamentado pela Secretaria de Saúde do Município, que funcionará nas dependências dos estabelecimentos de saúde, diurna e ininterruptamente.<br><br><a name="artigo_16"><span class="label label-pill label-danger">Art. 16</span></a> Somente com a presença dos familiares no estabelecimento publico de saúde dera entregue, pessoalmente, formulário de declaração de óbito e liberado o cadáver para translado por funerário contratada pela família.<br><br><a name="artigo_17"><span class="label label-pill label-danger">Art. 17</span></a> No caso de falecimento de indigente e pessoas e pessoas outras cujos familiares ou responsáveis não atendam a comunicação prevista no Artigo 14, a remoção ficará a cargo da Secretaria de Ação Social do Município.<br><br><a name="artigo_18"><span class="label label-pill label-danger">Art. 18</span></a> É vetada a comunicação do óbito à família por intermédio do servidor do estabelecimento de saúde público que não integre o serviço previsto nesta Lei.<br><br>Parágrafo Único - Exclui-se do disposto neste Artigo, o médico que esteja assistindo o paciente no momento do óbito, estando os familiares do falecido presentes na unidade de saúde, e a comunicação se dê de forma direta e pessoal.<br><br><a name="artigo_19"><span class="label label-pill label-danger">Art. 19</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>CÂMARA MUNICIPAL DE FEIRA DE SANTANA, EM 07 DE NOVEMBRO DE 2000.<br><br>Ver. EVERTON PEREIRA CERQUEIRA<br>PRESIDENTE<br><br>Autor: Roberto Luis da Silva Tourinho<br>DATA DE PUBLICAÇÃO: 07/11/2000<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

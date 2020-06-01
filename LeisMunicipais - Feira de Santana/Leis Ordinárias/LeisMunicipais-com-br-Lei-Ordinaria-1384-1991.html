@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 1384, de 03 de abril de 1991</h2><br>DENOMINA E CRIA A ESTRUTURA ADMINISTRATIVA DO HOSPITAL INÁCIA PINTO DOS SANTOS, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, FAÇO saber que a Câmara Municipal decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica denominado HOSPITAL INÁCIA PINTO DOS SANTOS, o órgão da Secretaria de Saúde do Município, situado nesta cidade, à Rua da Barra s/nº, bairro Jardim Cruzeiro.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Fica criada a estrutura administrativa do Hospital Inácia Pinto dos Santos, constituída dos seguintes cargos:<br><br>I - Diretor Geral, DA-1;<br><br>II - Diretor Médico, DA-2;<br><br>III - Diretor Administrativo, DA-2;<br><br>IV - Chefe da Coordenação de Nutrição, DA-3;<br><br>V - Chefe da Coordenação de Enfermagem, DA-3;<br><br>VI - Chefe da Coordenação do Serviço Social, DA-4;<br><br>VII - Chefe da Coordenação de Contas Médicas, DA-4;<br><br>VIII - Chefe da Coordenação de Almoxarifado, DA-4;<br><br>IX - Chefe da Coordenação de Pessoal e Recursos Humanos, DA-4.<br><br>§ 1º Caberá ao diretor geral dirigir e coordenar os serviços prestados pelo Hospital Inácia Pinto dos Santos, sendo responsável por todas as ações decorrentes do funcionamento desta Unidade Hospitalar.<br><br>§ 2º Caberá ao diretor médico substituir o Diretor Geral nos seus impedimentos e coordenar as ações do setor de saúde da Unidade Hospitalar.<br><br>§ 3º Caberá ao Diretor Administrativo coordenar o funcionamento da parte administrativa do Hospital Inácia Pinto dos Santos.<br><br>§ 4º Caberá ao chefe da coordenação de nutrição coordenar as ações de nutrição e dietética dos pacientes e funcionários.<br><br>§ 5º Caberá ao chefe da coordenação de enfermagem coordenar os serviços auxiliares de enfermagem e atividades no centro cirúrgico nas enfermarias, berçários e salas de parto.<br><br>§ 6º Caberá ao chefe da coordenação de serviço social coordenar as ações específicas de assistência social.<br><br>§ 7º Caberá ao chefe da coordenação de contas médicas coordenar o movimento de internação, entrada e saída de pacientes e os seus respectivos custos.<br><br>§ 8º Caberá ao chefe da coordenação de almoxarifado receber e controlar os medicamentos, gêneros alimentícios e material de manutenção.<br><br>§ 9º Caberá ao chefe da coordenação de pessoal e recursos humanos controlar a vida funcional, escala de férias, treinamento e reciclagem dos funcionários.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> As despesas decorrentes da aplicação desta Lei correrão por conta do art. 43, da Lei nº 4.320, de 17 de março de 1964.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Fica o Poder Executivo autorizado a regulamentar a presente Lei, no prazo de 60 (sessenta) dias.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Prefeitura Municipal de Feira de Santana, em 03 de abril de 1991.<br><br>DR. COLBERT MARTINS DA SILVA<br>Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

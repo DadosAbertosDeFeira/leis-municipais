@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 2711/2006</h2><br>ALTERA A ESTRUTURA ORGANIZACIONA DA FUNDAÇÃO HOSPITALAR DE FEIRA DE SANTANA, VINCULADA À SECRETARIA MUNICIPAL DE SAÚDE E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Autor: Poder Executivo.<br><br>O Prefeito Municipal de Feira de Santana, Estado da Bahia, no uso de suas atribuições, FAÇO saber que a Câmara Municipal decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> A Fundação Hospitalar de Feira de Santana, entidade da Administração Descentralizada, vinculada à Secretaria Municipal de Saúde, integrante do Poder Executivo Municipal, criada pela Lei Municipal nº  <a class="link_law" data-id="1618201" data-original-title=" Data da Norma: 14.04.1993 - INSTITUI A FUNDAÇÃO HOSPITALAR DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1993/164/1641/lei-ordinaria-n-1641-1993-institui-a-fundacao-hospitalar-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">1.641</a>, de 08 de junho de 1993; regulamentada pelo Decreto Municipal nº  <a class="link_law" data-id="" data-original-title=" Data da Norma: .. - " data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/decreto/2003/555/5556/decreto-n-5556-2003-este-ato-ainda-nao-esta-disponivel-no-sistema" rel="tooltip">5.556</a>, de 09 de junho de 2003, cuja estrutura organizacional foi definida pela Lei Municipal nº  <a class="link_law" data-id="1618357" data-original-title=" Data da Norma: 08.05.1995 - MODIFICA A ESTRUTURA ORGANIZACIONAL DA PREFEITURA MUNICIPAL DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1995/180/1802/lei-ordinaria-n-1802-1995-modifica-a-estrutura-organizacional-da-prefeitura-municipal-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">1.802</a>, de 30 de junho de 1995, e pelos Decretos Municipais nº  <a class="link_law" data-id="" data-original-title=" Data da Norma: .. - " data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/decreto/2005/691/6913/decreto-n-6913-2005-este-ato-ainda-nao-esta-disponivel-no-sistema" rel="tooltip">6.913</a>, de 31 de Janeiro de 2005 e nº 7.176; de 31 de agosto de 2006, organizar - se - á administrativamente de acordo com o que definido nesta Lei.<br><br>Parágrafo Único - A Fundação Hospitalar de Feira de Santana é entidade da Administração Descentralizada, constituída como Fundação Pública, vinculada à Secretaria Municipal de Saúde.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> A estrutura da Fundação Hospitalar de Feira de Santana será a seguinte:<br><br>I - Conselho de Administração;<br><br>II - Conselho Fiscal;<br><br>III - Diretoria Executiva.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> O Conselho de Administração da Fundação Hospitalar de Feira de Santana terá a seguinte composição:<br><br>I - O Secretário Municipal de Saúde, Presidente;<br><br>II - O Diretor Presidente da Diretoria Executiva da FHFS, Secretário.<br><br>III - Um representante da ABM - Associação Baiana de Medicina, secção de Feira de Santana;<br><br>IV - Um representante do servidores da FHFS exercestes de cargos do grupo ocupacional 04;<br><br>V - Um representante do Conselho Municipal de Saúde;<br><br>VI - Um representante dos servidores da FHFS; exercestes de cargos do grupo ocupacional 03;<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> O Conselho Fiscal da Fundação Hospitalar de Feira de Santana terá a seguinte composição:<br><br>I - Um representante da Secretaria Municipal da Fazenda;<br><br>II - Um representante da Procuradoria Geral do Município;<br><br>III - Um representante da Controladoria Geral do Município;<br><br>IV - Um representante da ABM - Associação Baiana de Medicina, secção de Feira de Santana;<br><br>V - Um representante do CRC - Conselho Regional de Contabilidade, secção de Feira de Santana;<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> A Diretoria Executiva da Fundação Hospitalar de Feira de Santana será composto do Diretor Presidente, dos Diretores de seus Diversos Departamentos e dos Chefes de suas Diversas Divisões, na forma descrita no artigo seguinte.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> A Fundação Hospitalar de Feira de Santana terá as seguintes Unidades:<br><br>I - Presidência;<br><br>II - Departamento Administrativo e Financeiro;<br><br>III - Centro Médico de Diagnóstico por Imagem Dr. Eugênio Bastos Laurine;<br><br>IV - Centro Municipal de Prevenção ao Câncer Romilda Maltez;<br><br>V - Complexo Materno Infantil da Fundação Hospitalar de Feira de Santana:<br><br>a) Hospital Inácia Pinto dos Santos (Hospital da Mulher);<br>b) Hospital Dr. José Eduacy Lins (Hospital da Criança);<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> O quadro de cargos de provimento temporário, de livre nomeação e exoneração pelo Chefe do Executivo, de Nível Especial e de Direção e Assessoramento, correspondente à estrutura organizacional da Fundação Hospitalar de Feira de Santana é a seguinte:<br><br>I - Presidente da Diretoria Executiva Símbolo DAS;<br><br>II - Oficial de Gabinete da Presidência Símbolo DA - 3;<br><br>III - Diretor do Departamento Administrativo Financeiro Símbolo DA - 1;<br><br>IV - Chefe da Divisão Administrativa Símbolo DA - 2;<br><br>V - Chefe da Divisão de Financeira Símbolo DA - 2;<br><br>VI - Diretor do Departamento Administração do CMDI Símbolo DA - 1;<br><br>VII - Chefe da Divisão Administrativa do CMDI Símbolo DA - 2;<br><br>VIII - Chefe da Divisão de Serviços Médicos do CMDI Símbolo DA - 2;<br><br>IX - Diretor do Departamento Administrativo do CMPC Símbolo DA - 1;<br><br>X - Chefe da Divisão Administrativa do CMPC Símbolo DA - 2;<br><br>XI - Chefe da Divisão de Serviços Médicos do CMPC Símbolo DA - 2;<br><br>XII - Diretor do Complexo Materno Infantil da Fundação Símbolo DAE; Hospitalar de Feira de Santana<br><br>XIII - Diretor do Departamento de Administração do Hospital Símbolo DA - <a class="link_law" data-id="222126" data-original-title=" Data da Norma: 11.11.1994 - DISPÕE SOBRE O ESTATUTO, PREVIDÊNCIA E SISTEMA DE CARREIRA DOS SERVIDORES DO MUNICÍPIO DE FEIRA DE SANTANA E DE SUAS AUTARQUIAS E FUNDAÇÕES." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-complementar/1994/0/1/lei-complementar-n-1-1994-dispoe-sobre-o-estatuto-previdencia-e-sistema-de-carreira-dos-servidores-do-municipio-de-feira-de-santana-e-de-suas-autarquias-e-fundacoes" rel="tooltip">1</a>; Inácia Pinto dos Santos (Hospital da Mulher)<br><br>XIV - Chefe da Divisão de Administração do HIPS Símbolo DA - 2;<br><br>XV - Chefe da Divisão de Serviços Médicos do HIPS Símbolo DA - 2;<br><br>XVI - Diretor do Departamento de Administração do Hospital Símbolo DA - <a class="link_law" data-id="222126" data-original-title=" Data da Norma: 11.11.1994 - DISPÕE SOBRE O ESTATUTO, PREVIDÊNCIA E SISTEMA DE CARREIRA DOS SERVIDORES DO MUNICÍPIO DE FEIRA DE SANTANA E DE SUAS AUTARQUIAS E FUNDAÇÕES." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-complementar/1994/0/1/lei-complementar-n-1-1994-dispoe-sobre-o-estatuto-previdencia-e-sistema-de-carreira-dos-servidores-do-municipio-de-feira-de-santana-e-de-suas-autarquias-e-fundacoes" rel="tooltip">1</a>; Dr. José Eduacy Lins (Hospital da Criança)<br><br>XVII - Chefe da Divisão de Administrativa do HJEL Símbolo DA - 2;<br><br>XVIII - Chefe da Divisão de Serviços Médicos do HJEL Símbolo DA - 2;<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> Fica autorizado o Poder Executivo a praticar todos os atos necessários à regulamentação desta Lei, editando o Regimento Interno da Fundação Hospitalar de Feira de Santana, inclusive estabelecendo as funções que complementarão a estrutura ora estabelecida, consoante o disposto na Lei Complementar Municipal nº <a class="link_law" data-id="222126" data-original-title=" Data da Norma: 11.11.1994 - DISPÕE SOBRE O ESTATUTO, PREVIDÊNCIA E SISTEMA DE CARREIRA DOS SERVIDORES DO MUNICÍPIO DE FEIRA DE SANTANA E DE SUAS AUTARQUIAS E FUNDAÇÕES." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-complementar/1994/0/1/lei-complementar-n-1-1994-dispoe-sobre-o-estatuto-previdencia-e-sistema-de-carreira-dos-servidores-do-municipio-de-feira-de-santana-e-de-suas-autarquias-e-fundacoes" rel="tooltip">01</a>/94.<br><br>Parágrafo Único - O Poder Executivo poderá editar os atos necessários às alterações da Lei Orçamentária decorrentes da aplicação desta Lei.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> Fica o Chefe do Executivo autorizado a criar, em cada unidade de saúde que se incorporar à FHFS, um Departamento de Administração da mesma, com as Divisões Administrativas e de Serviços Médicos, a cujos titulares serão atribuídos os cargos provimento temporário, de Diretor de Departamento e Chefe de Divisão, respectivamente DA- 1 e DA - 2.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10.</span></a> O vencimento do Símbolo DAE (Direção e Assessoramento Especial) será de R$ 2.000,00 (dois mil reais).<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11.</span></a> Ficam criados três cargos de provimento temporário, de livre nomeação e exoneração pelo Chefe do Executivo, de Oficial de Gabinete, Símbolo DA - 3, para terem exercício junto à Presidência do Instituto de Previdência de Feira de Santana, à Presidência da Fundação Cultural Egberto Tavares Costa e à Superintendência Municipal de Trânsito de Feira de Santana.<br><br><a name="artigo_12"><span class="label label-pill label-danger">Art. 12.</span></a> Esta Lei entra em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 15 de Setembro de 2006.<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO MUNICIPAL<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

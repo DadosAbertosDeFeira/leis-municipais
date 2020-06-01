@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI PROMULGADA Nº 330/2018</h2><br>INSTITUI O CÓDIGO MUNICIPAL DE PROTEÇÃO AOS ANIMAIS NO ÂMBITO DO MUNICÍPIO DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PRESIDENTE DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 124/2017, de autoria do Edil Roberto Luís da Silva Tourinho, e na conformidade do artigo 78, § 7º, da <a class="link_law" data-original-title="Lei Orgânica Feira de Santana BA" data-toggle="tooltip" href="/lei-organica-feira-de-santana-ba" rel="tooltip">Lei Orgânica</a> do Município, e artigo 25 e inciso V, do Regimento Interno, PROMULGA a seguinte Lei:<br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> I<br>DAS DIRETRIZES DA POLÍTICA DE PROTEÇÃO ANIMAL.<br></span></span><br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Esta Lei estabelece a política a ser adotada pelo Poder Executivo e seus Órgãos, na relação entre a sociedade e os animais no âmbito do Município de Feira de Santana.<br><br>§ 1º A política de que trata este Código será pautada nas seguintes diretrizes:<br><br>I - a promoção da vida animal;<br><br>II - a proteção da integridade física, da saúde e da vida dos animais residentes em Feira de Santana;<br><br>III - a prevenção visando o combate a maus tratos e abusos de qualquer natureza;<br><br>IV - a defesa dos direitos dos animais, estabelecidas nesta Lei e na Legislação Constitucional e Infraconstitucional vigente no país, além de eventuais tratados internacionais;<br><br>V - o controle ético da população de cães e gatos do Município.<br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> II<br>DAS DISPOSIÇÕES GERAIS<br></span></span><br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> É vedado:<br><br>I - ofender ou agredir fisicamente os animais, sujeitando-os a qualquer tipo de prática ou atividade capaz de causar-lhes sofrimento ou dano, bem como as que provoquem condições inaceitáveis de existência;<br><br>II - manter animais em local desprovido de asseio ou que lhes impeça a movimentação, o descanso ou os que privem de ar e luminosidade, bem como manter animais presos com corrente ou qualquer outro meio similar que seja curto para o porte físico do animal, bem como, deixar o animal acorrentado sem a possibilidade de abrigo do sol e chuva;<br><br>III - não propiciar morte rápida e indolor a todo animal cuja eutanásia seja recomendada;<br><br>IV - qualquer forma de divulgação e propaganda que estimule ou sugira qualquer prática de maus-tratos ou crueldade contra os animais;<br><br>V - promover sorteios, rifas ou qualquer tipo de evento onde o prêmio ou brinde seja um animal;<br><br>VI - vender ou doar animais para menores desacompanhados por responsável legal.<br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> III<br>DO CONTROLE ÉTICO DA POPULAÇÃO CANINA E FELINA<br></span></span><br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> O controle ético da população de cães e gatos no Município de Feira de Santana será realizado pelo método de esterilização a ser regulamentado pelo Poder Executivo.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> O programa de controle ético da população canina e felina deverá prever ações de educação quanto a guarda responsável, tanto os tutores dos animais participantes quanto ao restante da população.<br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> IV<br>DO USO DE COLEIRAS, GUIAS E FOCINHEIRAS<br></span></span><br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> É obrigatório o uso de coleiras e guias em cães que possuam Tutores ao transitar pelas ruas, parques e congêneres.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> O animal doméstico de grande porte, notadamente feroz, só poderá transitar por ruas, parques e congêneres, com a utilização de coleira, focinheira e guia de condução.<br><br>Parágrafo único. Entende-se por cães de raças notoriamente perigosas aquelas cujos antecedentes registram ataques e riscos às pessoas, os cães de guarda e os treinados para ataque, ou aqueles que pelo porte e comportamento colocam em risco a segurança das pessoas.<br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> V<br>DAS RESPONSABILIDADES DO TUTOR<br></span></span><br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> É de responsabilidade do Tutor manter as vacinações de seu animal em dia, além de acompanhamento médico veterinário com frequência.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> É de responsabilidade do Tutor prover abrigo confortável, adequado ao porte e comportamento do animal, o qual deverá proteger à chuva, sol e/ou qualquer outra intempere natural.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> É de responsabilidade do Tutor identificar seu animal com microchip e/ou coleira de identificação.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10</span></a> As residências com cães de raças perigosas deverão ser guarnecidas com muros, grades, cercas fechadas, portões de segurança e placas indicativas fixadas em local visível e de fácil leitura, alertando sobre a presença desses animais.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11</span></a> Qualquer cidadão poderá requisitar intervenção da autoridade responsável pela observância da presente Lei, quando verificar o desrespeito às normas nela estabelecidas, sujeitando-se o infrator às Penas Legais.<br><br><a name="artigo_12"><span class="label label-pill label-danger">Art. 12</span></a> O Tutor responsável pela guarda do animal responde civil e penalmente pelos danos físicos e materiais decorrentes de eventuais agressões dos animais e qualquer pessoa, seres vivos ou bens de terceiros.<br><br>Parágrafo único. O disposto neste artigo não se aplica em caso de agressão decorrente de invasão ilícita da propriedade. Artigo 13 - O descumprimento do disposto neste capítulo ensejará multa de 01 (um) à 05 (cinco) salários mínimos, ao Tutor do animal.<br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> VI<br>DAS PENALIDADES<br></span></span><br><br><a name="artigo_14"><span class="label label-pill label-danger">Art. 14</span></a> Sem prejuízo das Responsabilizações Civis e Penais, aos infratores da presente Lei serão aplicadas, alternativa ou cumulativamente, sempre se levando em conta da ação ou omissão, as seguintes sanções:<br><br>I - advertência e/ou notificação;<br><br>II - multa de 01 (um) à 05 (cinco) salários mínimos;<br><br>III - apreensão do animal em casos graves de abuso, agressão e maus tratos.<br><br>§ 1º Os animais apreendidos, consoante previsão do inciso III deste artigo, poderão ser:<br><br>I - reavidos pelo infrator, no prazo de 3 (três) dias úteis, após recolhimento de taxa;<br><br>II - encaminhados ao programa de adoção do órgão responsável pela Rede de Monitoramento e Proteção Animal.<br><br>§ 2º As receitas oriundas das multas aplicadas em decorrência desta Lei serão repassadas ao Fundo Municipal do Meio Ambiente.<br><br><a name="artigo_15"><span class="label label-pill label-danger">Art. 15</span></a> Caberá a Secretaria Municipal de Meio Ambiente em parceria com a Secretaria de Agricultura a fiscalização e cumprimento ao disposto nesta Lei, com o auxílio da Secretaria de Saúde através do Departamento de Zoonose.<br><br>Parágrafo único. A aplicação das penalidades contidas nesta Lei será exercida pelo Departamento de Fiscalização, através dos fiscais de serviços públicos.<br><br><a name="artigo_16"><span class="label label-pill label-danger">Art. 16</span></a> As despesas com a execução desta Lei correrão por conta das dotações orçamentárias próprias, suplementadas se necessário.<br><br><a name="artigo_17"><span class="label label-pill label-danger">Art. 17</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>PRESIDÊNCIA DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, em 28 de Março de 2018.<br><br>Ver. JOSÉ CARNEIRO ROCHA<br>Presidente<br><br>PUBLICADO NO DIÁRIO OFICIAL ELETRÔNICO DIA 29 DE MARÇO DE 2018.<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

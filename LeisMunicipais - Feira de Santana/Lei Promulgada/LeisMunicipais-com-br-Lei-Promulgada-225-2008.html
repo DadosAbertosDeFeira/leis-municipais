@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI PROMULGADA Nº 225/2008</h2><br>DISPÕE SOBRE A CRIAÇÃO DO PROGRAMA DE ESCOLARIZAÇÃO PARA OS FILHOS DOS SERVIDORES PÚBLICOS MUNICIPAIS; EM CENTRO DE EDUCAÇÃO MUNICIPAL, NO MUNICIPIO DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDENCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O VICE - PRESIDENTE CÂMARA MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, FAÇO SABER QUE A CÂMARA MUNICIPAL, ATRAVÉS DO PROJETO DE LEI Nº 72/2008, DE AUTORIA DO EDIL JUSTINIANO OLIVEIRA FRANÇA, E NA CONFORMIDADE DO ART. 78, § 7, DA LEI Nº  <a class="link_law" data-id="1739637" data-original-title=" Data da Norma: 05.04.1990 - DISPÕE SOBRE A LEI ORGÂNICA DO MUNICIPIO DE FEIRA DE SANTANA E DA OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-promulgada/1990/3/37/lei-promulgada-n-37-1990-dispoe-sobre-a-lei-organica-do-municipio-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">37</a>, DE 05 DE ABRIL DE 1990, E ARTIGO 33, INCISOS I E IV, DO REGIMENTO INTERNO, PROMULGA A SEGUINTE LEI:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Cria o programa de escolarização para os filhos dos servidores municipais em Centro de Educação Municipal, no Município de Feira de Santana.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O programa de escolarização para os filhos dos servidores municipais atenderá nas modalidades de ensino de educação infantil e ensino fundamental.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> As vagas excedentes no Centro de Educação Municipal destinados ao programa de escolarização para os filhos dos servidores públicos municipais poderão ser utilizados pela comunidade feirense dentro das modalidades de ensino estabelecidas nesta Lei.<br><br>Parágrafo Único - A Secretaria Municipal de Educação estabelecerá critérios para utilização das vagas excedentes a que se refere este artigo.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> As estruturas curricular, administrativa e pedagógica necessárias para implementação do programa de escolarização para filhos dos servidores municipais estão dispostas no anexo desta Lei.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> O Poder Executivo regulamentará esta Lei, no que couber no prazo de 90 (noventa) dias a contar da data da sua publicação.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>CÂMARA MUNICIPAL DE FEIRA DE SANTANA, em 03 de Dezembro de 2008.<br><br>Ver. GETÚLIO DA SILVA BARBOSA<br>VICE-PRESIDENTE<br><br>Autor: Justiniano Oliveira França<br>DATA DE PUBLICAÇÃO: 05/12/2008<br><br>ANEXO<br><br>Programa Escolarização Para os Filhos dos Servidores Públicos Municipal.<br><br>I - Modalidade de atendimento ao ensino integral ou semi - integral;<br><br>II - Os objetivos que deverão nortear esta proposta:<br><br>a) Oferecer aos filhos dos servidores públicos de Feira de Santana uma oportunidade de possuir uma escola de qualidade e que possa dar tranqüilidade enquanto os pais estão oferecendo sua força de trabalho em prol da comunidade feirense;<br>b) Garantir a qualidade de ensino da educação infantil ao ensino fundamental, através da criação de situações de aprendizagem que provoquem o desenvolvimento cognitivo e o conhecimento científico;<br>c) Compor um espaço experimentador de práticas inovadoras, enriquecidas pela contribuições dos funcionários públicos para construção de novos saberes.<br><br>III - Metodologia a ser aplicada no programa:<br><br>a) Uma linha de trabalho apoiada na proposta sócio-interacionista, onde o aluno construa seu próprio aprendizado. Nada é dado pronto. A independência é uma construção e essa construção se faz pelo processo de desenvolvimento do educando mediante a prática cotidiana.<br>b) Uma linha de trabalho fundamentada que possa oferecer aos filhos dos servidores, uma educação de qualidade e oportunizando a estes uma escola de referência no ensino nesta cidade, para aqueles que oferecerem a sua força de trabalho em prol da mesma, dando tranqüilidade aos pais enquanto os mesmos estão fazendo com que esta cidade cresça.<br><br>IV - O ensino a ser oferecido será de:<br><br>a) educação infantil e fundamental - 1º ao 9º ano, em regime semi-integral, sendo um professor titular da rede e um assistente que poderá ser estagiário dando a este suporte para suas práxis pedagógica.<br><br>V - Estrutura curricular do programa de escolarização para os filhos dos servidores públicos municipais em centro de educação:<br><br>a) As áreas de conhecimento: Língua Portuguesa, Matemática, História, Geografia, Ciências Naturais, Artes, Educação Física, Língua Estrangeira Moderna e Informática;<br>b) Os temas transversais: Ética, Saúde, Meio Ambiente, Pluralidade Cultural.<br><br>VI - Composição do centro educacional para o desenvolvimento do programa de escolarização para filhos dos servidores públicos municipais.<br><br>a) Salas de aula, sala de informática, biblioteca, sala de vídeo; banheiros, refeitório, cozinha, salas para secretaria, diretoria e coordenação, sala de professores, parque recreativo, área para atividades de educação física (quadra esportiva), sala de jogos educativos e sala para enfermagem/dentista e sala para atendimento psicopedagógico.<br><br>VII - Atividades extras a serem programadas para o desenvolvimento do programa:<br><br>a) Atividades extras para complemento do ensino como: informática; artes; atividades esportivas e reforço escolar. Estas atividades acontecerão no turno oposto do aluno, fazendo com que ele possa praticamente ter atividade integral na escola chegando pela manhã e somente retornando no final da tarde.<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

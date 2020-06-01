@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>DECRETO Nº 8847, de 15 de fevereiro de 2013.</h2><br>CRIA A FISCALIZAÇÃO PREVENTIVA INTEGRADA - FPI DA MICARETA 2013, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, no uso de suas atribuições, DECRETA:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica criada a Fiscalização Preventiva Integrada - FPI para a Micareta 2013 de Feira de Santana, que será realizada no período de 25 a 28 de abril de 2013, composta dos seguintes integrantes:<br><br>I - JAILTON BATISTA DOS SANTOS<br><br>Representando a Secretaria Municipal de Cultura, Esporte e Lazer;<br><br>II - NARON DA SILVA VASCONCELOS<br><br>Representando o Deptº de Promoções e Eventos Especiais da SECEL;<br><br>III - CARLOS ANTÔNIO DE MORAES LUCENA<br><br>Representando a Procuradoria Geral do Município;<br><br>IV - EXPEDITO CAMPODÔNIO ELOY<br><br>Representando a Secretaria Municipal da Fazenda;<br><br>V - JOSÉ FERREIRA PINHEIRO<br><br>Representando a Secretaria Municipal de Desenvolvimento Urbano;<br><br>VI - DENISE LIMA MASCARENHAS<br><br>Representando a Secretaria Municipal de Saúde;<br><br>VII - ROBERTO LUÍS DA SILVA TOURINHO<br><br>Representando a Secretaria Municipal de Meio Ambiente e Recursos Naturais;<br><br>VIII - ANTÔNIO CARLOS BORGES DOS SANTOS JÚNIOR<br><br>Representando a Secretaria Municipal do Trabalho, Turismo e Desenvolvimento Econômico;<br><br>IX - JOÃO MARINHO GOMES JUNIOR<br><br>Representando a Secretaria Municipal de Administração;<br><br>X - VALDOMIRO DOS SANTOS SILVA<br><br>Representando a Secretaria Municipal de Comunicação;<br><br>XI - WILSON COUTO OLIVEIRA<br><br>Representando a Secretaria Municipal de Serviços Públicos;<br><br>XII - ENEZER NOEL CARNEIRO DA SILVA TUY<br><br>Representando a Secretaria Municipal de Transportes e Trânsito;<br><br>XIII - JOSÉ ROQUE SANTANA PINHO<br><br>Representando a Superintendência Municipal de Trânsito;<br><br>XIV - MAURO DE OLIVEIRA MORAES<br><br>Representando a Sec. Mun. de Prevenção à Violência e Promoção dos Direitos Humanos;<br><br>XV - JORGE ANTÔNIO PRUDENTE DA SILVA FRAGA<br><br>Representando a COMDEC - Comissão Municipal de Defesa Civil;<br><br>XVI - SUZANA OLIVEIRA FERREIRA MENDES<br><br>Representando a Superintendência Municipal de Proteção e Defesa do Consumidor - PROCON/FSA;<br><br>XVII - Cel. ADELMÁRIO EVANGELISTA XAVIER<br><br>Representando o CPRL - Comando de Polícia Regional Leste;<br><br>XVIII - Mj. JORGE EDUARDO PIAUHY DE ARAÚJO<br><br>Representando o 2º Grupamento de Bombeiro Militar;<br><br>XIX - Inspetor ISRAEL IVO MENEZES MELO<br><br>Representando a Polícia Rodoviária Federal;<br><br>XX - ANTONIO FERNANDO TEIXEIRA DA SILVA<br><br>Representando a Polícia Rodoviária Estadual;<br><br>XXI - Del. RICARDO ESTEVES BRITO<br><br>Representando a Polícia Civil;<br><br>XXII - RENATO LACERDA SILVA JÚNIOR<br><br>Representando o DPT - Departamento de Polícia Técnica;<br><br>XXIII - SILVIO DIAS OLIVEIRA<br><br>Representando a CIRETRAN;<br><br>XXIV - DIÓGENES OLIVEIRA SENA<br><br>Representando a Inspetoria Regional do CREA;<br><br>XXV - INSP. LUIZ ALBERTO NOGUEIRA LAGO<br><br>Representando a Inspetoria Fazendária - (SEFAZ) - IFMT;<br><br>XXVI - ANA F. TORRES DA SILVA<br><br>Representando a 1ª Promotoria de Justiça do Ministério Público do Estado;<br><br>XXVII - GEANCARLOS DE SOUZA ALMEIDA<br><br>Representando a Vara da Infância e Juventude;<br><br>XXVIII - JOSÉ BATISTA SANTANA<br><br>Representando a Delegacia Regional do Trabalho.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> A Presidência da Fiscalização Preventiva Integrada - FPI será exercida pelo Sr. JAILTON BATISTA DOS SANTOS, Secretário Municipal de Cultura, Esporte e Lazer.<br><br>Parágrafo Único - A Secretaria Municipal de Cultura, Esporte e Lazer, através do Departamento de Promoções e Eventos Especiais, fica encarregada de apresentar o Relatório do Evento.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Na impossibilidade do comparecimento dos integrantes mencionados no art. 1º, deste Decreto, a qualquer convocação feita pelo Presidente da FPI, os mesmos designarão substitutos para os órgãos e instituições que representam.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Este Decreto entrará em vigor na data da sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito, 15 de fevereiro de 2013.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito Municipal<br><br>MÁRIO COSTA BORGES<br>Chefe de Gabinete do Prefeito<br><br>JAILTON BATISTA DOS SANTOS<br>Secretário Municipal de Cultura, Esporte e Lazer<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

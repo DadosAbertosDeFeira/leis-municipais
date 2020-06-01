@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 2848, DE 29 DE NOVEMBRO DE 2007.</h2><br>DISPÕE SOBRE A CRIAÇÃO DO CONSELHO MUNICIPAL DE PARTICIPAÇÃO E DESENVOLVIMENTO DAS COMUNIDADES NEGRAS E INDÍGENAS - COMDECNI, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O Prefeito Municipal de Feira de Santana, Estado da Bahia, no uso de suas atribuições, Faço saber que a Câmara Municipal, através do Projeto de Lei Nº 166/2007, de autoria do Poder Executivo, decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica criado o Conselho Municipal de Participação e Desenvolvimento das Comunidades Negras e Indígenas - COMDECNI, órgão colegiado, paritário e consultivo, que tem como finalidade desenvolver estudos, propor medidas e políticas voltadas para a comunidade afro-descendente e indígena, objetivando a eliminação das discriminações que atingem a integração plena na vida socioeconômica, política e cultural de tais grupos sociais.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O Conselho Municipal de Participação e Desenvolvimento das Comunidades Negras e Indígenas, ora instituído, é vinculado técnico-administrativamente à Secretaria Municipal de Desenvolvimento Social.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Será de competência do Conselho Municipal de Participação e Desenvolvimento das Comunidades Negras e Indígenas:<br><br>I - sugerir diretrizes para formulação das políticas públicas, direcionadas às comunidades negras e indígenas no Município;<br><br>II - acompanhar e fiscalizar a execução das políticas municipais voltadas para o atendimento das comunidades negras e indígenas;<br><br>III - apreciar e/ou contribuir na elaboração de propostas para a reforma da legislação municipal pertinente aos direitos da comunidade afro- descendente;<br><br>IV - apoiar outros conselhos das comunidades negras e indígenas, e os órgãos governamentais e não-governamentais, objetivando a efetivação das normas, princípios e diretrizes estabelecidas pela Política Municipal direcionada às comunidades negras e indígenas;<br><br>V - contribuir na definição dos critérios de destinação dos recursos financeiros públicos às instituições que prestam serviços às comunidades negras e indígenas;<br><br>VI - convocar as entidades da sociedade civil, representativas dos movimentos negros e indígenas, previstas no art. 6º, inciso II, desta Lei, para a Conferência Municipal, na qual serão eleitos seus representantes para o Conselho Municipal de Participação e Desenvolvimento das Comunidades Negras e Indígenas;<br><br>VII - convocar a cada 02 (dois) anos a Conferência Municipal das Comunidades Negras e Indígenas;<br><br>VIII - fazer-se representar em quaisquer órgãos e eventos nacional e internacional ou fóruns que promovam a discussão de política pública ou social de caráter geral;<br><br>IX - outras competências correlatas.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Todos os órgãos municipais, por força desta Lei, deverão garantir a participação do Conselho Municipal de Participação e Desenvolvimento das Comunidades Negras e Indígenas para ouvir suas propostas e efetivamente contribuir na elaboração de programas e políticas voltadas às comunidades negras e indígenas, assim como na definição de recursos a estas destinadas.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> A organização estrutural do Conselho Municipal de Participação e Desenvolvimento das Comunidades Negras e Indígenas será composta por:<br><br>I - Plenário do Conselho;<br><br>II - Diretoria Executiva;<br><br>III - Comissões Temáticas;<br><br>IV - Conselhos Regionais das Comunidades Negras e Indígenas.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> O Plenário do Conselho será composto de Conselheiros, Titulares e Suplentes, constituído de forma paritária, pelos representantes dos seguintes órgãos e entidades:<br><br>I - Órgãos governamentais (nove representantes):<br><br>a) um (01) representante da Secretaria Municipal de Desenvolvimento Social;<br>b) um (01) representante da Secretaria Municipal de Cultura, Esporte e Lazer;<br>c) um (01) representante da Secretaria Municipal de Saúde;<br>d) um (01) representante Secretaria Municipal da Educação;<br>e) um (01) representante Secretaria Municipal de Comunicação Social;<br>f) um (01) representante da Secretaria Municipal de Desenvolvimento Ecomônico;<br>g) um (01) representante da Secretaria Municipal de Governo;<br>h) um (01) representante da Procuradoria Geral do Município;<br>i) um (01) representante do Núcleo de Estudantes Negros da universidade pública com sede no município de Feira de Santana.<br><br>II - Órgãos não-governamentais (nove representantes da sociedade civil, de comprovada atuação na defesa das comunidades negras e indígenas):<br><br>a) um (01) representante do Movimento Negro com sede em Feira de Santana;<br>b) um (01) representante do Movimento Indígena com sede em Feira de Santana;<br>c) um (01) representante da Religião de Matriz Africana;<br>d) um (01) representante da OAB;<br>e) um (01) representante das Associações Comunitárias ou Federações, com sede em Feira de Santana;<br>f) um (01) representante do Movimento Cultural Negro (Blocos Afros, Afoxés, Escolas de Samba,);<br>g) um (01) representante dos Grupos de Capoeira e Bandas de Reggae;<br>h) um (01) representante de Instituições Religiosas;<br>i) um (01) representante de Comunidades Quilombolas.<br><br>§ 1º - Os representantes dos órgãos governamentais serão designados pelos seus respectivos titulares, exceto o representante do Núcleo de Estudantes Negros da universidade pública, o qual será escolhido por assembléia específica.<br><br>§ 2º - Os representantes de entidades da sociedade civil organizada de que trata o inciso II serão eleitos em Conferência Municipal específica.<br><br>§ 3º - O mandato dos conselheiros será de 02 (dois) anos, a contar da posse, sendo permitida a recondução.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> A Conferência Municipal das Comunidades Negras e Indígenas é a instância máxima do Conselho Municipal de Participação e Desenvolvimento das Comunidades Negras e Indígenas.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> A Diretoria Executiva será composta de Presidente, Vice-Presidente, Tesoureiro e Secretário, os quais serão eleitos pelo Plenário do Conselho.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> As atividades de apoio administrativo, necessárias ao cumprimento das finalidades deste Conselho, serão prestadas pela Secretaria Municipal de Desenvolvimento Social.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10 -</span></a> As Comissões técnicas, criadas pelo Plenário do Conselho, têm a incumbência de elaborar projetos e programas com base nas deliberações da Conferência Municipal.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11 -</span></a> Os conselheiros integrantes do Conselho Municipal de Participação e Desenvolvimento das Comunidades Negras e Indígenas - COMDECNI não receberão qualquer tipo de remuneração, e o exercício da função de conselheiro será considerado de interesse público relevante.<br><br>Parágrafo Único - Quando em atividade de representação, por deliberação do Conselho, os conselheiros da sociedade civil terão ressarcidas suas despesas com alimentação, hospedagem e transporte, pela Administração Municipal.<br><br><a name="artigo_12"><span class="label label-pill label-danger">Art. 12 -</span></a> O Conselho Municipal de Participação e Desenvolvimento das Comunidades Negras e Indígenas elaborará seu Regimento, submetendo-o para aprovação, por Decreto, do Chefe do Executivo Municipal.<br><br><a name="artigo_13"><span class="label label-pill label-danger">Art. 13 -</span></a> Será criado o Fundo Municipal de Reparações das Comunidades Negras e Indígenas, com a função de atuar como captador e repassador dos recursos financeiros destinados à política de ações afirmativas, ao atendimento aos programas de promoção, proteção, inclusão e reparação dos integrantes das comunidades afro-descendentes e indígenas.<br><br><a name="artigo_14"><span class="label label-pill label-danger">Art. 14 -</span></a> O Poder Executivo regulamentará esta Lei no que couber.<br><br><a name="artigo_15"><span class="label label-pill label-danger">Art. 15 -</span></a> As despesas decorrentes da execução desta Lei correrão por conta das dotações orçamentárias próprias, suplementadas, se necessário.<br><br><a name="artigo_16"><span class="label label-pill label-danger">Art. 16 -</span></a> Esta Lei entra em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 29 de novembro de 2007.<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO MUNICIPAL<br><br>GERALDO DE OLIVEIRA SAMPAIO FILHO<br>CHEFE DE GABINETE DO PREFEITO RESP. P/ SECRETARIA MUNICIPAL DE GOVERNO<br><br>CARLOS ANTONIO DE MORAES LUCENA<br>PROCURADOR GERAL DO MUNICÍPIO<br><br>ANA LÚCIA FREITAS BASTOS MIRANDA<br>SECRETÁRIA MUNICIPAL DE DESENVOLVIMENTO SOCIAL<br><br>ANTONIO MAURÍCIO SANTANA DE CARVALHO<br>SECRETÁRIO MUNICIPAL DE CULTURA, ESPORTE E LAZER<br><br>DENISE LIMA MASCARENHAS<br>SECRETÁRIA MUNICIPAL DE SAÚDE<br><br>ANA RITA DE ALMEIDA NEVES<br>SECRETÁRIA MUNICIPAL DE EDUCAÇÃO<br><br>MANOEL ANCHIÊTA NERY DE SOUZA<br>SECRETÁRIO MUNICIPAL DE COMUNICAÇÃO SOCIAL<br><br>JOSÉ ARISTÓTELES RIOS NERY<br>SECRETÁRIO MUNICIPAL DE DESENVOLVIMENTO ECONÔMICO<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

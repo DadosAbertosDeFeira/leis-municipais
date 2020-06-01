@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>DECRETO LEGISLATIVO Nº 5/2015</h2><br>DISPÕE SOBRE A CONCESSÃO DA MEDALHA 08 DE MARÇO DIA INTERNACIONAL DA MULHER, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>A CÂMARA MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, na conformidade do artigo 70, inciso V, da Lei Municipal nº  <a class="link_law" data-id="1739637" data-original-title=" Data da Norma: 05.04.1990 - DISPÕE SOBRE A LEI ORGÂNICA DO MUNICIPIO DE FEIRA DE SANTANA E DA OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-promulgada/1990/3/37/lei-promulgada-n-37-1990-dispoe-sobre-a-lei-organica-do-municipio-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">37</a> de Abril de 1990, e artigos 274, § 2º e, 400, do Regimento Interno, e do Projeto de Decreto Legislativo nº <a class="link_law" data-id="2100701" data-original-title=" Data da Norma: 10.03.2015 - DISPÕE SOBRE A CONCESSÃO DA MEDALHA 08 DE MARÇO DIA INTERNACIONAL DA MULHER, E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/decreto-legislativo/2015/0/5/decreto-legislativo-n-5-2015-dispoe-sobre-a-concessao-da-medalha-08-de-marco-dia-internacional-da-mulher-e-da-outras-providencias" rel="tooltip">05</a>/2015, de autoria da Mesa Diretiva, promulga o seguinte Decreto Legislativo:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica concedida a MEDALHA 08 DE MARÇO - DIA INTERNACIONAL DA MULHER, às seguintes homenageadas:<br><br>1. MARIA DIVONISE BARROS MARTINS (Verti. Aldney Bastos Marques)<br>2. PATRÍCIA CARNEIRO FALCÃO DE ALMEIDA (Ver. Antonio Rodrigues Pedreira)<br>3. TÂNIA MARIA CERQUEIRA DA COSTA (Ver. Beldes Luis Pereira Ramos)<br>4. JULIANA OLIVEIRA DE SOUZA DE AQUINO (Vela. Cíntia Daltro Machado)<br>5. EDNA SOUZA FONSECA (Ver. David Evangelista Leite Neto)<br>6. AMENAIDE FERREIRA LEITE (Ver. Edvaldo Lima dos Santos)<br>7. ALAIDE GUERRA DOS SANTOS (Ver. Eliziário Ribeiro da Silva)<br>8. ROSANA DOS SANTOS CUNHA DE JESUS (Ver. Eremita Mota de Araújo)<br>9. MARGARIDA BASTOS DE SANTANA (Ver. Ewerton Carneiro da Costa)<br>10. MARIA CLÉCIA VASCONCELOS DE MORAES FIRMINO COSTA. (Vera. Gerusa Maria Bastos Silva Sampaio)<br>11. CELESTINA GOMES DE JESUS (Ver. Isaías dos Santos)<br>12. MARIA DA CONCEIÇÃO BACELAR DA SILVA BUSKER GALRÃO. (Ver. José Carneiro Rocha)<br>13. MARICÉLIA FERREIRA DA SILVA (Ver. José da Costa Correia Filho)<br>14. ROSENA SILVA DE JESUS (Ver. Luiz Augusto de Jesus)<br>15. ANTONIA DIAS (Ver. Marcos Antonio dos Santos Lima)<br>16. NORMA LÚCIA DA COSTA SANTANA (Ver. Pablo Roberto Gonçalves da Silva)<br>17. IRMÃ SOLANGE LEITE SILVA (Ver. Reinaldo Miranda Vieira Filho)<br>18. SIMONE DE ARAÚJO MOURA (Ver. Robeci da Silva Lima)<br>19. NILDETE OLIVEIRA DA SILVA (Ver. Roque Pereira do Carmo)<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> A Mesa Diretiva da Câmara Municipal providenciará a confecção da Medalha Oito de Março - Dia Internacional da Mulher, que será entregue em Sessão Especial, no próximo dia 12 de Março do corrente ano, às 9:00 h.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> As despesas decorrentes deste Decreto correrão por conta da verba existente na Secretaria da Casa.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Este Decreto Legislativo entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Promulgado em: 10/03/2015.<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

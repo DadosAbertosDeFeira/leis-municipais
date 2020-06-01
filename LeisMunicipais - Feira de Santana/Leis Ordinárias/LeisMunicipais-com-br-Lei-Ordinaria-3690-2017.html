@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3690 DE 16 DE MAIO DE 2017</h2><br>&quot;Cria a Semana de Prevenção e Enfrentamento à Depressão Pós-parto no município de Feira de Santana, e dá outras providências.&quot;<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 55/2017, de autoria da Edil Cíntia Daltro Machado, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> A Secretaria Municipal de Saúde e toda a rede pública do Município realizarão, em período a ser determinado pela Secretaria Municipal de Saúde, atividade denominada Semana de Prevenção e Enfrentamento à Depressão Pós-Parto.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> A atividade da saúde aludida no art. 1º desta Lei terá duração de uma semana e objetivará ministrar conhecimentos relativos à depressão pós-parto, tais como:<br><br>I - fatores biológicos, sociais e psicológicos associados à gestação;<br><br>II - planejamento do período gestacional e pós-parto;<br><br>III - alterações hormonais durante a gravidez;<br><br>IV - sexualidade e prevenção contra o HIV/AIDS e outras doenças sexualmente transmissíveis, o uso e/ou abuso de álcool e outras drogas;<br><br>V - suporte familiar e social à gestante e puérpera, dificuldades associadas à volta ao trabalho ou à escola;<br><br>VI - gravidez na adolescência.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> A Semana de Prevenção e Enfrentamento à Depressão Pós-Parto fará parte, anualmente do calendário da saúde e deverá ser aberta para a participação das gestantes, dos pais, da família, da comunidade em geral.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> As matérias, durante a Semana de Prevenção e Enfrentamento à Depressão Pós-Parto, poderão ser ministradas sob a forma de seminários, palestras, exposições-visitas, projeções de slides, filmes ou qualquer outra forma não convencional.<br><br>Parágrafo único. Os convidados pela Secretaria Municipal de Saúde para ministrar as matérias da Semana de Prevenção e Enfrentamento à Depressão Pós-Parto deverão possuir comprovado nível de conhecimento sobre os assuntos a serem abordados.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito, 16 de maio de 2017.<br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO MUNICIPAL<br><br>MARIO COSTA BORGES<br>CHEFE DE GABINETE DO PREFEITO<br><br>CLEUDSON SANTOS ALMEIDA<br>PROCURADOR GERAL DO MUNICÍPIO<br><br>DENISE LIMA MASCARENHAS<br>SECRETÁRIA MUNICIPAL DE SAÚDE<br><br>PUBLICADO NO DIÁRIO OFICIAL ELETRÔNICO DIA 18 DE MAIO DE 2017.<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

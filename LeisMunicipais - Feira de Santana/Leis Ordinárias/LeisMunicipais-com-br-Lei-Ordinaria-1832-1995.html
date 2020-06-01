@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 1832/95</h2><br>ESTIMA A RECEITA E FIXA A DESPESA DO MUNICÍPIO DE FEIRA DE SANTANA PARA O EXERCÍCIO FINANCEIRO DE 1996, E DÁ OUTRAS PROVIDÊNCIAS. (R$ 148.500.000,00)<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, FAÇO saber que a Câmara Municipal decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Esta Lei estima a receita e fixa a despesa do Município de Feira de Santana para o exercício financeiro de 1996, compreendendo:<br><br>I - o orçamento fiscal referente aos poderes Legislativo e Executivo, seus fundos, órgãos e entidades da administração direta e indireta, inclusive fundações instituídas e mantidas pelo Poder Público Municipal;<br><br>II - o orçamento da seguridade social, abrangendo todas as entidades e órgãos a ela vinculados, da administração direta e indireta, inclusive fundos instituídos pelo Poder Público Municipal.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> A receita total inclusive as receitas das autarquias, fundações e fundos é estimada no mesmo valor da despesa, em R$ 148.500.000,00 (cento e quarenta e oito milhões e quinhentos mil reais).<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> As receitas, que decorrerão da arrecadação de tributos, contribuições, oriundas de transferências, bem como de outras receitas correntes e de capital, previstas na legislação vigente, são discriminadas em anexo, com o seguinte desdobramento:<br><br>Receitas Correntes<br>Receita Tributária................................................22.475.000,00<br>Receita de Contribuições..........................................11.000.000,00<br>Receita Patrimonial................................................1.160.000,00<br>Receita de Serviços................................................1.000.000,00<br>Transferências Correntes..........................................62.570.000,00<br>Outras receitas Correntes.........................................23.350.000,00<br><br>TOTAL............................................................121.555.000,00<br><br>Receita de Capital<br>Operações de Crédito...............................................7.400.000,00<br>Alienação de Bens..................................................1.000.000,00<br>Transferências de Capital.........................................17.545.000,00<br>Outras Receitas de Capital.........................................1.000.000,00<br><br>TOTAL.............................................................26.945.000,00<br><br>TOTAL GERAL DAS RECEITAS.........................................148.500.000,00<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> A despesa total, no mesmo valor da receita total, é fixada, por orçamentos, com o seguinte desdobramento.<br><br>a) no orçamento fiscal de.....................................R$ 118.940.000,00<br>b) no orçamento seguridade social..............................R$ 29.560.000,00<br><br>TOTAL.........................................................R$ 148.500.000,00<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> A despesa fixada a conta de recursos previstos nesta Lei, observada a programação em anexo, apresenta, segundo a categoria econômica, o seguinte desdobramento:<br><br>Despesas Correntes<br>Pessoal e encargos sociais........................................65.070.000,00<br>Juros e encargos da dívida interna.................................2.000.000,00<br>Outras despesas correntes.........................................54.485.000,00<br><br>TOTAL............................................................121.555.000,00<br><br>Despesas de Capital<br>Investimentos.....................................................20.495.000,00<br>Amortização da dívida interna......................................1.500.000,00<br>Outras despesas de capital.........................................2.950.000,00<br>TOTAL.............................................................24.945.000,00<br>Reserva de contingência............................................2.000.000,00<br><br>TOTAL GERAL DAS DESPESAS.........................................148.500.000,00<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> A despesa fixada de acordo com o Art. 5º, apresenta por órgão, o seguinte desdobramento:<br><br>Discriminação................................. Fiscal............ Seguridade Social<br>01 - Câmara Municipal......................... 8.965.000,00<br>02 - Gabinete do Prefeito..................... 1.445.000,00......... 500.000,00<br>03 - Proc. Geral do Município................. 2.820.000,00<br>04 - Sec. Municipal de Governo................ 2.000.000,00<br>05 - Sec. Munic. de Administração............ 26.650.000,00....... 8.300.000,00<br>06 - Sec. Munic. da Fazenda................... 8.050.000,00<br>07 - Sec. Munic. de Com. Social............... 2.540.000,00<br>08 - Sec. Munic. de Planejamento................ 850.000,00<br>09 - Sec. Munic. de Educação................. 40.450.000,00......... 400.000,00<br>10 - Sec. De Cult. Esporte e Lazer............ 4.570.000,00......... 600.000,00<br>11 - Sec. Munic. de Saúde........................ 50.000,00...... 16.590.000,00<br>12 - Sec. Munic. de Desenv. Social............ 1.170.000,00....... 3.030.000,00<br>13 - Sec. De Desenv. Urbano e Meio Ambiente... 7.370.000,00.......... 90.000,00<br>14 - Sec. Desenv. Econômico................... 2.990.000,00.......... 50.000,00<br>15 - Sec. Munic. de Serv. Públicos............ 7.020.000,00<br>16 - Reserva de Contingência.................. 2.000.000,00<br><br>TOTAL....................................... 118.940.000,00...... 29.560.000,00<br><br>TOTAL GERAL..................................................... 148.500.000,00<br><br>Parágrafo Único - No item 12, R$ 1.000.000,00 será gerido pelo Fundo Municipal do Bem Estar Social.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> A despesa fixada de acordo com o art. 5º, apresenta por função, o seguinte desdobramento:<br><br>Função............................... Fiscal................. Seguridade Social<br>01 - Legislativa...................... 8.965.000,00<br>02 - Judiciária....................... 1.300.000,00<br>03 - Administração e Planejamento.... 45.405.000,00<br>04 - Agricultura........................ 640.000,00<br>05 - Comunicações..................... 2.540.000,00<br>08 - Educação e Cultura.............. 44.970.000,00<br>10 - Habitação e Urbanismo........... 12.840.000,00<br>11 - Indústria, Comércio e Serviços...... 50.000,00<br>13 - Saúde e Saneamento.......................................... 18.040.000,00<br>15 - Assistência e Previdência................................... 11.520.000,00<br>16 - Transporte......................... 230.000,00<br>99 - Reserva de Contingência.......... 2.000.000,00<br><br>TOTAL................................ 18.940.000,00.............. 29.560.000,00<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> Fica o Poder Executivo autorizado a:<br><br>I - abrir os créditos suplementares necessários a execução dos programas de trabalho e com insuficiências nas dotações orçamentárias, na totalidade dos recursos abaixo indicados:<br><br>a) no limite do superávit financeiro apurado no exercício de 1995, conforme o estabelecimento no inciso I, § 1º e parágrafo 2º do art. 43º da Lei nº 4.320, de 17 de março de 1964;<br>b) dos recursos provenientes do excesso de arrecadação, conforme o estabelecimento no inciso II, parágrafos 1º, 3º e 4º do art. 43º da Lei nº 4.320, de 17 de março de 1964;<br>c) até o limite das operações de créditos realizadas em Lei, conforme o estabelecimento no parágrado 1º, inciso IV, do art. 43º da Lei nº 4.320, de 17 de março de 1964;<br>d) os recursos decorrentes de veto, emenda ou rejeição, que ficarem sem despesas correspondentes, na forma do disposto no parágrafo 8º do art. 166º da Constituição Federal;<br>e) de até 100% (cem por cento) dos valores do orçamento municipal atualizado na forma do art. 9º, Parágrafo Único, decorrente da anulação parcial ou total de dotação de projetos e atividades em consonância com o art. 43º, parágrafo 1º, inciso III da Lei 4.320/64;<br>f) de até 100% (cem por cento) dos valores, para as alíneas &quot;a&quot;, &quot;b&quot; e &quot;c&quot; deste inciso.<br><br>II - realizar operações de crédito por antecipação da receita até o limite de 25% (vinte e cinco por cento) das receitas correntes e demais limites previstos na legislação em vigor, podendo ainda prestar garantias nos termos do parágrafo 8º do art. 165º, e inciso IV do art. 167º, da Constituição Federal;<br><br>III - transferir a dotação total ou parcial da reserva de contingência, para qualquer categoria de programação;<br><br>IV - remanejar recursos de uma categoria de programação para outra ou de um órgão para outro;<br><br>V - transpor dotações orçamentárias de projetos e atividades quando a sua execução for deslocada de uma unidade orçamentária para outra;<br><br>Parágrafo Único - Não serão computados, para efeitos dos limite previsto neste artigo, os créditos destinados a suprir insuficiências nas dotações relativas a pessoal encargos sociais, inativos e pensionistas, dívida pública, honra de avais, débitos de precatórios judiciais e as despesas a conta de convênios.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> Os valores estimados para recieta e os fixados para as despesas foram calculados com base em agosto de 1995.<br><br>Parágrafo Único - Fica o Poder Executivo autorizado a atualizar o orçamento para os valores de 1996, nos meses de abril, julho e outubro de 1996, de acordo com o Índice Geral de Preço de Mercado - IGPM, da Fundação Getúlio Vargas, para os períodos ou outros índice Oficial equivalente que venha substituí-lo.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10 -</span></a> Esta Lei entra em vigor a partir de 1º de janeiro de 1996, revogado-se as disposições em contrário.<br><br>Gabinete do Prefeito Municipal 14 de dezembro de 1995.<br><br>Profº. JOSÉ RAIMUNDO PEREIRA DE AZEVEDO<br>Prefeito<br><br>Autor: Poder Executivo<br>Data da Publicação: 16/12/1995<br><br><i class="icon-warning-sign"></i> O anexo encontra-se disponível, ainda, no Paço Municipal<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

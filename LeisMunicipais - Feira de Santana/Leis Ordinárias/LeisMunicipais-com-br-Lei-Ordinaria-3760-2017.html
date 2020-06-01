@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3760, DE 09 DE OUTUBRO DE 2017</h2><br>&quot;Disciplina a ação dos transportadores de resíduos sólidos da construção civil nas etapas de transporte, manejo e destinação no Município de Feira de Santana, e dá outras providências.&quot;<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 135/2017, de autoria do Edil Antonio Carlos Passos Ataíde, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Os transportadores de resíduos da construção civil e resíduos volumosos são os responsáveis pelo transporte e descartes dos resíduos como disciplina esta Lei.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> São transportadores de resíduos de construção civil e resíduos volumosos: pessoas físicas ou jurídicas, encarregadas da coleta e ou do transporte dos resíduos entre as fontes geradoras e as áreas de destinação.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> São resíduos de Construção Civil:<br><br>I - os resíduos provenientes de construções, reformas, reparos e demolições de obras de construção civil, e os resultantes da preparação e da escavação de terrenos, tais como: tijolos, blocos cerâmicos, concreto em geral, solos, rochas, metais, resinas, colas, tintas, madeiras e compensados, forros, argamassa, gesso, telhas, pavimento asfáltico, vidros, plásticos, tubulações, fiação elétrica, etc; comumentes chamados de entulhos, devendo ser classificados nas classes A, B, C e D, conforme Resolução CONAMA nº 307, de 05 de Julho de 2002 e a Resolução CONAMA nº 348, de 16 de Agosto de 2004.<br><br>II - resíduos de secos domiciliares recicláveis: resíduos secos provenientes de residências ou de qualquer outra atividade que gere resíduos com características domiciliares ou a estes equiparados constituído principalmente por embalagens e que podem ser submetidos a um processo de reaproveitamento.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> São equipamentos de coleta de resíduos da construção civil e resíduos volumosos: dispositivos utilizados para a coleta e posterior transporte de resíduos, tais como caçambas metálicas estacionárias, caçambas basculantes instaladas em veículos autopropelidos, reboques, carrocerias para carga seca, contêineres têxteis flexíveis, carroças e assemelhados, incluídos os equipamentos utilizados no transporte do resultado de movimento de terra.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Através da Secretaria Municipal de Serviços Públicos, será criado o Controle de Transporte de Resíduos da Construção Civil (CTR): cujo objetivo é a identificação, o disciplinamento dos fluxos e dos transportadores envolvidos e a destinação adequada dos resíduos da construção civil e resíduos volumosos.<br><br>Parágrafo único. Controle de Transporte de Resíduos da Construção Civil (CTR): documento emitido pela Secretaria de Serviços Públicos para o transportador de resíduos que fornece informações sobre gerador, origem, quantidade e descrição dos resíduos e seu destino, conforme a regulamentação desta Lei e as diretrizes contidas no Anexo da Norma Brasileira NBR 15.112.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Os transportadores de resíduos sólidos da construção civil e resíduos volumosos pessoa física e jurídica terão o prazo de 180 (cento e oitenta) dias para se cadastrarem na Secretaria Municipal de Serviços Públicos.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Os transportadores de resíduos da construção civil e resíduos volumosos obrigatoriamente devem ser cadastrados e registrados na Secretaria de Serviços Públicos através do CT - Cadastro de Transportador para à remoção e destinação adequada dos resíduos.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> Os transportadores de resíduos da construção civil e resíduos volumosos só poderão prestar seus serviços depois de cadastrado e autorizados pela Secretaria de Serviços Públicos do Município.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> Será coibida pelas ações de fiscalização a presença de transportadores não autorizados pela Secretaria Municipal de Serviços Públicos e a utilização irregular das áreas de destinação e coleta.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10</span></a> No cumprimento da fiscalização, os órgãos da Secretaria de Serviços Públicos deverão:<br><br>I - inspecionar e orientar os transportadores e receptores de resíduos de construção e resíduos volumosos quanto às normas desta Lei;<br><br>II - vistoriar os veículos cadastrados para o transporte, o material transportado e as áreas receptoras de resíduos;<br><br>III - expedir notificações, autos de infração, de retenção e de apreensão dos veículos em conjunto com a SMTT;<br><br>IV - enviar aos órgãos competentes os autos que não tenham sido pagos, para fins de inscrição na Divida Ativa.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11</span></a> As pessoas físicas ou jurídicas proprietárias de caixas estacionárias que efetuam coleta de entulho nas obras de construção, reforma e demolições, além do CAT, deverão atender aos seguintes padrões:<br><br>I - identificar as caixas coletoras, contendo nas suas laterais: nome da empresa proprietária, número de telefone e número de inscrição municipal fornecido pela Secretaria da Fazenda;<br><br>II - identificar com código da empresa e número do CAT, fornecido pela Secretaria Municipal de Serviços Públicos que facilite a localização desta empresa.<br><br><a name="artigo_12"><span class="label label-pill label-danger">Art. 12</span></a> As caixas coletoras devem ser sinalizadas com faixas refletivas, em cor que permita sua rápida visualização, notadamente no período noturno, da seguinte forma:<br><br>I - nas laterais deverão ser colocadas cinco faixas refletivas de 05 cm (cinco centímetros) de largura por 15 cm (quinze centímetros) de comprimento, sendo uma no centro e as demais em cada uma das extremidades;<br><br>II - nas partes da frente e traseira deverão ser colocadas 04 (quatro) faixas refletivas de 05 cm (cinco centímetros) de largura por 15 cm (quinze centímetros) de comprimento, cada, nas laterais das mesmas.<br><br>Parágrafo único. As faixas refletivas deverão ser fixadas numa faixa de 30 cm (trinta centímetros), de fundo branco, com o objetivo de evitar que sejam confundidas as faixas refletivas com as cores das caixas coletoras.<br><br><a name="artigo_13"><span class="label label-pill label-danger">Art. 13</span></a> De forma que a utilização das caixas coletoras não venham a impedir o tráfego de veículos e a passagem de pedestres, as mesmas deverão ser colocadas no leito carrocível e/ou no passeio da seguinte forma:<br><br>I - Na via, próxima ao meio fio, sempre que for permitido estacionamento de veículo ou similares no local;<br><br>II - Na calçada, sempre que permitir a passagem de pedestres, obedecendo a um corredor de 70 cm (setenta centímetros) entre a caixa e o muro;<br><br>III - no recuo das calçadas, nas garagens ou dentro dos terrenos das obras, sempre que for possível.<br><br>Parágrafo único. As caçambas metálicas estacionadas poderão receber todos os resíduos, sendo seu descarte fiscalizado e orientado pela Secretaria de Serviços Públicos do Município.<br><br><a name="artigo_14"><span class="label label-pill label-danger">Art. 14</span></a> Os transportadores ficam proibidos de realizar o transporte dos resíduos quando os dispositivos que os contenham estejam com a capacidade volumétrica elevada pela utilização de chapas, placas ou outros suplementos.<br><br><a name="artigo_15"><span class="label label-pill label-danger">Art. 15</span></a> Os transportadores ficam obrigados a utilizar dispositivos de cobertura de carga, durante o transporte dos resíduos, evitando o derramamento de resíduos nas vias públicas durante a operação.<br><br><a name="artigo_16"><span class="label label-pill label-danger">Art. 16</span></a> Os transportadores ficam proibidos de fazer o deslocamento de resíduos sem o respectivo documento de Controle de Transporte de Resíduos e ficam obrigados a fornecer, aos geradores atendidos, comprovantes da entrega correta dos resíduos nas áreas de destinação licenciadas.<br><br><a name="artigo_17"><span class="label label-pill label-danger">Art. 17</span></a> Os transportadores ficam obrigados a fornecer o canhoto controle do CT contendo os dados a fonte geradora dos resíduos.<br><br><a name="artigo_18"><span class="label label-pill label-danger">Art. 18</span></a> Aos infratores das disposições estabelecidas nesta Lei e das normas dela decorrentes serão aplicadas as seguintes penalidades:<br><br>I - multa;<br><br>II - apreensão do veículo usado para o transporte através da SMTT;<br><br>III - suspensão por até 15 (quinze) dias de exercício da atividade no CT;<br><br>IV - Cassação do alvará de autorização ou funcionamento da atividade do Cadastro de Transportador - CT.<br><br><a name="artigo_19"><span class="label label-pill label-danger">Art. 19</span></a> Por transgressão do disposto nesta Lei e das normas dela decorrentes, consideram-se infratores:<br><br>I - o representante legal proprietário do veículo transportador;<br><br>II - o motorista e ou o proprietário do veículo transportador ou caixa estacionária;<br><br>III - o responsável cadastrado no CT.<br><br><a name="artigo_20"><span class="label label-pill label-danger">Art. 20</span></a> O responsável pela infração será multado e em caso de reincidência, sofrerá a penalidade em dobro, e assim sucessivamente.<br><br><a name="artigo_21"><span class="label label-pill label-danger">Art. 21</span></a> Aos infratores desta Lei serão aplicadas as seguintes penalidades:<br><br>I - multa de R$ 1.000,00 (mil reais) na primeira vez;<br><br>II - multa de R$ 2.000,00 (dois mil reais) na segunda reincidência;<br><br>III - multa de R$ 4.000,00 (quatro mil reais) na terceira reincidência;<br><br>IV - cancelamento do alvará de funcionamento e CT - Cadastro de Transportador;<br><br>V - as multas serão corrigidas anualmente pelo INPC.<br><br><a name="artigo_22"><span class="label label-pill label-danger">Art. 22</span></a> A quitação da multa, pelo infrator, não o exime do cumprimento de outras obrigações legais nem o isentará da obrigação de reparar os danos resultantes da infração detectada pela fiscalização.<br><br><a name="artigo_23"><span class="label label-pill label-danger">Art. 23</span></a> Tendo sido sanada o pagamento da multa, o infrator poderá requerer a liberação do Cadastro de Transportador - CT.<br><br><a name="artigo_24"><span class="label label-pill label-danger">Art. 24</span></a> Os valores arrecadados pelas multas serão revertidos para a Agência Reguladora de Feira de Santana para ações de comunicação e educação ambiental referentes ao tema resíduos sólidos.<br><br><a name="artigo_25"><span class="label label-pill label-danger">Art. 25</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário especialmente a Lei nº <a class="link_law" data-id="2005588" data-original-title=" Data da Norma: 27.08.2014 - DISPÕE SOBRE A UTILIZAÇÃO DE CAIXAS ESTACIONÁRIAS DE ENTULHO EM FEIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2014/347/3475/lei-ordinaria-n-3475-2014-dispoe-sobre-a-utilizacao-de-caixas-estacionarias-de-entulho-em-feira-de-santana-e-da-outras-providencias" rel="tooltip">3.475</a>/2014.<br><br>Gabinete do Prefeito Municipal, 09 de outubro de 2017.<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO MUNICIPAL<br><br>MARIO COSTA BORGES<br>CHEFE DE GABINETE DO PREFEITO<br><br>CLEUDSON SANTOS ALMEIDA<br>PROCURADOR GERAL DO MUNICÍPIO<br><br>JUSTINIANO OLIVEIRA FRANÇA<br>SECRETÁRIO MUNICIPAL DE SERVIÇOS PÚBLICOS<br><br>MANOEL CORDEIRO NETO<br>DIRETOR PRESIDENTE DA AGÊNCIA REGULADORA DE FEIRA DE SANTANA - ARFES<br><br>PUBLICADO NO DIÁRIO OFICIAL ELETRÔNICO DIA 17 DE OUTUBRO DE 2017.<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

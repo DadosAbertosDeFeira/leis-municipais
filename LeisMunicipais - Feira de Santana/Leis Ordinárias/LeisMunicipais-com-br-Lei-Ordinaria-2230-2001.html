@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 2230/2001</h2><br>REESTRUTURA O CONSELHO MUNICIPAL DE SAÚDE E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Autor: Poder Executivo<br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, no uso de suas atribuições, Faço saber que a Câmara Municipal, através do Projeto de Lei nº 22/2001, de autoria do Poder Executivo, decreta e eu sanciono a seguinte Lei:<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> I<br>DOS OBJETIVOS<br></span></span><br><br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica reestruturado o Conselho Municipal de Saúde - CMS, órgão integrante da estrutura da Secretaria Municipal de Saúde, de caráter consultivo, normativo, fiscalizador e deliberativo das ações de saúde desenvolvidas pelo Município, instituído através da Lei Municipal nº <a class="link_law" data-id="1612777" data-original-title=" Data da Norma: 15.05.1991 - DISPÕE SOBRE O CONSELHO MUNICIPAL DE SAÚDE, E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1991/141/1415/lei-ordinaria-n-1415-1991-dispoe-sobre-o-conselho-municipal-de-saude-e-da-outras-providencias" rel="tooltip">1415</a>/91, de 18/05/91, em consonância com o disposto na <a class="link_law" data-original-title="Lei Orgânica Feira de Santana BA" data-toggle="tooltip" href="/lei-organica-feira-de-santana-ba" rel="tooltip">Lei Orgânica</a> do Município de Feira de Santana, que reger-se-á na conformidade das normas estabelecidas nesta Lei.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O Conselho Municipal de Saúde (CMS) terá a seguinte competência:<br><br>I - atuar na formulação e controle da execução da política de saúde, incluídos seus aspectos econômicos, financeiros e de gerência técnico-administrativa;<br><br>II - estabelecer estratégias e mecanismos de coordenação e gestão do Sistema Único de Saúde, articulando-se com os demais colegiados em nível nacional, estadual e municipal;<br><br>III - formular diretrizes de elaboração e aprovar os planos de saúde, adequando-os às diversas realidades epidemiológicas e à capacidade organizacional dos serviços;<br><br>IV - propor a adoção de critérios que definam qualidade e melhor resolutividade, verificando o processo de incorporação dos avanços científicos e tecnológicos na área;<br><br>V - propor medidas para o aperfeiçoamento da organização e do funcionamento do Sistema Único de Saúde - SUS;<br><br>VI - examinar propostas e denúncias, responder a consultas sobre assuntos pertinentes a ações e serviços de saúde, bem como apreciar recursos a respeito de deliberações do colegiado;<br><br>VII - fiscalizar e acompanhar o desenvolvimento das ações e serviços de saúde;<br><br>VIII - propor a convocação e estruturar a comissão organizadora das conferências municipais de saúde, aprovando o regimento e as normas de funcionamento a serem realizadas ordinariamente a cada 02 (dois) anos, e convocá-las extraordinariamente se uma situação de relevância assim o exigir;<br><br>IX - fiscalizar a movimentação de recursos repassados à Secretaria Municipal de Saúde ou ao Fundo Municipal de Saúde;<br><br>X - estimular a participação comunitária no controle da administração do sistema de saúde;<br><br>XI - propor critérios para a programação e para a execução financeira e orçamentária do Fundo Municipal de Saúde, acompanhando a movimentação e destinação dos recursos;<br><br>XII - estabelecer critérios e diretrizes quanto à localização e ao tipo de unidades prestadoras de serviços de saúde, públicos e privado, no âmbito do SUS no Município;<br><br>XIII - elaborar, aprovar ou propor modificações no seu regimento interno e nas suas normas de funcionamento;<br><br>XIV - estimular, apoiar ou promover estudos e pesquisas sobre assuntos e temas na área de saúde, de interesse para o desenvolvimento do Sistema Único de Saúde;<br><br>XV - garantir e estimular a participação dos diversos segmentos da sociedade civil, nos assuntos relacionados à saúde no Município;<br><br>XVI - propor critérios para a definição de parâmetros de atenção à saúde no Município;<br><br>XVII - acompanhar, avaliar e fiscalizar os serviços de saúde prestados à população pelos órgãos e entidades públicas, privadas e filantrópicas integrantes do SUS no Município;<br><br>XVIII - apreciar e aprovar os relatórios de gestão apresentados pela Secretaria Municipal de Saúde e pronunciar-se sobre os mesmos;<br><br>XIX - promover a articulação interinstitucional e inter-setorial para garantir a atenção à saúde, conforme estabelece a legislação;<br><br>XX - definir critérios para a celebração de contratos e convênios entre o setor público e as entidades privadas e filantrópicas no que tange a prestação de serviços de saúde;<br><br>XXI - apreciar e aprovar previamente os contratos e convênios referidos no inciso anterior, acompanhando sua execução;<br><br>XXII - assegurar o direito de infomação à população, permitindo ampla participação da comunidade no controle e avaliação do sistema;<br><br>XXIII - exercer outras atividades correlatas.<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br> Capítulo <span class="titulo" style="text-transform:uppercase"> II<br>DA ESTRUTURA E FUNCIONAMENTO<br></span></span><br><span class="titulo" style="width: auto;display: block;text-align:center"><br>SEÇÃO I<br>DA COMPOSIÇÃO<br></span><br><br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> O Conselho Municipal de Saúde - CMS - terá a seguinte composição:<br><br>I - representando a administração pública:<br><br>a) 02 representantes da Secretaria Municipal de Saúde;<br>b) 01 representante da Secretaria Municipal de Educação;<br>c) 01 representante da Secretaria Municipal de Desenvolvimento Social;<br>d) 01 representante da Universidade Estadual de Feira de Santana;<br>e) 01 representante da 2ª Diretoria Regional de Saúde;<br>f) 01 representante dos prestadores de serviços conveniados ou não do SUS;<br>g) 02 representantes dos profissionais de saúde.<br><br>II - das entidades e associações comunitárias:<br><br>a) 01 representante da Federação das Associações de Moradores de Feira de Santana;<br>b) 01 representante dos sindicatos ou associações dos trabalhadores rurais de Feira de Santana;<br>c) 01 representante dos sindicatos ou associações dos trabalhadores urbanos de Feira de Santana;<br>d) 01 representante das igrejas evangélicas de Feira de Santana;<br>e) 01 representante da pastoral da saúde:<br>f) 01 representante de clube de serviços e entidades voltadas para a organização comunitária de Feira de Santana;<br>g) 01 representante dos portadores de deficiência física de Feira de Santana;<br>h) 01 representante do Conselho Municipal dos Direitos da Criança e do Adolescente;<br>i) 01 representante das associações dos profissionais de saúde.<br><br>§ 1º Na composição do CMS, será assegurado a participação paritária de representantes de organismos governamentais com atividades na área de saúde e de instituições da sociedade civil organizada sediados no Município.<br><br>§ 2º O CMS será presidido pelo Secretário Municipal de Saúde, sendo por ele convocado para reunião mensal em caráter ordinário.<br><br>§ 3º Na ausência ou impedimento do presidente do CMS, a presidência será exercida pelo seu suplente.<br><br>§ 4º A cada titular do CMS corresponderá um suplente.<br><br>§ 5º Os representantes de grupos de entidades com participação na vida comunitária serão escolhidos em assembléias específicas, realizadas por convocação da Secretaria Municipal de Saúde, ou serão indicados através de ofícios, assinados pelos responsáveis das instituições, conforme o caso.<br><br>§ 6º Só poderão participar da assembléia prevista no artigo antecedente as entidades que demonstrarem possuir regularidade jurídica.<br><br>§ 7º Os representantes dos órgãos públicos serão indicados pelos seus respectivos titulares através de ofício ao Prefeito Municipal, e não terão mandato fixo, permanecendo no colegiado enquanto forem credenciados pelo órgão representado.<br><br>§ 8º Os mandatos dos conselheiros serão de 02 (dois) anos, permitida a recondução.<br><br>§ 9º O quorum mínimo para instalação dos trabalhos é de maioria absoluta dos membros do CMS.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> As funções dos membros do CMS serão consideradas de relevância pública, não percebendo estes qualquer remuneração, seja a que título for.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Todos os membros do CMS, após sua indicação por seus respectivos órgãos ou entidades, serão nomeados por ato do Prefeito Municipal.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Os membros do CMS serão substituídos caso faltem, sem motivo justificado a 03 (três) reuniões consecutivas ou 06 (seis) reuniões intercaladas no período de 180 (cento e oitenta) dias.<br><br><span class="titulo" style="width: auto;display: block;text-align:center"><br>SEÇÃO II<br>DO FUNCIONAMENTO<br></span><br><br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> O Regimento Interno do CMS considerará, ao dispor sobre seu funcionamento, os seguintes princípios:<br><br>I - o órgão de deliberação máxima será o plenário;<br><br>II - as sessões plenárias serão realizadas ordinariamente a cada mês e extraordinariamente quando convocadas pelo presidente ou por requerimento da maioria de 2/3 dos seus membros;<br><br>III - para a realização das sessões será necessária a presença da maioria absoluta dos membros do CMS, que deliberará pela maioria dos votos dos presentes;<br><br>IV - cada membro do CMS terá direito a único voto na sessão plenária;<br><br>V - as decisões do CMS serão consubstanciadas em resoluções, cabendo à Secretaria Municipal de Saúde adotar as medidas administrativas necessárias à sua efetivação;<br><br>VI - As resoluções do CMS, os temas tratados em plenário e as decisões de reuniões deverão ter ampla divulgação.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> Para melhor desempenho de suas funções, o CMS poderá recorrer a pessoas e entidades, mediante os seguintes critérios:<br><br>I - consideram-se colaboradores do CMS, as instituições formadoras de recursos humanos para a saúde e as entidades representativas de profissionais e usuários dos serviços de saúde sem embargo de sua condição de membros;<br><br>II - poderão ser convidadas pessoas ou instituições de notória especialização para assessorar o CMS em assuntos específicos.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> O CMS contará com um colegiado pleno, integrado por todos os conselheiros e uma secretaria executiva, podendo também compor câmaras ou assessorias técnicas.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10 -</span></a> As sessões plenárias ordinárias e extraordinárias do CMS deverão ter divulgação ampla, com o acesso assegurado ao público.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11 -</span></a> A Secretaria Municipal de Saúde prestará o apoio administrativo necessário ao funcionamento do CMS.<br><br><a name="artigo_12"><span class="label label-pill label-danger">Art. 12 -</span></a> O CMS adequará seu Regimento Interno aos dispositivos aqui estabelecidos no prazo de 90 (noventa) dias após a vigência desta Lei.<br><br><a name="artigo_13"><span class="label label-pill label-danger">Art. 13 -</span></a> As despesas decorrentes da execução da presente Lei correrão à conta de dotação orçamentária da Secretaria Municipal de Saúde, em consonância com o disposto na Lei Federal nº 4.320/64.<br><br><a name="artigo_14"><span class="label label-pill label-danger">Art. 14 -</span></a> A Secretaria Municipal de Saúde adotará as providências necessárias para implantação do Conselho nos moldes aqui previstos, logo após a publicação desta Lei.<br><br><a name="artigo_15"><span class="label label-pill label-danger">Art. 15 -</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito, 16 abril de 2001.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

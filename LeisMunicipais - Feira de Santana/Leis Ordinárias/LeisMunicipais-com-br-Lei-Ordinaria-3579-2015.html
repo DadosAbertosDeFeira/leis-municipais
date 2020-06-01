@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3579 DE 06 DE NOVEMBRO DE 2015</h2><br>INSTITUI PUNIÇÃO AOS ESTABELECIMENTOS QUE DESRESPEITAREM O DIREITO A MEIA-ENTRADA NO ÂMBITO DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, no uso de suas atribuições, Faço Saber que a Câmara Municipal, através do Projeto de LEI Nº 120/2015, de autoria do Edil Pablo Roberto Gonçalves da Silva, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Institui punição aos estabelecimentos que subtraírem o direito de meia-entrada, conforme constante nas Leis Federais nº 12.852 e nº 12.933, no âmbito de Feira de Santana.<br><br>Parágrafo único. Entende-se por meia-entrada o direito assegurado aos estudantes a acesso a salas de cinema, cineclubes, teatros, espetáculos musicais e circenses e eventos educativos, esportivos, de lazer e de entretenimento promovidos por quaisquer entidades e realizados em estabelecimentos públicos ou particulares, mediante pagamento da metade do preço do ingresso efetivamente cobrado ao público em geral.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Terão direito ao benefício os estudantes regularmente matriculados nos níveis e modalidades de educação e ensino previstos no Título V da Lei Federal nº 9.394, de 20 de Dezembro de 1996, que comprovem sua condição de discente, mediante a apresentação, no momento da aquisição do ingresso e na portaria do local de realização do evento, da Carteira de Identificação Estudantil (CIE) emitida pela Associação Nacional de Pós graduandos (ANPG), pela União Nacional dos Estudantes (UNE), pela União Brasileira dos Estudantes Secundaristas (Ubes), pelas entidades estaduais e municipais filiadas àquelas, pelos Diretórios Centrais dos ESTUDANTES (DCEs) e pelos Centros e Diretórios Acadêmicos, com prazo de validade renovável a cada ano, conforme modelo único nacionalmente padronizado e publicamente disponibilizado pelas entidades nacionais antes referidas e pelo Instituto Nacional de Tecnologia da Informação (ITI), com certificação digital deste, podendo a carteira de identificação estudantil ter 50% (cinquenta por cento) de características locais.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Configura-se desrespeito ao direito a pagamento de meia-entrada qualquer forma de subtrair, burlar ou enganar o possuidor deste direito fazendo com que este não tenha acesso a esse direito, tais como:<br><br>I - não ofertar quota de meia-entrada prevista na Lei Federal nº 12.933 de 40% (quarenta por cento) nos eventos realizados no município;<br><br>II - conceder direito a meia-entrada àqueles que não estejam previstos nas Leis constantes no art. 1º desta Lei;<br><br>III - não fiscalizar se o detentor de ingresso a preço de meia-entrada possui, de fato, este direito que será comprovado conforme dispositivo do art. 2º desta Lei;<br><br>IV - simular venda de meia-entrada, não ofertando entrada inteira àqueles que devem adquiri-las para adentrar aos constantes no parágrafo único do art. 1º, de modo a ludibriar o consumidor possuidor da garantia de pagamento de meia a acreditar que está possuindo ingresso conforme seu direito.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Os estabelecimentos que descumprirem o disposto nesta Lei ficam sujeitos às seguintes penalidades:<br><br>I - advertência para se adequar às normas previstas;<br><br>II - multa de 10% (dez por cento) a 50% (cinquenta por cento) do faturamento bruto do evento, conforme reincidência da prática;<br><br>III - cassação de alvará de funcionamento do estabelecimento.<br><br>Parágrafo único. A fiscalização das normas previstas nesta Lei será de responsabilidade da Superintendência de Proteção e Defesa do Consumidor (PROCON), não se excluindo outras formas possíveis prevista na Lei.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Os estabelecimentos produtores dos eventos previstos no parágrafo único do artigo 1º terão prazo de 90 (noventa) dias para se adequarem as normas desta Lei.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> O Poder Executivo Municipal expedirá, no prazo de 30 (trinta) dias as instruções complementares que se fizerem necessárias à execução do disposto nesta Lei, bem como sua regulamentação.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário<br><br>Gabinete do Prefeito, 06 de novembro de 2015.<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO MUNICIPAL<br><br>MARIO COSTA BORGES<br>CHEFE DE GABINETE DO PREFEITO<br><br>CLEUDSON SANTOS ALMEIDA<br>PROCURADOR GERAL DO MUNICÍPIO<br><br>EXPEDITO CAMPODÔNIO ELOY<br>SECRETÁRIO MUNICIPAL DA FAZENDA<br><br>SUZANA OLIVEIRA FERREIRA MENDES<br>SUPERINTENDENTE MUNICIPAL DE PROTEÇÃO E DEFESA DO CONSUMIDOR - PROCON/FSA<br><br>PUBLICADO NO DIÁRIO OFICIAL ELETRÔNICO DIA 07 DE NOVEMBRO DE 2015.<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

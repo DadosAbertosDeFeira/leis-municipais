@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>DECRETO Nº 8942, de 18 de junho de 2013</h2><br>ABRE CRÉDITO SUPLEMENTAR AO ORÇAMENTO DO MUNICÍPIO, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, no uso de suas atribuições legais e com base na autorização contida na Lei Nº  <a class="link_law" data-id="1579379" data-original-title=" Data da Norma: 11.12.2012 - ESTIMA A RECEITA E FIXA A DESPESA DO MUNICÍPIO DE FEIRA DE SANTANA PARA O EXERCÍCIO FINANCEIRO DE 2013. (R$ 751.967.206,00)" data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2012/335/3350/lei-ordinaria-n-3350-2012-estima-a-receita-e-fixa-a-despesa-do-municipio-de-feira-de-santana-para-o-exercicio-financeiro-de-2013-r-751967-206-00" rel="tooltip">3.350</a>, de 11 de dezembro de 2012, artigo 6º, § 1º, DECRETA:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica aberto Crédito Suplementar ao Orçamento do Município no valor de R$ 4.492.000,00 (quatro milhões quatrocentos e noventa e dois mil reais), conforme detalhamento abaixo:<pre> ____________________________________________________<br>| CLASS.|  PROGRAMÁTICA |ECONÔMICA|FONTE| VALOR (R$) |<br>| INST. |               |         |     |            |<br>|=======|===============|=========|=====|============|<br>|09.0909|12.361.048.1010|4.4.90.51| 0001|1.100.000,00|<br>|-------|---------------|---------|-----|------------|<br>|09.0909|12.361.048.1085|3.3.90.39| 0001|  700.000,00|<br>|-------|---------------|---------|-----|------------|<br>|13.1313|15.451.036.2097|4.4.90.51| 0000|2.692.000,00|<br>|-------|---------------|---------|-----|------------|<br>|       |               |         |TOTAL|4.492.000,00|<br>|_______|_______________|_________|_____|____________| * tabela formatada pela equipe técnica do LeisMunicipais.com.br<br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Os recursos disponíveis para acorrer às despesas decorrentes do presente crédito suplementar correrão à conta de anulações nas dotações abaixo detalhadas:<pre> ____________________________________________________<br>| CLASS.|  PROGRAMÁTICA |ECONÔMICA|FONTE| VALOR (R$) |<br>| INST. |               |         |     |            |<br>|=======|===============|=========|=====|============|<br>|04.0404|04.122.001.2011|3.3.90.30| 0000|   20.000,00|<br>|-------|---------------|---------|-----|------------|<br>|04.0404|04.122.001.2011|4.4.90.52| 0000|   20.000,00|<br>|-------|---------------|---------|-----|------------|<br>|06.0606|04.122.001.2020|3.3.90.37| 0000|  200.000,00|<br>|-------|---------------|---------|-----|------------|<br>|07.0707|24.131.010.2023|3.3.90.39| 0000|  300.000,00|<br>|-------|---------------|---------|-----|------------|<br>|07.0707|24.131.010.2024|3.3.90.39| 0000|  500.000,00|<br>|-------|---------------|---------|-----|------------|<br>|08.0808|04.121.008.2028|3.3.90.39| 0000|  300.000,00|<br>|-------|---------------|---------|-----|------------|<br>|10.1010|27.813.050.2044|3.3.50.43| 0000|   50.000,00|<br>|-------|---------------|---------|-----|------------|<br>|12.1212|08.122.001.2078|3.3.90.39| 0000|  200.000,00|<br>|-------|---------------|---------|-----|------------|<br>|13.1313|15.451.036.1037|3.3.90.39| 0000|   50.000,00|<br>|-------|---------------|---------|-----|------------|<br>|13.1313|15.451.036.2097|3.3.90.39| 0000|   50.000,00|<br>|-------|---------------|---------|-----|------------|<br>|14.1414|04.334.022.2108|3.3.90.39| 0000|  100.000,00|<br>|-------|---------------|---------|-----|------------|<br>|14.1414|15.244.022.2148|3.3.90.30| 0000|  150.000,00|<br>|-------|---------------|---------|-----|------------|<br>|14.1414|23.691.022.2109|3.3.90.39| 0000|  100.000,00|<br>|-------|---------------|---------|-----|------------|<br>|15.1515|15.451.014.2115|3.3.90.30| 0000|   50.000,00|<br>|-------|---------------|---------|-----|------------|<br>|15.1515|15.452.014.2119|3.3.90.30| 0000|  125.000,00|<br>|-------|---------------|---------|-----|------------|<br>|15.1515|15.452.015.2122|4.4.90.52| 0000|  100.000,00|<br>|-------|---------------|---------|-----|------------|<br>|16.1616|15.541.014.2117|3.3.90.32| 0000|   26.000,00|<br>|-------|---------------|---------|-----|------------|<br>|16.1616|15.541.014.2117|3.3.90.36| 0000|   20.000,00|<br>|-------|---------------|---------|-----|------------|<br>|16.1616|20.606.054.2125|3.3.90.32| 0000|  100.000,00|<br>|-------|---------------|---------|-----|------------|<br>|16.1616|20.606.054.2125|3.3.90.39| 0000|  400.000,00|<br>|-------|---------------|---------|-----|------------|<br>|17.1717|16.122.001.2128|3.3.90.39| 0000|  100.000,00|<br>|-------|---------------|---------|-----|------------|<br>|17.1717|16.482.003.1045|3.3.90.35| 0000|  100.000,00|<br>|-------|---------------|---------|-----|------------|<br>|17.1717|16.482.003.1045|4.4.90.51| 0000|  150.000,00|<br>|-------|---------------|---------|-----|------------|<br>|17.1717|16.482.003.1045|4.4.90.61| 0000|  100.000,00|<br>|-------|---------------|---------|-----|------------|<br>|17.1717|16.482.003.1048|3.3.90.35| 0000|   31.000,00|<br>|-------|---------------|---------|-----|------------|<br>|17.1717|16.482.003.2129|3.3.90.35| 0000|   20.000,00|<br>|-------|---------------|---------|-----|------------|<br>|18.1818|04.122.001.2131|3.3.90.14| 0000|    5.000,00|<br>|-------|---------------|---------|-----|------------|<br>|18.1818|04.122.001.2131|3.3.90.30| 0000|    5.000,00|<br>|-------|---------------|---------|-----|------------|<br>|18.1818|04.122.001.2131|3.3.90.39| 0000|    5.000,00|<br>|-------|---------------|---------|-----|------------|<br>|18.1818|04.122.001.2131|4.4.90.52| 0000|    5.000,00|<br>|-------|---------------|---------|-----|------------|<br>|19.1919|15.453.031.1050|3.3.90.39| 0000|  150.000,00|<br>|-------|---------------|---------|-----|------------|<br>|19.1919|26.125.031.2134|3.3.90.39| 0000|  100.000,00|<br>|-------|---------------|---------|-----|------------|<br>|19.1919|26.452.031.2136|3.3.90.39| 0000|  100.000,00|<br>|-------|---------------|---------|-----|------------|<br>|20.2020|18.122.001.2180|3.3.90.36| 0000|   50.000,00|<br>|-------|---------------|---------|-----|------------|<br>|20.2025|18.122.012.2183|3.3.90.39| 0000|  100.000,00|<br>|-------|---------------|---------|-----|------------|<br>|21.2127|06.181.061.2013|3.3.90.30| 0000|   50.000,00|<br>|-------|---------------|---------|-----|------------|<br>|21.2127|06.181.061.2013|4.4.90.52| 0000|  100.000,00|<br>|-------|---------------|---------|-----|------------|<br>|21.2127|06.181.002.2062|3.3.90.30| 0000|   35.000,00|<br>|-------|---------------|---------|-----|------------|<br>|21.2127|04.122.001.2065|3.3.90.30| 0000|  100.000,00|<br>|-------|---------------|---------|-----|------------|<br>|21.2127|04.122.001.2065|4.4.90.51| 0000|  140.000,00|<br>|-------|---------------|---------|-----|------------|<br>|21.2133|08.244.001.2233|3.3.90.37| 0000|   50.000,00|<br>|-------|---------------|---------|-----|------------|<br>|21.2133|08.244.001.2233|4.4.90.52| 0000|  100.000,00|<br>|-------|---------------|---------|-----|------------|<br>|22.2230|04.122.001.2228|3.3.90.30| 0000|    8.000,00|<br>|-------|---------------|---------|-----|------------|<br>|22.2230|04.122.001.2228|3.3.90.39| 0000|   12.000,00|<br>|-------|---------------|---------|-----|------------|<br>|24.2435|19.573.001.2243|3.3.90.39| 0000|    9.000,00|<br>|-------|---------------|---------|-----|------------|<br>|24.2435|19.573.008.2244|3.3.90.39| 0000|    6.000,00|<br>|-------|---------------|---------|-----|------------|<br>|       |               |         |TOTAL|4.492.000,00|<br>|_______|_______________|_________|_____|____________| * tabela formatada pela equipe técnica do LeisMunicipais.com.br<br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Fica a Contabilidade Municipal autorizada a efetuar os registros contábeis necessários ao cumprimento deste Decreto.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Este Decreto entra em vigor na data da sua publicação.<br><br>Gabinete do Prefeito Municipal, 18 de junho de 2013.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito Municipal<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

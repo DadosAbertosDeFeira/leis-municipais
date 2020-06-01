@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>DECRETO Nº 8940, de 18 de junho de 2013.</h2><br>FIXA OS LIMITES PARA EMISSÕES SONORAS DURANTE OS FESTEJOS DE SÃO JOÃO E SÃO PEDRO NA SEDE E DISTRITOS DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O Prefeito Municipal de Feira de Santana, Estado da Bahia, no uso de suas atribuições,<br><br>CONSIDERANDO a necessidade de estabelecer e fiscalizar a medidas de combate à poluição sonora, fixando os limites de som permitidos durante a realização dos festejos de São João e São Pedro na sede e Distritos de Feira de Santana, exclusivamente nas áreas determinadas e Liberadas pela Autoridade Municipal para a realização de festas e uso de equipamentos sonoros;<br><br>CONSIDERANDO, também o que dispõe o Código do Meio Ambiente (Lei nº <a class="link_law" data-id="" data-original-title=" Data da Norma: .. - " data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2009/4/41/lei-ordinaria-n-41-2009-este-ato-ainda-nao-esta-disponivel-no-sistema" rel="tooltip">041</a>/042-2009) no seu Capítulo I, das Infrações e Penalidades e outros documentos legais pertinentes;<br><br>CONSIDERANDO enfim, que cabe a Secretaria Municipal de Meio Ambiente e Recursos Naturais - SEMMAM, por meio de seus prepostos, a aplicação dos dispositivos legais e das medidas de combate á poluição sonora, com objetivo de garantir a sustentabilidade sócio ambiental dos festejos de São João e São Pedro na sede e Distritos de Feira de Santana, DECRETA:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> As entidades e empresas que desejem realizar eventos, de festejos de São João e São Pedro na sede e Distritos de Feira de Santana, e atividades similares, obedecerão aos níveis de emissões sonoras definidas para o sítio ou área da festa e estabelecidas neste Decreto.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Fica estabelecido que os limites fixados, que se aplicam, apenas ao Sitio da Festa e área do evento, estando os limites previstos em Lei, vigente em todos os outros logradouros do Município, deste modo no período compreendido entre as 00h do dia fixado para o inicio e para o fim dos festejos de São João e São Pedro na sede e Distritos, na forma abaixo, são os (limites) discriminados:<br><br>I - 85 dB (decibéis) para clubes, condicionados à liberação de Alvará de Utilização Sonora pela SEMMAM, medidos a uma distância de 5,00m (cinco metros) do limite do imóvel onde se encontra a fonte emissora.<br><br>II - 85 dB (decibéis) para barracas e similares, medidos no limite.<br><br>III - 100 dB (decibéis) para palcos fixos, trios elétricos e carros de som, medidos nas laterais a 5,0m (cinco metros) de distância à altura de 1,5m do Solo.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> As entidades e empresas participantes dos festejos de São João e São Pedro na sede e Distritos de Feira de Santana, devem divulgar por diversos meios a obrigação de seguir os limites previstos neste Decreto.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> As medidas de proteção individual da sociedade, em relação à poluição sonora, que se aplicam às entidades participantes dos festejos de São João e São Pedro na sede e Distritos são:<br><br>I - Advertências escritas aos participantes que devem ser afixadas nas laterais dos palcos fixos, trios, advertindo a necessidade de não permanência naquela área do Evento, em razão dos riscos provocados pela exposição continua a sons e ruídos, acima do limite de tolerância (LT).<br><br>II - Todos os segurança e pessoal de apoio em serviço devem estar utilizando de modo correto e permanente os protetores internos tipo &quot;plug&quot;, ao prestarem serviços às entidades participantes dos festejos de São João e São Pedro na sede e Distritos.<br><br>Parágrafo Único - A inobservância a qualquer determinação deste Decreto acarretará a multa de R$ 10.000,00 (dez mil reais) que será aplicada pela SEMMAM à entidade infratora. No caso de reincidência as penalidades serão em dobro, revertidas ao FUNDEMA - Fundo Municipal de Defesa do Meio Ambiente.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> As entidades e/ou empresas devem auxiliar a colaborar com a fiscalização, determinando sempre um representante para acompanhar os prepostos da SEMMAM, na auditoria ambiental.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Este Decreto entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito, 18 de junho de 2013.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito Municipal<br><br>MÁRIO COSTA BORGES<br>Chefe de Gabinete do Prefeito<br><br>ROBERTO LUIZ DA SILVA TOURINHO<br>Secretário Municipal de Meio Ambiente e Recursos Naturais<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>DECRETO Nº 8834, de 10 de janeiro de 2013.</h2><br>NOMEIA MEMBROS DA COMISSÃO PERMANENTE DE LICITAÇÃO DA PREFEITURA MUNICIPAL DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, no uso de suas atribuições, DECRETA:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica instituída, no âmbito do Município de Feira de Santana, uma única Comissão Permanente de Licitação, com atribuições para processar certames licitatórios de todas as modalidades de licitação.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> A Comissão Permanente de Licitação será constituída dos seguintes integrantes:<br><br>I - TITULARES:<br><br>a) Adriana Estela Barbosa Assis;<br>b) Cadmiel Mascarenhas Pereira;<br>c) Caroline Suzart Cotias Freitas;<br>d) Maria das Graças Carneiro Ferreira;<br>e) Josilene da Silva Araújo;<br>f) Marilândia da Luz Maia;<br>g) Mariane Jerusa das Neves.<br><br>II - SUPLENTES:<br><br>a) Aidil Pinheiro do Nascimento;<br>b) Fabrício dos Santos Amorim;<br>c) Osmário de Jesus Oliveira;<br>d) Sirleide de Oliveira Rodrigues Araújo.<br><br>§ 1º A Presidência da Comissão será exercida pela servidora ADRIANA ESTELA BARBOSA ASSIS, e nas suas ausências ou impedimentos pelo membro titular CADMIEL MASCARENHAS PEREIRA, ou outro qualquer titular, desde que designado pela Presidência.<br><br>§ 2º Nos Pregões Eletrônicos, bem como nos Pregões Presenciais, a titularidade ficará a cargo da Pregoeira Municipal ADRIANA ESTELA BARBOSA ASSIS, e nas suas ausências ou impedimentos pelo membro titular CADMIEL MASCARENHAS PEREIRA, ou AIDIL PINHEIRO DO NASCIMENTO, podendo requisitar também os demais membros Titulares, Suplentes e Assistentes da Comissão Permanente de Licitação.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Fica constituída uma equipe de Assistentes, com competência para atuar nos certames licitatórios de quaisquer modalidades, nos casos em que o interesse público o exigir, assim definida:<br><br>I - João Pinto de Queiroz Falcão;<br><br>II - Giselle Cristine de Góes Costa Botelho;<br><br>III - Michele Costa Santos;<br><br>IV - Ana Maria de Cerqueira Figueiredo;<br><br>V - Sara Galvão da Silva Portugal;<br><br>VI - Claudia Oliveira Vilas Boas;<br><br>VII - Nilda Silva Muniz Sousa.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> A Procuradoria Geral do Município, caso necessário, poderá designar, na forma da Lei Complementar nº <a class="link_law" data-id="1717328" data-original-title=" Data da Norma: 08.06.1995 - REGULAMENTA O ART. 90 DA LEI ORGÂNICA, QUE CRIOU A PROCURADORIA GERAL DO MUNICÍPIO DE FEIRA DE SANTANA E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-complementar/1995/0/2/lei-complementar-n-2-1995-regulamenta-o-art-90-da-lei-organica-que-criou-a-procuradoria-geral-do-municipio-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">2</a>/95, representantes para atuarem na Comissão ora instituída.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> A investidura dos servidores designados neste Decreto será pelo prazo de 01 (um) ano.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> As entidades da Administração Descentralizada do Executivo Municipal poderão utilizar os serviços da Comissão Permanente de Licitação, ora designada, para realização de seus certames licitatórios.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> O Executivo Municipal poderá, nos casos em que o interesse público exija, nomear Comissão Especial de Licitação com a participação de outros órgãos governamentais ou não, integrada por pessoas de reputação ilibada e reconhecido conhecimento técnico da matéria a ser examinada.<br><br>Parágrafo Único - Em casos de certames licitatórios cujo objeto demonstre elevado grau de complexidade, poderá a Administração, por designação específica, alterar as atribuições da Comissão ora estabelecida.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> Este Decreto entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 10 de janeiro de 2013.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito<br><br>PAULO SÉRGIO AQUINO DE AZEVEDO SOUZA<br>Secretário Municipal de Governo<br>Respondendo pelo Cargo de Chefe de Gabinete do Prefeito<br><br>JOÃO MARINHO GOMES JÚNIOR<br>Secretário Municipal de Administração<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

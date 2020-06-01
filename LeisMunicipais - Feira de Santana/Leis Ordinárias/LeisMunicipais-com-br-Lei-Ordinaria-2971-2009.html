@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 2971/2009</h2><br>ESTABELECE PENALIDADE AO CIDADÃO QUE NÃO TOMAR MEDIDAS PROFILÁTICAS PARA ELIMINAÇÃO DOS CRIADOUROS DO MOSQUITO DA DENGUE (AEDES AEGIPTY), E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Autor: Ângelo Mario C. de Almeida<br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do projeto de Lei nº 33/2009, de autoria do Edil Ângelo Mario C. de Almeida, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> O cidadão da zona urbana e rural de Feira de Santana fica responsável por tomar medidas de prevenção e eliminação dos criadouros dos mosquitos da Dengue (Aedes Aegipty), em residências lotes urbanos ou rurais de sua propriedade.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O imóvel em que for constatado pela vigilância sanitária em sua primeira visita, focos de criadouros do mosquito, o seu proprietário ou inquilino será notificado para em 48 (quarenta e oito) horas, se responsabilizar pela eliminação do(s) foco(s).<br><br>§ 1º Para efeito do cumprimento do caput deste artigo, o responsável pelo imóvel será responsabilizado pela limpeza dos vasos, virarem as garrafas com a boca para baixo, jogar pneus fora ou cobrir com lona, tampar a caixa d` água, entre outros cuidados que se devem ter no combate à Dengue.<br><br>§ 2º A equipe da vigilância sanitária que ficar impedida de vistoriar o imóvel, por qualquer motivo ou por se encontrar fechado e/ou estar sem morador no local, deverá o Município identificar o proprietário para notificar ou mover ação judicial, o qual será dado prazo de conforme reza este artigo, para que possa ser vistoriado.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Caso o problema não tenha sido solucionado no prazo estabelecido pela notificação, será emitido ato de infração, cuja multa pecuniária variará de acordo com a gravidade, que será definido quando da regulamentação desta Lei:<br><br>§ 1º Para efeito de cobrança, a multa terá o valor mínimo de R$ 10,00 (dez reais) e o máximo de R$ 1.000,00 (mil reais) conforme grau de gravidade, cujos valores deverão ser corrigidos anualmente pelo índice da infração.<br><br>§ 2º Em caso de reincidência a multa estabelecida será o dobro da última infração.<br><br>§ 3º Os recursos arrecadados com as multa s deverão ser integralmente aplicados em ações preventivas e tratamentos dos indivíduos infectados.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Para que a vigilância sanitária possa emitir o auto de infração, conforme a gravidade fica estabelecida os seguintes graus:<br><br>I - Leve................. (um) foco;<br><br>II - Moderado............ (dois) a 04 (quatro) focos;<br><br>III - Grave.............. (cinco) a 07 (sete) focos;<br><br>IV - Gravíssimo.......... de 07 (sete) foscos e o agente ficar impedido de vistoriar.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> O Executivo Municipal regulamentará esta Lei em até 90 (noventa) dias, após a sua publicação.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>PREFEITURA MUNICIPAL DE FEIRA DE SANTANA, em 23 de Março de 2009.<br><br>DR.TARCÍZIO SUZART PIMENTA JÚNIOR<br>Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

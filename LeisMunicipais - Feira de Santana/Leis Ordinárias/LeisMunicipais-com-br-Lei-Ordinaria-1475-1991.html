@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 1475, de 12 de setembro de 1991</h2><br>DISPÕE SOBRE A TRANSFERÊNCIA DA TITULARIDADE DOS CRUZADOS NOVOS PARA PAGAMENTO DE DÉBITOS PARA COM A FAZENDA PÚBLICA MUNICIPAL, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, FAÇO saber que a Câmara Municipal decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Os cruzados novos depositados no Banco Central do Brasil, de acordo com o disposto no art. 9º, da Lei nº 8.024, de 12 de abril de 1990, combinado com o art. 7º, da Medida Provisória nº 297, de 28 de junho de 1991, poderão ser utilizados no pagamento total ou parcial de débitos de qualquer natureza, vencidos até 31 de dezembro de 1990, inscritos ou não como dívida ativa dos ajuizados ou não.<br><br>Parágrafo Único - Para fins do disposto no caput deste artigo, o pagamento dos débitos far-se-á através da transferência de titularidade dos cruzados novos das pessoas físicas ou jurídicas para a Prefeitura Municipal de Feira de Santana, segundo os seguintes critérios:<br><br>I - mediante preenchimento de formulário de cheque, nominativo, não à ordem, cabendo ao banco recebedor desse documento a anotação de sua finalidade, com base em documentação que a comprove;<br><br>II - por débito em conta de cruzados novos, mediante autorização do responsável legal pela sua movimentação, sendo válido como instrumento de transferência o documento contábil correspondente, que deve registrar as características da operação.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Poderão ser utilizados os cruzados novos para pagamento, total ou parcial, quando da alienação de bens móveis e imóveis de propriedade do Município de Feira de Santana, de suas autarquias, empresas públicas e fundação.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> O pagamento de débitos ou para a alienação de bens móveis e imóveis, utilizando-se cruzados novos pertencentes a terceiros, far-se-á mediante transferência de titularidade entre pessoas físicas ou entre pessoas físicas e jurídicas.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Os débitos citados referem-se aos vencimentos até 31 de dezembro de 1990 e as alienações.<br><br>Parágrafo Único - A transferência de que trata este artigo far-se-á mediante o preenchimento do cheque nominativo ao beneficiário, o qual será obrigatoriamente endossado ao ente credor ou alienante, não à ordem e conterá declaração expressa de sua finalidade deste Município.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Prefeitura Municipal de Feira de Santana, em 12 de setembro de 1991.<br><br>DR. COLBERT MARTINS DA SILVA<br>Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

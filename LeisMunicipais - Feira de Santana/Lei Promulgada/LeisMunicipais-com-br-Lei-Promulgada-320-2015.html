@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI PROMULGADA Nº 320/2015</h2><br>DISPÕE SOBRE A PROIBIÇÃO DO USO DE &quot;PAPEL TÉRMICO&quot; NA IMPRESSÃO DE RECIBOS E COMPROVANTES BANCÁRIOS E NOS ESTABELECIMENTOS COMERCIAIS, NO ÂMBITO DO MUNICÍPIO DE FEIRA DE SANTANA<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PRESIDENTE DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 58/2015, de autoria da Edil Gerusa Maria Bastos Silva Sampaio, e na conformidade do artigo 78, § 7º, da <a class="link_law" data-original-title="Lei Orgânica Feira de Santana BA" data-toggle="tooltip" href="/lei-organica-feira-de-santana-ba" rel="tooltip">Lei Orgânica</a> do Município, e artigo 25 e inciso V, do Regimento Interno, PROMULGA a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica proibida, no âmbito do Município de Feira de Santana, a impressão, em papel térmico, por instituições bancárias, estabelecimentos comerciais, financeiras, de recibos, comprovantes, notas fiscais, cupons fiscais e outros documentos que necessitem da guarda do consumidor, por período superior a 1 (um) ano.<br><br>Parágrafo único. A proibição que trata o art. 1º desta Lei abrange aos estabelecimentos comerciais e as instituições financeiras.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O descumprimento do dispositivo nesta Lei sujeita o infrator as sanções no Decreto nº <a class="link_law" data-id="" data-original-title=" Data da Norma: .. - " data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/decreto/1997/218/2181/decreto-n-2181-1997-este-ato-ainda-nao-esta-disponivel-no-sistema" rel="tooltip">2.181</a>/97 que regulamenta o Código de Defesa do Consumidor e as seguintes penalidades:<br><br>I - advertência;<br><br>II - apreensão de bobinas de papéis térmicos que for flagranteado a utilização pelo órgão fiscalizador;<br><br>III - multa mínima de R$ 700,00 (setecentos reais) à máxima de R$ 10.000,00 (dez mil reais);<br><br>IV - o valor da multa sofrerá correção anualmente pelo Índice de Preços ao Consumidor Ampliado (IPCA);<br><br>V - interdição parcial ou total da atividade; ou<br><br>VI - cassação do alvará de localização e funcionamento do estabelecimento.<br><br>§ 1º A penalidade referida no inciso I do caput deste artigo será aplicada às infrações de menor potencial.<br><br>§ 2º Na hipótese de reincidência no descumprimento ao disposto nesta Lei, no período de 03 (três) anos da aplicação de penalidades referidas nos incisos do caput deste artigo, será aplicada a penalidade de maior potencial.<br><br>§ 3º Os procedimentos administrativos para aplicação das penalidades referidas nos incisos do caput deste artigo seguirão, no que couber, aqueles utilizados pelo Executivo Municipal para aplicação das sanções administrativas.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Esta Lei entrará em vigor após 90 (noventa) dias da data de sua publicação, revogadas as disposições em contrário.<br><br>CÂMARA MUNICIPAL DE FEIRA DE SANTANA, em 13 de Outubro de 2015.<br><br>Ver. REINALDO MIRANDA VIEIRA FILHO<br>Presidente<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

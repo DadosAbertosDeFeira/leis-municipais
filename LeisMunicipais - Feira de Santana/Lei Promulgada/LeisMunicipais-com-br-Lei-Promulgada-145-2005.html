@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI PROMULGADA Nº 145/2005</h2><br>OBRIGA ESTABELECIMENTOS QUE PROMOVAM EVENTOS ARTÍSTICOS E/OU MUSICAIS (CASAS DE SHOWS, BOATES E SIMILARES), HOTÉIS, MOTÉIS, PENSÕES, POUSADAS, OU CONGÊNERES, BARES E RESTAURANTES, NO MUNICIPIO DE FEIRA DE SANTANA, AFIXAREM AVISO COM OS NÚMEROS TELEFONICOS DE ORGÃOS PÚBLICOS, PARA DENÚNCIAS DA EXPLORAÇÃO, VIOLÊNCIA E ABUSO SEXUAIS CONTRA CRIANÇAS E ADOLECENTES E DÁ OUTRAS PROVIDENCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PRESIDENTE DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, FAÇO SABER QUE A CÂMARA MUNICIPAL, ATRAVÉS DO PROJETO DE LEI Nº 19/2005, DE AUTORIA DO EDIL GETULIO DA SILVA BARBOSA, E NA CONFORMIDADE DO ART. 77, DA LEI Nº  <a class="link_law" data-id="1739637" data-original-title=" Data da Norma: 05.04.1990 - DISPÕE SOBRE A LEI ORGÂNICA DO MUNICIPIO DE FEIRA DE SANTANA E DA OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-promulgada/1990/3/37/lei-promulgada-n-37-1990-dispoe-sobre-a-lei-organica-do-municipio-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">37</a>, DE 05 DE ABRIL DE 1990, E ARTIGO 25, INCISO V, DO REGIME INTERNO, DECRETA E PROMULGA A SEGUINTE LEI:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Todos os proprietários e/ou responsáveis de estabelecimentos que promovam em suas dependências eventuais artísticos e/ou musicais (casa de show, boates e similares), como também hotéis, pensões, motéis, pousadas ou congêneres, bares e restaurantes, dentro do Município de Feira de Santana/Bahia, estão obrigados a afixarem, em local visível, interna e externamente, de forma permanente, a advertência: É CRIME EXPLORAR, ABUSAR E VIOLENTAR SEXUALMENTE CRIANÇAS E ADOLESCENTES!, acompanhados dos telefones dos órgãos para que sejam efetuadas as denúncias em caso de violação, a saber:<br><br>a) vara da infância e juventudetelefone nº 3602-5940<br>b) prefeitura municipal (S.M.D.S.)- telefone nº 3221-3439 c) policia civil - telefone nº 3623-8299<br>d) policia militar - telefone nº 190<br><br>§ 1º Em caso de alteração dos números dos telefones dos órgãos para denuncias, os estabelecimentos procederão as mudanças necessárias para a atualização.<br><br>§ 2º A advertência acompanhada dos números telefônicos referidos no caput deste artigo, poderão ser gravados e expostos através de placas metálicas, de acrílico ou impressões em papel, protegidos por moldura e vidro, substituídas que se tornarem ilegíveis ou forem danificados, cabendo ao estabelecimento os procedimentos corretivos.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> No descumprimento desta lei, o Poder Público Municipal compete procederá a atuação do estabelecimento infrator, através das seguintes penalizações:<br><br>I - multa de R$ 1.000,00 (hum mil reais) por dia de descumprimento, após notificado;<br><br>II - após 10 (dez) dias da primeira atuação, independente da multa aplicada, o estabelecimento terá suas atividades e/ou funcionamento suspensos até que seja atendido o disposto nesta lei;<br><br>III - em se tratando de reincidência, o estabelecimento terá suas atividades e/ou funcionamento suspensos por 60 (sessenta) dias e a aplicação fixa de multa de R$ 20.000,00 (vinte mil reais) para o retorno a suas operações;<br><br>IV - ao repetir-se a reincidência, o estabelecimento terá suas atividades e/ou funcionamento suspensos por 1(um) ano e a aplicação de uma fixa de R$ 50.000,00 (cinqüenta mil reais) para o retorno a suas operações;<br><br>V - não sendo atendidas as medidas punitivas acima descritas por parte do estabelecimento infrator, o Poder Executivo Municipal cancelará definitivamente a sua licença de funcionamento.<br><br>§ 1º A atualização destes valores proceder-se-á no primeiro dia útil de cada ano, através de Índice de Preços ao Consumidor Amplo Especial IPCA-E, apurados através do Instituto Brasileiro de Geografia e Estatística - IBGE, ou por outro índice que o substitua.<br><br>§ 2º Os recursos financeiros oriundos das multas estabelecidas neste artigo serão destinados e aplicados exclusivamente nas atividades do conselho municipal dos Direitos da Criança e do Adolescente.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Cancelada a licença, ou abandonada a empresa por seus proprietários, não será permitida a reabertura de estabelecimento similar no mesmo local estando envolvidos os antigos proprietários e/ou seus familiares.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> O Poder Executivo, no prazo de 60 (sessenta) dias, procederá a regulamentação desta lei, contados do dia sua publicação.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Os estabelecimentos descritos no artigo 1º desta Lei, terão o prazo de 15 (quinze) dias após a publicação das normas regulamentos do Poder Executivo, para atender ao contido nesta Lei e sua regulamentação.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>CÂMARA MUNICIPAL DE FEIRA DE SANTANA, EM 17 DE MAIO DE 2005.<br><br>Ver. ANTONIO ALCIONE DA SILVA CEDRAZ<br>PRESIDENTE<br><br>Autor: Getúlio da Silva Barbosa<br>DATA DE PUBLICAÇÃO: 18/05/2005<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

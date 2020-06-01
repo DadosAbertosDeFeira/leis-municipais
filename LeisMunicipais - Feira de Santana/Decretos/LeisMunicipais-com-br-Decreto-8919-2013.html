@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>DECRETO Nº 8919, de 22 de maio de 2013.</h2><br>ALTERA DISPOSITIVO DO DECRETO Nº  <a class="link_law" data-id="" data-original-title=" Data da Norma: .. - " data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/decreto/1995/578/5784/decreto-n-5784-1995-este-ato-ainda-nao-esta-disponivel-no-sistema" rel="tooltip">5784</a>, DE 10 DE FEVEREIRO DE 1995, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, no uso de suas atribuições legais, conferidas pelo inciso I, art. 94, da <a class="link_law" data-original-title="Lei Orgânica Feira de Santana BA" data-toggle="tooltip" href="/lei-organica-feira-de-santana-ba" rel="tooltip">Lei Orgânica</a> do Município, com redação dada pela Emenda Nº 029/2006 e especialmente pela Lei Nº  <a class="link_law" data-id="1544996" data-original-title=" Data da Norma: 26.03.2004 - ESTABELECE A REVISÃO ANUAL DOS VENCIMENTOS DOS SERVIDORES PÚBLICOS MUNICIPAIS E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2004/248/2486/lei-ordinaria-n-2486-2004-estabelece-a-revisao-anual-dos-vencimentos-dos-servidores-publicos-municipais-e-da-outras-providencias" rel="tooltip">2.486</a>, de 07 de abril de 2004, DECRETA:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> O art. 6º, do Decreto  <a class="link_law" data-id="" data-original-title=" Data da Norma: .. - " data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/decreto/1995/578/5784/decreto-n-5784-1995-este-ato-ainda-nao-esta-disponivel-no-sistema" rel="tooltip">5.784</a>, de 10 de fevereiro de 1995, e alterações posteriores, passa a viger com a seguinte redação:<br><br>&quot;Art. 6º O limite máximo mensal de gratificação de produção atribuída aos ocupantes dos cargos de auditor fiscal, enquadrado pela Lei Complementar <a class="link_law" data-id="1592788" data-original-title=" Data da Norma: 16.12.2011 - ALTERA A LEI COMPLEMENTAR Nº 1/94, ALTERADA PELA LEI COMPLEMENTAR Nº 59/2011, QUE COLOCA EM EXTINÇÃO O CARGO DE FISCAL DE TRIBUTOS E RENDAS DO QUADRO EFETIVO DO MUNICÍPIO, E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-complementar/2011/6/63/lei-complementar-n-63-2011-altera-a-lei-complementar-n-1-94-alterada-pela-lei-complementar-n-592011-que-coloca-em-extincao-o-cargo-de-fiscal-de-tributos-e-rendas-do-quadro-efetivo-do-municipio-e-da-outras-providencias" rel="tooltip">063</a>/2011, fiscal de tributos e rendas, fiscal de serviços públicos e fiscais de obras, obedecerá ao seguinte critério:<br><br>I - R$ 5.076,20 (cinco mil, setenta e seis reais e vinte centavos), que será pago a partir de maio de 2013.&quot;<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Este Decreto entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 22 de maio de 2013.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito Municipal<br><br>MÁRIO COSTA BORGES<br>Chefe de Gabinete do Prefeito<br><br>JOÃO MARINHO GOMES JÚNIOR<br>Secretário Municipal de Administração<br><br>EXPEDITO CAMPODÔNIO ELOY<br>Secretário Municipal da Fazenda<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

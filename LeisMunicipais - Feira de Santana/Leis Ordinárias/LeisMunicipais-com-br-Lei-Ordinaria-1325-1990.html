@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 1325, de 18 de dezembro de 1990.</h2><br>ESTABELECE CONDIÇÕES PARA A REALIZAÇÃO DA CONSULTA POPULAR PARA A CRIAÇÃO DO DISTRITO CONGREGANDO AS REGIÕES DA MATINHA, OLHOS D`ÁGUA DAS MOÇAS, JACÚ, CANDEIA GROSSA, ALECRIM MIÚDO E CIRCUNVIZINHANÇAS, CRIA A COMISSÃO DIRETIVA, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, FAÇO saber que a Câmara Municipal decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> A consulta à população dos povoados da Matinha, Olhos D`Água das Moças, Candeia Grossa, Jacú e Alecrim Miúdo, de que trata o Art. 6º da <a class="link_law" data-original-title="Lei Orgânica Feira de Santana BA" data-toggle="tooltip" href="/lei-organica-feira-de-santana-ba" rel="tooltip">Lei Orgânica</a> do Município, Disposições Transitórias, será procedida na forma e nas condições dispostas nesta Lei.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Uma Comissão Diretiva composta de 05 (cinco) membros indicados, um pelo Juiz de Direito da 156ª zona eleitoral, um pela Câmara de Vereadores, um pelo Executivo Municipal, um pelo Sindicato dos Trabalhadores Rurais e um pelo Sindicato Rural, sob a presidência do primeiro, elaborará um programa e efetuará a consulta de que trata o artigo anterior.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Todos os eleitores inscritos na zona 156ª, zona eleitoral e moradores à data da sua inscrição nas regiões nomeadas no art. 1º desta Lei serão consultados sobre o disposto no Art. 6º e seu parágrafo, da <a class="link_law" data-original-title="Lei Orgânica Feira de Santana BA" data-toggle="tooltip" href="/lei-organica-feira-de-santana-ba" rel="tooltip">lei orgânica</a> do município, disposições transitórias, mediante votação secreta, através de cédula única elaborada pela comissão diretiva.<br><br>Parágrafo Único - Serão instaladas em dia, hora e local previamente designadas pela comissão diretiva, tantas mesas receptoras quantas sejam as listas seletivas com quatrocentos (400) eleitores cada e divulgadas com antecedência mínima de sessenta (60) dias da data marcada para o pleito.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Cada mesa receptora da votação será composta por um Presidente e dois mesários que não sejam eleitores da 156ª Zona Eleitoral, que terão sob sua guarda todo o material de votação até a devolução à comissão diretiva que apurará e proclamará o resultado, indicando-o em edital no prazo máximo de oito (08) dias.<br><br>§ 1º Do edital constará o território, limites e a sede do novo distrito, caso o resultado apurado seja favorável a sua criação.<br><br>§ 2º O Executivo, no prazo de trinta (30) dias da publicação do edital nomeará administrador que proverá a instalação de órgãos e serviços essenciais ao novo distrito.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Não será permitido em até cem (100) metros de distância dos locais de consulta, cartazes ou propaganda de qualquer natureza, contrárias ou favoráveis à criação do distrito, desde (24) horas antes do pleito.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> A comissão diretiva apurará e decidirá todas as denúncias e protestos formulados até (24) horas após o pleito.<br><br>Parágrafo Único - Todas as decisões serão proferidas e publicadas pela comissão antes da publicação do edital a que se refere o art. 4º.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Aplica-se subsidiariamente a legislação eleitoral pertinente a eleições municipais para os casos omissos ou não previstos na presente Lei.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> As despesas decorrentes da execução do disposto na presente Lei, correrão por conta de verbas orçamentárias destinadas ao gabinete do Prefeito para outros serviços e encargos.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> A comissão diretiva tem o prazo de seis (06) meses para proceder a consulta de que trata a presente Lei, contados a partir da sua publicação.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10 -</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Prefeitura Municipal de Feira de Santana, em 18 de dezembro de 1990.<br><br>DR. COLBERT MARTINS DA SILVA<br>Prefeito<br><br>Autor: Hosannah Leite<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

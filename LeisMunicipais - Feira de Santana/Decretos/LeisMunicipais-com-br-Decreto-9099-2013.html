@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>DECRETO Nº 9099, DE 27 DE NOVEMBRO DE 2013.</h2><br>INSTITUI A DECLARAÇÃO ELETRÔNICA DE SERVIÇOS DE INSTITUIÇÕES FINANCEIRAS DES-IF, NO MUNICÍPIO DE FEIRA DE SANTANA.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O Prefeito Municipal de Feira de Santana, Estado da Bahia, no exercício de suas atribuições legais, que lhe confere a <a class="link_law" data-original-title="Lei Orgânica Feira de Santana BA" data-toggle="tooltip" href="/lei-organica-feira-de-santana-ba" rel="tooltip">Lei Orgânica</a> Municipal,<br><br>Considerando o disposto nos artigos 132, 133 e 134, da Lei Complementar nº <a class="link_law" data-id="1592758" data-original-title=" Data da Norma: 29.11.2000 - INSTITUI O NOVO CÓDIGO TRIBUTÁRIO E DE RENDAS DO MUNICÍPIO DE FEIRA DE SANTANA, ESTADO DA BAHIA." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-complementar/2000/0/3/lei-complementar-n-3-2000-institui-o-novo-codigo-tributario-e-de-rendas-do-municipio-de-feira-de-santana-estado-da-bahia" rel="tooltip">03</a>, de 22 de dezembro de 2000 e alterações - Código Tributário do Município de Feira de Santana, além do art. 26, parágrafos 1º e 2º, do Decreto nº  <a class="link_law" data-id="" data-original-title=" Data da Norma: .. - " data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/decreto/2011/847/8471/decreto-n-8471-2011-este-ato-ainda-nao-esta-disponivel-no-sistema" rel="tooltip">8471</a>, de 20 de dezembro de 2011;<br><br>Considerando a necessidade de facilitar a rotina das Instituições Financeiras em torno de uma ferramenta para declararem o movimento econômico tributável pelos Municípios, principalmente no que diz respeito ao ISSQN, utilizando a padronização desenvolvida pela Associação Brasileira das Secretarias de Finanças das Capitais - ABRASF e FEBRABAN - Federação Brasileira de Bancos;<br><br>Considerando a necessidade de aprimorar as ações do Fisco Municipal, que deve prezar pela sua eficiência, buscando da melhor forma propiciar ao contribuinte, através do uso de recursos tecnológicos, o cumprimento das obrigações, tanto principal quanto acessória;<br><br>Considerando a necessidade de maior agilidade dos processos de homologação do Imposto sobre Serviços de Qualquer Natureza - ISSQN das Instituições Financeiras e equiparadas, DECRETA:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica instituída a Declaração Eletrônica de Serviços de Instituições Financeiras - DES-IF, sistema de declaração eletrônica para registro, cálculo e emissão do respectivo documento de arrecadação do Imposto Sobre Serviços - ISSQN, devido pelas Instituições Financeiras e equiparadas, autorizadas a funcionar pelo Banco Central do Brasil - BACEN, e as demais pessoas jurídicas obrigadas a utilizar o Plano Contábil das Instituições do Sistema Financeiro Nacional - COSIF.<br><br>§ 1º A transmissão da DES-IF, sua validação e certificação digital, serão feitas por meio do Sistema ISSQN Feira de Santana, disponibilizado aos contribuintes, através da rede mundial de computadores, internet, no sítio da Prefeitura Municipal de Feira de Santana, www.sefaz.feiradesantana.ba.gov.br, para a importação de dados que a compõem das bases de informações das Instituições Financeiras e equiparadas e as demais pessoas jurídicas obrigadas a utilizar o COSIF.<br><br>§ 2º A validação da declaração descrita no § 1º, dar-se-á após o processamento, com sucesso, do arquivo transmitido à Prefeitura Municipal de Feira de Santana.<br><br>§ 3º A validade jurídica da DES-IF é assegurada pela certificação e assinatura digital no padrão da Infraestrutura de Chaves Públicas Brasileiras - ICP Brasil, garantindo segurança, não repúdio e integridade das informações declaradas ao fisco.<br><br>§ 4º A DES-IF é um documento fiscal exclusivamente digital, constituído dos seguintes módulos:<br><br>I - Apuração Mensal do ISSQN que deverá ser gerada mensalmente e entregue ao fisco até o dia 20 do mês seguinte ao de competência dos dados declarados, contendo:<br><br>a) o conjunto de informações que demonstram a apuração da receita tributável por subtítulo contábil;<br>b) o conjunto de informações que demonstram a apuração do ISSQN mensal;<br>c) a informação, se for o caso, de ausência de movimento, por dependência ou por instituição.<br><br>II - Demonstrativo Contábil que deverá ser entregue anualmente ao fisco até o dia 20 de julho do ano seguinte ao ano de competência dos dados declarados, contendo:<br><br>a) os Balancetes Analíticos Mensais;<br>b) o Demonstrativo de Rateio de Resultados Internos.<br><br>III - Informações Comuns aos Municípios que deverão ser entregues anualmente, ao fisco, até o dia 20 do mês de fevereiro do ano em curso e sempre que houver alterações no PGCC ou nas Tabelas, contendo:<br><br>a) o Plano Geral de Contas Comentado - PGCC;<br>b) a Tabela de tarifas de serviços da instituição;<br>c) a Tabela de identificação de serviços de remuneração variável.<br><br>IV - Demonstrativo das Partidas dos Lançamentos Contábeis que deverá ser gerado anualmente, até o dia 20 do mês de julho do ano seguinte ao de competência dos dados declarados, ocorrendo a entrega somente por meio de intimação do fisco, conforme prazo e conteúdo solicitado.<br><br>§ 5º Portaria do Secretário Municipal da Fazenda disciplinará a geração, a estrutura de dados e a guarda da DES-IF.<br><br>§ 6º Os contribuintes que não cumprirem as obrigações previstas neste artigo ficam sujeitos às penalidades previstas na legislação tributária municipal.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O recolhimento do ISSQN devido deverá ser efetuado por meio do Documento de Arrecadação Municipal da Declaração Eletrônica de Serviços de Instituições Financeiras (DAM-DES-IF), gerado pelo Sistema ISSQN Feira de Santana, até o dia 20 do mês subsequente à ocorrência do fato gerador, ou ainda, no primeiro dia útil após o dia 20, quando este incidir em sábado, domingo ou feriado.<br><br>§ 1º O Documento de Arrecadação Municipal da Declaração Eletrônica de Serviços de Instituições Financeiras (DAM-DES-IF) será emitido com base nas declarações nos moldes do § 4º, do artigo 1º.<br><br>§ 2º As Instituições Financeiras e equiparadas, participantes dos programas de incentivos fiscais no Município de Feira de Santana, deverão utilizar o DAM-DES-IF, informando o número do processo do projeto para usufruir dos incentivos previstos em legislação específica.<br><br>§ 3º O pagamento do ISSQN, após o prazo definido no caput deste artigo, implicará nas penalidades previstas na legislação em vigor.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> As Instituições Financeiras e equiparadas e as demais pessoas jurídicas obrigadas a utilizar o COSIF, ficam obrigadas:<br><br>I - a manter a disposição do fisco municipal:<br><br>a) os seus balancetes analíticos em nível de subtítulo interno;<br>b) todos os documentos relacionados ao fato gerador do ISSQN.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Os dados declarados no Sistema ISSQN Feira de Santana são de inteira responsabilidade dos prestadores e ou tomadores de serviços, vedada ao Fisco Municipal a inserção, alteração e exclusão de dados.<br><br>Parágrafo Único - O Fisco Municipal somente terá acesso à leitura dos dados declarados.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> As Instituições Financeiras e equiparadas, autorizadas a funcionar pelo BACEN e as demais pessoas jurídicas obrigadas a utilizar o COSIF, devem declarar os documentos fiscais recebidos referentes aos serviços tomados, nos moldes da legislação em vigor.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> A apresentação da DES-IF elimina a necessidade de escrituração dos livros fiscais relativos ao Imposto Sobre Serviços de Qualquer Natureza.<br><br>Parágrafo Único - Continua obrigatória, contudo, a emissão dos documentos fiscais a cada prestação de serviços na forma da legislação municipal.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Deverá ser elaborada uma DES-IF para cada agência ou dependência sujeita à inscrição no Cadastro de Contribuintes Mobiliários.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> O contribuinte omisso na apresentação da DES-IF, estará sujeito a ser considerado inadimplente perante a Secretaria Municipal da Fazenda do Município.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> Caso haja necessidade de retificação de alguma informação escriturada em declaração já transmitida, o declarante deverá gerar e enviar, em substituição a anterior, uma nova declaração até o último dia do mês seguinte ao mês previsto para transmissão da declaração original.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10</span></a> As instituições de que trata este Decreto ficam obrigadas à entrega da DES-IF, relacionada com períodos passados, conforme o calendário abaixo estabelecido:<pre> __________________________________________________<br>|      PERÍODO DE APURAÇÃO      | PRAZO DE ENTREGA |<br>|===============================|==================|<br>|1º e 2º semestre de 2009       |20/01/2014        |<br>|-------------------------------|------------------|<br>|1º e 2º semestre de 2010       |20/01/2014        |<br>|-------------------------------|------------------|<br>|1º e 2º semestre de 2011       |20/01/2014        |<br>|-------------------------------|------------------|<br>|1º e 2º semestre de 2012       |20/01/2014        |<br>|-------------------------------|------------------|<br>|1º e 2º semestre de 2013       |30/01/2014        |<br>|_______________________________|__________________| * tabela formatada pela equipe técnica do LeisMunicipais.com.br<br>Parágrafo Único - Em caso de dificuldades operacionais por parte de contribuinte obrigado a cumprir os prazos estipulados neste artigo, poderá o mesmo, através de requerimento devidamente fundamentado, requerer a Secretaria Municipal da Fazenda a dilação do prazo.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11</span></a> A Secretaria Municipal da Fazenda poderá emitir normas complementares a este Decreto.<br><br><a name="artigo_12"><span class="label label-pill label-danger">Art. 12</span></a> Este decreto entra em vigor na data da sua publicação.<br><br><a name="artigo_13"><span class="label label-pill label-danger">Art. 13</span></a> Revogam-se as disposições em contrário.<br><br>Gabinete do Prefeito, 27 de novembro de 2013.<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO MUNICIPAL<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

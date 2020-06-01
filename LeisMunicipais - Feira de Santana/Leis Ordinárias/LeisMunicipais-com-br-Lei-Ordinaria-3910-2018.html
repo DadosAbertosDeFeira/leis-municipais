@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3910, DE 13 DE DEZEMBRO DE 2018.</h2><br>Aprova o Plano Municipal de Saneamento Básico (PMSB), vinculado aos setores de Abastecimento de Água e Esgotamento Sanitário, do município de Feira de Santana e dá outras providências.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O Prefeito Municipal de Feira de Santana, Estado da Bahia, no uso de suas atribuições, Faço Saber que a Câmara Municipal, através do Projeto de LEI Nº 176/2018, de autoria deste Poder Executivo, decreta e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica aprovado o Plano Municipal de Saneamento Básico (PMSB), nos termos desta Lei.<br><br>§ 1º O Plano aprovado no caput é vinculante para todos os particulares e entidades públicas ou privadas que prestem serviços ou desenvolvam ações de saneamento básico no Município de Feira de Santana, sendo o seu relatório final parte integrante desta Lei (Anexo II).<br><br>§ 2º Os prestadores de serviços públicos e saneamento básico deverão observar o cumprimento das metas e prazos previstos no Plano Municipal de Saneamento Básico PMSB, devendo prestar informações às instancias municipais de operacionalização e controle social.<br><br>§ 3º A previsão orçamentária para a elaboração e implementação do Pano Municipal de Saneamento Básico deverá constar nas leis do Plano Plurianual (PPA), Diretrizes Orçamentárias (LDO) e do Orçamento Anual do Município (LOA), especialmente quanto aos programas previstos no Anexo I desta Lei, exceto aqueles que dependam exclusivamente da captação de recursos externos.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O Plano Municipal de Saneamento Básico de Feira de Santana será revisto periodicamente, em prazo não superior a 04 (quatro) anos, anteriormente à elaboração do Plano Plurianual, assegurada a ampla divulgação das propostas de revisão e dos estudos que a fundamentem, inclusive mediante consultas e/ou audiências públicas.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> O Conselho Municipal de Meio Ambiente (CONDEMA) e o Conselho Municipal de Saneamento Básico (CMSB) exercerão o controle social dos serviços públicos de saneamento básico, participando em caráter consultivo na formulação, planejamento e avaliação de políticas públicas de saneamento básico no âmbito municipal.<br><br>Parágrafo único. É assegurado ao Conselho Municipal de Meio Ambiente (CONDEMA), ao Conselho Municipal de Saneamento Básico (CMSB) e ao Comitê Municipal Permanente de Políticas Sustentáveis (CMPS) o acesso a quaisquer documentos e informações produzidas pelos prestadores de serviço e pela entidade de regulação, bem como a possibilidade de solicitar a elaboração de estudos com o objetivo de subsidiar as tomadas de decisões.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> No âmbito da gestão associada, fica o Poder Executivo autorizado a formar Comissão Paritária para celebração de contrato de programa com a Empresa Baiana de Aguas e Saneamento S/A - EMBASA, tendo por objeto a prestação dos serviços públicos de abastecimento de agua e de esgotamento sanitário, o qual deverá conter, obrigatoriamente, cláusulas que prevejam:<br><br>I - a abrangência dos serviços públicos de abastecimento de agua e de esgotamento sanitário no Município;<br><br>II - prazo de vigência de, no máximo, 20 (vinte) anos;<br><br>III - metas progressivas e graduais de expansão dos serviços, de qualidade, de eficiência e de uso racional da água, da energia e de outros recursos naturais, contendo prazo para a universalização do acesso dos serviços públicos de abastecimento de agua e de esgotamento sanitário no Município.<br><br>IV - delegação das atividades de regulação e fiscalização à Agência Reguladora de Feira de Santana - ARFES e à Agência Reguladora de Saneamento Básico do Estado da Bahia - AGERSA, para atendimento do art. 9º, II, da Lei Federal nº 11.445/2007.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Esta Lei entrará em vigor na data de sua publicação. Feira de Santana, Bahia, 13 de dezembro de 2018<br><br>COLBERT MARTINS DA SILVA FILHO<br>PREFEITO MUNICIPAL<br><br>MARIO COSTA BORGES<br>CHEFE DE GABINETE DO PREFEITO<br><br>CLEUDSON SANTOS ALMEIDA<br>PROCURADOR GERAL DO MUNICÍPIO<br><br>JUSTINIANO OLIVEIRA FRANÇA<br>SECRETÁRIO MUNICIPAL DE SERVIÇOS PÚBLICOS<br><br>ARCENIO JOSÉ OLIVEIRA<br>SECRETÁRIO MUNICIPAL DE MEIO AMBIENTE E RECURSOS NATURAIS<br><br>CARLOS ALBERTO OLIVEIRA BRITO<br>SECRETÁRIO MUNICIPAL DE PLANEJAMENTO E RESPONDENDO INTERINO E CUMULATIVAMENTE PELA AGENCIA REGULADORA DE FEIRA DE SANTANA - ARFES<br><br>PUBLICADO NO DIÁRIO OFICIAL DIA 18 DE DEZEMBRO DE 2018<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

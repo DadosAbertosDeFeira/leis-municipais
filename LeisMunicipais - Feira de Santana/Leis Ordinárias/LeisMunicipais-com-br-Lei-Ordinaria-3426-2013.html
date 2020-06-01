@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3426, DE 03 DE DEZEMBRO DE 2013</h2><br>DISPÕE SOBRE A OBRIGAÇÃO DOS RESTAURANTES ESTABELECIDOS NO MUNICÍPIO DE FEIRA DE SANTANA, ACONDICIONAREM PRATOS E TALHERES EM EMBALAGENS PROTETORAS DE POSSÍVEIS CONTAMINAÇÕES, E DÁ OUTRAS PROVIDÊNCIAS<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 118/2013, de autoria do Edil Antonio Carlos Passos Ataíde, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Ficam todos os estabelecimentos comerciais estabelecidos no Município de Feira de Santana, que praticam a modalidade de Restaurantes, a acondicionarem os utensílios para uso dos clientes em invólucros capazes de proteger os usuários de possíveis contaminações através do manuseio.<br><br>§ 1º Esta medida deverá ser observada por todas as empresas do ramo de restaurantes onde o cliente seja aquele que manuseia os utensílios no processo de autoserviço.<br><br>§ 2º A forma do acondicionamento de que trata o caput deste artigo será de livre escolha por parte do proprietário do estabelecimento comercial, desde que fiquem resguardadas quaisquer possibilidades de possíveis contaminações por parte dos que manuseiam os utensílios.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Consideram-se utensílios de uso dos clientes: pratos, talheres, palitos, guardanapos e/ou similares.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Fica estabelecido o prazo de 90 (noventa) dias, contados da data de publicação desta Lei, para que os Restaurantes se adéqüem ao contido neste instrumento legal, sob pena das sanções legais cabíveis.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> O não cumprimento do contido nesta Lei sujeitará o infrator às seguintes penalidades:<br><br>I - advertência documental, no primeiro descumprimento desta Lei;<br><br>II - multa de R$ 1.000,00 (mil reais) no segundo descumprimento;<br><br>III - multa de R$ 5.000,00 (cinco mil reais) na terceira infração;<br><br>IV - suspensão de 10 (dez) dias de funcionamento, ocorrendo a quarta reincidência;<br><br>V - suspensão do Alvará de Funcionamento, no caso de nova infração, após a aplicação com contido no item IV anterior.<br><br>Parágrafo Único - Os valores contidos no art. 4º desta Lei, serão atualizados anualmente, no primeiro dia útil do ano, pelo INPC (Índice Nacional de Preço ao Consumidor - IBGE), acumulado no exercício anterior, ficando estabelecido que, em caso de extinção deste índice, a atualização será procedida pelo índice que vier a substituí-lo.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> O Poder Executivo Municipal, através do seu órgão de fiscalização sanitária governamental, procederá a fiscalização deste dispositivo legal e também acatará denúncias de usuários, no tocante ao contido nesta Lei, que serão diligenciadas concedendo-se amplos direitos de defesa ao estabelecimento denunciado.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> As despesas para a execução desta Lei serão alocadas no Orçamento Municipal, nas dotações próprias.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário<br><br>Gabinete do Prefeito, 03 de dezembro de 2013.<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO MUNICIPAL<br><br>MARIO COSTA BORGES<br>CHEFE DE GABINETE DO PREFEITO<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

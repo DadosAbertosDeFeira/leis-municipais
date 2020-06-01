@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>RESOLUÇÃO Nº 496/2015</h2><br><br><br><br><br>A CÂMARA MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, NA CONFORMIDADE DO ARTIGO 70, INCISO V, DA <a class="link_law" data-original-title="Lei Orgânica Feira de Santana BA" data-toggle="tooltip" href="/lei-organica-feira-de-santana-ba" rel="tooltip">LEI ORGÂNICA</a> DO MUNICÍPIO, DE 05 DE ABRIL DE 1990, E ARTIGOS 274, § 2º E, 400, DO REGIMENTO INTERNO, E DO PROJETO DE RESOLUÇÃO Nº <a class="link_law" data-id="" data-original-title=" Data da Norma: .. - " data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/resolucao/2015/68/680/resolucao-n-680-2015-este-ato-ainda-nao-esta-disponivel-no-sistema" rel="tooltip">680</a>/2015, DE AUTORIA DA MESA DIRETIVA, PROMULGA A SEGUINTE RESOLUÇÃO:<br><br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> O vale-refeição ou tiquete alimentação é devido aos servidores efetivos e temporários e aos servidores que se encontrem à disposição da Câmara Municipal de Feira de Santana que trabalham em regime de 30 (trinta) horas semanais, observadas ainda as demais disposições desta Resolução.<br><br>Parágrafo único. A concessão do beneficio aos servidores ocupantes de cargos comissionados fica condicionada a prévia e expressa autorização da Presidência da Câmara Municipal, após análise dos custos envolvidos, mediante estudos apresentados pela Controladoria Interna e Divisão Financeira.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Os Gerentes desta Casa deverão requerer, até o dia 30 (trinta) de cada mês, junto ao Setor de Recursos Humanos, em formulário próprio, o vale-refeição para os servidores que atendam as exigências desta Resolução.<br><br>Parágrafo único. Caberá a Diretoria da Câmara a adoção de providencias cias referentes à divulgação do beneficio, inclusão, exclusão, afastamento, retorno e emissão mensal da relação nominal dos beneficiários, além do encaminhamento de informações, ao Setor de Recursos Humanos.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> O valor facial do vale-refeição ou tiquete alimentação é de R$ 21,45 (vinte e um reais e quarenta e cinco centavos) e será corrigido periodicamente, por Ato da Mesa, levando-se em conta as variações observadas no preço médio de mercado.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> A cada beneficiário será concedido, por antecipação, 22 (vinte e dois) vales-refeição ou tíquetes alimentação por mês.<br><br>Parágrafo único. No mês de Dezembro todos os Servidores beneficiados receberão, até o dia 22 do mês, 22 (vinte e dois) vales-refeição ou tiquete alimentação em prol da Assistência Natalina.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Não fará jus ao vale refeição ou tiquete alimentação:<br><br>I - o servidor que se encontrar à disposição de qualquer órgão ou entidade estranha à Câmara Municipal de Feira de Santana;<br><br>II - o servidor em gozo de licença para tratar de interesse particular;<br><br>III - o servidor em gozo de licença para concorrer a cargo eletivo.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> A Secretaria da Câmara Municipal de Feira de Santana adotará as providências necessárias para o fiel cumprimento desta Resolução.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> As despesas decorrentes da presente Resolução correrão à conta do orçamento desta Casa Legislativa para o exercício de 2015.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> Esta Resolução entrará em vigor na data de sua publicação, e seus efeitos a partir de 1º de Janeiro de 2015, revogadas as disposições em contrário, em especial as Resoluções nºs <a class="link_law" data-id="1948284" data-original-title=" Data da Norma: 26.11.2003 - REGULAMENTA A CONCESSÃO DE VALE- REFEIÇÃO, E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/resolucao/2003/41/415/resolucao-n-415-2003-regulamenta-a-concessao-de-vale-refeicao-e-da-outras-providencias" rel="tooltip">415</a>/2003, <a class="link_law" data-id="1948201" data-original-title=" Data da Norma: 03.05.2004 - ALTERA A REDAÇÃO DE DISPOSITIVOS DA RESOLUÇÃO Nº 415/2003, QUE REGULAMENTA A CONCESSÃO DE VALE- REFEIÇÃO OU TÍQUETE ALIMENTAÇÃO." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/resolucao/2004/42/421/resolucao-n-421-2004-altera-a-redacao-de-dispositivos-da-resolucao-n-4152003-que-regulamenta-a-concessao-de-vale-refeicao-ou-tiquete-alimentacao" rel="tooltip">421</a>/2004, <a class="link_law" data-id="1948211" data-original-title=" Data da Norma: 01.09.2004 - SUPRIMA-SE O INCISO IV DO ART. DA RESOLUÇÃO Nº 415/2003, E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/resolucao/2004/42/427/resolucao-n-427-2004-suprima-se-o-inciso-iv-do-art-da-resolucao-n-4152003-e-da-outras-providencias" rel="tooltip">427</a>/2004, <a class="link_law" data-id="1948258" data-original-title=" Data da Norma: 23.08.2005 - ALTERA A RESOLUÇÃO Nº 415/2003, E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/resolucao/2005/43/434/resolucao-n-434-2005-altera-a-resolucao-n-4152003-e-da-outras-providencias" rel="tooltip">434</a>/2005, <a class="link_law" data-id="1948256" data-original-title=" Data da Norma: 25.05.2011 - ALTERA A REDAÇÃO E SUPRIME DISPOSITIVOS DA RESOLUÇÃO Nº 415/2003, QUE REGULAMENTA A CONCESSÃO DE VALE-REFEIÇÃO OU TIQUETE ALIMENTAÇÃO." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/resolucao/2011/47/475/resolucao-n-475-2011-altera-a-redacao-e-suprime-dispositivos-da-resolucao-n-4152003-que-regulamenta-a-concessao-de-vale-refeicao-ou-tiquete-alimentacao" rel="tooltip">475</a>/2011 e <a class="link_law" data-id="2042064" data-original-title=" Data da Norma: 10.12.2014 - ALTERA DISPOSITIVOS DA RESOLUÇÃO Nº 415/2003, E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/resolucao/2014/49/495/resolucao-n-495-2014-altera-dispositivos-da-resolucao-n-4152003-e-da-outras-providencias" rel="tooltip">495</a>/2014.<br><br>MESA DIRETIVA DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA, em 12 de Maio de 2015.<br><br>Ver. REINALDO MIRANDA VIEIRA FILHO<br>Presidente<br><br>Ver. ROQUE PEREIRA DO CARMO<br>1º Vice-Presidente<br><br>Ver. ALBERTO MATOS NERY<br>2º Vice-Presidente<br><br>Ver. ISAÍAS DOS SANTOS<br>3º Vice-Presidente<br><br>Ver.ª GERUSA MARIA BASTOS SILVA SAMPAIO<br>1ª Secretária<br><br>Ver. DAVID EVANGELISTA LEITE NETO<br>2º Secretário<br><br>Ver. ROBECI DA SILVA LIMA<br>3º Secretário<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

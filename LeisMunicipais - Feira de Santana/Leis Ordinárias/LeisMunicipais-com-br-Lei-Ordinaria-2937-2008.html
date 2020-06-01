@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 2937/2008</h2><br>PROÍBE DEPÓSITO PRÉVIO PARA INTERNAÇÃO EM CLÍNICAS OU HOSPITAIS PRIVADOS NO MUNICÍPIO DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Autor: Magno Felzemburg, Fábio Fernandes de Moraes Lucena e Antônio Francisco Neto<br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 163/2007, de autoria dos Edis Magno Felzemburg, Fábio Fernandes de Morais Lucena e Antônio Francisco Neto, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica proibida a exigência de depósito prévio de qualquer natureza, como cheque caução e outros, para possibilitar internação de doentes em situação de urgência e emergência (estado de sofrimento intenso e/ou risco de vida), em clínicas ou hospitais da rede privada no Município de Feira de Santana.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Comprovada a exigência de depósito, o hospital será obrigado a devolver em dobro o valor depositado ao responsável pela internação.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> O descumprimento do disposto nesta Lei, sujeita os prestadores deste serviço as seguintes sanções:<br><br>I - advertência quando da primeira infração ou abuso;<br><br>II - multa no valor, mínimo, de R$ 1.000,00 (hum mil reais), e máxima, no valor de R$ 30.000,00 (trinta mil reais).<br><br>Parágrafo Único - No caso de reincidência, o valor da multa será cobrado em dobro.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> O Executivo Municipal, através de sua Coordenadoria Municipal de Defesa do Consumidos - CONDECON - Órgão integrante da Secretaria Municipal de Governo, fiscalizará e aplicará as sanções previstas nesta Lei Municipal com o objetivo de coibir abusos ou infrações cometidas.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário, em especial a Lei nº <a class="link_law" data-id="1618256" data-original-title=" Data da Norma: 14.12.1993 - PROÍBE DEPÓSITO PRÉVIO PARA INTERNAMENTO EM HOSPITAIS PÚBLICOS MUNICIPAIS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1993/171/1714/lei-ordinaria-n-1714-1993-proibe-deposito-previo-para-internamento-em-hospitais-publicos-municipais" rel="tooltip">1.714</a>/93.<br><br>PREFEITURA MUNICIPAL DE FEIRA DE SANTANA, em 04 de Novembro de 2008.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito.<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

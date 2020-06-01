@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3201/2011</h2><br>DISPÕE SOBRE A OBRIGATORIEDADE DE DISPONIBILIZAR MÉDICOS VETERINÁRIOS PARA EVENTOS NO ÂMBITO DO MUNICÍPIO DE FEIRA DE SANTANA, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 162/2010, de autoria do Edil Ângelo Mario Cerqueira de Almeida, e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Os eventos que constarem no Calendário Municipal, que forem autorizados pelo Poder Público Municipal ou que seja de conhecimento público, que utilizem animais em sua participação, ficam os organizadores obrigados a adotar condições mínimas de segurança e salubridade, capazes de garantir a incolumidade física e psíquica dos animais envolvidos.<br><br>§ 1º De acordo com o que reza o caput deste artigo, serão consideradas como condições mínimas de segurança e salubridade:<br><br>I - disponibilizar um médico veterinário em regime de plantão durante a realização do evento, com o objetivo de assistir os animais participantes;<br><br>II - condicionar a participação dos animais ao período de inscrição no evento com antecedência mínima de 36 (trinta e seis) horas do início do evento, junto à organização;<br><br>III - condicionar a aprovação da inscrição dos animais à confirmação, pelo médico veterinário referido no inciso I, de boa condição de saúde do animal, assim como a inexistência de impedimento para sua participação no evento;<br><br>IV - o atestado de aprovação do animal expedido pelo médico veterinário deverá ser apresentado e anexado à ficha de inscrição, com antecedência mínima de 08 (oito) horas do início do evento;<br><br>V - os animais deverão ser trazidos para o local de evento, com antecedência mínima de 2 (duas) horas, devendo a organização responsável pela promoção, providenciar e mantê-los em local apropriado, com alimentação e água suficiente, em distancia adequada para evitar estresse;<br><br>VI - a área a ser disponibilizada para manter os animais antes da sua participação deverá ficar em sítio seguro, capaz de garantir o sossego dos animais antes e depois do evento;<br><br>VII - ficará proibida a utilização de bebidas alcóolicas ou de substância de efeitos análogos pelos jóqueis ou cavaleiros, assim como pelos responsáveis dos animais no dia do evento, sob pena e desclassificação, ficando o animal impedindo de participar;<br><br>VIII - os animais, em eventos que demandem a realização de qualquer esforço, não serão submetidos à realização de transporte de carga ou percursos superiores a 200 (duzentos) metros;<br><br>IX - a colocação de palco com banda, participação de trios elétricos ou veículos ode serviços sonoros, em apresentação, somente ocorrerão em momentos distintos daqueles que envolvam a participação dos animais e sempre a uma distancia que não comprometa o bem - estar deste, obedecendo à legislação municipal especifica.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Para fins de atender ao que reza o caput deste artigo e respectivos incisos, permitindo uma profícua fiscalização das condições do evento, ficam os organizadores obrigados a encaminhar com antecedência de 30 (trinta) horas à Secretaria Municipal de Meio Ambiente e ao Ministério Público Estadual a data do evento, assim como o nome do médico veterinário plantonista com respectivo comprovante de registro no Conselho Regional de Medicina Veterinária.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 24 de maio de 2011.<br><br>TARCÍZIO SUZART PIMENTA JÚNIOR<br>Prefeito Municipal<br><br>MILTON PEREIRA DE BRITTO<br>Chefe de Gabinete do Prefeito<br><br>CARLOS ANTÔNIO DE MORAES LUCENA<br>Procurador Geral do Município<br><br>OZENY JOSÉ MORAES CERQUEIRA<br>Sec. Municipal de Agricultura, Recursos Hídricos e Desenvolvimento Rural<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI COMPLEMENTAR Nº 69/2012</h2><br>ALTERA DISPOSITIVOS DA LEI COMPLEMENTAR Nº <a class="link_law" data-id="2197702" data-original-title=" Data da Norma: 03.09.2009 - DISPÕE SOBRE AMPLIAÇÃO E DÁ NOVA REDAÇÃO AO CÓDIGO DE MEIO AMBIENTE, LEI Nº 1612/1992, CONFORME ESPECIFICA." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-complementar/2009/4/41/lei-complementar-n-41-2009-dispoe-sobre-ampliacao-e-da-nova-redacao-ao-codigo-de-meio-ambiente-lei-n-16121992-conforme-especifica" rel="tooltip">41</a>/2009 (QUE ALTERA, MODIFICA, AMPLIA E DÁ NOVA REDAÇÃO À LEI Nº <a class="link_law" data-id="1592801" data-original-title=" Data da Norma: 01.01.1992 - (CONTEÚDO INTRÍNSECO A LEI COMPLEMENTAR Nº 1612/1992)" data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1992/161/1612/lei-ordinaria-n-1612-1992-conteudo-intrinseco-a-lei-complementar-n-16121992" rel="tooltip">1612</a>/92, QUE INSTITUI O CÓDIGO DE MEIO AMBIENTE E DISPÕE SOBRE O SISTEMA MUNICIPAL DO MEIO AMBIENTE E USO ADEQUADO DOS RECURSOS NATURAIS DE FEIRA DE SANTANA, COM AS ALTERAÇÕES INTRODUZIDAS PELAS LEIS COMPLEMENTARES Nº S <a class="link_law" data-id="1592768" data-original-title=" Data da Norma: 09.12.2009 - DISPÕE SOBRE A ALTERAÇÃO DE DISPOSITIVOS DA LEI COMPLEMENTAR Nº 41, DE 03 DE SETEMBRO DE 2009 (QUE &#39;ALTERA, MODIFICA APLIA E DÁ NOVA REDAÇÃO À LEI Nº 1612/92, QUE INSTITUI O CÓDIGO DO MEIO AMBIENTE E DISPÕE SOBRE O SISTEMA MUNICIPAL DO MEIO AMBIENTE PARA ADMINISTRAÇÃO DA QUALIDADE, PROTEÇÃO, CONTROLE E DESENVOLVIMENTO DO MEIO AMBIENTE E USO ADEQUADO DOS RECURSOS NATURAIS DO MUNICÍPIO DE FEIRA DE SANTANA&#39;) E DA LEI COMPLEMENTAR Nº 3 DE 22 DE DEZEMBRO DE 2000 (CÓDIGO TRIBUTÁRIO E DE RENDAS DO MUNICÍPIO DE FEIRA DE SANTANA) E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-complementar/2009/4/42/lei-complementar-n-42-2009-dispoe-sobre-a-alteracao-de-dispositivos-da-lei-complementar-n-41-de-03-de-setembro-de-2009-que-altera-modifica-aplia-e-da-nova-redacao-a-lei-n-1612-92-que-institui-o-codigo-do-meio-ambiente-e-dispoe-sobre-o-sistema-municipal-do-meio-ambiente-para-administracao-da-qualidade-protecao-controle-e-desenvolvimento-do-meio-ambiente-e-uso-adequado-dos-recursos-naturais-do-municipio-de-feira-de-santana-e-da-lei-complementar-n-3-de-22-de-dezembro-de-2000-codigo-tributario-e-de-rendas-do-municipio-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">042</a>/2009, <a class="link_law" data-id="2197703" data-original-title=" Data da Norma: 09.12.2010 - ALTERA A LEI COMPLEMENTAR Nº 41/2009, CONFORME ESPECIFICA." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-complementar/2010/5/51/lei-complementar-n-51-2010-altera-a-lei-complementar-n-412009-conforme-especifica" rel="tooltip">051</a>/2010, <a class="link_law" data-id="" data-original-title=" Data da Norma: .. - " data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-complementar/2011/5/52/lei-complementar-n-52-2011-este-ato-ainda-nao-esta-disponivel-no-sistema" rel="tooltip">052</a>/2011 E <a class="link_law" data-id="1592781" data-original-title=" Data da Norma: 11.07.2011 - ALTERA OS ARTIGOS 81 E 85 DA LEI COMPLEMENTAR Nº 41/2009 (MODIFICADA PELA LEI COMPLEMENTAR Nº 042/2009 E 051/2010), &#39;QUE ALTERA, MODIFICA, AMPLIA E DÁ NOVA REDAÇÃO À LEI Nº 1612/1992, QUE INSTITUI O CÓDIGO DO MEIO AMBIENTE E DISPÕE SOBRE O SISTEMA MUNICIPAL DO MEIO AMBIENTE PARA A ADMINISTRAÇÃO DA QUALIDADE, PROTEÇÃO, CONTROLE E DESENVOLVIMENTO DO MEIO AMBIENTE E USO ADEQUADO DOS RECURSOS NATURAIS NO MUNICÍPIO DE FEIRA DE SANTANA&#39;." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-complementar/2011/5/55/lei-complementar-n-55-2011-altera-os-artigos-81-e-85-da-lei-complementar-n-412009-modificada-pela-lei-complementar-n-042-2009-e-051-2010-que-altera-modifica-amplia-e-da-nova-redacao-a-lei-n-1612-1992-que-institui-o-codigo-do-meio-ambiente-e-dispoe-sobre-o-sistema-municipal-do-meio-ambiente-para-a-administracao-da-qualidade-protecao-controle-e-desenvolvimento-do-meio-ambiente-e-uso-adequado-dos-recursos-naturais-no-municipio-de-feira-de-santana" rel="tooltip">055</a>/2011.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, no uso das suas atribuições, Faço saber que a Câmara Municipal de Feira de Santana, através do Projeto de Lei Complementar 005/2012, de autoria deste Poder Executivo, decreta e eu sanciono a seguinte Lei Complementar:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica acrescido o § 3º ao art. 24, da LEI COMPLEMENTAR Nº <a class="link_law" data-id="2197702" data-original-title=" Data da Norma: 03.09.2009 - DISPÕE SOBRE AMPLIAÇÃO E DÁ NOVA REDAÇÃO AO CÓDIGO DE MEIO AMBIENTE, LEI Nº 1612/1992, CONFORME ESPECIFICA." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-complementar/2009/4/41/lei-complementar-n-41-2009-dispoe-sobre-ampliacao-e-da-nova-redacao-ao-codigo-de-meio-ambiente-lei-n-16121992-conforme-especifica" rel="tooltip">41</a>/2009 (que altera, modifica, amplia e dá nova redação à Lei <a class="link_law" data-id="1592801" data-original-title=" Data da Norma: 01.01.1992 - (CONTEÚDO INTRÍNSECO A LEI COMPLEMENTAR Nº 1612/1992)" data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/1992/161/1612/lei-ordinaria-n-1612-1992-conteudo-intrinseco-a-lei-complementar-n-16121992" rel="tooltip">1.612</a>/92, que institui o Código do Meio Ambiente e dispõe sobre o Sistema Municipal de Meio Ambiente e Uso Adequado dos Recursos Naturais de Feira de Santana, com as alterações introduzidas pelas leis complementares nºs <a class="link_law" data-id="1592768" data-original-title=" Data da Norma: 09.12.2009 - DISPÕE SOBRE A ALTERAÇÃO DE DISPOSITIVOS DA LEI COMPLEMENTAR Nº 41, DE 03 DE SETEMBRO DE 2009 (QUE &#39;ALTERA, MODIFICA APLIA E DÁ NOVA REDAÇÃO À LEI Nº 1612/92, QUE INSTITUI O CÓDIGO DO MEIO AMBIENTE E DISPÕE SOBRE O SISTEMA MUNICIPAL DO MEIO AMBIENTE PARA ADMINISTRAÇÃO DA QUALIDADE, PROTEÇÃO, CONTROLE E DESENVOLVIMENTO DO MEIO AMBIENTE E USO ADEQUADO DOS RECURSOS NATURAIS DO MUNICÍPIO DE FEIRA DE SANTANA&#39;) E DA LEI COMPLEMENTAR Nº 3 DE 22 DE DEZEMBRO DE 2000 (CÓDIGO TRIBUTÁRIO E DE RENDAS DO MUNICÍPIO DE FEIRA DE SANTANA) E DÁ OUTRAS PROVIDÊNCIAS." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-complementar/2009/4/42/lei-complementar-n-42-2009-dispoe-sobre-a-alteracao-de-dispositivos-da-lei-complementar-n-41-de-03-de-setembro-de-2009-que-altera-modifica-aplia-e-da-nova-redacao-a-lei-n-1612-92-que-institui-o-codigo-do-meio-ambiente-e-dispoe-sobre-o-sistema-municipal-do-meio-ambiente-para-administracao-da-qualidade-protecao-controle-e-desenvolvimento-do-meio-ambiente-e-uso-adequado-dos-recursos-naturais-do-municipio-de-feira-de-santana-e-da-lei-complementar-n-3-de-22-de-dezembro-de-2000-codigo-tributario-e-de-rendas-do-municipio-de-feira-de-santana-e-da-outras-providencias" rel="tooltip">042</a>/2009, <a class="link_law" data-id="2197703" data-original-title=" Data da Norma: 09.12.2010 - ALTERA A LEI COMPLEMENTAR Nº 41/2009, CONFORME ESPECIFICA." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-complementar/2010/5/51/lei-complementar-n-51-2010-altera-a-lei-complementar-n-412009-conforme-especifica" rel="tooltip">051</a>/2010, <a class="link_law" data-id="" data-original-title=" Data da Norma: .. - " data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-complementar/2011/5/52/lei-complementar-n-52-2011-este-ato-ainda-nao-esta-disponivel-no-sistema" rel="tooltip">052</a>/2011 e <a class="link_law" data-id="1592781" data-original-title=" Data da Norma: 11.07.2011 - ALTERA OS ARTIGOS 81 E 85 DA LEI COMPLEMENTAR Nº 41/2009 (MODIFICADA PELA LEI COMPLEMENTAR Nº 042/2009 E 051/2010), &#39;QUE ALTERA, MODIFICA, AMPLIA E DÁ NOVA REDAÇÃO À LEI Nº 1612/1992, QUE INSTITUI O CÓDIGO DO MEIO AMBIENTE E DISPÕE SOBRE O SISTEMA MUNICIPAL DO MEIO AMBIENTE PARA A ADMINISTRAÇÃO DA QUALIDADE, PROTEÇÃO, CONTROLE E DESENVOLVIMENTO DO MEIO AMBIENTE E USO ADEQUADO DOS RECURSOS NATURAIS NO MUNICÍPIO DE FEIRA DE SANTANA&#39;." data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-complementar/2011/5/55/lei-complementar-n-55-2011-altera-os-artigos-81-e-85-da-lei-complementar-n-412009-modificada-pela-lei-complementar-n-042-2009-e-051-2010-que-altera-modifica-amplia-e-da-nova-redacao-a-lei-n-1612-1992-que-institui-o-codigo-do-meio-ambiente-e-dispoe-sobre-o-sistema-municipal-do-meio-ambiente-para-a-administracao-da-qualidade-protecao-controle-e-desenvolvimento-do-meio-ambiente-e-uso-adequado-dos-recursos-naturais-no-municipio-de-feira-de-santana" rel="tooltip">055</a>/2011), passa a vigorar com a seguinte redação:<br><br>&quot;§ 3º Poderá ser expedida, a critério da SEMMAM, licença precária de operação, válida por 120 (cento e vinte) dias, para avaliar a eficiência das medidas adotadas pela atividade na fase inicial de operação desde que sejam cumpridas as etapas de licenciamento de localização e implantação, não podendo ser prorrogada.&quot;<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> As despesas com a execução desta Lei Complementar correrão pro conta de dotações orçamentárias próprias.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Esta Lei Complementar entrará em vigor na data de sua publicação revogadas as disposições em contrário<br><br>Gabinete do Prefeito Municipal, 28 de maio de 2012.<br><br>TARCÍZIO SUZART PIMENTA JÚNIOR<br>Prefeito Municipal<br><br>MILTON PEREIRA DE BRITO<br>Chefe de Gabinete do Prefeito<br><br>CARLOS ANTÔNIO DE MORAES LUCENA<br>Procurador Geral do Município<br><br>ANTONIO CARLOS DALTRO COELHO<br>Secretaria Municipal de Meio Ambiente e Recursos Naturais<br><br>DATA DE PUBLICAÇÃO: 22/05/2012<br>PREFEITO: Tarcízio Suzart Pimenta Júnior.<br>Presidente: Antônio Francisco Neto<br>Autor: Poder Executivo<br>Assunto: Meio Ambiente<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

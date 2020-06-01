@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>RESOLUÇÃO Nº 162/1984</h2><br>DISPÕE SOBRE A CRIAÇÃO DE UMA COMISSÃO DE INQUÉRITO E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Faço saber que a Câmara Municipal aprovou e, eu na qualidade de seu Presidente, promulgo a seguinte Resolução na conformidade do Artigo 78, § 2º, ítem VIII da Lei 3531 de 10 de novembro de 1976.<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica criada a COMISSÃO DE INQUÉRITO que tem a finalidade de verificar a poluição ambiental das Indústrias instaladas no CIS (Centro Industrial do Subaé), com ampla divulgação de Jornais locais. Considerando pois de relevante importância o cuidado e a preservação do meio ambiente, esta Comissão irá verificar e em seguida propor medidas junto aos órgãos competentes.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> A Comissão de que trata o Artigo anterior obedecerá a tramitação prevista no Artigo 45, combinado com o Artigo 50 e seus §§ 1º, 2º e 3º, todos do Regimento Interno desta Casa, ficando o prazo de 120 (cento e vinte) dias para se extinguir.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Esta Resolução entrará em vigor na data de sua promulgação, revogadas as disposições em contrário.<br><br>MESA DIRETIVA DA CÂMARA MUNICIPAL DE FEIRA DE SANTANA (BA) EM 27 DE AGOSTO DE 1984.<br><br>DIVAL FIGUEIREDO MACHADO<br>Presidente<br><br>JOSÉ FLANTILDES RIBEIRO DE OLIVEIRA<br>1º Secretário<br><br>JOSÉ BARTOLOMEU RIBEIRO ZECA MARQUES<br>2º Secretário<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

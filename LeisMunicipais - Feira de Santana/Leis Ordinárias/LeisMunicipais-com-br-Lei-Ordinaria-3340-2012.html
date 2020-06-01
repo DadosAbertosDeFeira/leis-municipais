@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3340, DE 1º DE OUTUBRO DE 2012.</h2><br>AUTORIZA A ABERTURA DE CRÉDITO ESPECIAL, NA FORMA QUE INDICA, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, ESTADO DA BAHIA, Faço saber que a Câmara Municipal, através do Projeto de Lei nº 77/2012, de autoria do Poder Executivo, decretou e eu sanciono a seguinte Lei.<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica o Poder Executivo autorizado a abrir Crédito Especial aos Orçamentos do Município, no corrente exercício, no valor de R$ 898.530,00 (oitocentos e noventa e oito mil, e quinhentos e trinta reais).<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O crédito previsto no art. 1º destina-se à Secretaria Municipal de Desenvolvimento Social - SEDESO - Unidade Gestora: 1224 - Fundo Municipal de Assistência Social, conforme Anexo I.<br><br>§ 1º Institui no Programa 030 - Programa Inclusão Produtiva, a seguinte ação; Promoção do Acesso ao Mundo do Trabalho - ACESSUAS - Trabalho, tendo como produto: Famílias atendidas, unidade de medida unidade e meta; 14.550, com a seguinte classificação:<br><br>I - O código do Órgão é 12, e a unidade 24, denominada como: Unidade Gestora do Fundo Municipal de Assistência Social. Função 08 - Assistência Social, Subfunção - 244 - Assistência Comunitária;<br><br>II - A codificação funcional programática da ação Promoção do Acesso ao Mundo do Trabalho - ACESSAS, Trabalho é: 08.244.030.2234.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Os recursos disponíveis para atender às despesas decorrentes do presente crédito especial ocorrerão por excesso de arrecadação na Fonte 29 - Transferências de Recursos do Fundo Nacional de Assistência Social - FENAS, conforme Resolução nº 18, de 24 de maio de 2012, demonstrado no Anexo 11.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogando-se as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 1º de outubro 2012.<br><br>TARCÍZIO SUZART PIMENTA JÚNIOR<br>PREFEITO MUNICIPAL<br><br>MILTON PEREIRA DE BRITTO<br>CHEFE DE GABINETE DO PREFEITO<br><br>CARLOS ANTÔNIO DE MORAES LUCENA<br>PROCURADOR GERAL DO MUNICÍPIO<br><br>WAGNER WALTER GONÇALVES DOS SANTOS<br>SECRETÁRIO MUNICIPAL DA FAZENDA<br><br>RONALDO ARRUDA BARBAGELATA<br>SECRETÁRIO MUNICIPAL DE DESENVOLVIMENTO SOCIAL<br><br>ANEXO I<br><br>Ação: Promoção do Acesso ao Mundo do Trabalho - ACESSUAS - Trabalho<pre> ________________________________________________________________________________________<br>| Órgão/|   Programática  |Econômica|Fonte|           Discriminação          |  Valor R$ |<br>|Unidade|                 |         |     |                                  |           |<br>|=======|=================|=========|=====|==================================|===========|<br>|  12,24|  08.244.030.2234|3.1.90.04| 0029|Contratação p/ tempo determinado  | 200.000,00|<br>|-------|-----------------|---------|-----|----------------------------------|-----------|<br>|       |                 |3.1.90.13| 0029|Obrigações Patronais              |  40.000,00|<br>|-------|-----------------|---------|-----|----------------------------------|-----------|<br>|       |                 |3.3.90.30| 0029|Material de Consumo               | 268.530,00|<br>|-------|-----------------|---------|-----|----------------------------------|-----------|<br>|       |                 |3.3.90.32| 0029|Material p/Dist. Gratuita         | 100.000,00|<br>|-------|-----------------|---------|-----|----------------------------------|-----------|<br>|       |                 |3.3.90.36| 0029|Outros Serv. Terc. Pessoa Física  | 100.000,00|<br>|-------|-----------------|---------|-----|----------------------------------|-----------|<br>|       |                 |3.3.90.39| 0029|Outros Serv. Terc. Pessoa Jurídica| 190.000.00|<br>|-------|-----------------|---------|-----|----------------------------------|-----------|<br>|       |                 |         |     |TOTAL R$                          | 898.530,00|<br>|_______|_________________|_________|_____|__________________________________|___________| * tabela formatada pela equipe técnica do LeisMunicipais.com.br<br>ANEXO II<br>QUADRO DEMONSTRATIVO DO EXCESSO DE ARRECADAÇÃO NA FONTE 029<pre> ______________________________________________<br>|          |    A    |      B     |   C = B-A  |<br>|MÊS/2012  |---------|------------|------------|<br>|          | PREVISÃO| REALIZAÇÃO |TOTAL       |<br>|          |ORÇAMENTO|ARRECADAÇÃO/|Exercício   |<br>|          |2012 - R$|TENDÊNCIA-R$|2012 - R$   |<br>|==========|=========|============|============|<br>|Janeiro   |     0,00|        0,00|        0,00|<br>|----------|---------|------------|------------|<br>|Fevereiro |     0,00|        0,00|        0,00|<br>|----------|---------|------------|------------|<br>|Março     |     0,00|        0,00|        0,00|<br>|----------|---------|------------|------------|<br>|Abril     |     0,00|        0,00|        0,00|<br>|----------|---------|------------|------------|<br>|Maio      |     0,00|        0,00|        0,00|<br>|----------|---------|------------|------------|<br>|Junho     |     0,00|        0,00|        0,00|<br>|----------|---------|------------|------------|<br>|Julho     |     0,00|  449.265,00|  449.265,00|<br>|----------|---------|------------|------------|<br>|Agosto    |     0,00|   89.853,00|   89.853,00|<br>|----------|---------|------------|------------|<br>|Setembro  |     0,00|   89.853,00|   89.853,00|<br>|----------|---------|------------|------------|<br>|Outubro   |     0,00|   89.653,00|   89.853,00|<br>|----------|---------|------------|------------|<br>|Novembro  |     0,00|   89.853,00|   89.853,00|<br>|----------|---------|------------|------------|<br>|Dezembro  |     0,00|   89.853,00|   89.853,00|<br>|----------|---------|------------|------------|<br>|TOTAL     |     0.00|  898.530,00|  398.530,00|<br>|__________|_________|____________|____________| * tabela formatada pela equipe técnica do LeisMunicipais.com.br<br><p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3339, DE 1º DE OUTUBRO DE 2012.</h2><br>AUTORIZA A ABERTURA DE CRÉDITO ESPECIAL, NA FORMA QUE INDICA, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA PE SANTANA, ESTADO DA BAHIA, Faço saber que a Câmara Municipal, através do Projeto de Lei nº 69/2012, de autoria do Poder Executivo, decretou e eu sanciono a seguinte Lei.<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica o Poder Executivo autorizado a abrir aos Orçamentos do Município, no corrente exercício, crédito especial destinado à alocar recursos para o Elemento 93 - Indenização e Restituições, Modalidade de Aplicação 90 - Aplicações Diretas, na Atividade 2121 - &quot;Desenvolver e Implantar Programa de Educação Ambiental&quot; - 18.367.015.2121 - Código na Secretaria Municipal de Serviços Públicos, conforme Anexo I.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O crédito de que trata esta Lei será custeado com os recursos provenientes de anulação de acordo com o art. 6º, inciso I, da Lei Municipal nº  <a class="link_law" data-id="1569145" data-original-title=" Data da Norma: 28.12.2011 - ESTIMA A RECEITA A FIXA A DESPESA DO MUNICÍPIO DE FEIRA DE SANTANA PARA O EXERCÍCIO FINANCEIRO DE 2012. (R$ 659.795.267,00)" data-toggle="tooltip" href="https://leismunicipais.com.brhttp://www2.leismunicipais.com.br/a/ba/f/feira-de-santana/lei-ordinaria/2011/329/3299/lei-ordinaria-n-3299-2011-estima-a-receita-a-fixa-a-despesa-do-municipio-de-feira-de-santana-para-o-exercicio-financeiro-de-2012-r-659795-267-00" rel="tooltip">3.299</a>, de 28 de dezembro de 2011, conforme Anexo II.<br><br>§ 1º O Poder Executivo, no prazo de 10 (dez) dias, após sanção desta Lei, deverá apresentar à Câmara Municipal de Feira de Santana a relação das empresas que receberão os recursos de indenizações e restituições, com as seguintes informações:<br><br>I - relação das empresas beneficiadas;<br><br>II - planilha com os valores individualizados a serem recebidos por cada empresa;<br><br>III - relação dos serviços realizados por cada empresa.<br><br>§ 2º Caso não haja encaminhamento do solicitado no parágrafo anterior, ficará o Poder executivo impossibilitado de realizar os pagamentos das devidas indenizações e restituições.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Esta Lei entrará em vigor na data de sua publicação.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Revogam-se as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 1º de outubro 2012.<br><br>TARCÍZIO SUZART PIMENTA JÚNIOR<br>PREFEITO MUNICIPAL<br><br>MILTON PEREIRA DE BRITTO<br>CHEFE DE GABINETE DO PREFEITO<br><br>CARLOS ANTÔNIO DE MORAES LUCENA<br>PROCURADOR GERAL DO MUNICÍPIO<br><br>WAGNER WALTER GONÇALVES DOS SANTOS<br>SECRETÁRIO MUNICIPAL DA FAZENDA<br><br>ALEXANDRE DA SILVA MONTEIRO<br>DIRETOR PRESIDENTE, DA DIRETORIA COLEGIADA DA ARSEPUC - AGÊNCIA REGULADORA E FISCALIZADORA DOS, SERVIÇOS PÚBLICOS MUNICIPAIS CONCEDIDOS / RESPONDENDO PELA SECRETARIA MUNICIPAL DE SERVIÇOS PÚBLICOS<br><br>ANEXO I<pre> ______________________________________________________________________________________________________<br>| Órgão | Programática  |Econômica|Fonte|                  Discriminação                 | Valor em R$ |<br>|Unidade|               |         |     |                                                |             |<br>|=======|===============|=========|=====|================================================|=============|<br>|  15.15|18.367.015.2121|3.3.90.93| 0000|Desenvolver e implantar Prog. Educação Ambiental| 3.449.622.09|<br>|-------|---------------|---------|-----|------------------------------------------------|-------------|<br>|TOTAL  |               |         |     |                                                | 3.449.622,03|<br>|_______|_______________|_________|_____|________________________________________________|_____________| * tabela formatada pela equipe técnica do LeisMunicipais.com.br<br>ANEXO II<pre> ______________________________________________________________________________________________________<br>|Unidade|  Programática |Econômica|Fonte|                  Discriminação                 | Valor em R$ |<br>|=======|===============|=========|=====|================================================|=============|<br>|  15.15|18.367.015.2121|3.3.90.39| 0000|Desenvolver e implantar Prog. Educação Ambiental| 3.449.622,09|<br>|-------|---------------|---------|-----|------------------------------------------------|-------------|<br>|TOTAL  |               |         |     |                                                | 3.448.622.09|<br>|_______|_______________|_________|_____|________________________________________________|_____________| * tabela formatada pela equipe técnica do LeisMunicipais.com.br<br><p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

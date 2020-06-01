@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3736, DE 12 DE SETEMBRO DE 2017</h2><br>&quot;Dispõe sobre sons urbanos, fixa níveis e horários em que será permitida sua emissão, possibilita doação e destruição de equipamento(s) sonoro(s) e dá outras providencias.&quot;<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O Prefeito Municipal de Feira de Santana, Estado Bahia, no uso de suas atribuições, faz saber que a Câmara Municipal, através do Projeto de Lei nº 131/2017, de autoria deste Poder Executivo, decreta e sanciona a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> A emissão de sons e ruídos decorrentes de qualquer atividade desenvolvida no Município, obedecerá aos padrões estabelecidos por esta Lei, objetivando garantir a saúde, a segurança, o sossego e o bem estar público.<br><br>Parágrafo único. Para os efeitos desta Lei, considera-se som ou ruído toda e qualquer vibração acústica capaz de provocar sensações auditivas.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Os níveis de sons e ruídos serão medidos por aparelho Medidor de Nível de Som - Decibelímetro - observando-se o disposto na Norma NBR 10.151 da ABNT - Associação Brasileira de Normas Técnicas, ou das que lhe suceder e utilizando sempre a curva de ponderação &quot;A&quot; do respectivo aparelho.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Para os efeitos desta Lei, os níveis máximos de sons e ruídos, de qualquer fonte emissora e natureza, em empreendimentos ou atividades residenciais, comerciais de serviços, institucionais, industriais ou especiais, públicas ou privadas, sons e ruídos causados por máquinas, motores, compressores ou geradores estacionários, assim como em veículos automotores são de:<br><br>I - 60 db (sessenta decibéis), no período compreendido entre 22:00h e 7:00h;<br><br>II - 70 db (setenta decibéis), no período compreendido entre 7:00h e 22:00h.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> As emissões de sons e ruídos terão seus níveis medidos na área externa do imóvel ou do veículo onde se localiza a fonte emissora devendo o aparelho estar guarnecido com tela protetora de vento.<br><br>Parágrafo único. Quando a fiscalização efetuar a medição dos níveis de sons e ruídos no interior do imóvel do reclamante, ela deverá ocorrer no recinto receptor por ele indicado como de maior incômodo, estando a medição de acordo com a norma da NBR 10151 e demais exigências da ABNT.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Os proprietários de equipamentos de som que utilizem equipamentos sonoros em eventos tradicionais tais como carnaval, festas juninas, festas de largo, eventos religiosos e similares, estão obrigados a efetivar acordo com o órgão competente quanto aos níveis máximos de emissão sonora em valores diferenciados ao disposto no artigo 3º desta Lei.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> A realização de eventos que utilizem equipamentos sonoros será precedida da respectiva orientação pelo órgão competente, respeitados os níveis máximos de som estabelecidos nesta Lei e a informação do técnico e operador de som, devidamente registrado no sindicato territorial e no Ministério do Trabalho responsável pela sonorização.<br><br>Parágrafo único. O requerimento para orientação de que trata o &quot;caput&quot; deste artigo deverá ser dirigido ao órgão competente da Prefeitura no prazo máximo de 10 (dez) dias antes da data de realização do evento, dele constando pelo menos data, local, horário e equipamentos a serem utilizados, a estimativa de pessoas no evento.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Não estão sujeitas às proibições referidas nesta Lei os sons produzidos pelas seguintes fontes:<br><br>I - aparelhos sonoros de qualquer natureza, fixos ou móveis, usados durante o período de propaganda eleitoral, devidamente atendida a legislação própria e os parâmetros desta Lei;<br><br>II - sirenes ou aparelhos sonoros de viaturas quando em serviço de socorro ou de policiamento;<br><br>III - detonações de explosivos empregados no arrebentamento de pedreiras ou rochas ou em demolições, desde que em horário e com carga previamente autorizadas pelo órgão competente;<br><br>IV - sinos de igrejas e de templos religiosos desde que sirvam exclusivamente para indicar as horas ou anunciar a realização de atos ou cultos religiosos;<br><br>V - bandas de música e assemelhadas, desde que em procissões, cortejos ou desfiles públicos no horário compreendido entre às 8h e 21h;<br><br>VI - hinos e cânticos religiosos, pregações feitas mediante sistema de som no interior dos templos religiosos com eficiência acústica comprovada.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> Verificada a infração a qualquer dispositivo estabelecendo nesta Lei, o órgão competente da Prefeitura, independentemente de outras sanções cabíveis, aplicará os seguintes procedimentos e penalidades, isoladas ou cumulativamente:<br><br>I - notificação;<br><br>II - advertência;<br><br>III - multa;<br><br>IV - interdição;<br><br>V - embargo e demolição;<br><br>VI - apreensão;<br><br>VII - doação e destruição de equipamentos sonoros.<br><br>Parágrafo único. a doação de equipamentos só poderá ser feita a Órgãos Públicos, Municipal, Estadual e Federal, e a associações reconhecidas de utilidade pública, acompanhadas de termo de doação assinado pelo Prefeito Municipal.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> A notificação será expedida quando constatada qualquer irregularidade na emissão de sons e ruídos, podendo constar no documento o prazo para que a mesma seja sanada.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10</span></a> O auto de infração emitido, mediante reincidência do ato infracional, garantirá a aplicação de multa proporcional à natureza da infração, em conformidade com a Tabela Única desta Lei.<br><br>§ 1º A quitação da multa não exime o infrator de cumprir o que lhe for determinado pela Prefeitura, visando sanar a irregularidade pela fiscalização.<br><br>§ 2º As infrações cometidas por trios elétricos e assemelhados, em eventos devidamente autorizados, serão penalizados com multas estabelecidas em decreto do Poder Executivo.<br><br>§ 3º O(s) auto(s) de apreensão lavrado(s) durante ação institucional conjunta com outros órgãos fiscalizadores e/ou de segurança deverão ser encaminhados imediatamente para Polícia Judiciária, que por sua vez abrirá boletim de ocorrência para oitiva do autuado e posterior encaminhamento à justiça.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11</span></a> O infrator que tiver seu equipamento gerador de som apreendido pela fiscalização deverá se apresentar a Polícia Judiciária no prazo máximo de 30 (trinta) dias.<br><br>§ 1º Em caso do não comparecimento dentro do prazo do estabelecido no caput, a Prefeitura realizará chamamento público através do Diário Oficial para que o infrator no prazo de 30 (trinta) dias possa atender o quanto disposto nesta Lei.<br><br>§ 2º Findo o prazo de 60 (sessenta) dias constatada a omissão por parte do infrator na recuperação do equipamento apreendido, fica a Prefeitura autorizada a fazer, leilão, doação ou destruição dos mesmos.<br><br>§ 3º Nos casos em que os equipamentos apreendidos não sejam de propriedade do infrator/autuado, o proprietário responderá solidariamente com aquele nos procedimentos e forma desta Lei, inclusive nas suas penalidades.<br><br>§ 4º Na entrada em vigor desta Lei, o(s) equipamentos(s) sob a guarda da Prefeitura e não reclamados perante a Polícia Judiciária pelo(s) proprietário(s) e/ou pessoas autuadas serão doados, leiloados ou destruídos pela Prefeitura.<br><br><a name="artigo_12"><span class="label label-pill label-danger">Art. 12</span></a> A reincidência de infração punida com multa implicará na sua aplicação em dobro, independente de outras medidas previstas nesta Lei.<br><br><a name="artigo_13"><span class="label label-pill label-danger">Art. 13</span></a> Por descumprimento ao disposto nesta Lei a responsabilidade pelas infrações será:<br><br>a) pessoal do infrator;<br>b) de empresa, quando a infração for provocada por pessoa na condição de mandatário, preposto ou empregado;<br>c) dos pais, tutores ou curadores, quando cometidos por seus filhos menores, tutelados e curatelados, respectivamente.<br><br><a name="artigo_14"><span class="label label-pill label-danger">Art. 14</span></a> O procedimento administrativo para apuração das infrações previstas nesta Lei será regido pelo Código Municipal do Meio Ambiente e legislação correlata.<br><br><a name="artigo_15"><span class="label label-pill label-danger">Art. 15</span></a> Fica a Secretaria Municipal de Meio Ambiente (SEMMAM) autorizada a realizar parcerias ou convênios com a Guarda Municipal, com os órgãos de Trânsito Municipal, Estadual e Federal com a Polícia Militar, Polícia Judiciária (Civil) e com o Ministério Público, com vistas ao cumprimento desta Lei.<br><br><a name="artigo_16"><span class="label label-pill label-danger">Art. 16</span></a> Nos casos omissos desta Lei observar-se-ão as normas previstas na NBR 10151 e demais normas da ABNT correspondentes.<br><br><a name="artigo_17"><span class="label label-pill label-danger">Art. 17</span></a> Esta Lei entrará em vigor na data de sua publicação.<br><br>Gabinete do Prefeito, 12 de setembro de 2017<br><br>JOSÉ RONALDO DE CARVALHO<br>PREFEITO MUNICIPAL<br><br>MARIO COSTA BORGES<br>CHEFE DE GABINETE DO PREFEITO<br><br>CLEUDSON SANTOS ALMEIDA<br>PROCURADOR GERAL DO MUNICÍPIO<br><br>SÉRGIO BARRADAS CARNEIRO<br>SECRETÁRIO MUNICIPAL DE MEIO AMBIENTE E RECURSOS NATURAIS<br><br>PABLO ROBERTO GONÇALVES DA SILVA<br>SECRETÁRIO MUNICIPAL DE PREVENÇÃO À VIOLÊNCIA E PROMOÇÃO DOS DIREITOS HUMANOS<br><br>SAULO PEREIRA FIGUEIREDO<br>SECRETÁRIO MUNICIPAL DE TRANSPORTES E TRÂNSITO<br><br>PUBLICADO NO DIÁRIO OFICIAL ELETRÔNICO DIA 15 DE SETEMBRO DE 2017.<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

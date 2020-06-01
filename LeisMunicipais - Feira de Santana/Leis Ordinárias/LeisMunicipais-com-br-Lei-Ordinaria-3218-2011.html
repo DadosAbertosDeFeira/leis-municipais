@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 3218/2011</h2><br>DISPÕE SOBRE A PROTEÇÃO, O ACESSO E O ATENDIMENTO EDUCACIONAL DE CRIANÇAS E JOVENS ÓRFÃOS, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 140/2010, de autoria do Edil Ângelo Mario Cerqueira de Almeida, e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> As crianças e/ou adolescentes órfãos na faixa etária de 0 a 17 anos, residentes em abrigo, orfanato ou instituição coletiva pública ou privada, em Feira de Santana, terão prioridade nas vagas em instituição escolar da rede pública de ensino básico apropriada ao seu grau de escolaridade e faixa etária.<br><br>§ 1º Para cumprimento do que reza o caput deste artigo, entenda-se por instituição escolar da rede pública de ensino básico, a creche e a pré-escola públicas ou conveniadas com o poder público, a escola de ensino fundamental, a escola de ensino médio regular.<br><br>§ 2º As escolas em questão tomarão indiretamente as providências cabíveis de suporte à convivência, de modo a diminui-lhe os riscos de evasão e repetência e facultar-lhe um bom aproveitamento do ensino recebido.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> Aos jovens órfãos terá garantia participação nos programas de ação afirmativa adotados pelo Poder Executivo Municipal, assegurando-lhes condições propícias.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> Além de escolaridade regular, os adolescentes residentes em abrigo, orfanato ou instituição coletiva pública ou privada sem fins lucrativos, no âmbito do Município de Feira de Santana, terão garantido o direito de prioridade de matrículas em cursos profissionalizantes, com direito a estágio em órgãos governamentais ou empresas privadas.<br><br>Parágrafo Único - Competem conjuntamente às instituições responsáveis pela criança e adolescente, o sistema educacional e o sistema de formação profissional, as medidas necessárias para seu efetivo cumprimento.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> As crianças e/ou adolescentes órfãos assistidos pelo Poder Público serão incluídos pelo Poder Público Municipal entre os beneficiários dos Programas Sociais implementados à época, ficando as instituições que os abrigam responsáveis por monitorar o cumprimento das condições impostas pelo Programa.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Esta Lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.<br><br>Gabinete do Prefeito Municipal, 13 de junho de 2011.<br><br>TARCÍZIO SUZART PIMENTA JÚNIOR<br>Prefeito Municipal<br><br>MILTON PEREIRA DE BRITTO<br>Chefe de Gabinete do Prefeito<br><br>JOSÉ RAIMUNDO PEREIRA DE AZEVEDO<br>Sec. Municipal de Educação<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

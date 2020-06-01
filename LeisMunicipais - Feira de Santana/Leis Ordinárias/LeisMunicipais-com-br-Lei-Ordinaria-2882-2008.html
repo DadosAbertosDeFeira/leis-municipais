@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 2882/2008</h2><br>FIXA OS SUBSÍDIOS DO PREFEITO, VICE-PREFEITO, SECRETÁRIOS MUNICIPAIS E DOS VEREADORES, DO MUNICÍPIO DE FEIRA DE SANTANA, PARA O EXERCÍCIO 2009/2012, E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Autor: Mesa Diretiva<br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal, através do Projeto de Lei nº 41/2008, de autoria da Mesa Diretiva da Câmara Municipal, decretou e Eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> O Prefeito, o Vice-Prefeito, os Secretários Municipais e os Vereadores do Município de Feira de Santana perceberão subsídios e/ou remunerações mensais, para o exercício 2009/2012, nos termos desta Lei.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> O Prefeito Municipal de Feira de Santana perceberá um subsídio (remuneração) mensal, em parcela única, no valor de R$ 16.512,09 (dezesseis mil quinhentos e doze reais e nove centavos).<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> O Vice-Prefeito de Feira de Santana perceberá um subsídio (remuneração) mensal, em parcela única, no valor de R$ 9.288,05 (nove mil duzentos e oitenta e oito reais e cinco centavos).<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> Os Secretários Municipais de Feira de Santana perceberão um subsídio (remuneração) mensal, em parcela única, no valor de R$ 9.288,05 (nove mil duzentos e oitenta e oito reais e cinco centavos).<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> O Vereadores de Feira de Santana perceberão um subsídio mensal, em parcela única, no valor de R$ 9.288,05 (nove mil duzentos e oitenta e oito reais e cinco centavos), correspondente a 75% (setenta e cinco por cento) do subsídio dos Deputados Estaduais da Bahia, conforme a alínea &quot;f&quot;, inciso VI, do Art. 29 da Constituição da República Federativa do Brasil.<br><br>§ 1º As sessões legislativas extraordinárias, admissíveis no período de recesso parlamentar, e em caso de urgência ou interesse público relevante, serão pagas a título de parcela indenizatória pelo comparecimento dos parlamentares, não integrando aos seus subsídios, no valor de R$ 928,80 (noventa e vinte e oito reais e oitenta centavos) por sessão, correspondente a 10% (dez por cento) do subsídio dos mesmos, sendo vedado o pagamento que supere o subsídio mensal do Vereador.<br><br>§ 2º Para o desempenho de suas atribuições fora do Município, identificado em Decreto Legislativo, o Vereador terá direito ao pagamento de parcela indenizatória para o custeio das despesas de hospedagem, alimentação e transporte no local.<br><br>§ 3º A ausência sem justificativa do Vereador à reunião plenária da Câmara Municipal implicará em desconto no seu subsídio, de valor proporcional ao número de faltas em relação ao total de sessões no mês.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> No caso de licenciamento por doença, devidamente comprovado por atestado médico, o Prefeito, o Vice-Prefeito, os Secretários Municipais e os Vereadores não ficarão prejudicados na percepção dos seus subsídios e/ou remunerações, de forma integral.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> Em caso de viagem a serviço ou em representação do município, por qualquer dos Poderes, o Prefeito, o Vice-Prefeito, Secretários e os Vereadores, incluindo o Presidente do Legislativo perceberão as diárias fixadas em Lei.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> Fica assegurada a revisão geral anual, relativamente aos subsídios o Prefeito, Vice-Prefeito, Secretários e Vereadores do Município de Feira de Santana, nos termos do disposto no Art. 37, Inciso X da CRFB, sempre na mesma data e sem distinção de índices dos que vierem a ser concedidos aos servidores públicos municipais, respeitados os limites referidos na Constituição.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> Em qualquer circunstância, os dispositivos desta Lei estão subordinados e obedecerão aos limites impostos pelos incisos VI e VII do artigo 29, inciso XI do artigo 37, § 4º do artigo 39 da Constituição de República Federativa do Brasil.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10 -</span></a> As despesas decorrentes desta Lei serão atendidas pelas dotações orçamentárias próprias.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11 -</span></a> Esta Lei entrará em vigor na data da sua publicação, produzindo os seus efeitos a partir de 1º de janeiro de 2009 até 31 de dezembro de 2012, se de outra forma não exigir dispositivos ulteriores competentes, revogadas as disposições em contrário.<br><br>Prefeitura Municipal de Feira de Santana, 15 de abril de 2008.<br><br>JOSÉ RONALDO DE CARVALHO<br>Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

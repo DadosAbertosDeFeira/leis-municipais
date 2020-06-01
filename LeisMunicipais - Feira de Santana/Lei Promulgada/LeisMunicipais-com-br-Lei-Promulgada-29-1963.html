@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI PROMULGADA Nº 29/1963</h2><br>CRIA A IMPRENSA MUNICIPAL E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>CÂMARA MUNICIPAL DE FEIRA DE SANTANA DECRETA E PROMULGA A SEGUINTE LEI:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Fica crida a &quot;IMPRENSA MUNICIPAL&quot;, serviço industrial subordinado ao Prefeito e destinado a executar trabalhos gráficos de qualquer natureza, necessários aos serviços municipais, ou que lhe sejam cometidos por terceiros, mediante pagamento.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> São finalidades da empresa da Imprensa Municipal:<br><br>I - Editar o Jornal oficial do Município e o Jornal da Câmara Municipal;<br><br>II - Editar coletâneas de leis, resoluções, decretos e outros atos dos poderes públicos do Município, do Estado e da União;<br><br>III - Confeccionar livros e demais trabalhos gráficos destinados ao expediente do serviço público em geral;<br><br>IV - Editar e reeditar livros didáticos, trabalhos de caráter histórico ou quaisquer outros cuja divulgação seja de interesse público;<br><br>V - Vender jornais e outras publicações oficiais editadas no estabelecimento ou a ele consignados para esse fim;<br><br>Parágrafo Único - A IMPRENSA MUNICIPAL será instalada com oficinas próprias, devidamente aparelhadas, para atender às suas finalidades.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> &quot;A IMPRENSA MUNICIPAL&quot; será dirigida por um diretor, nomeado pelo Prefeito, e terá a seguinte organização:<br><br>I - Seções:<br><br>a) De administração;<br>b) De redação e revisão;<br>c) De publicação e vendas;<br>d) Técnica.<br><br>II - Tesouraria.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> A secção de Administração compete coordenar e realizar os trabalhos de natureza administrativa.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> A seção de Revisão e Redação incumbe preparar a matéria redacional e sua revisão, acoordenação do noticiário e dos originais.<br><br><a name="artigo_6"><span class="label label-pill label-danger">Art. 6º</span></a> A seção de Publicações e Vendas ficará encarregada de coordenar, divulgar e vender as publicações da IMPRENSA MUNICIPAL.<br><br><a name="artigo_7"><span class="label label-pill label-danger">Art. 7º</span></a> À secção Técnica terá a seu cargo a confecção de todos os trabalhos gráficos confiados à Imprensa Municipal.<br><br><a name="artigo_8"><span class="label label-pill label-danger">Art. 8º</span></a> À Tesouraria compete arrecadar a receita, pagar as despesas, receber e guardar todos os valores pertencentes à Imprensa Municipal.<br><br><a name="artigo_9"><span class="label label-pill label-danger">Art. 9º</span></a> Cabe ao Diretor, com a previa autorização do Prefeito, fixar o preço das publicações do Diário Oficial e dos trabalhos gráficos da &quot;Imprensa Municipal&quot;.<br><br><a name="artigo_10"><span class="label label-pill label-danger">Art. 10</span></a> A &quot;Imprensa Municipal&quot; custeará suas despesas com suas próprias rendas decorrentes de publicações, obras, auxílios e subvenções.<br><br><a name="artigo_11"><span class="label label-pill label-danger">Art. 11</span></a> Constará do orçamento do Município, anualmente, dotação global consignada à &quot;Imprensa Municipal&quot;.<br><br>Parágrafo Único - Quando a sua despesa ultrapassar a receita, poderá à &quot;Imprensa Municipal&quot;. Solicitar do Prefeito auxílio financeiro, por conta da referida dotação, em processo onde se comprove a necessidade e a conveniência do auxilio feita à demonstração de ter sido devidamente aplicado auxilio por acaso concedido anteriormente.<br><br><a name="artigo_12"><span class="label label-pill label-danger">Art. 12</span></a> A receita da &quot;Imprensa Municipal&quot; será recolhida, diariamente, à sua tesouraria.<br><br><a name="artigo_13"><span class="label label-pill label-danger">Art. 13</span></a> A &quot;Imprensa Municipal&quot; apresentará, mensalmente, ao Prefeito, balancete de receita e despesa e semestralmente, em Julho e Janeiro,balanço geral da despesa, e receita, do último exercício, acompanhado de relatório.<br><br>Parágrafo Único - Todo saldo verificado em balanço geral corresponde ao exercício financeiro, será recolhido, em conta própria ao Tesouro Municipal e incorporado à receita do Município.<br><br><a name="artigo_14"><span class="label label-pill label-danger">Art. 14</span></a> O prefeito designará semestralmente uma comissão de três servidores municipais para examinar os balanços apresentados e dar sobre os mesmos, seu parecer.<br><br><a name="artigo_15"><span class="label label-pill label-danger">Art. 15</span></a> À vista do parecer da comissão, o prefeito aprovará a gestão financeira da &quot;Imprensa Municipal&quot; ou promoverá a responsabilidade do seu Diretor, pelas irregularidades comprovadas.<br><br><a name="artigo_16"><span class="label label-pill label-danger">Art. 16</span></a> As repartições municipais, inclusive as autarquias serão obrigadas a adquirir todo material de expediente, gráfico e tipográfico, na &quot;Imprensa Municipal&quot;, obrigatoriedade que não prevalecerá, entretanto, diante da declaração do Diretor da Imprensa Municipal de não se encontrar a mesma em condições de fornecer o material solicitado.<br><br><a name="artigo_17"><span class="label label-pill label-danger">Art. 17</span></a> A &quot;Imprensa Municipal&quot; poderá inscrever-se em concorrência ou coletas de preço, para fornecimento de material de sua especialidade às repartições públicas estaduais, federais e órgãos autônomos.<br><br><a name="artigo_18"><span class="label label-pill label-danger">Art. 18</span></a> Sempre que possível, a aquisição de artigos de consumo da &quot;Imprensa Municipal&quot; será feita mediante concorrência ou coleta de preços.<br><br><a name="artigo_19"><span class="label label-pill label-danger">Art. 19</span></a> O pessoal para os serviços técnicos-especializados será contratado conforme a conveniência do serviço, por proposta da &quot;Imprensa Municipal&quot; aprovada pelo Prefeito.<br><br><a name="artigo_20"><span class="label label-pill label-danger">Art. 20</span></a> O Diretor da &quot;Imprensa Municipal&quot; deverá admitir o pessoal tarefeiro e diarista de acordo com a tabela numérica aprovada pelo Prefeito.<br><br><a name="artigo_21"><span class="label label-pill label-danger">Art. 21</span></a> Ao pessoal da &quot;Imprensa Municipal&quot; aplicar - se - ão as normas estatutárias vigentes para os demais funcionários públicos do Município da Feira de Santana.<br><br><a name="artigo_22"><span class="label label-pill label-danger">Art. 22</span></a> Para a execução desta Lei, fica o Prefeito autorizado a abrir o crédito especial de dez milhões de cruzeiros (10.000,000,00).<br><br><a name="artigo_23"><span class="label label-pill label-danger">Art. 23</span></a> Está Lei entrará em vigor na data da sua publicação revogadas as disposições em contrário.<br><br>PUBLIQUE-SE.<br><br>Sala das Sessões, da Câmara Municipal de Feira de Santana, 22 de Outubro de 1963.<br><br>JOSELITO FALCÀO DE AMORIM<br>PRESIDENTE<br><br>Autor: Diversos Autores<br>DATA DE PUBLICAÇÃO: 22/10/1963<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>

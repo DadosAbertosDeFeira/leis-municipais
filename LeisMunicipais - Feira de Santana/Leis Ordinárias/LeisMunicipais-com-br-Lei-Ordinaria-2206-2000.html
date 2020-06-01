@@ -1,0 +1,90 @@
+<html><head><style type="text/css">
+        
+        * {font-size:12px;}
+        #span_text, pre {color:#333;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;line-height:130%;}
+        #span_text a {text-decoration:underline;color:#CE0000;}
+        #span_text s, #span_text b {color:#0000FF;font-Family:"Lucida Console", "Courier New", Courier, Fixedsys;font-weight:normal;}
+        #span_text b s, b pre {color:#0000FF;}
+        .v, .v pre {color:#006600;}
+        #span_text s, s pre {color:#333;text-decoration:line-through;}
+        #span_text .v s {color:#006600;text-decoration:line-through;}
+        
+        </style></head><body><img src="https://www2.leismunicipais.com.br/logo-225x93-semborda.jpg"><br /><div id=span_text>
+                                <!-- BEGIN ANCORA -->
+                                    <style>
+                                        .fixar {
+                                            position:fixed;
+                                            margin-top: -400px !important;
+                                            _margin-left: 320px;
+                                            margin-left: 380px;
+                                            padding-top:15px;
+                                            background-color: #fff !important;
+                                        }
+                                        #select-art {
+                                          _margin-top: 15px;
+                                          width: 300px;
+                                          position:absolute;
+                                          display: none;
+                                          margin-left: 320px;
+                                        }
+                                        #scrollable-content {
+                                          max-height: 200px;
+                                          overflow: auto;
+                                          padding: 3px;
+                                        }
+                                    </style>
+
+                                <!-- END ANCORA -->
+
+                                <div id="meuMenu"></div>
+
+                                <script>
+                                    $(document).ready(function(){
+                                      $( "#open_menu_anchor" ).click(function(){
+                                          $("#select-art").toggle();
+                                      });  
+                                      $(document).mouseup(function (e){
+                                        if (!$("#select-art").is(e.target) && $("#select-art").has(e.target).length === 0){
+                                          $("#select-art").hide();
+                                        }
+                                      });
+                                      $( "#close_menuflutuante" ).click(function(){
+                                          $("#meuMenu").hide();
+                                      });  
+                                    });
+
+                                    var offset = $("#meuMenu").offset().top;
+                                    var $meuMenu = $("#meuMenu");
+                                    $(document).on("scroll", function () {
+                                        if (offset <= $(window).scrollTop()) {
+                                            $meuMenu.addClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "0px"
+                                            );
+                                        } else {
+                                            $meuMenu.removeClass("fixar");
+                                            $("#select-art").css(
+                                              "margin-left", "320px"
+                                            );
+                                        }
+                                    });
+                                </script>
+
+                                <script type="text/javascript">
+                                    $(function() {
+
+                                        var modalConsolidacao = $("#consolidacao-modal").modal({ show: false  });
+
+                                        $("#btn-consolidacao").click(function(e){
+                                            e.stopPropagation();
+                                            $(modalConsolidacao).modal("show");
+                                        });
+
+                                    });
+                                </script>
+
+
+                                <!-- Consolida Modal Window -->
+                                <div class="modal hide fade" id="consolidacao-modal" style="width:400px;left:55%;right:auto;"></div>
+
+                            <h2>LEI Nº 2206/2000</h2><br>ESTABELECE NORMAS DE FISCALIZAÇÃO DE EDIFÍCIOS E DÁ OUTRAS PROVIDÊNCIAS.<br><br><img src=http://www2.leismunicipais.com.br/img/cabecalholiz.gif><br><br><br>Autor: Ildes Ferreira de Oliveira<br><br>O PREFEITO MUNICIPAL DE FEIRA DE SANTANA, Estado da Bahia, FAÇO saber que a Câmara Municipal através do Projeto de Lei nº 14/98, de autoria do Edil Ildes Ferreira de Oliveira, decretou e eu sanciono a seguinte Lei:<br><br><a name="artigo_1"><span class="label label-pill label-danger">Art. 1º</span></a> Os responsáveis pela construção, comercialização ou manutenção de edifícios a partir de três pavimentos, com fins comerciais ou residenciais, ficam obrigados a realizar, periodicamente, inspeção técnica das edificações a cada dez anos, em prédios com até trinta anos de construído, e a cada cinco anos em prédios com mais de trinta anos de construído, emitindo laudo técnico sobre as condições do imóvel.<br><br>Parágrafo Único - Na hipótese de transferência da propriedade jurídica do imóvel para os usuários, a responsabilidade pela realização da inspeção será dos condôminos, a partir da constituição do condomínio.<br><br><a name="artigo_2"><span class="label label-pill label-danger">Art. 2º</span></a> A inspeção de que trata o artigo anterior será feita por técnicos devidamente habilitados pelo CREA (Conselho Regional de Engenharia e Arquitetura) que assinará o respectivo laudo sobre as condições técnicas do imóvel.<br><br><a name="artigo_3"><span class="label label-pill label-danger">Art. 3º</span></a> O responsável pela inspeção fica na obrigação de, além de remeter cópia para a Secretaria Municipal de Desenvolvimento Urbano e Meio Ambiente, divulgar entre os moradores e/ou usuários do imóvel inspecionado.<br><br><a name="artigo_4"><span class="label label-pill label-danger">Art. 4º</span></a> O Município, usando o seu poder de polícia, fiscalizará o cumprimento desta Lei, através da Secretaria Municipal de Desenvolvimento Urbano e Meio Ambiente, que aplicará as seguintes penalidades aos infratores:<br><br>I - primeira infração: multa de até 2.000 (duas mil ) UFIR`S;<br><br>II - segunda infração: multa de entre 2.000 (duas mil) e 10.000 (dez mil ) UFIR`S.<br><br>III - terceira infração: multa entre 10.000 (dez mil) e 50.000 (cinquenta mil) UFIR`S.<br><br><a name="artigo_5"><span class="label label-pill label-danger">Art. 5º</span></a> Esta Lei entrará em vigor na data da sua publicação, revogadas as disposições em contrário.<br><br>PREFEITURA MUNICIPAL DE FEIRA DE SANTANA, EM 14 DE DEZEMBRO DE 2000.<br><br>CLAILTON COSTA MASCARENHAS<br>Prefeito<p><img src=https://www2.leismunicipais.com.br/img/cabecalholiz.gif></p></div></body></html>
