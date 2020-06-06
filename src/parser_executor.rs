@@ -1,4 +1,6 @@
 use crate::parser::{parse_html_to_lei, Lei};
+use itertools::Itertools;
+use rayon::iter::Either;
 use rayon::prelude::*;
 use std::collections::HashMap;
 use walkdir::{DirEntry, WalkDir};
@@ -10,14 +12,13 @@ pub struct Folder {
 
 pub fn parse_on_directory(directory_path: &str) -> (HashMap<String, Folder>, Vec<Lei>) {
     let walker = WalkDir::new(directory_path).into_iter();
-    let mut directories = HashMap::new();
-    let files = walker
+    let (files, directories): (Vec<String>, HashMap<String, Folder>) = walker
         .filter_entry(|entry| is_not_hidden(entry))
         .skip(1)
-        .filter_map(|entry| {
+        .partition_map(|entry| {
             let entry = entry.unwrap();
             if is_html_file(&entry) {
-                Some(
+                Either::Left(
                     entry
                         .path()
                         .to_str()
@@ -26,17 +27,15 @@ pub fn parse_on_directory(directory_path: &str) -> (HashMap<String, Folder>, Vec
                 )
             } else {
                 let current_folder = entry.file_name().to_os_string().into_string().unwrap();
-                directories.insert(
+                Either::Right((
                     current_folder,
                     Folder {
                         total: 0,
                         parsed: 0,
                     },
-                );
-                None
+                ))
             }
-        })
-        .collect::<Vec<String>>();
+        });
 
     let leis = files
         .par_iter()
