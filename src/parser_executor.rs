@@ -5,6 +5,7 @@ use std::collections::HashMap;
 use walkdir::{DirEntry, WalkDir};
 
 pub fn parse_on_directory(directory_path: &str) -> HashMap<String, Vec<Option<Lei>>> {
+    println!("test");
     let walker = WalkDir::new(directory_path).into_iter();
     let files = walker
         .filter_entry(|entry| is_not_hidden(entry))

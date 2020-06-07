@@ -35,7 +35,7 @@ fn write_json_file(leis_by_folder: &HashMap<String, Vec<Option<Lei>>>) {
     let leis = leis_by_folder
         .values()
         .flatten()
-        .filter_map(|lei| lei.as_ref())
+        .filter_map(Option::as_ref)
         .collect::<Vec<&Lei>>();
     let leis_file = File::create("leis.json").expect("Unable to create file");
     serde_json::to_writer_pretty(leis_file, &leis).expect("Unable to write data");
@@ -46,7 +46,7 @@ fn write_json_file(leis_by_folder: &HashMap<String, Vec<Option<Lei>>>) {
 }
 
 fn print_report(leis_by_folder: &HashMap<String, Vec<Option<Lei>>>) {
-    let total_files = leis_by_folder.values().flatten().collect::<Vec<_>>().len();
+    let total_files = leis_by_folder.values().flatten().count();
     println!("\nTotal de arquivos: {}", total_files);
 
     let mut table = Table::new();
