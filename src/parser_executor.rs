@@ -1,57 +1,57 @@
 use crate::parser::{parse_html_to_lei, Lei};
 use itertools::Itertools;
-use rayon::iter::Either;
 use rayon::prelude::*;
 use std::collections::HashMap;
 use walkdir::{DirEntry, WalkDir};
 
-pub struct Folder {
-    pub total: i32,
-    pub parsed: i32,
-}
-
-pub fn parse_on_directory(directory_path: &str) -> (HashMap<String, Folder>, Vec<Lei>) {
+pub fn parse_on_directory(directory_path: &str) -> HashMap<String, Vec<Option<Lei>>> {
     let walker = WalkDir::new(directory_path).into_iter();
-    let (files, directories): (Vec<String>, HashMap<String, Folder>) = walker
+    let files = walker
         .filter_entry(|entry| is_not_hidden(entry))
         .skip(1)
-        .partition_map(|entry| {
+        .filter_map(|entry| {
             let entry = entry.unwrap();
             if is_html_file(&entry) {
-                Either::Left(
-                    entry
-                        .path()
-                        .to_str()
-                        .expect("file path not found")
-                        .to_string(),
-                )
+                Some(entry)
             } else {
-                let current_folder = entry.file_name().to_os_string().into_string().unwrap();
-                Either::Right((
-                    current_folder,
-                    Folder {
-                        total: 0,
-                        parsed: 0,
-                    },
-                ))
+                None
             }
-        });
+        })
+        .collect::<Vec<DirEntry>>();
 
-    let leis = files
+    files
         .par_iter()
-        .filter_map(|file_path| {
-            let lei_result = parse_html_to_lei(file_path, "".to_string());
+        .map(|entry| {
+            let file_folder = get_file_folder(&entry);
+            let file_path = entry
+                .path()
+                .to_str()
+                .expect("file path not found")
+                .to_string();
+            let lei_result = parse_html_to_lei(&file_path, file_folder.clone());
             match lei_result {
-                Ok(lei) => Some(lei),
+                Ok(lei) => (file_folder, Some(lei)),
                 Err(e) => {
                     eprintln!("{}", e);
-                    None
+                    (file_folder, None)
                 }
             }
         })
-        .collect();
+        .collect::<Vec<(String, Option<Lei>)>>()
+        .into_iter()
+        .into_group_map()
+}
 
-    (directories, leis)
+fn get_file_folder(entry: &DirEntry) -> String {
+    entry
+        .path()
+        .parent()
+        .unwrap()
+        .file_name()
+        .unwrap()
+        .to_os_string()
+        .into_string()
+        .unwrap()
 }
 
 fn is_html_file(entry: &DirEntry) -> bool {
