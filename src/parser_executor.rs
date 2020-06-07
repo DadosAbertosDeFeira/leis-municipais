@@ -5,7 +5,6 @@ use std::collections::HashMap;
 use walkdir::{DirEntry, WalkDir};
 
 pub fn parse_on_directory(directory_path: &str) -> HashMap<String, Vec<Option<Lei>>> {
-    println!("test");
     let walker = WalkDir::new(directory_path).into_iter();
     let files = walker
         .filter_entry(|entry| is_not_hidden(entry))
@@ -27,7 +26,7 @@ pub fn parse_on_directory(directory_path: &str) -> HashMap<String, Vec<Option<Le
             let file_path = entry
                 .path()
                 .to_str()
-                .expect("file path not found")
+                .expect("Caminho do arquivo não encontrado")
                 .to_string();
             let lei_result = parse_html_to_lei(&file_path, file_folder.clone());
             match lei_result {
