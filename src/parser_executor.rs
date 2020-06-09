@@ -1,56 +1,57 @@
 use crate::parser::{parse_html_to_lei, Lei};
+use itertools::Itertools;
+use rayon::prelude::*;
 use std::collections::HashMap;
 use walkdir::{DirEntry, WalkDir};
 
-macro_rules! unwrap_or_print_err {
-    ($res:expr) => {
-        match $res {
-            Ok(val) => val,
-            Err(e) => {
-                eprintln!("{}", e);
-                continue;
-            }
-        }
-    };
-}
-
-pub struct Folder {
-    pub total: i32,
-    pub parsed: i32,
-}
-
-pub fn parse_on_directory(directory_path: &str) -> (HashMap<String, Folder>, Vec<Lei>) {
+pub fn parse_on_directory(directory_path: &str) -> HashMap<String, Vec<Option<Lei>>> {
     let walker = WalkDir::new(directory_path).into_iter();
-    let mut directories = HashMap::new();
-    let mut current_folder = String::new();
-    let mut leis = Vec::new();
+    let files = walker
+        .filter_entry(|entry| is_not_hidden(entry))
+        .skip(1)
+        .filter_map(|entry| {
+            let entry = entry.unwrap();
+            if is_html_file(&entry) {
+                Some(entry)
+            } else {
+                None
+            }
+        })
+        .collect::<Vec<DirEntry>>();
 
-    for entry in walker.filter_entry(|entry| is_not_hidden(entry)).skip(1) {
-        let entry = entry.unwrap();
+    files
+        .par_iter()
+        .map(|entry| {
+            let file_folder = get_file_folder(&entry);
+            let file_path = entry
+                .path()
+                .to_str()
+                .expect("Caminho do arquivo não encontrado")
+                .to_string();
+            let lei_result = parse_html_to_lei(&file_path, file_folder.clone());
+            match lei_result {
+                Ok(lei) => (file_folder, Some(lei)),
+                Err(e) => {
+                    eprintln!("{}", e);
+                    (file_folder, None)
+                }
+            }
+        })
+        .collect::<Vec<(String, Option<Lei>)>>()
+        .into_iter()
+        .into_group_map()
+}
 
-        if entry.file_type().is_dir() {
-            current_folder = entry.file_name().to_os_string().into_string().unwrap();
-
-            directories.insert(
-                current_folder.clone(),
-                Folder {
-                    total: 0,
-                    parsed: 0,
-                },
-            );
-        } else if is_html_file(&entry) {
-            let file_path = entry.path().to_str().expect("file path not found");
-            directories.get_mut(&current_folder).unwrap().total += 1;
-
-            let lei =
-                unwrap_or_print_err!(parse_html_to_lei(file_path, current_folder.to_string()));
-
-            // TODO: não usar vector para armazenar as leis
-            leis.push(lei);
-            directories.get_mut(&current_folder).unwrap().parsed += 1;
-        }
-    }
-    (directories, leis)
+fn get_file_folder(entry: &DirEntry) -> String {
+    entry
+        .path()
+        .parent()
+        .unwrap()
+        .file_name()
+        .unwrap()
+        .to_os_string()
+        .into_string()
+        .unwrap()
 }
 
 fn is_html_file(entry: &DirEntry) -> bool {
