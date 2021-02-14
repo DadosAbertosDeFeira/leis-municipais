@@ -4,7 +4,6 @@ extern crate prettytable;
 #[macro_use]
 extern crate lazy_static;
 
-use crate::error::Error;
 use crate::parser::Lei;
 use crate::parser_executor::parse_on_directory;
 use prettytable::Table;
@@ -19,7 +18,7 @@ mod error;
 mod parser;
 mod parser_executor;
 
-fn main() -> Result<(), Error> {
+fn main() {
     let now = Instant::now();
     let args: Vec<String> = env::args().collect();
     let directory_path = &args[1]; // TODO: error handler
@@ -30,27 +29,25 @@ fn main() -> Result<(), Error> {
         let leis_by_folder = parse_on_directory(directory_path);
 
         print_report(&leis_by_folder);
-        write_json_file(&leis_by_folder);
+        write_json_file(&leis_by_folder, file_name);
 
         println!("Tempo de execução: {} segundos", now.elapsed().as_secs());
     } else {
         println!("Nome de arquivo não permitido. Extensão do arquivo deve ser .json");
     }
-
-    Ok(())
 }
 
-fn write_json_file(leis_by_folder: &HashMap<String, Vec<Option<Lei>>>, path: &str) {
+fn write_json_file(leis_by_folder: &HashMap<String, Vec<Option<Lei>>>, file_name: &str) {
     let leis = leis_by_folder
         .values()
         .flatten()
         .filter_map(Option::as_ref)
         .collect::<Vec<&Lei>>();
-    let leis_file = File::create(path).expect("Unable to create file");
+    let leis_file = File::create(file_name).expect("Unable to create file");
     serde_json::to_writer_pretty(leis_file, &leis).expect("Unable to write data");
     println!(
         "\nArquivo salvo em: {}",
-        format!("{}/{}", env::current_dir().unwrap().display(), path)
+        format!("{}/{}", env::current_dir().unwrap().display(), file_name)
     );
 }
 
