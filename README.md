@@ -67,6 +67,6 @@ Para rodar os hooks antes de algum commit:
 Antes de abrir um _pull request_, não esqueça de rodar os testes.
 
 * para rodar todos testes: `cargo test`
-* para rodar somente os testes unitários: `cargo test --bin ranbumfy`
+* para rodar somente os testes unitários: `cargo test --bin leis-municipais`
 * para rodar somente os testes de integração: `cargo test --test integration`
 * para rodar somente um teste: `cargo test <nome_do_teste>`
