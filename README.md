@@ -24,13 +24,13 @@ Temos versões para Linux e MacOS. Faça o _download_ da última versão e
 chmox +x leis-municipais-linux-amd64
 ```
 
-Em seguida, é só executar, passando o caminho da pasta de leis como argumento:
+Em seguida, é só executar, passando o caminho da pasta de leis como argumento e o nome do arquivo onde salvar (por enquanto a extensão do arquivo deve ser em .json):
 
 ```
-./leis-municipais-linux-amd64 LeisMunicipaisFeiraDeSantana/
+./leis-municipais-linux-amd64 LeisMunicipaisFeiraDeSantana/ nome_do_arquivo_de_sua_preferencia.json
 ```
 
-_Voilà_! Um arquivo chamado `leis.json` foi criado na mesma pasta em que você
+_Voilà_! Um arquivo chamado `nome_do_arquivo_de_sua_preferencia.json` foi criado na mesma pasta em que você
 executou o comando.
 
 ## Desenvolvimento
@@ -45,16 +45,16 @@ um bug, abra uma nova [_issue_](https://github.com/DadosAbertosDeFeira/leis-muni
 configure o `PATH`: `export PATH="$HOME/.cargo/bin:$PATH"` no arquivo de configuração do seu
 terminal
 * vá para a pasta do projeto
-* `cargo run <caminho_absoluto_para_a_pasta>`
+* `cargo run <caminho_absoluto_para_a_pasta> nome_do_arquivo_de_sua_preferencia.json`
 
-Pronto! O arquivo `leis.json` será criado na pasta raiz do projeto.
+Pronto! O arquivo `nome_do_arquivo_de_sua_preferencia.json` será criado na pasta raiz do projeto.
 
 ### Rodando a aplicação (se você já tem o Rust instalado)
 
 * vá para a pasta do projeto
-* `cargo run <caminho_absoluto_para_a_pasta>`
+* `cargo run <caminho_absoluto_para_a_pasta> nome_do_arquivo_de_sua_preferencia.json`
 
-Pronto! O arquivo `leis.json` será criado na pasta raiz do projeto.
+Pronto! O arquivo `nome_do_arquivo_de_sua_preferencia.json` será criado na pasta raiz do projeto.
 
 ### Hooks
 
