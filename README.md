@@ -24,7 +24,7 @@ Temos versões para Linux e MacOS. Faça o _download_ da última versão e
 chmox +x leis-municipais-linux-amd64
 ```
 
-Em seguida, é só executar, passando o caminho da pasta de leis como argumento e o nome do arquivo onde salvar (por enquanto a extensão do arquivo deve ser em .json):
+Em seguida, é só executar, passando o caminho da pasta de leis como argumento e o nome do arquivo (por enquanto a extensão do arquivo deve ser em `.json`):
 
 ```
 ./leis-municipais-linux-amd64 LeisMunicipaisFeiraDeSantana/ nome_do_arquivo_de_sua_preferencia.json
